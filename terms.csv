@@ -1,0 +1,25 @@
+term,label,description
+author,Quentin D. Atkinson,
+author,Michael Dunn,
+author,Simon J. Greenhill,
+author,Stephen C. Levinson,
+author,Andrew Meade,
+author,Mark Pagel,
+author,Chris Venditti,
+
+datatype,lexical cognates,
+datatype,structure features,
+
+tool,bayesphylogenies,http://www.evolution.reading.ac.uk/BayesPhy.html
+tool,beast,https://beast.community
+tool,beast2,http://www.beast2.org/
+tool,punctuatedwebapp,http://www.evolution.reading.ac.uk/pe/index.html
+tool,mrbayes,http://nbisweden.github.io/MrBayes/
+tool,revbayes,https://revbayes.github.io/
+tool,traitlab,https://sites.google.com/site/traitlab/
+
+type,phylogenetic,Inferring the phylogeny of the taxa
+type,phylogeography,Inferring the geography of the taxa
+type,macroevolutionary,Inferring macroevolutionary processes from the data
+type,trait,Inferring trait history
+

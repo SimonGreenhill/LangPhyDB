@@ -1,0 +1,112 @@
+title = "Languages Evolve in Punctuational Bursts"
+
+doi = "10.1126/science.1149683"
+
+# short description of the study.
+description = """
+A test of whether languages evolve in punctuational bursts.
+"""
+
+# Description of the findings
+results = """
+Linguists speculate that human languages often evolve in rapid or
+punctuational bursts, sometimes associated with their emergence from other
+languages, but this phenomenon has never been demonstrated. We used vocabulary
+data from three of the world's major language groups—Bantu, Indo-European, and
+Austronesian—to show that 10 to 33% of the overall vocabulary differences among
+these languages arose from rapid bursts of change associated with
+language-splitting events. Our findings identify a general tendency for increased
+rates of linguistic evolution in fledgling languages, perhaps arising from a
+linguistic founder effect or a desire to establish a distinct social identity.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Quentin D. Atkinson",
+    "Andrew Meade",
+    "Chris Venditti",
+    "Simon J. Greenhill",
+    "Mark Pagel"
+]
+
+# parts of the world
+region = 'global'
+groups = ['Austronesian', 'Bantu', 'Indo-European']
+
+# bibkey citation in sources.bib
+bibkey = "@Atkinson2008"
+
+# type of study
+type = ['macroevolutionary']
+
+# short label of taxa "37 languages from.."
+taxa = "95 Bantu languages, 65 Indo-European languages, 330 Austronesian languages"
+
+# data
+[data]
+
+#We used publicly available lexical data recording cognate sets across
+#‘Swadesh list’ (1) basic vocabulary items in the Bantu (100 terms in 95
+#languages)(2), Indo-European (200 terms in 65 languages)(3) and Austronesian
+#(210 terms in 330 languages)(4) language families (see Table S1). The
+
+    [data.bantu]
+    ntaxa = 95
+    nchars = 100
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Holden2005'
+    
+    [data.indoeuropean]
+    ntaxa = 65
+    nchars = 200
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Dyen1992'
+    
+    [data.austronesian]
+    ntaxa = 330
+    nchars = 210
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Greenhill2008'
+    
+
+# analysis information
+[analysis]
+
+# We inferred Bayesian posterior distributions of phylogenetic trees for each
+# language family using the Markov chain Monte Carlo (MCMC)(5) methods in the
+# programme BayesPhylogenies (6, 7) (see http://www.evolution.rdg.ac.uk), and a
+# two- state time reversible model of cognate gain and loss with
+# gamma-distributed rate variation across cognate sets (3, 8). Duplicate samples
+# of languages and closely related dialects were excluded from the data to
+# ensure that all nodes on the inferred trees represented actual language
+# splitting events. Markov chains were run for 40,000,000 generations, sampled
+# every 20,000, with the first 20,000,000 generations discarded as burn-in,
+# yielding 1000 trees. Examination of autocorrelation times of the MCMC plots
+# suggested runs had converged to the equilibrium distribution. Branch lengths
+# were estimated in units of expected numbers of cognate replacements per
+# lexical term
+    [analysis.tree]
+    tool = 'bayesphylogenies'
+    model = 'two-state time reversible, gamma'
+    details = "Markov chains were run for 40,000,000 generations, sampled every 20,000, with the first 20,000,000 generations discarded as burn-in, yielding 1000 trees"
+    
+    [analysis.macroevolutionary]
+    tool = 'punctuatedwebapp'
+    
+    [analysis.borrowing]
+    tool = 'traitlab'
+    model = 'stochastic Dollo, simulation'
+    details = 'simulated effect of borrowing on detection of punctuational effects'
+
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+lexibank = { title = "Lexibank Dataset", link = "" }
+links = [
+    { title = "Punctuation Marks in Language Evolution?", link = "https://doi.org/10.1126/article.31994" }
+]

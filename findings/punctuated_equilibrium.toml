@@ -1,0 +1,7 @@
+# Findings
+findings = [
+    { source = "atkinson_et_al2008", result = "31% in Bantu"},
+    { source = "atkinson_et_al2008", result = "21% in Indo-European"},
+    { source = "atkinson_et_al2008", result = "9.5% in Austronesian"},
+    { source = "atkinson_et_al2008", result = "33% in Polynesian"},
+]

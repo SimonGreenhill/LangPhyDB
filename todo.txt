@@ -1,0 +1,181 @@
+
+https://doi.org/10.32473/sal.v45i1.107255
+
+Dockum, R. (2018). Phylogeny in phonology: How Tai sound systems encode their past. In Proceedings of the Annual Meetings on Phonology, volume 5
+
+
+Atkinson, Quentin D. 2013. The descent of words. Proceedings of the National Academy of Sciences of the United States of America 110.4159–4160. doi:10.1073/pnas.1300397110.
+Atkinson, Quentin D.; and Russell D. Gray. 2004a. How old is the Indo-European language family? - Illumination or more moths to the flame?
+Atkinson, Quentin D.; and Russell D. Gray. 2004b. Are Accurate Dates an Intractable Problem for Historical Linguistics? Mapping our Ancestry: Phylogenetic Methods in Anthropology and Prehistory, ed. by M J Shennan S J Collard Mark Lipo C. O’Brien. Chicago: Aldine.
+Atkinson, Quentin D.; and Russell D. Gray. 2005. Curious parallels and curious connections--phylogenetic thinking in biology and historical linguistics. Systematic Biology 54.513–26. doi:10.1080/10635150590950317.
+Atkinson, Quentin D.; Andrew Meade.; Chris Venditti.; Simon J. Greenhill.; and Mark Pagel. 2008a. Parsing the Evolution of Language. Science 320.446a.
+Atkinson, Quentin D.; Andrew Meade.; Chris Venditti.; Simon J. Greenhill.; and Mark Pagel. 2008b. Languages evolve in punctuational bursts. Science 319.588. doi:10.1126/science.1149683.
+Atkinson, Quentin D.; Geoff K. Nicholls.; David Welch.; and Russell D. Gray. 2005. From words to dates: water into wine, mathemagic or phylogenetic inference. Transactions of the Philological Society 103.193–219.
+Barbrook, A C.; Christopher J Howe.; N Blake.; and P Robinson. 1998. The phylogeny of The Canterbury Tales. Nature 394.839.
+Bouckaert, Remco R.; Claire Bowern.; and Quentin D. Atkinson. 2018. The origin and expansion of Pama–Nyungan languages across Australia. Nature Ecology & Evolution. Springer US. doi:10.1038/s41559-018-0489-3. http://www.nature.com/articles/s41559-018-0489-3.
+Bouckaert, Remco R.; P. Lemey.; Michael Dunn.; Simon J. Greenhill.; Alexander V Alekseyenko.; a. J. Drummond.; Russell D. Gray.; M. a. Suchard.; and Quentin D. Atkinson. 2012. Mapping the Origins and Expansion of the Indo-European Language Family. Science 337.957–960. doi:10.1126/science.1219669.
+Bowern, Claire. 2010. Historical linguistics in Australia: trees, networks and their implications. Philosophical transactions of the Royal Society of London. Series B, Biological sciences 365.3845–54. doi:10.1098/rstb.2010.0013.
+Bowern, Claire. 2012. The riddle of Tasmanian languages. Proceedings of the Royal Society B: Biological Sciences 279.4590–5. doi:10.1098/rspb.2012.1842.
+Bowern, Claire. 2017. The Indo-European controversy and Bayesian phylogenetic methods. Diachronica 34.421–436. doi:10.1075/dia.34.3.04bow.
+Bowern, Claire. 2018. Computational Phylogenetics. Annual Review of Linguistics 4.281–296. doi:10.1146/annurev-linguistics-011516-034142.
+Bowern, Claire.; and Quentin D. Atkinson. 2012. Computational phylogenetics and the internal structure of Pama-Nyungan. Language 88.817–845.
+Bryant, David.; F. Filimon.; and Russell D. Gray. 2005. Untangling our past: Languages, trees, splits and networks. The evolution of cultural diversity: a phylogenetic approach, ed. by Ruth Mace, Clare J Holden, and Stephen J Shennan, 67–84. London: UCL PRess.
+Buckley, Christopher D. 2012. Investigating cultural evolution using phylogenetic analysis: the origins and descent of the southeast asian tradition of warp ikat weaving. PloS one 7.e52064. doi:10.1371/journal.pone.0052064.
+Buckley, Christopher D.; and Eric Boudot. 2017. The evolution of an ancient technology. Royal Society Open Science 4.170208. doi:10.1098/rsos.170208.
+Chacon, Thiago Costa.; and Johann-Mattis List. 2015. Improved computational models of sound change shed light on the history of the Tukanoan languages. Journal of language relationship 3.177–203.
+Chang, Will.; Chundra Cathcart.; David Hall.; and Andrew Garrett. 2015. Ancestry-constrained phylogenetic analysis supports the Indo-European steppe hypothesis. Language 91.194–244. doi:10.1353/lan.2015.0005.
+Coward, Fiona.; Stephen Shennan.; Sue Colledge.; James Conolly.; and Mark Collard. 2008. The spread of Neolithic plant economies from the Near East to northwest Europe: a phylogenetic analysis. Journal of Archaeological Science 35.42–56. doi:10.1016/j.jas.2007.02.022.
+Currie, T. E. 2013. Cultural Evolution Branches Out: The Phylogenetic Approach in Cross-Cultural Research. Cross-Cultural Research. doi:10.1177/1069397112471803. http://ccr.sagepub.com/cgi/doi/10.1177/1069397112471803.
+Currie, Thomas E.; and Ruth Mace. 2011. Mode and tempo in the evolution of socio-political organization: reconciling “Darwinian” and “Spencerian” evolutionary approaches in anthropology. Philosophical transactions of the Royal Society of London. Series B, Biological sciences 366.1108–17. doi:10.1098/rstb.2010.0318.
+Currie, Thomas E.; Andrew Meade.; Myrtille Guillon.; and Ruth Mace. 2013. Cultural phylogeography of the Bantu Languages of sub-Saharan Africa. Proceedings of the Royal Society B: Biological Sciences 280.20130695. doi:10.1098/rspb.2013.0695.
+Currie, Thomas E.; Simon J. Greenhill.; and R Mace. 2010. Is horizontal transmission really a problem for phylogenetic comparative methods? A simulation study using continuous cultural traits. Proceedings of the Royal Society B: Biological Sciences 365.3903–3912. doi:10.1098/rstb.2010.0014.
+Currie, Thomas E.; Simon J. Greenhill.; Russell D. Gray.; Toshikazu Hasegawa.; and Ruth Mace. 2010. Rise and fall of political complexity in island South-East Asia and the Pacific. Nature 467. Evolutionary Cognitive Science Research Center, Graduate School of Arts and Sciences, University of Tokyo 153-8902, Japan. t.currie@ucl.ac.uk.801–804. doi:10.1038/nature09461.
+de Schryver, Gilles Maurice.; and Rebecca Grollemund. 2015. Introducing a state-of-the-art phylogenetic classification of the Kikongo Language Cluster. Africana Linguistica 21.87–162.
+de Voogt, Alex.; Anne-Elizabeth Dunn-Vaturi.; and Jelmer W. Eerkens. 2013. Cultural transmission in the ancient Near East: twenty squares and fifty-eight holes. Journal of Archaeological Science 40. Elsevier Ltd.1715–1730. doi:10.1016/j.jas.2012.11.008.
+Dediu, Dan. 2011. A Bayesian phylogenetic approach to estimating the stability of linguistic features and the genetic biasing of tone. Proceedings of the Royal Society B: Biological Sciences 278.474–479. doi:10.1098/rspb.2010.1595.
+Dominguez, M. 2014. Evolution of metaphors: Phylogeny of oil slick cartoons in Spanish press. Discourse & Society. doi:10.1177/0957926514556208. http://das.sagepub.com/cgi/doi/10.1177/0957926514556208.
+Dunn, Michael.; Simon J. Greenhill.; S. C. Levinson.; and Russell D. Gray. 2011. Evolved structure of language shows lineage-specific trends in word-order universals. Nature 473. Nature Publishing Group.79–82. doi:10.1038/nature09923.
+Gao, Tianjun. 2020. Reconstruction and analysis of phylogenetic network on Tibeto-Burman languages in China. Journal of Chinese Linguistics 48.257–293. doi:10.1353/jcl.2020.0006.
+Gray, Russell D. 2005. Pushing the time barrier in the quest for language roots. Science 309.2007–2008.
+Gray, Russell D.; Alexei J Drummond.; and Simon J. Greenhill. 2009. Language phylogenies reveal expansion pulses and pauses in Pacific settlement. Science 323.479–83. doi:10.1126/science.1166858.
+Gray, Russell D.; and Fiona Marie Jordan. 2000. Language trees support the express-train sequence of Austronesian expansion. Nature 405.1052–1055.
+Gray, Russell D.; and Quentin D. Atkinson. 2003. Language-tree divergence times support the Anatolian theory of Indo-European origin. Nature 426.435–439.
+Gray, Russell D.; David Bryant.; and Simon J. Greenhill. 2010. On the shape and fabric of human history. Philosophical transactions of the Royal Society of London. Series B, Biological sciences 365.3923–33. doi:10.1098/rstb.2010.0162.
+Gray, Russell D.; Quentin D. Atkinson.; and Simon J. Greenhill. 2011. Language evolution and human history: what a difference a date makes. Philosophical Transactions of the Royal Society B: Biological Sciences 366.1090–1100. doi:10.1098/rstb.2010.0378.
+Gray, Russell D.; Simon J Greenhill.; and Quentin D Atkinson. 2013. Phylogenetic Models of Language Change Three New Questions. Cultural Evolution: Society, Technology, Language and Religion, ed. by Peter J Richerson and Morten H Christiansen, 12:285–300. Cambridge, Massachusetts: Cambridge University Press.
+Gray, Russell D.; Simon J. Greenhill.; and R M Ross. 2007. The Pleasures and Perils of Darwinizing Culture (with phylogenies). Biological Theory 2. MIT Press.360–375.
+Greenhill, Simon J. 2015. TransNewGuinea.org: An online database of New Guinea languages. PLoS ONE 10.1–17. doi:10.1371/journal.pone.0141563.
+Greenhill, Simon J.; Alexei J Drummond.; and Russell D. Gray. 2010. How Accurate and Robust Are the Phylogenetic Estimates of Austronesian Language Relationships? PLoS ONE 5.e9573. doi:10.1371/journal.pone.0009573.
+Greenhill, Simon J.; and Russell D. Gray. 2005. Testing population dispersal hypotheses: Pacific settlement, phylogenetic trees and Austronesian languages. The evolution of cultural diversity: a phylogenetic approach, ed. by R Mace, Clare J Holden, and Stephen J Shennan, 31–52. London: UCL Press.
+Greenhill, Simon J.; and Russell D. Gray. 2009a. Darwin, language, and two great Pacific voyages. New Zealand Science Review 66.97–101.
+Greenhill, Simon J.; and Russell D. Gray. 2009b. Austronesian language phylogenies: Myths and misconceptions about Bayesian computational methods. Austronesian historical linguistics and culture history: a festschrift for Robert Blust, ed. by K A Adelaar and A Pawley, 375–397. Canberra: Pacific Linguistics.
+Greenhill, Simon J.; and Russell D. Gray. 2012. Basic vocabulary and Bayesian phylolinguistics: Issues of understanding and representation. Diachronica 29.523–537. doi:10.1075/dia.29.4.05gre.
+Greenhill, Simon J.; Chieh-Hsi Wu.; Xia Hua.; Michael Dunn.; Stephen C. Levinson.; and Russell D. Gray. 2017. Evolutionary dynamics of language systems. Proceedings of the National Academy of Sciences.201700388. doi:10.1073/pnas.1700388114.
+Greenhill, Simon J.; Quentin D. Atkinson.; Andrew Meade.; and Russell D. Gray. 2010. The shape and tempo of language evolution. Proceedings of the Royal Society B: Biological Sciences 277. Department of Psychology, University of Auckland, Private Bag 92019, Auckland 1042, New Zealand. s.greenhill@auckland.ac.nz.2443–50. doi:10.1098/rspb.2010.0051.
+Greenhill, Simon J.; Robert Blust.; and Russell D. Gray. 2008. The Austronesian Basic Vocabulary Database: From bioinformatics to lexomics. Evolutionary Bioinformatics 4.271–83.
+Greenhill, Simon J.; Thomas E. Currie.; and Russell D. Gray. 2009. Does horizontal transmission invalidate cultural phylogenies? Proceedings. Biological sciences / The Royal Society 276.2299–306. doi:10.1098/rspb.2008.1944.
+Grollemund, Rebecca. 2012. Nouvelles approches en classification: Application aux langues Bantu du Nord-Ouest.
+Grollemund, Rebecca.; Simon Branford.; Koen Bostoen.; Andrew Meade.; Chris Venditti.; and Mark Pagel. 2015. Bantu expansion shows habitat alters the route and pace of human dispersals. Proceedings of the National Academy of Sciences of the USA. doi:10.1073/pnas.1503793112.
+Guillon, Myrtille.; and Ruth Mace. 2016. A phylogenetic comparative study of Bantu kinship terminology finds limited support for its co-evolution with social organisation. PLoS ONE 11.1–15. doi:10.1371/journal.pone.0147920.
+Haynie, Hannah J.; and Claire Bowern. 2016. Phylogenetic approach to the evolution of color term systems. Proceedings of the National Academy of Sciences 113.13666–13671. doi:10.1073/pnas.1613666113.
+Holden, Clare J.; and Russell D. Gray. 2006. Rapid Radiation, Borrowing and Dialect Continua in the Bantu Languages. Phylogenetic Methods and the Prehistory of Languages, 19–31. Cambridge: McDonald Institute for Archaeological Research.
+Holden, Clare J.; and Ruth Mace. 2005. “The cow is the enemy of matriliny”: Using phylogenetic methods to investigate cultural evolution in Africa. The evolution of cultural diversity: a phylogenetic approach, ed. by R Mace, Clare J Holden, and Stephen J Shennan, 217–234. London: UCL Press. http://eprints.ucl.ac.uk/15382.
+Holden, Clare J.; and Stephen J Shennan. 2005. How tree-like is cultural evolution? The evolution of cultural diversity: a phylogenetic approach, ed. by Ruth Mace, Clare J Holden, and Stephen J Shennan, 13–30. London: UCL PRess.
+Howe, Christopher J.; A C Barbrook.; M Spencer.; P Robinson.; B Bordalejo.; and L R Mooney. 2001. Manuscript Evolution. Trends in Genetics 17.147–152.
+Howe, Christopher J.; and Heather F Windram. 2011. Phylomemetics - Evolutionary Analysis beyond the Gene. PLoS Biology 9.1–5. doi:10.1371/journal.pbio.1001069.
+Howe, Christopher J.; R Connolly.; and Heather F Windram. 2012. Responding to Criticisms of Phylogenetic Methods in Stemmatology. SEL Studies in English Literature 52.51–67. doi:10.1353/sel.2012.0008.
+Hurles, Matthew E.; Elizabeth Matisoo-Smith.; Russell D. Gray.; and David Penny. 2003. Untangling Polynesian origins: the edge of the knowable. Trends in Ecology & Evolution 18. Elsevier Science.531–540. doi:10.1016/S0169-5347(03)00245-3.
+Jordan, Fiona M.; and Brad R Huber. 2013. Evolutionary Approaches to Cross-Cultural Anthropology. Cross-Cultural Research 47.91–101. doi:10.1177/1069397112471800.
+Jordan, Fiona Marie. 2007. A comparative phylogenetic approach to Austronesian cultural evolution. University College London.
+Jordan, Fiona Marie. 2011. A Phylogenetic Analysis of the Evolution of Austronesian Sibling Terminologies A Phylogenetic Analysis of the Evolution of Austronesian. Human Biology 83.297–321. doi:10.3378/027.083.0209.
+Jordan, Fiona Marie.; Russell D. Gray.; Simon J. Greenhill.; and Ruth Mace. 2009. Matrilocal residence is ancestral in Austronesian societies. Proceedings of the Royal Society B: Biological Sciences 276.1957–64. doi:10.1098/rspb.2009.0088.
+Jordan, Peter.; and Sean O’Neill. 2010. Untangling cultural inheritance: language diversity and long-house architecture on the Pacific northwest coast. Philosophical transactions of the Royal Society of London. Series B, Biological sciences 365.3875–88. doi:10.1098/rstb.2010.0092.
+Jordan, Peter.; and Stephen Shennan. 2009. Diversity in hunter–gatherer technological traditions: Mapping trajectories of cultural ‘descent with modification’ in northeast California. Journal of Anthropological Archaeology 28. Elsevier Inc.342–365. doi:10.1016/j.jaa.2009.05.004.
+Kolipakam, Vishnupriya.; Fiona M Jordan.; Michael Dunn.; Simon J Greenhill.; Remco Bouckaert.; Russell D Gray.; and Annemarie Verkerk. 2018. A Bayesian phylogenetic study of the Dravidian language family. Royal Society Open Science 5.171504. doi:10.1098/rsos.171504.
+Kraaijeveld, Alex R. 1999. Origin of chess - a phylogenetic perspective. Journal of Board Game Studies 3 3.39–50.
+Larsen, Anna W. 2011. Evolution of Polynesian bark cloth and factors influencing cultural change. Journal of Anthropological Archaeology 30. Elsevier Inc.116–134. doi:10.1016/j.jaa.2010.12.004.
+Lee, S.; and T Hasegawa. 2014. Oceanic barriers promote language diversification in the Japanese Islands. Journal of evolutionary biology 27.1905–12. doi:10.1111/jeb.12442.
+Lee, Sean. 2015. A Sketch of Language History in the Korean Peninsula. Plos One 10.e0128448. doi:10.1371/journal.pone.0128448.
+Lee, Sean.; and Toshikazu Hasegawa. 2011. Bayesian phylogenetic analysis supports an agricultural origin of Japonic languages. Proceedings of the Royal Society B: Biological Sciences 278.3662–9. doi:10.1098/rspb.2011.0518.
+Levinson, Stephen C.; Simon J. Greenhill.; Russell D. Gray.; and Michael Dunn. 2011. Universal typological dependencies should be detectable in the history of language families. Linguistic Typology 15.509–534. doi:10.1515/LITY.2011.034.
+Lycett, Stephen J. 2007. Why is there a lack of Mode 3 Levallois technologies in East Asia? A phylogenetic test of the Movius–Schick hypothesis. Journal of Anthropological Archaeology 26.541–575. doi:10.1016/j.jaa.2007.07.003.
+Lycett, Stephen J.; Mark Collard.; and William C McGrew. 2007. Phylogenetic analyses of behavior support existence of culture among wild chimpanzees. Proceedings of the National Academy of Sciences of the United States of America 104.17588–92. doi:10.1073/pnas.0707930104.
+Lycett, Stephen J.; Mark Collard.; and William C McGrew. 2009. Cladistic analyses of behavioural variation in wild Pan troglodytes: exploring the chimpanzee culture hypothesis. Journal of human evolution 57. Elsevier Ltd.337–49. doi:10.1016/j.jhevol.2009.05.015.
+Lycett, Stephen J.; Mark Collard.; and William C McGrew. 2010. Are behavioral differences among wild chimpanzee communities genetic or cultural? An assessment using tool-use data and phylogenetic methods. American journal of physical anthropology 142.461–7. doi:10.1002/ajpa.21249.
+Mace, R. 2005. On the use of phylogenetic comparative methods to test co-evolutionary hypotheses across cultures. The evolution of cultural diversity: a phylogenetic approach, ed. by R Mace, Clare J Holden, and Stephen J Shennan, 199–206. London: UCL Press.
+Mace, R.; and Clare J Holden. 2005. A phylogenetic approach to cultural evolution. Trends in Ecology & Evolution 20.116–121.
+Mace, R.; and Fiona Marie Jordan. 2011. Macro-evolutionary studies of cultural diversity: a review of empirical studies of cultural transmission and cultural adaptation. Philosophical Transactions of the Royal Society B: Biological Sciences 366.402–411. doi:10.1098/rstb.2010.0238.
+Mace, R.; and Mark Pagel. 1994. The Comparative Method in Anthropology. Current Anthropology 35.549–564.
+Mace, Ruth.; and Fiona Marie Jordan. 2005. The evolution of human sex ratio at birth: A bio-cultural analysis. The evolution of cultural diversity: a phylogenetic approach, ed. by R Mace, Clare J Holden, and Stephen J Shennan, 207–216. London: UCL Press.
+Mace, Ruth.; and Mark Pagel. 1997. Phylogenies and Cultural Evolution. Journal of Theoretical Biology 351.349–351.
+Mace, Ruth.; Clare J Holden.; and Stephen J Shennan. 2005. The Evolution of Cultural Diversity: A phylogenetic approach. (Ed.) R Mace, Clare J Holden, and Stephen J Shennan. London: UCL Press.
+Matthews, Luke J.; Jamie J Tehrani.; Fiona M Jordan.; Mark Collard.; and Charles L Nunn. 2011. Testing for divergent transmission histories among cultural characters: a study using Bayesian phylogenetic methods and Iranian tribal textile data. PloS one 6.e14810. doi:10.1371/journal.pone.0014810.
+Mattos, Ana Paulla Braga.; and Márcia Santos Duarte Oliveira. 2020. Kalunga in the lusophone context: A phylogenetic study. Journal of Portuguese Linguistics 19.2. doi:10.5334/jpl.224.
+Minocher, Riana.; Pavel Duda.; and Adrian V. Jaeggi. 2019. Explaining marriage patterns in a globally representative sample through socio-ecology and population history: A Bayesian phylogenetic analysis using a new supertree. Evolution and Human Behavior 40.176–187. doi:10.1016/j.evolhumbehav.2018.11.003.
+Nelson-Sathi, Shijulal.; Johann-Mattis List.; Hans Geisler.; Heiner Fangerau.; Russell D. Gray.; William Martin.; and Tal Dagan. 2011. Networks uncover hidden lexical borrowing in Indo-European language evolution. Proceedings of the Royal Society B: Biological Sciences 278.1794–803. doi:10.1098/rspb.2010.1917.
+Nicholls, Geoff K.; and Russell D. Gray. 2006. Dated ancestral trees from binary trait data. Journal of the Royal Statistical Society: Series B (Statistical Methodology) 70.545–566. doi:10.1111/j.1467-9868.2007.00648.x.
+Oskolskaya, Sofia.; Ezequiel Koile.; and Martine Robbeets. 2021. A Bayesian approach to the classification of Tungusic languages. Diachronica. doi:10.1075/dia.20010.osk. http://www.jbe-platform.com/content/journals/10.1075/dia.20010.osk.
+O’Brien, Michael J.; and R Lee Lyman. 2005. Cultural Phylogenetic hypotheses in Archaeology: Some fundamental issues. The evolution of cultural diversity: a phylogenetic approach, ed. by R Mace, Clare J Holden, and Stephen J Shennan, 85–108. London: UCL Press.
+O’Brien, Michael J.; and Stephen J Shennan. 2010. Innovation in Cultural Systems: Contributions from Evolutionary Anthropology. Cambridge, Massachusetts: MIT Press.
+O’Brien, Michael J.; J Darwent.; and R Lee Lyman. 2001. Cladistics Is Useful for Reconstructing Archaeological Phylogenies: Palaeoindian Points from the Southeastern United States. Journal of Archaeological Science 28.1115–1136. doi:10.1006/jasc.2001.0681.
+Pagel, M.; Q. D. Atkinson.; A. S. Calude.; and A. Meade. 2013. Ultraconserved words point to deep language ancestry across Eurasia. Proceedings of the National Academy of Sciences 110.8471–8476. doi:10.1073/pnas.1218726110.
+Pagel, Mark.; and Andrew Meade. 2005. Bayesian estimation of correlated evolution across cultures: A case study of marriage systems and wealth transfer at marriage. The evolution of cultural diversity: a phylogenetic approach, ed. by Ruth Mace, Clare J Holden, and Stephen J Shennan, 235–256. London: UCL Press.
+Pagel, Mark.; and Andrew Meade. 2017. The deep history of the number words. Philosophical Transactions of the Royal Society B: Biological Sciences 373.20160517. doi:10.1098/rstb.2016.0517.
+Pappas, Panayiotis A.; and Arne O Mooers. 2011. Phylogenetic Methods in Historical Linguistics : Greek as a Case Study. Journal of Greek Linguistics 11.198–220. doi:10.1163/156658411X600007.
+Pavlek, Barbara.; James Winters.; and Olivier Morin. 2019. Ancient coin designs encoded increasing amounts of economic information over centuries. Journal of Anthropological Archaeology 56.101103. doi:10.1016/j.jaa.2019.101103.
+Ritchie, Andrew M.; and Simon Y W Ho. 2019. Influence of the tree prior and sampling scale on Bayesian phylogenetic estimates of the origin times of language families. Journal of Language Evolution 4.108–123. doi:10.1093/jole/lzz005.
+Rogers, D S.; Marcus W Feldman.; and P.R. Ehrlich. 2009. Inferring population histories using cultural data. Proceedings of the Royal Society of London, Series B, Biological Sciences 276.3835–3843.
+Rogers, D.S.; and P.R. Ehrlich. 2008a. Natural selection and cultural rates of change. Proceedings of the National Academy of Sciences 105. National Acad Sciences.3416. doi:10.1073/pnas.0711802105.
+Rogers, D.S.; and P.R. Ehrlich. 2008b. Reply to Skoyles: Natural selection does appear to explain some cultural rates of change. Proceedings of the National Academy of Sciences 105.E28–E28. doi:10.1073/pnas.0803570105.
+Saunders, Arpiar. 2005. Linguistic Phylogenetics of the Austronesian Family: A Performance Review of Methods Adapted from Biology.
+Savelyev, Alexander.; and Martine Robbeets. 2020. Bayesian phylolinguistics infers the internal structure and the time-depth of the Turkic language family. Journal of Language Evolution 5.39–53. doi:10.1093/jole/lzz010.
+Shennan, Stephen J.; and Mark Collard. 2005. Investigating processes of cultural evolution on the north coast of New Guinea with multivariate and cladistic analyses. The evolution of cultural diversity: a phylogenetic approach, ed. by R Mace, Clare J Holden, and Stephen J Shennan, 133–164. London: UCL Press.
+Shennan, Stephen. 2008a. Evolution in Archaeology. Annual Review of Anthropology 37.75–91. doi:10.1146/annurev.anthro.37.081407.085153.
+Shennan, Stephen. 2008b. Canoes and cultural evolution. Proceedings of the National Academy of Sciences of the United States of America 105.3175–6. doi:10.1073/pnas.0800666105.
+Skoyles, John R. 2008. Natural selection does not explain cultural rates of change. Proceedings of the National Academy of Sciences of the United States of America 105.E27; author reply E28. doi:10.1073/pnas.0802586105.
+Stubbersfield, J.; and J. Tehrani. 2012. Expect the Unexpected? Testing for Minimally Counterintuitive (MCI) Bias in the Transmission of Contemporary Legends: A Computational Phylogenetic Approach. Social Science Computer Review 31.90–102. doi:10.1177/0894439312453567.
+Surowiec, Alexandra.; Kate T. Snyder.; and Nicole Creanza. 2019. A worldwide view of matriliny: using cross-cultural analyses to shed light on human kinship systems. Philosophical Transactions of the Royal Society B: Biological Sciences 374.20180077. doi:10.1098/rstb.2018.0077.
+Szeto, Pui Yiu.; Umberto Ansaldo.; and Stephen Matthews. 2018. Typological variation across Mandarin dialects: An areal perspective with a quantitative approach. Linguistic Typology 22.233–275. doi:10.1515/lingty-2018-0009.
+Temkin, Ilya.; and Niles Eldredge. 2007. Phylogenetics and Material Cultural Evolution. Current Anthropology 48. UChicago Press.146–154. doi:10.1086/510463.
+Walker, R. S.; and L. A. Ribeiro. 2011. Bayesian phylogeography of the Arawak expansion in lowland South America. Proceedings of the Royal Society B: Biological Sciences. doi:10.1098/rspb.2010.2579. http://www.ncbi.nlm.nih.gov/pubmed/21247954.
+Walker, R. S.; Mark V Flinn.; and Kim R Hill. 2010. Evolutionary history of partible paternity in lowland South America. Proceedings of the National Academy of Sciences. doi:10.1073/pnas.1002598107. http://www.pnas.org/cgi/doi/10.1073/pnas.1002598107.
+Walker, Robert S.; and Marcus J. Hamilton. 2010. Social complexity and linguistic diversity in the Austronesian and Bantu population expansions. Proceedings. Biological sciences / The Royal Society. doi:10.1098/rspb.2010.1942. http://www.ncbi.nlm.nih.gov/pubmed/20961903.
+Walker, Robert S.; Kim R Hill.; Mark V Flinn.; and Ryan M Ellsworth. 2011. Evolutionary History of Hunter-Gatherer Marriage Practices. (Ed.) Pawel Michalak. PLoS ONE 6.e19066. doi:10.1371/journal.pone.0019066.
+Watts, Joseph.; Oliver Sheehan.; Joseph Bulbulia.; Russell D. Gray.; and Quentin D. Atkinson. 2018. Christianity spread faster in small, politically structured societies. Nature Human Behaviour. doi:10.1038/s41562-018-0379-3. http://www.nature.com/articles/s41562-018-0379-3.
+Widmer, Manuel.; Sandra Auderset.; Johanna Nichols.; Paul Widmer.; and Balthasar Bickel. 2017. NP recursion over time: Evidence from Indo-European. Language 93.799–826. doi:10.1353/lan.2017.0058.
+Windram, Heather F.; Christopher J Howe.; and M Spencer. 2005. The Identification of Exemplar Change in the Wife of Bath’s Prologue Using the Maximum Chi-Squared Method. Literary and Linguistic Computing 20.189–204.
+Windram, Heather F.; P. Shaw.; P. Robinson.; and Christopher J Howe. 2008. Dante’s Monarchia as a test case for the use of phylogenetic methods in stemmatic analysis. Literary and Linguistic Computing 23.443–463. doi:10.1093/llc/fqn023.
+Yanovich, Igor. 2020. Phylogenetic linguistic evidence and the Dene-Yeniseian homeland. Diachronica 37.410–446. doi:10.1075/dia.17038.yan.
+Zemánek, Petr. 2018. The limits and potentials of cladistics in Semitic. Current Issues in Linguistic Theory, ed. by Mauro Tosco, 339:23–39. Amsterdam: John Benjamins Publishing Company. doi:10.1075/cilt.339.03zem. https://benjamins.com/catalog/cilt.339.03zem.
+Zhou, Kevin.; and Claire Bowern. 2015. Quantifying uncertainty in the phylogenetics of Australian numeral systems. Proceedings of the Royal Society B: Biological Sciences 282.20151278.
+
+Carling, Gerd.; and Chundra Cathcart. 2021. Reconstructing the evolution of Indo-European grammar. Language 97. Linguistic Society of America.561–598. doi:10.1353/lan.2021.0047.
+Hübler, Nataliia. 2022. Phylogenetic signal and rate of evolutionary change in language structures. Royal Society Open Science 9. Royal Society.211252. doi:10.1098/rsos.211252.
+Macklin-Cordes, Jayden L.; Claire Bowern.; and Erich R. Round. 2021. Phylogenetic signal in phonotactics. Diachronica 38. John Benjamins.210–258. doi:10.1075/dia.20004.mac.
+Opie, Christopher.; Susanne Shultz.; Quentin D. Atkinson.; Thomas Currie.; and Ruth Mace. 2014. Phylogenetic reconstruction of Bantu kinship challenges Main Sequence Theory of human social evolution. Proceedings of the National Academy of Sciences 111. Proceedings of the National Academy of Sciences.17414–17419. doi:10.1073/pnas.1415744111.
+Power, Justin M.; Guido W. Grimm.; and Johann-Mattis List. Evolutionary dynamics in the dispersal of sign languages. Royal Society Open Science 7. Royal Society.191100. doi:10.1098/rsos.191100.
+Sheard, Catherine.; Claire Bowern.; Rikker Dockum.; and Fiona M. Jordan. 2020. Pama–Nyungan grandparent systems change with grandchildren, but not cross-cousin terms or social norms. Evolutionary Human Sciences 2. Cambridge University Press. doi:10.1017/ehs.2020.31. https://www.cambridge.org/core/journals/evolutionary-human-sciences/article/pamanyungan-grandparent-systems-change-with-grandchildren-but-not-crosscousin-terms-or-social-norms/FD3DD720CEA3415016927CE1BBF3A4C2.
+Yanovich, Igor. Phylogenetic linguistic evidence and the Dene-Yeniseian homeland. dia.17038.yan. John Benjamins Publishing Company. https://benjamins.com/catalog/dia.17038.yan.
+Zhang, Hanzhi.; Ting Ji.; Mark Pagel.; and Ruth Mace. 2020. Dated phylogeny suggests early Neolithic origin of Sino-Tibetan languages. Scientific Reports 10. Nature Publishing Group.20792. doi:10.1038/s41598-020-77404-4.
+atkinson2006/
+birchall_et_al2016/
+bouckaert_et_al2012/
+bouckaert_et_al2018/
+bowern_and_atkinson2012/
+ceolin_et_al2020/
+chacon_and_list2015/
+chang_et_al2015/
+defilippo_et_al2012/
+dunn_et_al2011/
+gerardi_and_reichert2021/
+gray_and_atkinson2003/
+gray_and_jordan2000/
+gray_et_al2009/
+greenhill2015/
+greenhill_et_al_subm/
+grollemund_et_al2015/
+heggarty_et_al_subm/
+honkola_et_al2013/
+hruschka_et_al2015/
+jaeger2018/
+kaiping_and_klamer2022/
+kitchen_et_al2009/
+koile_et_al_subm/
+kolipakam_et_al2018/
+lee2015/
+lee_and_hasegawa2011/
+lee_and_hasegawa2013/
+michael_et_al2015/
+nagaraja_et_al2013/
+oskolskaya_et_al2021/
+power_et_al2020/
+robbeets_and_bouckaert2018/
+robbeets_et_al2021/
+robinson_and_holton2012/
+sagart_et_al2019/
+savelyev_and_robbeets2020/
+sicoli_and_holton2014/
+walker_and_ribeiro2011/
+wheeler_and_whiteley2014/
+zhang_et_al2019/
+zhang_et_al2020/

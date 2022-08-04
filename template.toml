@@ -1,0 +1,55 @@
+title = ""
+
+doi = ""
+
+# short description of the study.
+description = """
+"""
+
+# description of the findings
+results = """
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+]
+
+# parts of the world
+region = 'global'
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = ""  # @xxxx
+
+# type of study
+type = []  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = ""
+
+# name of publication
+publication = ""
+
+# data
+[data]
+    [data.bantu]
+    ntaxa = 95
+    nchars = 100
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Holden2005'
+    
+
+# analysis information
+[analysis]
+# lexical term
+    [analysis.tree]
+    tool = ''
+    model = ''
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+lexibank = { title = "Lexibank Dataset", link = "" }
+links = []

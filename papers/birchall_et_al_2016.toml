@@ -1,0 +1,81 @@
+
+title = "A combined comparative and phylogenetic analysis of the Chapacuran language family"
+
+doi = "10.1086/687383"
+
+abstract = """The Chapacuran language family, with three extant members and nine historically attested lects, has yet to be classified following modern standards in historical linguistics. This paper presents an internal classification of these languages by combining both the traditional comparative method (CM) and Bayesian phylogenetic inference (BPI). We identify multiple systematic sound correspondences and 285 cognate sets of basic vocabulary using the available documentation. These allow us to reconstruct a large portion of the Proto-Chapacuran phonemic inventory and identify tentative major subgroupings. The cognate sets form the input for the BPI analysis, which uses a stochastic Continuous-Time Markov Chain to model the change of these cognate sets over time. We test various models of lexical substitution and evolutionary clocks, and use ethnohistorical information and data collection dates to calibrate the resulting trees. The CM and BPI analyses produce largely congruent results, suggesting a division of the family into three different clades."""
+
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Joshua Birchall",
+    "Michael Dunn",
+    "Simon J. Greenhill"
+]
+
+# parts of the world
+groups = ["Chapacuran"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Birchall_et_al2016"
+
+# type of study
+type = ["phylogenetic", "network", "delta", "qresidual"]
+
+# short label of taxa "37 languages from.."
+taxa = "10 Chapacuran languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 10
+    nchars = 207
+    nsites = 285
+    datatype = 'lexical cognates'
+    source = ''
+    
+
+# analysis information
+[analysis]
+# lexical term
+    [analysis.tree1]
+    tool = 'beast1'
+    model = 'ctmc+strict'
+    details = ""
+
+    [analysis.tree2]
+    tool = 'beast1'
+    model = 'ctmc+relaxed'
+    details = "best fitting model"
+
+    [analysis.tree3]
+    tool = 'beast1'
+    model = 'stochastic dollo+strict'
+    details = ""
+
+    [analysis.tree4]
+    tool = 'beast1'
+    model = 'stochastic dollo+relaxed'
+    details = ""
+
+    [analysis.neighbornet]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+
+    [analysis.delta]
+    tool = 'splitstree'
+    model = 'delta'
+    details = ""
+
+    [analysis.qresidual]
+    tool = 'splitstree'
+    model = 'qresidual'
+    details = ""
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/birchall_et_al2016" }
+lexibank = { title = "Lexibank Dataset", link = "https://github.com/lexibank/birchallchapacuran" }
+links = []

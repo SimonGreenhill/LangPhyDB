@@ -1,0 +1,8 @@
+
+birchall_et_al2016:
+
+> To quantify the degree of conflicting signal in these data, we calculated two statistics, the δ-score (Holland et al.
+> 2002) and the Q-residual (Gray, Bryant, and Greenhill 2010). These two statistics provide a quantitative measure of how
+> much conflict (or reticulation) there is in the network. The mean δ-score for these languages was 0.262 (s.d. = 0.033) and
+> the mean Q-residual score was 0.016 (s.d. = 0.004).
+

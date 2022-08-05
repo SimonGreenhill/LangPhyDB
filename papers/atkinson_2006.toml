@@ -3,11 +3,9 @@ title = "From Species to Languages: a phylogenetic approach to human prehistory"
 
 doi = ""
 
-# short description of the study.
-description = "A phylogenetic analysis of Mayan languages"
-
-# description of the findings
-results = "Mean divergence time estimates for the age at the root of the Mayan langua ge tree under both models were approximately 6,000 to 6,500 years"
+abstract = """
+Linguistic evidence plays an important role in our understanding of Mayan prehistory. How ever, traditional linguistic methods have a number of limitations. Language family trees ba sed on the "comparative method" yield a relative chronology of lineage divergence events, but cannot quantify uncertainty or provide absolute divergence dates. An alternative method, glottochronology, attempts to provide absolute dates but these estimates are generally thought to be unreliable, due largely to the assumption of a universal and constant rate of lexical replacement. The paucity of alternative historical sources has meant that , despite these problems, theories of Mayan origin and diversity have utilized glottochronology-based divergence time estimates. Here, we apply stochastic models of language evolution and computational phylogenetic methods to Mayan lexical data to infer the relationships within the Mayan language family and to estimate confidence intervals for lineage divergence times without the assumption of rate constancy. Our analyses highlight a number of areas of uncertainty in Mayan language relation ships. Divergence time estimates also showed uncertainty but suggest the family may be older than previously thought. We evaluate how these results relate to existing archaeological and linguistic evidence for the origin and diversification of the Mayan language family. We conclude with suggestions for future research including ways to improve the precision of date estimates.
+"""
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = [

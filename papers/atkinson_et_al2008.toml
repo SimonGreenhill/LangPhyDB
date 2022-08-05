@@ -2,22 +2,8 @@ title = "Languages Evolve in Punctuational Bursts"
 
 doi = "10.1126/science.1149683"
 
-# short description of the study.
-description = """
-A test of whether languages evolve in punctuational bursts.
-"""
-
-# Description of the findings
-results = """
-Linguists speculate that human languages often evolve in rapid or
-punctuational bursts, sometimes associated with their emergence from other
-languages, but this phenomenon has never been demonstrated. We used vocabulary
-data from three of the world's major language groups—Bantu, Indo-European, and
-Austronesian—to show that 10 to 33% of the overall vocabulary differences among
-these languages arose from rapid bursts of change associated with
-language-splitting events. Our findings identify a general tendency for increased
-rates of linguistic evolution in fledgling languages, perhaps arising from a
-linguistic founder effect or a desire to establish a distinct social identity.
+abstract = """
+American English emerged abruptly when Noah Webster introduced his American Dictionary of the English Language, insisting that "as an independent nation, our honor requires us to have a system of our own, in language as well as government" (1). Punctuational or rapid bursts of change associated with the emergence of new languages, or at later language contact, have been proposed as an important feature of language evolution (2, 3), echoing a long-standing parallel debate in biology (4, 5)
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill

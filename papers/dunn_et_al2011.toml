@@ -2,21 +2,8 @@ title = "Evolved structure of language shows lineage-specific trends in word-ord
 
 doi = "10.1038/nature09923"
 
-# short description of the study.
-description = """
-Modelling the constraints on word order universals
-"""
-
-# Description of the findings
-results = """
-Contrary to the generative account of parameter setting, we show
-that the evolution of only a few word-order features of languages are strongly
-correlated. Second, contrary to the Greenbergian generalizations, we show that
-most observed functional dependencies between traits are lineage-specific rather
-than universal tendencies. These findings support the view that—at least with
-respect to word order—cultural evolution is the primary factor that determines
-linguistic structure, with the current state of a linguistic system shaping and
-constraining future states.
+abstract = """
+Languages vary widely but not without limit. The central goal of linguistics is to describe the diversity of human languages and explain the constraints on that diversity. Generative linguists following Chomsky have claimed that linguistic diversity must be constrained by innate parameters that are set as a child learns a language1,2. In contrast, other linguists following Greenberg have claimed that there are statistical tendencies for co-occurrence of traits reflecting universal systems biases3,4,5, rather than absolute constraints or parametric variation. Here we use computational phylogenetic methods to address the nature of constraints on linguistic diversity in an evolutionary framework6. First, contrary to the generative account of parameter setting, we show that the evolution of only a few word-order features of languages are strongly correlated. Second, contrary to the Greenbergian generalizations, we show that most observed functional dependencies between traits are lineage-specific rather than universal tendencies. These findings support the view that—at least with respect to word order—cultural evolution is the primary factor that determines linguistic structure, with the current state of a linguistic system shaping and constraining future states.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill

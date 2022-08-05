@@ -29,7 +29,6 @@ authors = [
 ]
 
 # parts of the world
-region = 'global'
 groups = ['Austronesian', 'Bantu', 'Indo-European', 'Uto-Aztecan']
 
 # bibkey citation in sources.bib
@@ -75,7 +74,7 @@ taxa = "79 Indo-European languages, 130 Austronesian languages, 66 Bantu languag
     ntaxa = 26
     nchars = 8
     nsites = 8
-    datatype = 'structural traits'
+    datatype = 'structural features'
     source = '@WALS'
     
 

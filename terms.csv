@@ -1,6 +1,7 @@
 term,label,description
 author,Quentin D. Atkinson,
 author,Michael Dunn,
+author,Russell D. Gray,
 author,Simon J. Greenhill,
 author,Stephen C. Levinson,
 author,Andrew Meade,
@@ -8,9 +9,10 @@ author,Mark Pagel,
 author,Chris Venditti,
 
 datatype,lexical cognates,
-datatype,structure features,
+datatype,structural features,
 
 tool,bayesphylogenies,http://www.evolution.reading.ac.uk/BayesPhy.html
+tool,bayestraits,http://www.evolution.reading.ac.uk/BayesTraits.html
 tool,beast,https://beast.community
 tool,beast2,http://www.beast2.org/
 tool,punctuatedwebapp,http://www.evolution.reading.ac.uk/pe/index.html

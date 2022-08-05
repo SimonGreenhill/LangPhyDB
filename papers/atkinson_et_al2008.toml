@@ -30,7 +30,6 @@ authors = [
 ]
 
 # parts of the world
-region = 'global'
 groups = ['Austronesian', 'Bantu', 'Indo-European']
 
 # bibkey citation in sources.bib

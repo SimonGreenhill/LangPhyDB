@@ -15,7 +15,6 @@ authors = [
 ]
 
 # parts of the world
-region = 'global'
 groups = []  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
@@ -26,9 +25,6 @@ type = []  # phylogenetic,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
 taxa = ""
-
-# name of publication
-publication = ""
 
 # data
 [data]

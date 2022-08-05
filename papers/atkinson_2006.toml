@@ -1,0 +1,92 @@
+
+title = "From Species to Languages: a phylogenetic approach to human prehistory"
+
+doi = ""
+
+# short description of the study.
+description = "A phylogenetic analysis of Mayan languages"
+
+# description of the findings
+results = "Mean divergence time estimates for the age at the root of the Mayan langua ge tree under both models were approximately 6,000 to 6,500 years"
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Quentin D. Atkinson"
+]
+
+# parts of the world
+groups = ["Mayan"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@atkinson2006"
+
+# type of study
+type = ["phylogenetic", "trait"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "30 Mayan languages"
+
+## Methods:
+# | Model                                | Score    | Program         | Comment            |
+# |--------------------------------------|----------|-----------------|--------------------|
+# | restriction site model               |          | MrBayes (3.1.1) |                    |
+# | dating                               |          | r8s 1.7         |                    |
+# | Stochastic Dollo                     |          | Traitlab        |                    |
+# | Phylogeography ASR                   |          | MacClade        |                    |
+# | Consensus Network                    |          | SplitsTree      |                    |
+# |                                      |          |                 |                    |
+
+
+
+## Analysis:
+
+# Both analyses were run for 1.3 million generations sampling every 1,000 trees. A
+# ‘burn-in’ period of 300,000 trees for each run was used to avoid sampling trees
+# before the run had reached convergence.
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 44
+    nchars = "100"
+    nsites = "~1200"
+    datatype = 'lexical cognates'
+    source = ''
+    
+
+# analysis information
+[analysis]
+    [analysis.mrbayes]
+    tool = 'mrbayes'
+    model = 'restriction site'
+    details = ""
+
+    [analysis.r8s]
+    tool = 'r8s'
+    model = ''
+    details = ""
+
+    [analysis.traitlab]
+    tool = 'traitlab'
+    model = 'stochastic dollo'
+    details = ""
+
+    [analysis.macclade]
+    tool = 'macclade'
+    model = 'asr'
+    details = "parsimony ASR of geographical location"
+
+    [analysis.neighbornet]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+
+    [analysis.consensusnetwork]
+    tool = 'splitstree'
+    model = 'consensus network'
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/atkinson2006" }
+links = []

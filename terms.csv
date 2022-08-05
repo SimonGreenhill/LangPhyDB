@@ -16,9 +16,13 @@ tool,bayestraits,http://www.evolution.reading.ac.uk/BayesTraits.html
 tool,beast,https://beast.community
 tool,beast2,http://www.beast2.org/
 tool,punctuatedwebapp,http://www.evolution.reading.ac.uk/pe/index.html
+tool,macclade,
 tool,mrbayes,http://nbisweden.github.io/MrBayes/
+tool,r8s,http://ceiba.biosci.arizona.edu/r8s/index.html
 tool,revbayes,https://revbayes.github.io/
+tool,splitstree,http://www.splitstree.org/
 tool,traitlab,https://sites.google.com/site/traitlab/
+
 
 type,phylogenetic,Inferring the phylogeny of the taxa
 type,phylogeography,Inferring the geography of the taxa

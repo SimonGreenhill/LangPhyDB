@@ -2,12 +2,7 @@ title = ""
 
 doi = ""
 
-# short description of the study.
-description = """
-"""
-
-# description of the findings
-results = """
+abstract = """
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill

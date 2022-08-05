@@ -39,22 +39,22 @@ taxa = "10 Chapacuran languages"
 [analysis]
 # lexical term
     [analysis.tree1]
-    tool = 'beast1'
+    tool = 'beast'
     model = 'ctmc+strict'
     details = ""
 
     [analysis.tree2]
-    tool = 'beast1'
+    tool = 'beast'
     model = 'ctmc+relaxed'
     details = "best fitting model"
 
     [analysis.tree3]
-    tool = 'beast1'
+    tool = 'beast'
     model = 'stochastic dollo+strict'
     details = ""
 
     [analysis.tree4]
-    tool = 'beast1'
+    tool = 'beast'
     model = 'stochastic dollo+relaxed'
     details = ""
 

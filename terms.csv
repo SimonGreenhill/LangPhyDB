@@ -24,9 +24,14 @@ tool,revbayes,https://revbayes.github.io/
 tool,splitstree,http://www.splitstree.org/
 tool,traitlab,https://sites.google.com/site/traitlab/
 
+tool,delta,
+tool,qresidual,
 
+type,delta,Reticulation metric delta
+type,macroevolutionary,Inferring macroevolutionary processes from the data
+type,network,Inferring the phylogenetic network of the taxa
 type,phylogenetic,Inferring the phylogeny of the taxa
 type,phylogeography,Inferring the geography of the taxa
-type,macroevolutionary,Inferring macroevolutionary processes from the data
 type,trait,Inferring trait history
+type,qresidual,Reticulation metric Q-Residual
 

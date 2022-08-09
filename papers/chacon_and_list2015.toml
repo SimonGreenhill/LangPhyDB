@@ -1,0 +1,58 @@
+
+title = "Improved computational models of sound change shed light on the history of the Tukanoan languages"
+
+doi = ""
+
+abstract = """There has been much debate regarding the internal history of the Tukanoan languages during the last four decades, with different classification proposals being based on lexical and phonological data. Here, we present a new classification of the Tukanoan language family based on an improved computational approach which infers phylogenetic trees from proposed sound change patterns. In contrast to traditional methods based on the manual identification of shared innovations by experts, our method identifies valid innovations within a parsimony framework. In contrast to existing computational models which are mostly based on binary character states for lexical data, we model sound change patterns as directed weighted transitions between multiple character states. We apply the new approach to a set of 21 extant Tukano languages. Our results confirm the east-west split of the Tukanoan languages which was proposed in the past and suggest a classification which groups Kubeo with Tanimuka on the one hand, and Koreguahe with Maihiki, on the other hand, thus reconciling previous classifications. We use this new classification to propose a consensus phylogeny of Tukanoan in which all automatically inferred shared innovations were manually checked and uncertainties are explicitly displayed."""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Thiago Costa Chacon",
+    "Johann-Mattis List"
+]
+
+# parts of the world
+groups = ["Tucanoan"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Chacon2015"
+
+# type of study
+type = ["parsimony"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "21 Tucanoan languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 21
+    nchars = 34
+    nsites = 34
+    datatype = 'phonetic traits'
+    source = ''
+    
+
+# analysis information
+[analysis]
+    [analysis.diwest]
+    tool = 'lingpy'
+    model = 'diwest'
+    details = ""
+
+    [analysis.fitch]
+    tool = 'lingpy'
+    model = 'fitch'
+    details = ""
+
+    [analysis.sankoff]
+    tool = 'lingpy'
+    model = 'sankoff'
+    details = ""
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/chacon_and_list2015" }
+lexibank = { }
+links = []

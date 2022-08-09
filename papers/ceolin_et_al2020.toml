@@ -87,17 +87,17 @@ taxa = "69 Indo-European & other languages"
     model = 'ctmc+relaxedclock(log)+coalescent(const)'
     details = ""
 
-    [analysis.beast6]
+    [analysis.beast7]
     tool = 'beast2'
     model = 'ctmc+relaxedclock(log)+coalescent(exp)'
     details = ""
     
-    [analysis.beast7]
+    [analysis.beast8]
     tool = 'beast2'
     model = 'ctmc+relaxedclock(log)+coalescent(bayes)'
     details = ""
     
-    [analysis.beast8]
+    [analysis.beast9]
     tool = 'beast2'
     model = 'ctmc+relaxedclock(log)+coalescent(extbayes)'
     details = ""

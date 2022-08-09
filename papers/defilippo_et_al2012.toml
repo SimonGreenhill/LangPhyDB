@@ -1,0 +1,51 @@
+
+title = "Bringing together linguistic and genetic evidence to test the Bantu expansion"
+
+doi = "10.1098/rspb.2012.0318"
+
+abstract = """
+The expansion of Bantu languages represents one of the most momentous events in the history of Africa. While it is well accepted that Bantu languages spread from their homeland (Cameroon/Nigeria) approximately 5000 years ago (ya), there is no consensus about the timing and geographical routes underlying this expansion. Two main models of Bantu expansion have been suggested: The ‘early-split’ model claims that the most recent ancestor of Eastern languages expanded north of the rainforest towards the Great Lakes region approximately 4000 ya, while the ‘late-split’ model proposes that Eastern languages diversified from Western languages south of the rainforest approximately 2000 ya. Furthermore, it is unclear whether the language dispersal was coupled with the movement of people, raising the question of language shift versus demic diffusion. We use a novel approach taking into account both the spatial and temporal predictions of the two models and formally test these predictions with linguistic and genetic data. Our results show evidence for a demic diffusion in the genetic data, which is confirmed by the correlations between genetic and linguistic distances. While there is little support for the early-split model, the late-split model shows a relatively good fit to the data. Our analyses demonstrate that subsequent contact among languages/populations strongly affected the signal of the initial migration via isolation by distance.""""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Cesare de Filippo",
+    "Koen Bostoen",
+    "Mark Stoneking",
+    "Brigitte Pakendorf"
+]
+
+# parts of the world
+groups = ["Bantu"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@de_Filippo_2012"
+
+# type of study
+type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "412 Bantu languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 412
+    nchars = 92
+    nsites = 2832
+    datatype = 'lexical cognates'
+    source = '@Bastinetal1999'
+    
+
+# analysis information
+[analysis]
+# lexical term
+    [analysis.tree]
+    tool = 'bayesphylogenies'
+    model = 'm1p+covarion'
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/defilippo_et_al2012" }
+lexibank = { title = "Lexibank Dataset", link = "" }
+links = []

@@ -1,0 +1,81 @@
+
+title = "The origin and expansion of Pama–Nyungan languages across Australia"
+
+doi = "10.1038/s41559-018-0489-3"
+
+abstract = ""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Remco Bouckaert",
+    "Claire Bowern",
+    "Quentin D. Atkinson"
+]
+
+# parts of the world
+groups = ["Pama-Nyungan"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Bouckaert2018"
+
+# type of study
+type = ["phylogenetic", "phylogeography"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "306 Pama-Nyungan languages"
+
+# data
+# We compiled a binary matrix representing the
+# presence (1) or absence (0) of 18,238 cognate sets
+# across 200 basic vocabulary terms in 306
+# Greater-Pama–Nyungan languages. T
+[data]
+    [data.lexicon]
+    ntaxa = 306
+    nchars = 200
+    nsites = 18238
+    datatype = 'lexical cognates'
+    source = ''
+    
+
+# analysis information
+[analysis]
+    [analysis.tree1]
+    tool = 'beast2'
+    model = 'covarion+relaxed+bdsky'
+    details = "best fitting model"
+
+    [analysis.tree2]
+    tool = 'beast2'
+    model = 'ctmc+gamma+relaxed+bdsky'
+    details = ""
+
+    [analysis.tree3]
+    tool = 'beast2'
+    model = 'ctmc+relaxed+bdsky'
+    details = ""
+
+    [analysis.tree4]
+    tool = 'beast2'
+    model = 'sdollo+relaxed+bdsky'
+    details = ""
+
+    [analysis.tree5]
+    tool = 'beast2'
+    model = 'covarion+relaxed+words+bdsky'
+    details = ""
+
+    [analysis.tree6]
+    tool = 'beast2'
+    model = 'covarion+strict+bdsky'
+    details = ""
+
+    [analysis.phylogeography]
+    tool = 'beast2'
+    model = 'relaxed-random-walk'
+    details = ""
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/bouckaert_et_al2018" }
+lexibank = { title = "Lexibank Dataset", link = "" }  # https://github.com/lexibank/lexibank/issues/195
+links = []

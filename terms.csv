@@ -1,37 +1,88 @@
 term,label,description
+author,Alexander V. Alekseyenko,
 author,Quentin D. Atkinson,
+author,Keith Bartolomei,
+author,Yvonne Bastin,
+author,Mahé Ben Hamed,
 author,Joshua Birchall,
+author,Remco Bouckaert,
+author,Claire Bowern,
+author,Natalia Chousou-Polydouri
+author,Erin Donnelly,
+author,Alexei J. Drummond,
+author,Márcia Santos Duarte Oliveira,
 author,Michael Dunn,
+author,Daniel Frynta,
 author,Russell D. Gray,
 author,Simon J. Greenhill,
+author,Guido W. Grimm,
+author,Toshikazu Hasegawa,
+author,Gary Holton,
+author,Terhi Honkola,
+author,Guillaume Jacques,
+author,Ezequiel Koile,
+author,Kalle Korhonen,
+author,Yunfan Lai,
+author,Sean Lee,
+author,Jyri Lehtinen,
+author,Philippe Lemey,
 author,Stephen C. Levinson,
+author,Johann-Mattis List,
+author,Ruth Mace,
 author,Andrew Meade,
+author,Lev Michael,
+author,K. S. Nagaraja,
+author,Zachary O'Hagan,
+author,Sofia Oskolskaya,
 author,Mark Pagel,
+author,Ana Paulla Braga Mattos,
+author,Justin M. Power,
+author,Kateřina Rexová,
+author,Martine Robbeets,
+author,Robin J. Ryder,
+author,Laurent Sagart,
+author,Alexander Savelyev,
+author,Mark A. Sicoli,
+author,Paul Sidwell,
+author,Marc A. Suchard,
+author,Kaj Syrjänen,
+author,Valentin Thouzeau,
 author,Chris Venditti,
+author,Outi Vesakoski,
+author,Niklas Wahlberg,
+author,Vivian Wauters,
+author,Ward C. Wheeler,
+author,Peter M. Whiteley,
+author,Ming Xue,
+author,Petr Zemánek,
+author,Jan Zrzavý,
+
 
 datatype,lexical cognates,
 datatype,structural features,
 
+tool,barrier
 tool,bayesphylogenies,http://www.evolution.reading.ac.uk/BayesPhy.html
 tool,bayestraits,http://www.evolution.reading.ac.uk/BayesTraits.html
 tool,beast,https://beast.community
 tool,beast2,http://www.beast2.org/
 tool,punctuatedwebapp,http://www.evolution.reading.ac.uk/pe/index.html
 tool,macclade,
+tool,mesquite,
 tool,mrbayes,http://nbisweden.github.io/MrBayes/
 tool,r8s,http://ceiba.biosci.arizona.edu/r8s/index.html
 tool,revbayes,https://revbayes.github.io/
 tool,splitstree,http://www.splitstree.org/
+tool,structure,
 tool,traitlab,https://sites.google.com/site/traitlab/
-
-tool,delta,
-tool,qresidual,
 
 type,delta,Reticulation metric delta
 type,macroevolutionary,Inferring macroevolutionary processes from the data
 type,network,Inferring the phylogenetic network of the taxa
 type,phylogenetic,Inferring the phylogeny of the taxa
 type,phylogeography,Inferring the geography of the taxa
+type,structure,structure analysis
 type,trait,Inferring trait history
+type,tiger,TIGER rates
 type,qresidual,Reticulation metric Q-Residual
 

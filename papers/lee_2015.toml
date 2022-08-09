@@ -1,0 +1,96 @@
+
+title = "A Sketch of Language History in the Korean Peninsula"
+
+doi = "10.1371/journal.pone.0128448"
+
+abstract = """
+Among 7100 languages spoken on Earth, the Koreanic language is the 13th largest, with about 77 million speakers in and around the Korean Peninsula. In comparison to other languages of similar size, however, surprisingly little is known about the evolution of the Koreanic language. This is mainly due to two reasons. The first reason is that the genealogical relationship of the Koreanic to other neighboring languages remains uncertain, and thus inference from the linguistic comparative method provides only provisional evidence. The second reason is that, as the ancestral Koreanic speakers lacked their own writing system until around 500 years ago, there are scant historical materials to peer into the past, except for those preserved in Sinitic characters that we have no straightforward way of interpreting. Here I attempt to overcome these disadvantages and shed some light on the linguistic history of the Korean Peninsula, by analyzing the internal variation of the Koreanic language with methods adopted from evolutionary biology. The preliminary results presented here suggest that the evolutionary history of the Koreanic language is characterized by a weak hierarchical structure, and intensive gene/culture flows within the Korean Peninsula seem to have promoted linguistic homogeneity among the Koreanic variants. Despite the gene/culture flows, however, there are still three detectable linguistic barriers in the Korean Peninsula that appear to have been shaped by geographical features such as mountains, elevated areas, and ocean. I discuss these findings in an inclusive manner to lay the groundwork for future studies."""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Sean Lee"
+]
+
+# parts of the world
+groups = ["Koreanic"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Lee2015"
+
+# type of study
+type = [
+    "network", "phylogenetic", "structure",
+    "phylogeography"
+]
+
+# short label of taxa "37 languages from.."
+taxa = "15 Koreanic languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 15
+    nchars = 246
+    nsites = 383
+    datatype = 'lexical cognates'
+    source = ''
+    
+
+# analysis information
+[analysis]
+# lexical term
+    [analysis.tree]
+    tool = 'beast'
+    model = 'covarion+relaxed'
+    details = "best fitting model"
+
+    [analysis.tree1]
+    tool = 'beast'
+    model = 'covarion+relaxed'
+    details = "best fitting model"
+
+    [analysis.tree2]
+    tool = 'beast'
+    model = 'covarion+strict'
+    details = ""
+
+    [analysis.tree3]
+    tool = 'beast'
+    model = 'ctmc+relaxed'
+    details = ""
+
+    [analysis.tree4]
+    tool = 'beast'
+    model = 'ctmc+gamma+relaxed'
+    details = ""
+
+    [analysis.tree5]
+    tool = 'beast'
+    model = 'ctmc+strict'
+    details = ""
+
+    [analysis.tree6]
+    tool = 'beast'
+    model = 'ctmc+gamma+strict'
+    details = ""
+
+    [analysis.neighbornet]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    
+    [analysis.structure]
+    tool = 'structure'
+    model = ''
+    details = ""
+
+    [analysis.barrier]
+    tool = 'barrier'
+    model = ''
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/lee2015" }
+lexibank = { title = "Lexibank Dataset", link = "https://github.com/lexibank/leekoreanic" }
+links = []

@@ -1,0 +1,89 @@
+
+title = "Mapping the Origins and Expansion of the Indo-European Language Family"
+
+doi = "10.1126/science.1219669"
+
+abstract = """There are two competing hypotheses for the origin of the Indo-European language family. The conventional view places the homeland in the Pontic steppes about 6000 years ago. An alternative hypothesis claims that the languages spread from Anatolia with the expansion of farming 8000 to 9500 years ago. We used Bayesian phylogeographic approaches, together with basic vocabulary data from 103 ancient and contemporary Indo-European languages, to explicitly model the expansion of the family and test these hypotheses. We found decisive support for an Anatolian origin over a steppe origin. Both the inferred timing and root location of the Indo-European language trees fit with an agricultural expansion from Anatolia beginning 8000 to 9500 years ago. These results highlight the critical role that phylogeographic inference can play in resolving debates about human prehistory."""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Remco Bouckaert",
+    "Philippe Lemey",
+    "Michael Dunn",
+    "Simon J. Greenhill",
+    "Alexander V. Alekseyenko",
+    "Alexei J. Drummond",
+    "Russell D. Gray",
+    "Marc A. Suchard",
+    "Quentin D. Atkinson"
+]
+
+# parts of the world
+groups = ["Indo-European"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Bouckaert2012"
+
+# type of study
+type = ["phylogenetic", "phylogeography"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "103 Indo-European languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 103
+    nchars = 207
+    nsites = 5047
+    datatype = 'lexical cognates'
+    source = '@IELex'
+    
+
+# analysis information
+[analysis]
+    [analysis.tree1]
+    tool = 'beast2'
+    model = 'ctmc+strict'
+    details = ""
+
+    [analysis.tree2]
+    tool = 'beast2'
+    model = 'ctmc+relaxed'
+    details = ""
+    
+    [analysis.tree3]
+    tool = 'beast2'
+    model = 'covarion+strict'
+    details = ""
+
+    [analysis.tree4]
+    tool = 'beast2'
+    model = 'covarion+relaxed'
+    details = "best fitting model"
+
+    [analysis.tree5]
+    tool = 'beast2'
+    model = 'sdollo+strict'
+    details = ""
+
+    [analysis.tree6]
+    tool = 'beast2'
+    model = 'sdollo+relaxed'
+    details = ""
+
+    [analysis.phylogeography1]
+    tool = 'beast2'
+    model = 'relaxed-random-walk'
+    details = ""
+
+    [analysis.phylogeography2]
+    tool = 'beast2'
+    model = 'brownian'
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/bouckaert_et_al2012" }
+lexibank = { title = "Lexibank Dataset", link = "https://github.com/lexibank/ielexfinal" }
+links = []

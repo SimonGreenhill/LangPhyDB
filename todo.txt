@@ -92,7 +92,6 @@ Greenhill et al. 2017
 * Yanovich, Igor. Phylogenetic linguistic evidence and the Dene-Yeniseian homeland. dia.17038.yan. John Benjamins Publishing Company. https://benjamins.com/catalog/dia.17038.yan.
 * Zhang, Hanzhi.; Ting Ji.; Mark Pagel.; and Ruth Mace. 2020. Dated phylogeny suggests early Neolithic origin of Sino-Tibetan languages. Scientific Reports 10. Nature Publishing Group.20792. doi:10.1038/s41598-020-77404-4.
 
-ceolin_et_al2020/
 chacon_and_list2015/
 chang_et_al2015/
 defilippo_et_al2012/
@@ -118,7 +117,6 @@ oskolskaya_et_al2021/
 power_et_al2020/
 robbeets_and_bouckaert2018/
 robbeets_et_al2021/
-robinson_and_holton2012/
 sagart_et_al2019/
 savelyev_and_robbeets2020/
 sicoli_and_holton2014/

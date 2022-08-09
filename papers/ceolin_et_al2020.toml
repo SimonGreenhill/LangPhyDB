@@ -42,11 +42,6 @@ taxa = "69 Indo-European & other languages"
     model = 'upgma'
     details = ""
 
-    [analysis.beast2]
-    tool = 'beast2'
-    model = 'upgma'
-    details = ""
-    
     [analysis.neighbornet]
     tool = 'splitstree'
     model = 'neighbornet'
@@ -62,6 +57,50 @@ taxa = "69 Indo-European & other languages"
     model = 'qresidual'
     details = ""
 
+    [analysis.beast1]
+    tool = 'beast2'
+    model = 'ctmc+relaxed(log)+yule'
+    details = "best-fitting model"
+
+    [analysis.beast2]
+    tool = 'beast2'
+    model = 'ctmc+relaxed(exp)+yule'
+    details = ""
+
+    [analysis.beast3]
+    tool = 'beast2'
+    model = 'ctmc+strict'
+    details = ""
+
+    [analysis.beast4]
+    tool = 'beast2'
+    model = 'stochasticdollo+relaxed(log)+yule'
+    details = ""
+
+    [analysis.beast5]
+    tool = 'beast2'
+    model = 'ctmc+randomclock+yule'
+    details = ""
+
+    [analysis.beast6]
+    tool = 'beast2'
+    model = 'ctmc+relaxedclock(log)+coalescent(const)'
+    details = ""
+
+    [analysis.beast6]
+    tool = 'beast2'
+    model = 'ctmc+relaxedclock(log)+coalescent(exp)'
+    details = ""
+    
+    [analysis.beast7]
+    tool = 'beast2'
+    model = 'ctmc+relaxedclock(log)+coalescent(bayes)'
+    details = ""
+    
+    [analysis.beast8]
+    tool = 'beast2'
+    model = 'ctmc+relaxedclock(log)+coalescent(extbayes)'
+    details = ""
     
     
 [links]

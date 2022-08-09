@@ -1,0 +1,72 @@
+
+title = "Computational phylogenetics and the internal structure of Pama-Nyungan"
+
+doi = "10.1353/lan.2012.0081"
+
+abstract = ""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Claire Bowern",
+    "Quentin D. Atkinson"
+]
+
+# parts of the world
+groups = ["Pama-Nyungan"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Bowern2012"
+
+# type of study
+type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "194 Pama-Nyungan languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 194
+    nchars = 189
+    nsites = 14613
+    datatype = 'lexical cognates'
+    source = ''
+    
+
+# analysis information
+[analysis]
+    [analysis.tree1]
+    tool = 'beast'
+    model = 'ctmc+strict'
+    details = ""
+
+    [analysis.tree2]
+    tool = 'beast'
+    model = 'covarion+strict'
+    details = ""
+
+    [analysis.tree3]
+    tool = 'beast'
+    model = 'stochasticdollo+strict'
+    details = ""
+
+    [analysis.tree4]
+    tool = 'beast'
+    model = 'stochasticdollo+relaxed'
+    details = "best fitting model"
+
+    [analysis.tree5]
+    tool = 'beast'
+    model = 'covarion+relaxed'
+    details = ""
+
+    [analysis.tree6]
+    tool = 'beast'
+    model = 'ctmc+relaxed'
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/bowern_and_atkinson2012" }
+lexibank = { }
+links = []

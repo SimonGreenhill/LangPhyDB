@@ -7,6 +7,7 @@ author,Mahé Ben Hamed,
 author,Joshua Birchall,
 author,Remco Bouckaert,
 author,Claire Bowern,
+author,Andrea Ceolin,
 author,Natalia Chousou-Polydouri
 author,Erin Donnelly,
 author,Alexei J. Drummond,
@@ -16,10 +17,13 @@ author,Daniel Frynta,
 author,Russell D. Gray,
 author,Simon J. Greenhill,
 author,Guido W. Grimm,
+author,Cristina Guardiano,
 author,Toshikazu Hasegawa,
 author,Gary Holton,
 author,Terhi Honkola,
+author,Monica Alexandrina Irimia,
 author,Guillaume Jacques,
+author,Fiona M. Jordan,
 author,Ezequiel Koile,
 author,Kalle Korhonen,
 author,Yunfan Lai,
@@ -28,6 +32,7 @@ author,Jyri Lehtinen,
 author,Philippe Lemey,
 author,Stephen C. Levinson,
 author,Johann-Mattis List,
+author,Giuseppe Longobardi,
 author,Ruth Mace,
 author,Andrew Meade,
 author,Lev Michael,
@@ -70,6 +75,7 @@ tool,punctuatedwebapp,http://www.evolution.reading.ac.uk/pe/index.html
 tool,macclade,
 tool,mesquite,
 tool,mrbayes,http://nbisweden.github.io/MrBayes/
+tool,phylip,
 tool,r8s,http://ceiba.biosci.arizona.edu/r8s/index.html
 tool,revbayes,https://revbayes.github.io/
 tool,splitstree,http://www.splitstree.org/
@@ -77,6 +83,7 @@ tool,structure,
 tool,traitlab,https://sites.google.com/site/traitlab/
 
 type,delta,Reticulation metric delta
+type,distance,1980s
 type,macroevolutionary,Inferring macroevolutionary processes from the data
 type,network,Inferring the phylogenetic network of the taxa
 type,phylogenetic,Inferring the phylogeny of the taxa

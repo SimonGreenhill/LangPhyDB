@@ -1,0 +1,70 @@
+
+title = "Formal Syntax and Deep History"
+
+doi = "10.3389/fpsyg.2020.488871"
+
+abstract = ""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Andrea Ceolin",
+    "Cristina Guardiano",
+    "Monica Alexandrina Irimia",
+    "Giuseppe Longobardi"
+]
+
+# parts of the world
+groups = ["Indo-European & others"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Ceolin_2020"
+
+# type of study
+type = ["phylogenetic", "distance", "delta", "qresidual"]
+
+# short label of taxa "37 languages from.."
+taxa = "69 Indo-European & other languages"
+
+# data
+[data]
+    [data.parameters]
+    ntaxa = 69
+    nchars = 94
+    nsites = 94
+    datatype = 'structural features'
+    source = ''
+    
+
+# analysis information
+[analysis]
+    [analysis.upgma]
+    tool = 'phylip'
+    model = 'upgma'
+    details = ""
+
+    [analysis.beast2]
+    tool = 'beast2'
+    model = 'upgma'
+    details = ""
+    
+    [analysis.neighbornet]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+
+    [analysis.delta]
+    tool = 'splitstree'
+    model = 'delta'
+    details = ""
+
+    [analysis.qresidual]
+    tool = 'splitstree'
+    model = 'qresidual'
+    details = ""
+
+    
+    
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/ceolin_et_al2020" }
+lexibank = {}
+links = []

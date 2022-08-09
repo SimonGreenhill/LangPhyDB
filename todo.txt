@@ -1,19 +1,17 @@
 
 https://doi.org/10.32473/sal.v45i1.107255
+Greenhill et al. 2017
 
 
 * Atkinson, Quentin D.; and Russell D. Gray. 2004a. How old is the Indo-European language family? - Illumination or more moths to the flame?
 * Atkinson, Quentin D.; and Russell D. Gray. 2004b. Are Accurate Dates an Intractable Problem for Historical Linguistics? Mapping our Ancestry: Phylogenetic Methods in Anthropology and Prehistory, ed. by M J Shennan S J Collard Mark Lipo C. O’Brien. Chicago: Aldine.
 * Atkinson, Quentin D.; and Russell D. Gray. 2005. Curious parallels and curious connections--phylogenetic thinking in biology and historical linguistics. Systematic Biology 54.513–26. doi:10.1080/10635150590950317.
 * Atkinson, Quentin D.; Geoff K. Nicholls.; David Welch.; and Russell D. Gray. 2005. From words to dates: water into wine, mathemagic or phylogenetic inference. Transactions of the Philological Society 103.193–219.
-* Bouckaert, Remco R.; Claire Bowern.; and Quentin D. Atkinson. 2018. The origin and expansion of Pama–Nyungan languages across Australia. Nature Ecology & Evolution. Springer US. doi:10.1038/s41559-018-0489-3. http://www.nature.com/articles/s41559-018-0489-3.
 * Bowern, Claire. 2010. Historical linguistics in Australia: trees, networks and their implications. Philosophical transactions of the Royal Society of London. Series B, Biological sciences 365.3845–54. doi:10.1098/rstb.2010.0013.
 * Bowern, Claire. 2012. The riddle of Tasmanian languages. Proceedings of the Royal Society B: Biological Sciences 279.4590–5. doi:10.1098/rspb.2012.1842.
-* Bowern, Claire.; and Quentin D. Atkinson. 2012. Computational phylogenetics and the internal structure of Pama-Nyungan. Language 88.817–845.
 * Bryant, David.; F. Filimon.; and Russell D. Gray. 2005. Untangling our past: Languages, trees, splits and networks. The evolution of cultural diversity: a phylogenetic approach, ed. by Ruth Mace, Clare J Holden, and Stephen J Shennan, 67–84. London: UCL PRess.
 * Chacon, Thiago Costa.; and Johann-Mattis List. 2015. Improved computational models of sound change shed light on the history of the Tukanoan languages. Journal of language lee 3.177–203.
 * Chang, Will.; Chundra Cathcart.; David Hall.; and Andrew Garrett. 2015. Ancestry-constrained phylogenetic analysis supports the Indo-European steppe hypothesis. Language 91.194–244. doi:10.1353/lan.2015.0005.
-* Currie, T. E. 2013. Cultural Evolution Branches Out: The Phylogenetic Approach in Cross-Cultural Research. Cross-Cultural Research. doi:10.1177/1069397112471803. http://ccr.sagepub.com/cgi/doi/10.1177/1069397112471803.
 * Currie, Thomas E.; and Ruth Mace. 2011. Mode and tempo in the evolution of socio-political organization: reconciling “Darwinian” and “Spencerian” evolutionary approaches in anthropology. Philosophical transactions of the Royal Society of London. Series B, Biological sciences 366.1108–17. doi:10.1098/rstb.2010.0318.
 * Currie, Thomas E.; Andrew Meade.; Myrtille Guillon.; and Ruth Mace. 2013. Cultural phylogeography of the Bantu Languages of sub-Saharan Africa. Proceedings of the Royal Society B: Biological Sciences 280.20130695. doi:10.1098/rspb.2013.0695.
 * Currie, Thomas E.; Simon J. Greenhill.; and R Mace. 2010. Is horizontal transmission really a problem for phylogenetic comparative methods? A simulation study using continuous cultural traits. Proceedings of the Royal Society B: Biological Sciences 365.3903–3912. doi:10.1098/rstb.2010.0014.
@@ -36,7 +34,6 @@ https://doi.org/10.32473/sal.v45i1.107255
 * Greenhill, Simon J.; and Russell D. Gray. 2012. Basic vocabulary and Bayesian phylolinguistics: Issues of understanding and representation. Diachronica 29.523–537. doi:10.1075/dia.29.4.05gre.
 * Greenhill, Simon J.; Chieh-Hsi Wu.; Xia Hua.; Michael Dunn.; Stephen C. Levinson.; and Russell D. Gray. 2017. Evolutionary dynamics of language systems. Proceedings of the National Academy of Sciences.201700388. doi:10.1073/pnas.1700388114.
 * Greenhill, Simon J.; Quentin D. Atkinson.; Andrew Meade.; and Russell D. Gray. 2010. The shape and tempo of language evolution. Proceedings of the Royal Society B: Biological Sciences 277. Department of Psychology, University of Auckland, Private Bag 92019, Auckland 1042, New Zealand. s.greenhill@auckland.ac.nz.2443–50. doi:10.1098/rspb.2010.0051.
-* Greenhill, Simon J.; Robert Blust.; and Russell D. Gray. 2008. The Austronesian Basic Vocabulary Database: From bioinformatics to lexomics. Evolutionary Bioinformatics 4.271–83.
 * Greenhill, Simon J.; Thomas E. Currie.; and Russell D. Gray. 2009. Does horizontal transmission invalidate cultural phylogenies? Proceedings. Biological sciences / The Royal Society 276.2299–306. doi:10.1098/rspb.2008.1944.
 * Grollemund, Rebecca. 2012. Nouvelles approches en classification: Application aux langues Bantu du Nord-Ouest.
 * Grollemund, Rebecca.; Simon Branford.; Koen Bostoen.; Andrew Meade.; Chris Venditti.; and Mark Pagel. 2015. Bantu expansion shows habitat alters the route and pace of human dispersals. Proceedings of the National Academy of Sciences of the USA. doi:10.1073/pnas.1503793112.
@@ -95,8 +92,6 @@ https://doi.org/10.32473/sal.v45i1.107255
 * Yanovich, Igor. Phylogenetic linguistic evidence and the Dene-Yeniseian homeland. dia.17038.yan. John Benjamins Publishing Company. https://benjamins.com/catalog/dia.17038.yan.
 * Zhang, Hanzhi.; Ting Ji.; Mark Pagel.; and Ruth Mace. 2020. Dated phylogeny suggests early Neolithic origin of Sino-Tibetan languages. Scientific Reports 10. Nature Publishing Group.20792. doi:10.1038/s41598-020-77404-4.
 
-bouckaert_et_al2018/
-bowern_and_atkinson2012/
 ceolin_et_al2020/
 chacon_and_list2015/
 chang_et_al2015/

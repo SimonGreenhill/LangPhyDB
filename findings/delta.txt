@@ -6,3 +6,6 @@ birchall_et_al2016:
 > much conflict (or reticulation) there is in the network. The mean δ-score for these languages was 0.262 (s.d. = 0.033) and
 > the mean Q-residual score was 0.016 (s.d. = 0.004).
 
+ceolin_et_al2020:
+
+> The median of the 1-scores is 0.302, and the variance is particularly low (standard deviation: 0.037). The 10 languages associated with the highest values (cf. Section “Network Analysis – NeighborNet” in Supplementary Material), i.e., those for which the signal is the least treelike, properly include the languages listed in (9)a, which correspond to the first two outlying branches of the BEAST tree (Mandarin, Cantonese, Korean, Japanese, the two Basque varieties, and Malagasy). The median of Q-residuals is 0.054, but in this case the variance is quite high, in proportion (standard deviation: 0.021). Again, among the languages with the 10 highest scores, six correspond to the outliers of the BEAST tree (Malagasy has the 11th Q-residual: 0.0805). In particular, while the mean for the 1-scores is the same as the median, the mean for the Q-residuals is higher (0.058), 

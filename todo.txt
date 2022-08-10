@@ -1,6 +1,5 @@
 
 https://doi.org/10.32473/sal.v45i1.107255
-Greenhill et al. 2017
 
 
 * Atkinson, Quentin D.; and Russell D. Gray. 2004a. How old is the Indo-European language family? - Illumination or more moths to the flame?
@@ -21,12 +20,7 @@ Greenhill et al. 2017
 * Dockum, R. (2018). Phylogeny in phonology: How Tai sound systems encode their past. In Proceedings of the Annual Meetings on Phonology, volume 5
 * Dunn, Michael.; Simon J. Greenhill.; S. C. Levinson.; and Russell D. Gray. 2011. Evolved structure of language shows lineage-specific trends in word-order universals. Nature 473. Nature Publishing Group.79–82. doi:10.1038/nature09923.
 * Gao, Tianjun. 2020. Reconstruction and analysis of phylogenetic network on Tibeto-Burman languages in China. Journal of Chinese Linguistics 48.257–293. doi:10.1353/jcl.2020.0006.
-* Gray, Russell D.; Alexei J Drummond.; and Simon J. Greenhill. 2009. Language phylogenies reveal expansion pulses and pauses in Pacific settlement. Science 323.479–83. doi:10.1126/science.1166858.
-* Gray, Russell D.; and Fiona Marie Jordan. 2000. Language trees support the express-train sequence of Austronesian expansion. Nature 405.1052–1055.
 * Gray, Russell D.; David Bryant.; and Simon J. Greenhill. 2010. On the shape and fabric of human history. Philosophical transactions of the Royal Society of London. Series B, Biological sciences 365.3923–33. doi:10.1098/rstb.2010.0162.
-* Gray, Russell D.; Quentin D. Atkinson.; and Simon J. Greenhill. 2011. Language evolution and human history: what a difference a date makes. Philosophical Transactions of the Royal Society B: Biological Sciences 366.1090–1100. doi:10.1098/rstb.2010.0378.
-* Gray, Russell D.; Simon J Greenhill.; and Quentin D Atkinson. 2013. Phylogenetic Models of Language Change Three New Questions. Cultural Evolution: Society, Technology, Language and Religion, ed. by Peter J Richerson and Morten H Christiansen, 12:285–300. Cambridge, Massachusetts: Cambridge University Press.
-* Gray, Russell D.; Simon J. Greenhill.; and R M Ross. 2007. The Pleasures and Perils of Darwinizing Culture (with phylogenies). Biological Theory 2. MIT Press.360–375.
 * Greenhill, Simon J. 2015. TransNewGuinea.org: An online database of New Guinea languages. PLoS ONE 10.1–17. doi:10.1371/journal.pone.0141563.
 * Greenhill, Simon J.; Alexei J Drummond.; and Russell D. Gray. 2010. How Accurate and Robust Are the Phylogenetic Estimates of Austronesian Language Relationships? PLoS ONE 5.e9573. doi:10.1371/journal.pone.0009573.
 * Greenhill, Simon J.; and Russell D. Gray. 2005. Testing population dispersal hypotheses: Pacific settlement, phylogenetic trees and Austronesian languages. The evolution of cultural diversity: a phylogenetic approach, ed. by R Mace, Clare J Holden, and Stephen J Shennan, 31–52. London: UCL Press.
@@ -94,8 +88,6 @@ Greenhill et al. 2017
 
 chang_et_al2015/
 gerardi_and_reichert2021/
-gray_and_jordan2000/
-gray_et_al2009/
 greenhill2015/
 greenhill_et_al_subm/
 grollemund_et_al2015/
@@ -164,3 +156,6 @@ zhang_et_al2020/
 * Atkinson, Quentin D. 2013. The descent of words. Proceedings of the National Academy of Sciences of the United States of America 110.4159–4160. doi:10.1073/pnas.1300397110.
 * Bowern, Claire. 2018. Computational Phylogenetics. Annual Review of Linguistics 4.281–296. doi:10.1146/annurev-linguistics-011516-034142.
 * Greenhill, Simon J.; and Russell D. Gray. 2009a. Darwin, language, and two great Pacific voyages. New Zealand Science Review 66.97–101.
+* Gray, Russell D.; Quentin D. Atkinson.; and Simon J. Greenhill. 2011. Language evolution and human history: what a difference a date makes. Philosophical Transactions of the Royal Society B: Biological Sciences 366.1090–1100. doi:10.1098/rstb.2010.0378.
+* Gray, Russell D.; Simon J Greenhill.; and Quentin D Atkinson. 2013. Phylogenetic Models of Language Change Three New Questions. Cultural Evolution: Society, Technology, Language and Religion, ed. by Peter J Richerson and Morten H Christiansen, 12:285–300. Cambridge, Massachusetts: Cambridge University Press.
+* Gray, Russell D.; Simon J. Greenhill.; and R M Ross. 2007. The Pleasures and Perils of Darwinizing Culture (with phylogenies). Biological Theory 2. MIT Press.360–375.

@@ -1,0 +1,66 @@
+
+title = "Language Phylogenies Reveal Expansion Pulses and Pauses in Pacific Settlement."
+
+doi = "10.1126/science.1166858"
+
+abstract = """
+Debates about human prehistory often center on the role that population expansions play in shaping biological and cultural diversity. Hypotheses on the origin of the Austronesian settlers of the Pacific are divided between a recent “pulse-pause” expansion from Taiwan and an older “slow-boat” diffusion from Wallacea. We used lexical data and Bayesian phylogenetic methods to construct a phylogeny of 400 languages. In agreement with the pulse-pause scenario, the language trees place the Austronesian origin in Taiwan approximately 5230 years ago and reveal a series of settlement pauses and expansion pulses linked to technological and social innovations. These results are robust to assumptions about the rooting and calibration of the trees and demonstrate the combined power of linguistic scholarship, database technologies, and computational phylogenetic methods for resolving questions about human prehistory.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Russell D. Gray",
+    "Alexei J. Drummond",
+    "Simon J. Greenhill"
+]
+
+# parts of the world
+groups = ["Austronesian"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Gray2009"
+
+# type of study
+type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "400 Austronesian languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 400
+    nchars = 210
+    nsites = 34440
+    datatype = 'lexical cognates'
+    source = '@Greenhilletal2008'
+    
+
+# analysis information
+[analysis]
+    [analysis.tree1]
+    tool = 'bayesphylogenies'
+    model = 'm1p+covarion'
+    details = "best fitting model"
+
+    [analysis.tree2]
+    tool = 'bayesphylogenies'
+    model = 'm2p'
+    details = ""
+
+    [analysis.r8s]
+    tool = 'r8s'
+    model = ''
+    details = ""
+
+
+    [analysis.trailabl]
+    tool = 'traitlab'
+    model = 'stochasticdollo'
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/gray_et_al2009" }
+lexibank = { title = "Lexibank Dataset", link = "https://github.com/lexibank/abvd" }
+links = []

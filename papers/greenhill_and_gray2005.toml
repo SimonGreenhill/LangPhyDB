@@ -1,0 +1,57 @@
+
+title = "Testing population dispersal hypotheses: Pacific settlement, phylogenetic trees and Austronesian languages"
+
+doi = ""
+
+abstract = """
+Dispersals have been commonplace throughout the history of genus homo (Templeton 2002). However, it is only recently that scenarios about human population expansions have begun to be studied again after a long period of marginalisation (Anthony 1990; Burmeister 2000 and associated commentaries). Some authors, such as Diamond and Bellwood (2003), have argued that dispersals, especially those linked to the development of agriculture, are the "most important process in Holocene human history" (p 597). Unfortunately, many expansion scenarios are little more than plausible narratives. A common feature of these narratives is the assertion that a particular line of evidence (archaeological, linguistic or genetic) is "consistent with" the scenario. "Consistent with" covers a multitude of sins. Rigorous tests require a measure of exactly how well the data matches the proposed scenario. They also require an explicit evaluation of alternative hypotheses. Perhaps the data are equally "consistent with" many alternative hypotheses. Given the interest in hypotheses about human dispersal scenarios, a framework for the rigorous evaluation of these hypotheses is clearly desirable. Here we describe our attempts to apply a phylogenetic framework to linguistic data in an effort to test one of these scenarios — the Austronesian expansion.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Simon J. Greenhill",
+    "Russell D. Gray"
+]
+
+# parts of the world
+groups = ["Austronesian"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Greenhill2005"
+
+# type of study
+type = ["phylogenetic",]
+
+# short label of taxa "37 languages from.."
+taxa = "77 Austronesian languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 77
+    nchars = 5185
+    nsites = 5185
+    datatype = 'lexical cognates'
+    source = '@GrayJordan2000'
+
+# analysis information
+[analysis]
+    [analysis.parsimony]
+    tool = 'paup*'
+    model = ''
+    details = ""
+
+    [analysis.mcmc]
+    tool = 'bayesphylogenies'
+    model = 'm1p+covarion'
+    details = ""
+
+    [analysis.neighbornet]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+
+[links]
+phlorest = {}
+lexibank = {}
+links = []

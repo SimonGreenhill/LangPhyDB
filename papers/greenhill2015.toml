@@ -1,0 +1,66 @@
+
+title = "TransNewGuinea.org: An online database of New Guinea languages"
+
+doi = "10.1371/journal.pone.0141563"
+
+abstract = ""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Simon J. Greenhill"
+]
+
+# parts of the world
+groups = ["Huon Peninsula"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Greenhill2015"
+
+# type of study
+type = ["phylogenetic", "network", "qresidual"]
+
+# short label of taxa "37 languages from.."
+taxa = "14 Huon Peninsula languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 14
+    nchars = 100
+    nsites = 391
+    datatype = 'lexical cognates'
+    source = '@McElhanon1967'
+
+## Methods:
+# analysis information
+[analysis]
+    [analysis.network]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+
+    [analysis.qresidual]
+    tool = 'splitstree'
+    model = ''
+    details = ""
+
+    [analysis.tree1]
+    tool = 'beast2'
+    model = 'ctmc+strict'
+    details = ""
+
+    [analysis.tree2]
+    tool = 'beast2'
+    model = 'ctmc+gamma+strict'
+    details = ""
+
+    [analysis.tree3]
+    tool = 'beast2'
+    model = 'covarion+strict'
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/greenhill2015" }
+lexibank = { title = "Lexibank Dataset", link = "" }
+links = []

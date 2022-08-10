@@ -1,0 +1,50 @@
+
+title = "Language Trees Support the Express-Train Sequence of Austronesian Expansion"
+
+doi = "10.1038/35016575"
+
+abstract = """
+Languages, like molecules, document evolutionary history. Darwin observed that evolutionary change in languages greatly resembled the processes of biological evolution: inheritance from a common ancestor and convergent evolution operate in both. Despite many suggestions, few attempts have been made to apply the phylogenetic methods used in biology to linguistic data. Here we report a parsimony analysis of a large language data set. We use this analysis to test competing hypotheses–the "express train" and the "entangled-bank" models–for the colonization of the Pacific by Austronesian-speaking peoples. The parsimony analysis of a matrix of 77 Austronesian languages with 5,185 lexical items produced a single most-parsimonious tree. The express-train model was converted into an ordered geographical character and mapped onto the language tree. We found that the topology of the language tree was highly compatible with the express-train model.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Russell D. Gray",
+    "Fiona M. Jordan"
+]
+
+# parts of the world
+groups = ["Austronesian"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@GrayJordan2000"
+
+# type of study
+type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "77 Austronesian languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 77
+    nchars = 5185
+    nsites = 5185
+    datatype = 'lexical cognates'
+    source = ''
+    
+
+# analysis information
+[analysis]
+# lexical term
+    [analysis.tree]
+    tool = 'paup*'
+    model = ''
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/gray_and_jordan2000" }
+lexibank = { }
+links = []

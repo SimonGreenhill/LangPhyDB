@@ -1,0 +1,53 @@
+
+title = "Bantu expansion shows that habitat alters the route and pace of human dispersals"
+
+doi = "10.1073/pnas.1503793112"
+
+abstract = ""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Rebecca Grollemund",
+    "Simon Branford",
+    "Koen Bostoen",
+    "Andrew Meade",
+    "Chris Venditti",
+    "Mark Pagel"
+]
+
+# parts of the world
+groups = ["Bantu"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@grollemund2015"
+
+# type of study
+type = ["phylogenetic", "phylogeography"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "425 Bantu languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 425
+    nchars = 100
+    nsites = 3859
+    datatype = 'lexical cognates'
+    source = '@ALGAB'
+    
+## Methods:
+
+# analysis information
+[analysis]
+# lexical term
+    [analysis.tree]
+    tool = 'bayesphylogenies'
+    model = 'm1p+covarion+relaxed'
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/grollemund_et_al2015" }
+lexibank = { title = "Lexibank Dataset", link = "https://github.com/lexibank/grollemundbantu" }
+links = []

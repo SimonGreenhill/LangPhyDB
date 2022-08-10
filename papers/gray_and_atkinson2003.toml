@@ -1,0 +1,53 @@
+
+title = "Language-tree divergence times support the Anatolian theory of Indo-European origin"
+
+doi = "10.1038/nature02029"
+
+abstract = """Languages, like genes, provide vital clues about human history. The origin of the Indo-European language family is "the most intensively studied, yet still most recalcitrant, problem of historical linguistics". Numerous genetic studies of Indo-European origins have also produced inconclusive results. Here we analyse linguistic data using computational methods derived from evolutionary biology. We test two theories of IndoEuropean origin: the "Kurgan expansion" and the "Anatolian farming" hypotheses. The Kurgan theory centres on possible archaeological evidence for an expansion into Europe and the Near East by Kurgan horsemen beginning in the sixth millennium BP. In contrast, the Anatolian theory claims that IndoEuropean languages expanded with the spread of agriculture from Anatolia around 8,000–9,500 years BP. In striking agreement with the Anatolian hypothesis, our analysis of a matrix of 87 languages with 2,449 lexical items produced an estimated age range for the initial Indo-European divergence of between 7,800 and 9,800 years BP. These results were robust to changes in coding procedures, calibration points, rooting of the trees and priors in the bayesian analysis.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Russell D. Gray",
+    "Quentin D. Atkinson"
+]
+
+# parts of the world
+groups = ["Indo-European"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Gray2003"
+
+# type of study
+type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "87 Indo-European languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 87
+    nchars = 200
+    nsites = 2449 
+    datatype = 'lexical cognates'
+    source = ''
+    
+
+# analysis information
+[analysis]
+    [analysis.tree]
+    tool = 'mrbayes'
+    model = 'restriction site'
+    details = ""
+    
+    [analysis.dating]
+    tool = 'r8s'
+    model = ''
+    details = ""
+    
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/gray_and_atkinson2003" }
+lexibank = { title = "Lexibank Dataset", link = "https://github.com/lexibank/dyenindoeuropean/" }
+links = []

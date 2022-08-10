@@ -66,6 +66,6 @@ taxa = "59 Japonic languages"
         details = "best fitting model"
 
 [links]
-phlorest = { title = "Phlorest Dataset", link = "" }
-lexibank = { title = "Lexibank Dataset", link = "" }
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/lee_and_hasegawa" }
+lexibank = { title = "Lexibank Dataset", link = "https://github.com/lexibank/leejaponic" }
 links = []

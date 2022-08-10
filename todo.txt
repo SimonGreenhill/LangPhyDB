@@ -99,7 +99,6 @@ kaiping_and_klamer2022/
 kitchen_et_al2009/
 koile_et_al_subm/
 kolipakam_et_al2018/
-lee_and_hasegawa2011/
 lee_and_hasegawa2013/
 michael_et_al2015/
 power_et_al2020/

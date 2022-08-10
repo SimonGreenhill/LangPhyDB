@@ -1,0 +1,165 @@
+
+title = "A Bayesian approach to the classification of Tungusic languages"
+
+doi = "10.1075/dia.20010.osk"
+
+abstract = """
+The Tungusic language family is comprised of languages spoken in Siberia, the Russian Far East, Northeast China and Xinjiang. There is a general consensus that these languages are genealogically related and descend from a common ancestral language. Nevertheless, there is considerable disagreement with regard to the internal structure of the Tungusic family and the time depth of its separation into daughter languages. Here we use computational Bayesian phylogenetic methods to generate a phylogeny of Tungusic languages and estimate the time-depth of the family. Our analysis is based on the recently introduced Leipzig-Jakarta-Jena list, a dataset of 254 basic vocabulary items collected for 21 Tungusic doculects. Our results are consistent with two basic classifications previously proposed in the literature, notably a Manchu-Tungusic classification, in which the break-up of Jurchenic constitutes the first split in the tree, as well as a North-South classification, which includes a Jurchenic-Nanaic and an Orochic-Ewenic branch. In addition, we obtain a time-depth for the age of Proto-Tungusic between the 8th century BC and the 12th century AD (95% highest posterior density interval). Previous classifications of Tungusic were based on both classical historical comparative linguistic and lexicostatistic approaches, but the application of Bayesian phylogenetic methods to the Tungusic languages has not so far been attempted. In contrast to previous approaches, our Bayesian analysis adds an understanding of the statistical robustness of the proposed branches and infers absolute divergence dates, allowing variation of rates of change across branches and cognate sets. In this way, our research provides a reliable quantitative basis for previous estimates based on classical historical linguistic and lexicostatistic approaches."""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Sofia Oskolskaya",
+    "Ezequiel Koile",
+    "Martine Robbeets"
+]
+
+# parts of the world
+groups = ["Tungusic"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Oskolskaya_2021"
+
+# type of study
+type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "21 Tungusic languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 21
+    nchars = 254
+    nsites = 1110
+    datatype = 'lexical cognates'
+    source = ''
+
+
+# analysis information
+[analysis]
+
+    [analysis.tree1]
+        tool = 'beast2'
+        model = 'sa+fbd+ctmc+strict+gamma1'
+        details = ""
+
+
+    [analysis.tree2]
+        tool = 'beast2'
+        model = 'sa+fbd+ctmc+strict+gamma4'
+        details = ""
+
+
+    [analysis.tree3]
+        tool = 'beast2'
+        model = 'sa+fbd+ctmc+relaxed+gamma1'
+        details = ""
+
+
+    [analysis.tree4]
+        tool = 'beast2'
+        model = 'sa+fbd+ctmc+relaxed+gamma4'
+        details = ""
+
+
+    [analysis.tree5]
+        tool = 'beast2'
+        model = 'sa+fbd+covarion+strict+gamma1'
+        details = ""
+
+
+    [analysis.tree6]
+        tool = 'beast2'
+        model = 'sa+fbd+covarion+strict+gamma4'
+        details = ""
+
+
+    [analysis.tree7]
+        tool = 'beast2'
+        model = 'sa+fbd+covarion+relaxed+gamma1'
+        details = "best fitting model"
+
+
+    [analysis.tree8]
+        tool = 'beast2'
+        model = 'sa+fbd+covarion+relaxed+gamma4'
+        details = ""
+
+
+    [analysis.tree9]
+        tool = 'beast2'
+        model = 'sa+fbd+stochasticdollo+strict+gamma1'
+        details = ""
+
+
+    [analysis.tree10]
+        tool = 'beast2'
+        model = 'sa+fbd+stochasticdollo+strict+gamma4'
+        details = ""
+
+
+    [analysis.tree11]
+        tool = 'beast2'
+        model = 'sa+fbd+stochasticdollo+relaxed+gamma1'
+        details = ""
+
+
+    [analysis.tree12]
+        tool = 'beast2'
+        model = 'sa+fbd+stochasticdollo+relaxed+gamma4'
+        details = ""
+
+
+    [analysis.tree13]
+        tool = 'beast2'
+        model = 'sa+fbd+pseudodollo+strict+gamma1'
+        details = ""
+
+
+    [analysis.tree14]
+        tool = 'beast2'
+        model = 'sa+fbd+pseudodollo+strict+gamma4'
+        details = ""
+
+
+    [analysis.tree15]
+        tool = 'beast2'
+        model = 'sa+fbd+pseudodollo+relaxed+gamma1'
+        details = ""
+
+
+    [analysis.tree16]
+        tool = 'beast2'
+        model = 'sa+fbd+pseudodollo+relaxed+gamma4'
+        details = ""
+
+
+    [analysis.tree17]
+        tool = 'beast2'
+        model = 'sa+fbd+pseudodollocovarion+strict+gamma1'
+        details = ""
+
+
+    [analysis.tree18]
+        tool = 'beast2'
+        model = 'sa+fbd+pseudodollocovarion+strict+gamma4'
+        details = ""
+
+
+    [analysis.tree19]
+        tool = 'beast2'
+        model = 'sa+fbd+pseudodollocovarion+relaxed+gamma1'
+        details = ""
+
+
+    [analysis.tree20]
+        tool = 'beast2'
+        model = 'sa+fbd+pseudodollocovarion+relaxed+gamma4'
+        details = ""
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/oskolskaya_et_al2021" }
+lexibank = { title = "Lexibank Dataset", link = "https://github.com/lexibank/oskolskayatungusic" }
+links = []

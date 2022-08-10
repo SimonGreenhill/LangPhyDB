@@ -1,0 +1,53 @@
+
+title = "A lexicostatistical study of the Khasian languages: Khasi, Pnar, Lyngngam, and War"
+
+doi = ""
+
+abstract = """
+This paper presents the results of lexicostatistical, glottochronological, and Bayesian phylogenetic analyses of a 200 word data set for Standard Khasi, Lyngngam, Pnar and War. Very few works have appeared on the subject of the internal classification of the Khasian branch of Austroasiatic, leaving the existing reference literature disappointingly incomplete. The present analysis supports both the strong identity of Khasian as a unitary branch, with an internally nested branching structure that fits neatly with known historical, geographical and linguistic facts. Additionally, lexically based dating methods suggest that the internal diversification of Khasian began roughly between 1500 and 2000 years ago."""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "K. S. Nagaraja",
+    "Paul Sidwell",
+    "Simon J. Greenhill"
+]
+
+# parts of the world
+groups = ["Austroasiatic"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Nagaraja2013"
+
+# type of study
+type = ["phylogenetic", "network"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "6 Austroasiatic languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 6
+    nchars = 200
+    nsites = 661
+    datatype = 'lexical cognates'
+    source = ''
+    
+
+# analysis information
+[analysis]
+    [analysis.tree]
+    tool = 'beast'
+    model = 'ctmc+strict'
+    details = ""
+
+    [analysis.network]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/nagaraja_et_al2013" }
+lexibank = {}
+links = []

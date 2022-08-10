@@ -37,7 +37,6 @@ taxa = "10 Chapacuran languages"
 
 # analysis information
 [analysis]
-# lexical term
     [analysis.tree1]
     tool = 'beast'
     model = 'ctmc+strict'

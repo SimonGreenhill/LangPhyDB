@@ -1,5 +1,7 @@
 
 https://doi.org/10.32473/sal.v45i1.107255
+Ceolin2021, Longobardi2013, Longobardi2015
+
 
 
 * Atkinson, Quentin D.; and Russell D. Gray. 2004a. How old is the Indo-European language family? - Illumination or more moths to the flame?
@@ -90,9 +92,7 @@ chang_et_al2015/
 gerardi_and_reichert2021/
 greenhill2015/
 greenhill_et_al_subm/
-grollemund_et_al2015/
 heggarty_et_al_subm/
-honkola_et_al2013/
 hruschka_et_al2015/
 jaeger2018/
 kaiping_and_klamer2022/
@@ -102,7 +102,6 @@ kolipakam_et_al2018/
 lee_and_hasegawa2011/
 lee_and_hasegawa2013/
 michael_et_al2015/
-nagaraja_et_al2013/
 oskolskaya_et_al2021/
 power_et_al2020/
 robbeets_and_bouckaert2018/

@@ -38,7 +38,6 @@ taxa = "15 Koreanic languages"
 
 # analysis information
 [analysis]
-# lexical term
     [analysis.tree]
     tool = 'beast'
     model = 'covarion+relaxed'

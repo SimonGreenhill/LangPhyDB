@@ -38,7 +38,6 @@ taxa = "412 Bantu languages"
 
 # analysis information
 [analysis]
-# lexical term
     [analysis.tree]
     tool = 'bayesphylogenies'
     model = 'm1p+covarion'

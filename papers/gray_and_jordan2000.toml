@@ -37,7 +37,6 @@ taxa = "77 Austronesian languages"
 
 # analysis information
 [analysis]
-# lexical term
     [analysis.tree]
     tool = 'paup*'
     model = ''

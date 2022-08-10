@@ -72,7 +72,6 @@ taxa = "95 Bantu languages, 65 Indo-European languages, 330 Austronesian languag
 # yielding 1000 trees. Examination of autocorrelation times of the MCMC plots
 # suggested runs had converged to the equilibrium distribution. Branch lengths
 # were estimated in units of expected numbers of cognate replacements per
-# lexical term
     [analysis.tree]
     tool = 'bayesphylogenies'
     model = 'two-state time reversible, gamma'

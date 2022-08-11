@@ -40,7 +40,6 @@ Ceolin2021, Longobardi2013, Longobardi2015
 * Jordan, Fiona Marie. 2011. A Phylogenetic Analysis of the Evolution of Austronesian Sibling Terminologies A Phylogenetic Analysis of the Evolution of Austronesian. Human Biology 83.297–321. doi:10.3378/027.083.0209.
 * Jordan, Fiona Marie.; Russell D. Gray.; Simon J. Greenhill.; and Ruth Mace. 2009. Matrilocal residence is ancestral in Austronesian societies. Proceedings of the Royal Society B: Biological Sciences 276.1957–64. doi:10.1098/rspb.2009.0088.
 * Jordan, Peter.; and Sean O’Neill. 2010. Untangling cultural inheritance: language diversity and long-house architecture on the Pacific northwest coast. Philosophical transactions of the Royal Society of London. Series B, Biological sciences 365.3875–88. doi:10.1098/rstb.2010.0092.
-* Kolipakam, Vishnupriya.; Fiona M Jordan.; Michael Dunn.; Simon J Greenhill.; Remco Bouckaert.; Russell D Gray.; and Annemarie Verkerk. 2018. A Bayesian phylogenetic study of the Dravidian language family. Royal Society Open Science 5.171504. doi:10.1098/rsos.171504.
 * Lee, S.; and T Hasegawa. 2014. Oceanic barriers promote language diversification in the Japanese Islands. Journal of evolutionary biology 27.1905–12. doi:10.1111/jeb.12442.
 * Mattos, Ana Paulla Braga.; and Márcia Santos Duarte Oliveira. 2020. Kalunga in the lusophone context: A phylogenetic study. Journal of Portuguese Linguistics 19.2. doi:10.5334/jpl.224.
 * Nelson-Sathi, Shijulal.; Johann-Mattis List.; Hans Geisler.; Heiner Fangerau.; Russell D. Gray.; William Martin.; and Tal Dagan. 2011. Networks uncover hidden lexical borrowing in Indo-European language evolution. Proceedings of the Royal Society B: Biological Sciences 278.1794–803. doi:10.1098/rspb.2010.1917.
@@ -77,14 +76,10 @@ Ceolin2021, Longobardi2013, Longobardi2015
 
 chang_et_al2015/
 gerardi_and_reichert2021/
-greenhill2015/
-greenhill_et_al_subm/
-heggarty_et_al_subm/
 hruschka_et_al2015/
 jaeger2018/
 kaiping_and_klamer2022/
 koile_et_al_subm/
-kolipakam_et_al2018/
 power_et_al2020/
 robbeets_and_bouckaert2018/
 robbeets_et_al2021/

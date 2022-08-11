@@ -20,4 +20,8 @@ lee_and_hasegawa2013:
 
 savelyev_and_robbeets2020:
 
-> We obtained the average delta score ¼ 0.34 and Q-residual score ¼ 0.01, both indicating that the evolution of the Turkic basic vocabulary is reasonably tree-like,
+> We obtained the average delta score ¼ 0.34 and Q-residual score ¼ 0.01, both indicating that the evolution of the Turkic basic vocabulary is reasonably tree-like, 
+
+kolipakam_et_al2018:
+
+> The mean δ score is 0.30, Telugu and Tulu have higher scores, suggesting greater contribution to reticulate patterns (Telugu: 0.38; Tulu: 0.35). Telugu also has a high Q-residual score, 0.0132, almost twice as high as the mean of 0.0069.

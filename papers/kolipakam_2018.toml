@@ -1,0 +1,139 @@
+
+title = "A Bayesian phylogenetic study of the Dravidian language family"
+
+doi = "10.1098/rsos.171504"
+
+abstract = """
+The Dravidian language family consists of about 80 varieties (Hammarström H. 2016 Glottolog 2.7) spoken by 220 million people across southern and central India and surrounding countries (Steever SB. 1998 In The Dravidian languages (ed. SB Steever), pp. 1–39: 1). Neither the geographical origin of the Dravidian language homeland nor its exact dispersal through time are known. The history of these languages is crucial for understanding prehistory in Eurasia, because despite their current restricted range, these languages played a significant role in influencing other language groups including IndoAryan (Indo-European) and Munda (Austroasiatic) speakers. Here, we report the results of a Bayesian phylogenetic analysis of cognate-coded lexical data, elicited first hand from native speakers, to investigate the subgrouping of the Dravidian language family, and provide dates for the major points of diversification. Our results indicate that the Dravidian language family is approximately 4500 years old, a finding that corresponds well with earlier linguistic and archaeological studies. The main branches of the Dravidian language family (North, Central, South I, South II) are recovered, although the placement of languages within these main branches diverges from previous classifications. We find considerable uncertainty with regard to the relationships between the main branches.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Vishnupriya Kolipakam",
+    "Fiona M. Jordan",
+    "Michael Dunn",
+    "Simon J. Greenhill",
+    "Remco Bouckaert",
+    "Russell D. Gray",
+    "Annemarie Verkerk"
+]
+
+# parts of the world
+groups = ["Dravidian"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Kolipakam2018"
+
+# type of study
+type = ["phylogenetic", "network"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "20 Dravidian languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 20
+    nchars = 100
+    nsites = 877
+    datatype = 'lexical cognates'
+    source = ''
+    
+
+# analysis information
+[analysis]
+   [analysis.network]
+        tool = 'splitstree'
+        model = 'neighbornet'
+        details = ""
+
+   [analysis.delta]
+        tool = 'splitstree'
+        model = 'delta'
+        details = ""
+   
+   [analysis.qresidual]
+        tool = 'splitstree'
+        model = 'qresidual'
+        details = ""
+
+   [analysis.tree1]
+        tool = 'beast2'
+        model = 'ctmc+strict+overallrate'
+        details = ""
+
+
+    [analysis.tree2]
+        tool = 'beast2'
+        model = 'ctmc+strict+wordrate'
+        details = ""
+
+
+    [analysis.tree3]
+        tool = 'beast2'
+        model = 'ctmc+relaxed+overallrate'
+        details = ""
+
+
+    [analysis.tree4]
+        tool = 'beast2'
+        model = 'ctmc+relaxed+wordrate'
+        details = ""
+
+
+    [analysis.tree5]
+        tool = 'beast2'
+        model = 'ctmc+gamma+strict+overallrate'
+        details = ""
+
+
+    [analysis.tree6]
+        tool = 'beast2'
+        model = 'ctmc+gamma+strict+wordrate'
+        details = ""
+
+
+    [analysis.tree7]
+        tool = 'beast2'
+        model = 'ctmc+gamma+relaxed+overallrate'
+        details = ""
+
+
+    [analysis.tree8]
+        tool = 'beast2'
+        model = 'ctmc+gamma+relaxed+wordrate'
+        details = ""
+
+
+    [analysis.tree9]
+        tool = 'beast2'
+        model = 'covarion+strict+overallrate'
+        details = ""
+
+
+    [analysis.tree10]
+        tool = 'beast2'
+        model = 'covarion+strict+wordrate'
+        details = ""
+
+
+    [analysis.tree11]
+        tool = 'beast2'
+        model = 'covarion+relaxed+overallrate'
+        details = ""
+
+
+    [analysis.tree12]
+        tool = 'beast2'
+        model = 'covarion+relaxed+wordrate'
+        details = ""
+
+    [analysis.tree13]
+        tool = 'beast2'
+        model = 'stochasticdollo+relaxed+wordrate'
+        details = ""
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/kolipakam_et_al2018" }
+lexibank = { title = "Lexibank Dataset", link = "https://github.com/lexibank/drvalex" }
+links = []

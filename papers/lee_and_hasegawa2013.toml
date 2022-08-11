@@ -1,0 +1,95 @@
+
+title = "Evolution of the Ainu Language in Space and Time"
+
+doi = "10.1371/journal.pone.0062243"
+
+abstract = """
+Languages evolve over space and time. Illuminating the evolutionary history of language is important because it provides a unique opportunity to shed light on the population history of the speakers. Spatial and temporal aspects of language evolution are particularly crucial for understanding demographic history, as they allow us to identify when and where the languages originated, as well as how they spread across the globe. Here we apply Bayesian phylogeographic methods to reconstruct spatiotemporal evolution of the Ainu language: an endangered language spoken by an indigenous group that once thrived in northern Japan. The conventional dual-structure model has long argued that modern Ainu are direct descendants of a single, Pleistocene human lineage from Southeast Asia, namely the Jomon people. In contrast, recent evidence from archaeological, anthropological and genetic evidence suggest that the Ainu are an outcome of significant genetic and cultural contributions from Siberian hunter-gatherers, the Okhotsk, who migrated into northern Hokkaido around 900–1600 years ago. Estimating from 19 Ainu language varieties preserved five decades ago, our analysis shows that they are descendants of a common ancestor who spread from northern Hokkaido around 1300 years ago. In addition to several lines of emerging evidence, our phylogeographic analysis strongly supports the hypothesis that recent expansion of the Okhotsk to northern Hokkaido had a profound impact on the origins of the Ainu people and their culture, and hence calls for a refinement to the dual-structure model.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Sean Lee",
+    "Toshikazu Hasegawa"
+]
+
+# parts of the world
+groups = ["Ainu"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Lee_2013"
+
+# type of study
+type = ["phylogenetic", "phylogeography"]
+
+# short label of taxa "37 languages from.."
+taxa = "19 Ainu languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 19
+    nchars = 200
+    nsites = 350
+    datatype = 'lexical cognates'
+    source = ''
+    
+
+# analysis information
+[analysis]
+
+    [analysis.qresidual]
+    tool = 'splitstree'
+    model = 'qresidual'
+    details = ""
+
+    [analysis.delta]
+    tool = 'splitstree'
+    model = 'delta'
+    details = ""
+
+    [analysis.tree1]
+    tool = 'beast'
+    model = 'stochasticdollo+bsp+strict+phylogeography(brownian)'
+    details = ""
+
+    [analysis.tree2]
+    tool = 'beast'
+    model = 'stochasticdollo+bsp+strict+phylogeography(cauchy)'
+    details = ""
+
+    [analysis.tree3]
+    tool = 'beast'
+    model = 'stochasticdollo+bsp+strict+phylogeography(gamma)'
+    details = ""
+
+    [analysis.tree4]
+    tool = 'beast'
+    model = 'stochasticdollo+bsp+strict+phylogeography(lognormal)'
+    details = ""
+
+    [analysis.tree5]
+    tool = 'beast'
+    model = 'stochasticdollo+bsp+relaxed+phylogeography(brownian)'
+    details = ""
+
+    [analysis.tree6]
+    tool = 'beast'
+    model = 'stochasticdollo+bsp+relaxed+phylogeography(cauchy)'
+    details = ""
+
+    [analysis.tree7]
+    tool = 'beast'
+    model = 'stochasticdollo+bsp+relaxed+phylogeography(gamma)'
+    details = ""
+
+    [analysis.tree8]
+    tool = 'beast'
+    model = 'stochasticdollo+bsp+relaxed+phylogeography(lognormal)'
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/lee_and_hasegawa2013" }
+lexibank = { title = "Lexibank Dataset", link = "https://github.com/lexibank/leeainu" }
+links = []

@@ -1,0 +1,49 @@
+
+title = "Historical linguistics as a sequence optimization problem: the evolution and biogeography of Uto-Aztecan languages"
+
+doi = "10.1111/cla.12078"
+
+abstract = """
+Language origins and diversification are vital for mapping human history. Traditionally, the reconstruction of language trees has been based on cognate forms among related languages, with ancestral protolanguages inferred by individual investigators. Disagreement among competing authorities is typically extensive, without empirical grounds for resolving alternative hypotheses. Here, we apply analytical methods derived from DNA sequence optimization algorithms to Uto-Aztecan languages, treating words as sequences of sounds. Our analysis yields novel relationships and suggests a resolution to current conflicts about the Proto-Uto-Aztecan homeland. The techniques used for Uto-Aztecan are applicable to written and unwritten languages, and should enable more empirically robust hypotheses of language relationships, language histories, and linguistic evolution.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Ward C. Wheeler",
+    "Peter M. Whiteley"
+]
+
+# parts of the world
+groups = ["Uto-Aztecan"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Wheeler2014"
+
+# type of study
+type = ["phylogenetic"]
+
+# short label of taxa "37 languages from.."
+taxa = "40 Uto-Aztecan languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 40
+    nchars = 100
+    nsites = ""
+    datatype = 'lexemes'
+    source = ''
+    
+
+# analysis information
+[analysis]
+    [analysis.tree]
+    tool = 'poy5'
+    model = ''
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/wheeler_and_whiteley2014" }
+lexibank = { title = "Lexibank Dataset", link = "" }
+links = []

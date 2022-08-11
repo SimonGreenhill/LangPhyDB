@@ -13,3 +13,11 @@ robinson_and_holton2012:
 ceolin_et_al2020:
 
 > The median of the 1-scores is 0.302, and the variance is particularly low (standard deviation: 0.037). The 10 languages associated with the highest values (cf. Section “Network Analysis – NeighborNet” in Supplementary Material), i.e., those for which the signal is the least treelike, properly include the languages listed in (9)a, which correspond to the first two outlying branches of the BEAST tree (Mandarin, Cantonese, Korean, Japanese, the two Basque varieties, and Malagasy). The median of Q-residuals is 0.054, but in this case the variance is quite high, in proportion (standard deviation: 0.021). Again, among the languages with the 10 highest scores, six correspond to the outliers of the BEAST tree (Malagasy has the 11th Q-residual: 0.0805). In particular, while the mean for the 1-scores is the same as the median, the mean for the Q-residuals is higher (0.058), 
+
+lee_and_hasegawa2013:
+
+> we used SPLITSTREE4 [29] to estimate tree-likeness of the Ainu phylogeny [30,31] and obtained the average delta score = 0.25 and Q-residual score = 0.01, both indicating that the evolution of Ainu lexicons was reasonably tree-like, and hence suitable for phylogenetic analysis (to put this in perspective, the tree-likeness scores calculated from a subset of 12 Indo-European languages have similar scores as our 19 Ainu varieties with the average delta score = 0.23 and Q-residual score = 0.03 [31]). These observations provide us confidence that the data should carry robust evolutionary signal and the 19 Ainu varieties are appropriate units of analysis for the current purpose.
+
+savelyev_and_robbeets2020:
+
+> We obtained the average delta score ¼ 0.34 and Q-residual score ¼ 0.01, both indicating that the evolution of the Turkic basic vocabulary is reasonably tree-like,

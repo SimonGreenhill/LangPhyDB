@@ -1,0 +1,58 @@
+
+title = "Bayesian phylogeography of the Arawak expansion in lowland South America"
+
+doi = "10.1098/rspb.2010.2579"
+
+abstract = """
+Phylogenetic inference based on language is a vital tool for tracing the dynamics of human population expansions. The timescale of agriculture-based expansions around the world provides an informative amount of linguistic change ideal for reconstructing phylogeographies. Here we investigate the expansion of Arawak, one of the most widely dispersed language families in the Americas, scattered from the Antilles to Argentina. It has been suggested that Northwest Amazonia is the Arawak homeland based on the large number of diverse languages in the region. We generate language trees by coding cognates of basic vocabulary words for 60 Arawak languages and dialects to estimate the phylogenetic relationships among Arawak societies, while simultaneously implementing a relaxed random walk model to infer phylogeographic history. Estimates of the Arawak homeland exclude Northwest Amazonia and are bi-modal, with one potential homeland on the Atlantic seaboard and another more likely origin in Western Amazonia. Bayesian phylogeography better supports a Western Amazonian origin, and consequent dispersal to the Caribbean and across the lowlands. Importantly, the Arawak expansion carried with it not only language but also a number of cultural traits that contrast Arawak societies with other lowland cultures.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Robert S. Walker",
+    "Lincoln A. Ribeiro"
+]
+
+# parts of the world
+groups = ["Arawakan"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Walker2011"
+
+# type of study
+type = ["phylogenetic", "network", "phylogeography"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "60 Arawakan languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 60
+    nchars = 100
+    nsites = 694
+    datatype = 'lexical cognates'
+    source = ''
+    
+
+# analysis information
+[analysis]
+    [analysis.network]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    
+    [analysis.tree]
+    tool = 'beast'
+    model = 'covarion+gamma+strict+yule+phylogeography(rrw)'
+    details = ""
+
+    [analysis.phylogeography2]
+    tool = 'bayestraits'
+    model = 'rjhp'
+    details = ""
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/walker_and_ribeiro2011" }
+lexibank = { title = "Lexibank Dataset", link = "https://github.com/lexibank/walkerarawakan" }
+links = []

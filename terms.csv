@@ -99,6 +99,7 @@ author,Ger Reesink,
 author,Stanislav Reichert,
 author,Kateřina Rexová,
 author,Seongha Rhee,
+author,Lincoln A. Ribeiro,
 author,Martine Robbeets,
 author,Patrick Roberts,
 author,Laura C. Robinson,
@@ -119,11 +120,13 @@ author,Hiroto Takamiya,
 author,Angela Terrill
 author,Valentin Thouzeau,
 author,Hirotaka Tomita,
+author,Alfred Toth,
 author,Junzo Uchiyama,
 author,Chris Venditti,
 author,Annemarie Verkerk,
 author,Outi Vesakoski,
 author,Niklas Wahlberg,
+author,Robert S. Walker,
 author,Vivian Wauters,
 author,Ward C. Wheeler,
 author,Peter M. Whiteley,
@@ -138,10 +141,10 @@ author,Hanzhi Zhang,
 author,Menghan Zhang,
 author,Jan Zrzavý,
 
-
-datatype,lexical cognates,
-datatype,phonetic traits,
-datatype,structural features,
+datatype,lexical cognates,cognate data
+datatype,lexemes,raw lexical data
+datatype,phonetic traits,phonetic characters
+datatype,structural features,structural features
 
 tool,barrier
 tool,bayesphylogenies,http://www.evolution.reading.ac.uk/BayesPhy.html
@@ -151,9 +154,11 @@ tool,beast2,http://www.beast2.org/
 tool,lingpy,
 tool,macclade,
 tool,mesquite,
+tool,network,
 tool,mrbayes,http://nbisweden.github.io/MrBayes/
 tool,paup*,
 tool,phylip,
+tool,poy5,
 tool,punctuatedwebapp,http://www.evolution.reading.ac.uk/pe/index.html
 tool,r8s,http://ceiba.biosci.arizona.edu/r8s/index.html
 tool,revbayes,https://revbayes.github.io/

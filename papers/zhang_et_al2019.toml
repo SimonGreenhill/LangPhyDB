@@ -1,0 +1,81 @@
+
+title = "Phylogenetic evidence for Sino-Tibetan origin in northern China in the Late Neolithic"
+
+doi = "10.1038/s41586-019-1153-z"
+
+abstract = """
+The study of language origin and divergence is important for understanding the history of human populations and their cultures. The Sino-Tibetan language family is the second largest in the world after Indo-European, and there is a long-running debate about its phylogeny and the time depth of its original divergence1. Here we perform a Bayesian phylogenetic analysis to examine two competing hypotheses of the origin of the Sino-Tibetan language family: the ‘northern-origin hypothesis’ and the ‘southwestern-origin hypothesis’. The northern-origin hypothesis states that the initial expansion of Sino-Tibetan languages occurred approximately 4,0006,000 years before present (bp; taken as ad 1950) in the Yellow River basin of northern China2–4, and that this expansion is associated with the development of the Yangshao and/or Majiayao Neolithic cultures. The southwestern-origin hypothesis states that an early expansion of Sino-Tibetan languages occurred before 9,000 years bp from a region in southwest Sichuan province in China5 or in northeast India6, where a high diversity of Tibeto-Burman languages exists today. Consistent with the northern-origin hypothesis, our Bayesian phylogenetic analysis of 109 languages with 949 lexical root-meanings produced an estimated time depth for the divergence of Sino-Tibetan languages of approximately 4,200–7,800 years bp, with an average value of approximately 5,900 years bp. In addition, the phylogeny supported a dichotomy between Sinitic and Tibeto-Burman languages. Our results are compatible with the archaeological records, and with the farming and language dispersal hypothesis7 of agricultural expansion in China. Our findings provide a linguistic foothold for further interdisciplinary studies of prehistoric human activity in East Asia."""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Menghan Zhang",
+    "Shi Yan",
+    "Wuyun Pan",
+    "Li Jin"
+]
+
+# parts of the world
+groups = ["Sino-Tibetan"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Zhang_2019"
+
+# type of study
+type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "109 Sino-Tibetan languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 109
+    nchars = 100
+    nsites = 949
+    datatype = 'lexical cognates'
+    source = ''
+    
+
+# analysis information
+[analysis]
+    [analysis.tree1]
+        tool = 'beast2'
+        model = 'ctmc+strict'
+        details = ""
+
+
+    [analysis.tree2]
+        tool = 'beast2'
+        model = 'ctmc+relaxed'
+        details = ""
+
+
+    [analysis.tree3]
+        tool = 'beast2'
+        model = 'ctmc+gamma+strict'
+        details = ""
+
+
+    [analysis.tree4]
+        tool = 'beast2'
+        model = 'ctmc+gamma+relaxed'
+        details = ""
+
+
+    [analysis.tree5]
+        tool = 'beast2'
+        model = 'covarion+strict'
+        details = ""
+
+
+    [analysis.tree6]
+        tool = 'beast2'
+        model = 'covarion+relaxed'
+        details = "best fitting model"
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/zhang_et_al2019" }
+lexibank = {}
+links = []

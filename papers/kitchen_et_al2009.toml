@@ -1,0 +1,55 @@
+
+title = "Bayesian phylogenetic analysis of Semitic languages identifies an Early Bronze Age origin of Semitic in the Near East"
+
+doi = "10.1098/rspb.2009.0408"
+
+abstract = ""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "A. Kitchen",
+    "C. Ehret",
+    "S. Assefa",
+    "C. J. Mulligan"
+]
+
+# parts of the world
+groups = ["Semitic"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Kitchen2009"
+
+# type of study
+type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "25 Semitic languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 25
+    nchars = 96
+    nsites = 673
+    datatype = 'lexical cognates'
+    source = ''
+    
+
+# analysis information
+[analysis]
+    [analysis.multistate]
+    tool = 'beast'
+    model = 'mk+gamma+relaxed'
+    details = ""
+
+    [analysis.binary]
+    tool = 'beast'
+    model = 'ctmc+gamma+relaxed'
+    details = ""
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/kitchen_et_al2009" }
+lexibank = { title = "Lexibank Dataset", link = "https://github.com/lexibank/kitchensemitic" }
+links = []

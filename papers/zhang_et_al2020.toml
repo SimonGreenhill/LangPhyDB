@@ -1,0 +1,76 @@
+
+title = "Dated phylogeny suggests early Neolithic origin of Sino-Tibetan languages"
+
+doi = "10.1038/s41598-020-77404-4"
+
+abstract = """
+An accurate reconstruction of Sino‑Tibetan language evolution would greatly advance our understanding of East Asian population history. Two recent phylogenetic studies attempted to do so but several of their conclusions are different from each other. Here we reconstruct the phylogeny of the Sino‑Tibetan language family, using Bayesian computational methods applied to a larger and linguistically more diverse sample. Our results confirm previous work in finding that the ancestral SinoTibetans first split into Sinitic and Tibeto‑Burman clades, and support the existence of key internal relationships. But we find that the initial divergence of this group occurred earlier than previously suggested, at approximately 8000 years before the present, coinciding with the onset of millet‑based agriculture and significant environmental changes in theYellow River region. Our findings illustrate that key aspects of phylogenetic history can be replicated in this complex language family, and calls for a more nuanced understanding of the first Sino‑Tibetan speakers in relation to the 'early farming dispersal' theory of language evolution.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Hanzhi Zhang",
+    "Ting Ji",
+    "Mark Pagel",
+    "Ruth Mace"
+]
+
+# parts of the world
+groups = ["Sino-Tibetan"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Zhang_2020"
+
+# type of study
+type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "131 Sino-Tibetan languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 131
+    nchars = 110
+    nsites = 1726
+    datatype = 'lexical cognates'
+    source = ''
+    
+
+# analysis information
+[analysis]
+    [analysis.tree1]
+    tool = 'beast2'
+    model = 'ctmc+strict+fbd'
+    details = ""
+
+    [analysis.tree2]
+    tool = 'beast2'
+    model = 'ctmc+relaxed+fbd'
+    details = ""
+
+    [analysis.tree3]
+    tool = 'beast2'
+    model = 'ctmc+gamma4+strict+fbd'
+    details = ""
+    
+    [analysis.tree4]
+    tool = 'beast2'
+    model = 'ctmc+gamma4+relaxed+fbd'
+    details = ""
+
+    [analysis.tree5]
+    tool = 'beast2'
+    model = 'covarion+strict+fbd'
+    details = ""
+
+    [analysis.tree6]
+    tool = 'beast2'
+    model = 'covarion+relaxed+fbd'
+    details = "best fitting model"
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/zhang_et_al2020" }
+lexibank = { title = "Lexibank Dataset", link = "" }
+links = []

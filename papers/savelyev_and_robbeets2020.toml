@@ -1,0 +1,83 @@
+
+title = "Bayesian phylolinguistics infers the internal structure and the time-depth of the Turkic language family"
+
+doi = "10.1093/jole/lzz010"
+
+abstract = """
+Despite more than 200 years of research, the internal structure of the Turkic language family remains subject to debate. Classifications of Turkic so far are based on both classical historical–comparative linguistic and distance-based quantitative approaches. Although these studies yield an internal structure of the Turkic family, they cannot give us an understanding of the statistical robustness of the proposed branches, nor are they capable of reliably inferring absolute divergence dates, without assuming constant rates of change. Here we use computational Bayesian phylogenetic methods to build a phylogeny of the Turkic languages, express the reliability of the proposed branches in terms of probability, and estimate the time-depth of the family within credibility intervals. To this end, we collect a new dataset of 254 basic vocabulary items for thirty-two Turkic language varieties based on the recently introduced LeipzigJakarta list. Our application of Bayesian phylogenetic inference on lexical data of the Turkic languages is unprecedented. The resulting phylogenetic tree supports a binary structure for Turkic and replicates most of the conventional sub-branches in the Common Turkic branch. We calculate the robustness of the inferences for subgroups and individual languages whose position in the tree seems to be debatable. We infer the time-depth of the Turkic family at around 2100 years before present, thus providing a reliable quantitative basis for previous estimates based on classical historical linguistics and lexicostatistics.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Alexander Savelyev",
+    "Martine Robbeets"
+]
+
+# parts of the world
+groups = ["Turkic"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Savelyev_2020"
+
+# type of study
+type = ["phylogenetic", "network"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "32 Turkic languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 32
+    nchars = 254
+    nsites = 906
+    datatype = 'lexical cognates'
+    source = ''
+    
+
+# analysis information
+[analysis]
+    [analysis.network]
+        tool = 'splitstree'
+        model = 'neighbornet'
+        details = ""
+
+    [analysis.tree1]
+        tool = 'beast2'
+        model = 'ctmc+strict'
+        details = ""
+
+
+    [analysis.tree2]
+        tool = 'beast2'
+        model = 'ctmc+relaxed'
+        details = ""
+
+
+    [analysis.tree3]
+        tool = 'beast2'
+        model = 'covarion+strict'
+        details = ""
+
+
+    [analysis.tree4]
+        tool = 'beast2'
+        model = 'covarion+relaxed'
+        details = ""
+
+
+    [analysis.tree5]
+        tool = 'beast2'
+        model = 'stochasticdollo+strict'
+        details = ""
+
+
+    [analysis.tree6]
+        tool = 'beast2'
+        model = 'stochasticdollo+relaxed'
+        details = ""
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/savelyev_and_robbeets2020" }
+lexibank = { title = "Lexibank Dataset", link = "https://github.com/lexibank/savelyevturkic" }
+links = []

@@ -3,7 +3,9 @@ title = "Computational phylogenetics and the internal structure of Pama-Nyungan"
 
 doi = "10.1353/lan.2012.0081"
 
-abstract = ""
+abstract = """
+We present the first proposal of detailed internal subgrouping and higher-order structure of the Pama-Nyungan family of Australian languages. Previous work has identified more than twentyfive primary subgroups in the family, with little indication of how these groups might fit together. Some work has assumed that reconstruction of higher nodes in the tree was impossible, either because extensive internal borrowing has obscured more remote relations, or because the languages are not sufficiently well attested (see, for example, Bowern & Koch 2004b, Dixon 1997). With regard to the first objection, work by Alpher and Nash (1999) and Bowern and colleagues (2011) shows that loan levels are not high enough to obscure vertical transmission for all but a few languages. New data remove the second objection. Here we use Bayesian phylogenetic inference to show that the Pama-Nyungan tree has a discernible internal subgrouping. We identify four major divisions within the family and discuss the implications of this grouping for future work on the family.
+"""
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = [

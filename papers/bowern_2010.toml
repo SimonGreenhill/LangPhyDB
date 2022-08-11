@@ -1,0 +1,55 @@
+
+title = "Historical Linguistics in Australia: Trees, Networks and Their Implications."
+
+doi = "10.1098/rstb.2010.0013"
+
+abstract = """
+This paper presents an overview of the current state of historical linguistics in Australian languages. Australian languages have been important in theoretical debates about the nature of language change and the possibilities for reconstruction and classification in areas of intensive diffusion. Here are summarized the most important outstanding questions for Australian linguistic prehistory; I also present a case study of the Karnic subgroup of Pama–Nyungan, which illustrates the problems for classification in Australian languages and potential approaches using phylogenetic methods.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Claire Bowern"
+]
+
+# parts of the world
+groups = ["Karnic"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Bowern2010"
+
+# type of study
+type = ["network"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "25 Karnic languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 25
+    nchars = 770
+    nsites = 5487
+    datatype = 'lexical cognates'
+    source = ''
+
+    [data.subset]
+    ntaxa = 23
+    nchars = 770
+    nsites = 1211
+    datatype = 'lexical cognates'
+    source = ''
+    
+    
+# analysis information
+[analysis]
+    [analysis.network]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+
+
+[links]
+phlorest = { }
+lexibank = { }
+links = []

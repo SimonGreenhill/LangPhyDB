@@ -6,7 +6,6 @@ Ceolin2021, Longobardi2013, Longobardi2015
 * Atkinson, Quentin D.; and Russell D. Gray. 2004b. Are Accurate Dates an Intractable Problem for Historical Linguistics? Mapping our Ancestry: Phylogenetic Methods in Anthropology and Prehistory, ed. by M J Shennan S J Collard Mark Lipo C. O’Brien. Chicago: Aldine.
 * Atkinson, Quentin D.; and Russell D. Gray. 2005. Curious parallels and curious connections--phylogenetic thinking in biology and historical linguistics. Systematic Biology 54.513–26. doi:10.1080/10635150590950317.
 * Atkinson, Quentin D.; Geoff K. Nicholls.; David Welch.; and Russell D. Gray. 2005. From words to dates: water into wine, mathemagic or phylogenetic inference. Transactions of the Philological Society 103.193–219.
-* Bowern, Claire. 2010. Historical linguistics in Australia: trees, networks and their implications. Philosophical transactions of the Royal Society of London. Series B, Biological sciences 365.3845–54. doi:10.1098/rstb.2010.0013.
 * Bowern, Claire. 2012. The riddle of Tasmanian languages. Proceedings of the Royal Society B: Biological Sciences 279.4590–5. doi:10.1098/rspb.2012.1842.
 * Bryant, David.; F. Filimon.; and Russell D. Gray. 2005. Untangling our past: Languages, trees, splits and networks. The evolution of cultural diversity: a phylogenetic approach, ed. by Ruth Mace, Clare J Holden, and Stephen J Shennan, 67–84. London: UCL PRess.
 * Chacon, Thiago Costa.; and Johann-Mattis List. 2015. Improved computational models of sound change shed light on the history of the Tukanoan languages. Journal of language lee 3.177–203.
@@ -86,7 +85,6 @@ jaeger2018/
 kaiping_and_klamer2022/
 koile_et_al_subm/
 kolipakam_et_al2018/
-michael_et_al2015/
 power_et_al2020/
 robbeets_and_bouckaert2018/
 robbeets_et_al2021/

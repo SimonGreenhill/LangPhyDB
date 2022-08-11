@@ -1,0 +1,59 @@
+
+title = "A Bayesian Phylogenetic Classification of Tupi-Guarani"
+
+doi = ""
+
+abstract = """
+This paper presents an internal classification of Tupí-Guaraní based on a Bayesian phylogenetic analysis of lexical data from 30 Tupí-Guaraní languages and 2 non-Tupí-Guaraní Tupian languages, Awetí and Mawé. A Bayesian phylogenetic analysis using a generalized binary cognate gain and loss model was carried out on a character table based on the binary coding of cognate sets, which were formed with attention to semantic shift. The classification shows greater internal structure than previous ones, but is congruent with them in several ways.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Lev Michael",
+    "Natalia Chousou-Polydouri",
+    "Keith Bartolomei",
+    "Erin Donnelly",
+    "Vivian Wauters",
+    "Zachary O'Hagan"
+]
+
+# parts of the world
+groups = ["Tupi-Guarani"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Michael2015"
+
+# type of study
+type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "32 Tupi-Guarani languages"
+
+# data
+[data]
+    # We ultimately constructed a total of 4,205 cognate sets, of which 1,113 were 
+    # parsimony-informative and 2,989 were singleton cognate sets.
+    [data.lexicon]
+    ntaxa = 32
+    nchars = ""
+    nsites = 4205
+    datatype = 'lexical cognates'
+    source = ''
+
+# analysis information
+[analysis]
+    [analysis.tree1]
+    tool = 'mrbayes'
+    model = 'restriction'
+    details = ""
+
+    [analysis.tree2]
+    tool = 'mrbayes'
+    model = 'restriction+gamma'
+    details = "best fitting model"
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/michael_et_al2015" }
+lexibank = { title = "Lexibank Dataset", link = "" }
+links = []

@@ -3,7 +3,9 @@ title = "The origin and expansion of Pama–Nyungan languages across Australia"
 
 doi = "10.1038/s41559-018-0489-3"
 
-abstract = ""
+abstract = """
+It remains a mystery how Pama–Nyungan, the world’s largest hunter-gatherer language family, came to dominate the Australian continent. Some argue that social or technological advantages allowed rapid language replacement from the Gulf Plains region during the mid-Holocene. Others have proposed expansions from refugia linked to climatic changes after the last ice age or, more controversially, during the initial colonization of Australia. Here, we combine basic vocabulary data from 306 Pama-Nyungan languages with Bayesian phylogeographic methods to explicitly model the expansion of the family across Australia and test between these origin scenarios. We find strong and robust support for a Pama–Nyungan origin in the Gulf Plains region during the mid-Holocene, implying rapid replacement of non-Pama–Nyungan languages. Concomitant changes in the archaeological record, together with a lack of strong genetic evidence for Holocene population expansion, suggests that Pama–Nyungan languages were carried as part of an expanding package of cultural innovations that probably facilitated the absorption and assimilation of existing hunter-gatherer groups.
+"""
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = [

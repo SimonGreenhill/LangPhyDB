@@ -3,7 +3,9 @@ title = "Internal Classification of the Alor-Pantar Language Family Using Comput
 
 doi = "10.1163/22105832-20120201"
 
-abstract = ""
+abstract = """
+Te non-Austronesian languages of Alor and Pantar in eastern Indonesia have been shown to be genetically related using the comparative method, but the identified phonological innovations are typologically common and do not delineate neat subgroups. We apply computational methods to recently collected lexical data and are able to identify subgroups based on the lexicon. Crucially, the lexical data are coded for cognacy based on identified phonological innovations. Tis methodology can succeed even where phonological innovations themselves fail to identify subgroups, showing that computational methods using lexical data can be a powerful tool supplementing the comparative method.
+"""
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = [

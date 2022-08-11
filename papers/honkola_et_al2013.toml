@@ -1,0 +1,58 @@
+
+title = "Cultural and climatic changes shape the evolutionary history of the Uralic languages."
+
+doi = "10.1111/jeb.12107"
+
+abstract = """
+Quantitative phylogenetic methods have been used to study the evolutionary relationships and divergence times of biological species, and recently, these have also been applied to linguistic data to elucidate the evolutionary history of language families. In biology, the factors driving macroevolutionary processes are assumed to be either mainly biotic (the Red Queen model) or mainly abiotic (the Court Jester model) or a combination of both. The applicability of these models is assumed to depend on the temporal and spatial scale observed as biotic factors act on species divergence faster and in smaller spatial scale than the abiotic factors. Here, we used the Uralic language family to investigate whether both ‘biotic’ interactions (i.e. cultural interactions) and abiotic changes (i.e. climatic fluctuations) are also connected to language diversification. We estimated the times of divergence using Bayesian phylogenetics with a relaxed-clock method and related our results to climatic, historical and archaeological information. Our timing results paralleled the previous linguistic studies but suggested a later divergence of Finno-Ugric, Finnic and Saami languages. Some of the divergences co-occurred with climatic fluctuation and some with cultural interaction and migrations of populations. Thus, we suggest that both ‘biotic’ and abiotic factors contribute either directly or indirectly to the diversification of languages and that both models can be applied when studying language evolution.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Terhi Honkola",
+    "Outi Vesakoski",
+    "Kalle Korhonen",
+    "Jyri Lehtinen",
+    "Kaj Syrjänen",
+    "Niklas Wahlberg"
+]
+
+# parts of the world
+groups = ["Uralic"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Honkola2013"
+
+# type of study
+type = ["phylogenetic", "macroevolutionary"]
+
+# short label of taxa "37 languages from.."
+taxa = "17 Uralic languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 17
+    nchars = 226
+    nsites = ""
+    datatype = 'lexical cognates'
+    source = ''
+    
+
+# analysis information
+[analysis]
+    [analysis.tree1]
+    tool = 'beast'
+    model = 'yule+ctmc+gamma4+strict'
+    details = ""
+
+    [analysis.tree2]
+    tool = 'beast'
+    model = 'yule+ctmc+gamma4+relaxed'
+    details = "best fitting model"
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/honkola_et_al2013" }
+lexibank = { title = "Lexibank Dataset", link = "" }
+links = []

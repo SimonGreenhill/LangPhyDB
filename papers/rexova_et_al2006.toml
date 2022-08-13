@@ -1,0 +1,64 @@
+
+title = "Cladistic Analysis of Bantu Languages: A New Tree Based on Combined Lexical and Grammatical Data."
+
+doi = "10.1007/s00114-006-0088-z"
+
+abstract = """
+The phylogeny of the Bantu languages is reconstructed by application of the cladistic methodology to the combined lexical and grammatical data (87 languages, 144 characters). A maximum parsimony tree and Bayesian analysis supported some previously recognized clades, e.g., that of eastern and southern Bantu languages. Moreover, the results revealed that Bantu languages south and east of the equatorial forest are probably monophyletic. It suggests an unorthodox scenario of Bantu expansion including (after initial radiation in their homelands and neighboring territories) just a single passage through rainforest areas followed by a subsequent divergence into major clades. The likely localization of this divergence is in the area west of the Great Lakes. It conforms to the view that demographic expansion and dispersal throughout the dry-forests and savanna regions of subequatorial Africa was associated with the acquisition of new technologies (iron metallurgy and grain cultivation).
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Kateřina Rexová",
+    "Yvonne Bastin",
+    "Daniel Frynta"
+]
+
+# parts of the world
+groups = ["Bantu"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Rexova2006"
+
+# type of study
+type = ["phylogenetic"]
+
+# short label of taxa "37 languages from.."
+taxa = "87 Bantu languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 87
+    nchars = 92
+    nsites = 92
+    datatype = 'lexical cognates'
+    source = '@Bastinetal1999'
+
+    [data.grammatical]
+    ntaxa = 87
+    nchars = 52
+    nsites = 52
+    datatype = 'structural features'
+    source = '@Bastinetal1979'
+
+
+# analysis information
+[analysis]
+    [analysis.parsimony]
+    tool = 'paup*'
+    model = 'parsimony'
+    details = ""
+    data = "data.lexicon+data.grammatical"
+
+    [analysis.bayesian]
+    tool = 'mrbayes'
+    model = 'restriction site'
+    details = ""
+    data = "data.lexicon+data.grammatical"
+
+
+[links]
+phlorest = {}
+lexibank = {}
+links = []

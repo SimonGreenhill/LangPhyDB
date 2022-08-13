@@ -1,0 +1,74 @@
+
+title = "The Limits and Potentials of Cladistics in Semitic"
+
+doi = "10.1075/cilt.339.03zem"
+
+abstract = """
+Classificational methods based on cladistics are increasingly used in comparative and historical linguistics, including the classification of the Semitic languages. The main data type used in such studies is lexical (especially Swadesh lists); in comparison, grammatical features have been introduced rather slowly.This contribution examines the possibilities of using grammatical data for phylogenetic tree construction and visualization with NeighborNet techniques. Three datasets with grammatical data are examined both individually and in combination for the two procedures, i.e., constructing phylogenetic trees and networks visualizing the distances among languages.The results show great variation in trees constructed on the basis of grammatical data by phylogenetic methods, especially for datasets with less rigorous choice of features, but they provide interesting visualizations when the datasets are used with NeighborNet tools. We have extracted the following signals from the models: there seem to be four regions where the Semitic languages resided, the position of Arabic appears stable within the Northwestern languages, and the positions of Sayhadic and Modern South Arabian require further examination, but they may constitute a separate Peninsular region (without Arabic).
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Petr Zemánek"
+]
+
+# parts of the world
+groups = ["Semitic"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Zemanek2018"
+
+# type of study
+type = ["network"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "14 Semitic languages"
+
+# data
+[data]
+    [data.faber1997]
+    ntaxa = 14
+    nchars = ""
+    nsites = ""
+    datatype = 'lexical cognates'
+    source = '@Faber1997'
+
+    [data.gai1994]
+    ntaxa = 14
+    nchars = "?"
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Gai1994'
+    
+    [data.zemanek2017]
+    ntaxa = 14
+    nchars = "?"
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Zemanek2017'
+
+    [data.combined]
+    ntaxa = 14
+    nchars = "?"
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = ''
+
+
+# analysis information
+[analysis]
+    [analysis.parsimony]
+    tool = 'mesquite'
+    model = ''
+    details = ""
+
+    [analysis.neighbornet]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+
+
+[links]
+phlorest = {}
+lexibank = {}
+links = []

@@ -153,6 +153,7 @@ author,Jan Zrzavý,
 datatype,distance,precomputed distance data
 datatype,lexical cognates,cognate data
 datatype,lexemes,raw lexical data
+datatype,mixed,mixed datatypes
 datatype,phonetic traits,phonetic characters
 datatype,structural features,structural features
 

@@ -1,0 +1,78 @@
+
+title = "Cladistic Analysis of Languages: Indo-European Classification Based on Lexicostatistical Data"
+
+doi = "10.1016/S0748-3007(02)00147-0"
+
+abstract = """
+The phylogeny of the Indo-European (IE) language family is reconstructed by application of the cladistic methodology to the lexicostatistical dataset collected by Dyen (about 200 meanings, 84 speech varieties, the Hittite language used as a functional outgroup). Three different methods of character coding provide trees that show: (a) the presence of four groups, viz., Balto-Slavonic clade, Romano-Germano-Celtic clade, Armenian-Greek group, and Indo-Iranian group (the two last groups possibly paraphyletic); (b) the unstable position of the Albanian language; (c) the unstable pattern of the basalmost IE differentiation; but (d) the probable existence of the Balto-Slavonic–Indo-Iranian (‘‘satem’’) and the Romano-Germano-Celtic (+Albanian?) superclades. The results are compared with the phenetic approach to lexicostatistical data, the results of which are significantly less informative concerning the basal pattern. The results suggest a predominantly branching pattern of the basic vocabulary phylogeny and little borrowing of individual words. Different scenarios of IE differentiation based on archaeological and genetic information are discussed.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Kateřina Rexová",
+    "Daniel Frynta",
+    "Jan Zrzavý"
+]
+
+# parts of the world
+groups = ["Indo-European"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Rexova2003"
+
+# type of study
+type = ["phylogenetic"]
+
+# short label of taxa "37 languages from.."
+taxa = "84 Indo-European languages"
+
+# data
+[data]
+    [data.standardmultistate]
+    ntaxa = 85
+    nchars = 200
+    nsites = 200
+    datatype = 'lexical cognates'
+    source = '@Dyen1992'
+    
+    [data.alteredmultistate]
+    ntaxa = 85
+    nchars = 200
+    nsites = 200
+    datatype = 'lexical cognates'
+    source = '@Dyen1992'
+
+    [data.binary]
+    ntaxa = 85
+    nchars = 200
+    nsites = 2456
+    datatype = 'lexical cognates'
+    source = '@Dyen1992'
+
+
+
+# analysis information
+[analysis]
+    [analysis.mp1]
+    tool = 'paup*'
+    model = 'parsimony+bootstrapping'
+    details = ""
+    data = 'data.standardmultistate'
+    
+    [analysis.mp2]
+    tool = 'paup*'
+    model = 'parsimony+bootstrapping'
+    details = ""
+    data = 'data.alteredmultistate'
+
+    [analysis.mp3]
+    tool = 'paup*'
+    model = 'parsimony+bootstrapping'
+    details = ""
+    data = 'data.binary'
+
+
+[links]
+phlorest = {}
+lexibank = {}
+links = []

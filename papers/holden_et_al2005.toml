@@ -1,0 +1,62 @@
+
+title = "Comparison of Maximum Parsimony and Bayesian Bantu Language Trees"
+
+doi = ""
+
+abstract = """
+Constructing reliable language trees is an essential prerequisite if we wish to use language trees to make inferences about population or cultural history. In this chapter we aim to resolve some of the uncertainties about the shape of the Bantu language tree. Few Bantu-speaking populations have been studied genetically, so the Bantu language tree has been widely used to infer their population and cultural history (eg Ehret 1998; Holden and Mace 2003; Phillipson 1993; Schoenbrun 1998; Vansina 1984, 1990). Yet many aspects of Bantu linguistic relationships remain uncertain, with previous studies producing conflicting or unresolved trees. Here, we used two phylogenetic methods to construct Bantu trees, maximum parsimony and a Bayesian method. The maximum parsimony tree is used by Holden and Mace (Chapter 12) to investigate other aspects of cultural evolution in these populations. The Bayesian method constructs a sample of trees, represented in proportion to their likelihood. The proportion of trees in which a given node appears is equivalent to the posterior probability of that node.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Clare J. Holden",
+    "Andrew Meade",
+    "Mark Pagel"
+]
+
+# parts of the world
+groups = ["Bantu"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Holden2005"
+
+# type of study
+type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "95 Bantu languages"
+
+# data
+[data]
+    [data.parsimony]
+    ntaxa = 75  # high missing data taxa removed.
+    nchars = 92
+    nsites = 92  # multistate
+    datatype = 'lexical cognates'
+    source = '@Bastinetal1999'
+    
+    [data.bayesian]
+    ntaxa = 95
+    nchars = 92
+    nsites = 1649  # binary coded from multistate nexus
+    datatype = 'lexical cognates'
+    source = '@Bastinetal1999'
+    
+
+# analysis information
+[analysis]
+    [analysis.parsimony]
+    tool = 'paup*'
+    model = 'parsimony+bootstrap+hsearch+tbr+unord'
+    details = ""
+
+    [analysis.bayesian]
+    tool = 'bayesphylogenies' #?
+    model = 'm2p'
+    details = ""
+
+
+[links]
+phlorest = {}
+lexibank = {}
+links = []

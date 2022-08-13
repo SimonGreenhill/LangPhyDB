@@ -1,0 +1,64 @@
+
+title = "Structural Phylogenetics and the Reconstruction of Ancient Language History"
+
+doi = ""
+
+abstract = """
+The contribution of language history to the study of the early dispersals of modern humans throughout the Old World has been limited by the shallow time depth (about 8000 T 2000 years) of current linguistic methods. Here it is shown that the application of biological cladistic methods, not to vocabulary (as has been previously tried) but to language structure (sound systems and grammar), may extend the time depths at which language data can be used. The method was tested against well-understood families of Oceanic Austronesian languages, then applied to the Papuan languages of Island Melanesia, a group of hitherto unrelatable isolates. Papuan languages show an archipelago-based phylogenetic signal that is consistent with the current geographical distribution of languages. The most plausible hypothesis to explain this result is the divergence of the Papuan languages from a common ancestral stock, as part of late Pleistocene dispersals.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Michael Dunn",
+    "Angela Terrill",
+    "Ger Reesink",
+    "Robert A. Foley",
+    "Stephen C. Levinson"
+]
+
+# parts of the world
+groups = ["Island Melanesia"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Dunnetal2005"
+
+# type of study
+type = ["phylogenetic"]
+
+# short label of taxa "37 languages from.."
+taxa = "31 Island Melanesia languages"
+
+# data
+[data]
+    [data.papuan]
+    ntaxa = 15
+    nchars = 125
+    nsites = 125
+    datatype = 'structural features'
+    source = ''
+
+    [data.austronesian]
+    ntaxa = 16
+    nchars = 125
+    nsites = 125
+    datatype = 'structural features'
+    source = ''
+
+
+# analysis information
+[analysis]
+    [analysis.papuan]
+    tool = 'paup*'
+    model = 'parsimony+bootstrap'
+    details = ""
+
+    [analysis.austronesian]
+    tool = 'paup*'
+    model = 'parsimony+bootstrap'
+    details = ""
+
+
+[links]
+phlorest = { }
+lexibank = { }
+links = []

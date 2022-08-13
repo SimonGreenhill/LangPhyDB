@@ -1,0 +1,110 @@
+
+title = "Stuck in the Forest: Trees, Networks and Chinese Dialects"
+
+doi = ""
+
+abstract = """
+This paper discusses the validity of the tree model of evolution for the particular case of Sinitic languages (or Chinese dialects). Our approach is lexically based, using standardized word lists. First, these lists were tested for their congruence, as they are supposed to have evolved at different rates. Then, we undertook a phylogenetic analysis, using both a distance-based lexicostatistical method and a character-based maximum parsimony method. The traditional classification of Chinese dialects is recovered to various extents depending on the method and on the word list used, but the character-based analysis of the 200 Swadesh word list outperforms all other analyses. Finally, the validity of the branching patterns obtained was tested using a variety of techniques. Although the data fits the inferred trees well, the topology of these trees is collapsed to a star-like pattern when investigated through resampling methods. The application of a network method confirms that the development of these Sinitic languages is not tree-like, highlighting the fact that in cases like this tree-reconstruction methods can be misleading.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Mahé Ben Hamed",
+    "Feng Wang"
+]
+
+# parts of the world
+groups = ["Sinitic"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Hamed:2006er"
+
+# type of study
+type = ["phylogenetic"]
+
+# short label of taxa "37 languages from.."
+taxa = "23 Sinitic languages"
+
+
+
+# data
+[data]
+    [data.lexicon35]
+    ntaxa = 24
+    nchars = 35
+    nsites = 35
+    datatype = 'lexical cognates'
+    source = '@Wang2004'
+
+    [data.lexicon100]
+    ntaxa = 24
+    nchars = 100
+    nsites = 100
+    datatype = 'lexical cognates'
+    source = '@Wang2004'
+
+    [data.lexicon200]
+    ntaxa = 24
+    nchars = 200
+    nsites = 200
+    datatype = 'lexical cognates'
+    source = '@Wang2004'
+    
+
+
+
+
+# analysis information
+[analysis]
+    [analysis.ild]
+    tool = 'paup*'
+    model = 'incongruence length difference test'
+    details = ""
+    data = "data.lexicon200"
+
+    [analysis.mp35]
+    tool = 'paup*'
+    model = 'parsimony+bootstrap'
+    details = ""
+    data = "data.lexicon35"
+    
+    [analysis.mp100]
+    tool = 'paup*'
+    model = 'parsimony+bootstrap'
+    details = ""
+    data = "data.lexicon100"
+    
+    [analysis.mp200]
+    tool = 'paup*'
+    model = 'parsimony+bootstrap'
+    details = ""
+    data = "data.lexicon200"
+    
+    [analysis.nj35]
+    tool = 'paup*'
+    model = 'neighborjoining'
+    details = ""
+    data = "data.lexicon35"
+    
+    [analysis.nj100]
+    tool = 'paup*'
+    model = 'neighborjoining'
+    details = ""
+    data = "data.lexicon100"
+    
+    [analysis.nj200]
+    tool = 'paup*'
+    model = 'neighborjoining'
+    details = ""
+    data = "data.lexicon200"
+
+    [analysis.network]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "data.lexicon200"
+
+[links]
+phlorest = {}
+lexibank = {}
+links = []

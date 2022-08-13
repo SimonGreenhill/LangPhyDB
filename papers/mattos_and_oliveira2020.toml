@@ -1,0 +1,71 @@
+
+title = "Kalunga in the Lusophone Context: A Phylogenetic Study"
+
+doi = "10.5334/jpl.224"
+
+abstract = """
+Kalunga is a variety of Afro-Portuguese spoken in a rural community located in the state of Goiás, Brazil. In this study, we compare Kalunga with other varieties of Portuguese spoken in Angola, Brazil, Cape Verde, and Portugal and Portuguese-based creoles from a contact linguistics perspective. We investigate typological similarities, differences, and possible connections between these varieties. The results support previous sociohistorical and linguistic studies that reveal significant differences between Kalunga and standardized varieties of Portuguese, and the typological distinction between creoles, more vernacular varieties, and more standard varieties.
+""""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Ana Paulla Braga Mattos",
+    "Márcia Santos Duarte Oliveira"
+]
+
+# parts of the world
+groups = ["Creole languages"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Mattos2020"
+
+# type of study
+type = ["network", "phylogenetic"]
+
+# short label of taxa "37 languages from.."
+taxa = "16 Creole languages languages"
+
+# data
+[data]
+    [data.typology]
+    ntaxa = 16
+    nchars = 48
+    nsites = 48
+    datatype = 'structural features'
+    source = ''
+
+    [data.dialectal]
+    ntaxa = 16
+    nchars = 57
+    nsites = 57
+    datatype = 'structural features'
+    source = ''
+    
+
+# analysis information
+[analysis]
+    [analysis.typology]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+
+    [analysis.dialectal]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+
+    [analysis.typology.nj]
+    tool = 'splitstree'
+    model = 'neighborjoining'
+    details = ""
+
+    [analysis.dialectal.nj]
+    tool = 'splitstree'
+    model = 'neighborjoining'
+    details = ""
+
+
+[links]
+phlorest = {}
+lexibank = {}
+links = []

@@ -1,0 +1,97 @@
+
+title = "Neighbour-Nets Portray the Chinese Dialect Continuum and the Linguistic Legacy of China's Demic History."
+
+doi = "10.1098/rspb.2004.3015"
+
+abstract = """
+As with species studied by evolutionary biologists, languages are evolving entities. They can evolve in tree-like patterns, possibly blurred by borrowing, but they can also develop in non-tree-like schemes. For instance, diglossia, as in the case of Chinese, can counterbalance the hierarchical pattern expected from differentiation by internal change associated with isolation by distance of speech communities. Using two lexical datasets, either the basic lexicon supposedly more immune to borrowing or a representative sample of the whole lexicon, we investigate the development pattern of Chinese dialects using a neighbournet approach, which is an unprejudiced technique for representing object relationships. The resulting graphs are consistent with a dialect continuum shaped by counterbalanced effects of homogenizing diglossia and borrowing versus differentiating spread of speech communities. Historical events and linguistic claims can be mapped on these graphs.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Mahé Ben Hamed"
+]
+
+# parts of the world
+groups = ["Sinitic"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Hamed2005a"
+
+# type of study
+type = ["phylogenetic"]
+
+# short label of taxa "37 languages from.."
+taxa = "24 Sinitic languages"
+
+# data
+[data]
+    [data.sw35]
+    ntaxa = 24
+    nchars = 35
+    nsites = ""
+    datatype = 'lexical cognates'
+    source = '@Wang2004'
+
+    [data.sw100]
+    ntaxa = 24
+    nchars = 100
+    nsites = ""
+    datatype = 'lexical cognates'
+    source = '@Wang2004'
+    
+    [data.sw200]
+    ntaxa = 24
+    nchars = 200
+    nsites = ""
+    datatype = 'lexical cognates'
+    source = '@Wang2004'
+    
+    [data.cheng]
+    ntaxa = 18
+    nchars = 905
+    nsites = 1
+    datatype = 'distance'
+    source = '@Cheng1991'
+
+
+# analysis information
+[analysis]
+    [analysis.treenj]
+    tool = 'paup*'
+    model = 'neighborjoining'
+    details = "results not presented"
+
+    [analysis.treemp]
+    tool = 'paup*'
+    model = 'parsimony'
+    details = "results not presented"
+
+    [analysis.network35]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ''
+    data = 'data.sw35'
+
+    [analysis.network100]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ''
+    data = 'data.sw100'
+
+    [analysis.network200]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ''
+    data = 'data.sw200'
+    
+    [analysis.networkcheng]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ''
+    data = 'data.cheng'
+
+[links]
+phlorest = {}
+lexibank = {}
+links = []

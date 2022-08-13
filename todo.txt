@@ -1,6 +1,7 @@
 
 https://doi.org/10.32473/sal.v45i1.107255
 Ceolin2021, Longobardi2013, Longobardi2015
+Hamed et al 2005 On Cladistic Reconstruction of Linguistic Trees through Vowel Data
 
 * Atkinson, Quentin D.; and Russell D. Gray. 2004a. How old is the Indo-European language family? - Illumination or more moths to the flame?
 * Atkinson, Quentin D.; and Russell D. Gray. 2004b. Are Accurate Dates an Intractable Problem for Historical Linguistics? Mapping our Ancestry: Phylogenetic Methods in Anthropology and Prehistory, ed. by M J Shennan S J Collard Mark Lipo C. O’Brien. Chicago: Aldine.
@@ -31,7 +32,6 @@ Ceolin2021, Longobardi2013, Longobardi2015
 * Grollemund, Rebecca.; Simon Branford.; Koen Bostoen.; Andrew Meade.; Chris Venditti.; and Mark Pagel. 2015. Bantu expansion shows habitat alters the route and pace of human dispersals. Proceedings of the National Academy of Sciences of the USA. doi:10.1073/pnas.1503793112.
 * Guillon, Myrtille.; and Ruth Mace. 2016. A phylogenetic comparative study of Bantu kinship terminology finds limited support for its co-evolution with social organisation. PLoS ONE 11.1–15. doi:10.1371/journal.pone.0147920.
 * Haynie, Hannah J.; and Claire Bowern. 2016. Phylogenetic approach to the evolution of color term systems. Proceedings of the National Academy of Sciences 113.13666–13671. doi:10.1073/pnas.1613666113.
-* Holden, Clare J.; and Russell D. Gray. 2006. Rapid Radiation, Borrowing and Dialect Continua in the Bantu Languages. Phylogenetic Methods and the Prehistory of Languages, 19–31. Cambridge: McDonald Institute for Archaeological Research.
 * Holden, Clare J.; and Ruth Mace. 2005. “The cow is the enemy of matriliny”: Using phylogenetic methods to investigate cultural evolution in Africa. The evolution of cultural diversity: a phylogenetic approach, ed. by R Mace, Clare J Holden, and Stephen J Shennan, 217–234. London: UCL Press. http://eprints.ucl.ac.uk/15382.
 * Holden, Clare J.; and Stephen J Shennan. 2005. How tree-like is cultural evolution? The evolution of cultural diversity: a phylogenetic approach, ed. by Ruth Mace, Clare J Holden, and Stephen J Shennan, 13–30. London: UCL PRess.
 * Hurles, Matthew E.; Elizabeth Matisoo-Smith.; Russell D. Gray.; and David Penny. 2003. Untangling Polynesian origins: the edge of the knowable. Trends in Ecology & Evolution 18. Elsevier Science.531–540. doi:10.1016/S0169-5347(03)00245-3.

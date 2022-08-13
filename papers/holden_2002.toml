@@ -1,0 +1,48 @@
+
+title = "Bantu Language Trees Reflect the Spread of Farming across Sub-Saharan Africa: A Maximum-Parsimony Analysis"
+
+doi = "10.1098/rspb.2002.1955"
+
+abstract = """
+Linguistic divergence occurs after speech communities divide, in a process similar to speciation among isolated biological populations. The resulting languages are hierarchically related, like genes or species. Phylogenetic methods developed in evolutionary biology can thus be used to infer language trees, with the caveat that 'borrowing' of linguistic elements between languages also occurs, to some degree. Maximum-parsimony trees for 75 Bantu and Bantoid African languages were constructed using 92 items of basic vocabulary. The level of character fit on the trees was high (consistency index was 0.65), indicating that a tree model fits Bantu language evolution well, at least for the basic vocabulary. The Bantu language tree reflects the spread of farming across this part of sub-Saharan Africa between ca. 3000 BC and AD 500. Modern Bantu subgroups, defined by clades on parsimony trees, mirror the earliest farming traditions both geographically and temporally. This suggests that the major subgroups of modern Bantu stem from the Neolithic and Early Iron Age, with little subsequent movement by speech communities.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Clare J. Holden"
+]
+
+# parts of the world
+groups = ["Bantu"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Holden2002"
+
+# type of study
+type = ["phylogenetic"]
+
+# short label of taxa "37 languages from.."
+taxa = "75 Bantu languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 75
+    nchars = 92
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Bastinetal1999'
+    
+
+# analysis information
+[analysis]
+    [analysis.tree]
+    tool = 'paup*'
+    model = 'parsimony+bootstrapping'
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+lexibank = { title = "Lexibank Dataset", link = "" }
+links = []

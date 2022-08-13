@@ -1,0 +1,54 @@
+
+title = "Rapid Radiation, Borrowing and Dialect Continua in the Bantu Languages"
+
+doi = ""
+
+abstract = """
+Despite several decades of study, several fundamental questions about Bantu linguistic relationships remain unresolved, as well as numerous questions of detail (see Chapter 4 this volume). Phylogenetic analysis has shown that Bantu languages Dt a branching-tree model of evolution surprisingly well, but a tree model does not explain all the variation in the Bantu linguistic data. Moreover, several different Bantu trees appear to fit the data almost equally well. Our difficulties in resolving the Bantu tree are often ascribed to a lack of data and research, and it is true that there are many more Bantu languages than linguists. However there are probably also more fundamental reasons why a single Bantu tree has proven elusive, arising from the historical processes under which these languages developed. In this chapter, we show how the network-building method Neighbor-Net (Bryant & Moulton 2003) can be used to distinguish between different historical reasons why some linguistic relationships are not well resolved. We test three hypotheses for why some Bantu languages might not fit a tree model well: rapid radiation, linguistic borrowing and dialect chains, all thought to have been widespread within the Bantu family.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Clare J. Holden",
+    "Russell D. Gray"
+]
+
+# parts of the world
+groups = ["Bantu"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@HoldenGray2006"
+
+# type of study
+type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "95 Bantu languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 95
+    nchars = 92
+    nsites = 92  # multistate
+    datatype = 'lexical cognates'
+    source = '@Bastinetal1999'
+    
+
+# analysis information
+[analysis]
+    [analysis.network]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+
+    [analysis.tree]
+    tool = 'mrbayes'
+    model = 'm2p'
+    details = "From Holden & Gray 2006"
+
+
+[links]
+phlorest = {}
+lexibank = {}
+links = []

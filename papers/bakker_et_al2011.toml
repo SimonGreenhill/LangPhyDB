@@ -1,0 +1,104 @@
+
+title = "Creoles Are Typologically Distinct from Non-Creoles"
+
+doi = "10.1075/jpcl.26.1.02bak"
+
+abstract = """
+In creolist circles, there has been a long-standing debate whether creoles differ structurally from non-creole languages and thus would form a special class of languages with specific typological properties. This debate about the typological status of creole languages has severely suffered from a lack of systematic empirical study. This paper presents for the first time a number of large-scale empirical investigations of the status of creole languages as a typological class on the basis of different and well-balanced samples of creole and non-creole languages. Using statistical modeling (multiple regression) and recently developed computational tools of quantitative typology (phylogenetic trees and networks), this paper provides robust evidence that creoles indeed form a structurally distinguishable subgroup within the world’s languages. The findings thus seriously challenge approaches that hold that creole languages are structurally indistinguishable from non-creole languages.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Peter Bakker",
+    "Aymeric Daval-Markussen",
+    "Mikael Parkvall",
+    "Ingo Plag"
+]
+
+# parts of the world
+groups = ["Creole languages"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Bakker2011"
+
+# type of study
+type = ["network"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "188 Creole languages languages"
+
+# data
+[data]
+    [data.hancock]
+    ntaxa = 33
+    nchars = 122
+    nsites = 122
+    datatype = 'structural features'
+    source = '@Hancock1987'
+
+    [data.ccs]
+    ntaxa = 18
+    nchars = 97
+    nsites = 97
+    datatype = 'structural features'
+    source = '@HolmPatrickCCS2007'
+
+    [data.ccsextended]
+    ntaxa = 30
+    nchars = 97
+    nsites = 97
+    datatype = 'structural features'
+    source = '@HolmPatrickCCS2007'
+
+    [data.parkvall]
+    ntaxa = 185
+    nchars = 43
+    nsites = 43
+    datatype = 'structural features'
+    source = '@Parkvall2008'
+
+
+
+# analysis information
+[analysis]
+    [analysis.hancock_lexical]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "subset of lexical data"
+    data = 'data.hancock'
+
+    [analysis.hancock_structural]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "subset of structural data"
+    data = 'data.hancock'
+
+    [analysis.hancock_combined]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = 'data.hancock'
+
+    [analysis.ccs]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = 'data.ccsextended'
+
+    [analysis.ccsextended]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = 'data.ccs'
+    
+    [analysis.parkvall]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = 'data.parkvall'
+    
+    
+[links]
+phlorest = {  }
+lexibank = {  }
+links = []

@@ -25,3 +25,7 @@ savelyev_and_robbeets2020:
 kolipakam_et_al2018:
 
 > The mean δ score is 0.30, Telugu and Tulu have higher scores, suggesting greater contribution to reticulate patterns (Telugu: 0.38; Tulu: 0.35). Telugu also has a high Q-residual score, 0.0132, almost twice as high as the mean of 0.0069.
+
+ferrazgerardi_and_reichert2021:
+
+> with Q-residual score = 0.1013 and high δ score = 0.4254

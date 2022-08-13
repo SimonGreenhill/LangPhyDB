@@ -1,0 +1,142 @@
+
+title = "Behind Family Trees: Secondary Connections in Uralic Language Networks"
+
+doi = "10.1163/22105832-00402007"
+
+abstract = """
+Although it has long been recognized that the family tree model is too simplistic to account for historical connections between languages, most computational studies of language history have concentrated on tree-building methods. Here, we employ computational network methods to assess the utility of network models in comparison with tree models in studying the subgrouping of Uralic languages. We also compare basic vocabulary data with words that are more easily borrowed and replaced crosslinguistically (less basic vocabulary) in order to find out how secondary connections affect computational analyses of this language family. In general, the networks support a treelike pattern of diversification, but also provide information about conflicting connections underlying some of the ambiguous divergences in the trees. These are seen as reflections of unclear divergence patterns (either in ancestral protolanguages or between languages closely related at present), which pose problems for a tree model. The networks also show that the relationships of closely related present-day languages are more complex than what the tree models suggest. When comparing less basic with basic vocabulary, we can detect the effect of borrowing between different branches (horizontal transfer) mostly between and within the Finnic and Saami subgroups. We argue that the trees obtained with basic vocabulary provide the primary pattern of the divergence of a language family, whereas networks, especially those constructed with less basic vocabulary, add reality to the picture by showing the effect of more complicated developments affecting the connections between the languages.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Jyri Lehtinen",
+    "Terhi Honkola",
+    "Kalle Korhonen",
+    "Kaj Syrjänen",
+    "Niklas Wahlberg",
+    "Outi Vesakoski"
+]
+
+# parts of the world
+groups = ["Uralic"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Lehtinen2014"
+
+# type of study
+type = ["phylogenetic", "network", "delta"]
+
+# short label of taxa "37 languages from.."
+taxa = "18 Uralic languages"
+
+# data
+[data]
+    [data.full]
+    ntaxa = 18
+    nchars = 226
+    nsites = 226
+    datatype = 'lexical cognates'
+    source = ''
+    
+    [data.ura100]
+    ntaxa = 18
+    nchars = 100
+    nsites = 100
+    datatype = 'lexical cognates'
+    source = ''
+    
+    [data.leipzigjakarta]
+    ntaxa = 18
+    nchars = 101
+    nsites = 101
+    datatype = 'lexical cognates'
+    source = ''
+
+    [data.wold401]
+    ntaxa = 18
+    nchars = 100
+    nsites = 100
+    datatype = 'lexical cognates'
+    source = ''
+    
+
+# analysis information
+[analysis]
+    [analysis.tree.full]
+    tool = 'mrbayes'
+    model = 'mk'
+    details = ""
+    data = "data.full"
+
+    [analysis.tree.ura100]
+    tool = 'mrbayes'
+    model = 'mk'
+    details = ""
+    data = "data.ura100"
+    
+    [analysis.tree.leipzigjakarta]
+    tool = 'mrbayes'
+    model = 'mk'
+    details = ""
+    data = "data.leipzigjakarta"
+    
+    [analysis.tree.wold401]
+    tool = 'mrbayes'
+    model = 'mk'
+    details = ""
+    data = "data.wold401"
+    
+    [analysis.delta.full]
+    tool = 'splitstree'
+    model = 'delta'
+    details = ""
+    data = "data.full"
+
+    [analysis.delta.ura100]
+    tool = 'splitstree'
+    model = 'delta'
+    details = ""
+    data = "data.ura100"
+    
+    [analysis.delta.leipzigjakarta]
+    tool = 'splitstree'
+    model = 'delta'
+    details = ""
+    data = "data.leipzigjakarta"
+    
+    [analysis.delta.wold401]
+    tool = 'splitstree'
+    model = 'delta'
+    details = ""
+    data = "data.wold401"
+
+    [analysis.network.full]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "data.full"
+
+    [analysis.network.ura100]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "data.ura100"
+    
+    [analysis.network.leipzigjakarta]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "data.leipzigjakarta"
+    
+    [analysis.network.deltawold401]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "data.wold401"
+    
+    
+
+[links]
+phlorest = {}
+lexibank = {}
+links = []

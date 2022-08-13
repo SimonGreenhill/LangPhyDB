@@ -20,7 +20,7 @@ groups = ["Timor-Alor-Pantar"]  # 'Austronesian', etc
 bibkey = "@Robinson_2012"
 
 # type of study
-type = ["phylogenetic", "network"]  # phylogenetic,phylogeography,macroevolutionary,trait
+type = ["phylogenetic", "delta", "network"]
 
 # short label of taxa "37 languages from.."
 taxa = "13 Timor-Alor-Pantar languages"
@@ -56,7 +56,6 @@ taxa = "13 Timor-Alor-Pantar languages"
     tool = 'splitstree'
     model = 'delta'
     details = ""
-
 
 
 [links]

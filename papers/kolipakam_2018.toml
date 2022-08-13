@@ -25,7 +25,7 @@ groups = ["Dravidian"]  # 'Austronesian', etc
 bibkey = "@Kolipakam2018"
 
 # type of study
-type = ["phylogenetic", "network"]  # phylogenetic,phylogeography,macroevolutionary,trait
+type = ["phylogenetic", "dating", "network", "delta", "qresidual"]
 
 # short label of taxa "37 languages from.."
 taxa = "20 Dravidian languages"

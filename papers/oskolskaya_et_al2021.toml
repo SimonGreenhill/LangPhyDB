@@ -20,7 +20,7 @@ groups = ["Tungusic"]  # 'Austronesian', etc
 bibkey = "@Oskolskaya_2021"
 
 # type of study
-type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
+type = ["phylogenetic", "dating"]
 
 # short label of taxa "37 languages from.."
 taxa = "21 Tungusic languages"

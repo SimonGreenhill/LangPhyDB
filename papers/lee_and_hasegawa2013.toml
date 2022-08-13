@@ -20,7 +20,7 @@ groups = ["Ainu"]  # 'Austronesian', etc
 bibkey = "@Lee_2013"
 
 # type of study
-type = ["phylogenetic", "phylogeography"]
+type = ["phylogenetic", "dating", "phylogeography", "delta", "qresidual"]
 
 # short label of taxa "37 languages from.."
 taxa = "19 Ainu languages"

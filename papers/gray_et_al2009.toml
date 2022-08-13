@@ -21,7 +21,7 @@ groups = ["Austronesian"]  # 'Austronesian', etc
 bibkey = "@Gray2009"
 
 # type of study
-type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
+type = ["phylogenetic", "dating"]
 
 # short label of taxa "37 languages from.."
 taxa = "400 Austronesian languages"

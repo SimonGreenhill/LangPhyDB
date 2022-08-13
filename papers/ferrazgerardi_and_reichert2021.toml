@@ -1,0 +1,82 @@
+
+title = "The Tupí-Guaraní language family"
+
+doi = "10.1075/dia.18032.fer"
+
+abstract = """
+Attempts to classify Tupí-Guaraní languages have so far been inconsistent with archaeological evidence and ignored information from historical sources. The case of Tupinambá is most illustrative in this regard. Using both Bayesian phylogenetic analysis and a stochastic algorithm that reconstructs phylogenetic trees by relying on maximum likelihood estimation, we suggest a new internal classification of the Tupí-Guaraní branch. The results of the analyses are in accordance with the most recent genetic research on Tupían populations and challenge previous classifications by suggesting, among others, that Tupinambá should not be considered a 'Guaraní' language."""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Fabrício Ferraz Gerardi",
+    "Stanislav Reichert"
+]
+
+# parts of the world
+groups = ["Tupi-Guarani"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@FerrazGerardi_2021"
+
+# type of study
+type = ["phylogenetic", "network", "delta", "qresidual"]
+
+# short label of taxa "37 languages from.."
+taxa = "38 Tupi-Guarani languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 38
+    nchars = 244
+    nsites = ""
+    datatype = 'lexical cognates'
+    source = ''
+    
+
+# analysis information
+[analysis]
+    [analysis.network]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+
+    [analysis.delta]
+    tool = 'splitstree'
+    model = 'delta'
+    details = ""
+
+    [analysis.qresidual]
+    tool = 'splitstree'
+    model = 'qresidual'
+    details = ""
+    
+    [analysis.tree1]
+    tool = 'beast2'
+    model = 'mkv+birthdeath+strict'
+    details = ""
+
+    [analysis.tree2]
+    tool = 'beast2'
+    model = 'mkv+birthdeath+relaxed'
+    details = ""
+
+    [analysis.tree3]
+    tool = 'beast2'
+    model = 'mkv+yule+strict'
+    details = ""
+
+    [analysis.tree4]
+    tool = 'beast2'
+    model = 'mkv+yule+relaxed'
+    details = ""
+
+    [analysis.ml]
+    tool = 'iqtree'
+    model = 'ml+bootstrap'
+    details = ""
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/gerardi_and_reichert2021" }
+lexibank = { title = "Lexibank Dataset", link = "https://github.com/lexibank/gerarditupi" }
+links = []

@@ -162,6 +162,7 @@ tool,bayesphylogenies,http://www.evolution.reading.ac.uk/BayesPhy.html
 tool,bayestraits,http://www.evolution.reading.ac.uk/BayesTraits.html
 tool,beast,https://beast.community
 tool,beast2,http://www.beast2.org/
+tool,iqtree,
 tool,lingpy,
 tool,macclade,
 tool,mesquite,
@@ -177,6 +178,7 @@ tool,splitstree,http://www.splitstree.org/
 tool,structure,
 tool,traitlab,https://sites.google.com/site/traitlab/
 
+type,dating,phylogenetic dating
 type,delta,Reticulation metric delta
 type,distance,1980s
 type,macroevolutionary,Inferring macroevolutionary processes from the data

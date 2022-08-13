@@ -24,7 +24,7 @@ groups = ["Uralic"]  # 'Austronesian', etc
 bibkey = "@Honkola2013"
 
 # type of study
-type = ["phylogenetic", "macroevolutionary"]
+type = ["phylogenetic", "dating", "macroevolutionary"]
 
 # short label of taxa "37 languages from.."
 taxa = "17 Uralic languages"

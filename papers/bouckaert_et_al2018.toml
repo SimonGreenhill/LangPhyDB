@@ -21,7 +21,7 @@ groups = ["Pama-Nyungan"]  # 'Austronesian', etc
 bibkey = "@Bouckaert2018"
 
 # type of study
-type = ["phylogenetic", "phylogeography"]  # phylogenetic,phylogeography,macroevolutionary,trait
+type = ["phylogenetic", "dating", "phylogeography"]  # phylogenetic,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
 taxa = "306 Pama-Nyungan languages"

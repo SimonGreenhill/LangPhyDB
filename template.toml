@@ -16,7 +16,7 @@ groups = []  # 'Austronesian', etc
 bibkey = ""  # @xxxx
 
 # type of study
-type = []  # phylogenetic,phylogeography,macroevolutionary,trait
+type = []  # phylogenetic,dating,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
 taxa = ""

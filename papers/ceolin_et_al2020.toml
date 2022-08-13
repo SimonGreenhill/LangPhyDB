@@ -22,7 +22,7 @@ groups = ["Indo-European & others"]  # 'Austronesian', etc
 bibkey = "@Ceolin_2020"
 
 # type of study
-type = ["phylogenetic", "distance", "delta", "qresidual"]
+type = ["phylogenetic", "distance", "network", "delta", "qresidual"]
 
 # short label of taxa "37 languages from.."
 taxa = "69 Indo-European & other languages"

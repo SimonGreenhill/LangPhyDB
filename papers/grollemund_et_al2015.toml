@@ -24,7 +24,7 @@ groups = ["Bantu"]  # 'Austronesian', etc
 bibkey = "@grollemund2015"
 
 # type of study
-type = ["phylogenetic", "phylogeography"]  # phylogenetic,phylogeography,macroevolutionary,trait
+type = ["phylogenetic", "dating", "phylogeography"]
 
 # short label of taxa "37 languages from.."
 taxa = "425 Bantu languages"

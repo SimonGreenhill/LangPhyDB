@@ -19,7 +19,7 @@ bibkey = "@Lee2015"
 
 # type of study
 type = [
-    "network", "phylogenetic", "structure",
+    "network", "dating", "phylogenetic", "structure",
     "phylogeography"
 ]
 

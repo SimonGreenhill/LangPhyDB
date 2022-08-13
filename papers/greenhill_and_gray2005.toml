@@ -20,7 +20,7 @@ groups = ["Austronesian"]  # 'Austronesian', etc
 bibkey = "@Greenhill2005"
 
 # type of study
-type = ["phylogenetic",]
+type = ["phylogenetic", "network"]
 
 # short label of taxa "37 languages from.."
 taxa = "77 Austronesian languages"

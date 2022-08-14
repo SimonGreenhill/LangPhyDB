@@ -40,6 +40,34 @@ taxa = "425 Bantu languages"
     items = 'swadesh100'
     comment = ''
     
+
+# date calibrations
+[calibrations]
+
+    [calibration.bantoid_vs_nonbantu]
+    taxa = ["bant1294"]
+    calibration = ">5000"
+    units = "ybp" # ybp
+    description = "5,000 B.P. or older for Bantoid, non-Bantu (58)"
+
+    [calibration.narrowbantu]
+    taxa = ["narr1281"]
+    calibration = "uniform(4000, 5000)"
+    units = "ybp" # ybp
+    description = "4,000–5,000 B.P. for Narrow Bantu (13, 14, 16, 44, 59, 60);"
+    
+    [calibration.mbambubi]
+    taxa = ["bub1242", "mbam1252"]
+    calibration = "uniform(3000, 3500)"
+    units = "ybp" # ybp
+    description = "3,000–3,500 B.P. for the Mbam-Bubi ancestor"
+
+    [calibration.easternbantu]
+    taxa = ["east2731"]
+    calibration = "2500"
+    units = "ybp" # ybp
+    description = "2,500 B.P. for Eastern Bantu (62)"
+
 ## Methods:
 
 # analysis information

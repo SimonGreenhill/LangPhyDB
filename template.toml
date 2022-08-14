@@ -33,12 +33,24 @@ taxa = ""
     comment = ''
 
 
+# date calibrations
+[calibrations]
+    [calibration.label]
+    taxa = []
+    calibration = "" # x, normal(x, y), uniform(x,y)
+    units = "ybp" # ybp
+    description = ""
+
+
 # analysis information
 [analysis]
     [analysis.tree]
     tool = ''
     model = ''
     details = ""
+
+
+
 
 
 [links]

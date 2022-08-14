@@ -36,6 +36,38 @@ taxa = "21 Tungusic languages"
     items = 'leipzigjakartajena'
     comment = ''
 
+# date calibrations
+[calibrations]
+
+    [calibration.jurchen]
+    taxa = ["jurc1239"]
+    calibration = "351"
+    units = "ybp" # ybp
+    description = "sampled ancestor: Jurchen at 351 BP (1599 AD)"
+    
+    [calibration.modernjurchenic]
+    taxa = ["manc1250"]
+    calibration = "lognormal(200, 100, 330, real=True)"
+    units = "ybp" # ybp
+    description = "The first calibration point refers to the time of extinction of Jurchen and the appearance of Manchu. It is believed that the Manchu language was a direct descendent of Jurchen, a dynastic language of the Jin empire (1115–1234 AD), or some of its dialects (Janhunen 2012: 6). Known written materials in Jurchen date back to the 12th–16th centuries, while the first Manchu manuscript is dated to 1599 (Gorelova 2002: 50). This period of transition from Jurchen to Manchu texts provides a helpful reference point: Jurchen was no longer used by 1599."
+
+    [calibration.manchuxibe]
+    taxa = ["manc1251"]
+    calibration = "lognormal(130, 40, 131, real=True)"
+    units = "ybp" # ybp
+    description = "The second calibration point concerns the same Jurchenic group. On the basis of historical evidence, we know that in 1764, the Xibe people, a Manchu tribe, resettled in the non-Manchu speaking area of Xinjiang, a province in the northwest of China (Gorelova 2002: 31). Since then, the Xibe variety became isolated from other Manchu dialects. Therefore, 1764 can serve as a reference point for the split between Manchu and Xibe."
+
+    [calibration.siberianevenki]
+    taxa = ["sibe1251"]
+    calibration = "lognormal(120, 60, 175, real=True)"
+    units = "ybp" # ybp
+    description = "In 1723, Messerschmidt collected some vocabulary from various Evenki tribes in different regions (Messerschmidt 1964). His data show that the distinction in the realization of Proto-Evenki *s as /s/ or /ʃ/ had already taken place. Furthermore, Lindenau documented a variant /h/ in 1744–1745. The phonetic realization of *s is one of the basic features for the division into modern Northern, Eastern and Southern Evenki dialects. Although these data indicate that the distribution of Evenki dialects was different in the 18th century, they also show that the break-up into at least two dialectal groups with different realization of *s had already taken place (Vasilevich 1969; Mishchenkova 2019). We used 1723 as our third calibration point, indicating an upper ceiling for the break-up of Siberian Evenki: Chiringda, Stony Tunguska, Strelka-Chunya, Teteya and Tutonchany Evenki varieties."
+
+    [calibration.earlyjurchensplit]
+    taxa = ["manc1250", "east2366"]
+    calibration = "normal(2100, 275, 0, real=True)"
+    units = "ybp" # ybp
+    description = "...we decided to test an additional calibration point, which is hypothetical in its nature. By the end of the 3rd century AD, the Primorye region (currently the southern part of the Russian Far East, including administrative regions Primorskij kraj and a part of Khabarovskij kraj with the northern border along the Amur river) went through a period of sharp climate cooling which caused the migration of the local tribes and the reversion from millet farming to hunting and fishing (Yanushevich et al. 1990; Robbeets et al. 2020). Jurchenic speakers living in the current area of Northeastern China were predominantly farmers, while other Tungusic populations who lived predominantly in the current regions of Russia were hunters, fishers and gatherers. Therefore, we hypothesize that the climate cooling in the 3rd century can be associated with the separation of Jurchenic from other Tungusic languages: non-Jurchenic tribes might have lived in the Primorye region by the end of 3rd century AD and they might have had to change their subsistence methods because of climate cooling. Since the last calibration point is uncertain, we performed two parallel analyses: one with the three documented calibration points, and another including this fourth hypothetical one."
 
 # analysis information
 [analysis]

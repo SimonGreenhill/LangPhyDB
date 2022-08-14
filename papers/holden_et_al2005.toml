@@ -34,6 +34,8 @@ taxa = "95 Bantu languages"
     nsites = 92  # multistate
     datatype = 'lexical cognates'
     source = '@Bastinetal1999'
+    items = 'swadesh100'
+    comment = ''
     
     [data.bayesian]
     ntaxa = 95
@@ -41,6 +43,8 @@ taxa = "95 Bantu languages"
     nsites = 1649  # binary coded from multistate nexus
     datatype = 'lexical cognates'
     source = '@Bastinetal1999'
+    items = 'swadesh100'
+    comment = ''
     
 
 # analysis information

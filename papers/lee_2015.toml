@@ -34,6 +34,8 @@ taxa = "15 Koreanic languages"
     nsites = 383
     datatype = 'lexical cognates'
     source = ''
+    items = ''
+    comment = ''
     
 
 # analysis information

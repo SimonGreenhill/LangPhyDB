@@ -32,6 +32,8 @@ taxa = "25 Karnic languages"
     nsites = 5487
     datatype = 'lexical cognates'
     source = ''
+    items = ''
+    comment = ''
 
     [data.subset]
     ntaxa = 23
@@ -39,6 +41,8 @@ taxa = "25 Karnic languages"
     nsites = 1211
     datatype = 'lexical cognates'
     source = ''
+    items = ''
+    comment = ''
     
     
 # analysis information

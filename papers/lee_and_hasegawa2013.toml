@@ -33,6 +33,8 @@ taxa = "19 Ainu languages"
     nsites = 350
     datatype = 'lexical cognates'
     source = ''
+    items = 'swadesh200'
+    comment = ''
     
 
 # analysis information

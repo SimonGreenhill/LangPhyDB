@@ -38,6 +38,8 @@ taxa = "20 Dravidian languages"
     nsites = 877
     datatype = 'lexical cognates'
     source = ''
+    items = 'swadesh100'
+    comment = ''
     
 
 # analysis information

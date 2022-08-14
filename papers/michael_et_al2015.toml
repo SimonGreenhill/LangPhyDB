@@ -39,6 +39,8 @@ taxa = "32 Tupi-Guarani languages"
     nsites = 4205
     datatype = 'lexical cognates'
     source = ''
+    items = ''
+    comment = ''
 
 # analysis information
 [analysis]

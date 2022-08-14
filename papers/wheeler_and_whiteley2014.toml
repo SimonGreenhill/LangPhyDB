@@ -33,6 +33,8 @@ taxa = "40 Uto-Aztecan languages"
     nsites = ""
     datatype = 'lexemes'
     source = ''
+    items = 'swadesh100'
+    comment = ''
     
 
 # analysis information

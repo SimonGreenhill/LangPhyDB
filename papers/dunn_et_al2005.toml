@@ -36,6 +36,8 @@ taxa = "31 Island Melanesia languages"
     nsites = 125
     datatype = 'structural features'
     source = ''
+    items = ''
+    comment = ''
 
     [data.austronesian]
     ntaxa = 16
@@ -43,6 +45,8 @@ taxa = "31 Island Melanesia languages"
     nsites = 125
     datatype = 'structural features'
     source = ''
+    items = ''
+    comment = ''
 
 
 # analysis information

@@ -33,6 +33,8 @@ taxa = "21 Tungusic languages"
     nsites = 1110
     datatype = 'lexical cognates'
     source = ''
+    items = 'leipzigjakartajena'
+    comment = ''
 
 
 # analysis information

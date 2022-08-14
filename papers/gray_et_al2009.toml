@@ -34,6 +34,8 @@ taxa = "400 Austronesian languages"
     nsites = 34440
     datatype = 'lexical cognates'
     source = '@Greenhilletal2008'
+    items = 'swadesh200'
+    comment = ''
     
 
 # analysis information

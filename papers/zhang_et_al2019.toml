@@ -34,6 +34,8 @@ taxa = "109 Sino-Tibetan languages"
     nsites = 949
     datatype = 'lexical cognates'
     source = ''
+    items = 'swadesh100'
+    comment = ''
     
 
 # analysis information

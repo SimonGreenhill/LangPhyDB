@@ -32,6 +32,8 @@ taxa = "59 Japonic languages"
     nsites = 675
     datatype = 'lexical cognates'
     source = ''
+    items = 'swadesh200'
+    comment = ''
     
 
 # analysis information

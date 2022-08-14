@@ -1,0 +1,92 @@
+
+title = "Bayesian phylolinguistics reveals the internal structure of the Transeurasian family"
+
+doi = "10.1093/jole/lzy007"
+
+abstract = """
+The historical connection between the Transeurasian languages, i.e. the Japonic, Koreanic, Tungusic, Mongolic, and Turkic languages, is among the most disputed issues of historical linguistics. Here, we will combine the power of classical historical-comparative linguistics and computational Bayesian phylogenetic methods to infer a phylogeny of the Transeurasian languages. To this end, we will use lexical etymologies supporting the reconstruction of proto-Transeurasian forms with meanings that belong to the Leipzig-Jakarta 200 basic vocabulary list. Our application of Bayesian phylogenetic inference to the classification of the Transeurasian languages is unprecedented. In addition to the methodological implications for Bayesian inference applied to proposed language phyla at relatively deep time depths and with relatively sparse sets of surviving daughter languages, our research has also factual implications for the existing theories of Transeurasian relationships. Our results move the field forward in that they provide a quantitative basis to test various competing hypotheses with regard to the internal structure of the Transeurasian family.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Martine Robbeets",
+    "Remco Bouckaert"
+]
+
+# parts of the world
+groups = ["Transeurasian"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Robbeets_2018"
+
+# type of study
+type = ["phylogenetic", "dating"]
+
+# short label of taxa "37 languages from.."
+taxa = "57 Transeurasian languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 57
+    nchars = ""
+    nsites = 2735
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = ''
+    
+
+# analysis information
+[analysis]
+
+   [analysis.tree1]
+        tool = 'beast2'
+        model = 'ctmc+relaxed+gamma4+birthdeathsampling'
+        details = ""
+
+    [analysis.tree2]
+        tool = 'beast2'
+        model = 'ctmc+relaxed+birthdeathsampling'
+        details = ""
+
+    [analysis.tree5]
+        tool = 'beast2'
+        model = 'covarion+strict+birthdeathsampling'
+        details = ""
+
+    [analysis.tree6]
+        tool = 'beast2'
+        model = 'covarion+relaxed+birthdeathsampling'
+        details = ""
+
+    [analysis.tree7]
+        tool = 'beast2'
+        model = 'stochasticdollo+relaxed+birthdeathsampling'
+        details = ""
+
+    [analysis.tree9]
+        tool = 'beast2'
+        model = 'pseudodollo+relaxed+gamma4+birthdeathsampling'
+        details = ""
+
+    [analysis.tree10]
+        tool = 'beast2'
+        model = 'pseudodollo+relaxed+birthdeathsampling'
+        details = ""
+
+    [analysis.tree3]
+        tool = 'beast2'
+        model = 'pseudodollo+covarion+relaxed+birthdeathsampling'
+        details = ""
+
+    [analysis.tree4]
+        tool = 'beast2'
+        model = 'pseudodollo+covarion+strict+birthdeathsampling'
+        details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/robbeets_and_bouckaert2018" }
+lexibank = { title = "Lexibank Dataset", link = "" }
+links = []

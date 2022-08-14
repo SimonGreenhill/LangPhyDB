@@ -32,6 +32,8 @@ taxa = "14 Huon Peninsula languages"
     nsites = 391
     datatype = 'lexical cognates'
     source = '@McElhanon1967'
+    items = 'swadesh100'
+    comment = ''
 
 ## Methods:
 # analysis information

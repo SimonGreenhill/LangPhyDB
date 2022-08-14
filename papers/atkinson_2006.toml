@@ -50,6 +50,9 @@ taxa = "30 Mayan languages"
     nsites = "~1200"
     datatype = 'lexical cognates'
     source = ''
+    items = 'swadesh100'
+    comment = ''
+    
     
 
 # analysis information

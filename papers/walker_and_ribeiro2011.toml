@@ -33,6 +33,8 @@ taxa = "60 Arawakan languages"
     nsites = 694
     datatype = 'lexical cognates'
     source = ''
+    items = 'swadesh100'
+    comment = ''
     
 
 # analysis information

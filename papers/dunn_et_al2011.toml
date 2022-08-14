@@ -35,6 +35,8 @@ taxa = "79 Indo-European languages, 130 Austronesian languages, 66 Bantu languag
     nsites = "?"
     datatype = 'lexical cognates'
     source = '@Holden2005'
+    items = 'swadesh100'
+    comment = ''
 
     [data.indoeuropean]
     ntaxa = 82 
@@ -42,6 +44,8 @@ taxa = "79 Indo-European languages, 130 Austronesian languages, 66 Bantu languag
     nsites = 4049
     datatype = 'lexical cognates'
     source = '@Dyen1992'
+    items = 'swadesh200'
+    comment = ''
 
     [data.austronesian]
     ntaxa = 130
@@ -49,6 +53,8 @@ taxa = "79 Indo-European languages, 130 Austronesian languages, 66 Bantu languag
     nsites = "?"
     datatype = 'lexical cognates'
     source = '@Greenhill2008'
+    items = 'swadesh200'
+    comment = ''
 
     [data.utoaztecan]
     ntaxa = 26
@@ -56,6 +62,8 @@ taxa = "79 Indo-European languages, 130 Austronesian languages, 66 Bantu languag
     nsites = "?"
     datatype = 'lexical cognates'
     source = '@Holden2002'
+    items = 'swadesh100'
+    comment = ''
 
     [data.structural]
     ntaxa = 26
@@ -63,6 +71,8 @@ taxa = "79 Indo-European languages, 130 Austronesian languages, 66 Bantu languag
     nsites = 8
     datatype = 'structural features'
     source = '@WALS'
+    items = ''
+    comment = ''
     
 
 # analysis information

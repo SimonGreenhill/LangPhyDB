@@ -37,6 +37,8 @@ taxa = "17 Uralic languages"
     nsites = ""
     datatype = 'lexical cognates'
     source = ''
+    items = 'swadesh200'
+    comment = ''
     
 
 # analysis information

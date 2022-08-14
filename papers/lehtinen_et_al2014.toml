@@ -37,6 +37,8 @@ taxa = "18 Uralic languages"
     nsites = 226
     datatype = 'lexical cognates'
     source = ''
+    items = ''
+    comment = ''
     
     [data.ura100]
     ntaxa = 18
@@ -44,6 +46,8 @@ taxa = "18 Uralic languages"
     nsites = 100
     datatype = 'lexical cognates'
     source = ''
+    items = 'ura100'
+    comment = ''
     
     [data.leipzigjakarta]
     ntaxa = 18
@@ -51,6 +55,8 @@ taxa = "18 Uralic languages"
     nsites = 101
     datatype = 'lexical cognates'
     source = ''
+    items = 'leipzigjakarta'
+    comment = ''
 
     [data.wold401]
     ntaxa = 18
@@ -58,6 +64,8 @@ taxa = "18 Uralic languages"
     nsites = 100
     datatype = 'lexical cognates'
     source = ''
+    items = ''
+    comment = ''
     
 
 # analysis information

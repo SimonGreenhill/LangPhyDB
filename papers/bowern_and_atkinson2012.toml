@@ -33,6 +33,8 @@ taxa = "194 Pama-Nyungan languages"
     nsites = 14613
     datatype = 'lexical cognates'
     source = ''
+    items = 'swadesh200'
+    comment = ''
     
 
 # analysis information

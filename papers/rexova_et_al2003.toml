@@ -34,6 +34,8 @@ taxa = "84 Indo-European languages"
     nsites = 200
     datatype = 'lexical cognates'
     source = '@Dyen1992'
+    items = 'swadesh200'
+    comment = ''
     
     [data.alteredmultistate]
     ntaxa = 85
@@ -41,6 +43,8 @@ taxa = "84 Indo-European languages"
     nsites = 200
     datatype = 'lexical cognates'
     source = '@Dyen1992'
+    items = 'swadesh200'
+    comment = ''
 
     [data.binary]
     ntaxa = 85
@@ -48,6 +52,8 @@ taxa = "84 Indo-European languages"
     nsites = 2456
     datatype = 'lexical cognates'
     source = '@Dyen1992'
+    items = 'swadesh200'
+    comment = ''
 
 
 

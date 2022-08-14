@@ -29,7 +29,9 @@ taxa = ""
     nsites = "?"
     datatype = 'lexical cognates'
     source = '@Holden2005'
-    
+    items = ''
+    comment = ''
+
 
 # analysis information
 [analysis]

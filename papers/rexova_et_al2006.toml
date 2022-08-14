@@ -34,6 +34,8 @@ taxa = "87 Bantu languages"
     nsites = 92
     datatype = 'lexical cognates'
     source = '@Bastinetal1999'
+    items = 'swadesh100'
+    comment = ''
 
     [data.grammatical]
     ntaxa = 87
@@ -41,6 +43,8 @@ taxa = "87 Bantu languages"
     nsites = 52
     datatype = 'structural features'
     source = '@Bastinetal1979'
+    items = ''
+    comment = ''
 
 
 # analysis information

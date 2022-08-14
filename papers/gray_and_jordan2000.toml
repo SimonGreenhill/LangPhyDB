@@ -33,6 +33,8 @@ taxa = "77 Austronesian languages"
     nsites = 5185
     datatype = 'lexical cognates'
     source = ''
+    items = ''
+    comment = ''
     
 
 # analysis information

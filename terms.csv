@@ -157,6 +157,16 @@ datatype,mixed,mixed datatypes
 datatype,phonetic traits,phonetic characters
 datatype,structural features,structural features
 
+items,,no specification
+items,basic,generic basic vocabulary
+items,swadesh35,Swadesh 35 wordlist
+items,swadesh100,Swadesh 100 wordlist
+items,swadesh200,Swadesh 200 wordlist
+items,ura100,Uralic 100 wordlist
+items,subset,Subset of other dataset
+items,leipzigjakarta,Leipzig-Jakarta list
+items,leipzigjakartajena,Leipzig-Jakarta-Jena list
+
 tool,barrier
 tool,bayesphylogenies,http://www.evolution.reading.ac.uk/BayesPhy.html
 tool,bayestraits,http://www.evolution.reading.ac.uk/BayesTraits.html

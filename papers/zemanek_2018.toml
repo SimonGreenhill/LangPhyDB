@@ -32,6 +32,8 @@ taxa = "14 Semitic languages"
     nsites = ""
     datatype = 'lexical cognates'
     source = '@Faber1997'
+    items = ''
+    comment = ''
 
     [data.gai1994]
     ntaxa = 14
@@ -39,6 +41,8 @@ taxa = "14 Semitic languages"
     nsites = "?"
     datatype = 'lexical cognates'
     source = '@Gai1994'
+    items = ''
+    comment = ''
     
     [data.zemanek2017]
     ntaxa = 14
@@ -46,6 +50,8 @@ taxa = "14 Semitic languages"
     nsites = "?"
     datatype = 'lexical cognates'
     source = '@Zemanek2017'
+    items = ''
+    comment = ''
 
     [data.combined]
     ntaxa = 14
@@ -53,6 +59,8 @@ taxa = "14 Semitic languages"
     nsites = "?"
     datatype = 'lexical cognates'
     source = ''
+    items = ''
+    comment = ''
 
 
 # analysis information

@@ -41,6 +41,8 @@ taxa = "95 Bantu languages, 65 Indo-European languages, 330 Austronesian languag
     nsites = "?"
     datatype = 'lexical cognates'
     source = '@Holden2005'
+    items = 'swadesh100'
+    comment = ''
     
     [data.indoeuropean]
     ntaxa = 65
@@ -48,6 +50,9 @@ taxa = "95 Bantu languages, 65 Indo-European languages, 330 Austronesian languag
     nsites = "?"
     datatype = 'lexical cognates'
     source = '@Dyen1992'
+    items = 'swadesh200'
+    comment = ''
+    
     
     [data.austronesian]
     ntaxa = 330
@@ -55,6 +60,9 @@ taxa = "95 Bantu languages, 65 Indo-European languages, 330 Austronesian languag
     nsites = "?"
     datatype = 'lexical cognates'
     source = '@Greenhill2008'
+    items = 'swadesh200'
+    comment = ''
+    
     
 
 # analysis information

@@ -33,6 +33,8 @@ taxa = "16 Creole languages languages"
     nsites = 48
     datatype = 'structural features'
     source = ''
+    items = ''
+    comment = ''
 
     [data.dialectal]
     ntaxa = 16
@@ -40,6 +42,8 @@ taxa = "16 Creole languages languages"
     nsites = 57
     datatype = 'structural features'
     source = ''
+    items = ''
+    comment = ''
     
 
 # analysis information

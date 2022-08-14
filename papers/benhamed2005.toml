@@ -32,6 +32,8 @@ taxa = "24 Sinitic languages"
     nsites = ""
     datatype = 'lexical cognates'
     source = '@Wang2004'
+    items = 'swadesh35'
+    comment = ''
 
     [data.sw100]
     ntaxa = 24
@@ -39,6 +41,8 @@ taxa = "24 Sinitic languages"
     nsites = ""
     datatype = 'lexical cognates'
     source = '@Wang2004'
+    items = 'swadesh100'
+    comment = ''
     
     [data.sw200]
     ntaxa = 24
@@ -46,6 +50,8 @@ taxa = "24 Sinitic languages"
     nsites = ""
     datatype = 'lexical cognates'
     source = '@Wang2004'
+    items = 'swadesh200'
+    comment = ''
     
     [data.cheng]
     ntaxa = 18
@@ -53,6 +59,8 @@ taxa = "24 Sinitic languages"
     nsites = 1
     datatype = 'distance'
     source = '@Cheng1991'
+    items = ''
+    comment = ''
 
 
 # analysis information

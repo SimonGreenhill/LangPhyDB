@@ -33,6 +33,8 @@ taxa = "12 Indo-European languages"
     nsites = ""
     datatype = 'lexical cognates'
     source = ''
+    items = ''
+    comment = ''
     
 
 # analysis information

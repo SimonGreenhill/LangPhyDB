@@ -31,6 +31,8 @@ taxa = "21 Tucanoan languages"
     nsites = 34
     datatype = 'phonetic traits'
     source = ''
+    items = ''
+    comment = ''
     
 
 # analysis information

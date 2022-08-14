@@ -35,6 +35,8 @@ taxa = "188 Creole languages languages"
     nsites = 122
     datatype = 'structural features'
     source = '@Hancock1987'
+    items = ''
+    comment = ''
 
     [data.ccs]
     ntaxa = 18
@@ -42,6 +44,8 @@ taxa = "188 Creole languages languages"
     nsites = 97
     datatype = 'structural features'
     source = '@HolmPatrickCCS2007'
+    items = ''
+    comment = ''
 
     [data.ccsextended]
     ntaxa = 30
@@ -49,6 +53,8 @@ taxa = "188 Creole languages languages"
     nsites = 97
     datatype = 'structural features'
     source = '@HolmPatrickCCS2007'
+    items = ''
+    comment = ''
 
     [data.parkvall]
     ntaxa = 185
@@ -56,6 +62,8 @@ taxa = "188 Creole languages languages"
     nsites = 43
     datatype = 'structural features'
     source = '@Parkvall2008'
+    items = ''
+    comment = ''
 
 
 

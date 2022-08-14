@@ -35,6 +35,8 @@ taxa = "25 Semitic languages"
     nsites = 673
     datatype = 'lexical cognates'
     source = ''
+    items = 'swadesh100'
+    comment = ''
     
 
 # analysis information

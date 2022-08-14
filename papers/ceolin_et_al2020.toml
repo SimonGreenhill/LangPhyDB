@@ -35,6 +35,8 @@ taxa = "69 Indo-European & other languages"
     nsites = 94
     datatype = 'structural features'
     source = ''
+    items = ''
+    comment = ''
     
 
 # analysis information

@@ -33,6 +33,8 @@ taxa = "32 Turkic languages"
     nsites = 906
     datatype = 'lexical cognates'
     source = ''
+    items = 'leipzigjakartajena'
+    comment = ''
     
 
 # analysis information

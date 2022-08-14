@@ -32,6 +32,8 @@ taxa = "87 Indo-European languages"
     nsites = 2449 
     datatype = 'lexical cognates'
     source = ''
+    items = 'swadesh200'
+    comment = ''
     
 
 # analysis information

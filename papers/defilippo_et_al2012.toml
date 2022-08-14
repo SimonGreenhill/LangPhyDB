@@ -34,6 +34,8 @@ taxa = "412 Bantu languages"
     nsites = 2832
     datatype = 'lexical cognates'
     source = '@Bastinetal1999'
+    items = 'swadesh100'
+    comment = ''
     
 
 # analysis information

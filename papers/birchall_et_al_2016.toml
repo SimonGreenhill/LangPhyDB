@@ -33,6 +33,8 @@ taxa = "10 Chapacuran languages"
     nsites = 285
     datatype = 'lexical cognates'
     source = ''
+    items = 'swadesh200'
+    comment = ''
     
 
 # analysis information

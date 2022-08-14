@@ -1,0 +1,76 @@
+
+title = "Dated language phylogenies shed light on the ancestry of Sino-Tibetan"
+
+doi = "10.1073/pnas.1817972116"
+
+abstract = """
+The Sino-Tibetan language family is one of the world’s largest and most prominent families, spoken by nearly 1.4 billion people. Despite the importance of the Sino-Tibetan languages, their prehistory remains controversial, with ongoing debate about when and where they originated. To shed light on this debate we develop a database of comparative linguistic data, and apply the linguistic comparative method to identify sound correspondences and establish cognates. We then use phylogenetic methods to infer the relationships among these languages and estimate the age of their origin and homeland. Our findings point to SinoTibetan originating with north Chinese millet farmers around 7200 B.P. and suggest a link to the late Cishan and the early Yangshao cultures.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Laurent Sagart",
+    "Guillaume Jacques",
+    "Yunfan Lai",
+    "Robin J. Ryder",
+    "Valentin Thouzeau",
+    "Simon J. Greenhill",
+    "Johann-Mattis List"
+]
+
+# parts of the world
+groups = ["Sino-Tibetan"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Sagart2019"
+
+# type of study
+type = ["phylogenetic", "dating"]
+
+# short label of taxa "37 languages from.."
+taxa = "50 Sino-Tibetan languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 50
+    nchars = 180
+    nsites = 3333
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'basic'
+    comment = ''
+    
+
+# analysis information
+[analysis]
+    [analysis.tree1]
+    tool = 'beast2'
+    model = 'covarion+strict+fbd'
+    details = ""
+
+    [analysis.tree2]
+    tool = 'beast2'
+    model = 'covarion+relaxed+fbd'
+    details = ""
+
+    [analysis.tree3]
+    tool = 'beast2'
+    model = 'dollo+strict+fbd'
+    details = ""
+
+    [analysis.tree4]
+    tool = 'traitlab'
+    model = 'dollo+relaxed'
+    details = ""
+
+    [analysis.tree5]
+    tool = 'traitlab'
+    model = 'stochasticdollo+lateraltransfer'
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/sagart_et_al2019" }
+lexibank = { title = "Lexibank Dataset", link = "https://github.com/lexibank/sagartst" }
+links = []

@@ -93,5 +93,5 @@ taxa = "19 Ainu languages"
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/lee_and_hasegawa2013" }
-lexibank = { title = "Lexibank Dataset", link = "https://github.com/lexibank/leeainu" }
+cldf = { title = "CLDF Dataset", link = "https://github.com/lexibank/leeainu" }
 links = []

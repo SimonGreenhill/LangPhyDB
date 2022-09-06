@@ -66,5 +66,5 @@ taxa = "14 Huon Peninsula languages"
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/greenhill2015" }
-lexibank = { title = "Lexibank Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
 links = []

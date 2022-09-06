@@ -73,30 +73,30 @@ taxa = "50 Sino-Tibetan languages"
 [calibrations]
     [calibration.oldchinese]
     taxa = ["oldc1244"]
-    calibration = "uniform(2800, 2300)"  # normal(x, y)
+    age = "uniform(2800, 2300)"  # normal(x, y)
     units = "ybp" # ybp
     description = "Period of the great Classical Chinese texts"
 
     [calibration.oldburmese]
     taxa = ["oldb1235"]
-    calibration = "800"  # x, normal(x, y), uniform(x,y)
+    age = "800"  # x, normal(x, y), uniform(x,y)
     units = "ybp" # ybp
     description = "date of the earliest text rounded to the nearest century"
     
     [calibration.oldtibetan]
     taxa = ["oldm1245"]
-    calibration = "1200"  # x, normal(x, y), uniform(x,y)
+    age = "1200"  # x, normal(x, y), uniform(x,y)
     units = "ybp" # ybp
     description = "date of the earliest text rounded to the nearest century"
 
     [calibration.tangut]
     taxa = ["tang1334"]
-    calibration = "900"  # x, normal(x, y), uniform(x,y)
+    age = "900"  # x, normal(x, y), uniform(x,y)
     units = "ybp" # ybp
     description = "date of the earliest text rounded to the nearest century"
 
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/sagart_et_al2019" }
-lexibank = { title = "Lexibank Dataset", link = "https://github.com/lexibank/sagartst" }
+cldf = { title = "CLDF Dataset", link = "https://github.com/lexibank/sagartst" }
 links = []

@@ -87,5 +87,5 @@ taxa = "103 Indo-European languages"
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/bouckaert_et_al2012" }
-lexibank = { title = "Lexibank Dataset", link = "https://github.com/lexibank/ielexfinal" }
+cldf = { title = "CLDF Dataset", link = "https://github.com/lexibank/ielexfinal" }
 links = []

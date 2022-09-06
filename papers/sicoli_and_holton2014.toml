@@ -1,0 +1,80 @@
+
+title = "Linguistic phylogenies support back-migration from Beringia to Asia."
+
+doi = "10.1371/journal.pone.0091722"
+
+abstract = """
+Recent arguments connecting Na-Dene languages of North America with Yeniseian languages of Siberia have been used to assert proof for the origin of Native Americans in central or western Asia. We apply phylogenetic methods to test support for this hypothesis against an alternative hypothesis that Yeniseian represents a back-migration to Asia from a Beringian ancestral population. We coded a linguistic dataset of typological features and used neighbor-joining network algorithms and Bayesian model comparison based on Bayes factors to test the fit between the data and the linguistic phylogenies modeling two dispersal hypotheses. Our results support that a Dene-Yeniseian connection more likely represents radiation out of Beringia with back-migration into central Asia than a migration from central or western Asia to North America.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Mark A. Sicoli",
+    "Gary Holton"
+]
+
+# parts of the world
+groups = ["Dene-Yeniseian"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Sicoli2014"
+
+# type of study
+type = ["phylogenetic", "network", "delta", "qresidual"]
+
+# short label of taxa "37 languages from.."
+taxa = "40 Dene-Yeniseian languages"
+
+# data
+[data]
+    [data.structure]
+    ntaxa = 40
+    nchars = 90  # was 116 but 26 excluded as noninformative
+    nsites = ""
+    datatype = 'structural features'
+    source = ''
+    items = ''
+    comment = ''
+    
+
+# analysis information
+[analysis]
+    [analysis.bayesian1]
+    tool = 'mrbayes'
+    model = 'm2p+gamma'
+    details = ""
+
+    [analysis.bayesian2]
+    tool = 'mrbayes'
+    model = 'm2p+gamma+strict'
+    details = "best-fitting model"
+
+    [analysis.bayesian3]
+    tool = 'mrbayes'
+    model = 'm2p+gamma+relaxed'
+    details = ""
+
+    [analysis.nnet]
+    tool = 'splitstree'
+    model = 'neigbornet'
+    details = ""
+
+    [analysis.delta]
+    tool = 'splitstree'
+    model = 'delta'
+    details = ""
+
+    [analysis.qresidual]
+    tool = 'splitstree'
+    model = 'qresidual'
+    details = ""
+
+    [analysis.consensusnetwork]
+    tool = 'splitstree'
+    model = 'consensusnetwork'
+    details = "from analysis.bayesian"
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/sicoli_and_holton2014" }
+cldf = { title = "CLDF Dataset", link = "" }
+links = []

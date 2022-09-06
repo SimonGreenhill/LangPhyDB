@@ -40,7 +40,70 @@ taxa = "20 Dravidian languages"
     source = ''
     items = 'swadesh100'
     comment = ''
+
+
+# date calibrations
+[calibrations]
+
+    [calibration.root]
+    taxa = ["drav1251"]
+    age = "<10000"
+    units = "ybp" # ybp
+    description = "lower bound of 0 yr, upper bound of 10 000 yr"
     
+    [calibration.north]
+    taxa = ["nort2698"]
+    age = "monophyly"
+    units = "none"
+    description = "monophyly only"
+    
+    [calibration.southI]
+    taxa = ["sout3138"]
+    age = ">2250"
+    units = "ybp"
+    description = ""
+
+    [calibration.southII]
+    taxa = ["sout3139"]
+    age = "monophyly"
+    units = "none"
+    description = "monophyly"
+
+    [calibration.brahui]
+    taxa = ["brah1256"]
+    age = "<2250"
+    units = "ybp"
+    description = ""
+
+    [calibration.malayalam1]
+    taxa = ["mala1464"]
+    age = "normal(1000, 50)+originate"
+    units = "ybp"
+    description = "normal distribution centred on 1000 yr with standard deviation of 50, truncated to 800-1200 yr"
+
+    [calibration.malayalam2]
+    taxa = ["mala1464"]
+    age = "uniform(800, 1200)+originate"
+    units = "ybp"
+    description = "normal distribution centred on 1000 yr with standard deviation of 50, truncated to 800-1200 yr"
+ 
+    [calibration.telugu]
+    taxa = ["telu1262"]
+    age = ">1450+originate"
+    units = "ybp"
+    description = ""
+
+    [calibration.kannada]
+    taxa = ["nucl1305"]
+    age = ">1300"
+    units = "ybp"
+    description = ""
+
+    [calibration.tulu]
+    taxa = ["tulu1258"]
+    age = ">1300"
+    units = "ybp"
+    description = ""
 
 # analysis information
 [analysis]
@@ -137,5 +200,5 @@ taxa = "20 Dravidian languages"
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/kolipakam_et_al2018" }
-lexibank = { title = "Lexibank Dataset", link = "https://github.com/lexibank/drvalex" }
+cldf = { title = "CLDF Dataset", link = "https://github.com/lexibank/drvalex" }
 links = []

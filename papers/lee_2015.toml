@@ -38,6 +38,20 @@ taxa = "15 Koreanic languages"
     comment = ''
     
 
+[calibrations]
+    
+    notes = """
+    Also used a clock rate prior of a lognormal distribution prior
+    (mean: 3e-4, standard deviation: 0.7) from Ainu and Japonic studies.
+    """
+
+    [calibration.middlekorean]
+    taxa = ['midd1372']
+    age = "normal(500, 100)" # x, normal(x, y), uniform(x,y)
+    units = "ybp" # ybp
+    description = "tip calibration"
+
+
 # analysis information
 [analysis]
     [analysis.tree]
@@ -93,5 +107,5 @@ taxa = "15 Koreanic languages"
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/lee2015" }
-lexibank = { title = "Lexibank Dataset", link = "https://github.com/lexibank/leekoreanic" }
+cldf = { title = "CLDF Dataset", link = "https://github.com/lexibank/leekoreanic" }
 links = []

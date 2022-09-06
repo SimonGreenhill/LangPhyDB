@@ -88,5 +88,5 @@ taxa = "57 Transeurasian languages"
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/robbeets_and_bouckaert2018" }
-lexibank = { title = "Lexibank Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
 links = []

@@ -1,31 +1,41 @@
+# Delta Scores and Q-Residuals
 
-birchall_et_al2016:
+## robinson_and_holton2012:
+
+> pplying this methodology to our dataset yields an average δ = 0.29. Tis value is moderately high, reflecting the fact that, while some groupings do emerge in Fig. 5, there is significant reticulation between those groups. Tis figure can be contextualized by comparing with delta scores calculated by Gray et al. (2010) for Indo-European and Polynesian. Gray et al. used the same distance metric applied to basic vocabulary coded for cognacy, with borrowings retained; hence their data is largely comparable to our dataset for Alor-Pantar. What we find is that the delta score for the Alor-Pantar data lies midway between the more treelike score of 0.22 for Indo-European and the decidedly non-treelike score of 0.41 for Polynesian.6
+
+## lee_and_hasegawa2013:
+
+> we used SPLITSTREE4 [29] to estimate tree-likeness of the Ainu phylogeny [30,31] and obtained the average delta score = 0.25 and Q-residual score = 0.01, both indicating that the evolution of Ainu lexicons was reasonably tree-like, and hence suitable for phylogenetic analysis (to put this in perspective, the tree-likeness scores calculated from a subset of 12 Indo-European languages have similar scores as our 19 Ainu varieties with the average delta score = 0.23 and Q-residual score = 0.03 [31]). These observations provide us confidence that the data should carry robust evolutionary signal and the 19 Ainu varieties are appropriate units of analysis for the current purpose.
+
+## sicoli_and_holton2014:
+
+> The DY average delta score is 0.367 and the Q-residual is 0.0492.
+
+Full details:  https://journals.plos.org/plosone/article/figure?id=10.1371/journal.pone.0091722.t001
+
+## birchall_et_al2016:
 
 > To quantify the degree of conflicting signal in these data, we calculated two statistics, the δ-score (Holland et al.
 > 2002) and the Q-residual (Gray, Bryant, and Greenhill 2010). These two statistics provide a quantitative measure of how
 > much conflict (or reticulation) there is in the network. The mean δ-score for these languages was 0.262 (s.d. = 0.033) and
 > the mean Q-residual score was 0.016 (s.d. = 0.004).
 
-robinson_and_holton2012:
-
-> pplying this methodology to our dataset yields an average δ = 0.29. Tis value is moderately high, reflecting the fact that, while some groupings do emerge in Fig. 5, there is significant reticulation between those groups. Tis figure can be contextualized by comparing with delta scores calculated by Gray et al. (2010) for Indo-European and Polynesian. Gray et al. used the same distance metric applied to basic vocabulary coded for cognacy, with borrowings retained; hence their data is largely comparable to our dataset for Alor-Pantar. What we find is that the delta score for the Alor-Pantar data lies midway between the more treelike score of 0.22 for Indo-European and the decidedly non-treelike score of 0.41 for Polynesian.6
-
-ceolin_et_al2020:
-
-> The median of the 1-scores is 0.302, and the variance is particularly low (standard deviation: 0.037). The 10 languages associated with the highest values (cf. Section “Network Analysis – NeighborNet” in Supplementary Material), i.e., those for which the signal is the least treelike, properly include the languages listed in (9)a, which correspond to the first two outlying branches of the BEAST tree (Mandarin, Cantonese, Korean, Japanese, the two Basque varieties, and Malagasy). The median of Q-residuals is 0.054, but in this case the variance is quite high, in proportion (standard deviation: 0.021). Again, among the languages with the 10 highest scores, six correspond to the outliers of the BEAST tree (Malagasy has the 11th Q-residual: 0.0805). In particular, while the mean for the 1-scores is the same as the median, the mean for the Q-residuals is higher (0.058), 
-
-lee_and_hasegawa2013:
-
-> we used SPLITSTREE4 [29] to estimate tree-likeness of the Ainu phylogeny [30,31] and obtained the average delta score = 0.25 and Q-residual score = 0.01, both indicating that the evolution of Ainu lexicons was reasonably tree-like, and hence suitable for phylogenetic analysis (to put this in perspective, the tree-likeness scores calculated from a subset of 12 Indo-European languages have similar scores as our 19 Ainu varieties with the average delta score = 0.23 and Q-residual score = 0.03 [31]). These observations provide us confidence that the data should carry robust evolutionary signal and the 19 Ainu varieties are appropriate units of analysis for the current purpose.
-
-savelyev_and_robbeets2020:
-
-> We obtained the average delta score ¼ 0.34 and Q-residual score ¼ 0.01, both indicating that the evolution of the Turkic basic vocabulary is reasonably tree-like, 
-
-kolipakam_et_al2018:
+## kolipakam_et_al2018:
 
 > The mean δ score is 0.30, Telugu and Tulu have higher scores, suggesting greater contribution to reticulate patterns (Telugu: 0.38; Tulu: 0.35). Telugu also has a high Q-residual score, 0.0132, almost twice as high as the mean of 0.0069.
 
-ferrazgerardi_and_reichert2021:
+
+## ceolin_et_al2020:
+
+> The median of the 1-scores is 0.302, and the variance is particularly low (standard deviation: 0.037). The 10 languages associated with the highest values (cf. Section “Network Analysis – NeighborNet” in Supplementary Material), i.e., those for which the signal is the least treelike, properly include the languages listed in (9)a, which correspond to the first two outlying branches of the BEAST tree (Mandarin, Cantonese, Korean, Japanese, the two Basque varieties, and Malagasy). The median of Q-residuals is 0.054, but in this case the variance is quite high, in proportion (standard deviation: 0.021). Again, among the languages with the 10 highest scores, six correspond to the outliers of the BEAST tree (Malagasy has the 11th Q-residual: 0.0805). In particular, while the mean for the 1-scores is the same as the median, the mean for the Q-residuals is higher (0.058), 
+
+
+## savelyev_and_robbeets2020:
+
+> We obtained the average delta score ¼ 0.34 and Q-residual score ¼ 0.01, both indicating that the evolution of the Turkic basic vocabulary is reasonably tree-like, 
+
+## ferrazgerardi_and_reichert2021:
 
 > with Q-residual score = 0.1013 and high δ score = 0.4254
+

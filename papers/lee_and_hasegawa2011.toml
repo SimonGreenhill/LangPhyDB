@@ -35,6 +35,34 @@ taxa = "59 Japonic languages"
     items = 'swadesh200'
     comment = ''
     
+[calibrations]
+
+    [calibration.tokyokyoto]
+    taxa = ['toky1238', 'kyot1238']
+    age = "normal(407, 135.2)" # x, normal(x, y), uniform(x,y)
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.oldjapanese]
+    taxa = ['oldj1239']
+    age = "unknown(1216, 1300)" # x, normal(x, y), uniform(x,y)
+    units = "ybp" # ybp
+    description = """The relaxed sample date calibrations were
+    assigned to Old and Middle Japanese with lognormal priors in which their 95
+    per cent of the distributions lie between the upper and the lower bounds of
+    each era; 1216–1300 YBP for Old Japanese and 437-674 YBP for Middle
+    Japanese."""
+    
+    [calibration.middlejapanese]
+    taxa = ['?']  # middle japanese
+    age = "unknown(437, 674)" # x, normal(x, y), uniform(x,y)
+    units = "ybp" # ybp
+    description = """The relaxed sample date calibrations were
+    assigned to Old and Middle Japanese with lognormal priors in which their 95
+    per cent of the distributions lie between the upper and the lower bounds of
+    each era; 1216–1300 YBP for Old Japanese and 437-674 YBP for Middle
+    Japanese."""
+
 
 # analysis information
 [analysis]
@@ -69,5 +97,5 @@ taxa = "59 Japonic languages"
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/lee_and_hasegawa" }
-lexibank = { title = "Lexibank Dataset", link = "https://github.com/lexibank/leejaponic" }
+cldf = { title = "CLDF Dataset", link = "https://github.com/lexibank/leejaponic" }
 links = []

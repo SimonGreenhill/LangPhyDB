@@ -62,5 +62,5 @@ taxa = "13 Timor-Alor-Pantar languages"
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }
-lexibank = { title = "Lexibank Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
 links = []

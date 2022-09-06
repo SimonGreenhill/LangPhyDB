@@ -81,5 +81,5 @@ taxa = "306 Pama-Nyungan languages"
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/bouckaert_et_al2018" }
-lexibank = { title = "Lexibank Dataset", link = "" }  # https://github.com/lexibank/lexibank/issues/195
+cldf = { title = "CLDF Dataset", link = "" }  # https://github.com/lexibank/lexibank/issues/195
 links = []

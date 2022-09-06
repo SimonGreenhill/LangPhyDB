@@ -35,7 +35,16 @@ taxa = "32 Turkic languages"
     source = ''
     items = 'leipzigjakartajena'
     comment = ''
-    
+
+[calibration]
+    [calibration.tapekura]
+    taxa = ["chap1269"]
+    # corrected for 2010 starting 180 - (2010 - 1950)
+    age = "120"
+    units = "ybp" # ybp
+    description = "Although the primary source of data on Tapakura and Kitemoka was only published in the early twentieth century in Créqui-Montfort and Rivet (1913), the data were originally collected during d’Orbigny’s trip through lowland Bolivia, which took place between 1826 and 1833."
+
+ 
 
 # analysis information
 [analysis]
@@ -79,7 +88,30 @@ taxa = "32 Turkic languages"
         model = 'stochasticdollo+relaxed'
         details = ""
 
+
+[inferredages]
+    
+    notes = "note: these look like dates starting from 2000AD rather than YBP/AD/BC as stated in the paper. Converted here."
+    
+    [inferredage.turk1311]
+    taxa = ['turk1311']
+    age = "hpd(2016, 1467, 2705)"
+    units = "ybp"
+    notes = "best fitting model"
+
+    [inferredage.nort2688]
+    taxa = ['nort2688']
+    age = "hpd(1476, 1141, 1957)"
+    units = "ybp"
+    notes = "best fitting model"
+
+    [inferredage.oldu1238]
+    taxa = ['oldu1238']
+    age = "hpd(1300, 1146, 1523)"
+    units = "ybp"
+    notes = "best fitting model"
+    
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/savelyev_and_robbeets2020" }
-lexibank = { title = "Lexibank Dataset", link = "https://github.com/lexibank/savelyevturkic" }
+cldf = { title = "CLDF Dataset", link = "https://github.com/lexibank/savelyevturkic" }
 links = []

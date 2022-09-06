@@ -74,5 +74,5 @@ taxa = "131 Sino-Tibetan languages"
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/zhang_et_al2020" }
-lexibank = { title = "Lexibank Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
 links = []

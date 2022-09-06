@@ -47,5 +47,5 @@ taxa = "40 Uto-Aztecan languages"
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/wheeler_and_whiteley2014" }
-lexibank = { title = "Lexibank Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
 links = []

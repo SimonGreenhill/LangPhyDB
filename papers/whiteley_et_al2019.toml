@@ -1,0 +1,73 @@
+
+title = "Revising the Bantu Tree"
+
+doi = "10.1111/cla.12353"
+
+abstract = """
+Phylogenetic methods offer a promising advance for the historical study of language and cultural relationships. Applications to date, however, have been hampered by traditional approaches dependent on unfalsifiable authority statements: in this regard, historical linguistics remains in a similar position to evolutionary biology prior to the cladistic revolution. Influential phylogenetic studies of Bantu languages over the last two decades, which provide the foundation for multiple analyses of Bantu sociocultural histories, are a major case in point. Comparative analyses of basic lexica, instead of directly treating written words, use only numerical symbols that express non-replicable authority opinion about underlying relationships. Building on a previous study of Uto-Aztecan, here we analyse Bantu language relationships with methods deriving from DNA sequence optimization algorithms, treating basic vocabulary as sequences of sounds. This yields finer-grained results that indicate major revisions to the Bantu tree, and enables more robust inferences about the history of Bantu language expansion and/or migration throughout sub-Saharan Africa. “Early-split” versus “late-split” hypotheses for East and West Bantu are tested, and overall results are compared to trees based on numerical reductions of vocabulary data. Reconstruction of language histories is more empirically based and robust than with previous methods.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Peter M. Whiteley",
+    "Ming Xue",
+    "Ward C. Wheeler"
+]
+
+# parts of the world
+groups = ["Bantu"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Whiteley2019"
+
+# type of study
+type = ["phylogenetic"]
+
+# short label of taxa "37 languages from.."
+taxa = "105 Bantu languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 105
+    nchars = 100
+    nsites = ""
+    datatype = 'lexemes'
+    source = '@Bastinetal1999'
+    items = 'swadesh100'
+    comment = ''
+    
+
+# analysis information
+[analysis]
+    [analysis.tree1]
+    tool = 'poy5'
+    model = '1-1'
+    details = ""
+
+    [analysis.tree2]
+    tool = 'poy5'
+    model = '1-2'
+    details = ""
+
+    [analysis.tree3]
+    tool = 'poy5'
+    model = 'vcn'
+    details = ""
+
+    [analysis.tree4]
+    tool = 'poy5'
+    model = 'vcn2'
+    details = ""
+
+    [analysis.tree5]
+    tool = 'poy5'
+    model = 'all5'
+    details = ""
+
+
+
+[links]
+phlorest = { }
+lexibank = { }
+links = []

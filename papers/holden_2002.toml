@@ -46,5 +46,5 @@ taxa = "75 Bantu languages"
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }
-lexibank = { title = "Lexibank Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
 links = []

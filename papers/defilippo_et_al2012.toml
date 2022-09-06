@@ -21,7 +21,7 @@ groups = ["Bantu"]  # 'Austronesian', etc
 bibkey = "@de_Filippo_2012"
 
 # type of study
-type = ["phylogenetic", "dating"]
+type = ["phylogenetic"]
 
 # short label of taxa "37 languages from.."
 taxa = "412 Bantu languages"
@@ -48,5 +48,5 @@ taxa = "412 Bantu languages"
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/defilippo_et_al2012" }
-lexibank = { title = "Lexibank Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
 links = []

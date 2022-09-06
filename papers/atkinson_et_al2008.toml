@@ -98,7 +98,7 @@ taxa = "95 Bantu languages, 65 Indo-European languages, 330 Austronesian languag
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }
-lexibank = { title = "Lexibank Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
 links = [
     { title = "Punctuation Marks in Language Evolution?", link = "https://doi.org/10.1126/article.31994" }
 ]

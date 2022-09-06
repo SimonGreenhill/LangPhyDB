@@ -64,5 +64,5 @@ taxa = "400 Austronesian languages"
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/gray_et_al2009" }
-lexibank = { title = "Lexibank Dataset", link = "https://github.com/lexibank/abvd" }
+cldf = { title = "CLDF Dataset", link = "https://github.com/lexibank/abvd" }
 links = []

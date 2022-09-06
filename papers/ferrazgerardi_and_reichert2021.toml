@@ -80,5 +80,5 @@ taxa = "38 Tupi-Guarani languages"
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/gerardi_and_reichert2021" }
-lexibank = { title = "Lexibank Dataset", link = "https://github.com/lexibank/gerarditupi" }
+cldf = { title = "CLDF Dataset", link = "https://github.com/lexibank/gerarditupi" }
 links = []

@@ -39,7 +39,36 @@ taxa = "17 Uralic languages"
     source = ''
     items = 'swadesh200'
     comment = ''
+
+
+# date calibrations
+[calibrations]
     
+    notes = """
+    Took uniform ranges, and implemented these as both uniforms and normal
+    distributions. Results show little to no effect in age differences.
+    
+    Also ran each permutation (n=32) of the calibrations too
+    """
+
+    [calibration.finnosamic]
+    taxa = ['finn1317', 'saam1281']
+    age = "normal(2630, 390)" # x, normal(x, y), uniform(x,y)
+    units = "ybp" # ybp
+    description = "note: this is a normalisation of a uniform range"
+
+    [calibration.permic]
+    taxa = ['perm1256']
+    age = "normal(1225, 60)" # x, normal(x, y), uniform(x,y)
+    units = "ybp" # ybp
+    description = "note: this is a normalisation of a uniform range"
+
+    [calibration.samoyedic]
+    taxa = ["samo1298"]
+    age = "normal(2030, 60)" # x, normal(x, y), uniform(x,y)
+    units = "ybp" # ybp
+    description = "note: this is a normalisation of a uniform range"
+
 
 # analysis information
 [analysis]
@@ -56,5 +85,5 @@ taxa = "17 Uralic languages"
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/honkola_et_al2013" }
-lexibank = { title = "Lexibank Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
 links = []

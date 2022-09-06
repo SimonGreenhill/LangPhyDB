@@ -56,5 +56,5 @@ taxa = "60 Arawakan languages"
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/walker_and_ribeiro2011" }
-lexibank = { title = "Lexibank Dataset", link = "https://github.com/lexibank/walkerarawakan" }
+cldf = { title = "CLDF Dataset", link = "https://github.com/lexibank/walkerarawakan" }
 links = []

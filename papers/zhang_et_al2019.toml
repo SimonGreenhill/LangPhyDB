@@ -36,7 +36,56 @@ taxa = "109 Sino-Tibetan languages"
     source = ''
     items = 'swadesh100'
     comment = ''
-    
+
+[calibrations]
+    notes = ""
+    [calibration.Burmese]
+        taxa = ['nucl1811']
+        age = "uniform(400, 1200)"
+        units = "y2000"
+        description = ""
+
+    [calibration.Chinese]
+        taxa = ['sini1245']
+        age = "normal(2700, 150)"
+        units = "y2000"
+        description = ""
+
+    [calibration.Karen]
+        taxa = ['kare1337']
+        age = "normal(1150, 75)"
+        units = "y2000"
+        description = ""
+
+    [calibration.Pumi]
+        taxa = ['pumi1242']
+        age = "normal(750, 50)"
+        units = "y2000"
+        description = ""
+
+    [calibration.QiangrGyalrongic]
+        taxa = ['qian1264', 'rgya1241']
+        age = "uniform(1000, 5000)"
+        units = "y2000"
+        description = ""
+
+    [calibration.Tibetan]
+        taxa = ['oldm1245']
+        age = "normal(1150, 50)"
+        units = "y2000"
+        description = ""
+
+    [calibration.Yi]
+        taxa = ['nili1235', 'hani1249', 'laho1234']
+        age = "normal(1500, 100)"
+        units = "y2000"
+        description = ""
+
+    [calibration.OldChinese]
+        taxa = ['oldc1244']
+        age = "normal(2500, 100)"
+        units = "y2000"
+        description = ""
 
 # analysis information
 [analysis]
@@ -75,6 +124,13 @@ taxa = "109 Sino-Tibetan languages"
         model = 'covarion+relaxed'
         details = "best fitting model"
 
+[inferredages]
+    notes = ""
+    [inferredage.sino1245]
+    taxa = ['sino1245']
+    age = "hpd(5900, 4200, 7800)"
+    units = "y2000"
+    notes = "4,200–7,800 years bp, with an average value of approximately 5,900 years bp"
 
 
 [links]

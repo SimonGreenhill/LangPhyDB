@@ -77,6 +77,20 @@ taxa = "425 Bantu languages"
     model = 'm1p+covarion+relaxed'
     details = ""
 
+[inferredages]
+    notes = ""
+    [inferredage.root]
+    taxa = ['sout3152']
+    age = "6929.7±418.6"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.bantu]
+    taxa = ['narr1281']
+    age = "4846.5±138.1"
+    units = "ybp"
+    notes = ""
+
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/grollemund_et_al2015" }

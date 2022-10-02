@@ -1,0 +1,101 @@
+
+title = "Contact and Phylogeny in Island Melanesia"
+
+doi = "10.1016/j.lingua.2007.10.026"
+
+abstract = """
+This paper shows that despite evidence of structural convergence between some of
+the Austronesian and non-Austronesian (Papuan) languages of Island Melanesia,
+statistical methods can detect two independent genealogical signals derived from
+linguistic structural features. Earlier work by the author and others has
+presented a maximum parsimony analysis which gave evidence for a genealogical
+connection between the non-Austronesian languages of island Melanesia. Using the
+same data set, this paper demonstrates for the non-statistician the application
+of more sophisticated statistical techniques—including Bayesian methods of
+phylogenetic inference, and shows that the evidence for common ancestry is if
+anything stronger than originally supposed.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Michael Dunn"
+]
+
+# parts of the world
+groups = ["Island Melanesia"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Dunn2009"
+
+# type of study
+type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "31 Island Melanesia languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 31
+    nchars = 124
+    nsites = 124
+    datatype = 'structural features'
+    source = '@Dunnetal2005'
+    items = ''
+    comment = ''
+    
+
+# analysis information
+[analysis]
+    [analysis.bayesian_a]
+    tool = 'bayesphylogenies'
+    model = 'm1p'
+    details = ""
+
+    [analysis.bayesian_b]
+    tool = 'bayesphylogenies'
+    model = 'm1p+gamma4'
+    details = "best-fitting model"
+
+    [analysis.bayesian_c]
+    tool = 'bayesphylogenies'
+    model = 'm1p+gamma4+heating'
+    details = "heated for first 1.5m generations"
+
+    [analysis.bayesian_d]
+    tool = 'bayesphylogenies'
+    model = 'm2p'
+    details = ""
+
+    [analysis.bayesian_e]
+    tool = 'bayesphylogenies'
+    model = 'm2p+gamma4'
+    details = ""
+
+    [analysis.bayesian_f]
+    tool = 'bayesphylogenies'
+    model = 'm2p+gamma4+heating'
+    details = "heated for first 1.5m generations"
+
+    [analysis.consensusnetwork]
+    tool = 'splitstree'
+    model = ''
+    details = ""
+
+    [analysis.neighbornet]
+    tool = 'splitstree'
+    model = ''
+    details = ""
+
+    [analysis.quartets]
+    tool = 'QuartetDist'
+    model = 'quartets'
+    details = "quartets distance between expected and recovered trees"
+
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+links = []

@@ -4,7 +4,17 @@ title = "A lexicostatistical study of the Khasian languages: Khasi, Pnar, Lyngng
 doi = ""
 
 abstract = """
-This paper presents the results of lexicostatistical, glottochronological, and Bayesian phylogenetic analyses of a 200 word data set for Standard Khasi, Lyngngam, Pnar and War. Very few works have appeared on the subject of the internal classification of the Khasian branch of Austroasiatic, leaving the existing reference literature disappointingly incomplete. The present analysis supports both the strong identity of Khasian as a unitary branch, with an internally nested branching structure that fits neatly with known historical, geographical and linguistic facts. Additionally, lexically based dating methods suggest that the internal diversification of Khasian began roughly between 1500 and 2000 years ago."""
+This paper presents the results of lexicostatistical, glottochronological, and
+Bayesian phylogenetic analyses of a 200 word data set for Standard Khasi,
+Lyngngam, Pnar and War. Very few works have appeared on the subject of the
+internal classification of the Khasian branch of Austroasiatic, leaving the
+existing reference literature disappointingly incomplete. The present analysis
+supports both the strong identity of Khasian as a unitary branch, with an
+internally nested branching structure that fits neatly with known historical,
+geographical and linguistic facts. Additionally, lexically based dating methods
+suggest that the internal diversification of Khasian began roughly between 1500
+and 2000 years ago.
+"""
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = [
@@ -36,6 +46,17 @@ taxa = "6 Austroasiatic languages"
     items = 'swadesh200'
     comment = ''
     
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.label]
+    taxa = ['khas1274']
+    age = "uniform(600, 800)" # x, normal(x, y), uniform(x,y)
+    units = "ybp" # ybp
+    description = "the Buranji chronicles of the Ahom kingdom apparently reference the Pnar kingdom at Jaintia about 500 years before present, which suggests a floor under the separation of Khasi and Pnar (e.g. Gait 1906:255 lists Jaintia kings from approximately 1500 AD onwards)"
+
 
 # analysis information
 [analysis]
@@ -48,7 +69,23 @@ taxa = "6 Austroasiatic languages"
     tool = 'splitstree'
     model = 'neighbornet'
     details = ""
-    
+
+
+[inferredages]
+    notes = ""
+    [inferredage.Khasi]
+    taxa = ['khas1268']
+    age = "hpd(1350, 1028, 1737)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.KhasiPnar]
+    taxa = ['khas1274']
+    age = "hpd(535, 500, 603)"
+    units = "ybp"
+    notes = ""
+
+
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/nagaraja_et_al2013" }
 lexibank = {}

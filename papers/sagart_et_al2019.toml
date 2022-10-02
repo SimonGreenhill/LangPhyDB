@@ -41,6 +41,30 @@ taxa = "50 Sino-Tibetan languages"
     items = 'basic'
     comment = ''
     
+[calibrations]
+    [calibration.oldchinese]
+    taxa = ["oldc1244"]
+    age = "uniform(2800, 2300)"  # normal(x, y)
+    units = "ybp" # ybp
+    description = "Period of the great Classical Chinese texts"
+
+    [calibration.oldburmese]
+    taxa = ["oldb1235"]
+    age = "800"  # x, normal(x, y), uniform(x,y)
+    units = "ybp" # ybp
+    description = "date of the earliest text rounded to the nearest century"
+    
+    [calibration.oldtibetan]
+    taxa = ["oldm1245"]
+    age = "1200"  # x, normal(x, y), uniform(x,y)
+    units = "ybp" # ybp
+    description = "date of the earliest text rounded to the nearest century"
+
+    [calibration.tangut]
+    taxa = ["tang1334"]
+    age = "900"  # x, normal(x, y), uniform(x,y)
+    units = "ybp" # ybp
+    description = "date of the earliest text rounded to the nearest century"
 
 # analysis information
 [analysis]
@@ -70,30 +94,14 @@ taxa = "50 Sino-Tibetan languages"
     details = ""
 
 
-[calibrations]
-    [calibration.oldchinese]
-    taxa = ["oldc1244"]
-    age = "uniform(2800, 2300)"  # normal(x, y)
-    units = "ybp" # ybp
-    description = "Period of the great Classical Chinese texts"
+[inferredages]
+    notes = ""
+    [inferredage.root]
+    taxa = ['sino1245']
+    age = "hpd(7184, 5093, 9568)"
+    units = "ybp"
+    notes = ""
 
-    [calibration.oldburmese]
-    taxa = ["oldb1235"]
-    age = "800"  # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
-    description = "date of the earliest text rounded to the nearest century"
-    
-    [calibration.oldtibetan]
-    taxa = ["oldm1245"]
-    age = "1200"  # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
-    description = "date of the earliest text rounded to the nearest century"
-
-    [calibration.tangut]
-    taxa = ["tang1334"]
-    age = "900"  # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
-    description = "date of the earliest text rounded to the nearest century"
 
 
 [links]

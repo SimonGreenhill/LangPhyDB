@@ -36,6 +36,8 @@ author,Joanna Dolińska,
 author,Erin Donnelly,
 author,Alexei J. Drummond,
 author,Michael Dunn,
+author,Anna V. Dybo,
+author,Ilya M. Egorov,
 author,Christopher Ehret,
 author,Fabrício Ferraz Gerardi,
 author,Ricardo Fernandes,
@@ -67,6 +69,7 @@ author,Li Jin,
 author,Fiona M. Jordan,
 author,Gereon A. Kaiping,
 author,Hideaki Kanzawa-Kiriyama,
+author,Alexei S. Kassian,
 author,Takamune Kawashima,
 author,Geonyoung Kim,
 author,Jae-Hyun Kim,
@@ -182,10 +185,13 @@ tool,paup*,
 tool,phylip,
 tool,poy5,
 tool,punctuatedwebapp,http://www.evolution.reading.ac.uk/pe/index.html
+tool,QuartetDist,https://almob.biomedcentral.com/articles/10.1186/1748-7188-1-16
 tool,r8s,http://ceiba.biosci.arizona.edu/r8s/index.html
 tool,revbayes,https://revbayes.github.io/
 tool,splitstree,http://www.splitstree.org/
+tool,starling,
 tool,structure,
+tool,tnt,
 tool,traitlab,https://sites.google.com/site/traitlab/
 
 type,dating,phylogenetic dating
@@ -201,4 +207,5 @@ type,tiger,TIGER rates
 type,qresidual,Reticulation metric Q-Residual
 
 units,ybp,Years before present
+units,y2000,Years before 2000
 units,none,No units needed

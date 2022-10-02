@@ -41,6 +41,16 @@ taxa = "306 Pama-Nyungan languages"
     items = 'swadesh200'
     comment = ''
     
+[calibration]
+
+    notes = "also includes tip sampling times"
+    
+    [calibration.wati]
+    taxa = ["wati1241"]
+    age = "gamma(2.0, 359.0, 3000)+originate"
+    units = "y2000" # ybp
+    description = "To capture this uncertainty, we constrained the age of the separation of the Wati lineage using a gamma distribution with a 95% highest posterior density interval between 5 ka and 3 ka and a probability mass skewed towards younger ages within this range (modelled as a gamma distribution with a 3,000 year offset, α =2 and β = 359). In addition, we constrained the breakup of the Wati subgroup to no later than 1.5 ka"
+
 
 # analysis information
 [analysis]
@@ -78,6 +88,17 @@ taxa = "306 Pama-Nyungan languages"
     tool = 'beast2'
     model = 'relaxed-random-walk'
     details = ""
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.tree2]
+    taxa = ['chap1271']
+    age = "hpd(5671, 4455, 6966)"
+    units = "y2000"
+    notes = "5671 is mean not median"
+
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/bouckaert_et_al2018" }

@@ -83,6 +83,14 @@ taxa = "17 Uralic languages"
     details = "best fitting model"
 
 
+[inferredages]
+    notes = ""
+    [inferredage.uralic]
+    taxa = ['ural1272']
+    age = "hpd(6600, 3679, 10307)"
+    units = "ybp"
+    notes = ""
+
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/honkola_et_al2013" }
 cldf = { title = "CLDF Dataset", link = "" }

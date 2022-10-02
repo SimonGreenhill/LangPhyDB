@@ -104,6 +104,9 @@ taxa = "15 Koreanic languages"
     model = ''
     details = ""
 
+[inferredages]
+    notes = "'divergence times are not shown as they may potentially be misleading'"
+
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/lee2015" }

@@ -36,6 +36,14 @@ taxa = "19 Ainu languages"
     items = 'swadesh200'
     comment = ''
     
+[calibrations]
+    notes = "dates take 2000 as starting point"
+    [calibration.AinuIntoSakhalin]
+    taxa = ["chuv1255"]
+    age = "normal(460, 51)" # NB. XML definition differs from statement in paper.
+    units = "y2000"
+    description = "Temporal scale of phylogenies was calibrated using a probabilistic prior taken from well-attested evidence that modern Ainu expanded into Sakhalin around 15th century [38,39]: a normally-distributed prior with a mean of 500 BP with its 95% of the distribution incorporating 200 years"
+
 
 # analysis information
 [analysis]
@@ -89,6 +97,15 @@ taxa = "19 Ainu languages"
     tool = 'beast'
     model = 'stochasticdollo+bsp+relaxed+phylogeography(lognormal)'
     details = ""
+
+
+[inferredages]
+    notes = ""
+    [inferredage.ainu]
+    taxa = ['ainu1252']
+    age = "hpd(1288, 820, 1862)"
+    units = "ybp"
+    notes = ""
 
 
 [links]

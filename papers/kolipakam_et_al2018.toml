@@ -198,6 +198,17 @@ taxa = "20 Dravidian languages"
         model = 'stochasticdollo+relaxed+wordrate'
         details = ""
 
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.root]
+    taxa = ['drav1251']
+    age = "hpd(4433, 2812, 7063)"
+    units = "ybp"
+    notes = ""
+
+
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/kolipakam_et_al2018" }
 cldf = { title = "CLDF Dataset", link = "https://github.com/lexibank/drvalex" }

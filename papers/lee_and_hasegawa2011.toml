@@ -95,6 +95,17 @@ taxa = "59 Japonic languages"
         model = 'covarion+relaxed'
         details = "best fitting model"
 
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.tree2]
+    taxa = ['japo1237']
+    age = "hpd(2182, 1239, 4190)"
+    units = "ybp"
+    notes = ""
+
+
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/lee_and_hasegawa" }
 cldf = { title = "CLDF Dataset", link = "https://github.com/lexibank/leejaponic" }

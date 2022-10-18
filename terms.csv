@@ -155,6 +155,7 @@ author,Jan Zrzavý,
 
 datatype,distance,precomputed distance data
 datatype,lexical cognates,cognate data
+datatype,lexical cognates (autodetected),auto detected cognate data
 datatype,lexemes,raw lexical data
 datatype,mixed,mixed datatypes
 datatype,phonetic traits,phonetic characters
@@ -183,6 +184,7 @@ tool,network,
 tool,mrbayes,http://nbisweden.github.io/MrBayes/
 tool,paup*,
 tool,phylip,
+tool,phylogemetric,
 tool,poy5,
 tool,punctuatedwebapp,http://www.evolution.reading.ac.uk/pe/index.html
 tool,QuartetDist,https://almob.biomedcentral.com/articles/10.1186/1748-7188-1-16
@@ -206,6 +208,8 @@ type,trait,Inferring trait history
 type,tiger,TIGER rates
 type,qresidual,Reticulation metric Q-Residual
 
-units,ybp,Years before present
-units,y2000,Years before 2000
+units,ad,anno domini
+units,bce,Before Common Era
+units,ybp,Years Before Present
+units,y2000,Years Before 2000
 units,none,No units needed

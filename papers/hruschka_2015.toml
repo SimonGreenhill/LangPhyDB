@@ -1,0 +1,77 @@
+
+title = "Detecting Regular Sound Changes in Linguistics as Events of Concerted Evolution"
+
+doi = "10.1016/j.cub.2014.10.064"
+
+abstract = """
+Concerted evolution is normally used to describe parallel changes
+at different sites in a genome, but it is also observed in languages where a
+specific phoneme changes to the same other phoneme in many words in the lexicon—a
+phenomenon known as regular sound change. We develop a general statistical model
+that can detect concerted changes in aligned sequence data and apply it to study
+regular sound changes in the Turkic language family. Results: Linguistic
+evolution, unlike the genetic substitutional process, is dominated by events of
+concerted evolutionary change. Our model identified more than 70 historical
+events of regular sound change that occurred throughout the evolution of the
+Turkic language family, while simultaneously inferring a dated phylogenetic tree.
+Including regular sound changes yielded an approximately 4-fold improvement in
+the characterization of linguistic change over a simpler model of sporadic
+change, improved phylogenetic inference, and returned more reliable and plausible
+dates for events on the phylogenies. The historical timings of the concerted
+changes closely follow a Poisson process model, and the sound transition networks
+derived from our model mirror linguistic expectations. Conclusions: We
+demonstrate that a model with no prior knowledge of complex concerted or regular
+changes can nevertheless infer the historical timings and genealogical placements
+of events of concerted change from the signals left in contemporary data. Our
+model can be applied wherever discrete elements—such as genes, words, cultural
+trends, technologies, or morphological traits—can change in parallel within an
+organism or other evolving group.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Daniel J. Hruschka",
+    "Simon Branford",
+    "Eric D. Smith",
+    "Jon Wilkins",
+    "Andrew Meade",
+    "Mark Pagel",
+    "Tanmoy Bhattacharya"
+]
+
+# parts of the world
+groups = ["Turkic"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Hruschka2015"
+
+# type of study
+type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "26 Turkic languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 26
+    nchars = ""
+    nsites = ""
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = ''
+    
+
+# analysis information
+[analysis]
+    [analysis.tree]
+    tool = ''
+    model = ''
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+links = []

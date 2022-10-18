@@ -39,6 +39,53 @@ taxa = "131 Sino-Tibetan languages"
     comment = ''
     
 
+[calibration]
+    notes = """
+    We incorporated six time-calibrations on the tree (Table S1). Extinction
+    timings of Old Chinese, Padam, and Shaiyang were calibrated with last-seen
+    dates identified by linguists66,72; three internal nodes were calibrated
+    based on historical records of the earliest observation of distinct
+    descendant groups as the latest date of their most recent common ancestor
+    """
+
+    [calibration.oldc1244]
+    taxa = ["oldc1244"]
+    age = "uniform(2300, 2800)"
+    units = "y2000" # ybp
+    description = "300 ~ 800 B.C."
+
+    [calibration.padam]
+    taxa = ["pada1257"]
+    age = "120"
+    units = "y2000" # ybp
+    description = "extinction of Padam ~1900AD"
+
+    [calibration.Shaiyang]
+    taxa = ["misi1242?"]
+    age = "120"
+    units = "y2000" # ybp
+    description = "extinction of Shaiyang ~1900AD"
+
+    [calibration.loloquangic]
+    taxa = ["burm1265"]
+    age = ">1602"
+    units = "y2000" # ybp
+    description = "Lolo-Qiangic common ancestor before 418 AD"
+
+    [calibration.pumi]
+    taxa = ["pumi1242"]
+    age = ">157"
+    units = "y2000" # ybp
+    description = "Pumi common ancestor before 1863 AD"
+
+    [calibration.naxi]
+    taxa = ["naxi1245"]
+    age = ">297"
+    units = "y2000" # ybp
+    description = "Pumi common ancestor before 1724 AD"
+
+
+
 # analysis information
 [analysis]
     [analysis.tree1]
@@ -70,6 +117,16 @@ taxa = "131 Sino-Tibetan languages"
     tool = 'beast2'
     model = 'covarion+relaxed+fbd'
     details = "best fitting model"
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.root]
+    taxa = ['sino1245']
+    age = "hpd(7983, 4778, 11285)"
+    units = "y2000"
+    notes = "best fitting model"
 
 
 [links]

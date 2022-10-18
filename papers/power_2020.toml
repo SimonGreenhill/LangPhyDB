@@ -1,0 +1,69 @@
+
+title = "Evolutionary dynamics in the dispersal of sign languages"
+
+doi = "10.1098/rsos.191100"
+
+abstract = """
+The evolution of spoken languages has been studied since the
+mid-nineteenth century using traditional historical comparative methods and, more
+recently, computational phylogenetic methods. By contrast, evolutionary processes
+resulting in the diversity of contemporary sign languages (SLs) have received
+much less attention, and scholars have been largely unsuccessful in grouping SLs
+into monophyletic language families using traditional methods. To date, no
+published studies have attempted to use language data to infer relationships
+among SLs on a large scale. Here, we report the results of a phylogenetic
+analysis of 40 contemporary and 36 historical SL manual alphabets coded for
+morphological similarity. Our results support grouping SLs in the sample into six
+main European lineages, with three larger groups of Austrian, British and French
+origin, as well as three smaller groups centring around Russian, Spanish and
+Swedish. The British and Swedish lineages support current knowledge of
+relationships among SLs based on extra-linguistic historical sources. With
+respect to other lineages, our results diverge from current hypotheses by
+indicating (i) independent evolution of Austrian, French and Spanish from Spanish
+sources; (ii) an internal Danish subgroup within the Austrian lineage; and (iii)
+evolution of Russian from Austrian sources.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Justin M. Power",
+    "Guido W. Grimm",
+    "Johann-Mattis List"
+]
+
+# parts of the world
+groups = ["Sign Languages"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Power_2020"
+
+# type of study
+type = ["likelihood", "network", "parsimony"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "76 Sign Languages languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 76
+    nchars = ""
+    nsites = ""
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = ''
+    
+
+# analysis information
+[analysis]
+    [analysis.tree]
+    tool = ''
+    model = ''
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+links = []

@@ -1,0 +1,198 @@
+
+title = "The dialect chain of the Timor-Alor-Pantar language family"
+
+doi = "10.1163/22105832-bja10019"
+
+abstract = """
+This paper refines the subgroupings of the Timor-Alor-Pantar (TAP) family of Papuan languages, using a systematic Bayesian phylogenetics study. While recent work indicates that the TAP family comprises a Timor (T) branch and an Alor-Pantar (AP) branch (Holton et al., 2012; Schapper et al., 2017), the internal structure of the AP branch has proven to be a challenging issue, and earlier studies leave large gaps in our understanding. Our Bayesian inference study is based on an extensive set of TAP lexical data from the online LexiRumah database (Kaiping et al., 2019b; Kaiping and Klamer, 2018). Systematically comparing different analytical models and tying them back to the evidence in terms of historical linguistics, we arrive at a subgrouping structure of the TAP family that is based on features of the phylogenies shared across the different analyses. Our TAP tree differs from all earlier proposals by inferring the East Alor subgroup as an early split-off from all other AP languages, instead of the most deeply embedded subgroup inside that branch. The evidences suggests that dialect cluster effects played a major role in the formation of today’s Timor-Alor-Pantar languages.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Gereon A. Kaiping",
+    "Marian Klamer"
+]
+
+# parts of the world
+groups = ["Timor-Alor-Pantar"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@KaipingKlamer_2022"
+
+# type of study
+type = ["phylogenetic", "dating", "delta", "qresidual"]
+
+# short label of taxa "37 languages from.."
+taxa = "48 Timor-Alor-Pantar languages"
+
+# data
+[data]
+    [data.S]
+    ntaxa = 48
+    nchars = ""
+    nsites = 9274
+    datatype = 'lexical cognates (autodetected)'
+    source = '@Lexirumah'
+    items = ''
+    comment = 'lexstat-infomap (theta=0.55, SCA sound model)'
+    
+    [data.D1]
+    ntaxa = 48
+    nchars = ""
+    nsites = 9268
+    datatype = 'lexical cognates (autodetected)'
+    source = '@Lexirumah'
+    items = ''
+    comment = 'lexstat-infomap (theta=0.55, ASJP sound model)'
+
+    [data.D2]
+    ntaxa = 48
+    nchars = ""
+    nsites = 14596
+    datatype = 'lexical cognates (autodetected)'
+    source = '@Lexirumah'
+    items = ''
+    comment = 'lexstat-infomap (theta=0.35, SCA sound model)'
+
+    [data.D3]
+    ntaxa = 48
+    nchars = ""
+    nsites = 5259
+    datatype = 'lexical cognates (autodetected)'
+    source = '@Lexirumah'
+    items = ''
+    comment = 'lexstat-infomap (theta=0.75, SCA sound model)'
+    
+    [data.D4]
+    ntaxa = 48
+    nchars = ""
+    nsites = 9268
+    datatype = 'lexical cognates (autodetected)'
+    source = '@Lexirumah'
+    items = ''
+    comment = 'OnlinePMI'
+
+
+
+[calibration]
+    [calibration.Oirata]
+    taxa = ["fata1246"]
+    age = "normal(282.5, 1.75)"
+    units = "y2000" # ybp
+    description = "The migration of speakers of the ancestors of today’s Oirata speakers from east Timor to the adjacent island of Kisar—that is, the date when Oirata split from its relatives Makasae and Fataluku—can be dated with high confidence to the year 1721 or shortly before that (Hägerdal, 2012: 337). We therefore include a normally distributed calibration on the split that is directly ancestral to Oirata in all our inferences with 95 % probability () on the seven years up to 1721, a distribution with mean age 282.5 years and standard deviation 1.75 years."
+
+    [calibration.AP]
+    taxa = ["alor1249"]
+    age = "normal(3137.5, 162.6)"
+    units = "y2000" # ybp
+    description = "These ancient (Malayo-Polynesian) loans are found across the Alor-Pantar branch, and they follow regular sound changes, which indicates that they were borrowed at the level of proto-AP. We use them to approximately date when proto-AP split from proto-TAP. Proto-MP has been dated at 4,000 yBP (Pawley, 2002), and speakers of MP languages are commonly assumed to have arrived in the Timor Alor Pantar area around 3,000 yBP (Pawley, 2005; Spriggs, 2011). The MP borrowings in proto-AP would thus give the AP family a maximum age of around 3,000 years.  More precisely, human genetic studies support a connection between populations of the Lesser Sundas with Papuan populations of New Guinea and Austronesians (Malayo-Polynesians) from Asia (Lansing et al., 2011; Xu et al., 2012). The admixture between Papuan and (“Melanesian”-)Asian is estimated to have begun about 5,000 yBP in the western part of eastern Indonesia, decreasing to 3,000 yBP in the eastern part. This associates the Papuan-Asian admixture with Austronesian (MP) expansion (Xu et al., 2012). This is the only date range with quantitative confidence, and gives the confidence interval used in our analysis. The 90 % confidence interval between 2,870 and 3,405 yBP corresponds to a normal distribution with mean 3,137.5 yBP, and a standard deviation of 162.6 years. The dating is thus consistent with the scarce linguistic and archaeological evidence for the contact time frame around 3,000–3,500 yBP."
+
+    [calibration.root]
+    taxa = ["timo1261"]
+    age = "uniform(0, 18000)"
+    units = "y2000" # ybp
+    description = ""
+
+
+# analysis information
+[analysis]
+    [analysis.S]
+    tool = 'beast2'
+    model = 'ctmc+strict+birthdeath'
+    details = "best fitting model"
+    data = "@data.S"
+
+    [analysis.T]
+    tool = 'beast2'
+    model = 'ctmc+strict+yule'
+    details = ""
+    data = "@data.S"
+    
+    [analysis.M]
+    tool = 'beast2'
+    model = 'covarion+strict+birthdeath'
+    details = ""
+    data = "@data.S"
+    
+    [analysis.C]
+    tool = 'beast2'
+    model = 'ctmc+relaxed+birthdeath'
+    details = ""
+    data = "@data.S"
+
+    [analysis.MT]
+    tool = 'beast2'
+    model = 'covarion+strict+uniform'
+    details = ""
+    data = "@data.S"
+
+    [analysis.MC]
+    tool = 'beast2'
+    model = 'covarion+relaxed+birthdeath'
+    details = ""
+    data = "@data.S"
+
+    [analysis.TC]
+    tool = 'beast2'
+    model = 'ctmc+relaxed+uniform'
+    details = ""
+    data = "@data.S"
+
+    [analysis.X]
+    tool = 'beast2'
+    model = 'covarion+relaxed+uniform'
+    details = ""
+    data = "@data.S"
+
+    [analysis.D1]
+    tool = 'beast2'
+    model = 'ctmc+strict+birthdeath'
+    details = ""
+    data = "@data.D1"
+
+    [analysis.D2]
+    tool = 'beast2'
+    model = 'ctmc+strict+birthdeath'
+    details = ""
+    data = "@data.D2"
+
+    [analysis.D3]
+    tool = 'beast2'
+    model = 'ctmc+strict+birthdeath'
+    details = ""
+    data = "@data.D3"
+
+    [analysis.D4]
+    tool = 'beast2'
+    model = 'ctmc+strict+birthdeath'
+    details = ""
+    data = "@data.D4"
+
+    [analysis.delta]
+    tool = 'phylogemetric'
+    model = 'delta'
+    details = ""
+
+    [analysis.qresidual]
+    tool = 'phylogemetric'
+    model = 'qresidual'
+    details = ""
+
+
+
+[inferredages]
+
+    notes = ""
+
+    [inferredage.S]
+    taxa = ['timo1261']
+    age = "hpd(4816, 7636)"
+    units = "y2000"
+    notes = "The mean root ages for the four topologies all lie between 5,979 and 6,089 yBP. Of all trees in this posterior sample, 95 % have root ages between 4,816 and 7,636 years."
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/kaiping_and_klamer2022" }
+cldf = { title = "CLDF Dataset", link = "https://github.com/lessersunda/lexirumah-data" }
+links = []

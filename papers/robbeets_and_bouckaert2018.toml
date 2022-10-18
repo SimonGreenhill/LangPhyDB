@@ -37,6 +37,57 @@ taxa = "57 Transeurasian languages"
     comment = ''
     
 
+[calibration]
+    [calibration.japonic]
+    taxa = ["japonic"]
+    age = "normal(150, 175)"
+    units = "bce"
+    description = ""
+
+    [calibration.tungusic]
+    taxa = ["tung1282"]
+    age = "normal(50, 275)"
+    units = "bce"
+    description = ""
+
+    [calibration.monogolic]
+    taxa = ["mong1329"]
+    age = "normal(1150, 75)"
+    units = "bce"
+    description = ""
+
+    [calibration.turkic]
+    taxa = ["turkic"]
+    age = "normal(200, 200)"
+    units = "bce"
+    description = ""
+
+
+    [calibration.monophyly_japonic]
+    taxa = ["japo1237"]
+    age = "monophyly"
+    units = "none"
+    description = "monophyly constraints on glottolog"
+    
+    [calibration.monophyly_turkic]
+    taxa = ["turk1311"]
+    age = "monophyly"
+    units = "none"
+    description = "monophyly constraints on glottolog"
+    
+    [calibration.monophyly_mongolian]
+    taxa = ["mong1329"]
+    age = "monophyly"
+    units = "none"
+    description = "monophyly constraints on glottolog"
+    
+    [calibration.monophyly_tungusic]
+    taxa = ["tung1282"]
+    age = "monophyly"
+    units = "none"
+    description = "monophyly constraints on glottolog"
+
+
 # analysis information
 [analysis]
 
@@ -84,6 +135,17 @@ taxa = "57 Transeurasian languages"
         tool = 'beast2'
         model = 'pseudodollo+covarion+strict+birthdeathsampling'
         details = ""
+
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.tree2]
+    taxa = ['tung1282', 'turk1311', 'japo1237', 'mong1329', 'kore1284']
+    age = "hpd(2550, 7540)"
+    units = "ybp"
+    notes = "Unfortunately, as far as timing is concerned, the root age of the inferred phylogeny has large uncertainty when using a Yule prior (95% HPD Interval [2.55kya, 7.54kya] a priori [4.33kya, 9.45kya] a posteriori), so we cannot draw firm conclusions on the timing aspects of our results."
 
 
 [links]

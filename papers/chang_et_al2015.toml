@@ -1,0 +1,68 @@
+
+title = "Ancestry-constrained phylogenetic analysis supports the Indo-European steppe hypothesis"
+
+doi = "10.1353/lan.2015.0005"
+
+abstract = """
+Discussion of Indo-European origins and dispersal focuses on two hypotheses.
+Qualitative evidence from reconstructed vocabulary and correlations with
+archaeological data suggest that IndoEuropean languages originated in the
+Pontic-Caspian steppe and spread together with cultural innovations associated
+with pastoralism, beginning c. 6500–5500 bp. An alternative hypothesis, according
+to which Indo-European languages spread with the diffusion of farming from
+Anatolia, beginning c. 9500–8000 bp, is supported by statistical phylogenetic and
+phylogeographic analyses of lexical traits. The time and place of the
+Indo-European ancestor language therefore remain disputed. Here we present a
+phylogenetic analysis in which ancestry constraints permit more accurate
+inference of rates of change, based on observed changes between ancient or
+medieval languages and their modern descendants, and we show that the result
+strongly supports the steppe hypothesis. Positing ancestry constraints also
+reveals that homoplasy is common in lexical traits, contrary to the assumptions
+of previous work. We show that lexical traits undergo recurrent evolution due to
+recurring patterns of semantic and morphological change
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Will Chang",
+    "Chundra Cathcart",
+    "David Hall",
+    "Andrew Garrett"
+]
+
+# parts of the world
+groups = ["Indo-European"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Chang2015"
+
+# type of study
+type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "52 Indo-European languages"
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 52
+    nchars = ""
+    nsites = ""
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'swadesh200'
+    comment = ''
+    
+
+# analysis information
+[analysis]
+    [analysis.tree]
+    tool = ''
+    model = ''
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+links = []

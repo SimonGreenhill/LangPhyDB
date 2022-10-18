@@ -39,3 +39,6 @@ Full details:  https://journals.plos.org/plosone/article/figure?id=10.1371/journ
 
 > with Q-residual score = 0.1013 and high δ score = 0.4254
 
+## kaiping_and_klamer2022:
+
+- both Q and Delta in table4

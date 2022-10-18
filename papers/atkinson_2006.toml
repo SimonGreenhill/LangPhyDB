@@ -52,8 +52,46 @@ taxa = "30 Mayan languages"
     source = ''
     items = 'swadesh100'
     comment = ''
-    
-    
+
+
+[calibration]
+    notes = ""
+
+    [calibration.classicalmaya]
+    taxa = ["yuca1254"]
+    age = "uniform(300, 700)"
+    units = "ad"
+    description = "Earliest dated monument, Stela 29 at Tikal, 292A.D., although most stela are later. Items identified by Boot (2002) as being younger than 700A.D. were excluded"
+
+    [calibration.colonialyucatec]
+    taxa = ["yuca1254"]
+    age = "uniform(1570, 1590)"
+    units = "ad"
+    description = "Source document written around 1580."
+
+    [calibration.colonialkaqchikel]
+    taxa = ["kaqc1270"]
+    age = "uniform(1630, 1647)"
+    units = "ad"
+    description = "Sources compiled in the years before publication."
+
+    [calibration.sipsak]
+    taxa = ["sipa1247", "saca1238"]
+    age = ">1551"
+    units = "ad"
+    description = "Titulo of Sacapulas (1551) recognizes the two languages as being distinct"
+
+    [calibration.poq]
+    taxa = ["poco1241"]
+    age = "uniform(1250, 1450)"
+    units = "ad"
+    description = "Ethno-historical evidence of Rabinal Quiche invasion “driving a wedge” between what is now Poqomam and Poqomchi."
+   
+    [calibration.kt]
+    taxa = ["cakc1244"]
+    age = ">1493"
+    units = "ad"
+    description = "Ethno-history indicates the populations had evidently been separated before this time."
 
 # analysis information
 [analysis]
@@ -86,6 +124,17 @@ taxa = "30 Mayan languages"
     tool = 'splitstree'
     model = 'consensus network'
     details = ""
+
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.root]
+    taxa = ['maya1287']
+    age = "hpd(3900, 9100)"
+    units = "y2000"
+    notes = "best fitting model"
 
 
 [links]

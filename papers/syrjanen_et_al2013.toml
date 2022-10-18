@@ -1,0 +1,191 @@
+
+title = "Shedding More Light on Language Classification Using Basic Vocabularies and Phylogenetic Methods: A Case Study of Uralic"
+
+doi = "10.1075/dia.30.3.02syr"
+
+abstract = """
+Encouraged by ongoing discussion of the classification of the Uralic languages, we investigate the family quantitatively using Bayesian phylogenetics and basic vocabulary from seventeen languages. To estimate the heterogeneity within this family and the robustness of its subgroupings, we analyse ten divergent sets of basic vocabulary, including basic vocabulary lists from the literature, lists that exclude borrowing-susceptible meanings, lists with varying degrees of borrowing-susceptible meanings and a list combining all of the examined items. The results show that the Uralic phylogeny has a fairly robust shape from the perspective of basic vocabulary, and is not dramatically altered by borrowing susceptible meanings. The results differ to some extent from the "standard paradigm" classification of these languages, such as the lack of firm evidence for Finno-Permian.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Kaj Syrjänen",
+    "Terhi Honkola",
+    "Kalle Korhonen",
+    "Jyri Lehtinen",
+    "Outi Vesakoski",
+    "Niklas Wahlberg"
+]
+
+# parts of the world
+groups = ["Uralic"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Syrjanen2013"
+
+# type of study
+type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "17 Uralic languages"
+
+# data
+[data]
+    [data.full]
+    ntaxa = 17
+    nchars = 226
+    nsites = ""
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'basic'
+    comment = ''
+
+    [data.swadesh207]
+    ntaxa = 17
+    nchars = 207
+    nsites = ""
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'swadesh200'
+    comment = ''
+
+    [data.sw100]
+    ntaxa = 17
+    nchars = 100
+    nsites = ""
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'swadesh100'
+    comment = ''
+    
+    [data.ura100]
+    ntaxa = 17
+    nchars =1200
+    nsites = ""
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'ura100'
+    comment = 'Uralic 100 wordlist'
+    
+    [data.leipzigjakarta]
+    ntaxa = 17
+    nchars = 101
+    nsites = ""
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'leipzigjakarta'
+    comment = 'Leipzig-Jakarta'
+
+    [data.borrowings1plus]
+    ntaxa = 17
+    nchars = 124
+    nsites = ""
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'basic'
+    comment = 'meanings with 1+ borrowings'
+
+    [data.borrowings2plus]
+    ntaxa = 17
+    nchars = 69
+    nsites = ""
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'subset'
+    comment = 'meanings with 2+ borrowings'
+
+    [data.borrowings3plus]
+    ntaxa = 17
+    nchars = 47
+    nsites = ""
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'subset'
+    comment = 'meanings with 3+ borrowings'
+
+    [data.borrowings4plus]
+    ntaxa = 17
+    nchars = 32
+    nsites = ""
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'subset'
+    comment = 'meanings with 4+ borrowings'
+
+    [data.borrowings5plus]
+    ntaxa = 17
+    nchars = 22
+    nsites = ""
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'subset'
+    comment = 'meanings with 5+ borrowings'
+
+
+# analysis information
+[analysis]
+    [analysis.full]
+    tool = 'mrbayes'
+    model = ''
+    details = ""
+    datatype = 'full'
+
+    [analysis.swadesh207]
+    tool = 'mrbayes'
+    model = ''
+    details = ""
+    datatype = 'swadesh207'
+
+    [analysis.sw100]
+    tool = 'mrbayes'
+    model = ''
+    details = ""
+    datatype = 'sw100'
+    
+    [analysis.ura100]
+    tool = 'mrbayes'
+    model = ''
+    details = ""
+    datatype = 'ura100'
+    
+    [analysis.leipzigjakarta]
+    tool = 'mrbayes'
+    model = ''
+    details = ""
+    datatype = 'leipzigjakarta'
+
+    [analysis.borrowings1plus]
+    tool = 'mrbayes'
+    model = ''
+    details = ""
+    datatype = 'borrowings1plus'
+
+    [analysis.borrowings2plus]
+    tool = 'mrbayes'
+    model = ''
+    details = ""
+    datatype = 'borrowings2plus'
+
+    [analysis.borrowings3plus]
+    tool = 'mrbayes'
+    model = ''
+    details = ""
+    datatype = 'borrowings3plus'
+
+    [analysis.borrowings4plus]
+    tool = 'mrbayes'
+    model = ''
+    details = ""
+    datatype = 'borrowings4plus'
+
+    [analysis.borrowings5plus]
+    tool = 'mrbayes'
+    model = ''
+    details = ""
+    datatype = 'borrowings5plus'
+
+
+[links]
+phlorest = {}
+lexibank = {}
+links = []

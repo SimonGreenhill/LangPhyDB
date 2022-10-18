@@ -1,0 +1,227 @@
+title = "Phylogeny of the Turkic Languages Inferred from Basic Vocabulary: Limitations of the Lexicostatistical Methods in an Intensive Contact Situation"
+
+doi = "10.1093/jole/lzac006"
+
+abstract = """
+This article provides an attempt to revise the phylogenetic structure of the
+Turkic family using a computational lexicostatistical approach. The
+methodological framework of the present research is characterized by the
+following features: (1) wordlists with strictly controlled semantics; (2)
+step-by- step reconstruction using Swadesh wordlists for proto-languages; (3)
+three stages of post-processing of the input data (analysis of root cognacy,
+elimination of derivational drift, and optimization of homoplasy); (4)
+application of several computational algorithms (Starling neighbor-joining,
+Bayesian MCMC, and maximum parsimony). The analysis provided confirms the status
+of Chuvash as the first outlier and suggests a subsequent multifurcation of
+Proto-Nuclear-Turkic into eight branches. The Siberian Turkic group is a purely
+areal unity, that is, Yakut-Dolgan, Tofa-Tuvinian, Khakas-Mrassu, Sarygh Yugur
+and Altai do not form a clade. Altai is grouped together with the Kipchak
+languages as a separate taxon; it does not show a particularly close relationship
+with Kirghiz, which belongs to another Kipchak subgroup. Karluk is a low-level
+taxon inside the Kipchak clade.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Ilya M. Egorov",
+    "Anna V. Dybo", 
+    "Alexei S. Kassian"
+]
+
+# parts of the world
+groups = ['Turkic']
+
+# bibkey citation in sources.bib
+bibkey = "@Egorov2022"
+
+# type of study
+type = ['phylogenetic', 'dating']
+
+# short label of taxa "37 languages from.."
+taxa = "3 languages, and 15 reconstructed proto-languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.rootcognacy]
+    ntaxa = 18
+    nchars = 110
+    nsites = 245
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = 'Dataset with root cognacy (traditional approach).'
+
+    [data.driftfree]
+    ntaxa = 18
+    nchars = 110
+    nsites = 262
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = 'Derivational drift-free dataset.'
+
+    [data.homoplasyfree]
+    ntaxa = 18
+    nchars = 110
+    nsites = 322
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = 'Homoplasy-free dataset.'
+
+
+# date calibrations
+[calibrations]
+
+    notes = "dates take 2000 as starting point"
+
+    [calibration.Proto_Chuvash]
+    taxa = ["chuv1255"]
+    age = "uniform(250, 350)"
+    units = "y2000"
+    description = ""
+
+    [calibration.Proto_Yakut_Dolgan]
+    taxa = ["nort2688"]
+    age = "uniform(250, 350)"
+    units = "y2000"
+    description = ""
+    
+    [calibration.Proto_Tofa_Tuvinian]
+    taxa = ["saya1244"]
+    age = "uniform(750, 950)"
+    units = "y2000"
+    description = ""
+ 
+    [calibration.Proto_Karachay_Balkar]
+    taxa = ["kara1465"]
+    age = "uniform(100, 150)"
+    units = "y2000"
+    description = ""
+    
+    [calibration.Proto_Tatar_Bashkir]
+    taxa = ["nort2696"]
+    age = "uniform(400, 600)"
+    units = "y2000"
+    description = ""
+
+    [calibration.Sarygh_Yugur]
+    taxa = ["west2402"]
+    age = "uniform(0, 100)"
+    units = "y2000"
+    description = ""
+
+    [calibration.Proto_Khakas_Mras]
+    taxa = ["yeni1251"]
+    age = "uniform(820, 1020)"
+    units = "y2000"
+    description = ""
+
+    [calibration.Proto_Altai]
+    taxa = ["sout2693"]
+    age = "uniform(940, 1140)"
+    units = "y2000"
+    description = ""
+
+    [calibration.Proto_Oghuz]
+    taxa = ["oghu1243"]
+    age = "uniform(1170, 1370)"
+    units = "y2000"
+    description = ""
+    
+    [calibration.Proto_Karaim]
+    taxa = ["kara1464"]
+    age = "uniform(350, 650)"
+    units = "y2000"
+    description = ""
+
+    [calibration.Proto_Khalaj]
+    taxa = ["turk1303"]
+    age = "100"
+    units = "y2000"
+    description = ""
+    
+    [calibration.Proto_Kazakh_Karakalpak]
+    taxa = ["kara1467", "kaza1248"]
+    age = "50"
+    units = "y2000"
+    description = ""
+    
+    [calibration.Proto_Kirghiz]
+    taxa = ["kirg1245"]
+    age = "uniform(100, 150)"
+    units = "y2000"
+    description = ""
+    
+    [calibration.Proto_Karluk]
+    taxa = ["uygh1240", "uzbe1247"]
+    age = "uniform(400, 600)"
+    units = "y2000"
+    description = ""
+
+    [calibration.Proto_Kumyk]
+    taxa = ["kumy1244"]
+    age = "uniform(100, 150)"
+    units = "y2000"
+    description = ""
+
+    [calibration.Proto_Nogai]
+    taxa = ["noga1249"]
+    age = "uniform(100, 150)"
+    units = "y2000"
+    description = ""
+
+    [calibration.Old_Uyghur]
+    taxa = ["uigh1240"]
+    age = "uniform(1000, 1150)"
+    units = "y2000"
+    description = ""
+
+    [calibration.Karakhanid_Uyghur]
+    taxa = ["uigh1240"]
+    age = "950"
+    units = "y2000"
+    description = ""
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.starling]
+    tool = 'starling'
+    model = 'neighbor-joining'
+    details = ""
+
+    [analysis.mp]
+    tool = 'tnt'
+    model = ''
+    details = ""
+    
+    [analysis.bayesian]
+    tool = 'mrbayes'
+    model = 'restrictionsite+gamma+cov'
+    details = ""
+
+    
+    
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.turkic]
+    taxa = ['turk1311']
+    age = "hpd(2437, 1704, 3299)"
+    units = "y2000"
+    notes = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https;//github.com/phlorest/egorov_et_al2022" }
+cldf = { title = "CLDF Dataset", link = "" }
+links = []

@@ -46,7 +46,7 @@ groups = ["Turkic"]  # 'Austronesian', etc
 bibkey = "@Hruschka2015"
 
 # type of study
-type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
+type = ["phylogenetic", "dating"]
 
 # short label of taxa "37 languages from.."
 taxa = "26 Turkic languages"
@@ -62,13 +62,50 @@ taxa = "26 Turkic languages"
     items = ''
     comment = ''
     
+[calibration]
+    notes = "and includes the current dates of dictionaries for each of the contemporary languages"
+
+    [calibration.SeljukConquest]
+    taxa = ["yuca1254"]
+    age = "uniform(300, 700)"
+    units = "ad"
+    description = "the Seljuk conquest of Baghdad (1055 CE), which is likely the latest date for divergence of Seljuk-derived languages (Turkish, Azeri, Gagauz) from other Oghuz languages (Turkmen), the earliest likely date being 985 CE"
+
+    [calibration.colonialyucatec]
+    taxa = ["yuca1254"]
+    age = "uniform(1570, 1590)"
+    units = "ad"
+    description = "Source document written around 1580."
+
 
 # analysis information
 [analysis]
-    [analysis.tree]
-    tool = ''
-    model = ''
-    details = ""
+    [analysis.regular]
+    tool = 'bayesphylogenies'
+    model = 'mk+regular'
+    details = "The sporadic sound changes are modeled as a continuous-time Markov process, widely used in models of DNA or protein sequence evolution, where in place of the usual 4 3 4or203 20 matrices of nucleotide or amino acid transitions, we erect a 62 3 62 sound transition rate matrix, denoted Qs (Supplemental Experimental Procedures). We estimate the elements of Qs from the data employing a reversible-jump Markov chain Monte Carlo (RJ-MCMC) procedure described elsewhere [16] that allows the large number of potential parameters to be reduced to a potentially far smaller set of statistically distinct parameters, and without loss of statistical accuracy or prior knowledge on the part of investigators. We find that nine distinct rate classes, empirically estimated from the data, plus a category of rates estimated to be zero, are sufficient for the Turkic data. "
+
+    [analysis.regular_and_sporadic]
+    tool = 'bayesphylogenies'
+    model = 'mk+regular+sporadic'
+    details = "Regular sound changes of the general form denoting the ith sound changing to the jth are modeled in a stochastic matrix Qr that takes the form of an identity matrix with the ith diagonal element interchanged with the off diagonal position (ji). Premultiplication of any stochastic matrix Q (e.g., that in PðDjQs; tÞ) by such a matrix is equivalent to adding all elements qi1, qi2,.qik to the corresponding values of qj1, qj2.qjk and then zeroing out the qi1, qi2,.qik. We then use a different RJ-MCMC procedure to propose possible Qr matrices in branches of the phylogenetic tree, thereby allowing regular changes to occur or not occur on a branch-specific basis."
+
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.sporadic]
+    taxa = ['turk1311']
+    age = "hpd(4408, 3279, 5993)"
+    units = "y2000"
+    notes = "2408 BCE, with 95% credible intervals of 3993–1279 BCE;"
+
+    [inferredage.regular]
+    taxa = ['turk1311']
+    age = "hpd(2204, 2605, 1919)"
+    units = "y2000"
+    notes = "204 BCE, with 95% credible intervals of 605 BCE–81 CE"
 
 
 [links]

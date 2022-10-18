@@ -37,6 +37,106 @@ taxa = "400 Austronesian languages"
     items = 'swadesh200'
     comment = ''
     
+# date calibrations
+[calibrations]
+
+    [calibration.PMP]
+    taxa = ["mala1545"]
+    age = "uniform(3600, 4500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.protooceanic]
+    taxa = ["ocea1241"]
+    age = "uniform(3200, 3600)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.epolynesian]
+    taxa = ["east2449"]
+    age = "uniform(1150, 1800)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.protochamic]
+    taxa = ["cham1330"]
+    age = "uniform(1800, 2500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.protomalagasy]
+    taxa = ["mala1537"]
+    age = "uniform(1100, 1300)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.protojavanese]
+    taxa = ["java1254"]
+    age = "uniform(1100, 1300)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.protorsc]
+    taxa = ["reef1242"]
+    age = "uniform(3000, 3150)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.malayicchamic]
+    taxa = ["mala1538", "cham1330"]
+    age = "uniform(2000, 3000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.micronesian]
+    taxa = ["micr1243"]
+    age = "uniform(1900, 2200)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.tuvtok]
+    taxa = ["tuva1244", "toke1240"]
+    age = "uniform(1000, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.OldJavanese]
+    taxa = ["mode1251"]
+    age = "uniform(700, 1200)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.OldChinese]
+    taxa = ["oldc1244"]
+    age = "uniform(2300, 2900)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Favorlang]
+    taxa = ["babu1240"]
+    age = "uniform(346, 384)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Siraya]
+    taxa = ["sira1267"]
+    age = "uniform(346, 384)"
+    units = "y2000"
+    description = ""
+
 
 # analysis information
 [analysis]
@@ -60,6 +160,17 @@ taxa = "400 Austronesian languages"
     tool = 'traitlab'
     model = 'stochasticdollo'
     details = ""
+
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.root]
+    taxa = ['aust1307']
+    age = "hpd(5230, 4750, 5800)"
+    units = "ybp"
+    notes = ""
 
 
 [links]

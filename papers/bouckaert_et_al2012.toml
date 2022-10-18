@@ -40,7 +40,213 @@ taxa = "103 Indo-European languages"
     source = '@IELex'
     items = 'swadesh200'
     comment = ''
-    
+
+
+[calibrations]
+    [calibration.tmrca_Lithuanian_Latvian]
+    taxa = ["east2280"]
+    age = "normal(1350.0, 25.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.tmrca_Balto_Slavic_u]
+    taxa = ["balt1263"]
+    age = "uniform(2000.0, 3400.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.tmrca_Balto-Slavic_n]
+    taxa = ["balt1263"]
+    age = "normal(3100.0, 600.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.tmrca_FrenchIberian]
+    taxa = ["west2813"]
+    age = "normal(1400.0, 100.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.tmrca_Northwest-Germanic]
+    taxa = ["nort3152"]
+    age = "normal(1875.0, 67.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.tmrca_Indic]
+    taxa = ["indo1321"]
+    age = "lognormal(1000.0, 1.0, 2150.0, realspace=True)"
+    units = "ybp"
+    description = ""
+
+    [calibration.tmrca_Indo-Iranian]
+    taxa = ["indo1320"]
+    age = "uniform(3000.0, 10000.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.tmrca_Celtic]
+    taxa = ["celt1248"]
+    age = "uniform(1700.0, 10000.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.tmrca_Iranian]
+    taxa = ["iran1269"]
+    age = "lognormal(400.0, 0.8, 2600.0, realspace=True)"
+    units = "ybp"
+    description = ""
+
+    [calibration.tmrca_Latin_Romance]
+    taxa = ["lati1262"]
+    age = "normal(2000.0, 135.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.tmrca_Slavic]
+    taxa = ["slav1255"]
+    age = "lognormal(300.0, 0.6, 1200.0, realspace=True)"
+    units = "ybp"
+    description = ""
+
+    [calibration.tmrca_Tocharian]
+    taxa = ["tokh1241"]
+    age = "lognormal(200.0, 0.9, 1650.0, realspace=True)"
+    units = "ybp"
+    description = ""
+
+    [calibration.tmrca_Brythonic]
+    taxa = ["bryt1239"]
+    age = "normal(1550.0, 25.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.tmrca_WestGermanic]
+    taxa = ["west2793"]
+    age = "normal(1550.0, 25.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.hittite_height]
+    taxa = ["hitt1242"]
+    age = "normal(3450.0, 125.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.tocharian_a_height]
+    taxa = ["tokh1242"]
+    age = "normal(1375.0, 75.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.tocharian_b_height]
+    taxa = ["tokh1243"]
+    age = "normal(1350.0, 75.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.luvian_height]
+    taxa = ["hier1240"]
+    age = "normal(3350.0, 75.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.lycian_height]
+    taxa = ["mily1238"]
+    age = "normal(2400.0, 50.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.oldirish_height]
+    taxa = ["oldi1245"]
+    age = "normal(1250.0, 75.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.umbrian_height]
+    taxa = ["umbr1253"]
+    age = "normal(2200.0, 100.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.oscan_height]
+    taxa = ["osca1245"]
+    age = "normal(2200.0, 100.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.latin_height]
+    taxa = ["lati1261"]
+    age = "normal(2050.0, 75.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.ancientgreek_height]
+    taxa = ["anci1242"]
+    age = "normal(2400.0, 50.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.classicalarmenian_height]
+    taxa = ["clas1249"]
+    age = "normal(1450.0, 75.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.gothic_height]
+    taxa = ["goth1244"]
+    age = "normal(1650.0, 25.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.oldnorse_height]
+    taxa = ["oldn1244"]
+    age = "normal(775.0, 40.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.oldenglish_height]
+    taxa = ["olde1238"]
+    age = "normal(1000.0, 50.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.oldhighgerman_height]
+    taxa = ["oldh1241"]
+    age = "normal(1050.0, 50.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.oldchurchslavonic_height]
+    taxa = ["chur1257"]
+    age = "normal(1000.0, 50.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.oldprussian_height]
+    taxa = ["prus1238"]
+    age = "normal(500.0, 50.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.avestan_height]
+    taxa = ["aves1237"]
+    age = "normal(2500.0, 50.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.oldpersian_height]
+    taxa = ["oldp1254"]
+    age = "normal(2450.0, 75.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.vedic_height]
+    taxa = ["sans1269"]
+    age = "normal(3000.0, 100.0)"
+    units = "ybp"
+    description = ""
+
 
 # analysis information
 [analysis]
@@ -83,6 +289,17 @@ taxa = "103 Indo-European languages"
     tool = 'beast2'
     model = 'brownian'
     details = ""
+
+
+[inferredages]
+    
+    notes = "From Correction"
+    
+    [inferredage.root]
+    taxa = ['turk1311']
+    age = "hpd(7579, 5972, 9351)"
+    units = "y2000"
+    notes = "7579 years BP; 95% HPD interval = 5972 to 9351 years BP."
 
 
 [links]

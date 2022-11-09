@@ -29,43 +29,16 @@ taxa = "79 Indo-European languages, 130 Austronesian languages, 66 Bantu languag
 
 # data
 [data]
-    [data.bantu]
-    ntaxa = 66
-    nchars = 92
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@Holden2005'
-    items = 'swadesh100'
-    comment = ''
-
-    [data.indoeuropean]
-    ntaxa = 82 
-    nchars = 200
-    nsites = 4049
-    datatype = 'lexical cognates'
-    source = '@Dyen1992'
-    items = 'swadesh200'
-    comment = ''
-
-    [data.austronesian]
-    ntaxa = 130
-    nchars = 210
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@Greenhill2008'
-    items = 'swadesh200'
-    comment = ''
-
     [data.utoaztecan]
     ntaxa = 26
     nchars = 108
     nsites = "?"
     datatype = 'lexical cognates'
-    source = '@Holden2002'
+    source = ''
     items = 'swadesh100'
     comment = ''
 
-    [data.structural]
+[data.structural]
     ntaxa = 26
     nchars = 8
     nsites = 8
@@ -73,7 +46,19 @@ taxa = "79 Indo-European languages, 130 Austronesian languages, 66 Bantu languag
     source = '@WALS'
     items = ''
     comment = ''
-    
+
+[phylogenies]
+    [phylogenies.bantu]
+    source = '@Holden2005'
+    comment = ''
+
+    [phylogenies.indoeuropean]
+    source = '@Dyen1992'
+    comment = ''
+
+    [phylogenies.austronesian]
+    source = '@Greenhill2008'
+    comment = ''
 
 # analysis information
 [analysis]
@@ -103,7 +88,8 @@ taxa = "79 Indo-European languages, 130 Austronesian languages, 66 Bantu languag
 
     [analysis.bayestraits]
     tool = 'bayestraits'
-    details = "dependent vs. independent model testing following Pagel et al. 1994"
+    model = 'discrete'
+    details = ""
 
 
 [links]

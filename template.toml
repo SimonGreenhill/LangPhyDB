@@ -31,8 +31,14 @@ taxa = ""
     nchars = 100
     nsites = "?"
     datatype = 'lexical cognates'
-    source = '@Holden2005'
+    source = '@xxx'
     items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.label]
+    source = '@xxx'
     comment = ''
 
 
@@ -73,4 +79,5 @@ taxa = ""
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }
 cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
 links = []

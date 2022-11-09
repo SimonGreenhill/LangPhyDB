@@ -28,39 +28,23 @@ type = ['macroevolutionary']
 taxa = "95 Bantu languages, 65 Indo-European languages, 330 Austronesian languages"
 
 # data
-[data]
+[phylogenies]
 
 #We used publicly available lexical data recording cognate sets across
 #‘Swadesh list’ (1) basic vocabulary items in the Bantu (100 terms in 95
 #languages)(2), Indo-European (200 terms in 65 languages)(3) and Austronesian
 #(210 terms in 330 languages)(4) language families (see Table S1). The
 
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
+    [phylogenies.bantu]
     source = '@Holden2005'
-    items = 'swadesh100'
     comment = ''
     
-    [data.indoeuropean]
-    ntaxa = 65
-    nchars = 200
-    nsites = "?"
-    datatype = 'lexical cognates'
+    [phylogenies.indoeuropean]
     source = '@Dyen1992'
-    items = 'swadesh200'
     comment = ''
     
-    
-    [data.austronesian]
-    ntaxa = 330
-    nchars = 210
-    nsites = "?"
-    datatype = 'lexical cognates'
+    [phylogenies.austronesian]
     source = '@Greenhill2008'
-    items = 'swadesh200'
     comment = ''
     
     

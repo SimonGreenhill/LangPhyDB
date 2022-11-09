@@ -8,12 +8,13 @@ author,Peter Bakker,
 author,Keith Bartolomei,
 author,Yvonne Bastin,
 author,Ilona R. Bausch,
-author,Tanmoy Bhattacharya,
-author,Damián E. Blasi,
 author,Mahé Ben Hamed,
 author,John R. Bentley,
-author,Raffaela A. Bianco,
 author,Rasmus Björn,
+author,Tanmoy Bhattacharya,
+author,Raffaela A. Bianco,
+author,Damián E. Blasi,
+author,Timotheus A. Bodt,
 author,Koen Bostoen,
 author,Carlos A. Botero,
 author,Joshua Birchall,
@@ -29,6 +30,7 @@ author,Angela M. Chira,
 author,Matthew Conte,
 author,Natalia Chousou-Polydouri,
 author,Yinqiu Cui,
+author,Thomas Currie,
 author,Cesare de Filippo,
 author,Aymeric Daval-Markussen,
 author,Bingcong Deng,
@@ -60,6 +62,7 @@ author,Clare J. Holden,
 author,Gary Holton,
 author,Terhi Honkola,
 author,Daniel J. Hruschka,
+author,Xia Hua,
 author,Mark J. Hudson,
 author,Monica Alexandrina Irimia,
 author,Hajime Ishida,
@@ -99,6 +102,7 @@ author,Chao Ning,
 author,Zachary O'Hagan,
 author,Márcia Santos Duarte Oliveira,
 author,Hiroki Oota,
+author,Christopher Opie,
 author,Sofia Oskolskaya,
 author,Mark Pagel,
 author,Brigitte Pakendorf,
@@ -119,6 +123,7 @@ author,Robin J. Ryder,
 author,Laurent Sagart,
 author,Takehiro Sato,
 author,Alexander Savelyev,
+author,Susanne Shultz,
 author,Noriko Seguchi,
 author,Ken-ichi Shinoda,
 author,Mark A. Sicoli,
@@ -132,6 +137,7 @@ author,Angela Terrill
 author,Valentin Thouzeau,
 author,Hirotaka Tomita,
 author,Alfred Toth,
+author,Tiago Tresoldi,
 author,Junzo Uchiyama,
 author,Chris Venditti,
 author,Annemarie Verkerk,
@@ -143,6 +149,8 @@ author,Vivian Wauters,
 author,Ward C. Wheeler,
 author,Peter M. Whiteley,
 author,Jon Wilkins,
+author,Chieh-Hsi Wu,
+author,Mei-Shin Wu,
 author,Ming Xue,
 author,Ken-Yōjiro Yamano,
 author,Shi Yan,
@@ -154,15 +162,18 @@ author,Menghan Zhang,
 author,Jan Zrzavý,
 
 datatype,distance,precomputed distance data
+datatype,ethnographic features,ethnographic features
 datatype,lexical cognates,cognate data
 datatype,lexical cognates (autodetected),auto detected cognate data
 datatype,lexemes,raw lexical data
 datatype,mixed,mixed datatypes
 datatype,phonetic traits,phonetic characters
+datatype,signs,manual alphabet for sign languages
 datatype,structural features,structural features
 
 items,,no specification
 items,basic,generic basic vocabulary
+items,ethatlas,ethnographic atlas variable
 items,swadesh35,Swadesh 35 wordlist
 items,swadesh100,Swadesh 100 wordlist
 items,swadesh200,Swadesh 200 wordlist
@@ -176,6 +187,7 @@ tool,bayesphylogenies,http://www.evolution.reading.ac.uk/BayesPhy.html
 tool,bayestraits,http://www.evolution.reading.ac.uk/BayesTraits.html
 tool,beast,https://beast.community
 tool,beast2,http://www.beast2.org/
+tool,caper,R package caper
 tool,iqtree,
 tool,lingpy,
 tool,macclade,
@@ -189,6 +201,7 @@ tool,poy5,
 tool,punctuatedwebapp,http://www.evolution.reading.ac.uk/pe/index.html
 tool,QuartetDist,https://almob.biomedcentral.com/articles/10.1186/1748-7188-1-16
 tool,r8s,http://ceiba.biosci.arizona.edu/r8s/index.html
+tool,raxml,
 tool,revbayes,https://revbayes.github.io/
 tool,splitstree,http://www.splitstree.org/
 tool,starling,

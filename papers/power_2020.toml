@@ -38,7 +38,7 @@ groups = ["Sign Languages"]  # 'Austronesian', etc
 bibkey = "@Power_2020"
 
 # type of study
-type = ["likelihood", "network", "parsimony"]  # phylogenetic,phylogeography,macroevolutionary,trait
+type = ["phylogenetic", "network"]
 
 # short label of taxa "37 languages from.."
 taxa = "76 Sign Languages languages"
@@ -47,23 +47,39 @@ taxa = "76 Sign Languages languages"
 [data]
     [data.lexicon]
     ntaxa = 76
-    nchars = ""
-    nsites = ""
-    datatype = 'lexical cognates'
+    nchars = 2124
+    nsites = 2124
+    datatype = 'signs'
     source = ''
     items = ''
-    comment = ''
+    comment = 'HamNoSys'
     
 
 # analysis information
 [analysis]
-    [analysis.tree]
-    tool = ''
+    [analysis.nnet]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+
+    [analysis.mp]
+    tool = 'splitstree'
     model = ''
     details = ""
 
+    [analysis.ml]
+    tool = 'raxml'
+    model = 'binary+gamma+asc'
+    details = ""
+
+    [analysis.consensusnetwork]
+    tool = 'splitstree'
+    model = 'consensusnetwork'
+    details = ""
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }
-cldf = { title = "CLDF Dataset", link = "" }
-links = []
+cldf = { title = "CLDF Dataset", link = "https://github.com/lexibank/ powerma" }
+links = [
+    "https://github.com/lingpy/ sign-language-evolution-paper"
+]

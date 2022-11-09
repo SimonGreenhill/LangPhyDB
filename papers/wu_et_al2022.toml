@@ -1,0 +1,125 @@
+title = "Bayesian phylogenetics illuminate shallower relationships among Trans-Himalayan languages in the Tibet-Arunachal area"
+
+doi = "10.1075/ltba.21019.wu"
+
+abstract = """
+Kho-Bwa, Hrusish, Mishmic, Tani, and Tshangla are language clusters that
+have been recurrently proposed as subgroups of the Trans-Himalayan (also known as Tibeto-Burman and Sino-Tibetan) language family. Nonetheless, their internal classification, as well as the relation with each other and with other linguistic groups in the family, is hitherto unresolved. We use lexical data on these groups and dated phylogenies to investigate such internal classifications. We base our examination on previous research into the language family in the Tibet-Arunachal area, and follow a computer-assisted approach of language comparison to perform Bayesian phylolinguistic analysis. As earlier phyloge- netic studies on this family included little data related to this geographic area, we took a subset of the best available dataset and extended it with vocabularies for the Kho-Bwa and Hrusish clusters, also including one Mishmic, two Tani, two Tshangla, and five East Bodish languages to cover the major languages and linguistic subgroups neighboring these clusters. Our results shed light on the internal and external classification of the Kho-Bwa, Hrusish and Bodish lan- guages, and allow us to share valuable experience on the extent to which similar approaches can be applied to the phylogenetic analysis of the Trans-Himalayan language family.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Mei-Shin Wu",
+    "Timotheus A. Bodt", 
+    "Tiago Tresoldi"
+]
+
+# parts of the world
+groups = ['Sino-Tibetan']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Wu2022"
+
+# type of study
+type = ['phylogenetic', 'dating']
+
+# short label of taxa "37 languages from.."
+taxa = "86 Sino-Tibetan languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.lexicon]
+    ntaxa = 62
+    nchars = 193
+    nsites = 3048
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = ''
+
+
+[calibrations]
+    [calibration.oldburmese]
+    taxa = ["oldb1235"]
+    age = "0.8"
+    units = "ybp"
+    description = "date of the earliest text rounded to the nearest century"
+    
+    [calibration.oldtibetan]
+    taxa = ["oldm1245"]
+    age = "1.2"  # x, normal(x, y), uniform(x,y)
+    units = "ybp" # ybp
+    description = "date of the earliest text rounded to the nearest century"
+
+    [calibration.tangut]
+    taxa = ["tang1334"]
+    age = "0.9"  # x, normal(x, y), uniform(x,y)
+    units = "ybp" # ybp
+    description = "date of the earliest text rounded to the nearest century"
+
+    [calibration.root]
+    taxa = ["sino1245"]
+    age = "uniform(5.0, 6.8)"
+    units = "ybp" # ybp
+    description = "based on @Sagart2019"
+
+    [calibration.protoeastbodish]
+    taxa = ["east1469"]
+    age = "normal(2.5, 0.5)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.tani]
+    taxa = ["tani1259"]
+    age = "normal(1.35, 0.5)"
+    units = "ybp" # ybp
+    description = ""
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.beast2]
+    tool = 'beast2'
+    model = 'covarion+bds+relaxed'
+    details = ""
+
+    [analysis.nnet]
+    tool = 'splitstree'
+    model = ''
+    details = ""
+
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.khobwa]
+    taxa = ['khob1235']
+    age = "hpd(2.843, 1.996, 3.747)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.hrusish]
+    taxa = ['miji1239', 'hrus1242']
+    age = "hpd(1.846, 1.121, 2.674)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.tshangla]
+    taxa = ['tsha1247']
+    age = "hpd(5.700, 4.413, 6.530)"
+    units = "ybp"
+    notes = ""
+    
+    
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/wu_et_al2022" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

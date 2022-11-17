@@ -1,0 +1,86 @@
+title = "Phylogenetic reconstruction of Bantu kinship challenges Main Sequence Theory of human social evolution"
+
+doi = "10.1073/pnas.1415744111"
+
+abstract = """
+Kinship provides the fundamental structure of human society: descent determines the inheritance pattern between generations, whereas residence rules govern the location a couple moves to after they marry. In turn, descent and residence patterns determine other key relationships such as alliance, trade, and marriage partners. Hunter-gatherer kinship patterns are viewed as flexible, whereas agricultural societies are thought to have developed much more stable kinship patterns as they expanded during the Holocene. Among the Bantu farmers of sub-Saharan Africa, the ancestral kinship patterns present at the beginning of the expansion are hotly contested, with some arguing for matrilineal and matrilocal patterns, whereas others maintain that any kind of lineality or sex-biased dispersal only emerged much later. Here, we use Bayesian phylogenetic methods to uncover the history of Bantu kinship patterns and trace the interplay between descent and residence systems. The results suggest a number of switches in both descent and residence patterns as Bantu farming spread, but that the first Bantu populations were patrilocal with patrilineal descent. Across the phylogeny, a change in descent triggered a switch away from patrifocal kinship, whereas a change in residence triggered a switch back from matrifocal kinship. These results challenge “Main Sequence Theory,” which maintains that changes in residence rules precede change in other social structures. We also indicate the trajectory of kinship change, shedding new light on how this fundamental structure of society developed as farming spread across the globe during the Neolithic.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Christopher Opie",
+    "Susanne Shultz",
+    "Quentin D. Atkinson",
+    "Thomas Currie",
+    "Ruth Mace"
+]
+
+# parts of the world
+groups = ['Bantu']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "Opie2014"  # @xxxx
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "Evolution of kinship in Bantu languages"
+
+# data
+[data]
+
+    notes = ""
+    [data.ea11]
+        ntaxa = "?"
+        nchars = 1
+        nsites = 1
+        datatype = 'ethnographic features'
+        source = '@Murdock1967;@Gray1999'
+        items = 'ethatlas'
+        comment = 'EA11'
+
+
+    [data.ea43]
+        ntaxa = "?"
+        nchars = 1
+        nsites = 1
+        datatype = 'ethnographic features'
+        source = '@Murdock1967;@Gray1999'
+        items = 'ethatlas'
+        comment = 'EA43'
+
+[phylogenies]
+    [phylogenies.currie_et_al2013]
+    source = '@Currie2013'
+    comment = ""
+    
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.signal]
+    tool = 'caper'
+    model = 'D'
+    details = ""
+    
+    [analysis.rjmcmc]
+    tool = 'bayestraits'
+    model = 'rjmcmc'
+    details = ""
+
+    [analysis.bayestraits]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "dependent vs. independent model testing following Pagel et al. 1994"
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "https://github.com/d-PLACE/dplace-data" }
+
+links = []

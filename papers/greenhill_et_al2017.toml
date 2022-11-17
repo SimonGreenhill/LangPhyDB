@@ -1,0 +1,200 @@
+title = "Evolutionary dynamics of language systems"
+
+doi = "10.1073/pnas.1700388114"
+
+abstract = """
+Understanding how and why language subsystems differ in their evolutionary dynamics is a fundamental question for historical and comparative linguistics. One key dynamic is the rate of language change. While it is commonly thought that the rapid rate of change hampers the reconstruction of deep language relationships beyond 6,000–10,000 y, there are suggestions that grammatical structures might retain more signal over time than other subsystems, such as basic vocabulary. In this study, we use a Dirichlet process mixture model to infer the rates of change in lexical and grammatical data from 81 Austronesian languages. We show that, on average, most grammatical features actually change faster than items of basic vocabulary. The grammatical data show less schismogenesis, higher rates of homoplasy, and more bursts of contact-induced change than the basic vocabulary data. However, there is a core of grammatical and lexical features that are highly stable. These findings suggest that different subsystems of language have differing dynamics and that careful, nuanced models of language change will be needed to extract deeper signal from the noise of parallel evolution, areal readaptation, and contact.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Simon J. Greenhill",
+    "Chieh-Hsi Wu",
+    "Xia Hua",
+    "Michael Dunn", 
+    "Stephen C. Levinson",
+    "Russell D. Gray",
+
+]
+
+# parts of the world
+groups = ['Austronesian']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "Greenhill2017"
+
+# type of study
+type = ['macroevolutionary', 'delta', 'qresidual']
+
+# short label of taxa "37 languages from.."
+taxa = "81 Austronesian languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.lexicon]
+    ntaxa = 81
+    nchars = 210
+    nsites = 1195
+    datatype = 'lexical cognates'
+    source = '@Greenhilletal2008'
+    items = 'swadesh200'
+    comment = ''
+
+    [data.structure]
+    ntaxa = 81
+    nchars = 157
+    nsites = 157
+    datatype = 'structural features'
+    source = ''
+    items = ''
+    comment = ''
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.protoOceanic]
+    taxa = ['ocea1241']
+    age = "normal(3300, 100)"
+    units = "y2000"
+    description = ""
+
+    [calibration.protoCentralPacific]
+    taxa = ['cent2060']
+    age = "normal(3000, 100)"
+    units = "y2000"
+    description = ""
+
+    [calibration.protoMalayoPolynesian]
+    taxa = ['mala1545']
+    age = "normal(4000, 250)"
+    units = "ybp"
+    description = ""
+
+    [calibration.protoMicronesian]
+    taxa = ['micr1243']
+    age = "normal(2000, 100)"
+    units = "y2000"
+    description = ""
+
+    [calibration.protoAustronesian]
+    taxa = ['aust1307']
+    age = "normal(5200, 300)"
+    units = "y2000"
+    description = ""
+
+# analysis information
+[analysis]
+    
+    notes = ""
+
+    # delta
+    [analysis.delta_lexicon]
+    tool = 'splitstree'
+    model = 'delta'
+    data = "data.lexicon"
+    details = ""
+
+    [analysis.delta_structure]
+    tool = 'splitstree'
+    model = 'delta'
+    data = "data.structure"
+    details = ""
+
+    # qresidual
+    [analysis.qresidual_lexicon]
+    tool = 'splitstree'
+    model = 'qresidual'
+    data = "data.lexicon"
+    details = ""
+
+    [analysis.qresidual_structure]
+    tool = 'splitstree'
+    model = 'qresidual'
+    data = "data.structure"
+    details = ""
+    
+    # nnets
+    [analysis.nnet_lexicon]
+    tool = 'splitstree'
+    model = 'neigbornet'
+    data = "data.lexicon"
+    details = ""
+
+    [analysis.nnet_structure]
+    tool = 'splitstree'
+    model = 'neigbornet'
+    data = "data.structure"
+    details = ""
+
+    # Punctuated Equilibrium analysis
+    [analysis.pe_lexicon]
+    tool = 'beast2'
+    model = 'ctmc+relaxed'
+    data = "data.lexicon"
+    details = ""
+
+    [analysis.pe_structure]
+    tool = 'beast2'
+    model = 'ctmc+relaxed'
+    data = "data.structure"
+    details = ""
+
+    [analysis.pe_lexicon_test]
+    tool = 'punctuatedwebapp'
+    model = ''
+    data = "data.lexicon"
+    details = ""
+
+    [analysis.pe_structure_test]
+    tool = 'punctuatedwebapp'
+    model = ''
+    data = "data.structure"
+    details = ""
+
+    # DPMM analysis
+    [analysis.dpmm_relaxed_lognormal]
+    tool = 'beast2'
+    model = 'ctmc+relaxed+dirichlet(lognormal)'
+    data = "data.lexicon;data.structure"
+    details = "best fitting model"
+
+    [analysis.dpmm_relaxed_exponential]
+    tool = 'beast2'
+    model = 'ctmc+relaxed+dirichlet(exponential)'
+    data = "data.lexicon;data.structure"
+    details = ""
+
+    [analysis.dpmm_strict_lognormal]
+    tool = 'beast2'
+    model = 'ctmc+strict+dirichlet(lognormal)'
+    data = "data.lexicon;data.structure"
+    details = ""
+
+    [analysis.dpmm_strict_exponential]
+    tool = 'beast2'
+    model = 'ctmc+strict+dirichlet(exponential)'
+    data = "data.lexicon;data.structure"
+    details = ""
+    
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.label]
+    taxa = ['aust1307']
+    age = "hpd(4671.9, 4147.5, 5214.0)"
+    units = "y2000"
+    notes = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/greenhill_et_al2017" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

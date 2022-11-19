@@ -1,0 +1,75 @@
+title = "Phylogenetic signal in phonotactics"
+
+doi = "10.1075/dia.20004.mac"
+
+abstract = """
+Phylogenetic methods have broad potential in linguistics beyond tree infer- ence. Here, we show how
+a phylogenetic approach opens the possibility of gaining historical insights from entirely new
+kinds of linguistic data – in this instance, statistical phonotactics. We extract phonotactic data
+from 112 Pama-Nyungan vocabularies and apply tests for phylogenetic signal, quanti- fying the
+degree to which the data reflect phylogenetic history. We test three datasets: (1) binary variables
+recording the presence or absence of biphones (two-segment sequences) in a lexicon (2) frequencies
+of transitions between segments, and (3) frequencies of transitions between natural sound classes.
+Australian languages have been characterized as having a high degree of phonotactic homogeneity.
+Nevertheless, we detect phylogenetic signal in all datasets. Phylogenetic signal is greater in
+finer-grained frequency data than in binary data, and greatest in natural-class-based data. These
+results demonstrate the viability of employing a new source of readily extractable data in
+historical and comparative linguistics.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    'Jayden Macklin-Cordes',
+    'Claire Bowern',
+    'Erich Round'
+]
+
+# parts of the world
+groups = ['Pama-Nyungan']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@MacklinCordes2021"  # @xxxx
+
+# type of study
+type = ['trait']
+
+# short label of taxa "37 languages from.."
+taxa = "investigation of phylogenetic signal in Pama-Nyungan languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.biphones]
+    ntaxa = 112
+    nchars = 415
+    nsites = 415
+    datatype = 'phonetic traits'
+    source = ''
+    items = ''
+    comment = 'Biphones (bigrams)'
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.bouckaert2018]
+    source = '@Bouckaert2018'
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.signal]
+    tool = 'picante'
+    model = ''
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

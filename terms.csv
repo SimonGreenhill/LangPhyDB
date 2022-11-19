@@ -93,6 +93,7 @@ author,Tao Li,
 author,Johann-Mattis List,
 author,Giuseppe Longobardi,
 author,Ruth Mace,
+author,Jayden Macklin-Cordes,
 author,Ana Paulla Braga Mattos,
 author,Olga Mazo,
 author,Andrew Meade,
@@ -120,6 +121,7 @@ author,Martine Robbeets,
 author,Patrick Roberts,
 author,Laura C. Robinson,
 author,Robert M. Ross,
+author,Erich Round,
 author,Robin J. Ryder,
 author,Laurent Sagart,
 author,Takehiro Sato,
@@ -197,11 +199,13 @@ tool,network,
 tool,mrbayes,http://nbisweden.github.io/MrBayes/
 tool,paup*,
 tool,phylip,
+tool,picante,
 tool,phylogemetric,
 tool,poy5,
 tool,punctuatedwebapp,http://www.evolution.reading.ac.uk/pe/index.html
 tool,QuartetDist,https://almob.biomedcentral.com/articles/10.1186/1748-7188-1-16
 tool,r8s,http://ceiba.biosci.arizona.edu/r8s/index.html
+tool,r,misc R
 tool,raxml,
 tool,revbayes,https://revbayes.github.io/
 tool,splitstree,http://www.splitstree.org/

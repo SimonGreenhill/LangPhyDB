@@ -1,0 +1,143 @@
+
+title = "The riddle of Tasmanian languages"
+
+doi = "10.1098/rspb.2012.1842"
+
+abstract = """
+Recent work which combines methods from linguistics and evolutionary biology has been
+fruitful in discovering the history of major language families because of similarities in
+evolutionary processes. Such work opens up new possibilities for language research on
+previously unsolvable problems, especially in areas where information from other sources
+may be lacking. I use phylogenetic methods to investigate Tasmanian languages. Existing
+materials are so fragmentary that scholars have been unable to discover how many languages
+are represented in the sources. Using a clustering algorithm which identifies admixture,
+source materials representing more than one language are identified. Using the Neighbor-Net
+algorithm, 12 languages are identified in five clusters. Bayesian phylogenetic methods
+reveal that the families are not demonstrably related; an important result, given the
+importance of Tasmanian Aborigines for information about how societies have responded to
+population collapse in prehistory. This work provides insight into the societies of
+prehistoric Tasmania and illustrates a new utility of phylogenetics in reconstructing
+linguistic history.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    'Claire Bowern',
+]
+
+# parts of the world
+groups = ['Tasmania', 'Australia']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@BowernTasmania2012"  # @xxxx
+
+# type of study
+type = ['phylogenetic', 'dating', 'network']
+
+taxa = '26 Tasmanian languages'
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.multistate]
+    ntaxa = 35
+    nchars = 559
+    nsites = 559
+    datatype = 'lexical cognates'
+    source = '@Plomley1976'
+    items = ''
+    comment = ''
+
+    [data.binary]
+    ntaxa = 26
+    nchars = 559
+    nsites = 2777
+    datatype = 'lexical cognates'
+    source = '@Plomley1976'
+    items = ''
+    comment = ''
+
+
+[calibration]
+    notes = """
+    Calibrating the divergence of the western and northern group to 
+    Jones’ identified spread of people down the west coast of Tasmania 3000
+    years ago [13] leads to a root age estimate of approximately
+    8500 years BP.
+    ...
+
+    However, root estimate confidence limits are very poor (see electronic supplementary
+    material, figure S5); a better interpretation of the tree is that there is very weak
+    support for any relationship beyond the five clusters already identified.
+    """
+
+    [calibration.west1503_nort1442]
+    taxa = ["west1503", "nort1442"]
+    age = "3000"
+    units = "y2000"
+    description = "unclear"
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+
+    [analysis.nnet]
+    tool = 'splitstree'
+    data= 'data.binary'
+    model = 'neighbornet'
+    details = ""
+
+    [analysis.structure]
+    tool = 'structure'
+    data = 'data.multistate'
+    model = 'simple admixture'
+    details = "559 loci"
+
+    [analysis.beastctmcstrict]
+    tool = 'beast'
+    data = 'data.binary'
+    model = 'ctmc+strict+gamma'
+    details = ""
+
+    [analysis.beastctmcrelaxed]
+    tool = 'beast'
+    data = 'data.binary'
+    model = 'ctmc+relaxed+gamma'
+    details = ""
+
+    [analysis.beastcovrelaxed]
+    tool = 'beast'
+    data = 'data.binary'
+    model = 'covarion+???+gamma'
+    details = ""
+
+    [analysis.beaststochdollo]
+    tool = 'beast'
+    data = 'data.binary'
+    model = 'stochasticdollo+???+gamma'
+    details = ""
+
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.root]
+    taxa = ["west1503", "nort1442", "sout1293"]
+    age = "unknown(8500)"
+    units = "ybp"
+    notes = """However, root estimate confidence limits are very poor (see electronic supplementary
+    material, figure S5); a better interpretation of the tree is that there is very weak
+    support for any relationship beyond the five clusters already identified."""
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

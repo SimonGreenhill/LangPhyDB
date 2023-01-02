@@ -41,7 +41,7 @@ taxa = "131 Sino-Tibetan languages"
 
 [calibration]
     notes = """
-    We incorporated six time-calibrations on the tree (Table S1). Extinction
+    We incorporated six time-calibrations on the tree (Table S1). Extinction
     timings of Old Chinese, Padam, and Shaiyang were calibrated with last-seen
     dates identified by linguists66,72; three internal nodes were calibrated
     based on historical records of the earliest observation of distinct

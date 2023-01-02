@@ -46,7 +46,7 @@ taxa = "investigation of phylogenetic signal in Pama-Nyungan languages"
     nchars = 415
     nsites = 415
     datatype = 'phonetic traits'
-    source = ''
+    source = '@chirila'
     items = ''
     comment = 'Biphones (bigrams)'
 

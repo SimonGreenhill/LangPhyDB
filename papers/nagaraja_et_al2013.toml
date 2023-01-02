@@ -51,7 +51,7 @@ taxa = "6 Austroasiatic languages"
 
     notes = ""
 
-    [calibration.label]
+    [calibration.khasi]
     taxa = ['khas1274']
     age = "uniform(600, 800)" # x, normal(x, y), uniform(x,y)
     units = "ybp" # ybp

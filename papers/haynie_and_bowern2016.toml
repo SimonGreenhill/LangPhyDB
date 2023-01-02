@@ -1,0 +1,73 @@
+title = "Phylogenetic approach to the evolution of color term systems"
+
+doi = "10.1073/pnas.1613666113"
+
+abstract = """
+The naming of colors has long been a topic of interest in the study of human culture
+and cognition. Color term research has asked diverse questions about thought and
+communication, but no previous research has used an evolutionary framework. We show
+that there is broad support for the most influential theory of color term development
+(most strongly represented by Berlin and Kay [Berlin B, Kay P (1969) (Univ of
+California Press, Berkeley, CA)]); however, we find extensive evidence for the loss
+(as well as gain) of color terms. We find alternative trajectories of color term
+evolution beyond those considered in the standard theories. These results not only
+refine our knowledge of how humans lexicalize the color space and how the systems
+change over time; they illustrate the promise of phylogenetic methods within the
+domain of cognitive science, and they show how language change interacts with human
+perception. """
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Hannah J. Haynie",
+    "Claire Bowern"
+]
+
+# parts of the world
+groups = ['Pama-Nyungan',]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Haynie2016"  # @xxxx
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "189 Pama-Nyungan languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.colors]
+    ntaxa = 189
+    nchars = 7
+    nsites = 7
+    datatype = 'lexical cognates'
+    source = '@chirila'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.label]
+    source = '@Bowern2012'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.bayestraits]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "rjmcmc"
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

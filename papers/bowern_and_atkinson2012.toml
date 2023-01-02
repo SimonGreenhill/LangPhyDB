@@ -20,7 +20,7 @@ groups = ["Pama-Nyungan"]  # 'Austronesian', etc
 bibkey = "@Bowern2012"
 
 # type of study
-type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
+type = ["phylogenetic",]  # phylogenetic,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
 taxa = "194 Pama-Nyungan languages"
@@ -32,7 +32,7 @@ taxa = "194 Pama-Nyungan languages"
     nchars = 189
     nsites = 14613
     datatype = 'lexical cognates'
-    source = ''
+    source = '@chirila'
     items = 'swadesh200'
     comment = ''
     

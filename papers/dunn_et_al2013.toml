@@ -1,0 +1,169 @@
+title = "Time and Place in the Prehistory of the Aslian Languages"
+
+doi = "10.3378/027.085.0318"
+
+abstract = """The Aslian language family, located in the Malay Peninsula and southern Thai
+Isthmus, consists of four distinct branches comprising some 18 languages. These languages
+predate the now dominant Malay and Thai. The speakers of Aslian languages exhibit some of
+the highest degree of phylogenetic and societal diversity present in Mainland Southeast Asia
+today, among them a foraging tradition particularly associated with locally ancient,
+Pleistocene genetic lineages. Little advance has been made in our understanding of the
+linguistic prehistory of this region or how such complexity arose. In this article we
+present a Bayesian phylogeographic analysis of a large sample of Aslian languages. An
+explicit geographic model of diffusion is combined with a cognate birth-word death model of
+lexical evolution to infer the location of the major events of Aslian cladogenesis. The
+resultant phylogenetic trees are calibrated against dates in the historical and
+archaeological record to infer a detailed picture of Aslian language history, addressing a
+number of outstanding questions, including (1) whether the root ancestor of Aslian was
+spoken in the Malay Peninsula, or whether the family had already divided before entry, and
+(2) the dynamics of the movement of Aslian languages across the peninsula, with a particular
+focus on its spread to the indigenous foragers. """
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Michael Dunn",
+    "Nicole Kruspe",
+    "Niclas Burenhult",
+]
+
+# parts of the world
+groups = ['Aslian', 'Austronesian']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Dunn2013aslian"  # @xxxx
+
+# type of study
+type = ['phylogenetic', 'dating', 'phylogeography']
+
+# short label of taxa "37 languages from.."
+taxa = "28 Aslian languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.aslian]
+    ntaxa = 95
+    nchars = 146
+    nsites = 984
+    datatype = 'lexical cognates'
+    source = '@Dunn2011b'
+    items = 'swadesh200'
+    comment = ''
+
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.root]
+    taxa = ['asli1243']
+    age = "normal(4000, 500)" # x, normal(x, y), uniform(x,y)
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.protomahmeri]
+    taxa = ['besi1244']
+    age = "normal(2000, 200)" # x, normal(x, y), uniform(x,y)
+    units = "ybp" # ybp
+    description = """All three scenarios in Bulbeck 2004 connect Proto-Mah Meri (or "Proto-Besisi," in his terminology) with Early Metal Phase coastal finds at 2000 BP."""
+
+    [calibration.temiarlamoh]
+    taxa = ['lano1244']
+    age = "lognormal(2000, 200, 0, realspace=True)" # x, normal(x, y), uniform(x,y)
+    units = "ybp" # ybp
+    description = """Proto-Temiar-Lanoh; all three scenarios in Bulbeck (2004) connect Proto-Temiar-Lanoh with the appearance of bronze in the Lenggong Valley by 2,000 BP."""
+
+    [calibration.maniqmenraqbatek]
+    taxa = ['mani1290']
+    age = "normal(1750, 250)" # x, normal(x, y), uniform(x,y)
+    units = "ybp" # ybp
+    description = """Growth of Sathing Phra civilization in South Thailand, starting around 2,000 BP and expanding significantly around 1,500 BP; Benjamin connects development of Semang culture with this growth; start of Sathing Phra coincides with the start of the early Metal phase; most likely timing of Proto-MMB split at the beginning of this period? (based on Benjamin 1985; Andaya 2008)"""
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.strictsimple]
+    tool = 'beast'
+    model = 'ctmc+strict'
+    details = ""
+    
+    [analysis.strictsimplegamma]
+    tool = 'beast'
+    model = 'ctmc+strict+gamma'
+    details = ""
+    
+    [analysis.sdollostrict]
+    tool = 'beast'
+    model = 'sdollo+strict'
+    details = ""
+
+    [analysis.ctmcrelaxed]
+    tool = 'beast'
+    model = 'ctmc+relaxed'
+    details = ""
+
+    [analysis.ctmcrelaxedgamma]
+    tool = 'beast'
+    model = 'ctmc+relaxed+gamma'
+    details = ""
+    
+    [analysis.covrelaxed]
+    tool = 'beast'
+    model = 'covarion+relaxed'
+    details = "best-fitting model"
+    
+    [analysis.sdollorelaxed]
+    tool = 'beast'
+    model = 'sdollo+relaxed'
+    details = ""
+
+    [analysis.covarionstrictgamma]
+    tool = 'beast'
+    model = 'covarion+strict+gamma'
+    details = ""
+
+    [analysis.covarionrelaxedgamma]
+    tool = 'beast'
+    model = 'covarion+relaxed+gamma'
+    details = ""
+
+    [analysis.dating]
+    tool = 'beast'
+    model = 'covarion+relaxed'
+    details = "without calibration.root"
+
+
+    [analysis.phylogeoRRW]
+    tool = 'beast'
+    model = 'covarion+relaxed+phylogeo(RRW)'
+    details = "best-fitting model"
+    
+    [analysis.phylogeodiffusion]
+    tool = 'beast'
+    model = 'covarion+relaxed+phylogeo(diffusion)'
+    details = ""
+
+
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.aslian]
+    taxa = ['asli1243']
+    age = "hpd(4305, 2943, 6570)"
+    units = "ybp"
+    notes = "from analysis.dating (i.e. without the root calibration of root.calibration)"
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

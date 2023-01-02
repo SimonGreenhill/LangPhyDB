@@ -1,0 +1,106 @@
+title = "Aslian linguistic prehistory"
+
+doi = "10.1075/dia.28.3.01dun"
+
+abstract = """
+This paper analyzes newly collected lexical data from 26 languages of the Aslian subgroup of the
+Austroasiatic language family using computational phylogenetic methods. We show the most likely
+topology of the Aslian family tree, discuss rooting and external relationships to other
+Austroasiatic languages, and investigate differences in the rates of diversification of different
+branches. Evidence is given supporting the classification of Jah Hut as a fourth top level
+subgroup of the family. The phylogenetic positions of known geographic and linguistic outlier
+languages are clarified, and the relationships of the little studied Aslian languages of Southern
+Thailand to the rest of the family are explored.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Michael Dunn",
+    "Niclas Burenhult",
+    "Nicole Kruspe",
+    "Sylvia Tufvesson",
+    "Neele Becker",
+]
+
+# parts of the world
+groups = ['Aslian', 'Austroasiatic']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Dunn2011b"  # @xxxx
+
+# type of study
+type = ['phylogenetic', 'network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "27 Aslian languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.bantu]
+    ntaxa = 27
+    nchars = 146
+    nsites = 472
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'swadesh200'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = "For this study we tested all combinations of a number of different model parameters: uni- and bi-directional models, where probability of gain is or is not equal to probability of loss of a feature; gamma distribution models, where rates of change are sorted into rate-classes; covarion models, where change of rate is itself a parameter to be estimated over the tree."
+    
+    [analysis.nj]
+    tool = 'splitstree'
+    model = 'neighbor-joining'
+    details = ""
+
+    [analysis.nnet]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+
+    [analysis.tree1]
+        tool = 'bayesphylogenies'
+        model = 'm1p+nogamma'
+        details = ""
+
+
+    [analysis.tree2]
+        tool = 'bayesphylogenies'
+        model = 'm1p+gamma'
+        details = ""
+
+
+    [analysis.tree3]
+        tool = 'bayesphylogenies'
+        model = 'm1p+covarion'
+        details = "best fitting model"
+
+
+    [analysis.tree4]
+        tool = 'bayesphylogenies'
+        model = 'm2p+nogamma'
+        details = ""
+
+
+    [analysis.tree5]
+        tool = 'bayesphylogenies'
+        model = 'm2p+gamma'
+        details = ""
+
+
+    [analysis.tree6]
+        tool = 'bayesphylogenies'
+        model = 'm2p+covarion'
+        details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

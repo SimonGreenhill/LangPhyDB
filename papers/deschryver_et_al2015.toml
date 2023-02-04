@@ -1,0 +1,90 @@
+title = "Introducing a state-of-the-art phylogenetic classification of the Kikongo Language Cluster"
+
+doi = "10.3406/aflin.2015.1044"
+
+abstract = """
+It is shown how past lexicostatistic efforts eventually led to lexically-driven phylogenetic classifications of the
+Bantu languages. As a new case study, 95 North-West and West Bantu language varieties are sampled across geographical
+space, with a focus on the wider Lower Congo region. This leads to the discovery of a discrete clade within West-Coastal
+Bantu, which we term the Kikongo Language Cluster (KLC), a disparate continuum of closely related Bantu languages. Both
+a branching tree and a continuum model are called in to ‘define’ the true nature of the KLC, and pre-historical
+implications are drawn from this.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Gilles-Maurice de Schryver",
+    "Rebecca Grollemund",
+    "Simon Branford",
+    "Koen Bostoen"
+]
+
+# parts of the world
+groups = ['Bantu']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@DeSchryver2015"  # @xxxx
+
+# type of study
+type = ['phylogenetic', 'network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "95 Kikongo languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.bantu]
+    ntaxa = 95
+    nchars = 92
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = "We used a stepping stone sampler (Xie et al. 2011) to perform the testing and this showed the four-state model to be the best."
+
+    [analysis.network]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    
+    # unclear what model used. probably m2p?
+    [analysis.tree1]
+    tool = 'bayesphylogenies'
+    model = '?'
+    details = "'no covarion'"
+
+    [analysis.tree2]
+    tool = 'bayesphylogenies'
+    model = '?+covarion+2state'
+    details = ""
+
+    [analysis.tree3]
+    tool = 'bayesphylogenies'
+    model = '?+covarion+3state'
+    details = ""
+
+    [analysis.tree4]
+    tool = 'bayesphylogenies'
+    model = '?+covarion+4state'
+    details = "best fitting model"
+
+    [analysis.tree5]
+    tool = 'bayesphylogenies'
+    model = '?+covarion+5state'
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

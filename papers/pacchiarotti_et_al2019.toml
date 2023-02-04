@@ -1,0 +1,73 @@
+title = "Untangling the West-Coastal Bantu mess: identification, geography and phylogeny of the Bantu B50-80 languages"
+
+doi = "10.2143/AL.25.0.3287234"
+
+abstract = """
+In this paper we deal with the identification, geography and internal phylogeny of
+Bantu B50-80 languages. According to lexicostatistical and lexicon-based phylogenetic
+studies, these languages belong to the West-Coastal branch of the Bantu family along
+with the Kikongo Language Cluster. First, we present an updated list of nearly 100
+language varieties falling into Guthrie’s B50-80 groups along with corresponding
+updated geographical coordinate values. We dissipate confusion surrounding some
+glossonyms and point out misinterpretations that led to conflation of different
+varieties and misnumbering in non-genetic, referential classifications. Second, we
+present the results of a new phylogenetic study including all B50-80 varieties in our
+sample to be later compared to an internal classification based on shared phonological
+innovations. Our results show that: (i) previous internal subgroupings of Guthrie’s
+B50-80 languages within West-Coastal Bantu either need to be revised or are no longer
+valid against new evidence; and (ii) the new internal structure of the West-Coastal
+branch suggests that the homeland of Proto-West-Coastal Bantu speakers is not to be
+found, as previously believed, somewhere in between the Bateke Plateau and the
+Bandundu region in the DRC but rather much more eastward, i.e. somewhere between the
+Kamtsha and Kasai Rivers in the DRC. 
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Sara Pacchiarotti",
+    "Natalia Chousou-Polydouri",
+    "Koen Bostoen"
+]
+
+# parts of the world
+groups = ['Bantu']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Pacchiarotti2019"  # @xxxx
+
+# type of study
+type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "115 West-Coast Bantu languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.bantu]
+    ntaxa = 115
+    nchars = 92
+    nsites = 1154
+    datatype = 'lexical cognates'
+    source = '@Grollemund2015'
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = 'mrbayes'
+    model = 'restrictionsite'
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

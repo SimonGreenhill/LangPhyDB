@@ -1,0 +1,138 @@
+title = "Genealogical relations and lexical distances within the Tupian linguistic family"
+
+doi = "10.1590/1981-81222015000200004"
+
+abstract = """
+In this paper we present the first results of the application of computational
+methods, inspired by the ideas in McMahon & McMahon (2005), to a dataset
+collected from languages of every branch of the Tupian family (including all
+living non-TupíGuaraní languages) in order to produce a classification of the
+family based on lexical distance. We used both a Swadesh list (with historically
+stabler terms) and a list of animal and plant names for results comparison. In
+addition, we also selected more (HiHi) and less (LoLo) stable terms from the
+Swadesh list to form sublists for indepedent treatment. We compared the
+resulting NeighborNet networks and neighbor-joining cladograms and drew
+conclusions about their significance for the current understanding of the
+classification of Tupian languages. One important result is the lack of support
+for the currently discussed idea of an Eastern-Western division within Tupí.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Ana Vilacy Galucio",
+    "Sérgio Meira",
+    "Joshua Birchall",
+    "Denny Moore",
+    "Nilson Gabas Júnior",
+    "Sebastian Drude",
+    "Luciana Storto",
+    "Gessiane Picanço",
+    "Carmen Reis Rodrigues",
+]
+
+# parts of the world
+groups = ['Tupian',]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Galucio2015"  # @xxxx
+
+# type of study
+type = ['phylogenetic', 'network', 'delta']
+
+# short label of taxa "37 languages from.."
+taxa = "23 Tupí languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.sw100]
+    ntaxa = 23
+    nchars = 100
+    nsites = 100
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'swadesh100'
+    comment = ''
+
+    [data.plantanimals]
+    ntaxa = 23
+    nchars = 90
+    nsites = 90
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'swadesh100'
+    comment = 'plant and animal names'
+
+    [data.hihi]
+    ntaxa = 23
+    nchars = 28
+    nsites = 28
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = 'hihi stability list sampled from data.sw100 following McMahon and McMahon'
+    
+    [data.lolo]
+    ntaxa = 23
+    nchars = 34
+    nsites = 34
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = 'low stability list sampled from data.sw100 following McMahon and McMahon'
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.network]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    data = 'data.sw100'
+    details = ""
+
+    [analysis.network_plantanimals]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    data = 'data.plantanimals'
+    details = ""
+    
+    [analysis.network_hihi]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    data = 'data.hihi'
+    details = ""
+
+    [analysis.network_lolo]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    data = 'data.lolo'
+    details = ""
+
+    [analysis.delta]
+    tool = 'splitstree'
+    model = 'delta'
+    data = 'data.sw100'
+    details = ""
+    
+    [analysis.nj]
+    tool = 'splitstree'
+    model = 'neighborjoining+bootstrap'
+    data = 'data.sw100'
+    details = ""
+
+    [analysis.nj_plantanimals]
+    tool = 'splitstree'
+    model = 'neighborjoining+bootstrap'
+    data = 'data.plantanimals'
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

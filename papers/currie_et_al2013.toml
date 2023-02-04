@@ -1,0 +1,103 @@
+title = "Cultural phylogeography of the Bantu Languages of sub-Saharan Africa"
+
+doi = "10.1098/rspb.2013.0695"
+
+abstract = """
+There is disagreement about the routes taken by populations speaking Bantu languages as they expanded to cover much of
+sub-Saharan Africa. Here, we build phylogenetic trees of Bantu languages and map them onto geographical space in order
+to assess the likely pathway of expansion and test between dispersal scenarios. The results clearly support a scenario
+in which groups first moved south through the rainforest from a homeland somewhere near the Nigeria –Cameroon border.
+Emerging on the south side of the rainforest, one branch moved south and west. Another branch moved towards the Great
+Lakes, eventually giving rise to the monophyletic clade of East Bantu languages that inhabit East and Southeastern
+Africa. These phylogenies also reveal information about more general processes involved in the diversification of human
+populations into distinct ethnolinguistic groups. Our study reveals that Bantu languages show a latitudinal gradient in
+covering greater areas with increasing distance from the equator. Analyses suggest that this pattern reflects a true
+ecological relationship rather than merely being an artefact of shared history. The study shows how a phylogeographic
+approach can address questions relating to the specific histories of certain groups, as well as general cultural
+evolutionary processes.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Thomas E. Currie",
+    "Andrew Meade",
+    "Myrtille Guillon",
+    "Ruth Mace"
+]
+
+# parts of the world
+groups = ['Bantu']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Currie2013"  # @xxxx
+
+# type of study
+type = ['phylogenetic', 'phylogeography']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "542 Bantu languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.bantu]
+    ntaxa = 542
+    nchars = 90
+    nsites = 2908
+    datatype = 'lexical cognates'
+    source = '@Bastinetal1999'
+    items = ''
+    comment = ''
+
+
+
+# analysis information
+[analysis]
+    
+    notes = "Covarion models were initially run with up to five covarion categories and their fit to the data was compared via their average log likelihood. Table S1 in the electronic supplementary material shows that allowing for rates of linguistic change to vary in this way substantially increases the likelihood of the data. The model with five covarion categories showed the best fit to the data, and as the improvement in likelihood from each additional covarion category was beginning to tail-off, we selected this model for further analysis. We also ran a confirmatory analysis with six covarion categories."
+    
+    # unclear what model used. probably m2p?
+    [analysis.tree1]
+    tool = 'bayesphylogenies'
+    model = '?'
+    details = "'no covarion'"
+
+    [analysis.tree2]
+    tool = 'bayesphylogenies'
+    model = '?+covarion+2state'
+    details = ""
+
+    [analysis.tree3]
+    tool = 'bayesphylogenies'
+    model = '?+covarion+3state'
+    details = ""
+
+    [analysis.tree4]
+    tool = 'bayesphylogenies'
+    model = '?+covarion+4state'
+    details = ""
+
+    [analysis.tree5]
+    tool = 'bayesphylogenies'
+    model = '?+covarion+5state'
+    details = "best fitting model"
+
+    [analysis.tree6]
+    tool = 'bayesphylogenies'
+    model = '?+covarion+6state'
+    details = ""
+
+    [analysis.phylogeography]
+    tool = 'bayestraits'
+    model = ''
+    details = ""
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

@@ -1,0 +1,99 @@
+title = "Finding Families: Quantitative Methods in Language Classification"
+
+doi = "10.1111/1467-968X.00108"
+
+abstract = """
+Over the past two decades, many of the major controversies in historical linguistics
+have centred on language classification. Some of these controversies have been
+concentrated within linguistics, as in the methodological opposition of multilateral
+comparison to the traditional Comparative Method. Others have crossed discipline
+boundaries, with the question of whether correlations can be established between
+language families, archaeological cultures and genetic populations. At the same time,
+increasing emphasis on language contact has challenged the family tree as a model of
+linguistic relatedness. This paper argues that we must quantify language classification,
+to allow objective evaluation of alternative methods within linguistics, and of
+proposed cross-disciplinary correlations; and that a first step in this quantification
+is represented by the `borrowing' of computational tools from biology. """
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    'April McMahon',
+    'Robert McMahon',
+]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@McMahon2003"  # @xxxx
+
+# type of study
+type = ['phylogenetic',]
+
+# short label of taxa "37 languages from.."
+taxa = "95 Indo-European languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.dyen]
+    ntaxa = 95
+    nchars = 200
+    nsites = 1
+    datatype = 'lexical cognates'
+    source = '@Dyen1992'
+    items = ''
+    comment = 'distance matrix'
+
+    [data.highhigh]
+    ntaxa = 95
+    nchars = 30
+    nsites = 30
+    datatype = 'lexical cognates'
+    source = '@Dyen1992'
+    items = ''
+    comment = """We therefore chose thirty meanings which scored as high as possible on Lohr's indices of reconstructability and retentiveness: all were reconstructable for at least three protolanguages, and had no more than three replacements indeed, 23 of these forms had only one replacement or none at all)."""
+
+    [data.lowlow]
+    ntaxa = 95
+    nchars = 23
+    nsites = 23
+    datatype = 'lexical cognates'
+    source = '@Dyen1992'
+    items = ''
+    comment = """Conversely, we selected 23 meanings which were reconstructable for only two protolanguages, and which had eight or more visible replacements in the 31.3-millennium total sample"""
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.fitch]
+    tool = 'phylip'
+    model = 'fitch'
+    details = ""
+
+    [analysis.kitch]
+    tool = 'phylip'
+    model = 'kitch'
+    details = ""
+
+    [analysis.neighbour]
+    tool = 'phylip'
+    model = 'neighbour'
+    details = ""
+
+    [analysis.neighbourboot]
+    tool = 'phylip'
+    model = 'neighbour+bootstrap'
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

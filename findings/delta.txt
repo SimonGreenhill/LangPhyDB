@@ -42,3 +42,8 @@ Full details:  https://journals.plos.org/plosone/article/figure?id=10.1371/journ
 ## kaiping_and_klamer2022:
 
 - both Q and Delta in table4
+
+
+## galucio_et_al2015:
+
+"The network shows a low degree of reticulation, with a mean δ-score of 0.233 (s.d. ± 0.04). This suggests that there is a low degree of undetected borrowings in the dataset and that there are clearly identifiable branches within the network. In comparison, Gray et al. (2010) calculate the same statistic for other major language families of the world and find that Indo-European, which they consider to be highly tree-like and are using confident data based on centuries of etymological work, shows a δ-score of 0.22, while the Polynesian languages, which they consider highly reticulate, shows a δ-score of 0.41. In the Tupian dataset, the languages with δ-scores higher than the first standard derivation, which are the languages that contributed the most conflicting evidence to the tree-likeness of the dataset, are Kuruáya, Puruborá, Káro and Karitiána, with δ-scores of 0.288, 0.280, 0.311, and 0.313, respectively."

@@ -1,0 +1,108 @@
+title = "The Phylogenetic Status of Pacific Coast Athabaskan: A Computational Assessment"
+
+doi = "10.3765/bls.v39i1.3885"
+
+abstract = """
+The Athabaskan language family, one of the most geographically widespread in North
+America, is canonically discussed according to its three non-contiguous regional
+concentrations: Northern Athabaskan in Alaska and western Canada, Apachean in the
+southwestern United States, and Pacific Coast Athabaskan (PCA) in northern California
+and southwestern Oregon. The historical significance of these regional groupings is
+unclear, however (Krauss 1973, Krauss and Golla 1981). The PCA languages are a case in
+point: while they are uncontroversially divided into an Oregon subfamily that includes
+Tututni, Tolowa, and Galice (inter alia), and a California subfamily consisting of
+Hupa, Mattole, Wailaki, and Kato, there is disagreement in the literature about whether
+PCA as a whole is a mean- ingful phylogenetic unit that reflects a higher-order
+historical reality within the family (Hoijer 1960, 1962; Golla 2011:69, 257). The
+present study considers the status of the Pacific Coast Athabaskan languages, both in
+relation to each other and in relation to the rest of the family, by applying
+computational approaches to phylogenetic inference adapted from the biological sciences
+that have invigorated historical linguistic research over the past decade. These
+methods have shed light on previously intractable problems, and in some cases sparked
+new controversies, in language families as diverse as Indo-European (Gray and Atkinson
+2003; Atkinson and Gray 2006; Nakhleh et al. 2005; Bouckaert et al. 2012), Bantu
+(Holden and Gray 2006, Marten 2006), Austronesian (Bryant 2006, Dunn et al. 2008), and
+Pama-Nyungan (Bowern and Atkinson 2012).
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    'Justin Spence',
+]
+
+# parts of the world
+groups = ['Athabaskan']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Spence2013"  # @xxxx
+
+# type of study
+type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "24 Pacific-Coast Athabaskan languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.multistate]
+    ntaxa = 24
+    nchars = 94
+    nsites = 94
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'swadesh100'
+    comment = 'One item had more than the 10 states allowed for integer-valued data in MrBayes and was discarded; an additional five items were uninformative under the multi-state coding retaining all polymorphisms.'
+
+    [data.binary]
+    ntaxa = 24
+    nchars = 94
+    nsites = 94
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'swadesh100'
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.multistate1]
+    tool = 'mrbayes'
+    model = 'restrictionsite'
+    details = ""
+
+    [analysis.multistate2]
+    tool = 'mrbayes'
+    model = 'restrictionsite+strict'
+    details = ""
+
+    [analysis.multistate3]
+    tool = 'mrbayes'
+    model = 'restrictionsite+relaxed'
+    details = "best-fitting model"
+
+    [analysis.binary1]
+    tool = 'mrbayes'
+    model = 'restrictionsite'
+    details = ""
+
+    [analysis.binary2]
+    tool = 'mrbayes'
+    model = 'restrictionsite+strict'
+    details = ""
+
+    [analysis.binary3]
+    tool = 'mrbayes'
+    model = 'restrictionsite+relaxed'
+    details = "best-fitting model"
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

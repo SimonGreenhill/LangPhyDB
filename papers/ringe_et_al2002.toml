@@ -1,0 +1,55 @@
+
+title = "Indo-European and Computational Cladistics"
+
+doi = "10.1111/1467-968X.00091"
+
+abstract = """
+This paper reports the results of an attempt to recover the first-order subgrouping of the Indo-European
+family using a new computational method devised by the authors and based on a ‘perfect phylogeny’
+algorithm. The methodology is also briefly described, and points of theory and methodology are addressed in
+connection with the experiment whose results are here reported.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Don Ringe",
+    "Tandy Warnow",
+    "Ann Taylor",
+]
+
+# parts of the world
+groups = ["Indo-European"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Ringe2002"
+
+# type of study
+type = ["phylogenetic"]
+
+# short label of taxa "37 languages from.."
+taxa = "24 Indo-European languages"
+
+# data
+[data]
+    [data.ringe]
+    ntaxa = 24
+    nchars = 370
+    nsites = 370
+    datatype = 'mixed'
+    source = ''
+    items = ''
+    comment = 'Currently our database includes 370 characters, namely 22 phonological characters, 15 morphological characters, and 333 lexical characters.'
+    
+
+# analysis information
+[analysis]
+    [analysis.tree]
+    tool = 'unknown'
+    model = 'perfect phylogeny'
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+links = []

@@ -135,6 +135,7 @@ author,Stanislav Reichert,
 author,Kateřina Rexová,
 author,Seongha Rhee,
 author,Lincoln A. Ribeiro,
+author,Don Ringe,
 author,Martine Robbeets,
 author,Patrick Roberts,
 author,Laura C. Robinson,
@@ -157,6 +158,7 @@ author,Luciana Storto,
 author,Marc A. Suchard,
 author,Kaj Syrjänen,
 author,Hiroto Takamiya,
+author,Ann Taylor,
 author,Angela Terrill
 author,Valentin Thouzeau,
 author,Hirotaka Tomita,
@@ -170,6 +172,7 @@ author,Outi Vesakoski,
 author,Niklas Wahlberg,
 author,Robert S. Walker,
 author,Feng Wang,
+author,Tandy Warnow,
 author,Vivian Wauters,
 author,Ward C. Wheeler,
 author,Peter M. Whiteley,
@@ -235,6 +238,7 @@ tool,starling,
 tool,structure,
 tool,tnt,
 tool,traitlab,https://sites.google.com/site/traitlab/
+tool,unknown,?
 
 type,dating,phylogenetic dating
 type,delta,Reticulation metric delta

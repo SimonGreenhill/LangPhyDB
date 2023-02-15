@@ -1,27 +1,18 @@
-1. McMahon A, McMahon R. 2006 Why linguists don’t do dates: Evidence from Indo-European and Australian languages. In Phylogenetic methods and the prehistory of languages (eds P Forster, C Renfrew), pp. 153–160. McDonald Institute for Archaeological Research: Cambridge. 
-2. McMahon A, Heggarty P, McMahon R, Slaska N. 2005 Swadesh sublists and the benefits of borrowing: An Andean case study. Transactions of the Philological Society 103, 147.
-3. McMahon A, McMahon R. 2008 Genetics, Historical Linguistics and Language Variation. Language and Linguistics Compass 2, 264–288. (doi:10.1111/j.1749-818X.2008.00052.x)
-4. Sullivan J, McMahon A. 2010 Phonetic comparison, varieties, and networks: Swadesh’s influence lives on here too. Diachronica 27, 325–340. (doi:10.1075/dia.27.2.08sul)
-
-
-* Boegh et al 2016 - https://doi.org/10.32473/sal.v45i1.107255
-* Ceolin2021
-* Longobardi2013
-* Longobardi2015
-* Hamed et al 2005 On Cladistic Reconstruction of Linguistic Trees through Vowel Data
 * Atkinson, Quentin D.; and Russell D. Gray. 2004a. How old is the Indo-European language family? - Illumination or more moths to the flame?
 * Atkinson, Quentin D.; and Russell D. Gray. 2004b. Are Accurate Dates an Intractable Problem for Historical Linguistics? Mapping our Ancestry: Phylogenetic Methods in Anthropology and Prehistory, ed. by M J Shennan S J Collard Mark Lipo C. O’Brien. Chicago: Aldine.
 * Atkinson, Quentin D.; Geoff K. Nicholls.; David Welch.; and Russell D. Gray. 2005. From words to dates: water into wine, mathemagic or phylogenetic inference. Transactions of the Philological Society 103.193–219.
+* Barbançon, F., Evans, S. N., Nakhleh, L., Ringe, D., & Warnow, T. (2013). An experimental study comparing linguistic phylogenetic reconstruction methods. Diachronica, 2(2013), 143–170. https://doi.org/10.1075/dia.30.2.01bar
+* Boegh et al 2016 - https://doi.org/10.32473/sal.v45i1.107255
 * Bouckaert global tree
 * Bryant, David.; F. Filimon.; and Russell D. Gray. 2005. Untangling our past: Languages, trees, splits and networks. The evolution of cultural diversity: a phylogenetic approach, ed. by Ruth Mace, Clare J Holden, and Stephen J Shennan, 67–84. London: UCL PRess.
 * Carling, Gerd.; and Chundra Cathcart. 2021. Reconstructing the evolution of Indo-European grammar. Language 97. Linguistic Society of America.561–598. doi:10.1353/lan.2021.0047.
+* Ceolin2021
 * Currie, Thomas E.; and Ruth Mace. 2011. Mode and tempo in the evolution of socio-political organization: reconciling “Darwinian” and “Spencerian” evolutionary approaches in anthropology. Philosophical transactions of the Royal Society of London. Series B, Biological sciences 366.1108–17. doi:10.1098/rstb.2010.0318.
-* Currie, Thomas E.; Andrew Meade.; Myrtille Guillon.; and Ruth Mace. 2013. Cultural phylogeography of the Bantu Languages of sub-Saharan Africa. Proceedings of the Royal Society B: Biological Sciences 280.20130695. doi:10.1098/rspb.2013.0695.
 * Currie, Thomas E.; Simon J. Greenhill.; and R Mace. 2010. Is horizontal transmission really a problem for phylogenetic comparative methods? A simulation study using continuous cultural traits. Proceedings of the Royal Society B: Biological Sciences 365.3903–3912. doi:10.1098/rstb.2010.0014.
 * Currie, Thomas E.; Simon J. Greenhill.; Russell D. Gray.; Toshikazu Hasegawa.; and Ruth Mace. 2010. Rise and fall of political complexity in island South-East Asia and the Pacific. Nature 467. Evolutionary Cognitive Science Research Center, Graduate School of Arts and Sciences, University of Tokyo 153-8902, Japan. t.currie@ucl.ac.uk.801–804. doi:10.1038/nature09461.
-* de Schryver, Gilles Maurice.; and Rebecca Grollemund. 2015. Introducing a state-of-the-art phylogenetic classification of the Kikongo Language Cluster. Africana Linguistica 21.87–162.
 * Dediu, Dan. 2011. A Bayesian phylogenetic approach to estimating the stability of linguistic features and the genetic biasing of tone. Proceedings of the Royal Society B: Biological Sciences 278.474–479. doi:10.1098/rspb.2010.1595.
 * Dockum, R. (2018). Phylogeny in phonology: How Tai sound systems encode their past. In Proceedings of the Annual Meetings on Phonology, volume 5
+* Eska, J. F., & Ringe, D. (2004). Recent work in computational linguistic phylogeny. Language, 80(3), 569–582.
 * Gao, Tianjun. 2020. Reconstruction and analysis of phylogenetic network on Tibeto-Burman languages in China. Journal of Chinese Linguistics 48.257–293. doi:10.1353/jcl.2020.0006.
 * Gray, Russell D.; David Bryant.; and Simon J. Greenhill. 2010. On the shape and fabric of human history. Philosophical transactions of the Royal Society of London. Series B, Biological sciences 365.3923–33. doi:10.1098/rstb.2010.0162.
 * Greenhill, Simon J.; and Russell D. Gray. 2005. Testing population dispersal hypotheses: Pacific settlement, phylogenetic trees and Austronesian languages. The evolution of cultural diversity: a phylogenetic approach, ed. by R Mace, Clare J Holden, and Stephen J Shennan, 31–52. London: UCL Press.
@@ -29,6 +20,7 @@
 * Greenhill, Simon J.; Thomas E. Currie.; and Russell D. Gray. 2009. Does horizontal transmission invalidate cultural phylogenies? Proceedings. Biological sciences / The Royal Society 276.2299–306. doi:10.1098/rspb.2008.1944.
 * Guillon, Myrtille.; and Ruth Mace. 2016. A phylogenetic comparative study of Bantu kinship terminology finds limited support for its co-evolution with social organisation. PLoS ONE 11.1–15. doi:10.1371/journal.pone.0147920.
 * Hübler, Nataliia. 2022. Phylogenetic signal and rate of evolutionary change in language structures. Royal Society Open Science 9. Royal Society.211252. doi:10.1098/rsos.211252.
+* Hamed et al 2005 On Cladistic Reconstruction of Linguistic Trees through Vowel Data
 * Holden, Clare J.; and Ruth Mace. 2005. “The cow is the enemy of matriliny”: Using phylogenetic methods to investigate cultural evolution in Africa. The evolution of cultural diversity: a phylogenetic approach, ed. by R Mace, Clare J Holden, and Stephen J Shennan, 217–234. London: UCL Press. http://eprints.ucl.ac.uk/15382.
 * Holden, Clare J.; and Stephen J Shennan. 2005. How tree-like is cultural evolution? The evolution of cultural diversity: a phylogenetic approach, ed. by Ruth Mace, Clare J Holden, and Stephen J Shennan, 13–30. London: UCL PRess.
 * Hurles, Matthew E.; Elizabeth Matisoo-Smith.; Russell D. Gray.; and David Penny. 2003. Untangling Polynesian origins: the edge of the knowable. Trends in Ecology & Evolution 18. Elsevier Science.531–540. doi:10.1016/S0169-5347(03)00245-3.
@@ -37,6 +29,13 @@
 * Jordan, Fiona Marie.; Russell D. Gray.; Simon J. Greenhill.; and Ruth Mace. 2009. Matrilocal residence is ancestral in Austronesian societies. Proceedings of the Royal Society B: Biological Sciences 276.1957–64. doi:10.1098/rspb.2009.0088.
 * Jordan, Peter.; and Sean O’Neill. 2010. Untangling cultural inheritance: language diversity and long-house architecture on the Pacific northwest coast. Philosophical transactions of the Royal Society of London. Series B, Biological sciences 365.3875–88. doi:10.1098/rstb.2010.0092.
 * Lee, S.; and T Hasegawa. 2014. Oceanic barriers promote language diversification in the Japanese Islands. Journal of evolutionary biology 27.1905–12. doi:10.1111/jeb.12442.
+* Longobardi2013
+* Longobardi2015
+* McMahon A, Heggarty P, McMahon R, Slaska N. 2005 Swadesh sublists and the benefits of borrowing: An Andean case study. Transactions of the Philological Society 103, 147.
+* McMahon A, McMahon R. 2006 Why linguists don’t do dates: Evidence from Indo-European and Australian languages. In Phylogenetic methods and the prehistory of languages (eds P Forster, C Renfrew), pp. 153–160. McDonald Institute for Archaeological Research: Cambridge. 
+* McMahon A, McMahon R. 2008 Genetics, Historical Linguistics and Language Variation. Language and Linguistics Compass 2, 264–288. (doi:10.1111/j.1749-818X.2008.00052.x)
+* Nakhleh, L., Ringe, D., & Warnow, T. (2005). Perfect Phylogenetic networks: A new methodology for reconstructing the evolutionary history of natural languages. Language, 81, 382–420.
+* Nakhleh, L., Warnow, T., Ringe, D., & Evans, S. N. (2005). A Comparison of phylogenetic reconstruction methods of an Indo-European dataset. Transactions of the Philological Society, 3(2), 171–192.
 * Nelson-Sathi, Shijulal.; Johann-Mattis List.; Hans Geisler.; Heiner Fangerau.; Russell D. Gray.; William Martin.; and Tal Dagan. 2011. Networks uncover hidden lexical borrowing in Indo-European language evolution. Proceedings of the Royal Society B: Biological Sciences 278.1794–803. doi:10.1098/rspb.2010.1917.
 * Nicholls, Geoff K.; and Russell D. Gray. 2006. Dated ancestral trees from binary trait data. Journal of the Royal Statistical Society: Series B (Statistical Methodology) 70.545–566. doi:10.1111/j.1467-9868.2007.00648.x.
 * Pagel, M.; Q. D. Atkinson.; A. S. Calude.; and A. Meade. 2013. Ultraconserved words point to deep language ancestry across Eurasia. Proceedings of the National Academy of Sciences 110.8471–8476. doi:10.1073/pnas.1218726110.
@@ -50,10 +49,12 @@
 * Shennan, Stephen. 2008a. Evolution in Archaeology. Annual Review of Anthropology 37.75–91. doi:10.1146/annurev.anthro.37.081407.085153.
 * Shennan, Stephen. 2008b. Canoes and cultural evolution. Proceedings of the National Academy of Sciences of the United States of America 105.3175–6. doi:10.1073/pnas.0800666105.
 * Stubbersfield, J.; and J. Tehrani. 2012. Expect the Unexpected? Testing for Minimally Counterintuitive (MCI) Bias in the Transmission of Contemporary Legends: A Computational Phylogenetic Approach. Social Science Computer Review 31.90–102. doi:10.1177/0894439312453567.
+* Sullivan J, McMahon A. 2010 Phonetic comparison, varieties, and networks: Swadesh’s influence lives on here too. Diachronica 27, 325–340. (doi:10.1075/dia.27.2.08sul)
 * Surowiec, Alexandra.; Kate T. Snyder.; and Nicole Creanza. 2019. A worldwide view of matriliny: using cross-cultural analyses to shed light on human kinship systems. Philosophical Transactions of the Royal Society B: Biological Sciences 374.20180077. doi:10.1098/rstb.2018.0077.
 * Szeto, Pui Yiu.; Umberto Ansaldo.; and Stephen Matthews. 2018. Typological variation across Mandarin dialects: An areal perspective with a quantitative approach. Linguistic Typology 22.233–275. doi:10.1515/lingty-2018-0009.
 * Walker, Robert S.; and Marcus J. Hamilton. 2010. Social complexity and linguistic diversity in the Austronesian and Bantu population expansions. Proceedings. Biological sciences / The Royal Society. doi:10.1098/rspb.2010.1942. http://www.ncbi.nlm.nih.gov/pubmed/20961903.
 * Walker, Robert S.; Kim R Hill.; Mark V Flinn.; and Ryan M Ellsworth. 2011. Evolutionary History of Hunter-Gatherer Marriage Practices. (Ed.) Pawel Michalak. PLoS ONE 6.e19066. doi:10.1371/journal.pone.0019066.
+* Warnow, T., Ringe, D., & Evans, S. N. (2006). Stochastic models of language evolution: What needs to be done?
 * Widmer, Manuel.; Sandra Auderset.; Johanna Nichols.; Paul Widmer.; and Balthasar Bickel. 2017. NP recursion over time: Evidence from Indo-European. Language 93.799–826. doi:10.1353/lan.2017.0058.
 * Yanovich, Igor. 2020. Phylogenetic linguistic evidence and the Dene-Yeniseian homeland. Diachronica 37.410–446. doi:10.1075/dia.17038.yan.
 * Zhou, Kevin.; and Claire Bowern. 2015. Quantifying uncertainty in the phylogenetics of Australian numeral systems. Proceedings of the Royal Society B: Biological Sciences 282.20151278.

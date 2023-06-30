@@ -1,0 +1,75 @@
+title = "A phylolinguistic classification of the Quechua language family"
+
+doi = ""
+
+abstract = """
+We present a computational phylogeny for the internal classification of the Quechua
+language family. Based on a concept list of 150 lexical items, we manually analyzed data from
+39 contemporaneous Quechua varieties for cognacy and computed a family tree using Bayesian
+phylogenetic methods. The results provide further evidence for the classification of individual
+varieties and compares the results to the existing hypotheses for the evolution of the Quechua
+language family.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Frederic Blum",
+    "Carlos Barrientos",
+    "Adriano Ingunza",
+    "Zoe Poirier"
+]
+
+# parts of the world
+groups = ['Quechua']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = ""  # @xxxx
+
+# type of study
+type = ['phylogenetic', 'network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "39 Quechua varieties"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.lexicon]
+    ntaxa = 39
+    nchars = 150
+    nsites = 321
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'basic'
+    comment = ''
+
+# date calibrations
+[calibrations]
+
+    notes = "root calibration used but no dating reported"
+
+    [calibration.root]
+    taxa = ['quec1387']
+    age = "normal(750, 100)"
+    units = "ybp" # ybp
+    description = "only for stability?"
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = 'beast2'
+    model = 'covarion+relaxed+bdsky'
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/blum_et_al2023" }
+cldf = { title = "CLDF Dataset", link = "https://github.com/lexibank/crossandean/" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = ['https://osf.io/u7jz5/', 'https://osf.io/preprints/socarxiv/twu6a/']

@@ -1,0 +1,71 @@
+title = "Reconstructing the evolutionary history of Indo-European languages using answer set programming."
+
+doi = "10.1007/3-540-36388-2_12"
+
+abstract = """
+The evolutionary history of languages can be modeled as a tree, called a phylogeny,
+where the leaves represent the extant languages, the internal vertices represent the
+ancestral languages, and the edges represent the genetic relations between the
+languages. Languages not only inherit characteristics from their ancestors but also
+sometimes borrow them from other languages. Such borrowings can be represented by
+additional non-tree edges. This paper addresses the problem of computing a small
+number of additional edges that turn a phylogeny into a “perfect phylogenetic
+network”. To solve this problem, we use answer set programming, which represents a
+given computational problem as a logic program whose answer sets correspond to
+solutions. Using the answer set solver smodels, with some heuristics and optimization
+techniques, we have generated a few conjectures regarding the evolution of
+Indo-European languages.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Esra Erdem",
+    "Vladimir Lifschitz",
+    "Luay Nakhleh",
+    "Don Ringe"
+]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Erdem2003"  # @xxxx
+
+# type of study
+type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "24 Indo-European languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.languages]
+    ntaxa = 24
+    nchars = 370
+    nsites = 370
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = 'unknown'
+    model = 'answer set programming'
+    details = ""
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

@@ -1,0 +1,229 @@
+title = "Lexical phylogenetics of the Tupí-Guaraní family: Language, archaeology, and the problem of chronology"
+
+doi = "10.1371/journal.pone.0272226"
+
+abstract = """
+Tupí-Guaraní is one of the largest branches of the Tupían language family, but despite its
+relevance there is no consensus about its origins in terms of age, homeland, and expansion. Linguistic
+classifications vary significantly, with archaeological studies suggesting incompatible date ranges while
+ethnographic literature confirms the close similarities as a result of continuous inter-family contact. To
+investigate this issue, we use a linguistic database of cognate data, employing Bayesian phylogenetic methods to
+infer a dated tree and to build a phylogeographic expansion model. Results suggest that the branch originated
+around 2500 BP in the area of the upper course of the Tapajós-Xingu basins, with a split between Southern and
+Northern varieties beginning around 1750 BP. We analyse the difficulties in reconciling archaeological and
+linguistic data for this group, stressing the importance of developing an interdisciplinary unified model that
+incorporates evidence from both disciplines.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Fabrício Ferraz Gerardi",
+    "Tiago Tresoldi",
+    "Carolina Coelho Aragon",
+    "Stanislav Reichert",
+    "Jonas Gregorio de Souza",
+    "Francisco Silva Noelli"
+]
+
+# parts of the world
+groups = ['South America']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@FerrazGerardi2023"  # @xxxx
+
+# type of study
+type = ['phylogenetic', 'dating', 'tiger', 'delta', 'qresidual', 'phylogeography']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "40 varieties from Tupí-Guaraní"
+
+# data
+[data]
+
+    notes = "The first round was composed of two studies that differ in the subset of concepts used: a “full” study, with all concepts described above filtered to ensure they were missing at most in 20% of the languages, and a “swadesh” study using the list of [87] (see Appendix C in S1 File) as close as possible, filtered to ensure they were missing in at most 30% of the cases"
+    
+    [data.full]
+    ntaxa = 95
+    nchars = 415
+    nsites = 3019
+    datatype = 'lexical cognates'
+    source = '@TULED'
+    items = ''
+    comment = 'all concepts in TULED filtered to ensure they were missing at most in 20% of the languages'
+
+    [data.swadesh]
+    ntaxa = 95
+    nchars = 132
+    nsites = 911
+    datatype = 'lexical cognates'
+    source = '@TULED'
+    items = ''
+    comment = 'All concepts from Swadesh 1971'
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.root]
+    taxa = [
+        'Ache', 'Amondawa', 'Anambe', 'Apiaka', 'Arawete', 'Asurini_Tocantins', 'Asurini_Xingu', 'Ava_Canoeiro',
+        'Aweti', 'Chiriguano', 'Guaja', 'Guajajara', 'Guarani', 'Guarayo', 'Kaapor', 'Kaiowa', 'Kamajura',
+        'Kayabi', 'Kokama', 'Mawe', 'Mbya', 'Nheengatu', 'Old_Guarani', 'Omagua', 'Parakana', 'Parintintin',
+        'Siriono', 'Surui_Aikewara', 'Tapiete', 'Tapirape', 'Teko', 'Tembe', 'Tenharim', 'Tupinamba',
+        'Urueuwauwau', 'Warazu', 'Wayampi', 'Xeta', 'Yuki', 'Zoe'
+    ]
+    age = "uniform(2500, 5000)"
+    units = "ybp" 
+    description = ""
+
+    [calibration.awetitg]
+    taxa = [
+        'Ache', 'Amondawa', 'Anambe', 'Apiaka', 'Arawete', 'Asurini_Tocantins', 'Asurini_Xingu', 'Ava_Canoeiro',
+        'Aweti', 'Chiriguano', 'Guaja', 'Guajajara', 'Guarani', 'Guarayo', 'Kaapor', 'Kaiowa', 'Kamajura',
+        'Kayabi', 'Kokama', 'Mbya', 'Nheengatu', 'Old_Guarani', 'Omagua', 'Parakana', 'Parintintin',
+        'Siriono', 'Surui_Aikewara', 'Tapiete', 'Tapirape', 'Teko', 'Tembe', 'Tenharim', 'Tupinamba',
+        'Urueuwauwau', 'Warazu', 'Wayampi', 'Xeta', 'Yuki', 'Zoe'
+    ]
+    age = "monophyly"
+    units = "ybp" 
+    description = ""
+
+    [calibration.tg]
+    taxa = [
+        'Ache', 'Amondawa', 'Anambe', 'Apiaka', 'Arawete', 'Asurini_Tocantins', 'Asurini_Xingu', 'Ava_Canoeiro',
+        'Chiriguano', 'Guaja', 'Guajajara', 'Guarani', 'Guarayo', 'Kaapor', 'Kaiowa', 'Kamajura',
+        'Kayabi', 'Kokama', 'Mbya', 'Nheengatu', 'Old_Guarani', 'Omagua', 'Parakana', 'Parintintin',
+        'Siriono', 'Surui_Aikewara', 'Tapiete', 'Tapirape', 'Teko', 'Tembe', 'Tenharim', 'Tupinamba',
+        'Urueuwauwau', 'Warazu', 'Wayampi', 'Xeta', 'Yuki', 'Zoe'
+    ]
+    age = "monophyly"
+    units = "ybp" 
+    description = ""
+
+    [calibration.guaranian]
+    taxa = [
+        'Ache', 'Chiriguano', 'Guarani', 'Guarayo', 'Kaiowa', 'Mbya', 'Old_Guarani', 'Siriono', 'Tapiete',
+        'Warazu', 'Xeta', 'Yuki'
+    ]
+    age = "monophyly"
+    units = "ybp" 
+    description = ""
+
+    [calibration.kawahiva]
+    taxa = ['Amondawa', 'Apiaka', 'Kayabi', 'Parintintin', 'Tenharim', 'Urueuwauwau']
+    age = "monophyly"
+    units = "ybp" 
+    description = ""
+
+    [calibration.gtg]
+    taxa = ['Guaja', 'Guajajara', 'Tembe']
+    age = "monophyly"
+    units = "ybp" 
+    description = ""
+
+    [calibration.zwt]
+    taxa = ['Teko', 'Wayampi', 'Zoe']
+    age = "monophyly"
+    units = "ybp" 
+    description = ""
+
+    [calibration.tupi]
+    taxa = ['Kokama', 'Nheengatu', 'Omagua', 'Tupinamba']
+    age = "monophyly"
+    units = "ybp" 
+    description = ""
+
+    [calibration.ok]
+    taxa = ['Kokama', 'Omagua']
+    age = "monophyly"
+    units = "ybp" 
+    description = ""
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tiger]
+    tool = 'pylotiger'
+    model = ''
+    details = """We assessed the degree of tree-likeliness by computing the concepts’ TIGER scores [91, 92] with
+    the implementation by [93], obtaining a mean score of 0.14 (±0.14) (individual scores are reported in
+    Appendix K of S1 File)."""
+
+    [analysis.nnet]
+    tool = 'splitstree'
+    model = 'neigbornet'
+    details = ""
+
+    [analysis.delta]
+    tool = 'splitstree'
+    model = 'delta'
+    details = "0.3861"
+
+    [analysis.qresidual]
+    tool = 'splitstree'
+    model = 'qresidual'
+    details = "0.005957"
+    
+    [analysis.fullrelaxed]
+    tool = 'beast2'
+    model = 'birthdeath+bcov+relaxed'
+    details = "main model discussed in paper as the authors preferred this result despite nested sampling preferring analysis.fullstrict: `. Our decision in favor of the relaxed clock model was due to an expert analysis of the resulting topology and dates, as it was far more compatible with the literature, and by the fact that most unexpected results, such as the position of the Anambé-Araweté clade or the branch length of Tupinambá, can be explained by differences in concept coverage`"
+    data = "data.full"
+
+    [analysis.fullstrict]
+    tool = 'beast2'
+    model = 'birthdeath+bcov+strict'
+    details = ""
+    data = "data.full"
+
+
+    [analysis.swadeshrelaxed]
+    tool = 'beast2'
+    model = 'birthdeath+bcov+relaxed'
+    details = ""
+    data = "data.swadesh"
+
+    [analysis.swadeshstrict]
+    tool = 'beast2'
+    model = 'birthdeath+bcov+strict'
+    details = ""
+    data = "data.swadesh"
+    
+    [analysis.phylogeography]
+    tool = 'beast2'
+    model = 'geo_sphere'
+    details = ""
+    data = "data.full;analysis.fullstrict"
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.mawesplit]
+    taxa = ['mawe1252']
+    age = "hpd(3300, 2500, 4620)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.awetisplit]
+    taxa = ['awet1245']
+    age = "hpd(2600, 1404, 4037)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.tupiguarani]
+    taxa = ['tupi1276']
+    age = "hpd(1700, 847, 2740)"
+    units = "ybp"
+    notes = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/ferrazgerardi_et_al2023" }
+cldf = { title = "CLDF Dataset", link = "https://doi.org/10.5281/zenodo.6572576" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

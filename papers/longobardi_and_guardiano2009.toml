@@ -1,0 +1,92 @@
+title = "Evidence for syntax as a signal of historical relatedness"
+
+doi = "10.1016/j.lingua.2008.09.012"
+
+abstract = """
+In addition to its theoretical impact, the development of molecular biology has brought about the possibility of
+extraordinary historical progress in the study of phylogenetic classification of different species and human
+populations (especially cf. Cavalli Sforza et al., 1994, among others). We argue that parametric analyses of
+grammatical diversity in theoretical linguistics, stemming from Chomsky (1981), can prompt analogous progress in
+the historical classification of language families, by showing that abstract syntactic properties are reliable
+indicators of phylogenetic relations. The pursuit of this approach radically questions the traditional belief in
+the orthogonality of grammatical typology and language genealogy, broadly supporting Nichols’ (1992) program,
+and ultimately contributes to establishing formal grammar as a population science and historical linguistics as
+an important part of cognitive inquiry.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Giuseppe Longobardi",
+    "Cristina Guardiano"
+]
+
+# parts of the world
+groups = ['Europe']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Longobardi2009"  # @xxxx
+
+# type of study
+type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "28 European languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.full]
+    ntaxa = 28
+    nchars = 63
+    nsites = 63
+    datatype = 'syntactical features'
+    source = ''
+    items = ''
+    comment = ''
+    
+    [data.subset]
+    ntaxa = 28
+    nchars = 15
+    nsites = 15
+    datatype = 'syntactical features'
+    source = ''
+    items = ''
+    comment = 'pruned to match mcmahon_and_mcmahon2005'
+    
+    
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree_full]
+    tool = 'phylip'
+    model = 'kitsch+bootstrapping'
+    details = ""
+    data = "data.full"
+
+    [analysis.tree_subset]
+    tool = 'phylip'
+    model = 'kitsch+bootstrapping'
+    details = "to enable comparison between McMahon & McMahon 2005's tree of lexical data"
+    data = "data.subset"
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.label]
+    taxa = []
+    age = "hpd(median, lower, upper)"
+    units = "ybp"
+    notes = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

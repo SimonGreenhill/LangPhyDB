@@ -51,6 +51,7 @@ author,Ilya M. Egorov,
 author,Christopher Ehret,
 author,Esra Erdem,
 author,Ana Vilacy Galucio,
+author,Tianjun Gao,
 author,Fabrício Ferraz Gerardi,
 author,Myrtille Guillon,
 author,Ricardo Fernandes,
@@ -201,10 +202,12 @@ datatype,ethnographic features,ethnographic features
 datatype,lexical cognates,cognate data
 datatype,lexical cognates (autodetected),auto detected cognate data
 datatype,lexemes,raw lexical data
+datatype,morphological traits,morphological characters
 datatype,mixed,mixed datatypes
 datatype,phonetic traits,phonetic characters
 datatype,signs,manual alphabet for sign languages
 datatype,structural features,structural features
+datatype,syntactical features,syntactical features
 
 items,,no specification
 items,basic,generic basic vocabulary
@@ -216,6 +219,7 @@ items,ura100,Uralic 100 wordlist
 items,subset,Subset of other dataset
 items,leipzigjakarta,Leipzig-Jakarta list
 items,leipzigjakartajena,Leipzig-Jakarta-Jena list
+items,yakhontov35,Yakhontov's 35 list
 
 tool,barrier
 tool,bayesphylogenies,http://www.evolution.reading.ac.uk/BayesPhy.html

@@ -1,0 +1,97 @@
+title = "Reconstruction and analysis of phylogenetic network on Tibeto-Burman languages in China"
+
+doi = "10.1353/jcl.2020.0006"
+
+abstract = """
+In order to test and analyze the model of phylogenetic network of TibetoBurman languages, this
+study tried to reconstruct the phylogenetic network of Tibeto-Burman languages using the NeighborNet method. The
+materials in use were the 100 core cognates of 51 Tibeto-Burman languages. The network graphs showed that the
+evolutionary model of these languages is mainly tree-like, which shows that splitting is still the dominant
+mechanism of evolution and the horizontal transmission plays a significant role in the history as well. Language
+contact can spread deeply into the core vocabulary of other languages and may even impact the phylogenetic
+position of related languages.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Tianjun Gao"
+]
+
+# parts of the world
+groups = ['Sino-Tibetan']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Gao2020"  # @xxxx
+
+# type of study
+type = ['phylogenetic', 'network', 'delta']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "51 Tibeto-Burman languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.gao100]
+    ntaxa = 51
+    nchars = 100
+    nsites = 100
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'swadesh100'
+    comment = ''
+
+    [data.gao92]
+    ntaxa = 51
+    nchars = 93
+    nsites = 93
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'swadesh100'
+    comment = ''
+
+    [data.gao35]
+    ntaxa = 51
+    nchars = 35
+    nsites = 35
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'yakhontov35'
+    comment = ''
+    
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.network100]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "data.gao100"
+
+    [analysis.network93]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "data.gao93"
+
+    [analysis.network35]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "data.gao35"
+
+    [analysis.nj]
+    tool = 'splitstree'
+    model = 'nj'
+    details = ""
+    data = "data.gao100"
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

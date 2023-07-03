@@ -31,7 +31,34 @@ taxa = "24 Indo-European languages"
 
 # data
 [data]
-    [data.ringe]
+    [data.phonology]
+    ntaxa = 24
+    nchars = 22
+    nsites = 22
+    datatype = 'phonetic traits'
+    source = ''
+    items = ''
+    comment = 'Currently our database includes 370 characters, namely 22 phonological characters, 15 morphological characters, and 333 lexical characters.'
+
+    [data.morphological]
+    ntaxa = 24
+    nchars = 15
+    nsites = 15
+    datatype = 'morphological traits'
+    source = ''
+    items = ''
+    comment = 'Currently our database includes 370 characters, namely 22 phonological characters, 15 morphological characters, and 333 lexical characters.'
+
+    [data.lexical]
+    ntaxa = 24
+    nchars = 333
+    nsites = 333
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = 'Currently our database includes 370 characters, namely 22 phonological characters, 15 morphological characters, and 333 lexical characters.'
+    
+    [data.combined]
     ntaxa = 24
     nchars = 370
     nsites = 370
@@ -39,7 +66,7 @@ taxa = "24 Indo-European languages"
     source = ''
     items = ''
     comment = 'Currently our database includes 370 characters, namely 22 phonological characters, 15 morphological characters, and 333 lexical characters.'
-    
+
 
 # analysis information
 [analysis]

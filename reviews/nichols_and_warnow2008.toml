@@ -1,0 +1,37 @@
+title = "Tutorial on Computational Linguistic Phylogeny"
+
+doi = "10.1111/j.1749-818x.2008.00082.x"
+
+abstract = """
+Over the last 10 or more years, there has been a tremendous increase in the use of
+computational techniques (many of which come directly from biology) for estimating
+evolutionary histories (i.e., phylogenies) of languages. This tutorial surveys the
+different methods and different types of linguistic data that have been used to
+estimate phylogenies, explains the scientific and mathematical foundations of
+phylogenetic estimation, and presents methodologies for evaluating a phylogeny
+estimation method.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Johanna Nichols",
+    "Tandy Warnow",
+]
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Nichols2008"  # @xxxx
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = ""
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

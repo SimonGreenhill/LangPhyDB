@@ -65,6 +65,30 @@ taxa = "40 varieties from Tupí-Guaraní"
 
     notes = ""
 
+    [calibration.Xeta_tip]
+    taxa = ['Xeta']
+    age = "50"
+    units = "ybp" 
+    description = ""
+
+    [calibration.Tupinamba_tip]
+    taxa = ['Tupinamba']
+    age = "400"
+    units = "ybp" 
+    description = ""
+
+    [calibration.Old_Guarani_tip]
+    taxa = ['Old_Guarani']
+    age = "325"
+    units = "ybp" 
+    description = ""
+
+    [calibration.Guarayo_tip]
+    taxa = ['Guarayo']
+    age = "75"
+    units = "ybp" 
+    description = ""
+
     [calibration.root]
     taxa = [
         'Ache', 'Amondawa', 'Anambe', 'Apiaka', 'Arawete', 'Asurini_Tocantins', 'Asurini_Xingu', 'Ava_Canoeiro',

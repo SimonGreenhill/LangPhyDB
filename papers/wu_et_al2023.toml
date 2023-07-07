@@ -1,0 +1,120 @@
+title = "Phylogenetic insight into the origin of tones"
+
+doi = "10.1098/rspb.2023.0606"
+
+abstract = """
+The origin of tone, also known as tonogenesis, has long been a topic of great interest in language evolution and
+human cognition studies. Several linguistic studies of tonal languages have proposed various hypotheses that
+tonal origin may be related to different changes of phonological structures. How- ever, such hypotheses have not
+been quantitatively tested in an evolutionary framework. Here, we conducted phylogenetic comparative analyses to
+assess the likelihood of different hypotheses of tonogenetic mechanisms across 106 Sino-Tibetan languages, of
+which approximately 70% are tonal. Our results showed that the presence of tones has a strong phylogenetic pat-
+tern and that Proto-Sino-Tibetan languages were most likely non-tonal. Our findings identified that tonal origin
+was strongly associated with the evolution of specific phonological structures, such as the loss of
+syllable-final consonants and voice quality on vowels. Furthermore, we found that tonal origin probably did not
+influence the diversification rates of Sino-Tibetan languages. These findings enabled us to better understand
+that tone arose as a compensatory mechanism for the structural organization and evolution of languages.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Baihui Wu",
+    "Hanzhi Zhang",
+    "Menghan Zhang", 
+]
+
+# parts of the world
+groups = ['Sino-Tibetan']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Wu2023"  # @xxxx
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "Evolution of tono in 106 Sino-Tibetan languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.structural]
+    ntaxa = 106
+    nchars = 11
+    nsites = 11
+    datatype = 'structural features'
+    source = ''
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.zhang]
+    source = '@Zhang_2020'
+    comment = '3 languages pruned to leave 106'
+
+    [phylogenies.geography]
+    source = ''
+    comment = 'tree built on geographic distances'
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.signal]
+    tool = 'caper'
+    model = 'D'
+    details = ""
+
+    [analysis.CI_phylogeny]
+    tool = 'ape'
+    model = 'CI'
+    details = "phylogenies.zhang"
+
+    [analysis.RI_phylogeny]
+    tool = 'ape'
+    model = 'RI'
+    details = "phylogenies.zhang"
+
+    [analysis.CI_geography]
+    tool = 'ape'
+    model = 'CI'
+    details = "phylogenies.geography"
+
+    [analysis.RI_geography]
+    tool = 'ape'
+    model = 'RI'
+    details = "phylogenies.geography"
+
+    [analysis.bayestraits]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "phylogenies.zhang"
+    comment = "all pairs of traits"
+    
+    [analysis.rjmcmc]
+    tool = 'bayestraits'
+    model = 'rjmcmc'
+    details = "phylogenies.zhang"
+    comment = "all pairs of traits with significant bayesfactors from analysis.bayestraits"
+
+    [analysis.bisse]
+    tool = 'hisse'
+    model = 'bisse'
+    details = "phylogenies.zhang"
+    comment = "all pairs of traits with significant bayesfactors from analysis.bayestraits"
+
+    [analysis.hisse]
+    tool = 'hisse'
+    model = 'hisse'
+    details = "phylogenies.zhang"
+    comment = "all pairs of traits with significant bayesfactors from analysis.bayestraits"
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

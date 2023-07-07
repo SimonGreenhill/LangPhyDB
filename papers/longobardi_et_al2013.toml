@@ -1,0 +1,160 @@
+title = "Toward a syntactic phylogeny of modern Indo-European languages"
+
+doi = "10.1075/jhl.3.1.07lon"
+
+abstract = """
+The Parametric Comparison Method (PCM, Guardiano & Longobardi 2005, Longobardi & Guardiano 2009) is grounded on
+the assumption that syntactic parameters are more appropriate than other traits for use as comparanda for
+historical reconstruction, because they are able to provide unambiguous correspondences and objective
+measurements, thus guaranteeing wide-range applicability and quantitative exactness. This article discusses a
+set of experiments explicitly designed to evaluate the impact of parametric syntax in representing historical
+relatedness, and performed on a selection of 26 contemporary Indo-European varieties. The results show that PCM
+is in fact able to correctly identify genealogical relations even from modern languages only, performing as
+accurately as lexical methods, and that its effectiveness is not limited by interference effects such as
+‘horizontal’ transmission. PCM is thus validated as a powerful tool for the analysis of historical relationships
+not only on a long-range perspective (as suggested by Longobardi & Guardiano 2009), but even on more focused,
+though independently well-known domains.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Giuseppe Longobardi",
+    "Cristina Guardiano",
+    "Giuseppina Silvestri",
+    "Alessio Boattini",
+    "Andrea Ceolin"
+]
+
+# parts of the world
+groups = ['IndoEuropean']
+
+# bibkey citation in sources.bib
+bibkey = "@Longobardi2013"
+
+# type of study
+type = ['phylogenetic', 'distance',]  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "26 IndoEuropean languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.syntax]
+    ntaxa = 26
+    nchars = 56
+    nsites = 56
+    datatype = 'syntactical features'
+    source = ''
+    items = ''
+    comment = ''
+
+    [data.syntax21]
+    ntaxa = 21
+    nchars = 56
+    nsites = 56
+    datatype = 'syntactical features'
+    source = ''
+    items = ''
+    comment = 'to compare to Dyen1992s data'
+
+    [data.lexicon21]
+    ntaxa = 21
+    nchars = "?"
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Dyen1992'
+    items = ''
+    comment = ''
+
+    [data.syntax37]
+    ntaxa = 21
+    nchars = 37
+    nsites = 37
+    datatype = 'syntactical features'
+    source = ''
+    items = ''
+    comment = 'subset of 37 independent features'
+
+
+# analysis information
+[analysis]
+    notes = """
+    1. Kitsch and UPGMA with bootstrapping on main dataset.
+    2. Comparison of 21 taxon subset that matched Dyen's lexical data use Kitch/UPGMA
+    3. Reduction of dataset to 37 features proposed as independent
+        - UPGMA and Kitch
+        - STRUCTURE
+        - MP in PAUP
+    """
+    
+    [analysis.upgma]
+    tool = 'phylip'
+    model = 'upgma+bootstrapping'
+    details = ""
+    data = "data.syntax"
+
+    [analysis.kitsch]
+    tool = 'phylip'
+    model = 'kitsch+bootstrapping'
+    details = ""
+    data = "data.syntax"
+
+    [analysis.upgma_ct]
+    tool = 'splitstree'
+    model = 'consensus-tree network'
+    details = "upgma+bootstrapping"
+    data = "data.syntax"
+
+    [analysis.kitsch_ct]
+    tool = 'phylip'
+    model = 'consensus-tree network'
+    details = "kitsch+bootstrapping"
+    data = "data.syntax"
+
+    [analysis.kitsch_syntax21]
+    tool = 'phylip'
+    model = 'kitsch'
+    details = "compare topology to analysis.kitsch_lexicon21"
+    data = "data.syntax21"
+
+    [analysis.kitsch_lexicon21]
+    tool = 'phylip'
+    model = 'kitsch'
+    details = "compare topology to analysis.kitsch_syntax21"
+    data = "data.lexicon21"
+
+
+    [analysis.kitsch_syntax37]
+    tool = 'phylip'
+    model = 'kitsch'
+    details = ""
+    data = "data.syntax37"
+
+    [analysis.upgma_syntax37]
+    tool = 'phylip'
+    model = 'upgma'
+    details = ""
+    data = "data.syntax37"
+
+    [analysis.structure]
+    tool = 'structure'
+    model = ''
+    details = ""
+    data = "data.syntax37"
+
+    [analysis.parsimony]
+    tool = 'paup*'
+    model = 'mp'
+    details = ""
+    data = "data.syntax37"
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

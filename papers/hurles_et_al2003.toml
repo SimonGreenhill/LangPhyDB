@@ -1,0 +1,81 @@
+title = "Untangling Oceanic settlement: the edge of the knowable"
+
+doi = "10.1016/S0169-5347(03)00245-3"
+
+abstract = """
+Human expansion into the far reaches of the Pacific has occurred within the past 3000–4000 years. This is so
+recent that it is arguably the best opportunity to test models of the origin and dispersal of human groups and
+their domesticated plants and animals, cultural and linguistic evolution, human impacts on a pristine
+environment, and the lower limits for a long-term sustainable population. Multidisciplinary research is
+essential because these models must account for archaeological, ecological, cultural, historical, social,
+linguistic and (both mitochondrial and nuclear) genetic data. This synthesis has not yet been achieved for any
+settlement in the world, but there has been considerable progress recently on integrating these disciplines with
+respect to the settlement of Polynesia.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Matthew E. Hurles",
+    "Elizabeth Matisoo-Smith",
+    "Russell D. Gray",
+    "David Penny",
+]
+
+# parts of the world
+groups = ['Austronesian']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Hurles2003"  # @xxxx
+
+# type of study
+type = ['network', 'phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "11 Polynesian languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.pollex]
+    ntaxa = 11
+    nchars = "?"
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@POLLEX'
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = 'paup*'
+    model = 'maximum parsimony + bootstrapping'
+    details = ""
+
+    [analysis.network]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.label]
+    taxa = []
+    age = "hpd(median, lower, upper)"
+    units = "ybp"
+    notes = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

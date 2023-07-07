@@ -29,13 +29,11 @@
 * Hamed et al 2005 - On Cladistic Reconstruction of Linguistic Trees through Vowel Data
 * Holden & Mace 2005 - Holden, Clare J.; and Ruth Mace. 2005. “The cow is the enemy of matriliny”: Using phylogenetic methods to investigate cultural evolution in Africa. The evolution of cultural diversity: a phylogenetic approach, ed. by R Mace, Clare J Holden, and Stephen J Shennan, 217–234. London: UCL Press. http://eprints.ucl.ac.uk/15382.
 * Holden & Shennan 2005 - Holden, Clare J.; and Stephen J Shennan. 2005. How tree-like is cultural evolution? The evolution of cultural diversity: a phylogenetic approach, ed. by Ruth Mace, Clare J Holden, and Stephen J Shennan, 13–30. London: UCL PRess.
-* Hurles et al 2003 - Hurles, Matthew E.; Elizabeth Matisoo-Smith.; Russell D. Gray.; and David Penny. 2003. Untangling Polynesian origins: the edge of the knowable. Trends in Ecology & Evolution 18. Elsevier Science.531–540. doi:10.1016/S0169-5347(03)00245-3.
 * Jaeger global tree
 * Jordan & O'Neill 2010 - Jordan, Peter.; and Sean O’Neill. 2010. Untangling cultural inheritance: language diversity and long-house architecture on the Pacific northwest coast. Philosophical transactions of the Royal Society of London. Series B, Biological sciences 365.3875–88. doi:10.1098/rstb.2010.0092.
 * Jordan 2011 - Jordan, Fiona Marie. 2011. A Phylogenetic Analysis of the Evolution of Austronesian Sibling Terminologies A Phylogenetic Analysis of the Evolution of Austronesian. Human Biology 83.297–321. doi:10.3378/027.083.0209.
 * Jordan et al. 2009 - Jordan, Fiona Marie.; Russell D. Gray.; Simon J. Greenhill.; and Ruth Mace. 2009. Matrilocal residence is ancestral in Austronesian societies. Proceedings of the Royal Society B: Biological Sciences 276.1957–64. doi:10.1098/rspb.2009.0088.
 * Lee & Hasegawa 2014 - Lee, S.; and T Hasegawa. 2014. Oceanic barriers promote language diversification in the Japanese Islands. Journal of evolutionary biology 27.1905–12. doi:10.1111/jeb.12442.
-* Longobardi et al. 2013 - 
 * Longobardi et al. 2015 - 
 * McMahon & McMahon 2006 - McMahon A, McMahon R. 2006 Why linguists don’t do dates: Evidence from Indo-European and Australian languages. In Phylogenetic methods and the prehistory of languages (eds P Forster, C Renfrew), pp. 153–160. McDonald Institute for Archaeological Research: Cambridge. 
 * McMahon & McMahon 2008 - McMahon A, McMahon R. 2008 Genetics, Historical Linguistics and Language Variation. Language and Linguistics Compass 2, 264–288. (doi:10.1111/j.1749-818X.2008.00052.x)

@@ -1,6 +1,6 @@
 title = "A phylolinguistic classification of the Quechua language family"
 
-doi = ""
+doi = "10.18441/IND.V40I1.29-54"
 
 abstract = """
 We present a computational phylogeny for the internal classification of the Quechua
@@ -23,7 +23,7 @@ authors = [
 groups = ['Quechua']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
-bibkey = ""  # @xxxx
+bibkey = "@Blum2023"
 
 # type of study
 type = ['phylogenetic', 'network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait

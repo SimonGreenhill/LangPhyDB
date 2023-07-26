@@ -127,6 +127,72 @@ taxa = "131 Sino-Tibetan languages"
     age = "hpd(7983, 4778, 11285)"
     units = "y2000"
     notes = "best fitting model"
+    
+
+    [inferredage.Lolo-Qiangic]
+    taxa = ["lolo1265"]
+    age = "hpd(3200, 1900, 4700)"
+    units = "y2000"
+    notes = "best fitting model"
+
+
+    [inferredage.Tibetan-Qiangic]
+    taxa = ["burm1265"]
+    age = "hpd(4100, 2500, 6100)"
+    units = "y2000"
+    notes = "best fitting model"
+
+
+    [inferredage.Kiranti]
+    taxa = ["kira1253"]
+    age = "hpd(2100, 1200, 3200)"
+    units = "y2000"
+    notes = "best fitting model"
+
+
+    [inferredage.Tani-Idu]
+    taxa = ["tani1259", "idum1241"]
+    age = "hpd(5000, 2500, 7100)"
+    units = "y2000"
+    notes = "best fitting model"
+
+
+    [inferredage.Sal]
+    taxa = ["brah1260"]
+    age = "hpd(3900, 2100, 5800)"
+    units = "y2000"
+    notes = "best fitting model"
+
+
+    [inferredage.Kuki-Karbi]
+    taxa = ["kuki1246", "karb1240"]
+    age = "hpd(4500, 2500, 6600)"
+    units = "y2000"
+    notes = "best fitting model"
+
+
+    [inferredage.Karenic]
+    taxa = ["kare1337"]
+    age = "hpd(1300, 700, 1900)"
+    units = "y2000"
+    notes = "best fitting model"
+
+
+    [inferredage.Naga]
+    taxa = ["naga1409"]
+    age = "hpd(2600, 1600, 4000)"
+    units = "y2000"
+    notes = "best fitting model"
+
+
+    [inferredage.Sinitic]
+    taxa = ["sini1245"]
+    age = '2600'
+    units = "y2000"
+    notes = "best fitting model"
+
+
+
 
 
 [links]

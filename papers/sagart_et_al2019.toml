@@ -103,6 +103,55 @@ taxa = "50 Sino-Tibetan languages"
     notes = ""
 
 
+    [inferredage.Lolo-Qiangic]
+    taxa = ["lolo1265"]
+    age = "hpd(4300, 3000, 5700)"
+    units = "y2000"
+    notes = "best fitting model"
+
+
+    [inferredage.Tibetan-Qiangic]
+    taxa = ["burm1265"]
+    age = "hpd(4800, 3300, 6300)"
+    units = "y2000"
+    notes = "best fitting model"
+
+
+    [inferredage.Kiranti]
+    taxa = ["kira1253"]
+    age = "hpd(3600, 2400, 5100)"
+    units = "y2000"
+    notes = "best fitting model"
+
+
+    [inferredage.Tani-Idu]
+    taxa = ["tani1259", "idum1241"]
+    age = "hpd(4100, 2400, 5800)"
+    units = "y2000"
+    notes = "best fitting model"
+
+
+    [inferredage.Sal]
+    taxa = ["brah1260"]
+    age = "hpd(4700, 3100, 6700)"
+    units = "y2000"
+    notes = "best fitting model"
+
+
+    [inferredage.Kuki-Karbi]
+    taxa = ["kuki1246", "karb1240"]
+    age = "hpd(5000, 3400, 6700)"
+    units = "y2000"
+    notes = "best fitting model"
+
+
+    [inferredage.Sinitic]
+    taxa = ["sini1245"]
+    age = '2600'
+    units = "y2000"
+    notes = "best fitting model"
+
+
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/sagart_et_al2019" }

@@ -1,23 +1,19 @@
 # TODO
 
-* Atkinson et al. 2004a - Atkinson, Quentin D.; and Russell D. Gray. 2004a. How old is the Indo-European language family? - Illumination or more moths to the flame?
-* Atkinson et al. 2004b - Atkinson, Quentin D.; and Russell D. Gray. 2004b. Are Accurate Dates an Intractable Problem for Historical Linguistics? Mapping our Ancestry: Phylogenetic Methods in Anthropology and Prehistory, ed. by M J Shennan S J Collard Mark Lipo C. O’Brien. Chicago: Aldine.
-* Atkinson et al. 2005 - Atkinson, Quentin D.; Geoff K. Nicholls.; David Welch.; and Russell D. Gray. 2005. From words to dates: water into wine, mathemagic or phylogenetic inference. Transactions of the Philological Society 103.193–219.
-* Auderset et al. 2023 -
-* Barbancon et al. 2013 - Barbancon, S.N. Evans, L. Nakhleh, D. Ringe, and T. Warnow (2013) "An experimental study comparing linguistic phylogenetic reconstruction methods." Diachronica 30(2):143-170, and appendix. 
-* Boegh et al 2016 - https://doi.org/10.32473/sal.v45i1.107255
+## Unsorted:
+
+* Szeto et al. 2018 - Szeto, Pui Yiu.; Umberto Ansaldo.; and Stephen Matthews. 2018. Typological variation across Mandarin dialects: An areal perspective with a quantitative approach. Linguistic Typology 22.233–275. doi:10.1515/lingty-2018-0009.
+
+
 * Bouckaert global tree
 * Bryant et al 2005 - Bryant, David.; F. Filimon.; and Russell D. Gray. 2005. Untangling our past: Languages, trees, splits and networks. The evolution of cultural diversity: a phylogenetic approach, ed. by Ruth Mace, Clare J Holden, and Stephen J Shennan, 67–84. London: UCL PRess.
 * Carling & Cathcart 2021 - Carling, Gerd.; and Chundra Cathcart. 2021. Reconstructing the evolution of Indo-European grammar. Language 97. Linguistic Society of America.561–598. doi:10.1353/lan.2021.0047.
 * Ceolin et al. 2021 - phil trans.
 * Currie & Mace 2011- Currie, Thomas E.; and Ruth Mace. 2011. Mode and tempo in the evolution of socio-political organization: reconciling “Darwinian” and “Spencerian” evolutionary approaches in anthropology. Philosophical transactions of the Royal Society of London. Series B, Biological sciences 366.1108–17. doi:10.1098/rstb.2010.0318.
-* Currie et al. 2010a - Currie, Thomas E.; Simon J. Greenhill.; and R Mace. 2010. Is horizontal transmission really a problem for phylogenetic comparative methods? A simulation study using continuous cultural traits. Proceedings of the Royal Society B: Biological Sciences 365.3903–3912. doi:10.1098/rstb.2010.0014.
 * Currie et al. 2010b - Currie, Thomas E.; Simon J. Greenhill.; Russell D. Gray.; Toshikazu Hasegawa.; and Ruth Mace. 2010. Rise and fall of political complexity in island South-East Asia and the Pacific. Nature 467. Evolutionary Cognitive Science Research Center, Graduate School of Arts and Sciences, University of Tokyo 153-8902, Japan. t.currie@ucl.ac.uk.801–804. doi:10.1038/nature09461.
-* Dediu 2011 - Dediu, Dan. 2011. A Bayesian phylogenetic approach to estimating the stability of linguistic features and the genetic biasing of tone. Proceedings of the Royal Society B: Biological Sciences 278.474–479. doi:10.1098/rspb.2010.1595.
 * Dockum 2018 - Dockum, R. (2018). Phylogeny in phonology: How Tai sound systems encode their past. In Proceedings of the Annual Meetings on Phonology, volume 5
 * Eska & Ringe 2004 - Eska, J. F., & Ringe, D. (2004). Recent work in computational linguistic phylogeny. Language, 80(3), 569–582.
 * Gray et al. 2010 - Gray, Russell D.; David Bryant.; and Simon J. Greenhill. 2010. On the shape and fabric of human history. Philosophical transactions of the Royal Society of London. Series B, Biological sciences 365.3923–33. doi:10.1098/rstb.2010.0162.
-* Greenhill 2023 - (review)
 * Greenhill et al. 2009 - Greenhill, Simon J.; Thomas E. Currie.; and Russell D. Gray. 2009. Does horizontal transmission invalidate cultural phylogenies? Proceedings. Biological sciences / The Royal Society 276.2299–306. doi:10.1098/rspb.2008.1944.
 * Greenhill et al. 2010a- Greenhill, Simon J.; Quentin D. Atkinson.; Andrew Meade.; and Russell D. Gray. 2010. The shape and tempo of language evolution. Proceedings of the Royal Society B: Biological Sciences 277. Department of Psychology, University of Auckland, Private Bag 92019, Auckland 1042, New Zealand. s.greenhill@auckland.ac.nz.2443–50. doi:10.1098/rspb.2010.0051.
 * Greenhill et al. 2010b - Greenhill, Simon J.; Alexei J Drummond.; and Russell D. Gray. 2010. How Accurate and Robust Are the Phylogenetic Estimates of Austronesian Language Relationships? PLoS ONE 5.e9573. doi:10.1371/journal.pone.0009573.
@@ -52,7 +48,6 @@
 * Sheard et al. 2020 - Sheard, Catherine.; Claire Bowern.; Rikker Dockum.; and Fiona M. Jordan. 2020. Pama–Nyungan grandparent systems change with grandchildren, but not cross-cousin terms or social norms. Evolutionary Human Sciences 2. Cambridge University Press. doi:10.1017/ehs.2020.31. 
 * Skirgard et al. 2023 - 
 * Sullivan et al. 2010 - Sullivan J, McMahon A. 2010 Phonetic comparison, varieties, and networks: Swadesh’s influence lives on here too. Diachronica 27, 325–340. (doi:10.1075/dia.27.2.08sul)
-* Szeto et al. 2018 - Szeto, Pui Yiu.; Umberto Ansaldo.; and Stephen Matthews. 2018. Typological variation across Mandarin dialects: An areal perspective with a quantitative approach. Linguistic Typology 22.233–275. doi:10.1515/lingty-2018-0009.
 * Walker & Hamilton 20101 - Walker, Robert S.; and Marcus J. Hamilton. 2010. Social complexity and linguistic diversity in the Austronesian and Bantu population expansions. Proceedings. Biological sciences / The Royal Society. doi:10.1098/rspb.2010.1942. http://www.ncbi.nlm.nih.gov/pubmed/20961903.
 * Walker et al. 2011 - Walker, Robert S.; Kim R Hill.; Mark V Flinn.; and Ryan M Ellsworth. 2011. Evolutionary History of Hunter-Gatherer Marriage Practices. (Ed.) Pawel Michalak. PLoS ONE 6.e19066. doi:10.1371/journal.pone.0019066.
 * Warnow & Michailov 1998 - Warnow, A. T., & Michailov, L. L. (1998). Computational Cladistics and the Position of Tocharian. In V. Mair (Ed.), The Bronze Age and early Iron Age peoples of eastern Central Asia (pp. 391–414). JIES Monograph.
@@ -63,6 +58,28 @@
 * Widmer et al. 2017 - Widmer, Manuel.; Sandra Auderset.; Johanna Nichols.; Paul Widmer.; and Balthasar Bickel. 2017. NP recursion over time: Evidence from Indo-European. Language 93.799–826. doi:10.1353/lan.2017.0058.
 * Yanovich 2020 - Yanovich, Igor. 2020. Phylogenetic linguistic evidence and the Dene-Yeniseian homeland. Diachronica 37.410–446. doi:10.1075/dia.17038.yan.
 * Zhou & Bowern 2015 - Zhou, Kevin.; and Claire Bowern. 2015. Quantifying uncertainty in the phylogenetics of Australian numeral systems. Proceedings of the Royal Society B: Biological Sciences 282.20151278.
+
+
+
+-------------------
+
+
+## Phylogenies
+
+* Atkinson et al. 2004a - Atkinson, Quentin D.; and Russell D. Gray. 2004a. How old is the Indo-European language family? - Illumination or more moths to the flame?
+* Atkinson et al. 2004b - Atkinson, Quentin D.; and Russell D. Gray. 2004b. Are Accurate Dates an Intractable Problem for Historical Linguistics? Mapping our Ancestry: Phylogenetic Methods in Anthropology and Prehistory, ed. by M J Shennan S J Collard Mark Lipo C. O’Brien. Chicago: Aldine.
+* Atkinson et al. 2005 - Atkinson, Quentin D.; Geoff K. Nicholls.; David Welch.; and Russell D. Gray. 2005. From words to dates: water into wine, mathemagic or phylogenetic inference. Transactions of the Philological Society 103.193–219.
+* Auderset et al. 2023 - 
+
+
+## Methods
+
+* Barbancon et al. 2013 - Barbancon, S.N. Evans, L. Nakhleh, D. Ringe, and T. Warnow (2013) "An experimental study comparing linguistic phylogenetic reconstruction methods." Diachronica 30(2):143-170, and appendix. 
+* Currie et al. 2010a - Currie, Thomas E.; Simon J. Greenhill.; and R Mace. 2010. Is horizontal transmission really a problem for phylogenetic comparative methods? A simulation study using continuous cultural traits. Proceedings of the Royal Society B: Biological Sciences 365.3903–3912. doi:10.1098/rstb.2010.0014.
+
+## Comparative Analysis
+
+* Dediu 2011 - Dediu, Dan. 2011. A Bayesian phylogenetic approach to estimating the stability of linguistic features and the genetic biasing of tone. Proceedings of the Royal Society B: Biological Sciences 278.474–479. doi:10.1098/rspb.2010.1595.
 
 
 # Reviews etc (no original phylogenetic analysis)
@@ -83,6 +100,7 @@
 * Mace, R.; and Mark Pagel. 1994. The Comparative Method in Anthropology. Current Anthropology 35.549–564.
 * Mace, Ruth.; and Mark Pagel. 1997. Phylogenies and Cultural Evolution. Journal of Theoretical Biology 351.349–351.
 * Mace, Ruth.; Clare J Holden.; and Stephen J Shennan. 2005. The Evolution of Cultural Diversity: A phylogenetic approach. (Ed.) R Mace, Clare J Holden, and Stephen J Shennan. London: UCL Press.
+* Greenhill 2023 - (review)
 
 
 # Cultural

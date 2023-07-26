@@ -1,0 +1,33 @@
+label,description
+QuartetDist,https://almob.biomedcentral.com/articles/10.1186/1748-7188-1-16
+ape,
+barrier,
+bayesphylogenies,http://www.evolution.reading.ac.uk/BayesPhy.html
+bayestraits,http://www.evolution.reading.ac.uk/BayesTraits.html
+beast,https://beast.community
+beast2,http://www.beast2.org/
+caper,R package caper
+hisse,R package hisse
+iqtree,
+lingpy,
+macclade,
+mesquite,
+mrbayes,http://nbisweden.github.io/MrBayes/
+network,
+paup*,
+phylip,
+phylogemetric,
+picante,
+poy5,
+punctuatedwebapp,http://www.evolution.reading.ac.uk/pe/index.html
+pylotiger,
+r,misc R
+r8s,http://ceiba.biosci.arizona.edu/r8s/index.html
+raxml,
+revbayes,https://revbayes.github.io/
+splitstree,http://www.splitstree.org/
+starling,
+structure,
+tnt,
+traitlab,https://sites.google.com/site/traitlab/
+unknown,?

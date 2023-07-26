@@ -1,0 +1,12 @@
+label,description
+distance,precomputed distance data
+ethnographic features,ethnographic features
+lexemes,raw lexical data
+lexical cognates,cognate data
+lexical cognates (autodetected),auto detected cognate data
+mixed,mixed datatypes
+morphological traits,morphological characters
+phonetic traits,phonetic characters
+signs,manual alphabet for sign languages
+structural features,structural features
+syntactical features,syntactical features

@@ -1,0 +1,13 @@
+label,description
+dating,phylogenetic dating
+delta,Reticulation metric delta
+distance,1980s
+macroevolutionary,Inferring macroevolutionary processes from the data
+network,Inferring the phylogenetic network of the taxa
+phylogenetic,Inferring the phylogeny of the taxa
+phylogeography,Inferring the geography of the taxa
+qresidual,Reticulation metric Q-Residual
+review,
+structure,structure analysis
+tiger,TIGER rates
+trait,Inferring trait history

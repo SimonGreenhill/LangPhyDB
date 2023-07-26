@@ -1,5 +1,4 @@
 label,description
-QuartetDist,https://almob.biomedcentral.com/articles/10.1186/1748-7188-1-16
 ape,
 barrier,
 bayesphylogenies,http://www.evolution.reading.ac.uk/BayesPhy.html
@@ -21,6 +20,7 @@ picante,
 poy5,
 punctuatedwebapp,http://www.evolution.reading.ac.uk/pe/index.html
 pylotiger,
+QuartetDist,https://almob.biomedcentral.com/articles/10.1186/1748-7188-1-16
 r,misc R
 r8s,http://ceiba.biosci.arizona.edu/r8s/index.html
 raxml,

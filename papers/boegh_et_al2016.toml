@@ -1,0 +1,91 @@
+title = "A Phylogenetic Analysis of Stable Structural Features in West African Languages"
+
+doi = "10.32473/sal.v45i1.107255"
+
+abstract = """
+Lexical comparison has long dominated the study of West African language history. Ap- proaching the subject from a
+different perspective, this paper compares a sample of West African languages based on a selection of typological
+features proposed to be temporally stable and hence possible markers of historical connections between languages.
+We utilize phylogenetic networks to visualize and compare typological distances in the language sample, in order to
+assess the extent to which the distributional properties of the selected features reflect genealogy, areality, or
+no plausible historical signal. Languages tend to cluster in accordance with genealogical relationships identified
+in the literature, albeit with a number of inconsistencies argued to reflect contact influences and chance
+resemblances. Results support the contention that typology can provide information about historical links between
+West African languages.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    'Kristoffer Friis Bøegh',
+    'Aymeric Daval-Markussen',
+    'Peter Bakker',
+]
+
+# parts of the world
+groups = ['West Africa']
+
+# bibkey citation in sources.bib
+bibkey = "@Boegh2016"  # @xxxx
+
+# type of study
+type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "94 West African languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.wals]
+    ntaxa = 94
+    nchars = 42
+    nsites = 42
+    datatype = 'structural features'
+    source = '@WALS'
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.network]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+
+    [analysis.network2]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "less Bantoid and Platoid languages only"
+
+    [analysis.network3]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Ijoid and contiguous languages only"
+
+    [analysis.network4]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Volta-Congo languages only"
+
+    [analysis.network5]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Kwa and West Benue-Congo languages only"
+    
+    [analysis.network6]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Macro-Sudan belt languages only"
+    
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

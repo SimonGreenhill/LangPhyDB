@@ -1,0 +1,66 @@
+title = "Typological variation across Mandarin dialects: An areal perspective with a quantitative approach"
+
+doi = "10.1515/lingty-2018-0009"
+
+abstract = """
+This study explores the range and diversity of the typological features of Mandarin, the largest dialect group
+within the Sinitic branch of the SinoTibetan family. Feeding the typological data of 42 Sinitic varieties into
+the phylogenetic program NeighborNet, we obtained network diagrams suggesting a north-south divide in the
+Mandarin dialect group, where dialects within the Amdo Sprachbund cluster at one end and those in the Far
+Southern area cluster at the other end, highlighting the impact of language contact on the typological profiles
+of various Mandarin dialects.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Pui Yiu Szeto",
+    "Umberto Ansaldo",
+    "Stephen Matthews",
+]
+
+# parts of the world
+groups = ['Sinitic']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Szeto2018"  # @xxxx
+
+# type of study
+type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "42 Sinitic dialects"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.sinitic]
+    ntaxa = 42
+    nchars = 21
+    nsites = 21
+    datatype = 'structural features'
+    source = ''
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.nnet_full]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "full dataset"
+
+    [analysis.nnet_subset]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Subset of 26 Mandarin languages"
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

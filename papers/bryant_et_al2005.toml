@@ -1,0 +1,86 @@
+title = "Untangling our Past: Languages, Trees, Splits and Networks"
+
+doi = ""
+
+abstract = """
+In Act 1 of The Importance of Being Earnest, Algernon quips to Jack that ‘The truth is rarely pure and never
+simple’. The idea that much of recent human history might reflect pure trees of phylogenetic descent is appealing
+simple. It has stimulated numerous researchers to investigate the extent to which genes, languages and cultures
+are bound together in co-diverging trees of evolutionary history (eg Cavalli-Sforza et al 1994; see
+Cavalli-Sforza and Feldman 2003 for a recent review). Increasingly, studies have used explicit phylogenetic
+methods to make inferences about linguistic history and the evolution of cultural traits (Warnow and Ringe 1997; Gray and Jordan 2000 ; Pagel 2000;
+Holden 2002; O’Brien et al 2002; Jordan and Shennan 2003; Holden and Mace 2003; Rexova et al 2003). However, a
+persistent criticism of this approach is that human population history is far from tree-like (Moore 1994; Terrell 1988; Terrell et al 2001). Not only might patterns of
+genetic, linguistic and cultural diversity reflect different histories (Bateman et al 1990), each of these
+histories might be strikingly reticulate. As one participant at a recent symposium on phylogenetic methods in
+archaeology growled: 'This is not history. This is history put in nested boxes!'
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "David Bryant",
+    "Flavia Filimon",
+    "Russell D. Gray",
+]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Bryant2005"  # @xxxx
+
+# type of study
+type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = ""
+
+# data
+[data]
+
+    notes = ""
+
+    [data.indoeuropean]
+    ntaxa = 84
+    nchars = 200
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Dyen1992'
+    items = 'swadesh200'
+    comment = ''
+    
+    [data.germanic_and_sranan]
+    ntaxa = 9
+    nchars = 200
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Dyen1992'
+    items = 'swadesh200'
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.splitdecomp_germanic]
+    tool = 'splitstree'
+    model = 'splitdecomposition'
+    data = "data.germanic_and_sranan"
+
+    [analysis.nnet_germanic]
+    tool = 'splitstree'
+    model = 'neigbornet'
+    data = "data.germanic_and_sranan"
+
+    [analysis.indoeuropean]
+    tool = 'splitstree'
+    model = 'neigbornet'
+    data = "data.indoeuropean"
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

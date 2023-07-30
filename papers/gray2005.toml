@@ -1,0 +1,43 @@
+title = "Pushing the time barrier in the quest for language roots"
+
+doi = "10.1126/science.1119276"
+
+abstract = """
+Questions about human origins have an enduring fascination. For centuries, scholars and laypeople have wondered
+where groups such as Polynesians or Indo-Europeans came from. Linguistic evidence plays a vital role in tracking
+the movement of people by leaving linguistic trails that are analogous to the genetic signatures that molecular
+biologists study. Early European explorers in the Pacific, for example, were struck by the remarkable similarities
+between the far-flung languages of the Pacific (the word for hand in Hawaiian and Samoan is lima, in Marquesan it
+is ’ima, and in Tahitian rima). It might seem a simple matter, therefore, to trace the origin of words used in
+linguistic and cultural groups and thereby unravel connections between the peoples of the world that extend deep
+in the past. Perhaps it might even be possible to infer the initial “mother tongue” spoken before our languages
+diverged. Alas, the task for historical linguists and prehistorians is not this easy. First, superficial
+similarities in vocabulary must be separated from genuine similarities due to descent. Linguists call these
+genuine homologies “cognates.” The diagnosis of cognates is a challenging task that requires detailed specialist
+knowledge to detect systematic sound correspondences. Then an even more difficult problem is encountered: The rate
+of vocabulary evolution is so rapid that it erases distant or "deep" historical connections.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Russell D. Gray"
+]
+
+# parts of the world
+groups = ['review']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Gray2005"  # @xxxx
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "Perspective on Dunn et al. (2005)"
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

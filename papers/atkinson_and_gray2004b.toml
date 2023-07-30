@@ -1,0 +1,39 @@
+title = "How old is the Indo-European language family? Illumination or more moths to the flame?"
+
+doi = ""
+
+abstract = """
+There are two main theories of Indo-European origin – the Kurgan and Anatolian hypotheses. Archaeological, genetic
+and linguistic evidence has been unable to resolve the debate about Indo-European origins. Here we describe how
+likelihood models of lexical evolution, Bayesian inference of phylogeny and rate smoothing algorithms can be used
+to estimate the age of the Indo-European language family, and thus test between the time depth predictions of the
+Kurgan and Anatolian hypotheses. Estimated divergence times are consistent with the Anatolian theory of
+Indo-European origin. We evaluate the robustness of this result and address some potential criticisms of our
+approach. We argue that the use of a large number of high quality lexical characters, numerous calibration points,
+appropriate likelihood models and rate smoothing make the previously intractable problem of estimating divergence
+dates quite solvable.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Quentin D. Atkinson",
+    "Russell D. Gray",
+]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Atkinson2004b"  # @xxxx
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = ""
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

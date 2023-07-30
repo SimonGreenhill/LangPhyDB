@@ -1,0 +1,40 @@
+title = "Are Accurate Dates an Intractable Problem for Historical Linguistics?"
+
+doi = ""
+
+abstract = """
+Ancient population movements and cultural transformations have left us with a fascinating legacy of
+archaeological, genetic and linguistic evidence. Synthesizing these historical archives allows us to reconstruct
+the past with more detail and greater certainty than would be possible on the basis of any discipline on its own.
+One important aspect of historical inference is the dating of ancient events. Unfortunately, date estimates based
+on historical linguistics are often viewed with scepticism, limiting our ability to test hypotheses with
+linguistic data. Instead pre-historians prefer dating methods available in archaeology and genetics. Here we show
+that the problems with traditional linguistic date estimation techniques (glottochronology) can be overcome by
+applying methods from evolutionary biology. As an example, we look at the age of the Indo-European language
+family. We show that phylogenetic methods have the potential to provide accurate dates in historical linguistics
+and thus represent a powerful tool to resolve questions about human prehistory.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Quentin D. Atkinson",
+    "Russell D. Gray",
+]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Atkinson2004"  # @xxxx
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = ""
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

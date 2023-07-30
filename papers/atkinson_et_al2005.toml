@@ -1,0 +1,601 @@
+title = "From Words to Dates: Water Into Wine, Mathemagic or Phylogenetic Inference?"
+
+doi = "10.1111/j.1467-968X.2005.00151.x"
+
+abstract = """
+Gray & Atkinson’s (2003) application of quantitative phylogenetic methods to Dyen, Kruskal & Black’s (1992)
+IndoEuropean database produced controversial divergence time estimates. Here we test the robustness of these
+results using an alternative data set of ancient Indo-European languages. We employ two very different stochastic
+models of lexical evolution – Gray & Atkinson’s (2003) finite-sites model and a stochastic-Dollo model of word
+evolution introduced by Nicholls & Gray (in press). Results of this analysis support the findings of Gray &
+Atkinson (2003). We also tested the ability of both methods to reconstruct phylogeny and divergence times
+accurately from synthetic data. The methods performed well under a range of scenarios, including widespread and
+localized borrowing.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Quentin D. Atkinson",
+    "Geoff K. Nicholls",
+    "David Welch",
+    "Russell D. Gray"
+]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Atkinson2005"  # @xxxx
+
+# type of study
+type = ['phylogenetic', 'dating']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.Ringe2002]
+    ntaxa = 24
+    nchars = 430
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Ringe2002'
+    items = ''
+    comment = ''
+
+    [data.Dyen1992]
+    ntaxa = 87
+    nchars = 200
+    nsites = 2449 
+    datatype = 'lexical cognates'
+    source = '@Dyen1992'
+    items = 'swadesh200'
+    comment = ''
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+    
+    [calibration.IberianFrench]
+    taxa = ['west2813']
+    age = "uniform(1150, 1500)"
+    units = "ybp" # ybp
+    description = "Death of last writers knowing classical Latin and repetition of Latin liturgical formulas without comprehension in sixth to eighth centuries AD. Strasburg Oaths, 842AD."
+
+    [calibration.ItalicRomanian]
+    taxa = ['ital1285', 'east2714']
+    age = "uniform(1650, 1800)"
+    units = "ybp" # ybp
+    description = "Last Roman troops withdrawn to south of Danube, 270AD. Dacia conquered by Rome, 112AD."
+
+    [calibration.Germanic]
+    taxa = ['germ1287']
+    age = "uniform(1650, 1700)"
+    units = "ybp" # ybp
+    description = "Germanic tribes united against Rome, 1AD. Gothic migration to Eastern Europe, 180AD. Earliest attested North Germanic inscriptions date from 3rd century AD."
+
+    [calibration.WelshBreton]
+    taxa = ['bryt1239']
+    age = "uniform(1400, 1550)"
+    units = "ybp" # ybp
+    description = "Migrants from Britain colonize Brittany in 5th century AD."
+
+    [calibration.IrishWelsh]
+    taxa = ['tgbc1234']
+    age = ">1650"
+    units = "ybp" # ybp
+    description = "Archaic Irish inscriptions date back to the 5th century AD – divergence must have occurred well before this time."
+
+    [calibration.Indic]
+    taxa = ['indo1321']
+    age = ">2150"
+    units = "ybp" # ybp
+    description = "Singhalese records dating from as early as 2nd century BC indicate that Indic languages had begun to diverge by this time."
+
+    [calibration.Iranian]
+    taxa = ['iran1269']
+    age = ">2450"
+    units = "ybp" # ybp
+    description = "By 500BC Old Persian was distinct from the Eastern Iranian dialects."
+    
+    [calibration.IndoIranian]
+    taxa = ['indo1320']
+    age = ">2950"
+    units = "ybp" # ybp
+    description = "Rgveda, an identifiably Indic epic, is thought to date from between 1450-1000BC. The Avesta, a similar Iranian epic, has been recorded in oral tradition since before 800BC."
+
+    [calibration.Slavic]
+    taxa = ['slav1255']
+    age = ">1250"
+    units = "ybp" # ybp
+    description = "Old Church Slavonic and East Slavic texts date to beginning of 9th century and indicate significant divergence by this time. The split must have occurred after the Balto-Slavic divergence."
+
+    [calibration.BaltoSlavic]
+    taxa = ['balt1263']
+    age = "uniform(1850, 3350)"
+    units = "ybp" # ybp
+    description = "Distinct Slavic culture and language known to pre-date 100AD on the basis of Tacitus's 'Germany'. Archaeological evidence suggests the split may have occurred as early as 1,400BC."
+
+    [calibration.Greeksplit]
+    taxa = ['gree1276']
+    age = ">3450"
+    units = "ybp" # ybp
+    description = "Earliest form of an ancient Greek dialect is Mycenaean, attested in Linear B texts dating from 15th century BC"
+
+    [calibration.Tocharic]
+    taxa = ['tokh1241']
+    age = "uniform(1600, 2090)"
+    units = "ybp" # ybp
+    description = "Tocharian languages are thought to have diverged shortly after the fall of Bactria (135BC) and no later than 100 years before the first known inscriptions of Tocharian B."
+
+    [calibration.TocharianA]
+    taxa = ['tokh1242']
+    age = "uniform(1200, 1450)"
+    units = "ybp" # ybp
+    description = "Tocharian languages are thought to have diverged shortly after the fall of Bactria (135BC) and no later than 100 years before the first known inscriptions of Tocharian B."
+
+    [calibration.TocharianB]
+    taxa = ['tokh1243']
+    age = "uniform(1200, 1450)"
+    units = "ybp" # ybp
+    description = "Tocharian languages are thought to have diverged shortly after the fall of Bactria (135BC) and no later than 100 years before the first known inscriptions of Tocharian B."
+
+    [calibration.Hittite]
+    taxa = ['tokh1243']
+    age = "uniform(3250, 3750)"
+    units = "ybp" # ybp
+    description = "Oldest Hittite text of King Anittas from the 18th century BC. Latest texts from the 14th-13th centuries BC."
+
+
+
+# analysis information
+[analysis]
+    
+    notes = "24 analyses presented, various combinations of priors, cognate coding stringency, language samples, and datasets"
+    
+
+    [analysis.DF1]
+    tool = 'mrbayes'
+    model = ''
+    details = "all cognacy informations, uniform branch length priors, gamma distributed rates, PL"
+    data = "@Dyen1992"
+
+
+    [analysis.DF1_dating]
+    tool = 'r8s'
+    model = ''
+    details = "all cognacy informations, uniform branch length priors, gamma distributed rates, PL"
+    data = "@Dyen1992"
+
+
+    [analysis.DF2]
+    tool = 'mrbayes'
+    model = ''
+    details = "as DF1 but with conservative cognates only"
+    data = "@Dyen1992"
+
+
+    [analysis.DF2_dating]
+    tool = 'r8s'
+    model = ''
+    details = "as DF1 but with conservative cognates only"
+    data = "@Dyen1992"
+
+
+    [analysis.DF3]
+    tool = 'mrbayes'
+    model = ''
+    details = "as DF1 but loose constraints"
+    data = "@Dyen1992"
+
+
+    [analysis.DF3_dating]
+    tool = 'r8s'
+    model = ''
+    details = "as DF1 but loose constraints"
+    data = "@Dyen1992"
+
+
+    [analysis.DF4]
+    tool = 'mrbayes'
+    model = ''
+    details = "as DF1 but missing data coded as '?'"
+    data = "@Dyen1992"
+
+
+    [analysis.DF4_dating]
+    tool = 'r8s'
+    model = ''
+    details = "as DF1 but missing data coded as '?'"
+    data = "@Dyen1992"
+
+
+    [analysis.DF5]
+    tool = 'mrbayes'
+    model = ''
+    details = "as DF3 but strict clock"
+    data = "@Dyen1992"
+
+
+    [analysis.DF5_dating]
+    tool = 'r8s'
+    model = ''
+    details = "as DF3 but strict clock"
+    data = "@Dyen1992"
+
+
+    [analysis.DF6]
+    tool = 'mrbayes'
+    model = ''
+    details = "as DF2 with exponential branch length priors"
+    data = "@Dyen1992"
+
+
+    [analysis.DF6_dating]
+    tool = 'r8s'
+    model = ''
+    details = "as DF2 with exponential branch length priors"
+    data = "@Dyen1992"
+
+
+    [analysis.DF7]
+    tool = 'mrbayes'
+    model = ''
+    details = "as DF2 with Swadesh 100 terms only"
+    data = "@Dyen1992"
+
+
+    [analysis.DF7_dating]
+    tool = 'r8s'
+    model = ''
+    details = "as DF2 with Swadesh 100 terms only"
+    data = "@Dyen1992"
+
+
+    [analysis.DF8]
+    tool = 'mrbayes'
+    model = ''
+    details = "as with DF2 with selection of 20 languages"
+    data = "@Dyen1992"
+
+
+    [analysis.DF8_dating]
+    tool = 'r8s'
+    model = ''
+    details = "as with DF2 with selection of 20 languages"
+    data = "@Dyen1992"
+
+
+    [analysis.DF9]
+    tool = 'mrbayes'
+    model = ''
+    details = "as with DF8 with another selection of 20 languages"
+    data = "@Dyen1992"
+
+
+    [analysis.DF9_dating]
+    tool = 'r8s'
+    model = ''
+    details = "as with DF8 with another selection of 20 languages"
+    data = "@Dyen1992"
+
+
+    [analysis.DD10]
+    tool = 'traitlab'
+    model = ''
+    details = "conservative cognacy judgements"
+    data = "@Dyen1992"
+
+
+    [analysis.DD11]
+    tool = 'traitlab'
+    model = ''
+    details = "as DD10 with Swadesh 100 items only"
+    data = "@Dyen1992"
+
+
+    [analysis.DD12]
+    tool = 'traitlab'
+    model = ''
+    details = "as DD10 with selection of 31 languages"
+    data = "@Dyen1992"
+
+
+    [analysis.RF1]
+    tool = 'mrbayes'
+    model = ''
+    details = "uniform branch length priors, gamma distributed"
+    data = "@Ringe2002"
+
+
+    [analysis.RF1_dating]
+    tool = 'r8s'
+    model = ''
+    details = "uniform branch length priors, gamma distributed"
+    data = "@Ringe2002"
+
+
+    [analysis.RF2]
+    tool = 'mrbayes'
+    model = ''
+    details = "as RF1 with exponential branch length priors"
+    data = "@Ringe2002"
+
+
+    [analysis.RF2_dating]
+    tool = 'r8s'
+    model = ''
+    details = "as RF1 with exponential branch length priors"
+    data = "@Ringe2002"
+
+
+    [analysis.RF3]
+    tool = 'mrbayes'
+    model = ''
+    details = "as RF1 with fine grained cognacy judgements for some characters"
+    data = "@Ringe2002"
+
+
+    [analysis.RF3_dating]
+    tool = 'r8s'
+    model = ''
+    details = "as RF1 with fine grained cognacy judgements for some characters"
+    data = "@Ringe2002"
+
+
+    [analysis.RF4]
+    tool = 'mrbayes'
+    model = ''
+    details = "as RF1 with Swadesh 200 word list only"
+    data = "@Ringe2002"
+
+
+    [analysis.RF4_dating]
+    tool = 'r8s'
+    model = ''
+    details = "as RF1 with Swadesh 200 word list only"
+    data = "@Ringe2002"
+
+
+    [analysis.RF5]
+    tool = 'mrbayes'
+    model = ''
+    details = "as RF1 with Swadesh 100 word list only"
+    data = "@Ringe2002"
+
+
+    [analysis.RF5_dating]
+    tool = 'r8s'
+    model = ''
+    details = "as RF1 with Swadesh 100 word list only"
+    data = "@Ringe2002"
+
+
+    [analysis.RF6]
+    tool = 'mrbayes'
+    model = ''
+    details = "as RF1 with topology constraint in accordance with Ringe et al. (2002)"
+    data = "@Ringe2002"
+
+
+    [analysis.RF6_dating]
+    tool = 'r8s'
+    model = ''
+    details = "as RF1 with topology constraint in accordance with Ringe et al. (2002)"
+    data = "@Ringe2002"
+
+
+    [analysis.RF7]
+    tool = 'mrbayes'
+    model = ''
+    details = "as RF1 with equal rates across sites"
+    data = "@Ringe2002"
+
+
+    [analysis.RF7_dating]
+    tool = 'r8s'
+    model = ''
+    details = "as RF1 with equal rates across sites"
+    data = "@Ringe2002"
+
+
+    [analysis.RF8]
+    tool = 'mrbayes'
+    model = ''
+    details = "as RF1 with strict clock"
+    data = "@Ringe2002"
+
+
+    [analysis.RF8_dating]
+    tool = 'r8s'
+    model = ''
+    details = "as RF1 with strict clock"
+    data = "@Ringe2002"
+
+
+    [analysis.RD9]
+    tool = 'traitlab'
+    model = ''
+    details = "Uniform MRCA time-prior, 15 languages with over 10% sampling"
+    data = "@Ringe2002"
+
+
+    [analysis.RD10]
+    tool = 'traitlab'
+    model = ''
+    details = "as RD9 with fine grained cognacy judgements for some characters"
+    data = "@Ringe2002"
+
+
+    [analysis.RD11]
+    tool = 'traitlab'
+    model = ''
+    details = "as RD9 with Swadesh 200 word list items only"
+    data = "@Ringe2002"
+
+
+    [analysis.RD12]
+    tool = 'traitlab'
+    model = ''
+    details = "as RD9 with Swadesh 100 word list items only, 17 languages with over 10% sampling."
+    data = "@Ringe2002"
+
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.DF1]
+    taxa = ['indo1319']
+    age = "normal(8764, 544)"
+    units = "y2000"
+    notes = ""
+
+    [inferredage.DF2]
+    taxa = ['indo1319']
+    age = "normal(9201, 670)"
+    units = "y2000"
+    notes = ""
+
+    [inferredage.DF3]
+    taxa = ['indo1319']
+    age = "normal(8794, 533)"
+    units = "y2000"
+    notes = ""
+
+    [inferredage.DF4]
+    taxa = ['indo1319']
+    age = "normal(8699, 561)"
+    units = "y2000"
+    notes = ""
+
+    [inferredage.DF5]
+    taxa = ['indo1319']
+    age = "normal(8829, 520)"
+    units = "y2000"
+    notes = ""
+
+    [inferredage.DF6]
+    taxa = ['indo1319']
+    age = "normal(9936, 843)"
+    units = "y2000"
+    notes = ""
+
+    [inferredage.DF7]
+    taxa = ['indo1319']
+    age = "normal(9176, 855)"
+    units = "y2000"
+    notes = ""
+
+    [inferredage.DF8]
+    taxa = ['indo1319']
+    age = "normal(7900, 735)"
+    units = "y2000"
+    notes = ""
+
+    [inferredage.DF9]
+    taxa = ['indo1319']
+    age = "normal(8590, 748)"
+    units = "y2000"
+    notes = ""
+
+    [inferredage.DD10]
+    taxa = ['indo1319']
+    age = "normal(7400, 218)"
+    units = "y2000"
+    notes = ""
+
+    [inferredage.DD11]
+    taxa = ['indo1319']
+    age = "normal(8714, 410)"
+    units = "y2000"
+    notes = ""
+
+    [inferredage.DD12]
+    taxa = ['indo1319']
+    age = "normal(7834, 360)"
+    units = "y2000"
+    notes = ""
+
+    [inferredage.RF1]
+    taxa = ['indo1319']
+    age = "normal(7964, 645)"
+    units = "y2000"
+    notes = ""
+
+    [inferredage.RF2]
+    taxa = ['indo1319']
+    age = "normal(7942, 702)"
+    units = "y2000"
+    notes = ""
+
+    [inferredage.RF3]
+    taxa = ['indo1319']
+    age = "normal(9166, 671)"
+    units = "y2000"
+    notes = ""
+
+    [inferredage.RF4]
+    taxa = ['indo1319']
+    age = "normal(9770, 1150)"
+    units = "y2000"
+    notes = ""
+
+    [inferredage.RF5]
+    taxa = ['indo1319']
+    age = "normal(7106, 671)"
+    units = "y2000"
+    notes = ""
+
+    [inferredage.RF6]
+    taxa = ['indo1319']
+    age = "normal(7932, 572)"
+    units = "y2000"
+    notes = ""
+
+    [inferredage.RF7]
+    taxa = ['indo1319']
+    age = "normal(7665, 313)"
+    units = "y2000"
+    notes = ""
+
+    [inferredage.RF8]
+    taxa = ['indo1319']
+    age = "normal(7956, 612)"
+    units = "y2000"
+    notes = ""
+
+    [inferredage.RD9]
+    taxa = ['indo1319']
+    age = "normal(7552, 366)"
+    units = "y2000"
+    notes = ""
+
+    [inferredage.RD10]
+    taxa = ['indo1319']
+    age = "normal(7671, 368)"
+    units = "y2000"
+    notes = ""
+
+    [inferredage.RD11]
+    taxa = ['indo1319']
+    age = "normal(7513, 406)"
+    units = "y2000"
+    notes = ""
+
+    [inferredage.RD12]
+    taxa = ['indo1319']
+    age = "normal(7869, 659)"
+    units = "y2000"
+    notes = ""
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

@@ -1,0 +1,712 @@
+title = "Language trees with sampled ancestors support a hybrid model for the origin of Indo-European languages"
+
+doi = "10.1126/science.abg0818"
+
+abstract = """
+The origins of the Indo-European language family are hotly disputed. Bayesian phylogenetic analyses of
+core vocabulary have produced conflicting results, with some supporting a
+farming expansion out of Anatolia ~9000 years before present (yr B.P.), while others support a
+spread with horse-based pastoralism out of the Pontic-Caspian Steppe ~6000 yr B.P. Here we
+present an extensive database of Indo-European core vocabulary that eliminates past inconsistencies in cognate
+coding. Ancestry-enabled phylogenetic analysis of this dataset indicates that few ancient languages are direct
+ancestors of modern clades and produces a root age of ~8120 yr B.P. for the family. Although this date is not
+consistent with the Steppe hypothesis, it does not rule out an initial homeland south of the Caucasus, with a
+subsequent branch northward onto the steppe and then across Europe. We reconcile this hybrid hypothesis with
+recently published ancient DNA evidence from the steppe and the northern Fertile Crescent. 
+Languages of the Indo-European family are spoken by almost half of the world’s population, but their origins and
+patterns of spread are disputed. Heggarty et al. present a database of 109 modern and 52 time-calibrated
+historical Indo-European languages, which they analyzed with models of Bayesian phylogenetic inference. Their
+results suggest an emergence of Indo-European languages around 8000 years before present. This is a deeper root
+date than previously thought, and it fits with an initial origin south of the Caucasus followed by a branch
+northward into the Steppe region. These findings lead to a “hybrid hypothesis” that reconciles current linguistic
+and ancient DNA evidence from both the eastern Fertile Crescent (as a primary source) and the steppe (as a
+secondary homeland). —SNV Indo-European languages emerged south of the Caucasus around 8300 years ago, followed
+by an expansion northward to the Steppe regions.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Paul Heggarty",
+    "Cormac Anderson",
+    "Matthew Scarborough",
+    "Benedict King",
+    "Remco Bouckaert",
+    "Lechosław Jocz",
+    "Martin Joachim Kümmel",
+    "Thomas Jügel",
+    "Britta Irslinger",
+    "Roland Pooth",
+    "Henrik Liljegren",
+    "Richard F. Strand",
+    "Geoffrey Haig",
+    "Martin Macák",
+    "Ronald I. Kim",
+    "Erik Anonby",
+    "Tijmen Pronk",
+    "Oleg Belyaev",
+    "Tonya Kim Dewey-Findell",
+    "Matthew Boutilier",
+    "Cassandra Freiberg",
+    "Robert Tegethoff",
+    "Matilde Serangeli",
+    "Nikos Liosis",
+    "Krzysztof Stroński",
+    "Kim Schulte",
+    "Ganesh Kumar Gupta",
+    "Wolfgang Haak",
+    "Johannes Krause",
+    "Quentin D. Atkinson",
+    "Simon J. Greenhill",
+    "Denise Kühnert",
+    "Russell D. Gray"
+]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "Heggarty2023"  # @xxxx
+
+# type of study
+type = ['phylogenetic', 'dating']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "161 Indo-European languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.iecor]
+    ntaxa = 161
+    nchars = 170
+    nsites = 4990
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = ''
+
+    [data.ielex]
+    ntaxa = 103
+    nchars = 207
+    nsites = 5047
+    datatype = 'lexical cognates'
+    source = '@IELex'
+    items = 'swadesh200'
+    comment = ''
+    
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+
+    [calibration.Hittite]
+    taxa = ['hitt1242']
+    age = "normal(3450, 125)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.Luvian]
+    taxa = ['cune1239']
+    age = "normal(3350, 75)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.TocharianA]
+    taxa = ['tokh1242']
+    age = "normal(1375, 75)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.TocharianB]
+    taxa = ['tokh1243']
+    age = "normal(1350, 75)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.GreekMycenaean]
+    taxa = ['myce1241']
+    age = "normal(3350, 55)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.GreekAncient]
+    taxa = ['anci1242']
+    age = "normal(2400, 32)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.GreekNewTestament]
+    taxa = ['koin1234']
+    age = "normal(1900, 20)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.TsakonianPropontis]
+    taxa = ['prop1240']
+    age = "normal(40, 10)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.ArmenianClassical]
+    taxa = ['clas1249']
+    age = "normal(1550, 25)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.VedicEarly]
+    taxa = ['sans1269']
+    age = "lognormal(700, 3000, 1, realspace=True)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.Pali]
+    taxa = ['pali1273']
+    age = "normal(2450, 75)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.AvestanYounger]
+    taxa = ['aves1237']
+    age = "lognormal(350, 2550, 1, realspace=True)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.Khwarazmian]
+    taxa = ['khwa1238']
+    age = "normal(850, 75)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.Sogdian]
+    taxa = ['sogd1245']
+    age = "normal(1150, 25)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.Khotanese]
+    taxa = ['khot1251']
+    age = "normal(1500, 125)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.Bactrian]
+    taxa = ['bact1239']
+    age = "normal(1400, 25)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.Parthian]
+    taxa = ['part1239']
+    age = "normal(2100, 150)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.OldPersian]
+    taxa = ['oldp1254']
+    age = "normal(2450, 75)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.MiddlePersian]
+    taxa = ['pahl1241']
+    age = "normal(1600, 150)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.OldPrussian]
+    taxa = ['prus1238']
+    age = "normal(500, 50)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.OldChurchSlavonic]
+    taxa = ['chur1257']
+    age = "normal(1000, 50)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.SlovenianEarlyModern]
+    taxa = ['slov1268']
+    age = "normal(305, 15)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.OldPolish]
+    taxa = ['poli1260']
+    age = "normal(600, 50)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.Polabian]
+    taxa = ['pola1255']
+    age = "normal(320, 20)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.OldCzech]
+    taxa = ['czec1258']
+    age = "normal(656, 31)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.OldNovgorod]
+    taxa = ['oldr1238']
+    age = "normal(795, 107)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.Gothic]
+    taxa = ['goth1244']
+    age = "normal(1630, 10)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.OldIcelandic]
+    taxa = ['oldn1244']
+    age = "normal(800, 15)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.OldSwedish]
+    taxa = ['swed1254']
+    age = "normal(650, 75)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.OldEnglish]
+    taxa = ['olde1238']
+    age = "normal(1050, 50)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.OldFrisian]
+    taxa = ['oldf1241']
+    age = "normal(625, 35)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.OldSaxon]
+    taxa = ['olds1250']
+    age = "normal(1175, 15)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.OldHighGerman]
+    taxa = ['oldh1241']
+    age = "normal(1170, 5)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.MiddleHighGerman]
+    taxa = ['midd1343']
+    age = "normal(750, 25)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.MiddleDutch]
+    taxa = ['midd1321']
+    age = "normal(800, 15)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.Latin]
+    taxa = ['lati1261']
+    age = "normal(2050, 75)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.Dalmatian]
+    taxa = ['dalm1243']
+    age = "normal(130, 15)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.Anglo-Norman]
+    taxa = ['angl1258']
+    age = "normal(700, 50)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.OldOccitan]
+    taxa = ['oldp1253']
+    age = "normal(700, 50)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.OldCatalan]
+    taxa = ['oldc1251']
+    age = "normal(750, 25)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.OldSpanish]
+    taxa = ['olds1249']
+    age = "normal(750, 75)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.Oscan]
+    taxa = ['osca1245']
+    age = "normal(2200, 75)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.Umbrian]
+    taxa = ['umbr1253']
+    age = "normal(2150, 75)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.Gaulish]
+    taxa = ['tran1282']
+    age = "normal(2050, 125)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.OldBreton]
+    taxa = ['oldb1248']
+    age = "normal(1050, 75)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.MiddleBreton]
+    taxa = ['midd1359']
+    age = "normal(450, 50)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.MiddleCornish]
+    taxa = ['mode1263']
+    age = "normal(700, 100)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.LateCornish]
+    taxa = ['oldc1252']
+    age = "normal(300, 50)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.OldWelsh]
+    taxa = ['oldw1241']
+    age = "normal(1050, 75)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.MiddleWelsh]
+    taxa = ['midd1363']
+    age = "normal(650, 75)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.OldIrish]
+    taxa = ['oldi1245']
+    age = "normal(1250, 50)"
+    units = "ybp"
+    description = ""
+
+
+    [calibration.GaelicManx]
+    taxa = ['manx1243']
+    age = "normal(200, 30)"
+    units = "ybp"
+    description = ""
+
+
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+
+    [analysis.M1]
+    tool = 'beast2'
+    model = 'ctmc+gamma+relaxed+sa'
+    details = "CTMC+gamma"
+    data = '@data.iecor'
+
+    [analysis.M2]
+    tool = 'beast2'
+    model = 'covarion+relaxed+sa+1rate'
+    details = ""
+    data = '@data.iecor'
+
+    [analysis.M3]
+    tool = 'beast2'
+    model = 'covarion+relaxed+sa+binned'
+    details = "binned rates n=8 (best fitting model)"
+    data = '@data.iecor'
+
+    [analysis.M4]
+    tool = 'beast2'
+    model = 'covarion+relaxed+sa+rate-per-word'
+    details = ""
+    data = '@data.iecor'
+
+    [analysis.SA1]
+    tool = 'beast2'
+    model = 'covarion+relaxed+sa+binned'
+    details = "as M3 but reran without deep calibrations as these may be problematic"
+    data = '@data.iecor'
+
+    [analysis.SA2]
+    tool = 'beast2'
+    model = 'covarion+relaxed+sa+binned'
+    details = "as M3 but alternate handling of parallel loanwords"
+    data = '@data.iecor'
+
+    [analysis.SA3]
+    tool = 'beast2'
+    model = 'covarion+relaxed+sa+binned'
+    details = "as M3 but conditioning on root rather than origin"
+    data = '@data.iecor'
+
+    [analysis.SA4a]
+    tool = 'beast2'
+    model = 'covarion+relaxed+sa+binned'
+    details = "as M3 but evaluate size of rho - 200-300 total IE languages"
+    data = '@data.iecor'
+
+    [analysis.SAb]
+    tool = 'beast2'
+    model = 'covarion+relaxed+sa+binned'
+    details = "as M3 but evaluate size of rho - 600-800 total IE languages"
+    data = '@data.iecor'
+
+    [analysis.SA5]
+    tool = 'beast2'
+    model = 'covarion+relaxed+sa+binned'
+    details = "as M3 but evaluate effect of missing data - remove 10 taxa with highest missing data"
+    data = '@data.iecor'
+
+    [analysis.SA6a]
+    tool = 'beast2'
+    model = 'covarion+relaxed+sa+binned'
+    details = "as M3 but enforce topology constraints on Nuristani, SW Iraniac and within W. Germanic"
+    data = '@data.iecor'
+
+    [analysis.SA6b]
+    tool = 'beast2'
+    model = 'covarion+relaxed+sa+binned'
+    details = "as M3 but enforce topology constraints on Nuristani, SW Iranian and within W. Germanic, and add deep constraints for Steppe hypothesis"
+    data = '@data.iecor'
+
+    [analysis.SA7a]
+    tool = 'beast2'
+    model = 'covarion+relaxed+directancestry+binned'
+    details = "as M3 but enforce direct ancestry of four most likely direct ancestors"
+    data = '@data.iecor'
+
+    [analysis.SA7b]
+    tool = 'beast2'
+    model = 'covarion+relaxed+directancestry+binned'
+    details = "as M3 but enforce direct ancestry of four most likely direct ancestors and latin + romance"
+    data = '@data.iecor'
+
+    [analysis.SA7c]
+    tool = 'beast2'
+    model = 'covarion+relaxed+directancestry+binned'
+    details = "as M3 but enforce direct ancestry of all 27 plausible direct ancestors"
+    data = '@data.iecor'
+
+    [analysis.SA8a]
+    tool = 'beast2'
+    model = 'covarion+relaxed+sa+binned'
+    details = "as M3 but using IELex data with the eight ancestry constraints from Chang"
+    data = '@data.ielex'
+
+    [analysis.SA8b]
+    tool = 'beast2'
+    model = 'covarion+relaxed+sa+binned'
+    details = "as M3 but using IELex data without the eight ancestry constraints from Chang"
+    data = '@data.ielex'
+
+    [analysis.SA9]
+    tool = 'beast2'
+    model = 'covarion+relaxed+sa+binned'
+    details = "as M3 but use a subset of the data to rule out effect of ancestral polymorphism"
+    data = '@data.iecor'
+
+    [analysis.SA10]
+    tool = 'beast2'
+    model = 'multistate+covarion+relaxed+sa+binned'
+    details = "Multistate model"
+    data = '@data.iecor'
+
+
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.ProtoIndoEuropean]
+    taxa = ["indo1319"]
+    age = "hpd(6981, 9613, 6735)"
+    units = "y2000"
+    notes = ''
+
+    [inferredage.BaltoSlavic_Italic_Germanic_Celtic]
+    taxa = ["balt1263", "ital1284", "germ1287", "celt1248"]
+    age = "hpd(6465, 7944, 5036)"
+    units = "y2000"
+    notes = ''
+
+    [inferredage.Italic_Germanic_Celtic]
+    taxa = ["ital1284", "germ1287", "celt1248"]
+    age = "hpd(5564, 6984, 4231)"
+    units = "y2000"
+    notes = ''
+
+    [inferredage.Indo-Iranic]
+    taxa = ["indo1320"]
+    age = "hpd(5520, 6796, 4535)"
+    units = "y2000"
+    notes = ''
+
+    [inferredage.Greco-Armenian]
+    taxa = ["gree1276", "arme1241"]
+    age = "hpd(5310, 6930, 3999)"
+    units = "y2000"
+    notes = ''
+
+    [inferredage.Balto-Slavic]
+    taxa = ["balt1263"]
+    age = "hpd(3663, 5034, 2531)"
+    units = "y2000"
+    notes = ''
+
+    [inferredage.Anatolian]
+    taxa = ["anat1257"]
+    age = "hpd(4618, 5620, 3857)"
+    units = "y2000"
+    notes = ''
+
+    [inferredage.Indic]
+    taxa = ["indo1321"]
+    age = "hpd(4366, 5253, 3640)"
+    units = "y2000"
+    notes = ''
+
+    [inferredage.Iranic]
+    taxa = ["iran1269"]
+    age = "hpd(4110, 4894, 3464)"
+    units = "y2000"
+    notes = ''
+
+    [inferredage.Italic]
+    taxa = ["ital1284"]
+    age = "hpd(3431, 4286, 2771)"
+    units = "y2000"
+    notes = ''
+
+    [inferredage.Greek]
+    taxa = ["gree1276"]
+    age = "hpd(3364, 3609, 3218)"
+    units = "y2000"
+    notes = ''
+
+    [inferredage.Celtic]
+    taxa = ["celt1248"]
+    age = "hpd(3205, 3963, 2515)"
+    units = "y2000"
+    notes = ''
+
+    [inferredage.Baltic]
+    taxa = ["east2280"]
+    age = "hpd(2439, 3484, 1526)"
+    units = "y2000"
+    notes = ''
+
+    [inferredage.Germanic]
+    taxa = ["germ1287"]
+    age = "hpd(2337, 2865, 1931)"
+    units = "y2000"
+    notes = ''
+
+    [inferredage.Tocharian]
+    taxa = ["tokh1241"]
+    age = "hpd(1828, 2315, 1495)"
+    units = "y2000"
+    notes = ''
+
+    [inferredage.Armenian]
+    taxa = ["arme1241"]
+    age = "hpd(1578, 1851, 1485)"
+    units = "y2000"
+    notes = ''
+
+    [inferredage.Slavic]
+    taxa = ["slav1255"]
+    age = "hpd(1493, 1837, 1222)"
+    units = "y2000"
+    notes = ''
+
+    [inferredage.Albanian]
+    taxa = ["alba1267"]
+    age = "hpd(1067, 1882, 468)"
+    units = "y2000"
+    notes = ''
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/heggarty_et_al2023" }
+cldf = { title = "CLDF Dataset", link = "https://github.com/lexibank/iecor/" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

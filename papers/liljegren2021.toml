@@ -1,0 +1,67 @@
+title = "Kinship terminologies reveal ancient contact zone in the Hindu Kush"
+
+doi = "10.1515/lingty-2021-2080"
+
+abstract = """
+The Hindu Kush, or the mountain region of northern Pakistan, north- eastern Afghanistan and the northern-most
+part of the Indian-administered Kashmir region, is home to approximately 50 languages belonging to six different
+genera: Indo- Aryan, Iranian, Nuristani, Sino-Tibetan, Turkic and the isolate Burushaski. Areality research on
+this region is only in its early stages, and while its significance as a convergence area has been suggested by
+several scholars, only a few, primarily phonological and grammatical, features have been studied in a more
+systematic fashion. Cross-linguistic research in the realms of semantics and lexical organization has been given
+considerably less attention. However, preliminary findings indicate that features are geographically bundled with
+one another, across genera, in signifi- cant ways, displaying semantic areality on multiple levels throughout the
+region or in one or more of its sub-regions. The present study is an areal-typological investigation of kinship
+terms in the region, in which particular attention is paid to a few notable polysemy patterns and what appears to
+be a significant geographical clustering of these. Comparisons are made between the geographical distribution of
+such patterns and those of some other linguistic features as well as with relevant non-linguistic factors related
+to shared cultural values or identities and a long history of small-scale cross-community interaction in
+different parts of the region.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Henrik Liljegren"
+]
+
+# parts of the world
+groups = ['Hindu Kush']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Liljegren2021"  # @xxxx
+
+# type of study
+type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "59 language varieties from the Hindu-Kush region of Pakistan and Afghanistan"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.kinship]
+    ntaxa = 59
+    nchars = 23
+    nsites = 23
+    datatype = 'structural features'
+    source = ''
+    items = ''
+    comment = 'kinship features'
+
+[analysis]
+    
+    notes = ""
+    
+    [analysis.network]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

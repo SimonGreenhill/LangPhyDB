@@ -1,4 +1,4 @@
 # Readme
 
-See (https://simon.net.nz/phylogenies)[Language Phylogeny Database].
+See [Language Phylogeny Database](https://simon.net.nz/phylogenies).
 

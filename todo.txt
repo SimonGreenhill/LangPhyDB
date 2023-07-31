@@ -60,19 +60,17 @@
 ## Reviews etc (no original phylogenetic analysis)
 
 * Bowern, Claire. 2018. Computational Phylogenetics. Annual Review of Linguistics 4.281–296. doi:10.1146/annurev-linguistics-011516-034142.
-* Eska & Ringe 2004 - Eska, J. F., & Ringe, D. (2004). Recent work in computational linguistic phylogeny. Language, 80(3), 569–582.
+* Eska & Ringe 2004 - Recent work in computational linguistic phylogeny. Language, 80(3), 569–582.
 * Gray et al. 2010 - Gray, Russell D.; David Bryant.; and Simon J. Greenhill. 2010. On the shape and fabric of human history. Philosophical transactions of the Royal Society of London. Series B, Biological sciences 365.3923–33. doi:10.1098/rstb.2010.0162.
 * Gray, Russell D.; Quentin D. Atkinson.; and Simon J. Greenhill. 2011. Language evolution and human history: what a difference a date makes. Philosophical Transactions of the Royal Society B: Biological Sciences 366.1090–1100. doi:10.1098/rstb.2010.0378.
 * Gray, Russell D.; Simon J Greenhill.; and Quentin D Atkinson. 2013. Phylogenetic Models of Language Change Three New Questions. Cultural Evolution: Society, Technology, Language and Religion, ed. by Peter J Richerson and Morten H Christiansen, 12:285–300. Cambridge, Massachusetts: Cambridge University Press.
 * Gray, Russell D.; Simon J. Greenhill.; and R M Ross. 2007. The Pleasures and Perils of Darwinizing Culture (with phylogenies). Biological Theory 2. MIT Press.360–375.
 * Greenhill 2023 - (review)
-* Greenhill, Simon J.; and Russell D. Gray. 2009a. Darwin, language, and two great Pacific voyages. New Zealand Science Review 66.97–101.
 * Greenhill, Simon J.; and Russell D. Gray. 2009b. Austronesian language phylogenies: Myths and misconceptions about Bayesian computational methods. Austronesian historical linguistics and culture history: a festschrift for Robert Blust, ed. by K A Adelaar and A Pawley, 375–397. Canberra: Pacific Linguistics.
 * Greenhill, Simon J.; and Russell D. Gray. 2012. Basic vocabulary and Bayesian phylolinguistics: Issues of understanding and representation. Diachronica 29.523–537. doi:10.1075/dia.29.4.05gre.
 * Holden & Shennan 2005 - Holden, Clare J.; and Stephen J Shennan. 2005. How tree-like is cultural evolution? The evolution of cultural diversity: a phylogenetic approach, ed. by Ruth Mace, Clare J Holden, and Stephen J Shennan, 13–30. London: UCL PRess.
 * Jordan, Fiona M.; and Brad R Huber. 2013. Evolutionary Approaches to Cross-Cultural Anthropology. Cross-Cultural Research 47.91–101. doi:10.1177/1069397112471800.
 * Mace, R. 2005. On the use of phylogenetic comparative methods to test co-evolutionary hypotheses across cultures. The evolution of cultural diversity: a phylogenetic approach, ed. by R Mace, Clare J Holden, and Stephen J Shennan, 199–206. London: UCL Press.
-* Mace, R.; and Clare J Holden. 2005. A phylogenetic approach to cultural evolution. Trends in Ecology & Evolution 20.116–121.
 * Mace, R.; and Fiona Marie Jordan. 2011. Macro-evolutionary studies of cultural diversity: a review of empirical studies of cultural transmission and cultural adaptation. Philosophical Transactions of the Royal Society B: Biological Sciences 366.402–411. doi:10.1098/rstb.2010.0238.
 * Mace, R.; and Mark Pagel. 1994. The Comparative Method in Anthropology. Current Anthropology 35.549–564.
 * Mace, Ruth.; and Mark Pagel. 1997. Phylogenies and Cultural Evolution. Journal of Theoretical Biology 351.349–351.

@@ -35,7 +35,7 @@ bibkey = "@GreenhillHaynie2023"  # @xxxx
 type = ['phylogenetic', 'dating', 'phylogenetic', 'trait']
 
 # short label of taxa "37 languages from.."
-taxa = "33 Uto-Aztecan and Kiowa-Tanoan languages"
+description = "33 Uto-Aztecan and Kiowa-Tanoan languages"
 
 # data
 [data]

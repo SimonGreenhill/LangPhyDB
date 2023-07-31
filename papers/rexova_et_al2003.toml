@@ -24,7 +24,7 @@ bibkey = "@Rexova2003"
 type = ["phylogenetic"]
 
 # short label of taxa "37 languages from.."
-taxa = "84 Indo-European languages"
+description = "84 Indo-European languages"
 
 # data
 [data]

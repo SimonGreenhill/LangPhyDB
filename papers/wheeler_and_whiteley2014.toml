@@ -23,7 +23,7 @@ bibkey = "@Wheeler2014"
 type = ["phylogenetic"]
 
 # short label of taxa "37 languages from.."
-taxa = "40 Uto-Aztecan languages"
+description = "40 Uto-Aztecan languages"
 
 # data
 [data]

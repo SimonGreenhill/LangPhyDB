@@ -39,7 +39,7 @@ bibkey = "@Pacchiarotti2019"  # @xxxx
 type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
-taxa = "115 West-Coast Bantu languages"
+description = "115 West-Coast Bantu languages"
 
 # data
 [data]

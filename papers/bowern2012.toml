@@ -34,7 +34,7 @@ bibkey = "@BowernTasmania2012"  # @xxxx
 # type of study
 type = ['phylogenetic', 'dating', 'network']
 
-taxa = '26 Tasmanian languages'
+description = '26 Tasmanian languages'
 
 # data
 [data]

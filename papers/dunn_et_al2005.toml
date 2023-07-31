@@ -26,7 +26,7 @@ bibkey = "@Dunnetal2005"
 type = ["phylogenetic"]
 
 # short label of taxa "37 languages from.."
-taxa = "31 Island Melanesia languages"
+description = "31 Island Melanesia languages"
 
 # data
 [data]

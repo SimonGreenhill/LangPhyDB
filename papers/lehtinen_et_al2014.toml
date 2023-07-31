@@ -27,7 +27,7 @@ bibkey = "@Lehtinen2014"
 type = ["phylogenetic", "network", "delta"]
 
 # short label of taxa "37 languages from.."
-taxa = "18 Uralic languages"
+description = "18 Uralic languages"
 
 # data
 [data]

@@ -22,7 +22,7 @@ bibkey = "@atkinson2006"
 type = ["phylogenetic", "dating", "network", "trait"]
 
 # short label of taxa "37 languages from.."
-taxa = "30 Mayan languages"
+description = "30 Mayan languages"
 
 ## Methods:
 # | Model                                | Score    | Program         | Comment            |

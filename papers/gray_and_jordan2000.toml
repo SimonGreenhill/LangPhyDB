@@ -23,7 +23,7 @@ bibkey = "@GrayJordan2000"
 type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
-taxa = "77 Austronesian languages"
+description = "77 Austronesian languages"
 
 # data
 [data]

@@ -23,7 +23,7 @@ bibkey = "@Oskolskaya_2021"
 type = ["phylogenetic", "dating"]
 
 # short label of taxa "37 languages from.."
-taxa = "21 Tungusic languages"
+description = "21 Tungusic languages"
 
 # data
 [data]

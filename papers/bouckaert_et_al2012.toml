@@ -28,7 +28,7 @@ bibkey = "@Bouckaert2012"
 type = ["phylogenetic", "dating", "phylogeography"]  # phylogenetic,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
-taxa = "103 Indo-European languages"
+description = "103 Indo-European languages"
 
 # data
 [data]

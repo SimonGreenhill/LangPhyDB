@@ -22,7 +22,7 @@ bibkey = "@Gray2003"
 type = ["phylogenetic", "dating"]
 
 # short label of taxa "37 languages from.."
-taxa = "87 Indo-European languages"
+description = "87 Indo-European languages"
 
 # data
 [data]

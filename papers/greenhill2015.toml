@@ -22,7 +22,7 @@ bibkey = "@Greenhill2015"
 type = ["phylogenetic", "network", "qresidual"]
 
 # short label of taxa "37 languages from.."
-taxa = "14 Huon Peninsula languages"
+description = "14 Huon Peninsula languages"
 
 # data
 [data]

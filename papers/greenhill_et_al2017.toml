@@ -27,7 +27,7 @@ bibkey = "Greenhill2017"
 type = ['macroevolutionary', 'delta', 'qresidual']
 
 # short label of taxa "37 languages from.."
-taxa = "81 Austronesian languages"
+description = "81 Austronesian languages"
 
 # data
 [data]

@@ -28,7 +28,7 @@ bibkey = "@Tresoldi2022"  # @xxxx
 type = ['tutorial']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
-taxa = "Tutorial Article"
+description = "Tutorial Article"
 
 
 [links]

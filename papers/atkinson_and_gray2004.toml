@@ -31,7 +31,7 @@ bibkey = "@Atkinson2004"  # @xxxx
 type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
-taxa = ""
+description = "Review discussing the Indo-European phylogeny by Gray & Atkinson 2003"
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }

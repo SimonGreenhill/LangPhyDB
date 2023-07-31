@@ -26,7 +26,7 @@ bibkey = "@Koile2022"
 type = ["phylogenetic", "dating", "phylogeography"]
 
 # short label of taxa "37 languages from.."
-taxa = "636 Bantu languages"
+description = "636 Bantu languages"
 
 # data
 [data]

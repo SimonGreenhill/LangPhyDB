@@ -33,7 +33,7 @@ bibkey = "@Gray2005"  # @xxxx
 type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
-taxa = "Perspective on Dunn et al. (2005)"
+description = "Perspective on Dunn et al. (2005)"
 
 
 [links]

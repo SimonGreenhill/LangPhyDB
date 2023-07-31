@@ -24,7 +24,7 @@ bibkey = "@Holden2005"
 type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
-taxa = "95 Bantu languages"
+description = "95 Bantu languages"
 
 # data
 [data]

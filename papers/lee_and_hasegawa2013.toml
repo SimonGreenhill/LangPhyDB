@@ -23,7 +23,7 @@ bibkey = "@Lee_2013"
 type = ["phylogenetic", "dating", "phylogeography", "delta", "qresidual"]
 
 # short label of taxa "37 languages from.."
-taxa = "19 Ainu languages"
+description = "19 Ainu languages"
 
 # data
 [data]

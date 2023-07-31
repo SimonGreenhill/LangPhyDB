@@ -27,7 +27,7 @@ bibkey = "@Gao2020"  # @xxxx
 type = ['phylogenetic', 'network', 'delta']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
-taxa = "51 Tibeto-Burman languages"
+description = "51 Tibeto-Burman languages"
 
 # data
 [data]

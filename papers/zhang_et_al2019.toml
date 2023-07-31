@@ -24,7 +24,7 @@ bibkey = "@Zhang_2019"
 type = ["phylogenetic", "dating"]
 
 # short label of taxa "37 languages from.."
-taxa = "109 Sino-Tibetan languages"
+description = "109 Sino-Tibetan languages"
 
 # data
 [data]

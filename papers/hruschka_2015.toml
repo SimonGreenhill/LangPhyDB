@@ -49,7 +49,7 @@ bibkey = "@Hruschka2015"
 type = ["phylogenetic", "dating"]
 
 # short label of taxa "37 languages from.."
-taxa = "26 Turkic languages"
+description = "26 Turkic languages"
 
 # data
 [data]

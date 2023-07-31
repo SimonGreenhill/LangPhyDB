@@ -23,7 +23,7 @@ bibkey = "@Sicoli2014"
 type = ["phylogenetic", "network", "delta", "qresidual"]
 
 # short label of taxa "37 languages from.."
-taxa = "40 Dene-Yeniseian languages"
+description = "40 Dene-Yeniseian languages"
 
 # data
 [data]

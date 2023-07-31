@@ -23,7 +23,7 @@ bibkey = "@Mattos2020"
 type = ["network", "phylogenetic", "distance"]
 
 # short label of taxa "37 languages from.."
-taxa = "16 Creole languages languages"
+description = "16 Creole languages languages"
 
 # data
 [data]

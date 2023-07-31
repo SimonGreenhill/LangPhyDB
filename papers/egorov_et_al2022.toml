@@ -38,7 +38,7 @@ bibkey = "@Egorov2022"
 type = ['phylogenetic', 'dating']
 
 # short label of taxa "37 languages from.."
-taxa = "3 languages, and 15 reconstructed proto-languages"
+description = "3 languages, and 15 reconstructed proto-languages"
 
 # data
 [data]

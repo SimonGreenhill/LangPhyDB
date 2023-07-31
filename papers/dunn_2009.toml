@@ -31,7 +31,7 @@ bibkey = "@Dunn2009"
 type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
-taxa = "31 Island Melanesia languages"
+description = "31 Island Melanesia languages"
 
 # data
 [data]

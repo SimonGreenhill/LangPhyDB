@@ -26,7 +26,7 @@ bibkey = "@Greenhill2023"  # @xxxx
 type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
-taxa = "Review article"
+description = "Review article"
 
 
 [links]

@@ -33,7 +33,7 @@ bibkey = "@Nagaraja2013"
 type = ["phylogenetic", "dating", "network"]
 
 # short label of taxa "37 languages from.."
-taxa = "6 Austroasiatic languages"
+description = "6 Austroasiatic languages"
 
 # data
 [data]

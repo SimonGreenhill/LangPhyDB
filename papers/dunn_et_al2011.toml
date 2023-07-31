@@ -25,7 +25,7 @@ bibkey = "@Dunn2011"
 type = ['macroevolutionary']
 
 # short label of taxa "37 languages from.."
-taxa = "79 Indo-European languages, 130 Austronesian languages, 66 Bantu languages and 26 Uto-Aztecan languages"
+description = "79 Indo-European languages, 130 Austronesian languages, 66 Bantu languages and 26 Uto-Aztecan languages"
 
 # data
 [data]

@@ -27,7 +27,7 @@ bibkey = "@Honkola2013"
 type = ["phylogenetic", "dating", "macroevolutionary"]
 
 # short label of taxa "37 languages from.."
-taxa = "17 Uralic languages"
+description = "17 Uralic languages"
 
 # data
 [data]

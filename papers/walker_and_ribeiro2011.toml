@@ -23,7 +23,7 @@ bibkey = "@Walker2011"
 type = ["phylogenetic", "network", "phylogeography"]  # phylogenetic,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
-taxa = "60 Arawakan languages"
+description = "60 Arawakan languages"
 
 # data
 [data]

@@ -31,7 +31,7 @@ bibkey = "@Mace2005"  # @xxxx
 type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
-taxa = "Review of cultural phylogenetic methods"
+description = "Review of cultural phylogenetic methods"
 
 
 [links]

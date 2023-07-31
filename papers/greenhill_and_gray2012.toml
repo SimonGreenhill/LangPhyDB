@@ -24,7 +24,7 @@ bibkey = "@Greenhill2012"
 type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
-taxa = "Review of language phylogenies with focus on defending Gray et al. 2009"
+description = "Review of language phylogenies with focus on defending Gray et al. 2009"
 
 [links]
 links = []

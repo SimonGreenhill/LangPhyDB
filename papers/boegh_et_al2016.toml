@@ -31,7 +31,7 @@ bibkey = "@Boegh2016"  # @xxxx
 type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
-taxa = "94 West African languages"
+description = "94 West African languages"
 
 # data
 [data]

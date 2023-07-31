@@ -25,7 +25,7 @@ bibkey = "@Ceolin_2020"
 type = ["phylogenetic", "distance", "network", "delta", "qresidual"]
 
 # short label of taxa "37 languages from.."
-taxa = "69 Indo-European & other languages"
+description = "69 Indo-European & other languages"
 
 # data
 [data]

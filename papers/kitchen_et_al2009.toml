@@ -25,7 +25,7 @@ bibkey = "@Kitchen2009"
 type = ["phylogenetic", "dating"]
 
 # short label of taxa "37 languages from.."
-taxa = "25 Semitic languages"
+description = "25 Semitic languages"
 
 # data
 [data]

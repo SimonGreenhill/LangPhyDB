@@ -3,8 +3,8 @@ title = "Untangling our Past: Languages, Trees, Splits and Networks"
 doi = ""
 
 abstract = """
-In Act 1 of The Importance of Being Earnest, Algernon quips to Jack that ‘The truth is rarely pure and never
-simple’. The idea that much of recent human history might reflect pure trees of phylogenetic descent is appealing
+In Act 1 of The Importance of Being Earnest, Algernon quips to Jack that 'The truth is rarely pure and never
+simple'. The idea that much of recent human history might reflect pure trees of phylogenetic descent is appealing
 simple. It has stimulated numerous researchers to investigate the extent to which genes, languages and cultures
 are bound together in co-diverging trees of evolutionary history (eg Cavalli-Sforza et al 1994; see
 Cavalli-Sforza and Feldman 2003 for a recent review). Increasingly, studies have used explicit phylogenetic
@@ -33,7 +33,7 @@ bibkey = "@Bryant2005"  # @xxxx
 type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
-taxa = ""
+description = "Phylogenetic network study of Indo-European."
 
 # data
 [data]

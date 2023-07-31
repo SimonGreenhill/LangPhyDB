@@ -40,7 +40,7 @@ bibkey = "@Chang2015"
 type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
-taxa = "52 Indo-European languages"
+description = "52 Indo-European languages"
 
 # data
 [data]

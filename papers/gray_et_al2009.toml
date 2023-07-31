@@ -24,7 +24,7 @@ bibkey = "@Gray2009"
 type = ["phylogenetic", "dating"]
 
 # short label of taxa "37 languages from.."
-taxa = "400 Austronesian languages"
+description = "400 Austronesian languages"
 
 # data
 [data]

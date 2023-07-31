@@ -22,7 +22,7 @@ bibkey = "@Zemanek2018"
 type = ["network"]  # phylogenetic,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
-taxa = "14 Semitic languages"
+description = "14 Semitic languages"
 
 # data
 [data]

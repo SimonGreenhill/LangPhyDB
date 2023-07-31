@@ -34,7 +34,7 @@ bibkey = "@MacklinCordes2021"  # @xxxx
 type = ['trait']
 
 # short label of taxa "37 languages from.."
-taxa = "investigation of phylogenetic signal in Pama-Nyungan languages"
+description = "investigation of phylogenetic signal in Pama-Nyungan languages"
 
 # data
 [data]

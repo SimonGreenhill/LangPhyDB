@@ -40,7 +40,7 @@ bibkey = "@Spence2013"  # @xxxx
 type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
-taxa = "24 Pacific-Coast Athabaskan languages"
+description = "24 Pacific-Coast Athabaskan languages"
 
 # data
 [data]

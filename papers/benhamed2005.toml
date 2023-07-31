@@ -22,7 +22,7 @@ bibkey = "@Hamed2005a"
 type = ["phylogenetic", "network", "distance"]
 
 # short label of taxa "37 languages from.."
-taxa = "24 Sinitic languages"
+description = "24 Sinitic languages"
 
 # data
 [data]

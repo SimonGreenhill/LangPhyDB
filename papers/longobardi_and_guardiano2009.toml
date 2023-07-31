@@ -30,7 +30,7 @@ bibkey = "@Longobardi2009"  # @xxxx
 type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
-taxa = "28 European languages"
+description = "28 European languages"
 
 # data
 [data]

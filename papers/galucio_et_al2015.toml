@@ -40,7 +40,7 @@ bibkey = "@Galucio2015"  # @xxxx
 type = ['phylogenetic', 'network', 'delta']
 
 # short label of taxa "37 languages from.."
-taxa = "23 Tupí languages"
+description = "23 Tupí languages"
 
 # data
 [data]

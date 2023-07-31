@@ -23,7 +23,7 @@ bibkey = "@Robbeets_2018"
 type = ["phylogenetic", "dating"]
 
 # short label of taxa "37 languages from.."
-taxa = "57 Transeurasian languages"
+description = "57 Transeurasian languages"
 
 # data
 [data]

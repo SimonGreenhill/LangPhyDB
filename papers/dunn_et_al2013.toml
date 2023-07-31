@@ -36,7 +36,7 @@ bibkey = "@Dunn2013aslian"  # @xxxx
 type = ['phylogenetic', 'dating', 'phylogeography']
 
 # short label of taxa "37 languages from.."
-taxa = "28 Aslian languages"
+description = "28 Aslian languages"
 
 # data
 [data]

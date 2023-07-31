@@ -23,7 +23,7 @@ bibkey = "@Greenhill2005"
 type = ["phylogenetic", "network"]
 
 # short label of taxa "37 languages from.."
-taxa = "77 Austronesian languages"
+description = "77 Austronesian languages"
 
 # data
 [data]

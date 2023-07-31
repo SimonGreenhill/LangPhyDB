@@ -62,7 +62,7 @@ bibkey = "@Robbeets2021"
 type = ["phylogenetic", "phylogeography", "dating"]
 
 # short label of taxa "37 languages from.."
-taxa = "98 Transeurasian languages"
+description = "98 Transeurasian languages"
 
 # data
 [data]

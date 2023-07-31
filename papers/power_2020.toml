@@ -41,7 +41,7 @@ bibkey = "@Power_2020"
 type = ["phylogenetic", "network"]
 
 # short label of taxa "37 languages from.."
-taxa = "76 Sign Languages languages"
+description = "76 Sign Languages languages"
 
 # data
 [data]

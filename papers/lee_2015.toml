@@ -24,7 +24,7 @@ type = [
 ]
 
 # short label of taxa "37 languages from.."
-taxa = "15 Koreanic languages"
+description = "15 Koreanic languages"
 
 # data
 [data]

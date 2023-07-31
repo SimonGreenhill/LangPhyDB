@@ -29,7 +29,7 @@ bibkey = "@DeSchryver2015"  # @xxxx
 type = ['phylogenetic', 'network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
-taxa = "95 Kikongo languages"
+description = "95 Kikongo languages"
 
 # data
 [data]

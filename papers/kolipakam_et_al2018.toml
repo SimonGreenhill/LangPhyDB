@@ -28,7 +28,7 @@ bibkey = "@Kolipakam2018"
 type = ["phylogenetic", "dating", "network", "delta", "qresidual"]
 
 # short label of taxa "37 languages from.."
-taxa = "20 Dravidian languages"
+description = "20 Dravidian languages"
 
 # data
 [data]

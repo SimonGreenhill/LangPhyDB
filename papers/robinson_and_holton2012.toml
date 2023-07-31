@@ -23,7 +23,7 @@ bibkey = "@Robinson_2012"
 type = ["phylogenetic", "delta", "network"]
 
 # short label of taxa "37 languages from.."
-taxa = "13 Timor-Alor-Pantar languages"
+description = "13 Timor-Alor-Pantar languages"
 
 # data
 [data]

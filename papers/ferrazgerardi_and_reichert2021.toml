@@ -22,7 +22,7 @@ bibkey = "@FerrazGerardi_2021"
 type = ["phylogenetic", "network", "delta", "qresidual"]
 
 # short label of taxa "37 languages from.."
-taxa = "38 Tupi-Guarani languages"
+description = "38 Tupi-Guarani languages"
 
 # data
 [data]

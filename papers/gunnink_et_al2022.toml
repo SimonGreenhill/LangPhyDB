@@ -34,7 +34,7 @@ bibkey = "@Gunnink2022"  # @xxxx
 type = ['phylogenetic', 'trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
-taxa = "79 Bantu languages with a focus on Southern Bantu"
+description = "79 Bantu languages with a focus on Southern Bantu"
 
 # data
 [data]

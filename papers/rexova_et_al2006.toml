@@ -24,7 +24,7 @@ bibkey = "@Rexova2006"
 type = ["phylogenetic"]
 
 # short label of taxa "37 languages from.."
-taxa = "87 Bantu languages"
+description = "87 Bantu languages"
 
 # data
 [data]

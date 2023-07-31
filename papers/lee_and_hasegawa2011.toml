@@ -22,7 +22,7 @@ bibkey = "@Lee2011"
 type = ["phylogenetic", "dating", "network"]
 
 # short label of taxa "37 languages from.."
-taxa = "59 Japonic languages"
+description = "59 Japonic languages"
 
 # data
 [data]

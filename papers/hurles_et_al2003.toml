@@ -31,7 +31,7 @@ bibkey = "@Hurles2003"  # @xxxx
 type = ['network', 'phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
-taxa = "11 Polynesian languages"
+description = "11 Polynesian languages"
 
 # data
 [data]

@@ -23,7 +23,7 @@ bibkey = "@KaipingKlamer_2022"
 type = ["phylogenetic", "dating", "delta", "qresidual"]
 
 # short label of taxa "37 languages from.."
-taxa = "48 Timor-Alor-Pantar languages"
+description = "48 Timor-Alor-Pantar languages"
 
 # data
 [data]

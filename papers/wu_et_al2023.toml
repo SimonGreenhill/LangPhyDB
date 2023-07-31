@@ -33,7 +33,7 @@ bibkey = "@Wu2023"  # @xxxx
 type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
-taxa = "Evolution of tono in 106 Sino-Tibetan languages"
+description = "Evolution of tono in 106 Sino-Tibetan languages"
 
 # data
 [data]

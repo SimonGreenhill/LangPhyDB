@@ -23,7 +23,7 @@ bibkey = "@Bowern2012"
 type = ["phylogenetic",]  # phylogenetic,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
-taxa = "194 Pama-Nyungan languages"
+description = "194 Pama-Nyungan languages"
 
 # data
 [data]

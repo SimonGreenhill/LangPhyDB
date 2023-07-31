@@ -1,0 +1,35 @@
+title = "Managing Historical Linguistic Data for Computational Phylogenetics and Computer-Assisted Language Comparison"
+
+doi = "10.7551/mitpress/12200.001.0001"
+
+abstract = """ Computational phylogenetics is a relatively recent branch of historical linguistics that uses
+quantitative techniques to investigate the history of related languages. As the classical comparative method is
+less explicit on the techniques for constructing phylogenies of language families (see discussion in Jacques &
+List 2019), such a new approach can complement traditional techniques for sub-grouping based on shared innovations
+(Ross & Durie 1996). """
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Tiago Tresoldi",
+    "Christoph Rzymski",
+    "Robert Forkel",
+    "Simon J. Greenhill",
+    "Johann-Mattis List",
+    "Russell D. Gray"
+]
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Tresoldi2022"  # @xxxx
+
+# type of study
+type = ['tutorial']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "Tutorial Article"
+
+
+[links]
+links = []

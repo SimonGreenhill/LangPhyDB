@@ -1,0 +1,33 @@
+title = "Language Phylogenies: Modelling the evolution of language."
+
+doi = "10.1093/oxfordhb/9780198869252.013.61"
+
+abstract = """
+Recent years have seen Bayesian phylogenetic methods from evolutionary biology applied to questions
+about language evolution in two major contexts. First, language phylogenies are now routinely used to make
+inferences and test hypotheses about human prehistory. Second, language phylogenies provide a solid backbone 10 to
+test hypotheses about how aspects of language and culture have evolved in three key ways: by revealing the
+evolutionary dynamics, by modelling the trait history, and testing coevolutionary hypotheses. In this chapter I
+will survey this literature, present some case studies that highlight how these tools have been and continue to be
+useful, and discuss some shortcomings and open problems.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Simon J. Greenhill"]
+
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Greenhill2023"  # @xxxx
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "Review article"
+
+
+[links]
+links = []

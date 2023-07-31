@@ -1,0 +1,35 @@
+title = "Genetics, Historical Linguistics and Language Variation"
+
+doi = "10.1111/j.1749-818X.2008.00052.x"
+
+abstract = """
+Historical linguists have always been interested in grouping varieties and languages together into subgroups and
+families. However, their methodologies for doing so, and for representing the results, have until relatively
+recently been limited to the Comparative Method and the family tree. Criteria for family membership have rarely
+been formalized, while tree diagrams run the risk of factoring out important relationships reflecting language
+contact. Over the past 20 years, quantitative methods for comparing language data and programs for generating many
+trees and selecting the best, as well as alternative representations like networks, have become available. These
+are often borrowed from other disciplines like population biology, and offer scope for comparison with data from
+other domains, including genetics, archaeology and anthropology. This article reviews current and developing
+methodologies and debates in this emerging interdisciplinary field.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "April McMahon", "Robert McMahon"
+]
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@McMahon2008"  # @xxxx
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "Review article"
+
+[links]
+links = []

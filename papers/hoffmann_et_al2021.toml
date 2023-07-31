@@ -1,0 +1,37 @@
+title = "Bayesian phylogenetic analysis of linguistic data using BEAST."
+
+doi = "10.1093/jole/lzab005"
+
+abstract = """Bayesian phylogenetic methods provide a set of tools to efficiently evaluate large linguistic
+datasets by reconstructing phylogenies—family trees—that represent the history of language families. These methods
+provide a powerful way to test hypotheses about prehistory, regarding the subgrouping, origins, expansion, and
+timing of the languages and their speakers. Through phylogenetics, we gain insights into the process of language
+evolution in general and into how fast individual features change in particular. This article introduces Bayesian
+phylogenetics as applied to languages. We describe substitution models for cognate evolution, molecular clock
+models for the evolutionary rate along the branches of a tree, and tree generating processes suitable for
+linguistic data. We explain how to find the best-suited model using path sampling or nested sampling. The
+theoretical background of these models is supplemented by a practical tutorial describing how to set up a Bayesian
+phylogenetic analysis using the software tool BEAST2. """
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Konstantin Hoffmann",
+    "Remco Bouckaert",
+    "Simon J. Greenhill",
+    "Denise Kühnert"
+]
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Hoffmann2021"  # @xxxx
+
+# type of study
+type = ['tutorial']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "Tutorial paper"
+
+[links]
+links = []

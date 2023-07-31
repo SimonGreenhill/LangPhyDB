@@ -1,0 +1,35 @@
+title = "The _Indo-European controversy_ and Bayesian phylogenetic methods"
+
+doi = "10.1075/dia.34.3.04bow"
+
+abstract = """
+It’s a great time to be a historical linguist right now. There’s a lot going on; we have more access to language
+materials than ever before, more fine-grained research into the seeds of change and more tools to investigate some
+of the big questions of language evolution – how languages split, what goes on in the minds of speakers and what
+factors have led to the world’s current language distribution looking the way it does – than we’ve ever had.
+Nowhere has debate about new statistical methods for studying language change been more fraught than when looking
+at Indo-European. In a recent book, Asya Pereltsvaig and Martin Lewis discuss the implications for Bayesian
+modeling on the field of linguistics, with a focus on the contributions of phylogeographic modeling to our
+knowledge of Indo-European. Their conclusions are bleak: the approach "fails to withstand scrutiny" (157); they
+call it "incoherent" (17, 56) and "contradicted" (14, 124, 230). In this discussion note, I use the arguments in
+Pereltsvaig & Lewis (2015; hereafter P&L) to broach a general discussion about phylogenetics and evolutionary
+models in historical linguistics. """
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['Claire Bowern']
+
+
+# parts of the world
+groups = ['Indo-European', 'Australia']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Bowern2017"  # @xxxx
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Book review & discussion of Pereltsvaig & Lewis (2015)"
+
+[links]
+links = []

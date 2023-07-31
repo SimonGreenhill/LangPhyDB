@@ -1,0 +1,28 @@
+title = ""
+
+doi = "10.1146/annurev-linguistics011516-034142"
+
+abstract = """Although there have long been links between research in historical linguistics and research in
+biological evolution, the last few years have witnessed growth in historical linguistic research that treats
+languages as evolutionary systems that can be investigated using tools from computational phylogenetics. In this
+review, I explore some of the advantages and disadvantages of using computational tools for historical
+linguistics. I describe the theory that underlies treating languages as evolutionary systems (in general terms),
+present the results of classifying languages lexically, and review some of the implications of this research."""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['Claire Bowern']
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Bowern2018"  # @xxxx
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Review article on language phylogenies"
+
+[links]
+links = []

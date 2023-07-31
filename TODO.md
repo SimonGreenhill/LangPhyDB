@@ -2,7 +2,7 @@
 
 ## Priority
 
-* Auderset et al. 2023 - 
+* Auderset S, Greenhill SJ, DiCanio CT & Campbell EW. 2023. Subgrouping in a 'dialect continuum': A Bayesian phylogenetic analysis of the Mixtecan language family. Journal of Language Evolution.
 * Jaeger global tree
 * Bouckaert global tree
 * Bryant 2006 - radiation and network breaking
@@ -12,13 +12,13 @@
 * Hübler 2022 - Hübler, Nataliia. 2022. Phylogenetic signal and rate of evolutionary change in language structures. Royal Society Open Science 9. Royal Society.211252. doi:10.1098/rsos.211252.
 * Hamed et al 2005 - On Cladistic Reconstruction of Linguistic Trees through Vowel Data
 * Lee & Hasegawa 2014 - Lee, S.; and T Hasegawa. 2014. Oceanic barriers promote language diversification in the Japanese Islands. Journal of evolutionary biology 27.1905–12. doi:10.1111/jeb.12442.
-* Longobardi et al. 2015 - 
+* Longobardi et al. 2015 - Longobardi, G., Ghirotto, S., Guardiano, C., Tassi, F., Benazzo, A., Ceolin, A., & Barbujani, G. (2015). Across language families: Genome diversity mirrors linguistic variation within Europe. American Journal of Physical Anthropology, 157(4), 630–640. https://doi.org/10.1002/ajpa.22758
 * McMahon & McMahon 2006 - McMahon A, McMahon R. 2006 Why linguists don’t do dates: Evidence from Indo-European and Australian languages. In Phylogenetic methods and the prehistory of languages (eds P Forster, C Renfrew), pp. 153–160. McDonald Institute for Archaeological Research: Cambridge. 
 * Nelson-Sathi et al. 2011 - Nelson-Sathi, Shijulal.; Johann-Mattis List.; Hans Geisler.; Heiner Fangerau.; Russell D. Gray.; William Martin.; and Tal Dagan. 2011. Networks uncover hidden lexical borrowing in Indo-European language evolution. Proceedings of the Royal Society B: Biological Sciences 278.1794–803. doi:10.1098/rspb.2010.1917.
 * Nicholls & Gray 2006 - Nicholls, Geoff K.; and Russell D. Gray. 2006. Dated ancestral trees from binary trait data. Journal of the Royal Statistical Society: Series B (Statistical Methodology) 70.545–566. doi:10.1111/j.1467-9868.2007.00648.x.
 * Pagel & Meade 2017 - Pagel, Mark.; and Andrew Meade. 2017. The deep history of the number words. Philosophical Transactions of the Royal Society B: Biological Sciences 373.20160517. doi:10.1098/rstb.2016.0517.
 * Pagel et al. 2013 - Pagel, M.; Q. D. Atkinson.; A. S. Calude.; and A. Meade. 2013. Ultraconserved words point to deep language ancestry across Eurasia. Proceedings of the National Academy of Sciences 110.8471–8476. doi:10.1073/pnas.1218726110.
-* Walker & Hamilton 20101 - Walker, Robert S.; and Marcus J. Hamilton. 2010. Social complexity and linguistic diversity in the Austronesian and Bantu population expansions. Proceedings. Biological sciences / The Royal Society. doi:10.1098/rspb.2010.1942. http://www.ncbi.nlm.nih.gov/pubmed/20961903.
+* Walker & Hamilton 2010 - Social complexity and linguistic diversity in the Austronesian and Bantu population expansions. Proceedings. Biological sciences / The Royal Society. doi:10.1098/rspb.2010.1942. http://www.ncbi.nlm.nih.gov/pubmed/20961903.
 * Warnow et al. 1995 - Warnow, D. Ringe, and A. Taylor, 1995 "Reconstructing the evolutionary history of natural languages." IRCS Report 95-16. Philadelphia (1995): Institute for Research in Cognitive Science, University of Pennsylvania. Technical report, 18 pp. 	
 * Yanovich 2020 - Yanovich, Igor. 2020. Phylogenetic linguistic evidence and the Dene-Yeniseian homeland. Diachronica 37.410–446. doi:10.1075/dia.17038.yan.
 
@@ -28,19 +28,13 @@
 * Dockum 2018 - Dockum, R. (2018). Phylogeny in phonology: How Tai sound systems encode their past. In Proceedings of the Annual Meetings on Phonology, volume 5
 * Greenhill et al. 2010b - Greenhill, Simon J.; Alexei J Drummond.; and Russell D. Gray. 2010. How Accurate and Robust Are the Phylogenetic Estimates of Austronesian Language Relationships? PLoS ONE 5.e9573. doi:10.1371/journal.pone.0009573.
 * Hübler and Greenhill 2023 -
-* McMahon & McMahon 2008 - McMahon A, McMahon R. 2008 Genetics, Historical Linguistics and Language Variation. Language and Linguistics Compass 2, 264–288. (doi:10.1111/j.1749-818X.2008.00052.x)
-* Pappas et al. 2011 - Pappas, Panayiotis A.; and Arne O Mooers. 2011. Phylogenetic Methods in Historical Linguistics : Greek as a Case Study. Journal of Greek Linguistics 11.198–220. doi:10.1163/156658411X600007.
 * Skirgard et al. 2023 - 
 * Sullivan et al. 2010 - Sullivan J, McMahon A. 2010 Phonetic comparison, varieties, and networks: Swadesh’s influence lives on here too. Diachronica 27, 325–340. (doi:10.1075/dia.27.2.08sul)
-
-## Methods
-
 * Ritchie & Ho 2019 - Ritchie, Andrew M.; and Simon Y W Ho. 2019. Influence of the tree prior and sampling scale on Bayesian phylogenetic estimates of the origin times of language families. Journal of Language Evolution 4.108–123. doi:10.1093/jole/lzz005.
-* Barbancon et al. 2013 - Barbancon, S.N. Evans, L. Nakhleh, D. Ringe, and T. Warnow (2013) "An experimental study comparing linguistic phylogenetic reconstruction methods." Diachronica 30(2):143-170, and appendix. 
+* Barbançon et al. 2013 - Barbancon, S.N. Evans, L. Nakhleh, D. Ringe, and T. Warnow (2013) "An experimental study comparing linguistic phylogenetic reconstruction methods." Diachronica 30(2):143-170, and appendix. 
 * Currie et al. 2010a - Currie, Thomas E.; Simon J. Greenhill.; and R Mace. 2010. Is horizontal transmission really a problem for phylogenetic comparative methods? A simulation study using continuous cultural traits. Proceedings of the Royal Society B: Biological Sciences 365.3903–3912. doi:10.1098/rstb.2010.0014.
 * Greenhill et al. 2009 - Greenhill, Simon J.; Thomas E. Currie.; and Russell D. Gray. 2009. Does horizontal transmission invalidate cultural phylogenies? Proceedings. Biological sciences / The Royal Society 276.2299–306. doi:10.1098/rspb.2008.1944.
 * Nakhleh et al. 2005 - Nakhleh, D. Ringe, and T. Warnow, "Perfect Phylogenetic Networks: A New Methodology for Reconstructing the Evolutionary History of Natural Languages." LANGUAGE, Journal of the Linguistic Society of America, 81(2):382-420, 2005. 	PDF
-* Nakhleh et al. 2005 - Nakhleh, T. Warnow, D. Ringe, and S.N. Evans, "A Comparison of Phylogenetic Reconstruction Methods on an IE Dataset." Transactions of the Philological Society, 3(2): 171-192, 2005.
 
 ## Comparative Analysis
 
@@ -60,15 +54,12 @@
 
 ## Reviews etc (no original phylogenetic analysis)
 
-* Bowern, Claire. 2018. Computational Phylogenetics. Annual Review of Linguistics 4.281–296. doi:10.1146/annurev-linguistics-011516-034142.
 * Eska & Ringe 2004 - Recent work in computational linguistic phylogeny. Language, 80(3), 569–582.
 * Gray et al. 2010 - Gray, Russell D.; David Bryant.; and Simon J. Greenhill. 2010. On the shape and fabric of human history. Philosophical transactions of the Royal Society of London. Series B, Biological sciences 365.3923–33. doi:10.1098/rstb.2010.0162.
 * Gray, Russell D.; Quentin D. Atkinson.; and Simon J. Greenhill. 2011. Language evolution and human history: what a difference a date makes. Philosophical Transactions of the Royal Society B: Biological Sciences 366.1090–1100. doi:10.1098/rstb.2010.0378.
 * Gray, Russell D.; Simon J Greenhill.; and Quentin D Atkinson. 2013. Phylogenetic Models of Language Change Three New Questions. Cultural Evolution: Society, Technology, Language and Religion, ed. by Peter J Richerson and Morten H Christiansen, 12:285–300. Cambridge, Massachusetts: Cambridge University Press.
 * Gray, Russell D.; Simon J. Greenhill.; and R M Ross. 2007. The Pleasures and Perils of Darwinizing Culture (with phylogenies). Biological Theory 2. MIT Press.360–375.
 * Greenhill 2023 - (review)
-* Greenhill, Simon J.; and Russell D. Gray. 2009b. Austronesian language phylogenies: Myths and misconceptions about Bayesian computational methods. Austronesian historical linguistics and culture history: a festschrift for Robert Blust, ed. by K A Adelaar and A Pawley, 375–397. Canberra: Pacific Linguistics.
-* Greenhill, Simon J.; and Russell D. Gray. 2012. Basic vocabulary and Bayesian phylolinguistics: Issues of understanding and representation. Diachronica 29.523–537. doi:10.1075/dia.29.4.05gre.
 * Holden & Shennan 2005 - Holden, Clare J.; and Stephen J Shennan. 2005. How tree-like is cultural evolution? The evolution of cultural diversity: a phylogenetic approach, ed. by Ruth Mace, Clare J Holden, and Stephen J Shennan, 13–30. London: UCL PRess.
 * Jordan, Fiona M.; and Brad R Huber. 2013. Evolutionary Approaches to Cross-Cultural Anthropology. Cross-Cultural Research 47.91–101. doi:10.1177/1069397112471800.
 * Mace, R. 2005. On the use of phylogenetic comparative methods to test co-evolutionary hypotheses across cultures. The evolution of cultural diversity: a phylogenetic approach, ed. by R Mace, Clare J Holden, and Stephen J Shennan, 199–206. London: UCL Press.
@@ -83,6 +74,11 @@
 * Warnow 1997 - Warnow, "Mathematical approaches to comparative linguistics." Proceedings of the National Academy of Sciences, Vol. 94, pp. 6585-6590, 1997. 	
 * Warnow et al. 1996 - Warnow, D. Ringe, and A. Taylor, 1996 "Reconstructing the evolutionary history of natural languages ." Proceedings of the ACM-SIAM Symposium on Discrete Algorithms, 1996, pp. 314-322. 	
 * Warnow et al. 2006 - Warnow, S.N. Evans, D. Ringe, and L. Nakhleh, "A stochastic model of language evolution that incorporates homoplasy and borrowing." Phylogenetic Methods and the Prehistory of Languages. MacDonald Institute for Archaeological Research, 2006.
+
+## Criticisms
+
+* Asya Pereltsvaig & Martin W. Lewis. The Indo-European controversy: Facts and fallacies in historical linguistics. (Cambridge: Cambridge University Press, 2015).
+* Donohue and Denham 2012
 
 
 ## Trees from cultural data

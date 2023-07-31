@@ -1,0 +1,86 @@
+title = "A comparison of phylogenetic reconstruction methods on an Indo-European dataset"
+
+doi = "10.1111/j.1467-968X.2005.00149.x"
+
+abstract = """
+Researchers interested in the history of the Indo-European family of languages have used a variety
+of methods to estimate the phylogeny of the family, and have obtained widely differing results. In this paper we
+explore the reconstructions of the Indo-European phylogeny obtained by using the major phylogeny estimation
+procedures on an existing database of 336 characters (including lexical, phonological, and morphological
+characters) for 24 Indo-European languages.
+
+Our study finds that the different methods agree in part, but that there are also several striking differences. We
+discuss the reasons for these differences, and make proposals with respect to phylogenetic reconstruction in
+historical linguistics.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Luay Nakhleh", "Tandy Warnow", "Don Ringe", "Steven N. Evans"
+]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Nakhleh2005"  # @xxxx
+
+# type of study
+type = ['phylogenetic', 'distance']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Comparison of approaches for inferring a phylogeny of Indo-European"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.ie]
+    ntaxa = 24
+    nchars = 336
+    nsites = 336
+    datatype = 'mixed'
+    source = '@Ringe2002'
+    items = ''
+    comment = 'mixed phonological, morphological, and cognate, polymorphic sites removed'
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.upgma]
+    tool = 'paup*'
+    model = 'upgma'
+    details = ""
+
+    [analysis.nj]
+    tool = 'paup*'
+    model = 'neighbor-joining'
+    details = ""
+
+    [analysis.mp]
+    tool = 'paup*'
+    model = 'maximum-parsimony'
+    details = ""
+
+    [analysis.mc]
+    tool = 'paup*'
+    model = 'maximum-parsimony + custom reweighting'
+    details = "maximum compatibility"
+    
+    [analysis.wmc]
+    tool = 'paup*'
+    model = 'maximum-parsimony + custom reweighting'
+    details = "weighted maximum compatibility"
+
+    [analysis.mrbayes]
+    tool = 'mrbayes'
+    model = 'restriction site'
+    details = "'Gray and Atkinson method'"
+
+
+[links]
+links = []

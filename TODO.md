@@ -24,6 +24,7 @@
 
 ## Misc
 
+* Pavel Duda and Jan Zrzavý (2019) Chapter: 12 Towards a global phylogeny of human populations based on genetic and linguistic data. In book: Modern Human Origins and Dispersal. Publisher: Kerns Verlag. Editors: Yonatan Sahle, Hugo Reyes-Centeno, Christian Bentz. ISBN: 978-3-935751-30-8 https://www.researchgate.net/publication/332298707_Towards_a_global_phylogeny_of_human_populations_based_on_genetic_and_linguistic_data
 * Dockum 2018 - Dockum, R. (2018). Phylogeny in phonology: How Tai sound systems encode their past. In Proceedings of the Annual Meetings on Phonology, volume 5
 * Greenhill et al. 2010b - Greenhill, Simon J.; Alexei J Drummond.; and Russell D. Gray. 2010. How Accurate and Robust Are the Phylogenetic Estimates of Austronesian Language Relationships? PLoS ONE 5.e9573. doi:10.1371/journal.pone.0009573.
 * Hübler and Greenhill 2023 -

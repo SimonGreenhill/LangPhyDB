@@ -1,0 +1,81 @@
+title = "Untangling the evolution of body-part terminology in Pano: conservative versus innovative traits in body-part lexicalization"
+
+doi = "10.1098/rsfs.2022.0053"
+
+abstract = """
+Although language-family specific traits which do not find direct counterparts outside a given language family
+are usually ignored in quantitative phylogenetic studies, scholars have made ample use of them in qualitative
+investigations, revealing their potential for identifying language relationships. An example of such a family
+specific trait are body-part expressions in Pano languages, which are often lexicalized forms, composed of bound
+roots (also called body-part prefixes in the literature) and non-productive derivative morphemes (called here
+body-part formatives). We use various statistical methods to demonstrate that whereas body-part roots are
+generally conservative, body- part formatives exhibit diverse chronologies and are often the result of recent and
+parallel innovations. In line with this, the phylogenetic structure of body- part roots projects the major
+branches of the family, while formatives are highly non-tree-like. Beyond its contribution to the phylogenetic
+analysis of Pano languages, this study provides significative insights into the role of gramma- tical innovations
+for language classification, the origin of morphological complexity in the Amazon and the phylogenetic signal of
+specific grammatical traits in language families.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Roberto Zariquiey",
+    "Javier Vera",
+    "Simon J. Greenhill",
+    "Pilar Valenzuela",
+    "Russell D. Gray",
+    "Johann-Mattis List",
+]
+
+# parts of the world
+groups = ['Pano']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Zariquiey2022"  # @xxxx
+
+# type of study
+type = ['network', 'trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "26 Pano language varieties"
+
+# data
+[data]
+
+    notes = ""
+
+    [data.pano]
+    ntaxa = 26
+    nchars = 181
+    nsites = 181
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.nnet_bodypartroots]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+
+    [analysis.nnet_bodypartformatives]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+
+    [analysis.delta]
+    tool = 'phylogemetric'
+    model = ''
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

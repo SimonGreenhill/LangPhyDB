@@ -1,0 +1,214 @@
+title = "A recent northern origin for the Uto-Aztecan family"
+
+doi = "10.1353/lan.0.0276"
+
+abstract = """
+The Uto-Aztecan language family is one of the largest language families in the Americas. How- ever, there has been
+considerable debate about its origin and how it spread. Here we use Bayesian phylogenetic methods to analyze
+lexical data from thirty-four Uto-Aztecan varieties and two Kiowa-Tanoan languages. We infer the age of
+Proto-Uto-Aztecan to be around 4,100 years (3,258–5,025 years) and identify the most likely homeland to be near
+what is now Southern Cali- fornia. We reconstruct the most probable subsistence strategy in the ancestral
+Uto-Aztecan society and infer no casual or intensive cultivation, an absence of cereal crops, and a primary
+subsistence mode of gathering (rather than agriculture). Our results therefore support the timing, geography, and
+cultural practices of a northern origin and are inconsistent with alternative scenarios.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Simon J. Greenhill",
+    "Hannah J. Haynie",
+    "Robert M. Ross",
+    "Angela M. Chira",
+    "Johann-Mattis List",
+    "Lyle Campbell",
+    "Carlos A. Botero",
+    "Russell D. Gray"
+]
+
+# parts of the world
+groups = ['Uto-Aztecan', 'Kiowa-Tanoan']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@GreenhillHaynie2023"  # @xxxx
+
+# type of study
+type = ['phylogenetic', 'dating', 'phylogenetic', 'trait']
+
+# short label of taxa "37 languages from.."
+taxa = "33 Uto-Aztecan and Kiowa-Tanoan languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.bantu]
+    ntaxa = 34
+    nchars = 100
+    nsites = 1125
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = ''
+
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.northua]
+    taxa = ['nort2953']
+    age = "lognormal(500, 0.5, 2790, realspace=True)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.nahua]
+    taxa = ['azte1234']
+    age = "lognormal(290, 0.7, 1510, realspace=True)"
+    units = "ybp" # ybp
+    description = ""
+    
+    [calibration.numic]
+    taxa = ['numi1242']
+    age = "lognormal(120, 1.0, 1280, realspace=True)"
+    units = "ybp" # ybp
+    description = ""
+    
+    [calibration.takic]
+    taxa = ['unun9949']
+    age = "lognormal(510, 0.5, 2526, realspace=True)"
+    units = "ybp" # ybp
+    description = ""
+    
+    [calibration.tubatulabel_origin]
+    taxa = ['tuba1278']
+    age = "lognormal(120, 1.0, 2380, realspace=True)"
+    units = "ybp" # ybp
+    description = ""
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree1]
+        tool = 'beast2'
+        model = 'ctmc+strict'
+        details = ""
+
+    [analysis.tree2]
+        tool = 'beast2'
+        model = 'ctmc+relaxed'
+        details = ""
+
+    [analysis.tree3]
+        tool = 'beast2'
+        model = 'ctmc+gamma+strict'
+        details = ""
+
+    [analysis.tree4]
+        tool = 'beast2'
+        model = 'ctmc+gamma+relaxed'
+        details = ""
+
+    [analysis.tree5]
+        tool = 'beast2'
+        model = 'covarion+strict'
+        details = ""
+
+    [analysis.tree6]
+        tool = 'beast2'
+        model = 'covarion+relaxed'
+        details = ""
+        
+    [analysis.phylogeo1]
+        tool = 'beast2'
+        model = 'covarion+relaxed+phylogeography(breakaway)'
+        details = ""
+
+    [analysis.phylogeo2]
+        tool = 'beast2'
+        model = 'covarion+relaxed+phylogeography(diffusion)'
+        details = ""
+    
+    [analysis.ea005_er]
+    tool = 'CorHMM'
+    model = 'Equal rates'
+    details = "@data.ea005"
+    
+    [analysis.ea028_er]
+    tool = 'CorHMM'
+    model = 'Equal rates'
+    details = "@data.ea028"
+    
+    [analysis.ea029_er]
+    tool = 'CorHMM'
+    model = 'Equal rates'
+    details = "@data.ea029"
+
+    [analysis.ea042_er]
+    tool = 'CorHMM'
+    model = 'Equal rates'
+    details = "@data.ea042"
+
+
+    [analysis.ea005_sym]
+    tool = 'CorHMM'
+    model = 'Symmetrical'
+    details = "@data.ea005"
+    
+    [analysis.ea028_sym]
+    tool = 'CorHMM'
+    model = 'Symmetrical'
+    details = "@data.ea028"
+    
+    [analysis.ea029_sym]
+    tool = 'CorHMM'
+    model = 'Symmetrical'
+    details = "@data.ea029"
+
+    [analysis.ea042_sym]
+    tool = 'CorHMM'
+    model = 'Symmetrical'
+    details = "@data.ea042"
+
+
+    [analysis.ea005_ard]
+    tool = 'CorHMM'
+    model = 'All Rates Different'
+    details = "@data.ea005"
+    
+    [analysis.ea028_ard]
+    tool = 'CorHMM'
+    model = 'All Rates Different'
+    details = "@data.ea028"
+    
+    [analysis.ea029_ard]
+    tool = 'CorHMM'
+    model = 'All Rates Different'
+    details = "@data.ea029"
+
+    [analysis.ea042_ard]
+    tool = 'CorHMM'
+    model = 'All Rates Different'
+    details = "@data.ea042"
+
+
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.pua]
+    taxa = ['utoa1244']
+    age = "hpd(4100, 3258, 5025)"
+    units = "ybp"
+    notes = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

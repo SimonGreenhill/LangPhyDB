@@ -1,0 +1,103 @@
+title = "Quantifying uncertainty in the phylogenetics of Australian numeral systems"
+
+doi = "10.1098/rspb.2015.1278"
+
+abstract = """
+Researchers have long been interested in the evolution of culture and the ways in which change in cultural systems
+can be reconstructed and tracked. Within the realm of language, these questions are increasingly investigated with
+Bayesian phylogenetic methods. However, such work in cultural phylogenetics could be improved by more explicit
+quantification of reconstruction and transition probabilities. We apply such methods to numerals in the languages
+of Australia. As a large phylogeny with almost universal ‘lowlimit’ systems, Australian languages are ideal for
+investigating numeral change over time. We reconstruct the most likely extent of the system at the root and use
+that information to explore the ways numerals evolve. We show that these systems do not increment serially, but
+most commonly vary their upper limits between 3 and 5. While there is evidence for rapid system elaboration beyond
+the lower limits, languages lose numerals as well as gain them. We investigate the ways larger numerals build on
+smaller bases, and show that there is a general tendency to both gain and replace 4 by combining 2 þ 2 (rather
+than inventing a new unanalysable word ‘four’). We develop a series of methods for quantifying and visualizing the
+results.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Kevin Zhou", "Claire Bowern"
+]
+
+# parts of the world
+groups = ['Pama-Nyungan']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Zhou2015"  # @xxxx
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "Evolution of numeral systems in "
+
+# data
+[data]
+
+    notes = """Each language was coded for the extent of the system (that is, the maximum attested numeral) and
+    the etymological structure of the numerals 3 and 4. Bowern and Zentz included data from non-Pama-Nyungan
+    languages; these languages were excluded from our sample because of the lack of resolution of phylogenetic
+    relationships beyond the level of Proto-Pama-Nyungan. We have numeral extent data for 127 Pama-Nyungan
+    languages and etymological structure data for 110 languages."""
+    
+    [data.extent]
+    ntaxa = 1
+    nchars = 127
+    nsites = "?"
+    datatype = 'structural features'
+    source = '@chirila'
+    items = ''
+    comment = ''
+
+    [data.opacity]
+    ntaxa = 1
+    nchars = 110
+    nsites = 110
+    datatype = 'structural features'
+    source = '@chirila'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.pamanyungan]
+    source = '@Bowern2012'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+
+    [analysis.extent_dep]
+    tool = 'bayestraits'
+    model = 'discrete+dependent'
+    details = ""
+    data = "@data.extent"
+
+    [analysis.extent_indep]
+    tool = 'bayestraits'
+    model = 'discrete+independent'
+    details = ""
+    data = "@data.extent"
+        
+    [analysis.opacity_dep]
+    tool = 'bayestraits'
+    model = 'discrete+dependent'
+    details = ""
+    data = "@data.opacity"
+
+    [analysis.opacity_indep]
+    tool = 'bayestraits'
+    model = 'discrete+independent'
+    details = ""
+    data = "@data.opacity"
+
+
+
+
+[links]
+links = []

@@ -1,0 +1,38 @@
+title = "A phylogenetic approach to cultural evolution"
+
+doi = "10.1016/j.tree.2004.12.002"
+
+abstract = """
+There has been a rapid increase in the use of phylogenetic methods to study the evolution of languages and
+culture. Languages fit a tree model of evolution well, at least in their basic vocabulary, challenging the view
+that blending, or admixture among neighbouring groups, was predominant in cultural history. Here, we argue that
+we can use language trees to test hypotheses about not only cultural history and diversification, but also
+biocultural adaptation. Phylogenetic comparative methods take account of the non-independence of cultures
+(Galton's problem), which can cause spurious statistical associations in comparative analyses. Advances in
+phylogenetic methods offer new possibilities for the analysis of cultural evolution, including estimating the
+rate of evolution and the direction of coevolutionary change of traits on the tree. They also enable phylogenetic
+uncertainty to be incorporated into the analyses, so that one does not have to treat phylogenetic trees as if
+they were known without error.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Ruth Mace",
+    "Clare J. Holden"
+]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Mace2005"  # @xxxx
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "Review of cultural phylogenetic methods"
+
+
+[links]
+links = []

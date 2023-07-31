@@ -1,5 +1,5 @@
 
-title = "Mapping the Origins and Expansion of the Indo-European Language Family"
+title = "Mapping the Origins and Expansion of the Indo-European Language Family (Correction)"
 
 doi = "10.1126/science.1219669"
 
@@ -22,10 +22,10 @@ authors = [
 groups = ["Indo-European"]  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
-bibkey = "@Bouckaert2012"
+bibkey = "@Bouckaert2013"
 
 # type of study
-type = ["phylogenetic", "dating", "phylogeography"]  # phylogenetic,phylogeography,macroevolutionary,trait
+type = ["phylogenetic", "dating"]  # phylogenetic,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
 taxa = "103 Indo-European languages"
@@ -250,56 +250,22 @@ taxa = "103 Indo-European languages"
 
 # analysis information
 [analysis]
-    [analysis.tree1]
-    tool = 'beast2'
-    model = 'ctmc+strict'
-    details = ""
-
-    [analysis.tree2]
-    tool = 'beast2'
-    model = 'ctmc+relaxed'
-    details = ""
-    
-    [analysis.tree3]
-    tool = 'beast2'
-    model = 'covarion+strict'
-    details = ""
-
-    [analysis.tree4]
+    [analysis.tree]
     tool = 'beast2'
     model = 'covarion+relaxed'
     details = "best fitting model"
 
-    [analysis.tree5]
-    tool = 'beast2'
-    model = 'sdollo+strict'
-    details = ""
-
-    [analysis.tree6]
-    tool = 'beast2'
-    model = 'sdollo+relaxed'
-    details = ""
-
-    [analysis.phylogeography1]
-    tool = 'beast2'
-    model = 'relaxed-random-walk'
-    details = ""
-
-    [analysis.phylogeography2]
-    tool = 'beast2'
-    model = 'brownian'
-    details = ""
 
 
 [inferredages]
     
-    notes = "From Correction"
+    notes = "Original, see bouckaert_et_al2012b for corrected ages"
     
     [inferredage.root]
     taxa = ['indo1319']
-    age = "hpd(7579, 5972, 9351)"
+    age = "hpd(8466, 7116, 10410)"
     units = "y2000"
-    notes = "7579 years BP; 95% HPD interval = 5972 to 9351 years BP."
+    notes = "The inferred location (Fig. 1) and timing [95% highest posterior density (HPD) interval, 7116 to 10,410 years ago] of Indo-European origin is congruent with the proposal that the family began to diverge with the spread of agriculture..."
 
 
 [links]

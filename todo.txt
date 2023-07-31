@@ -1,16 +1,9 @@
 # TODO
 
-## Unsorted:
-
-
-## In phlorest, to catch up
+## Priority
 
 * Auderset et al. 2023 - 
 * Jaeger global tree
-* Greenhill et al. 2023 - Utoaztecan
-
-## Priority
-
 * Bouckaert global tree
 * Bryant 2006 - radiation and network breaking
 * Ceolin et al. 2021 - phil trans.
@@ -28,7 +21,6 @@
 * Walker & Hamilton 20101 - Walker, Robert S.; and Marcus J. Hamilton. 2010. Social complexity and linguistic diversity in the Austronesian and Bantu population expansions. Proceedings. Biological sciences / The Royal Society. doi:10.1098/rspb.2010.1942. http://www.ncbi.nlm.nih.gov/pubmed/20961903.
 * Warnow et al. 1995 - Warnow, D. Ringe, and A. Taylor, 1995 "Reconstructing the evolutionary history of natural languages." IRCS Report 95-16. Philadelphia (1995): Institute for Research in Cognitive Science, University of Pennsylvania. Technical report, 18 pp. 	
 * Yanovich 2020 - Yanovich, Igor. 2020. Phylogenetic linguistic evidence and the Dene-Yeniseian homeland. Diachronica 37.410–446. doi:10.1075/dia.17038.yan.
-* Zariquiey2023
 
 ## Misc
 
@@ -60,14 +52,13 @@
 * Jordan 2011 - Jordan, Fiona Marie. 2011. A Phylogenetic Analysis of the Evolution of Austronesian Sibling Terminologies A Phylogenetic Analysis of the Evolution of Austronesian. Human Biology 83.297–321. doi:10.3378/027.083.0209.
 * Jordan et al. 2009 - Jordan, Fiona Marie.; Russell D. Gray.; Simon J. Greenhill.; and Ruth Mace. 2009. Matrilocal residence is ancestral in Austronesian societies. Proceedings of the Royal Society B: Biological Sciences 276.1957–64. doi:10.1098/rspb.2009.0088.
 * Pagel & Meade 2005 - Pagel, Mark.; and Andrew Meade. 2005. Bayesian estimation of correlated evolution across cultures: A case study of marriage systems and wealth transfer at marriage. The evolution of cultural diversity: a phylogenetic approach, ed. by Ruth Mace, Clare J Holden, and Stephen J Shennan, 235–256. London: UCL Press.
+* Ringe Jr., D. A., Warnow, T., Taylor, A., Michailov, A., & Levinson, L. (1998). Computational cladistics and the position of Tocharian. In V. Mair (Ed.), The Bronze Age and Early Iron Age Peoples of Eastern Central Asia, Volume 1: Archeology, Migration and Nomadism: Journal of Indo-European Studies Monograph Series (Vol. 26). Institute for the Study of Man.
 * Sheard et al. 2020 - Sheard, Catherine.; Claire Bowern.; Rikker Dockum.; and Fiona M. Jordan. 2020. Pama–Nyungan grandparent systems change with grandchildren, but not cross-cousin terms or social norms. Evolutionary Human Sciences 2. Cambridge University Press. doi:10.1017/ehs.2020.31. 
 * Walker et al. 2011 - Walker, Robert S.; Kim R Hill.; Mark V Flinn.; and Ryan M Ellsworth. 2011. Evolutionary History of Hunter-Gatherer Marriage Practices. (Ed.) Pawel Michalak. PLoS ONE 6.e19066. doi:10.1371/journal.pone.0019066.
 * Widmer et al. 2017 - Widmer, Manuel.; Sandra Auderset.; Johanna Nichols.; Paul Widmer.; and Balthasar Bickel. 2017. NP recursion over time: Evidence from Indo-European. Language 93.799–826. doi:10.1353/lan.2017.0058.
-* Zhou & Bowern 2015 - Zhou, Kevin.; and Claire Bowern. 2015. Quantifying uncertainty in the phylogenetics of Australian numeral systems. Proceedings of the Royal Society B: Biological Sciences 282.20151278.
 
 ## Reviews etc (no original phylogenetic analysis)
 
-* Atkinson, Quentin D. 2013. The descent of words. Proceedings of the National Academy of Sciences of the United States of America 110.4159–4160. doi:10.1073/pnas.1300397110.
 * Bowern, Claire. 2018. Computational Phylogenetics. Annual Review of Linguistics 4.281–296. doi:10.1146/annurev-linguistics-011516-034142.
 * Eska & Ringe 2004 - Eska, J. F., & Ringe, D. (2004). Recent work in computational linguistic phylogeny. Language, 80(3), 569–582.
 * Gray et al. 2010 - Gray, Russell D.; David Bryant.; and Simon J. Greenhill. 2010. On the shape and fabric of human history. Philosophical transactions of the Royal Society of London. Series B, Biological sciences 365.3923–33. doi:10.1098/rstb.2010.0162.
@@ -128,7 +119,6 @@
 * Watts, Joseph.; Oliver Sheehan.; Joseph Bulbulia.; Russell D. Gray.; and Quentin D. Atkinson. 2018. Christianity spread faster in small, politically structured societies. Nature Human Behaviour. doi:10.1038/s41562-018-0379-3. http://www.nature.com/articles/s41562-018-0379-3.
 * Windram, Heather F.; Christopher J Howe.; and M Spencer. 2005. The Identification of Exemplar Change in the Wife of Bath’s Prologue Using the Maximum Chi-Squared Method. Literary and Linguistic Computing 20.189–204.
 * Windram, Heather F.; P. Shaw.; P. Robinson.; and Christopher J Howe. 2008. Dante’s Monarchia as a test case for the use of phylogenetic methods in stemmatic analysis. Literary and Linguistic Computing 23.443–463. doi:10.1093/llc/fqn023.
-
 
 
 

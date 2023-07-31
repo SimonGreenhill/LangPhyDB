@@ -81,16 +81,21 @@ taxa = "79 Indo-European languages, 130 Austronesian languages, 66 Bantu languag
 # generations and burn-in was set to 40 million generations after inspection of
 # critical parameters showed that convergence had been reached. This left a
 # total of 4,200 trees in the posterior tree sample.
-    [analysis.bayesphylogenies]
+    [analysis.utoaztecan]
     tool = 'bayestraits'
     model = 'two-state time reversible, gamma'
     details = "5 million"
+    data = "@data.utoaztecan"
 
-    [analysis.bayestraits]
+    [analysis.bayestraits_indep]
     tool = 'bayestraits'
-    model = 'discrete'
+    model = 'discrete+independent'
     details = ""
 
+    [analysis.bayestraits_dep]
+    tool = 'bayestraits'
+    model = 'discrete+dependent'
+    details = ""
 
 [links]
 links = []

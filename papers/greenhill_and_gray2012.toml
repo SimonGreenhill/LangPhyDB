@@ -1,0 +1,30 @@
+title = "Basic vocabulary and Bayesian phylolinguistics: Issues of understanding and representation"
+
+doi = "10.1075/dia.29.4.05gre"
+
+abstract = """
+Donohue et al.'s critique of our work on the origins and spread of the Austronesian language family is marred by
+misunderstandings of our approach. We respond to these by noting that our Bayesian phylogenetic approach: (1)
+distinguishes between retentions and innovations probabilistically, (2) focuses on basic vocabulary not 'the
+lexicon', (3) eliminates known loanwords, (4) produces results that are congruent with the results of the
+comparative method and conflict with the scenarios requiring unprecedented amounts of language shift postulated by
+Donohue et al.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['Simon J. Greenhill', 'Russell D. Gray',]
+
+# parts of the world
+groups = ['Austronesian']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Greenhill2012"
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short label of taxa "37 languages from.."
+taxa = "Review of language phylogenies with focus on defending Gray et al. 2009"
+
+[links]
+links = []

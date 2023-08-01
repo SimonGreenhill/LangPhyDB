@@ -1,0 +1,32 @@
+title = "Evolution and Language: Phylogenetic Analyses"
+
+doi = ""
+
+abstract = """
+Language phylogenies are a potentially powerful way to answer questions about how languages and cultures evolve.
+Recently, phylogenetic methods have been applied to a range of questions about the evolution of human languages and
+cultures. This article reviews the historical background of these approaches and provides a detailed methodological
+overview. Three different applications of phylogenetic methods are discussed: how language phylogenies can be used
+to test population dispersal hypotheses, to investigate processes in language evolution, and to infer patterns in
+cultural evolution. The article discusses briefly some controversies over the use of these methods before closing
+with some future prospects.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['Simon J. Greenhill']
+
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Greenhill2015b"  # @xxxx
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Review article on phylogenetic methods"
+
+[links]
+links = []

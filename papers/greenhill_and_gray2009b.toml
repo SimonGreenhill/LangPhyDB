@@ -1,0 +1,31 @@
+title = "Darwin, language, and two great Pacific voyages"
+
+doi = ""
+
+abstract = """
+On the 21st of December 1835 Charles Darwin arrived in New Zealand on the HMS Beagle. The Beagle had just visited
+the Galapagos islands, where Darwin had made some of the critical observations that he would later incorporate into
+his theory of evolution. Darwin did not like New Zealand: "I believe we were all glad to leave New Zealand. It is
+not a pleasant place. Amongst the natives there is absent that charming simplicity which is found in Tahiti; and
+the greater part of the English are the very refuse of society. Neither is the country itself attractive. (Darwin
+1860, p. 430)". Around 1000 years earlier another set of travellers arrived in New Zealand – the ancestors of the
+Maori. Unlike Darwin, the Maori liked New Zealand and decided to stay.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Simon J. Greenhill", "Russell D. Gray"]
+
+# parts of the world
+groups = ['Austronesian']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Greenhill2009b"  # @xxxx
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Review/overview of Gray et al. 2009 paper"
+
+[links]
+links = []

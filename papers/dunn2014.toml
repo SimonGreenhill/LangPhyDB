@@ -1,0 +1,43 @@
+title = "Language phylogenies"
+
+doi = ""
+
+abstract = """
+In principle, all historical linguistics is phylogenetic, since phylogenetics encompasses the scientific
+investigation of the descent of organisms in general. While prototypical phylogenetic analysis involves
+investigating the evolutionary descent of a class of biological species, such phylogenetic analyses have also been
+applied in other domains (e.g. social organization, musical instruments, decorative motifs on textiles); and
+indeed, can be applied to any domain which varies according to general evolutionary processes (see Chapter
+Jordan/Powell). The reason that in linguistics this term is often used in contrast to other forms of historical
+linguistic investigation is that phylogenetic approaches maintain their methodological link to the investigation
+of evolutionary processes in other, mostly biological, domains. The appeal of incorporating the analysis of
+language into a general theory of evolution is that current evolutionary theory offers a rigorous, quantifiable
+approach to phylogenetic inference. As Felsenstein states in the preface to his monumental Inferring Phylogenies,
+“phylogenies, or evolutionary trees, are the basic structures necessary to think clearly about differences between
+species, and to analyse those differences statistically” (Felsenstein 2004: xix). Linguistic phylogenetics
+incorporates the whole approach of the phylogenetic comparative method — using language phylogenies as the
+backbone models of change to test hypotheses about human dispersals, processes of cultural change, and the
+evolution of other linguistic subsystems (see Section 5). In this sense phylogenetic linguistics is broader in its
+ambitions than historical linguistics: historical linguistics seeks to illuminate the history of languages, and
+only secondarily in approaches like linguistic palaeontology (see Chapter:Heggarty) or gene-language
+correlation (Chapter:Pakendorf), to say something about the speakers of those languages
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Michael Dunn"]
+
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Dunn2014"  # @xxxx
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Review article on language phylogenies"
+
+[links]
+links = []

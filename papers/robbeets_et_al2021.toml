@@ -68,20 +68,170 @@ description = "98 Transeurasian languages"
 [data]
     [data.lexicon]
     ntaxa = 98
-    nchars = ""
-    nsites = ""
+    nchars = 254
+    nsites = 3193
     datatype = 'lexical cognates'
     source = ''
     items = ''
-    comment = ''
-    
+    comment = '3,193 cognate sets that represent 254 basic vocabulary concepts for 98 Transeurasian languages'
+
+    [data.cultural]
+    ntaxa = 255
+    nchars = 172
+    nsites = 172
+    datatype = 'archaeological'
+    source = ''
+    items = ''
+    comment = 'Extracting data from the published literature, we scored 172 archaeological features for 255 Neolithic and Bronze Age sites (Supplementary Data 6, Fig. 2a) and compiled an inventory of 269 directly carbon-14-dated early crop remains (Supplementary Data 9) in northern China, the Primorye, Korea and Japan.'
+
 
 # analysis information
 [analysis]
-    [analysis.tree]
-    tool = ''
-    model = ''
-    details = ""
+    [analysis.tree_lexicon_1]
+        tool = 'beast2'
+        model = 'covarion+strict+fbd'
+        details = ""
+        data = "@data.lexicon"
+
+    [analysis.tree_lexicon_2]
+        tool = 'beast2'
+        model = 'covarion+relaxed+fbd'
+        details = ""
+        data = "@data.lexicon"
+
+
+    [analysis.tree_lexicon_3]
+        tool = 'beast2'
+        model = 'ctmc+strict+fbd'
+        details = ""
+        data = "@data.lexicon"
+
+
+    [analysis.tree_lexicon_4]
+        tool = 'beast2'
+        model = 'ctmc+relaxed+fbd'
+        details = ""
+        data = "@data.lexicon"
+
+
+    [analysis.tree_lexicon_5]
+        tool = 'beast2'
+        model = 'pdcov+strict+fbd'
+        details = ""
+        data = "@data.lexicon"
+
+    [analysis.tree_lexicon_6]
+        tool = 'beast2'
+        model = 'pdcov+relaxed+fbd'
+        details = "best fitting model"
+        data = "@data.lexicon"
+
+    [analysis.tree_phylogeography]
+        tool = 'beast2'
+        model = 'phylogeography+relaxed'
+        details = "no data beyond geographic points and tree from main analysis"
+
+        
+    [analysis.tree_culture_1]
+        tool = 'beast2'
+        model = 'covarion+strict+bsp'
+        details = ""
+        data = "@data.culture"
+
+    [analysis.tree_culture_2]
+        tool = 'beast2'
+        model = 'covarion+relaxed+bsp'
+        details = ""
+        data = "@data.culture"
+
+
+    [analysis.tree_culture_3]
+        tool = 'beast2'
+        model = 'ctmc+strict+bsp'
+        details = ""
+        data = "@data.culture"
+
+
+    [analysis.tree_culture_4]
+        tool = 'beast2'
+        model = 'ctmc+relaxed+bsp'
+        details = ""
+        data = "@data.culture"
+
+
+    [analysis.tree_culture_5]
+        tool = 'beast2'
+        model = 'pdcov+strict+bsp'
+        details = ""
+        data = "@data.culture"
+
+
+    [analysis.tree_culture_6]
+        tool = 'beast2'
+        model = 'pdcov+relaxed+bsp'
+        details = "best fitting model"
+        data = "@data.culture"
+
+[calibrations]
+    [calibration.japonic]
+    taxa = ["japo1237"]
+    age = "normal(2100, 175)"
+    units = "ybp"
+    description = ""
+
+    [calibration.koreanic]
+    taxa = ["kore1284"]
+    age = "normal(800, 175)"
+    units = "ybp"
+    description = ""
+
+    [calibration.turkic]
+    taxa = ["turk1311"]
+    age = "normal(2100, 175)"
+    units = "ybp"
+    description = ""
+
+    [calibration.mongolic]
+    taxa = ["mong1349"]
+    age = "normal(750, 50)"
+    units = "ybp"
+    description = ""
+
+    [calibration.tungusic]
+    taxa = ["tung1282"]
+    age = "normal(1900, 275)"
+    units = "ybp"
+    description = ""
+
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.transeurasian]
+    taxa = ['japo1237', 'kore1284', 'turk1311', 'mong1349', 'tung1282',]
+    age = "hpd(9181, 5595, 12793)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.altaic]
+    taxa = ['turk1311', 'mong1349', 'tung1282']
+    age = "hpd(6811, 4404, 10166)"
+    units = "ybp"
+    notes = ""
+    
+    [inferredage.MT]
+    taxa = ['mong1349', 'tung1282']  # mongolic, tungusic
+    age = "hpd(4491, 2599, 6373)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.JK]
+    taxa = ['japo1237', 'kore1284']
+    age = "hpd(5458, 3335, 8024)"
+    units = "ybp"
+    notes = ""
+
 
 
 [links]

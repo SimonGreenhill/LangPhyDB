@@ -4,11 +4,10 @@
 
 * Auderset S, Greenhill SJ, DiCanio CT & Campbell EW. 2023. Subgrouping in a 'dialect continuum': A Bayesian phylogenetic analysis of the Mixtecan language family. Journal of Language Evolution.
 * Jaeger global tree
-* Bouckaert global tree
 * Bryant 2006 - radiation and network breaking
 * Ceolin et al. 2021 - phil trans.
 * Greenhill et al. 2010a- Greenhill, Simon J.; Quentin D. Atkinson.; Andrew Meade.; and Russell D. Gray. 2010. The shape and tempo of language evolution. Proceedings of the Royal Society B: Biological Sciences 277. doi:10.1098/rspb.2010.0051.
-* Guardiano & Longobardi 2005 -
+* Guardiano & Longobardi 2005 -Guardiano, Cristina and Giuseppe Longobardi (2005). “Parametric Comparison and Language Taxonomy”. In: Grammaticalization and parametric variation. Ed. by Montserrat Batllori et al. Oxford: Oxford University Press, pp. 149–174.
 * Hübler 2022 - Hübler, Nataliia. 2022. Phylogenetic signal and rate of evolutionary change in language structures. Royal Society Open Science 9. Royal Society.211252. doi:10.1098/rsos.211252.
 * Hamed et al 2005 - On Cladistic Reconstruction of Linguistic Trees through Vowel Data
 * Lee & Hasegawa 2014 - Lee, S.; and T Hasegawa. 2014. Oceanic barriers promote language diversification in the Japanese Islands. Journal of evolutionary biology 27.1905–12. doi:10.1111/jeb.12442.

@@ -1,0 +1,251 @@
+title = "NP recursion over time: Evidence from Indo-European"
+
+doi = "10.1353/lan.2017.0058"
+
+abstract = """
+Some languages constrain the recursive embedding of NPs to some specific morphosyntactic types, allowing it, for
+example, only with genitives but not with bare juxtaposition. In Indo-European, every type of NP
+embedding—genitives, adjectivizers, adpositions, head marking, or juxtaposition—is unavailable for syntactic
+recursion in at least one attested language. In addition, attested pathways of change show that NP types that
+allow recursion can emerge and disappear in less than 1,000 years. This wide-ranging synchronic diversity and its
+high diachronic dynamics raise the possibility that at many hypothetical times in the history of the family
+recursive NP embedding could have been lost for all types simultaneously, parallel to what has occasionally been
+observed elsewhere (Everett 2005, Evans & Levinson 2009).
+
+Performing Bayesian phylogenetic analyses on a sample of fifty-five languages from all branches of Indo-European,
+we show, however, that it is extremely unlikely for such a complete loss to ever have occurred. When one or more
+morphosyntactic types become unavailable for syntactic recursion in an NP, an unconstrained alternative type is
+very likely to develop in the same language. This suggests that, while diachronic pathways away from NP recursion
+clearly exist, there is a tendency—perhaps a universal one—to maintain or develop syntactic recursion in NPs. A
+likely explanation for this evolutionary bias is that recursively embedded phrases are not just an option that
+languages have (Fitch et al. 2005), but they are in fact preferred by our processing system.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Manuel Widmer", "Sandra Auderset", "Johanna Nichols", "Paul Widmer", "Balthasar Bickel"
+]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Widmer2017"  # @xxxx
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Models the evolution of 5 noun-phrase types in Indo-European languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.NP]
+    ntaxa = 54
+    nchars = 5
+    nsites = 5
+    datatype = 'structural features'
+    source = ''
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.chang]
+    source = '@Chang2015'
+    comment = ''
+
+    [phylogenies.bouckaert]
+    source = '@Bouckaert2012'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.chang_G_ER]
+    tool = 'phytools'
+    model = 'ER'
+    details = ""
+    data = "@phylogenies.chang"
+
+    [analysis.chang_A_ER]
+    tool = 'phytools'
+    model = 'ER'
+    details = ""
+    data = "@phylogenies.chang"
+
+    [analysis.chang_H_ER]
+    tool = 'phytools'
+    model = 'ER'
+    details = ""
+    data = "@phylogenies.chang"
+
+    [analysis.chang_P_ER]
+    tool = 'phytools'
+    model = 'ER'
+    details = ""
+    data = "@phylogenies.chang"
+
+    [analysis.chang_J_ER]
+    tool = 'phytools'
+    model = 'ER'
+    details = ""
+    data = "@phylogenies.chang"
+
+    [analysis.chang_G_ARD]
+    tool = 'phytools'
+    model = 'ARD'
+    details = ""
+    data = "@phylogenies.chang"
+
+    [analysis.chang_A_ARD]
+    tool = 'phytools'
+    model = 'ARD'
+    details = ""
+    data = "@phylogenies.chang"
+
+    [analysis.chang_H_ARD]
+    tool = 'phytools'
+    model = 'ARD'
+    details = ""
+    data = "@phylogenies.chang"
+
+    [analysis.chang_P_ARD]
+    tool = 'phytools'
+    model = 'ARD'
+    details = ""
+    data = "@phylogenies.chang"
+
+    [analysis.chang_J_ARD]
+    tool = 'phytools'
+    model = 'ARD'
+    details = ""
+    data = "@phylogenies.chang"
+    
+    [analysis.bouckaert_G_ER]
+    tool = 'phytools'
+    model = 'ER'
+    details = ""
+    data = "@phylogenies.bouckaert"
+
+    [analysis.bouckaert_A_ER]
+    tool = 'phytools'
+    model = 'ER'
+    details = ""
+    data = "@phylogenies.bouckaert"
+
+    [analysis.bouckaert_H_ER]
+    tool = 'phytools'
+    model = 'ER'
+    details = ""
+    data = "@phylogenies.bouckaert"
+
+    [analysis.bouckaert_P_ER]
+    tool = 'phytools'
+    model = 'ER'
+    details = ""
+    data = "@phylogenies.bouckaert"
+
+    [analysis.bouckaert_J_ER]
+    tool = 'phytools'
+    model = 'ER'
+    details = ""
+    data = "@phylogenies.bouckaert"
+
+    [analysis.bouckaert_G_ARD]
+    tool = 'phytools'
+    model = 'ARD'
+    details = ""
+    data = "@phylogenies.bouckaert"
+
+    [analysis.bouckaert_A_ARD]
+    tool = 'phytools'
+    model = 'ARD'
+    details = ""
+    data = "@phylogenies.bouckaert"
+
+    [analysis.bouckaert_H_ARD]
+    tool = 'phytools'
+    model = 'ARD'
+    details = ""
+    data = "@phylogenies.bouckaert"
+
+    [analysis.bouckaert_P_ARD]
+    tool = 'phytools'
+    model = 'ARD'
+    details = ""
+    data = "@phylogenies.bouckaert"
+
+    [analysis.bouckaert_J_ARD]
+    tool = 'phytools'
+    model = 'ARD'
+    details = ""
+    data = "@phylogenies.bouckaert"
+    
+    [analysis.chang_G_SCM]
+    tool = 'phytools'
+    model = 'SCM'
+    details = ""
+    data = "@phylogenies.chang"
+
+    [analysis.chang_A_SCM]
+    tool = 'phytools'
+    model = 'SCM'
+    details = ""
+    data = "@phylogenies.chang"
+
+    [analysis.chang_H_SCM]
+    tool = 'phytools'
+    model = 'SCM'
+    details = ""
+    data = "@phylogenies.chang"
+
+    [analysis.chang_P_SCM]
+    tool = 'phytools'
+    model = 'SCM'
+    details = ""
+    data = "@phylogenies.chang"
+
+    [analysis.chang_J_SCM]
+    tool = 'phytools'
+    model = 'SCM'
+    details = ""
+    data = "@phylogenies.chang"
+
+    [analysis.bouckaert_G_SCM]
+    tool = 'phytools'
+    model = 'SCM'
+    details = ""
+    data = "@phylogenies.bouckaert"
+
+    [analysis.bouckaert_A_SCM]
+    tool = 'phytools'
+    model = 'SCM'
+    details = ""
+    data = "@phylogenies.bouckaert"
+
+    [analysis.bouckaert_H_SCM]
+    tool = 'phytools'
+    model = 'SCM'
+    details = ""
+    data = "@phylogenies.bouckaert"
+
+    [analysis.bouckaert_P_SCM]
+    tool = 'phytools'
+    model = 'SCM'
+    details = ""
+    data = "@phylogenies.bouckaert"
+
+    [analysis.bouckaert_J_SCM]
+    tool = 'phytools'
+    model = 'SCM'
+    details = ""
+    data = "@phylogenies.bouckaert"
+
+[links]
+links = []

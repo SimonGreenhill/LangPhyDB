@@ -1,0 +1,101 @@
+title = "Bayesian Estimation of Correlated Evolution Across Cultures: a Case Study of Marriage Systems and Wealth Transfer at Marriage"
+
+doi = ""
+
+abstract = """
+We describe in this chapter a set of statistical methods for testing cross-cultural hypotheses about correlated
+evolution of cultural traits. Our methods make use of phylogenies of cultures and can take into account
+uncertainty about what the true phylogeny is in testing hypotheses. Cross-cultural and across-species studies are
+conventionally called 'comparative' studies, and the statistical methods for analysing comparative data are known
+as comparative methods. Comparative methods comprise one of biology's most enduring sets of techniques for
+investigating evolution and adaptation (Harvey and Pagel 1991; Pagel 1999). They are widely used
+in evolutionary biology, molecular evolution, animal behaviour, ecology and conservation.
+
+Anthropologists and archaeologists are increasingly applying comparative methods to investigate the evolution of
+human cultural, morphological and behavioural traits. They may frequently wish to know whether a sample of human
+cultures provides evidence that two or more cultural traits have coevolved (Mace and Pagel 1994). By 'co-evolved'
+we mean that two traits are related in such a way that when one of them has changed its state throughout its
+evolutionary history, the other has shown a tendency to change as well. Correlated cultural evolution may reveal
+something about the functional or possibly even causal links among cultural traits.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Mark Pagel", "Andrew Meade"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Pagel2005"  # @xxxx
+
+# type of study
+type = ['tutorial', 'trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "An example paper explaining phylogenetic comparative methods."
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.dyen]
+    ntaxa = 31
+    nchars = 200
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Dyen1992'
+    items = ''
+    comment = 'subset'
+
+    [data.wealth_transfer]
+    ntaxa = 31
+    nchars = 1
+    nsites = 1
+    datatype = 'ethnographic features'
+    source = '@EthAtlas'
+    items = ''
+    comment = 'wealth transfer at marriage'
+
+    [data.marriage_system]
+    ntaxa = 31
+    nchars = 1
+    nsites = 1
+    datatype = 'ethnographic features'
+    source = '@EthAtlas'
+    items = ''
+    comment = 'marriage systen'
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = 'bayesphylogenies'
+    model = 'm2p+gamma'
+    details = ""
+
+    [analysis.bt_dep]
+    tool = 'bayestraits'
+    model = 'dependent'
+    details = ""
+
+    [analysis.bt_indep]
+    tool = 'bayestraits'
+    model = 'independent'
+    details = ""
+
+    [analysis.bt_dep_restricted]
+    tool = 'bayestraits'
+    model = 'dependent+rjhp'
+    details = ""
+
+    [analysis.bt_indep_restricted]
+    tool = 'bayestraits'
+    model = 'independent+rjhp'
+    details = ""
+
+[links]
+links = []

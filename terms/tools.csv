@@ -1,5 +1,6 @@
 label,description
 ape,
+arlequin,
 barrier,
 bayesphylogenies,http://www.evolution.reading.ac.uk/BayesPhy.html
 bayestraits,http://www.evolution.reading.ac.uk/BayesTraits.html
@@ -11,12 +12,15 @@ hisse,R package hisse
 iqtree,
 lingpy,
 macclade,
+mantel,
 mesquite,
 mrbayes,http://nbisweden.github.io/MrBayes/
 network,
 paup*,
 phylip,
+phytools,
 phylogemetric,
+phytools,
 picante,
 poy5,
 punctuatedwebapp,http://www.evolution.reading.ac.uk/pe/index.html

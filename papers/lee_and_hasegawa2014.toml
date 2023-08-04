@@ -1,0 +1,89 @@
+title = "Oceanic barriers promote language diversification in the Japanese Islands"
+
+doi = "10.1111/jeb.12442"
+
+abstract = """
+Good barriers make good languages. Scholars have long speculated that geographical barriers impede linguistic
+contact between speech communities and promote language diversification in a manner similar to the process of
+allopatric speciation. This hypothesis, however, has seldom been tested systematically and quantitatively. Here,
+we adopt methods from evolutionary biology and attempt to quantify the influence of oceanic barriers on the degree
+of lexical diversity in the Japanese Islands. Measuring the degree of beta diversity from basic vocabularies, we
+find that geographical proximity and, more importantly, isolation by surrounding ocean, independently explains a
+significant proportion of lexical variation across Japonic languages. Further analyses indicate that our results
+are neither a by-product of using a distance matrix derived from a Bayesian language phylogeny nor an
+epiphenomenon of accelerated evolutionary rates in languages spoken by small communities. Moreover, we find that
+the effect of oceanic barriers is reproducible with the Ainu languages, indicating that our analytic approach as
+well as the results can be generalized beyond Japonic language family. The findings we report here are the first
+quantitative evidence that physical barriers formed by ocean can influence language diversification and points to
+an intriguing common mechanism between linguistic and biological evolution.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Sean Lee", "Toshikazu Hasegawa"]
+
+# parts of the world
+groups = ['Japonic']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Lee2014"  # @xxxx
+
+# type of study
+type = ['phylogenetic', 'network', 'delta', 'qresidual', 'macroevolutionary']
+
+# short description of the study, one line.
+description = "Exploring the effect of Ocean barriers on the diversification of Japonic languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.lexicon]
+    ntaxa = 59
+    nchars = 210
+    nsites = 675
+    datatype = 'lexical cognates'
+    source = '@Lee2011'
+    items = 'swadesh200'
+    comment = ''
+
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.label]
+    source = '@Lee2011'
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.mantel]
+    tool = 'mantel'
+    model = ''
+    details = ""
+
+    [analysis.nnet]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+
+    [analysis.delta]
+    tool = 'splitstree'
+    model = 'delta'
+    details = ""
+    
+    [analysis.qresidual]
+    tool = 'splitstree'
+    model = 'qresidual'
+    details = ""
+
+    [analysis.phist]
+    tool = 'arlequin'
+    model = 'ΦST'
+    details = ""
+
+[links]
+links = []

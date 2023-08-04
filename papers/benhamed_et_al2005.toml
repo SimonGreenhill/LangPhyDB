@@ -1,0 +1,103 @@
+title = "On Cladistic Reconstruction of Linguistic Trees through Vowel Data"
+
+doi = ""
+
+abstract = """
+Evolutionary biology and historical linguistics both aim at inferring historical relationships
+between objects: their genetic affiliation and/or their convergence or mutual borrowing of traits. The similarity
+of the methodologies developed in each field cladistics in biology and comparatism in linguistics – is striking.
+However, the comparative method is specifically applied to lexical data and so fails to analyze language
+relationships directly through another material, phonological data for instance. The cladistic approach appears
+then as a good alternative to overcome this particular limitation, since it is not specific to a particular type
+of data. This study focuses on vowel systems to reconstruct evolutionary linguistic trees. It is based on
+typologies of the vowel space structure (Valle ́ e, 1994). The phonological data used are those of the UCLA
+Phonological Segment Inventory Database (UPSID) developed by Maddieson (1984). We suggest a cladistics coding
+based on the Dispersion-Focalization Theory (Schwartz et al., 1997) and in agreement with computer models for
+vowel systems emergence by self-organization (De Boer, 2000).
+
+The trees inferred by this procedure are compared to those obtained with the classical comparative method of
+historical linguistics. Factors possibly responsible for the topologies of these trees are investigated and the
+efficiency of the suggested coding is discussed.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Mahé Ben Hamed", "Pierre Darlu", "Nathalie Vallée"]
+
+# parts of the world
+groups = ['Indo-European', 'Uralic', 'Altaic', 'Niger-Kordofanian', 'Afro-Asiatic']
+
+# bibkey citation in sources.bib
+bibkey = "@BenHamed2005"  # @xxxx
+
+# type of study
+type = ['phylogenetic']
+
+# short description of the study, one line.
+description = "Exploratory study reconstructing phylogeny with vowel systems"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.upsid]
+    ntaxa = 95
+    nchars = "?"
+    nsites = "?"
+    datatype = 'phonetic traits'
+    source = '@UPSID'
+    items = ''
+    comment = ''
+
+    [data.geography]
+    ntaxa = 95
+    nchars = 1
+    nsites = 1
+    datatype = 'distance'
+    source = ''
+    items = 'geography'
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.afroasiatic]
+    tool = 'paup*'
+    model = ''
+    details = "tree not presented"
+
+    [analysis.indoeuropean]
+    tool = 'paup*'
+    model = ''
+    details = ""
+
+    [analysis.uralaltaic]
+    tool = 'paup*'
+    model = ''
+    details = ""
+
+    [analysis.nigerkordofanian]
+    tool = 'paup*'
+    model = ''
+    details = "tree not presented"
+
+    [analysis.indoeuropean_and_uralaltaic]
+    tool = 'paup*'
+    model = ''
+    details = "pooled"
+
+    [analysis.language_vs_geography]
+    tool = 'mantel'
+    model = ''
+    details = "CADM"
+
+    [analysis.consistency_index]
+    tool = 'paup*'
+    model = 'CI'
+    details = ""
+
+[links]
+links = []

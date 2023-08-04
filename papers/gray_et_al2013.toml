@@ -1,0 +1,30 @@
+title = "Phylogenetic Models of Language Change: Three New Questions"
+
+doi = ""
+
+abstract = """
+Computational methods derived from evolutionary biology are increasingly being applied
+to the study of cultural evolution. This is particularly the case in studies of language evolution,
+where phylogenetic methods have recently been used to test hypotheses about divergence dates, rates
+of lexical change, borrowing, and putative language universals. This chapter outlines three new and
+related questions that could be productively tackled with computational phylogenetic methods: What
+drives language diversification? What drives differences in the rate of linguistic change (disparity)?
+Can we identify cultural and linguistic homelands? """
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Russell D. Gray", "Simon J. Greenhill", "Quentin D. Atkinson"
+]
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Gray2013"  # @xxxx
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Position piece talking about three new questions that can be explored"
+

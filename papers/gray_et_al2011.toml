@@ -1,0 +1,29 @@
+title = "Language evolution and human history: what a difference a date makes"
+
+doi = "10.1098/rstb.2010.0378"
+
+abstract = """Historical inference is at its most powerful when independent lines of evidence can be integrated
+into a coherent account. Dating linguistic and cultural lineages can potentially play a vital role in the integration of evidence from linguistics, anthropology, archaeology and genetics. Unfortunately, although the
+comparative method in historical linguistics can provide a relative chronology, it cannot provide absolute date
+estimates and an alternative approach, called glottochronology, is fundamentally flawed. In this paper we outline
+how computational phylogenetic methods can reliably estimate language divergence dates and thus help resolve
+long-standing debates about human prehistory ranging from the origin of the Indo-European language family to the
+peopling of the Pacific. """
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Russell D. Gray", "Quentin D. Atkinson", "Simon J. Greenhill"
+]
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Gray2011"  # @xxxx
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Review on dating of language phylogenies"
+

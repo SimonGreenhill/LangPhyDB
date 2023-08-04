@@ -81,17 +81,8 @@
 
 ## Reviews etc (no original phylogenetic analysis)
 
-* Eska & Ringe 2004 - Recent work in computational linguistic phylogeny. Language, 80(3), 569–582.
 * Evans CL, Greenhill SJ, Watts J, List JM, Botero CA, Gray RD, & Kirby KR. 2021. The uses and abuses of tree thinking in cultural evolution. Philosophical Transactions of the Royal Society B: Biological Sciences, 376, 20200056.
-* Gray, Russell D.; Simon J. Greenhill.; and R M Ross. 2007. The Pleasures and Perils of Darwinizing Culture (with phylogenies). Biological Theory 2. MIT Press.360–375.
-* Gray RD, Atkinson QD & Greenhill SJ. 2011. Language evolution and human history: what a difference a date makes. Philosophical Transactions of the Royal Society, B, 366, 1090-1100.
-* Gray RD, Greenhill SJ & Atkinson QD. 2013. Phylogenetic models of language change: Three new questions. In Richerson PJ and Christiansen MH (Eds). Cultural Evolution: Society, Technology, Language, and Religion. MIT Press: Cambridge.
-* Gray, Russell D.; Quentin D. Atkinson.; and Simon J. Greenhill. 2011. Language evolution and human history: what a difference a date makes. Philosophical Transactions of the Royal Society B: Biological Sciences 366.1090–1100. doi:10.1098/rstb.2010.0378.
-* Greenhill 2023 - (review)
-* Jordan, Fiona M.; and Brad R Huber. 2013. Evolutionary Approaches to Cross-Cultural Anthropology. Cross-Cultural Research 47.91–101. doi:10.1177/1069397112471800.
-* Mace, R.; and Fiona Marie Jordan. 2011. Macro-evolutionary studies of cultural diversity: a review of empirical studies of cultural transmission and cultural adaptation. Philosophical Transactions of the Royal Society B: Biological Sciences 366.402–411. doi:10.1098/rstb.2010.0238.
 * Mace, Ruth.; and Mark Pagel. 1997. Phylogenies and Cultural Evolution. Journal of Theoretical Biology 351.349–351.
-* Nichols & Warnow 2008 - Nichols, J., & Warnow, T. (2008). Tutorial on Computational Linguistic Phylogeny. Language and Linguistics Compass, 2(5), 760–820. https://doi.org/10.1111/j.1749-818X.2008.00082.x
 
 
 ## Criticisms
@@ -100,7 +91,7 @@
 * Donohue and Denham 2012
 
 
-## Trees from cultural data
+## Cultural Data Only
 
 * Barbrook, A C.; Christopher J Howe.; N Blake.; and P Robinson. 1998. The phylogeny of The Canterbury Tales. Nature 394.839.
 * Buckley, Christopher D. 2012. Investigating cultural evolution using phylogenetic analysis: the origins and descent of the southeast asian tradition of warp ikat weaving. PloS one 7.e52064. doi:10.1371/journal.pone.0052064.
@@ -113,6 +104,8 @@
 * Howe, Christopher J.; R Connolly.; and Heather F Windram. 2012. Responding to Criticisms of Phylogenetic Methods in Stemmatology. SEL Studies in English Literature 52.51–67. doi:10.1353/sel.2012.0008.
 * Jordan & O'Neill 2010 - Jordan, Peter.; and Sean O’Neill. 2010. Untangling cultural inheritance: language diversity and long-house architecture on the Pacific northwest coast. Philosophical transactions of the Royal Society of London. Series B, Biological sciences 365.3875–88. doi:10.1098/rstb.2010.0092.
 * Jordan, Peter.; and Stephen Shennan. 2009. Diversity in hunter–gatherer technological traditions: Mapping trajectories of cultural ‘descent with modification’ in northeast California. Journal of Anthropological Archaeology 28. doi:10.1016/j.jaa.2009.05.004.
+* Jordan, Fiona M.; and Brad R Huber. 2013. Evolutionary Approaches to Cross-Cultural Anthropology. Cross-Cultural Research 47.91–101. doi:10.1177/1069397112471800.
+* Mace, R.; and Fiona Marie Jordan. 2011. Macro-evolutionary studies of cultural diversity: a review of empirical studies of cultural transmission and cultural adaptation. Philosophical Transactions of the Royal Society B: Biological Sciences 366.402–411. doi:10.1098/rstb.2010.0238.
 * Kraaijeveld, Alex R. 1999. Origin of chess - a phylogenetic perspective. Journal of Board Game Studies 3 3.39–50.
 * Larsen, Anna W. 2011. Evolution of Polynesian bark cloth and factors influencing cultural change. Journal of Anthropological Archaeology 30. Elsevier Inc.116–134. doi:10.1016/j.jaa.2010.12.004.
 * Lycett, Stephen J. 2007. Why is there a lack of Mode 3 Levallois technologies in East Asia? A phylogenetic test of the Movius–Schick hypothesis. Journal of Anthropological Archaeology 26.541–575. doi:10.1016/j.jaa.2007.07.003.

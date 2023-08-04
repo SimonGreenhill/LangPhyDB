@@ -1,0 +1,37 @@
+title = "Recent work in computational linguistic phylogeny*"
+
+doi = "10.1353/lan.2004.0123"
+
+abstract = """
+A number of recent attempts bynonlinguists to reconstruct linguistic evolutionary trees have made news.
+Reconstructions of the phylogenyo f the Indo-European (IE) family of languages are especially well
+represented; well-known examples include Rexová et al. 2003, Gray & Atkinson 2003 — which is discussed by
+Searls (2003) and briefly reported in U.S. news & world report (10 December 2003) — and Forster & Toth
+2003, which also generated considerable attention in the popular media. Scientific linguists have not
+been impressed for a variety of reasons. Though no two of the publications in question exhibit exactly the
+same weaknesses, all can be impugned on one or more of the following grounds: the linguistic data
+employed have not been adequately analyzed, or—in some cases—even competently analyzed; the model of
+language change employed has not been shown to fit the known facts of language change; attempts to fix
+the dates of prehistoric languages have ignored the fatal shortcomings of glottochronology discovered
+byBergsland and Vogt (1962; see further §4); the researchers assume that vocabulary replacement is
+governed bya LEXICAL CLOCK (similar to the controversial MOLECULAR CLOCK posited by some biological
+cladists);1 and/or the data set used is too small to yield statistically reliable conclusions. A
+thoroughgoing critique of all recently published work in this vein would be unwieldy and would require far
+more space than a discussion note permits. Instead, we focus on the article that best exemplifies the
+shortcomings listed above, namely the work of Forster and Toth.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Joseph F. Eska", "Donald A. Ringe"]
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Eska2004"  # @xxxx
+
+# type of study
+type = ['criticism']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Criticism article focused mainly on Forster & Toth (2003) but raising general points"

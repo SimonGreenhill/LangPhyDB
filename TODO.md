@@ -20,9 +20,6 @@
 * Walker & Hamilton 2010 - Social complexity and linguistic diversity in the Austronesian and Bantu population expansions. Proceedings. Biological sciences / The Royal Society. doi:10.1098/rspb.2010.1942. http://www.ncbi.nlm.nih.gov/pubmed/20961903.
 * Warnow et al. 1995 - Warnow, D. Ringe, and A. Taylor, 1995 "Reconstructing the evolutionary history of natural languages." IRCS Report 95-16. Philadelphia (1995): Institute for Research in Cognitive Science, University of Pennsylvania. Technical report, 18 pp. 	
 * Yanovich 2020 - Yanovich, Igor. 2020. Phylogenetic linguistic evidence and the Dene-Yeniseian homeland. Diachronica 37.410–446. doi:10.1075/dia.17038.yan.
-
-## Misc
-
 * Pavel Duda and Jan Zrzavý (2019) Chapter: 12 Towards a global phylogeny of human populations based on genetic and linguistic data. In book: Modern Human Origins and Dispersal. Publisher: Kerns Verlag. Editors: Yonatan Sahle, Hugo Reyes-Centeno, Christian Bentz. ISBN: 978-3-935751-30-8 https://www.researchgate.net/publication/332298707_Towards_a_global_phylogeny_of_human_populations_based_on_genetic_and_linguistic_data
 * Dockum 2018 - Dockum, R. (2018). Phylogeny in phonology: How Tai sound systems encode their past. In Proceedings of the Annual Meetings on Phonology, volume 5
 * Greenhill et al. 2010b - Greenhill, Simon J.; Alexei J Drummond.; and Russell D. Gray. 2010. How Accurate and Robust Are the Phylogenetic Estimates of Austronesian Language Relationships? PLoS ONE 5.e9573. doi:10.1371/journal.pone.0009573.
@@ -35,7 +32,8 @@
 * Greenhill et al. 2009 - Greenhill, Simon J.; Thomas E. Currie.; and Russell D. Gray. 2009. Does horizontal transmission invalidate cultural phylogenies? Proceedings. Biological sciences / The Royal Society 276.2299–306. doi:10.1098/rspb.2008.1944.
 * Nakhleh et al. 2005 - Nakhleh, D. Ringe, and T. Warnow, "Perfect Phylogenetic Networks: A New Methodology for Reconstructing the Evolutionary History of Natural Languages." LANGUAGE, Journal of the Linguistic Society of America, 81(2):382-420, 2005. 	PDF
 * Gray et al. 2010 - Gray, Russell D.; David Bryant.; and Simon J. Greenhill. 2010. On the shape and fabric of human history. Philosophical transactions of the Royal Society of London. Series B, Biological sciences 365.3923–33. doi:10.1098/rstb.2010.0162.
-
+* Kassian, Alexei S.. "Linguistic homoplasy and phylogeny reconstruction. The cases of Lezgian and Tsezic languages (North Caucasus) " Folia Linguistica, vol. 51, no. s38-s1, 2017, pp. 217-262. https://doi.org/10.1515/flih-2017-0008
+  
 ## Comparative Analysis
 
 * Atkinson QD, Coomber T, Passmore S, Greenhill SJ, & Kushnick G. 2016. Cultural and Environmental Predictors of Pre-European Deforestation on Pacific Islands. PLoS ONE 11(5): e0156340.
@@ -62,6 +60,13 @@
 * Teixidor-Toneu I, Kool A, Greenhill SJ, Kjesrud K, Sandstedt JJ, Manzanilla V, Jordan FM. 2021. Historical, archaeological and linguistic evidence test the phylogenetic inference of Viking-Age plant use. Philosophical Transactions of the Royal Society B: Biological Sciences, 376, 20200086.
 * Walker et al. 2011 - Walker, Robert S.; Kim R Hill.; Mark V Flinn.; and Ryan M Ellsworth. 2011. Evolutionary History of Hunter-Gatherer Marriage Practices. (Ed.) Pawel Michalak. PLoS ONE 6.e19066. doi:10.1371/journal.pone.0019066.
 * Widmer et al. 2017 - Widmer, Manuel.; Sandra Auderset.; Johanna Nichols.; Paul Widmer.; and Balthasar Bickel. 2017. NP recursion over time: Evidence from Indo-European. Language 93.799–826. doi:10.1353/lan.2017.0058.
+* Calude, A. S., & Verkerk, A. (2016). The typology and diachrony of higher numerals in Indo-European: A phylogenetic comparative study. Journal of Language Evolution, April, lzw003. https://doi.org/10.1093/jole/lzw003
+* Shirtz, S., Talamo, L., & Verkerk, A. (2021). The Evolutionary Dynamics of Negative Existentials in Indo-European. Frontiers in Communication, 6, 661862. https://doi.org/10.3389/fcomm.2021.661862
+* Verkerk, A. (2019). Detecting non-tree-like signal using multiple tree topologies. Understanding Language Genealogy, 9(1), 9–69. Portico. https://doi.org/10.1075/jhl.17009.ver
+* Di Garbo, F., & Verkerk, A. (2022). A typology of northwestern Bantu gender systems. Linguistics, 60(4), 1169–1239. https://doi.org/10.1515/ling-2020-0217
+* Verkerk, A., & Di Garbo, F. (2022). Sociogeographic correlates of typological variation in northwestern Bantu gender systems. Language Dynamics and Change, 12(2), 155-223. https://doi.org/10.1163/22105832-bja10017\
+* Moran, S., Grossman, E. & Verkerk, A. Investigating diachronic trends in phonological inventories using BDPROTO. Lang Resources & Evaluation 55, 79–103 (2021). https://doi.org/10.1007/s10579-019-09483-3
+  
 
 ## Reviews etc (no original phylogenetic analysis)
 

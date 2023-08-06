@@ -1,4 +1,5 @@
 label,description
+ade4,
 ape,
 arlequin,
 barrier,
@@ -8,17 +9,18 @@ beast,https://beast.community
 beast2,http://www.beast2.org/
 caper,R package caper
 CorHMM,
+geiger,
 hisse,R package hisse
 iqtree,
 lingpy,
 macclade,
 mantel,
+MCMCglmm,
 mesquite,
 mrbayes,http://nbisweden.github.io/MrBayes/
 network,
 paup*,
 phylip,
-phytools,
 phylogemetric,
 phytools,
 picante,

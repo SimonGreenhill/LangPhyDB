@@ -1,0 +1,121 @@
+title = "Pama–Nyungan grandparent systems change with grandchildren, but not cross-cousin terms or social norms"
+
+doi = "10.1017/ehs.2020.31"
+
+abstract = """
+Kinship is a fundamental and universal aspect of the structure of human society. The kinship category
+of 'grandparents' is socially salient, owing to grandparents' investment in the care of the
+grandchildren as well as to older generations' control of wealth and cultural knowledge, but the
+evolutionary dynamics of grandparent terms has yet to be studied in a phylogenetically explicit
+context. Here, we present the first phylogenetic comparative study of grandparent terms by
+investigating 134 languages in Pama-Nyungan, an Australian family of hunter–gatherer languages. We infer
+that proto-Pama–Nyungan had, with high certainty, four separate terms for grandparents. This state then
+shifted into either a two-term system that distinguishes the genders of the grandparents or a
+three-term system that merges the 'parallel' grandparents, which could then transition into a different
+three-term system that merges the 'cross' grandparents. We find no support for the co-evolution of
+these systems with either community marriage organisation or post-marital residence. We find some
+evidence for the correlation of grandparent and grandchild terms, but no support for the correlation of
+grandparent and cross-cousin terms, suggesting that grandparents and grandchildren potentially form a
+single lexical category but that the entire kinship system does not necessarily change synchronously.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Catherine Sheard",
+    "Claire Bowern",
+    "Rikker Dockum",
+    "Fiona M. Jordan"
+]
+
+# parts of the world
+groups = ['Pama-Nyungan']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Sheard2020"  # @xxxx
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Testing the proposed relationship between grandparent and grandchild terms in Pama-Nyungan languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.grandparent]
+    ntaxa = 134
+    nchars = 4
+    nsites = 4
+    datatype = 'lexical cognates'
+    source = '@CHIRILA'
+    items = ''
+    comment = 'parent terms and grandparent terms'
+
+    [data.grandchild]
+    ntaxa = 58
+    nchars = 4
+    nsites = 4
+    datatype = 'lexical cognates'
+    source = '@CHIRILA'
+    items = ''
+    comment = 'grand-child and cross-cousin terms'
+
+    [data.geography]
+    ntaxa = 130
+    nchars = 1
+    nsites = 1
+    datatype = 'distance'
+    source = ''
+    items = 'geography'
+    comment = ''
+
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.pamanyungan]
+    source = '@Bouckaert2018'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.lambda]
+    tool = 'geiger'
+    model = 'fitDiscrete'
+    details = "@data.grandchild; @data.grandparent"
+    notes = "test for phylogenetic signal"
+
+    [analysis.ace]
+    tool = 'ape'
+    model = 'ace'
+    details = "@data.grandchild; @data.grandparent"
+    notes = "ancestral state reconstruction"
+
+    [analysis.mantel]
+    tool = 'ade4'
+    model = 'mantel'
+    details = "@data.grandchild; @data.grandparent; @data.geography"
+    notes = ""
+
+    [analysis.mutistate]
+    tool = 'bayestraits'
+    model = 'multistate+rjhp'
+    details = "@data.grandchild; @data.grandparent"
+    notes = ""
+
+    [analysis.MCMCglmm]
+    tool = 'MCMCglmm'
+    model = 'multistate+rjhp'
+    details = "@data.grandchild; @data.grandparent"
+    notes = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

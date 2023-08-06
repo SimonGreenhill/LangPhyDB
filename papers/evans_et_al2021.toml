@@ -1,0 +1,41 @@
+title = "The uses and abuses of tree thinking in cultural evolution"
+
+doi = "10.1098/rstb.2020.0056"
+
+abstract = """
+Modern phylogenetic methods are increasingly being used to address questions about macro-level patterns
+in cultural evolution. These methods can illuminate the unobservable histories of cultural traits and
+identify the evolutionary drivers of trait change over time, but their application is not without
+pitfalls. Here, we outline the current scope of research in cultural tree thinking, highlighting a
+toolkit of best practices to navigate and avoid the pitfalls and ‘abuses’ associated with their
+application. We emphasize two principles that support the appropriate application of phylogenetic
+methodologies in cross-cultural research: researchers should (1) draw on multiple lines of evidence when
+deciding if and which types of phylogenetic methods and models are suitable for their cross-cultural
+data, and (2) carefully consider how different cultural traits might have different evolutionary
+histories across space and time. When used appropriately phylogenetic methods can provide powerful
+insights into the processes of evolutionary change that have shaped the broad patterns of human history.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Cara L. Evans",
+    "Simon J. Greenhill",
+    "Joseph Watts",
+    "Johann-Mattis List",
+    "Carlos A. Botero",
+    "Russell D. Gray",
+    "Kate R. Kirby"
+]
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Evans2021"  # @xxxx
+
+# type of study
+type = ['review', 'tutorial']
+
+# short description of the study, one line.
+description = "Best practice guidelines for language phylogenies"
+

@@ -66,8 +66,7 @@
 * Ringe & Warnow 2008 - Ringe and T. Warnow, "Linguistic history and computational cladistics." In: Origin and Evolution of Languages: Approaches, Models, Paradigms, B. Laks (ed.), Equinox Publishing, March 2008. 	
 * Ringe et al. 1998 - Ringe, T. Warnow, and A. Taylor, "Computational cladistics and the position of Tocharian ." In: The Bronze Age and early Iron Age peoples of eastern Central Asia (1998, ed. Victor Mair; JIES Monograph 26), pp. 391-414. 
 * Ringe Jr., D. A., Warnow, T., Taylor, A., Michailov, A., & Levinson, L. (1998). Computational cladistics and the position of Tocharian. In V. Mair (Ed.), The Bronze Age and Early Iron Age Peoples of Eastern Central Asia, Volume 1: Archeology, Migration and Nomadism: Journal of Indo-European Studies Monograph Series (Vol. 26). Institute for the Study of Man.
-* Shcherbakova O, Gast V, Blasi DE, Skirgård H, Gray RD, & Greenhill SJ. 2022. A quantitative global test of the complexity trade-off hypothesis: the case of nominal and verbal grammatical marking. Linguistics Vanguard.
-* Sheard et al. 2020 - Sheard, Catherine.; Claire Bowern.; Rikker Dockum.; and Fiona M. Jordan. 2020. Pama–Nyungan grandparent systems change with grandchildren, but not cross-cousin terms or social norms. Evolutionary Human Sciences 2. Cambridge University Press. doi:10.1017/ehs.2020.31. 
+* Shcherbakova O, Gast V, Blasi DE, Skirgård H, Gray RD, & Greenhill SJ. 2022. A quantitative global test of the complexity trade-off hypothesis: the case of nominal and verbal grammatical marking. Linguistics Vanguard. 
 * Shirtz, S., Talamo, L., & Verkerk, A. (2021). The Evolutionary Dynamics of Negative Existentials in Indo-European. Frontiers in Communication, 6, 661862. https://doi.org/10.3389/fcomm.2021.661862
 * Teixidor-Toneu I, Kool A, Greenhill SJ, Kjesrud K, Sandstedt JJ, Manzanilla V, Jordan FM. 2021. Historical, archaeological and linguistic evidence test the phylogenetic inference of Viking-Age plant use. Philosophical Transactions of the Royal Society B: Biological Sciences, 376, 20200086.
 * Verkerk, A. (2019). Detecting non-tree-like signal using multiple tree topologies. Understanding Language Genealogy, 9(1), 9–69. Portico. https://doi.org/10.1075/jhl.17009.ver
@@ -80,10 +79,6 @@
 
 
 ## Reviews etc (no original phylogenetic analysis)
-
-* Evans CL, Greenhill SJ, Watts J, List JM, Botero CA, Gray RD, & Kirby KR. 2021. The uses and abuses of tree thinking in cultural evolution. Philosophical Transactions of the Royal Society B: Biological Sciences, 376, 20200056.
-* Mace, Ruth.; and Mark Pagel. 1997. Phylogenies and Cultural Evolution. Journal of Theoretical Biology 351.349–351.
-
 
 ## Criticisms
 

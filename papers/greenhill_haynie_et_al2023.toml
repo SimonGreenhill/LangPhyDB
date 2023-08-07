@@ -133,64 +133,64 @@ description = "33 Uto-Aztecan and Kiowa-Tanoan languages"
         details = ""
     
     [analysis.ea005_er]
-    tool = 'CorHMM'
+    tool = 'corHMM'
     model = 'Equal rates'
     details = "@data.ea005"
     
     [analysis.ea028_er]
-    tool = 'CorHMM'
+    tool = 'corHMM'
     model = 'Equal rates'
     details = "@data.ea028"
     
     [analysis.ea029_er]
-    tool = 'CorHMM'
+    tool = 'corHMM'
     model = 'Equal rates'
     details = "@data.ea029"
 
     [analysis.ea042_er]
-    tool = 'CorHMM'
+    tool = 'corHMM'
     model = 'Equal rates'
     details = "@data.ea042"
 
 
     [analysis.ea005_sym]
-    tool = 'CorHMM'
+    tool = 'corHMM'
     model = 'Symmetrical'
     details = "@data.ea005"
     
     [analysis.ea028_sym]
-    tool = 'CorHMM'
+    tool = 'corHMM'
     model = 'Symmetrical'
     details = "@data.ea028"
     
     [analysis.ea029_sym]
-    tool = 'CorHMM'
+    tool = 'corHMM'
     model = 'Symmetrical'
     details = "@data.ea029"
 
     [analysis.ea042_sym]
-    tool = 'CorHMM'
+    tool = 'corHMM'
     model = 'Symmetrical'
     details = "@data.ea042"
 
 
     [analysis.ea005_ard]
-    tool = 'CorHMM'
+    tool = 'corHMM'
     model = 'All Rates Different'
     details = "@data.ea005"
     
     [analysis.ea028_ard]
-    tool = 'CorHMM'
+    tool = 'corHMM'
     model = 'All Rates Different'
     details = "@data.ea028"
     
     [analysis.ea029_ard]
-    tool = 'CorHMM'
+    tool = 'corHMM'
     model = 'All Rates Different'
     details = "@data.ea029"
 
     [analysis.ea042_ard]
-    tool = 'CorHMM'
+    tool = 'corHMM'
     model = 'All Rates Different'
     details = "@data.ea042"
 

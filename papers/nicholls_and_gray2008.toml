@@ -1,0 +1,293 @@
+title = "Dated Ancestral Trees from Binary Trait Data and Their Application to the Diversification of Languages"
+
+doi = "10.1111/j.1467-9868.2007.00648.x"
+
+abstract = """
+
+Binary trait data record the presence or absence of distinguishing traits in individuals. We treat the
+problem of estimating ancestral trees with time depth from binary trait data. Birth times of traits
+visible in taxa are biased towards the leaves of the tree by the requirement that the trait survived to be
+observed. Unique traits, displayed at a single taxon, are commonly discarded. We model the evolution of
+binary traits as a birth-death process acting on the elements of sets of traits.The marginal prior
+distribution if the root time is uniform. We illustrate Bayesian inference for two binary-trait data
+sets which arise in historical linguistics. Model mispecification analysis is based in part on
+predictive distributions with external data, and related to distinctive features of the observation
+model.
+
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['Geoff K. Nicholls', 'Russell D. Gray']
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Nicholls2008"  # @xxxx
+
+# type of study
+type = ['phylogenetic', 'dating']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Phylogenetic dating of Indo-European language family"
+
+# data
+[data]
+
+    notes = ""
+    
+        [data.dyen_fR_200_87]
+        ntaxa = 87
+        nchars = 200
+        nsites = '?'
+        datatype = 'lexical cognates'
+        source = '@Dyen1992;@Gray2003'
+        items = 'swadesh200'
+        comment = ''
+
+
+        [data.dyen_fR_100_87]
+        ntaxa = 87
+        nchars = 100
+        nsites = '?'
+        datatype = 'lexical cognates'
+        source = '@Dyen1992;@Gray2003'
+        items = 'swadesh100'
+        comment = ''
+
+
+        [data.dyen_fR_200_31]
+        ntaxa = 31
+        nchars = 200
+        nsites = '?'
+        datatype = 'lexical cognates'
+        source = '@Dyen1992;@Gray2003'
+        items = 'swadesh200'
+        comment = ''
+
+
+        [data.dyen_fR_100_31]
+        ntaxa = 31
+        nchars = 100
+        nsites = '?'
+        datatype = 'lexical cognates'
+        source = '@Dyen1992;@Gray2003'
+        items = 'swadesh100'
+        comment = ''
+
+
+        [data.dyen_fR_200_30]
+        ntaxa = 30
+        nchars = 200
+        nsites = '?'
+        datatype = 'lexical cognates'
+        source = '@Dyen1992;@Gray2003'
+        items = 'swadesh200'
+        comment = ''
+
+
+        [data.dyen_fR_100_30]
+        ntaxa = 30
+        nchars = 100
+        nsites = '?'
+        datatype = 'lexical cognates'
+        source = '@Dyen1992;@Gray2003'
+        items = 'swadesh100'
+        comment = ''
+
+
+        [data.ringe_fR_328_15]
+        ntaxa = 15
+        nchars = 328
+        nsites = '?'
+        datatype = 'lexical cognates'
+        source = '@Ringe2002'
+        items = ''
+        comment = ''
+
+
+        [data.ringe_fR_200_15]
+        ntaxa = 15
+        nchars = 200
+        nsites = '?'
+        datatype = 'lexical cognates'
+        source = '@Ringe2002'
+        items = 'swadesh200'
+        comment = ''
+
+
+        [data.ringe_fR_100_17]
+        ntaxa = 17
+        nchars = 100
+        nsites = '?'
+        datatype = 'lexical cognates'
+        source = '@Ringe2002'
+        items = 'swadesh100'
+        comment = ''
+
+# date calibrations
+
+# date calibrations
+[calibration]
+    
+    notes = "as per Gray & Atkinson 2003"
+
+    [calibration.IberianFrench]
+    taxa = ['west2813']
+    age = "uniform(1150, 1500)"
+    units = "ybp" # ybp
+    description = "Death of last writers knowing classical Latin and repetition of Latin liturgical formulas without comprehension in sixth to eighth centuries AD. Strasburg Oaths, 842AD."
+
+    [calibration.ItalicRomanian]
+    taxa = ['ital1285', 'east2714']
+    age = "uniform(1650, 1800)"
+    units = "ybp" # ybp
+    description = "Last Roman troops withdrawn to south of Danube, 270AD. Dacia conquered by Rome, 112AD."
+
+    [calibration.Germanic]
+    taxa = ['germ1287']
+    age = "uniform(1650, 1700)"
+    units = "ybp" # ybp
+    description = "Germanic tribes united against Rome, 1AD. Gothic migration to Eastern Europe, 180AD. Earliest attested North Germanic inscriptions date from 3rd century AD."
+
+    [calibration.WelshBreton]
+    taxa = ['bryt1239']
+    age = "uniform(1400, 1550)"
+    units = "ybp" # ybp
+    description = "Migrants from Britain colonize Brittany in 5th century AD."
+
+    [calibration.IrishWelsh]
+    taxa = ['tgbc1234']
+    age = ">1650"
+    units = "ybp" # ybp
+    description = "Archaic Irish inscriptions date back to the 5th century AD – divergence must have occurred well before this time."
+
+    [calibration.Indic]
+    taxa = ['indo1321']
+    age = ">2150"
+    units = "ybp" # ybp
+    description = "Singhalese records dating from as early as 2nd century BC indicate that Indic languages had begun to diverge by this time."
+
+    [calibration.Iranian]
+    taxa = ['iran1269']
+    age = ">2450"
+    units = "ybp" # ybp
+    description = "By 500BC Old Persian was distinct from the Eastern Iranian dialects."
+    
+    [calibration.IndoIranian]
+    taxa = ['indo1320']
+    age = ">2950"
+    units = "ybp" # ybp
+    description = "Rgveda, an identifiably Indic epic, is thought to date from between 1450-1000BC. The Avesta, a similar Iranian epic, has been recorded in oral tradition since before 800BC."
+
+    [calibration.Slavic]
+    taxa = ['slav1255']
+    age = ">1250"
+    units = "ybp" # ybp
+    description = "Old Church Slavonic and East Slavic texts date to beginning of 9th century and indicate significant divergence by this time. The split must have occurred after the Balto-Slavic divergence."
+
+    [calibration.BaltoSlavic]
+    taxa = ['balt1263']
+    age = "uniform(1850, 3350)"
+    units = "ybp" # ybp
+    description = "Distinct Slavic culture and language known to pre-date 100AD on the basis of Tacitus's 'Germany'. Archaeological evidence suggests the split may have occurred as early as 1,400BC."
+
+    [calibration.Greeksplit]
+    taxa = ['gree1276']
+    age = ">3450"
+    units = "ybp" # ybp
+    description = "Earliest form of an ancient Greek dialect is Mycenaean, attested in Linear B texts dating from 15th century BC"
+
+    [calibration.Tocharic]
+    taxa = ['tokh1241']
+    age = "uniform(1600, 2090)"
+    units = "ybp" # ybp
+    description = "Tocharian languages are thought to have diverged shortly after the fall of Bactria (135BC) and no later than 100 years before the first known inscriptions of Tocharian B."
+
+    [calibration.TocharianA]
+    taxa = ['tokh1242']
+    age = "uniform(1200, 1450)"
+    units = "ybp" # ybp
+    description = "Tocharian languages are thought to have diverged shortly after the fall of Bactria (135BC) and no later than 100 years before the first known inscriptions of Tocharian B."
+
+    [calibration.TocharianB]
+    taxa = ['tokh1243']
+    age = "uniform(1200, 1450)"
+    units = "ybp" # ybp
+    description = "Tocharian languages are thought to have diverged shortly after the fall of Bactria (135BC) and no later than 100 years before the first known inscriptions of Tocharian B."
+
+    [calibration.Hittite]
+    taxa = ['tokh1243']
+    age = "uniform(3250, 3750)"
+    units = "ybp" # ybp
+    description = "Oldest Hittite text of King Anittas from the 18th century BC. Latest texts from the 14th-13th centuries BC."
+
+# analysis information
+[analysis]
+        [analysis.tree_data.dyen_fR_200_87]
+        tool = 'traitlab'
+        model = 'stochastic dollo'
+        details = ""
+        data = "@data.dyen_fR_200_87"
+        
+
+        [analysis.tree_data.dyen_fR_100_87]
+        tool = 'traitlab'
+        model = 'stochastic dollo'
+        details = ""
+        data = "@data.dyen_fR_100_87"
+        
+
+        [analysis.tree_data.dyen_fR_200_31]
+        tool = 'traitlab'
+        model = 'stochastic dollo'
+        details = ""
+        data = "@data.dyen_fR_200_31"
+        
+
+        [analysis.tree_data.dyen_fR_100_31]
+        tool = 'traitlab'
+        model = 'stochastic dollo'
+        details = ""
+        data = "@data.dyen_fR_100_31"
+        
+
+        [analysis.tree_data.dyen_fR_200_30]
+        tool = 'traitlab'
+        model = 'stochastic dollo'
+        details = ""
+        data = "@data.dyen_fR_200_30"
+        
+
+        [analysis.tree_data.dyen_fR_100_30]
+        tool = 'traitlab'
+        model = 'stochastic dollo'
+        details = ""
+        data = "@data.dyen_fR_100_30"
+        
+
+        [analysis.tree_data.ringe_fR_328_15]
+        tool = 'traitlab'
+        model = 'stochastic dollo'
+        details = ""
+        data = "@data.ringe_fR_328_15"
+        
+
+        [analysis.tree_data.ringe_fR_200_15]
+        tool = 'traitlab'
+        model = 'stochastic dollo'
+        details = ""
+        data = "@data.ringe_fR_200_15"
+        
+
+        [analysis.tree_data.ringe_fR_100_17]
+        tool = 'traitlab'
+        model = 'stochastic dollo'
+        details = ""
+        data = "@data.ringe_fR_100_17"
+        
+
+
+[inferredages]
+    
+    notes = "no direct ages reported, only distributions in fig.3"

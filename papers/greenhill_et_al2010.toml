@@ -1,0 +1,116 @@
+title = "How Accurate and Robust Are the Phylogenetic Estimates of Austronesian Language Relationships?"
+
+doi = "10.1371/journal.pone.0009573"
+
+abstract = """We recently used computational phylogenetic methods on lexical data to test between two
+scenarios for the peopling of the Pacific. Our analyses of lexical data supported a pulse-pause scenario
+of Pacific settlement in which the Austronesian speakers originated in Taiwan around 5,200 years ago and
+rapidly spread through the Pacific in a series of expansion pulses and settlement pauses. We claimed
+that there was high congruence between traditional language subgroups and those observed in the language
+phylogenies, and that the estimated age of the Austronesian expansion at 5,200 years ago was consistent
+with the archaeological evidence. However, the congruence between the language phylogenies and the
+evidence from historical linguistics was not quantitatively assessed using tree comparison metrics. The
+robustness of the divergence time estimates to different calibration points was also not investigated
+exhaustively. Here we address these limitations by using a systematic tree comparison metric to
+calculate the similarity between the Bayesian phylogenetic trees and the subgroups proposed by
+historical linguistics, and by re-estimating the age of the Austronesian expansion using only the most
+robust calibrations. The results show that the Austronesian language phylogenies are highly congruent
+with the traditional subgroupings, and the date estimates are robust even when calculated using a
+restricted set of historical calibrations. """
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Simon J. Greenhill", "Alexei J. Drummond", "Russell D. Gray"]
+
+# parts of the world
+groups = ['Austronesian']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Greenhill2010"
+
+# type of study
+type = ['phylogenetic', 'dating']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Robustness analyses on Gray et al. 2009 Austronesian phylogeny"
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.gray2009]
+    source = '@Gray2009'
+    comment = ''
+
+    [phylogenies.ethnologue]
+    source = '@Ethnologue2009'
+    comment = ''
+
+    
+# date calibrations
+[calibrations]
+    [calibration.protooceanic]
+    taxa = ["ocea1241"]
+    age = "uniform(3200, 3600)"
+    units = "y2000"
+    description = ""
+
+    [calibration.OldJavanese]
+    taxa = ["mode1251"]
+    age = "uniform(700, 1200)"
+    units = "y2000"
+    description = ""
+
+    [calibration.OldChinese]
+    taxa = ["oldc1244"]
+    age = "uniform(2300, 2900)"
+    units = "y2000"
+    description = ""
+
+    [calibration.Favorlang]
+    taxa = ["babu1240"]
+    age = "uniform(346, 384)"
+    units = "y2000"
+    description = ""
+
+    [calibration.Siraya]
+    taxa = ["sira1267"]
+    age = "uniform(346, 384)"
+    units = "y2000"
+    description = ""
+
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.random]
+    tool = 'paup*'
+    model = ''
+    details = "random trees"
+
+    [analysis.quartets]
+    tool = 'QuartetDist'
+    model = ''
+    details = "@phylogenies.gray2009; @phylogenies.ethnologue @analysis.random"
+
+    [analysis.r8s]
+    tool = 'r8s'
+    model = ''
+    details = "@phylogenies.gray2009"
+
+[inferredages]
+    
+    notes = "The estimated age of the trees had a mean of 5,117 years, and a 95% highest posterior density interval of 4,660 to 5,680 years BP "
+    
+    [inferredage.label]
+    taxa = ['aust1307']
+    age = "hpd(5117, 4660, 5680)"
+    units = "y2000"
+    notes = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

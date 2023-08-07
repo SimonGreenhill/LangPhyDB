@@ -1,0 +1,279 @@
+title = "The typology and diachrony of higher numerals in Indo-European: a phylogenetic comparative study"
+
+doi = "10.1093/jole/lzw003"
+
+abstract = """
+Numerals have fascinated and mystified linguists, mathematicians and lay persons alike for centuries.
+The productive use of numerals (in languages where this happens) exploits recursivity to give rise to
+what we call the 'the number line'. While the smaller numerals 1–10 have enjoyed intense scrutiny, the
+typological study of the formation of the higher numerals has received comparatively less attention.
+This article contains a comprehensive typological account of how languages in the IndoEuropean language
+family code numerals beyond 10 (10–99, 100s, 1,000s), the morphemes involved, and how these are ordered.
+We use this dataset from eighty-one Indo-European languages with phylogenetic comparative methods to
+propose diachronic reconstructions of these patterns in the Proto-Indo-European language. Our findings
+indicate that small numerals (11–19) show the widest cross-linguistic variation, and that higher
+numerals exhibit more consistency in both component parts and their ordering. Additionally, we show
+statistical evidence of correlations between the ordering of base and atom morphemes and other word
+order patterns (noun-postposition, noun-genitive, and verb-object order).
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['Andrea Calude', 'Annemarie Verkerk']
+
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Calude2016"  # @xxxx
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Phylogenetic analysis of numerals 11-19 in Indo-European"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.numerals]
+    ntaxa = 81
+    nchars = 9
+    nsites = 9
+    datatype = 'structural features'
+    source = ''
+    items = 'numerals'
+    comment = 'numerals 11-19 coded as structural features (e.g. 11=10+1)'
+
+    [data.wordorder]
+    ntaxa = 81
+    nchars = 8
+    nsites = 8
+    datatype = 'structural features'
+    source = '@Dunn2011'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.bouckaert2012]
+    source = '@Bouckaert2012'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.bt11]
+    tool = 'bayestraits'
+    model = 'multistate+rjmcmc'
+    details = "numeral 11"
+
+    [analysis.bt12]
+    tool = 'bayestraits'
+    model = 'multistate+rjmcmc'
+    details = "numeral 12"
+
+    [analysis.bt13]
+    tool = 'bayestraits'
+    model = 'multistate+rjmcmc'
+    details = "numeral 13"
+
+    [analysis.bt14]
+    tool = 'bayestraits'
+    model = 'multistate+rjmcmc'
+    details = "numeral 14"
+
+    [analysis.bt15]
+    tool = 'bayestraits'
+    model = 'multistate+rjmcmc'
+    details = "numeral 15"
+
+    [analysis.bt16]
+    tool = 'bayestraits'
+    model = 'multistate+rjmcmc'
+    details = "numeral 16"
+
+    [analysis.bt17]
+    tool = 'bayestraits'
+    model = 'multistate+rjmcmc'
+    details = "numeral 17"
+
+    [analysis.bt18]
+    tool = 'bayestraits'
+    model = 'multistate+rjmcmc'
+    details = "numeral 18"
+
+    [analysis.bt19]
+    tool = 'bayestraits'
+    model = 'multistate+rjmcmc'
+    details = "numeral 19"
+
+    [analysis.corhmm]
+    tool = 'corHMM'
+    model = 'rayDisc'
+    details = "visualisation of ASR"
+
+    [analysis.bt_dep_baseorder_ADJNoun]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "dependent test of base-atom order of teens and Adjective&Noun"
+
+    [analysis.bt_indep_baseorder_ADJNoun]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "independent test of base-atom order of teens and Adjective&Noun"
+
+    [analysis.bt_dep_baseorder_ADPNoun]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "dependent test of base-atom order of teens and Adposition&Noun"
+
+    [analysis.bt_indep_baseorder_ADPNoun]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "independent test of base-atom order of teens and Adposition&Noun"
+
+    [analysis.bt_dep_baseorder_DEMNoun]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "dependent test of base-atom order of teens and Demonstrative&Noun"
+
+    [analysis.bt_indep_baseorder_DEMNoun]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "independent test of base-atom order of teens and Demonstrative&Noun"
+
+    [analysis.bt_dep_baseorder_GENNoun]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "dependent test of base-atom order of teens and Genitive&Noun"
+
+    [analysis.bt_indep_baseorder_GENNoun]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "independent test of base-atom order of teens and Genitive&Noun"
+
+    [analysis.bt_dep_baseorder_NumNoun]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "dependent test of base-atom order of teens and Numeral&Noun"
+
+    [analysis.bt_indep_baseorder_NumNoun]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "independent test of base-atom order of teens and Numeral&Noun"
+
+    [analysis.bt_dep_baseorder_OV]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "dependent test of base-atom order of teens and Object&Verb"
+
+    [analysis.bt_indep_baseorder_OV]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "independent test of base-atom order of teens and Object&Verb"
+
+    [analysis.bt_dep_baseorder_RCNoun]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "dependent test of base-atom order of teens and Relative Clause & Noun"
+
+    [analysis.bt_indep_baseorder_RCNoun]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "independent test of base-atom order of teens and Relative Clause & Noun"
+
+    [analysis.bt_dep_baseorder_SV]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "dependent test of base-atom order of teens and Subject&Verb"
+
+    [analysis.bt_indep_baseorder_SV]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "independent test of base-atom order of teens and Subject&Verb"
+
+    [analysis.bt_dep_runningnumber_ADJNoun]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "dependent test of running numbers of teens and Adjective&Noun"
+
+    [analysis.bt_indep_runningnumber_ADJNoun]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "independent test of running numbers of teens and Adjective&Noun"
+
+    [analysis.bt_dep_runningnumber_ADPNoun]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "dependent test of running numbers of teens and Adposition&Noun"
+
+    [analysis.bt_indep_runningnumber_ADPNoun]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "independent test of running numbers of teens and Adposition&Noun"
+
+    [analysis.bt_dep_runningnumber_DEMNoun]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "dependent test of running numbers of teens and Demonstrative&Noun"
+
+    [analysis.bt_indep_runningnumber_DEMNoun]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "independent test of running numbers of teens and Demonstrative&Noun"
+
+    [analysis.bt_dep_runningnumber_GENNoun]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "dependent test of running numbers of teens and Genitive&Noun"
+
+    [analysis.bt_indep_runningnumber_GENNoun]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "independent test of running numbers of teens and Genitive&Noun"
+
+    [analysis.bt_dep_runningnumber_NumNoun]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "dependent test of running numbers of teens and Numeral&Noun"
+
+    [analysis.bt_indep_runningnumber_NumNoun]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "independent test of running numbers of teens and Numeral&Noun"
+
+    [analysis.bt_dep_runningnumber_OV]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "dependent test of running numbers of teens and Object&Verb"
+
+    [analysis.bt_indep_runningnumber_OV]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "independent test of running numbers of teens and Object&Verb"
+
+    [analysis.bt_dep_runningnumber_RCNoun]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "dependent test of running numbers of teens and Relative Clause & Noun"
+
+    [analysis.bt_indep_runningnumber_RCNoun]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "independent test of running numbers of teens and Relative Clause & Noun"
+
+    [analysis.bt_dep_runningnumber_SV]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "dependent test of running numbers of teens and Subject&Verb"
+
+    [analysis.bt_indep_runningnumber_SV]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = "independent test of running numbers of teens and Subject&Verb"
+

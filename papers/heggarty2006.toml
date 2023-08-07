@@ -1,0 +1,51 @@
+title = "Interdisciplinary Indiscipline. Can Phylogenetic Methods Meaningfully Be Applied to Language Data - and to Dating Language?"
+
+doi = ""
+
+abstract = """
+A number of recent papers have sought to apply to language data various phylogenetic ‘tree-drawing’
+techniques initially developed for uses outside linguistics. The reaction from many historical
+linguists, however, has typically been critical, if not outright hostile. This paper explores, and aims
+to explain, why it is that there has been such a long-running failure to reach a consensus between
+linguists and specialists from other disciplines, notably genetics and archaeology.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['Paul Heggarty']
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Heggarty2006"  # @xxxx
+
+# type of study
+type = ['phylogenetic']
+
+# short description of the study, one line.
+description = "Discussion of phylogenetic methods, promoting the use of phonetic data"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.romance]
+    ntaxa = 11
+    nchars = "?"
+    nsites = "?"
+    datatype = 'phonetic traits'
+    source = ''
+    items = 'numerals'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = 'phylip'
+    model = 'fitch'
+    details = ""
+

@@ -1,0 +1,116 @@
+title = "Phonetic comparison, varieties, and networks: Swadesh’s influence lives on here too"
+
+doi = "10.1075/dia.27.2.08sul"
+
+abstract = """
+While his eponymous basic vocabulary lists and the study of language divergence may be Swadesh’s most
+appreciated legacies, we demonstrate that phonetic quantification of language varieties also follows
+very much in the tradition of Swadesh’s own work. We compare a few different measures of phonetic
+distance on a very small set of data from Germanic varieties, showing the influence of lexicostatistics
+and the relevance of Swadesh’s ‘Mesh Principle’. What we emphasise overall is that Swadesh’s influence
+is palpable, even in domains outside those for which he is best remembered.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Jennifer Sullivan", "April McMahon"]
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Sullivan2010"  # @xxxx
+
+# type of study
+type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Comparison of phonetic distances using Neighbor-Net"
+
+# data
+[data]
+
+    notes = "30 of the 110 purely Germanic cognates compiled by McMahon et al. 2005-2007"
+    
+#    The varieties we examined initially were Standard American English, RP English, Standard Scottish English, Buckie (a variety of northeastern Scots), and Standard High German. Later, we added five more varieties: Liverpool English, Tyneside English (typical), Belfast English, Norwegian (Stavanger), and Swedish (Stockholm).
+    
+    
+    [data.mcmahon1_levenshtein]
+    ntaxa = 5
+    nchars = 30
+    nsites = 1
+    datatype = 'phonetic distance'
+    source = ''
+    items = ''
+    comment = 'Levenshtein distance'
+
+    [data.mcmahon1_almeidabraun]
+    ntaxa = 5
+    nchars = 30
+    nsites = 1
+    datatype = 'phonetic distance'
+    source = ''
+    items = ''
+    comment = 'Almeida and Braun method'
+    
+    [data.mcmahon2]
+    ntaxa = 10
+    nchars = 30
+    nsites = 1
+    datatype = 'phonetic distance'
+    source = ''
+    items = 'numerals'
+    comment = 'Heeringa method'
+
+    [data.mcmahon3]
+    ntaxa = 10
+    nchars = 30
+    nsites = 1
+    datatype = 'phonetic distance'
+    source = ''
+    items = 'numerals'
+    comment = 'Almeida and Braun method'
+
+    [data.mcmahon4]
+    ntaxa = 10
+    nchars = 30
+    nsites = 1
+    datatype = 'phonetic distance'
+    source = ''
+    items = 'numerals'
+    comment = 'Connnolly 1997 method'
+    
+    
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.nnet1]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = '@data.mcmahon1_levenshtein'
+
+    [analysis.nnet2]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = '@data.mcmahon1_almeidabraun'
+
+    [analysis.nnet3]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = '@data.mcmahon2'
+
+    [analysis.nnet4]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = '@data.mcmahon3'
+
+    [analysis.nnet5]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = '@data.mcmahon4'

@@ -6,34 +6,32 @@
 * Barbançon et al. 2013 - Barbancon, S.N. Evans, L. Nakhleh, D. Ringe, and T. Warnow (2013) "An experimental study comparing linguistic phylogenetic reconstruction methods." Diachronica 30(2):143-170, and appendix. 
 * Bryant 2006 - radiation and network breaking
 * Ceolin et al. 2021 - phil trans.
-* Currie et al. 2010a - Currie, Thomas E.; Simon J. Greenhill.; and R Mace. 2010. Is horizontal transmission really a problem for phylogenetic comparative methods? A simulation study using continuous cultural traits. Proceedings of the Royal Society B: Biological Sciences 365.3903–3912. doi:10.1098/rstb.2010.0014.
 * Dockum 2018 - Dockum, R. (2018). Phylogeny in phonology: How Tai sound systems encode their past. In Proceedings of the Annual Meetings on Phonology, volume 5
 * Gray et al. 2010 - Gray, Russell D.; David Bryant.; and Simon J. Greenhill. 2010. On the shape and fabric of human history. Philosophical transactions of the Royal Society of London. Series B, Biological sciences 365.3923–33. doi:10.1098/rstb.2010.0162.
 * Greenhill et al. 2009 - Greenhill, Simon J.; Thomas E. Currie.; and Russell D. Gray. 2009. Does horizontal transmission invalidate cultural phylogenies? Proceedings. Biological sciences / The Royal Society 276.2299–306. doi:10.1098/rspb.2008.1944.
 * Greenhill et al. 2010a- Greenhill, Simon J.; Quentin D. Atkinson.; Andrew Meade.; and Russell D. Gray. 2010. The shape and tempo of language evolution. Proceedings of the Royal Society B: Biological Sciences 277. doi:10.1098/rspb.2010.0051.
-* Greenhill et al. 2010b - Greenhill, Simon J.; Alexei J Drummond.; and Russell D. Gray. 2010. How Accurate and Robust Are the Phylogenetic Estimates of Austronesian Language Relationships? PLoS ONE 5.e9573. doi:10.1371/journal.pone.0009573.
 * Guardiano & Longobardi 2005 -Guardiano, Cristina and Giuseppe Longobardi (2005). “Parametric Comparison and Language Taxonomy”. In: Grammaticalization and parametric variation. Ed. by Montserrat Batllori et al. Oxford: Oxford University Press, pp. 149–174.
+* Heggarty, P. (2010). Beyond lexicostatistics How to get more out of ‘word list’ comparisons. Diachronica, 27(2), 301–324. https://doi.org/10.1075/dia.27.2.07heg
+* Heggarty, P., Maguire, W., & McMahon, A. (2010). Splits or waves? Trees or webs? How divergence measures and network analysis can unravel language histories. Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences., 365, 3829–3843. https://doi.org/10.1098/rstb.2010.0099
 * Hübler 2022 - Hübler, Nataliia. 2022. Phylogenetic signal and rate of evolutionary change in language structures. Royal Society Open Science 9. Royal Society.211252. doi:10.1098/rsos.211252.
 * Hübler and Greenhill 2023 -
 * Jaeger global tree
 * Kassian, Alexei S.. "Linguistic homoplasy and phylogeny reconstruction. The cases of Lezgian and Tsezic languages (North Caucasus) " Folia Linguistica, vol. 51, no. s38-s1, 2017, pp. 217-262. https://doi.org/10.1515/flih-2017-0008
 * Longobardi et al. 2015 - Longobardi, G., Ghirotto, S., Guardiano, C., Tassi, F., Benazzo, A., Ceolin, A., & Barbujani, G. (2015). Across language families: Genome diversity mirrors linguistic variation within Europe. American Journal of Physical Anthropology, 157(4), 630–640. https://doi.org/10.1002/ajpa.22758
 * McMahon & McMahon 2006 - McMahon A, McMahon R. 2006 Why linguists don’t do dates: Evidence from Indo-European and Australian languages. In Phylogenetic methods and the prehistory of languages (eds P Forster, C Renfrew), pp. 153–160. McDonald Institute for Archaeological Research: Cambridge. 
-* Nakhleh et al. 2005 - Nakhleh, D. Ringe, and T. Warnow, "Perfect Phylogenetic Networks: A New Methodology for Reconstructing the Evolutionary History of Natural Languages." LANGUAGE, Journal of the Linguistic Society of America, 81(2):382-420, 2005. 	PDF
+* McMahon, A., Heggarty, P., McMahon, R., & Slaska, N. (2005). Swadesh sublists and the benefits of borrowing: An Andean case study. Transactions of the Philological Society, 103(2), 147.
+* Nakhleh et al. 2005 - Nakhleh, D. Ringe, and T. Warnow, "Perfect Phylogenetic Networks: A New Methodology for Reconstructing the Evolutionary History of Natural Languages." LANGUAGE, Journal of the Linguistic Society of America, 81(2):382-420, 2005.
 * Nelson-Sathi et al. 2011 - Nelson-Sathi, Shijulal.; Johann-Mattis List.; Hans Geisler.; Heiner Fangerau.; Russell D. Gray.; William Martin.; and Tal Dagan. 2011. Networks uncover hidden lexical borrowing in Indo-European language evolution. Proceedings of the Royal Society B: Biological Sciences 278.1794–803. doi:10.1098/rspb.2010.1917.
-* Nicholls & Gray 2006 - Nicholls, Geoff K.; and Russell D. Gray. 2006. Dated ancestral trees from binary trait data. Journal of the Royal Statistical Society: Series B (Statistical Methodology) 70.545–566. doi:10.1111/j.1467-9868.2007.00648.x.
 * Pagel & Meade 2017 - Pagel, Mark.; and Andrew Meade. 2017. The deep history of the number words. Philosophical Transactions of the Royal Society B: Biological Sciences 373.20160517. doi:10.1098/rstb.2016.0517.
 * Pagel et al. 2013 - Pagel, M.; Q. D. Atkinson.; A. S. Calude.; and A. Meade. 2013. Ultraconserved words point to deep language ancestry across Eurasia. Proceedings of the National Academy of Sciences 110.8471–8476. doi:10.1073/pnas.1218726110.
 * Pavel Duda and Jan Zrzavý (2019) Chapter: 12 Towards a global phylogeny of human populations based on genetic and linguistic data. In book: Modern Human Origins and Dispersal. Publisher: Kerns Verlag. Editors: Yonatan Sahle, Hugo Reyes-Centeno, Christian Bentz. ISBN: 978-3-935751-30-8 https://www.researchgate.net/publication/332298707_Towards_a_global_phylogeny_of_human_populations_based_on_genetic_and_linguistic_data
 * Ritchie & Ho 2019 - Ritchie, Andrew M.; and Simon Y W Ho. 2019. Influence of the tree prior and sampling scale on Bayesian phylogenetic estimates of the origin times of language families. Journal of Language Evolution 4.108–123. doi:10.1093/jole/lzz005.
 * Skirgard et al. 2023 - 
-* Sullivan et al. 2010 - Sullivan J, McMahon A. 2010 Phonetic comparison, varieties, and networks: Swadesh’s influence lives on here too. Diachronica 27, 325–340. (doi:10.1075/dia.27.2.08sul)
 * Walker & Hamilton 2010 - Social complexity and linguistic diversity in the Austronesian and Bantu population expansions. Proceedings. Biological sciences / The Royal Society. doi:10.1098/rspb.2010.1942. http://www.ncbi.nlm.nih.gov/pubmed/20961903.
 * Warnow et al. 1995 - Warnow, D. Ringe, and A. Taylor, 1995 "Reconstructing the evolutionary history of natural languages." IRCS Report 95-16. Philadelphia (1995): Institute for Research in Cognitive Science, University of Pennsylvania. Technical report, 18 pp. 	
 * Yanovich 2020 - Yanovich, Igor. 2020. Phylogenetic linguistic evidence and the Dene-Yeniseian homeland. Diachronica 37.410–446. doi:10.1075/dia.17038.yan.
   
 ## Comparative Analysis
-
 
 * Atkinson QD, Coomber T, Passmore S, Greenhill SJ, & Kushnick G. 2016. Cultural and Environmental Predictors of Pre-European Deforestation on Pacific Islands. PLoS ONE 11(5): e0156340.
 * Barbieri C, Blasi DE, Arango-Isaza E, Sotiropoulos AG, Hammarström H, Wichmann S, Greenhill SJ, Gray RD, Forkel R, Bickel B, & Shimizu KK. 2022. A global analysis of matches and mismatches between human genetic and linguistic histories. Proceedings of the National Academy of Sciences, 119(47).
@@ -92,6 +90,7 @@
 * Buckley, Christopher D. 2012. Investigating cultural evolution using phylogenetic analysis: the origins and descent of the southeast asian tradition of warp ikat weaving. PloS one 7.e52064. doi:10.1371/journal.pone.0052064.
 * Buckley, Christopher D.; and Eric Boudot. 2017. The evolution of an ancient technology. Royal Society Open Science 4.170208. doi:10.1098/rsos.170208.
 * Coward, Fiona.; Stephen Shennan.; Sue Colledge.; James Conolly.; and Mark Collard. 2008. The spread of Neolithic plant economies from the Near East to northwest Europe: a phylogenetic analysis. Journal of Archaeological Science 35.42–56. doi:10.1016/j.jas.2007.02.022.
+* Currie et al. 2010a - Currie, Thomas E.; Simon J. Greenhill.; and R Mace. 2010. Is horizontal transmission really a problem for phylogenetic comparative methods? A simulation study using continuous cultural traits. Proceedings of the Royal Society B: Biological Sciences 365.3903–3912. doi:10.1098/rstb.2010.0014.
 * de Voogt, Alex.; Anne-Elizabeth Dunn-Vaturi.; and Jelmer W. Eerkens. 2013. Cultural transmission in the ancient Near East: twenty squares and fifty-eight holes. Journal of Archaeological Science 40. Elsevier Ltd.1715–1730. doi:10.1016/j.jas.2012.11.008.
 * Dominguez, M. 2014. Evolution of metaphors: Phylogeny of oil slick cartoons in Spanish press. Discourse & Society. doi:10.1177/0957926514556208. http://das.sagepub.com/cgi/doi/10.1177/0957926514556208.
 * Howe, Christopher J.; A C Barbrook.; M Spencer.; P Robinson.; B Bordalejo.; and L R Mooney. 2001. Manuscript Evolution. Trends in Genetics 17.147–152.

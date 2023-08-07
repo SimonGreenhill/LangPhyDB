@@ -1,0 +1,31 @@
+title = "Prehistory by Bayesian phylogenetics? The state of the art on Indo-European origins"
+
+doi = "10.1017/S0003598X00101188"
+
+abstract = """
+Bayesian analysis has come to be widely used in archaeological chronologies and has been a regular
+feature of recent articles in Antiquity. Its application to linguistic prehistory, however, has proved
+controversial, in particular on the issue of Indo-European origins. Dating and mapping language
+distributions back into prehistory has an inevitable fascination, but has remained fraught with
+difficulty. This review of recent studies highlights the potential of increasingly sophisticated
+Bayesian phylogenetic models, while also identifying areas of concern, and ways in which the models
+might be refined to address them. Notwithstanding these remaining limitations, in the Indo-European
+case the results from Bayesian phylogenetics continue to reinforce the argument for an Anatolian rather
+than a Steppe origin.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['Paul Heggarty']
+
+
+# parts of the world
+groups = ['Indo-European']
+
+# bibkey citation in sources.bib
+bibkey = "@Heggarty2014"  # @xxxx
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Review of phylogenetic dating in Indo-European"

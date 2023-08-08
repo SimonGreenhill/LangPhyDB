@@ -1,0 +1,31 @@
+title = "Human language as a culturally transmitted replicator"
+
+doi = "10.1038/nrg2560"
+
+abstract = """
+Human languages form a distinct and largely independent class of cultural replicators with behaviour and
+fidelity that can rival that of genes. Parallels between biological and linguistic evolution mean that
+statistical methods inspired by phylogenetics and comparative biology are being increasingly applied to
+study language. Phylogenetic trees constructed from linguistic elements chart the history of human
+cultures, and comparative studies reveal surprising and general features of how languages evolve,
+including patterns in the rates of evolution of language elements and social factors that influence
+temporal trends of language evolution. For many comparative questions of anthropology and human
+behavioural ecology, historical processes estimated from linguistic phylogenies may be more relevant than
+those estimated from genes.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['Mark Pagel']
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Pagel2009"  # @xxxx
+
+# type of study
+type = ['review']
+
+# short description of the study, one line.
+description = "Review of language as a culturally transmitted replicators"
+

@@ -1,0 +1,67 @@
+title = "The cow is the enemy of matriliny"
+
+doi = ""
+
+abstract = """
+We tested the hypothesis that the spread of cattle led to the loss of matrilineal descent in
+Bantu-speaking populations in Africa, and its replacement by patrilineal descent. We tested for
+correlated evolution in these cultural traits, using a phylogenetic comparative method that can also
+test the direction of evolution, or which of two co-evolving traits changes first (Pagel 1994). We used
+a Bantu language tree as a model of population history (Holden 2002; Holden et al, Chapter 4 this
+volume). Results showed that adopting cattle led to the loss of matrilineal descent, and its
+replacement by either patrilineal or mixed descent (Holden and Mace 2003).
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Clare J. Holden", "Ruth Mace"]
+
+
+# parts of the world
+groups = ['Bantu']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Holden2005b"  # @xxxx
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Phylogenetic test of the relationship between the adoption of cattle and matrilineal descent."
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.ethatlas]
+    ntaxa = 68
+    nchars = 4
+    nsites = 4
+    datatype = 'ethnographic features'
+    source = '@Murdock1967'
+    items = ''
+    comment = ''
+
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.label]
+    source = '@Holden2002'
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = "lots of post-hoc analyses (ASR from likelihoods, kappa, halflives)"
+    
+    [analysis.bt_dep]
+    tool = 'bayestraits'
+    model = 'dependent'
+    details = "best-fitting model"
+
+    [analysis.bt_indep]
+    tool = 'bayestraits'
+    model = 'independent'
+    details = ""
+

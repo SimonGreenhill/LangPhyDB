@@ -19,7 +19,7 @@ authors = [
 groups = ["Sino-Tibetan"]  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
-bibkey = "@Zhang_2020"
+bibkey = "@Zhang2020"
 
 # type of study
 type = ["phylogenetic", "dating"]

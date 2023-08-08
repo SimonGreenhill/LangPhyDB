@@ -1,0 +1,199 @@
+title = "Grambank reveals the importance of genealogical constraints on linguistic diversity and highlights the impact of language loss"
+
+doi = "10.1126/sciadv.adg6175"
+
+abstract = """
+While global patterns of human genetic diversity are increasingly well characterized, the diversity of
+human languages remains less systematically described. Here, we outline the Grambank database. With
+over 400,000 data points and 2400 languages, Grambank is the largest comparative grammatical database
+available. The comprehensiveness of Grambank allows us to quantify the relative effects of genealogical
+inheritance and geographic proximity on the structural diversity of the world’s languages, evaluate
+constraints on linguistic diversity, and identify the world’s most unusual languages. An analysis of
+the consequences of language loss reveals that the reduction in diversity will be strikingly uneven
+across the major linguistic regions of the world. Without sustained efforts to document and revitalize
+endangered languages, our linguistic window into human history, cognition, and culture will be
+seriously fragmented. Grambank reveals global patterns in linguistic diversity and highlights the
+impact of language loss.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Hedvig Skirgård",
+    "Hannah J. Haynie",
+    "Damián E. Blasi",
+    "Harald Hammarström",
+    "Jeremy Collins",
+    "Jay J. Latarche",
+    "Jakob Lesage",
+    "Tobias Weber",
+    "Alena Witzlack-Makarevich",
+    "Sam Passmore",
+    "Angela Chira",
+    "Luke Maurits",
+    "Russell Dinnage",
+    "Michael Dunn",
+    "Ger Reesink",
+    "Ruth Singer",
+    "Claire Bowern",
+    "Patience Epps",
+    "Jane Hill",
+    "Outi Vesakoski",
+    "Martine Robbeets",
+    "Noor Karolin Abbas",
+    "Daniel Auer",
+    "Nancy A. Bakker",
+    "Giulia Barbos",
+    "Robert D. Borges",
+    "Swintha Danielsen",
+    "Luise Dorenbusch",
+    "Ella Dorn",
+    "John Elliott",
+    "Giada Falcone",
+    "Jana Fischer",
+    "Yustinus Ghanggo Ate",
+    "Hannah Gibson",
+    "Hans-Philipp Göbel",
+    "Jemima A. Goodall",
+    "Victoria Gruner",
+    "Andrew Harvey",
+    "Rebekah Hayes",
+    "Leonard Heer",
+    "Roberto E. Herrera Miranda",
+    "Nataliia Hübler",
+    "Biu Huntington-Rainey",
+    "Jessica K. Ivani",
+    "Marilen Johns",
+    "Erika Just",
+    "Eri Kashima",
+    "Carolina Kipf",
+    "Janina V. Klingenberg",
+    "Nikita König",
+    "Aikaterina Koti",
+    "Richard G. A. Kowalik",
+    "Olga Krasnoukhova",
+    "Nora L. M. Lindvall",
+    "Mandy Lorenzen",
+    "Hannah Lutzenberger",
+    "Tânia R. A. Martins",
+    "Celia Mata German",
+    "Suzanne van der Meer",
+    "Jaime Montoya Samamé",
+    "Michael Müller",
+    "Saliha Muradoglu",
+    "Kelsey Neely",
+    "Johanna Nickel",
+    "Miina Norvik",
+    "Cheryl Akinyi Oluoch",
+    "Jesse Peacock",
+    "India O. C. Pearey",
+    "Naomi Peck",
+    "Stephanie Petit",
+    "Sören Pieper",
+    "Mariana Poblete",
+    "Daniel Prestipino",
+    "Linda Raabe",
+    "Amna Raja",
+    "Janis Reimringer",
+    "Sydney C. Rey",
+    "Julia Rizaew",
+    "Eloisa Ruppert",
+    "Kim K. Salmon",
+    "Jill Sammet",
+    "Rhiannon Schembri",
+    "Lars Schlabbach",
+    "Frederick W. P. Schmidt",
+    "Amalia Skilton",
+    "Wikaliler Daniel Smith",
+    "Hilário de Sousa",
+    "Kristin Sverredal",
+    "Daniel Valle",
+    "Javier Vera",
+    "Judith Voß",
+    "Tim Witte",
+    "Henry Wu",
+    "Stephanie Yam",
+    "Jingting Ye",
+    "Maisie Yong",
+    "Tessa Yuditha",
+    "Roberto Zariquiey",
+    "Robert Forkel",
+    "Nicholas Evans",
+    "Stephen C. Levinson",
+    "Martin Haspelmath",
+    "Simon J. Greenhill",
+    "Quentin D. Atkinson",
+    "Russell D. Gray",
+]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Grambank"
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Presentation of the global database Grambank with phylogenetic analysis of stable features"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.XX]
+    ntaxa = 95
+    nchars = 100
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@xxx'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.label]
+    source = '@xxx'
+    comment = ''
+
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.label]
+    taxa = []
+    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "ybp" # ybp
+    description = ""
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = ''
+    model = ''
+    details = ""
+
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.label]
+    taxa = []
+    age = "hpd(median, lower, upper)"
+    units = "ybp"
+    notes = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

@@ -1,0 +1,103 @@
+title = "Swadesh sublists and the benefits of borrowing: An Andean case study"
+
+doi = "10.1111/j.1467-968X.2005.00148.x"
+
+abstract = """
+Although borrowing and contact are recognised as important factors in language histories, there is no
+clear and agreed way of dealing with their effects on methods like traditional lexicostatistics. We
+argue that one promising approach involves subdividing standard meaning-lists into more and less
+conservative sublists. Differences between trees or networks generated from these sublists may then
+indicate borrowing. This approach has been tested on Indo-European, but here we apply it to languages
+of the Andes in an attempt to answer the vexed Quechumara question: are Quechua and Aymara genetically
+related, or linked only by contact? Our evidence suggests that contact is the more likely explanation
+for parallels between Quechua and Aymara.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["April McMahon", "Paul Heggarty", "Robert McMahon", "Natalia Slaska"]
+
+# parts of the world
+groups = ['Indo-European', 'Aymara', 'Quechua']
+
+# bibkey citation in sources.bib
+bibkey = "@McMahon2005"  # @xxxx
+
+# type of study
+type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Network investigation into Aymara and Quechua"
+
+# data
+[data]
+
+    notes = """
+    Our database here involves the CALMA 150-meaning list, for 14 varieties of Quechua; 3 varieties of
+    Aymara; and Kawki and Jaqaru, which are typically classified as independ- ent Aymara languages. "
+    ...
+    We have excerpted from Heggarty’s Andean database two groups of 30 items corresponding to our
+    Indo-European hihi and lolo sublists, the former being most retentive, and the latter most prone to
+    change and borrowing.
+    """
+    [data.andes_hihi]
+    ntaxa = 19
+    nchars = 39
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = ''
+
+    [data.andes_lolo]
+    ntaxa = 19
+    nchars = 30
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = ''
+
+    [data.ie_hihi]
+    ntaxa = 14
+    nchars = "?"
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Dyen1992'
+    items = ''
+    comment = 'greek and romance'
+
+    [data.ie_lolo]
+    ntaxa = 14
+    nchars = "?"
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Dyen1992'
+    items = ''
+    comment = 'greek and romance'
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.andes_nnet_hihi]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "@data.andes_hihi"
+
+    [analysis.andes_nnet_lolo]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "@data.andes_lolo"
+
+    [analysis.ie_nnet_hihi]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "@data.ie_hihi"
+
+    [analysis.ie_nnet_lolo]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "@data.ie_lolo"

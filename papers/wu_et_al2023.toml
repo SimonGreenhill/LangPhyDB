@@ -52,7 +52,7 @@ description = "Evolution of tono in 106 Sino-Tibetan languages"
 # published phylogenies
 [phylogenies]
     [phylogenies.zhang]
-    source = '@Zhang_2020'
+    source = '@Zhang2020'
     comment = '3 languages pruned to leave 106'
 
     [phylogenies.geography]

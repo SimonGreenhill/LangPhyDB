@@ -21,7 +21,7 @@ authors = [
 groups = ["Bantu"]  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
-bibkey = "@grollemund2015"
+bibkey = "@Grollemund2015"
 
 # type of study
 type = ["phylogenetic", "dating", "phylogeography"]

@@ -1,0 +1,104 @@
+title = "The deep history of the number words"
+
+doi = "10.1098/rstb.2016.0517"
+
+abstract = """
+We have previously shown that the ‘low limit’ number words (from one to five) have exceptionally slow
+rates of lexical replacement when measured across the Indo-European (IE) languages. Here, we replicate
+this finding within the Bantu and Austronesian language families, and with new data for the IE
+languages. Number words can remain stable for 10 000 to over 100 000 years, or around 3.5–20 times
+longer than average rates of lexical replacement among the Swadesh list of ‘fundamental vocabulary’
+items. Ordinal evidence suggests that number words also have slow rates of lexical replacement in the
+Pama-Nyungan language family of Australia. We offer three hypotheses to explain these slow rates of
+replacement: (i) that the abstract linguistic-symbolic processing of ‘number’ links to evolutionarily
+conserved brain regions associated with numerosity; (ii) that number words are unambiguous and therefore
+have lower 'mutation rates'; and (iii) that the number words occupy a region of the phonetic space that
+is relatively full and therefore resist change because alternatives are unlikely to be as ‘good’ as the
+original word.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['Mark Pagel', 'Andrew Meade']
+
+
+# parts of the world
+groups = ['Austronesian', 'Bantu', 'Indo-European']
+
+# bibkey citation in sources.bib
+bibkey = "@Pagel2018"  # @xxxx
+
+# type of study
+type = ['trait']
+
+# short description of the study, one line.
+description = "Investigation into the rates of numeral evolution in Indo-European, Bantu, and Austronesian."
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.austronesian]
+    ntaxa = 400
+    nchars = 210
+    nsites = 34440
+    datatype = 'lexical cognates'
+    source = '@Greenhilletal2008'
+    items = 'swadesh200'
+    comment = ''
+    
+    [data.bantu]
+    ntaxa = 425
+    nchars = 100
+    nsites = 3859
+    datatype = 'lexical cognates'
+    source = '@ALGAB'
+    items = 'swadesh100'
+    comment = ''
+    
+    [data.indoeuropean]
+    ntaxa = 103
+    nchars = 207
+    nsites = 5047
+    datatype = 'lexical cognates'
+    source = '@IELex'
+    items = 'swadesh200'
+    comment = ''
+    
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.indoeuropean]
+    source = '@Bouckaert2012'
+    comment = ''
+
+    [phylogenies.bantu]
+    source = '@Grollemund2015'
+    comment = ''
+
+    [phylogenies.austronesian]
+    source = '@Gray2009'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.indoeuropean]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = ""
+    data = "@data.indoeuropean"
+
+    [analysis.austronesian]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = ""
+    data = "@data.austronesian"
+
+    [analysis.bantu]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = ""
+    data = "@data.bantu"

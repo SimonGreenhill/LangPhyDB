@@ -1,0 +1,506 @@
+title = "A quantitative global test of the complexity trade-off hypothesis: the case of nominal and verbal grammatical marking"
+
+doi = "10.1515/lingvan-2021-0011"
+
+abstract = """
+Nouns and verbs are known to differ in the types of grammatical information they encode. What is less
+well known is the relationship between verbal and nominal coding within and across languages. The
+equi-complexity hypothesis holds that all languages are equally complex overall, which entails
+trade-offs between coding in different domains. From a diachronic point of view, this hypothesis implies
+that the loss and gain of coding in different domains can be expected to balance each other out. In this
+study, we test to what extent such inverse coevolution can be observed in a sample of 244 languages,
+using data from a comprehensive cross-linguistic database (Grambank) and applying computational
+phylogenetic modelling to control for genealogical relatedness. We find evidence for coevolutionary
+relationships between specific features within nominal and verbal domains on a global scale, but not for
+overall degrees of grammatical coding between languages. Instead, these amounts of nominal and verbal
+coding are positively correlated in Sino-Tibetan languages and inversely correlated in Indo-European
+languages. Our findings indicate that accretion and loss of grammatical information in nominal words and
+verbs are lineage-specific.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    'Olena Shcherbakova', 'Volker Gast', 'Damián E. Blasi', 'Hedvig Skirgård', 'Russell D. Gray', 'Simon J. Greenhill'
+]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Shcherbakova2022"
+
+# type of study
+type = ['trait']
+
+# short description of the study, one line.
+description = "Test of the relationship between nominal and verbal complexity"
+
+# data
+[data]
+
+    notes = "We computed the scores for 302 languages that had no missing data for features in both metrics."
+    
+    [data.complexity]
+    ntaxa = 302
+    nchars = 2
+    nsites = 2
+    datatype = 'structural features'
+    source = '@Grambank'
+    items = ''
+    comment = ''
+
+    # subset
+    [data.subset_transitivity]
+    ntaxa = 302
+    nchars = 1
+    nsites = 1
+    datatype = 'structural features'
+    source = '@Grambank'
+    items = ''
+    comment = 'subset of transitivity features from Grambank'
+
+    [data.subset_gender]
+    ntaxa = 302
+    nchars = 1
+    nsites = 1
+    datatype = 'structural features'
+    source = '@Grambank'
+    items = ''
+    comment = 'subset of gender features from Grambank'
+
+    [data.subset_clause]
+    ntaxa = 302
+    nchars = 1
+    nsites = 1
+    datatype = 'structural features'
+    source = '@Grambank'
+    items = ''
+    comment = 'subset of clause features from Grambank'
+
+    [data.subset_core_arg]
+    ntaxa = 302
+    nchars = 1
+    nsites = 1
+    datatype = 'structural features'
+    source = '@Grambank'
+    items = ''
+    comment = 'subset of core arg features from Grambank'
+
+    [data.subset_case]
+    ntaxa = 302
+    nchars = 1
+    nsites = 1
+    datatype = 'structural features'
+    source = '@Grambank'
+    items = ''
+    comment = 'subset of case features from Grambank'
+
+    [data.subset_mood]
+    ntaxa = 302
+    nchars = 1
+    nsites = 1
+    datatype = 'structural features'
+    source = '@Grambank'
+    items = ''
+    comment = 'subset of mood features from Grambank'
+
+    [data.subset_articles]
+    ntaxa = 302
+    nchars = 1
+    nsites = 1
+    datatype = 'structural features'
+    source = '@Grambank'
+    items = ''
+    comment = 'subset of articles features from Grambank'
+
+    [data.subset_non-core_arg]
+    ntaxa = 302
+    nchars = 1
+    nsites = 1
+    datatype = 'structural features'
+    source = '@Grambank'
+    items = ''
+    comment = 'subset of non-core arg features from Grambank'
+
+    [data.subset_number]
+    ntaxa = 302
+    nchars = 1
+    nsites = 1
+    datatype = 'structural features'
+    source = '@Grambank'
+    items = ''
+    comment = 'subset of number features from Grambank'
+
+    [data.subset_tense]
+    ntaxa = 302
+    nchars = 1
+    nsites = 1
+    datatype = 'structural features'
+    source = '@Grambank'
+    items = ''
+    comment = 'subset of tense features from Grambank'
+
+    [data.subset_negation]
+    ntaxa = 302
+    nchars = 1
+    nsites = 1
+    datatype = 'structural features'
+    source = '@Grambank'
+    items = ''
+    comment = 'subset of negation features from Grambank'
+
+    [data.subset_possession]
+    ntaxa = 302
+    nchars = 1
+    nsites = 1
+    datatype = 'structural features'
+    source = '@Grambank'
+    items = ''
+    comment = 'subset of possession features from Grambank'
+
+    [data.subset_aspect]
+    ntaxa = 302
+    nchars = 1
+    nsites = 1
+    datatype = 'structural features'
+    source = '@Grambank'
+    items = ''
+    comment = 'subset of aspect features from Grambank'
+    
+# published phylogenies
+[phylogenies]
+    [phylogenies.jaeger2018]
+    source = '@Jaeger2018'
+    comment = ''
+
+    [phylogenies.austronesian]
+    source = '@Gray2009'
+    comment = ''
+
+    [phylogenies.indoeuropeanB]
+    source = '@Bouckaert2012'
+    comment = ''
+
+    [phylogenies.indoeuropeanC]
+    source = '@Chang2015'
+    comment = ''
+
+    [phylogenies.sinotibetan]
+    source = '@Zhang2020'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.global]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global"
+
+    [analysis.indoeuropeanB]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.indoeuropeanB"
+
+    [analysis.indoeuropeanC]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.indoeuropeanC"
+
+    [analysis.austronesian]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.austronesian"
+
+    [analysis.sinotibetan]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.sinotibetan"
+    
+    # subsets
+
+    [analysis.core_arg_vs_possession]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_core_arg;@data.subset_possession"
+
+
+    [analysis.core_arg_vs_articles]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_core_arg;@data.subset_articles"
+
+
+    [analysis.core_arg_vs_gender]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_core_arg;@data.subset_gender"
+
+
+    [analysis.core_arg_vs_case]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_core_arg;@data.subset_case"
+
+
+    [analysis.core_arg_vs_number]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_core_arg;@data.subset_number"
+
+
+    [analysis.tense_vs_possession]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_tense;@data.subset_possession"
+
+
+    [analysis.tense_vs_articles]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_tense;@data.subset_articles"
+
+
+    [analysis.tense_vs_gender]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_tense;@data.subset_gender"
+
+
+    [analysis.tense_vs_case]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_tense;@data.subset_case"
+
+
+    [analysis.tense_vs_number]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_tense;@data.subset_number"
+
+
+    [analysis.mood_vs_possession]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_mood;@data.subset_possession"
+
+
+    [analysis.mood_vs_articles]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_mood;@data.subset_articles"
+
+
+    [analysis.mood_vs_gender]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_mood;@data.subset_gender"
+
+
+    [analysis.mood_vs_case]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_mood;@data.subset_case"
+
+
+    [analysis.mood_vs_number]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_mood;@data.subset_number"
+
+
+    [analysis.non-core_arg_vs_possession]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_non-core_arg;@data.subset_possession"
+
+
+    [analysis.non-core_arg_vs_articles]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_non-core_arg;@data.subset_articles"
+
+
+    [analysis.non-core_arg_vs_gender]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_non-core_arg;@data.subset_gender"
+
+
+    [analysis.non-core_arg_vs_case]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_non-core_arg;@data.subset_case"
+
+
+    [analysis.non-core_arg_vs_number]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_non-core_arg;@data.subset_number"
+
+
+    [analysis.clause_vs_possession]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_clause;@data.subset_possession"
+
+
+    [analysis.clause_vs_articles]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_clause;@data.subset_articles"
+
+
+    [analysis.clause_vs_gender]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_clause;@data.subset_gender"
+
+
+    [analysis.clause_vs_case]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_clause;@data.subset_case"
+
+
+    [analysis.clause_vs_number]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_clause;@data.subset_number"
+
+
+    [analysis.transitivity_vs_possession]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_transitivity;@data.subset_possession"
+
+
+    [analysis.transitivity_vs_articles]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_transitivity;@data.subset_articles"
+
+
+    [analysis.transitivity_vs_gender]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_transitivity;@data.subset_gender"
+
+
+    [analysis.transitivity_vs_case]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_transitivity;@data.subset_case"
+
+
+    [analysis.transitivity_vs_number]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_transitivity;@data.subset_number"
+
+
+    [analysis.aspect_vs_possession]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_aspect;@data.subset_possession"
+
+
+    [analysis.aspect_vs_articles]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_aspect;@data.subset_articles"
+
+
+    [analysis.aspect_vs_gender]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_aspect;@data.subset_gender"
+
+
+    [analysis.aspect_vs_case]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_aspect;@data.subset_case"
+
+
+    [analysis.aspect_vs_number]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_aspect;@data.subset_number"
+
+
+    [analysis.negation_vs_possession]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_negation;@data.subset_possession"
+
+
+    [analysis.negation_vs_articles]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_negation;@data.subset_articles"
+
+
+    [analysis.negation_vs_gender]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_negation;@data.subset_gender"
+
+
+    [analysis.negation_vs_case]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_negation;@data.subset_case"
+
+
+    [analysis.negation_vs_number]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@phylogenies.global;@data.subset_negation;@data.subset_number"

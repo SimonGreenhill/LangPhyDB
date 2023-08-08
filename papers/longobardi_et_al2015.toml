@@ -1,0 +1,236 @@
+title = "Across language families: Genome diversity mirrors linguistic variation within Europe"
+
+doi = "10.1002/ajpa.22758"
+
+abstract = """
+The notion that patterns of linguistic and biological variation may cast light on each other and on
+population histories dates back to Darwin’s times; yet, turning this intuition into a proper research
+program has met with serious methodological difficulties, especially affecting language comparisons.
+This article takes advantage of two new tools of comparative linguistics: a refined list of
+Indo-European cognate words, and a novel method of language comparison estimating linguistic diversity
+from a universal inventory of grammatical polymorphisms, and hence enabling comparison even across
+different families. We corroborated the method and used it to compare patterns of linguistic and genomic
+variation in Europe. Materials and Methods: Two sets of linguistic distances, lexical and syntactic,
+were inferred from these data and compared with measures of geographic and genomic distance through a
+series of matrix correlation tests. Linguistic and genomic trees were also estimated and compared. A
+method (Treemix) was used to infer migration episodes after the main population splits. Results: We
+observed significant correlations between genomic and linguistic diversity, the latter inferred from
+data on both Indo-European and non-Indo-European languages. Contrary to previous observations, on the
+European scale, language proved a better predictor of genomic differences than geography. Inferred
+episodes of genetic admixture following the main population splits found convincing correlates also in
+the linguistic realm. Discussion: These results pave the ground for previously unfeasible
+crossdisciplinary analyses at the worldwide scale, encompassing populations of distant language families.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Giuseppe Longobardi",
+    "Silvia Ghirotto",
+    "Cristina Guardiano",
+    "Francesca Tassi",
+    "Andrea Benazzo",
+    "Andrea Ceolin",
+    "Guido Barbujani",
+]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Longobardi2015"
+
+# type of study
+type = ['phylogenetic', 'distance']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Comparison of genetic, lexical and parametric phylogenies."
+
+# data
+[data]
+
+    notes = "We started by inferring four matrices of pairwise distances between the 12 IE-speaking populations and for the whole set of 15 European populations: geographic (dGEO), genomic (dGEN), and two types of linguistic distances, syntactic (dSYN, from Longobardi and Guardiano, 2009) and lexical (dLEX, from Bouckaert et al., 2012 new word list)."
+    
+    [data.lexicon_IE]
+    ntaxa = 12
+    nchars = 2017
+    nsites = 5047
+    datatype = 'lexical cognates'
+    source = '@IELex'
+    items = ''
+    comment = ''
+
+    [data.parametric_IE]
+    ntaxa = 12
+    nchars = 56
+    nsites = 56
+    datatype = 'syntactical features'
+    source = '@Longobardi2013'
+    items = ''
+    comment = ''
+
+    [data.parametric_European]
+    ntaxa = 15
+    nchars = 56
+    nsites = 56
+    datatype = 'syntactical features'
+    source = '@Longobardi2013'
+    items = ''
+    comment = ''
+
+    [data.genetic]
+    ntaxa = 15
+    nchars = '?'
+    nsites = "?"
+    datatype = 'genetic SNPs'
+    source = ''
+    items = ''
+    comment = ''
+    
+    [data.geographic]
+    ntaxa = 15
+    nchars = 1
+    nsites = 1
+    datatype = 'distance'
+    source = ''
+    items = ''
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree_lexicon_IE]
+    tool = 'phylip'
+    model = 'upgma'
+    details = ""
+    data = '@data.lexicon_IE'
+
+    [analysis.tree_parametric_IE]
+    tool = 'phylip'
+    model = 'upgma'
+    details = ""
+    data = '@data.parametric_IE'
+
+    [analysis.tree_parametric_European]
+    tool = 'phylip'
+    model = 'upgma'
+    details = ""
+    data = '@data.parametric_European'
+
+    [analysis.tree_genetic]
+    tool = 'phylip'
+    model = 'upgma+bootstrapping'
+    details = ""
+    data = '@data.genetic'
+
+    # mantel
+    
+    [analysis.mantel_lex_geo]
+    tool = 'vegan'
+    model = 'mantel'
+    details = ""
+    data = '@data.lexicon_IE;@data.geographic'
+    
+    [analysis.mantel_lex_gen]
+    tool = 'vegan'
+    model = 'mantel'
+    details = ""
+    data = '@data.lexicon_IE;@data.genetic'
+    
+    [analysis.mantel_syn_geo]
+    tool = 'vegan'
+    model = 'mantel'
+    details = ""
+    data = '@data.syntactic_IE;@data.geographic'
+    
+    [analysis.mantel_syn_gen]
+    tool = 'vegan'
+    model = 'mantel'
+    details = ""
+    data = '@data.syntactic_IE;@data.genetic'
+
+    [analysis.mantel_lex_syn]
+    tool = 'vegan'
+    model = 'mantel'
+    details = ""
+    data = '@data.syntactic_IE;@data.lexicon_IE'
+
+    [analysis.mantel_gen_geo]
+    tool = 'vegan'
+    model = 'mantel'
+    details = ""
+    data = '@data.genetic;@data.geographic'
+
+    [analysis.mantel_dGEN_dGEO]
+        tool = 'vegan'
+        model = 'mantel'
+        details = ""
+        data = '@data.genetic;data.geographic'
+
+    [analysis.mantel_dSYN_dLEX]
+        tool = 'vegan'
+        model = 'mantel'
+        details = ""
+        data = '@data.syntactic;data.lexicon'
+
+    [analysis.mantel_dSYN_dGEO]
+        tool = 'vegan'
+        model = 'mantel'
+        details = ""
+        data = '@data.syntactic;data.geographic'
+
+    [analysis.mantel_dLEX_dGEO]
+        tool = 'vegan'
+        model = 'mantel'
+        details = ""
+        data = '@data.lexicon;data.geographic'
+
+    [analysis.mantel_dSYN_dGEN]
+        tool = 'vegan'
+        model = 'mantel'
+        details = ""
+        data = '@data.syntactic;data.genetic'
+
+    [analysis.mantel_dLEX_dGEN]
+        tool = 'vegan'
+        model = 'mantel'
+        details = ""
+        data = '@data.lexicon;data.genetic'
+
+    [analysis.mantel_dGEN_dGEO_dSYN]
+        tool = 'vegan'
+        model = 'mantel'
+        details = ""
+        data = '@data.genetic;data.geographic|data.syntactic'
+
+    [analysis.mantel_dGEN_dGEO_dLEX]
+        tool = 'vegan'
+        model = 'mantel'
+        details = ""
+        data = '@data.genetic;data.geographic|data.lexicon'
+
+    [analysis.mantel_dSYN_dGEO_dGEN]
+        tool = 'vegan'
+        model = 'mantel'
+        details = ""
+        data = '@data.syntactic;data.geographic|data.genetic'
+
+    [analysis.mantel_dLEX_dGEO_dGEN]
+        tool = 'vegan'
+        model = 'mantel'
+        details = ""
+        data = '@data.lexicon;data.geographic|data.genetic'
+
+    [analysis.mantel_dSYN_dGEN_dGEO]
+        tool = 'vegan'
+        model = 'mantel'
+        details = ""
+        data = '@data.syntactic;data.genetic|data.geography'
+
+    [analysis.mantel_dLEX_dGEN_dGEO]
+        tool = 'vegan'
+        model = 'mantel'
+        details = ""
+        data = '@data.lexicon;data.genetic|data.geography'

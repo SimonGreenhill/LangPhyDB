@@ -2,9 +2,11 @@ label,description
 archaeological,
 distance,geographic distance data
 ethnographic features,ethnographic features
+genetic SNPs,genetic SNP data
 lexemes,raw lexical data
 lexical cognates,cognate data
 lexical cognates (autodetected),auto detected cognate data
+lexical distances,lexical distances
 mixed,mixed datatypes
 morphological traits,morphological characters
 phonetic distance,phonetic distance

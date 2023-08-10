@@ -42,7 +42,7 @@ description = "Global phylogeny from ASJP database using Pointwise Mutual Inform
     nchars = 40
     nsites = 40
     datatype = 'lexical distances'
-    source = '@ASJP'
+    source = '@ASJP17'
     items = ''
     comment = ''
 

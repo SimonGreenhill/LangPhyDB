@@ -26,7 +26,7 @@ authors = ["Alexei S. Kassian"]
 groups = ["Lezgian", "Tsezic"]  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
-bibkey = "@Kassian2017"  # @xxxx
+bibkey = "@Kassian2017"
 
 # type of study
 type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait

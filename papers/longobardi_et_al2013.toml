@@ -26,7 +26,7 @@ authors = [
 ]
 
 # parts of the world
-groups = ['IndoEuropean']
+groups = ['Indo-European']
 
 # bibkey citation in sources.bib
 bibkey = "@Longobardi2013"
@@ -35,7 +35,7 @@ bibkey = "@Longobardi2013"
 type = ['phylogenetic', 'distance',]  # phylogenetic,dating,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
-description = "26 IndoEuropean languages"
+description = "26 Indo-European languages"
 
 # data
 [data]

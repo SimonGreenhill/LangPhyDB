@@ -16,7 +16,7 @@ authors = [
 ]
 
 # parts of the world
-groups = ["Indo-European & others"]  # 'Austronesian', etc
+groups = ["Indo-European", "Others"]  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Ceolin_2020"

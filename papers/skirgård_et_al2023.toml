@@ -142,58 +142,34 @@ description = "Presentation of the global database Grambank with phylogenetic an
 
     notes = ""
     
-    [data.XX]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    [data.grambank]
+    ntaxa = 2467
+    nchars = 195
+    nsites = 195
+    datatype = 'structural features'
+    source = '@Grambank'
     items = ''
     comment = ''
 
 # published phylogenies
 [phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
+    [phylogenies.global]
+    source = '@Bouckaert2022'
     comment = ''
-
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
-
 
 # analysis information
 [analysis]
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
+    [analysis.INLA]
+    tool = 'r'
+    model = 'spatiophylogenetic'
     details = ""
+    data = "@data.grambank;@data.geographic;@phylogenies.global"
 
-
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
-
-
-[links]
-phlorest = { title = "Phlorest Dataset", link = "" }
-cldf = { title = "CLDF Dataset", link = "" }
-dplace = { title = "D-PLACE Dataset", link = "" }
-links = []
+    [analysis.INLA_ASR]
+    tool = 'r'
+    model = 'spatiophylogenetic'
+    details = "ASR on the three most stable features"
+    data = "@data.grambank;@data.geographic;@phylogenies.global"

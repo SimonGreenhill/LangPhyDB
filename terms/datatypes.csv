@@ -1,7 +1,9 @@
 label,description
 archaeological,
 distance,geographic distance data
+environmental factors,environmental factors
 ethnographic features,ethnographic features
+frequency,frequency
 genetic SNPs,genetic SNP data
 lexemes,raw lexical data
 lexical cognates,cognate data

@@ -1,0 +1,151 @@
+title = "Phylogeny in Phonology: How Tai Sound Systems Encode Their Past"
+
+doi = "10.3765/amp.v5i0.4238"
+
+abstract = """
+The study of sound change is foundational to traditional historical linguistics, particularly the
+linguistic comparative method. It is well established that the phonology of modern languages encodes
+useful data for studying the history of those languages, and their genetic relationships to one another.
+However, phonology has typically been the means to the end, enabling the comparative method, and coding
+of a comparative lexicon for cognacy. Once coded, the particular sounds involved no longer factor into
+the analysis. This study examines whether the phoneme inventories and phonotactic profiles of a set of
+languages themselves contain phylogenetic signal detectable using established statistical tests D
+statistic (Fritz & Purvis 2010), K (Blomberg et al 2003), and NeighborNet delta score (Holland et al
+2002) and Q-residual (Gray et al 2010). This study adds to the growing body of work on the use of
+phonological traits in computational phylogenetics for linguistics. Using data from 20 Tai lects from the
+Kra-Dai language family, this study confirms and extends previous findings. This includes detection of
+strong phylogenetic signal in phoneme frequency and biphone transition probabilities, but also relatively
+strong phylogenetic signal detected in even coarse-grained phoneme and biphone presence/absence, which
+previous work was unable to do.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Rikker Dockum"]
+
+
+# parts of the world
+groups = ['Kra-Dai']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Dockum2018"  # @xxxx
+
+# type of study
+type = ['phylogenetic', 'delta', 'qresidual', 'network']
+
+# short description of the study, one line.
+description = "Assesses whether phonetic features show phylogenetic signal in the Tai-Kadai languages."
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.hudak]
+    ntaxa = 20
+    nchars = 750
+    nsites = 1159
+    datatype = 'lexical cognates'
+    source = '@Hudak2008'
+    items = ''
+    comment = ''
+
+    [data.hudak_phonemes]
+    ntaxa = 20
+    nchars = 41
+    nsites = 41
+    datatype = 'phonetic traits'
+    source = '@Hudak2008'
+    items = ''
+    comment = ''
+
+    [data.hudak_segmental_transitions]
+    ntaxa = 20
+    nchars = 526
+    nsites = 526
+    datatype = 'phonetic traits'
+    source = ''
+    items = ''
+    comment = ''
+
+    [data.hudak_phoneme_frequency]
+    ntaxa = 20
+    nchars = 1
+    nsites = 1
+    datatype = 'frequency'
+    source = ''
+    items = ''
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.D]
+    tool = 'caper'
+    model = 'phylo.d'
+    details = ""
+    data = "data@hudak_phonemes;data@hudak_segmental_transitions"
+
+    [analysis.K]
+    tool = 'picante'
+    model = 'multiPhylosignal'
+    details = ""
+    data = "data@hudak_phoneme_frequency"
+
+    [analysis.neighbornet_phonemes]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "data@hudak_phonemes"
+
+    [analysis.delta_phonemes]
+    tool = 'splitstree'
+    model = 'delta'
+    details = ""
+    data = "data@hudak_phonemes"
+
+    [analysis.q_phonemes]
+    tool = 'splitstree'
+    model = 'qresidual'
+    details = ""
+    data = "data@hudak_phonemes"
+
+    [analysis.neighbornet_segmental]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "data@hudak_segmental_transitions"
+
+    [analysis.delta_segmental]
+    tool = 'splitstree'
+    model = 'delta'
+    details = ""
+    data = "data@hudak_segmental_transitions"
+
+    [analysis.q_segmental]
+    tool = 'splitstree'
+    model = 'qresidual'
+    details = ""
+    data = "data@hudak_segmental_transitions"
+
+    [analysis.neighbornet_frequency]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "data@hudak_phoneme_frequency"
+
+    [analysis.delta_frequency]
+    tool = 'splitstree'
+    model = 'delta'
+    details = ""
+    data = "data@hudak_phoneme_frequency"
+
+    [analysis.q_frequency]
+    tool = 'splitstree'
+    model = 'qresidual'
+    details = ""
+    data = "data@hudak_phoneme_frequency"
+
+

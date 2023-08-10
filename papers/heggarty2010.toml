@@ -1,0 +1,38 @@
+title = "Beyond lexicostatistics"
+
+doi = "10.1075/dia.27.2.07heg"
+
+abstract = """
+This article surveys various long-standing ambiguities and confusions that continue to dog
+lexicostatistics and glottochronology. I aim to offer some novel perspectives and clarifications, which
+also help map out how we might devise new, alternative methods to build upon the good in Swadesh’s
+troubled legacy. I challenge the recent trend towards honing down Swadesh’s original list to a minimal
+core. A richer signal on language relationships is to be had not by discarding the data in meanings
+considered ‘unstable’, but by exploring the revealing patterns that emerge only when those meanings are
+kept, and contrasted against their ‘core’ counterparts.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['Paul Heggarty']
+
+# parts of the world
+groups = ['Aymara', 'Quechua']
+
+# bibkey citation in sources.bib
+bibkey = "@Heggarty2010"  # @xxxx
+
+# type of study
+type = ['network', 'review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Review of confusions regarding wordlists and lexicostatistics"
+
+    
+# published phylogenies
+[phylogenies]
+    [phylogenies.andes_nnet_hihi]
+    source = '@McMahon2005'
+
+    [phylogenies.andes_nnet_lolo]
+    source = '@McMahon2005'
+    

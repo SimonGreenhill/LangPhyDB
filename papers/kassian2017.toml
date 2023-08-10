@@ -1,0 +1,347 @@
+title = "Linguistic homoplasy and phylogeny reconstruction. The cases of Lezgian and Tsezic languages (North Caucasus)"
+
+doi = "10.1515/flih-2017-0008"
+
+abstract = """
+This paper deals with the problem of linguistic homoplasy (parallel or backward development), how it can
+be detected, what kinds of linguistic homoplasy can be distinguished and which varieties of the
+phenomenon are the most deleterious for the reconstruction of language phylogeny. It is proposed that
+language phylogeny reconstruction should consist of two main stages. Firstly, a strict consensus tree
+should be built on the basis of high-quality input data elaborated with the help of the main phylogenetic
+methods (such as Neighbor-joining, Bayesian MCMC, and Maximum parsimony), and ancestral character states,
+allowing us to reveal a certain number of homoplastic characters. Secondly, after the detected instances
+of homo- plasy are eliminated from the input matrix, the consensus tree is to be compiled again. It is
+expected that after homoplastic optimization it will be possible to better resolve individual “problem
+clades”, and generally the homoplasy-optimized phylogeny should be more robust than the tree constructed
+initially. The proposed procedure is tested on the 110-item Swadesh wordlists of the Lezgian and Tsezic
+groups. The Lezgian and Tsezic results generally support theoretical expectations. The MLN (minimal
+lateral network) method, currently implemented in the LingPy software, is a helpful tool for the
+detection of linguistic homoplasy.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Alexei S. Kassian"]
+
+# parts of the world
+groups = ["Lezgian", "Tsezic"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Kassian2017"  # @xxxx
+
+# type of study
+type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Comparison of phylogenetic methods with and without 'homoplasy optimised' data in Tsezic and Lezgian languages."
+
+# data
+[data]
+
+    notes = ""
+
+    [data.lezgian]
+    ntaxa = 20
+    nchars = 110
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@GLED'
+    items = ''
+    comment = ''
+
+    [data.lezgian_HO]
+    ntaxa = 20
+    nchars = 110
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@GLED'
+    items = ''
+    comment = '"homoplasy optimised"'
+
+    [data.tsezic]
+    ntaxa = 9
+    nchars = 110
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@GLED'
+    items = ''
+    comment = ''
+
+    [data.tsezic_HO]
+    ntaxa = 9
+    nchars = 110
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@GLED'
+    items = ''
+    comment = '"homoplasy optimised"'
+
+# analysis information
+[analysis]
+    
+    notes = ""
+
+    [analysis.data.lezgian_F8]
+    tool = 'manual'
+    model = ''
+    details = ""
+    data = "@data.lezgian"
+
+
+    [analysis.data.lezgian_HO_F8]
+    tool = 'manual'
+    model = ''
+    details = ""
+    data = "@data.lezgian_HO"
+
+
+    [analysis.data.lezgian_F9]
+    tool = 'splitstree'
+    model = 'neigbornet + bootstrapping'
+    details = ""
+    data = "@data.lezgian"
+
+
+    [analysis.data.lezgian_HO_F9]
+    tool = 'splitstree'
+    model = 'neigbornet + bootstrapping'
+    details = ""
+    data = "@data.lezgian_HO"
+
+
+    [analysis.data.lezgian_F10]
+    tool = 'lingpy'
+    model = 'minimal lateral network'
+    details = ""
+    data = "@data.lezgian"
+
+
+    [analysis.data.lezgian_HO_F10]
+    tool = 'lingpy'
+    model = 'minimal lateral network'
+    details = ""
+    data = "@data.lezgian_HO"
+
+
+    [analysis.data.lezgian_S1]
+    tool = 'starling'
+    model = 'StarlingNJ + binary nodes only'
+    details = ""
+    data = "@data.lezgian"
+
+
+    [analysis.data.lezgian_HO_S1]
+    tool = 'starling'
+    model = 'StarlingNJ + binary nodes only'
+    details = ""
+    data = "@data.lezgian_HO"
+
+
+    [analysis.data.lezgian_S2]
+    tool = 'starling'
+    model = 'StarlingNJ'
+    details = ""
+    data = "@data.lezgian"
+
+
+    [analysis.data.lezgian_HO_S2]
+    tool = 'starling'
+    model = 'StarlingNJ'
+    details = ""
+    data = "@data.lezgian_HO"
+
+
+    [analysis.data.lezgian_S3]
+    tool = 'splitstree'
+    model = 'NJ+bootstrap'
+    details = ""
+    data = "@data.lezgian"
+
+
+    [analysis.data.lezgian_HO_S3]
+    tool = 'splitstree'
+    model = 'NJ+bootstrap'
+    details = ""
+    data = "@data.lezgian_HO"
+
+
+    [analysis.data.lezgian_S4]
+    tool = 'splitstree'
+    model = 'UPGMA + bootstrap'
+    details = ""
+    data = "@data.lezgian"
+
+
+    [analysis.data.lezgian_HO_S4]
+    tool = 'splitstree'
+    model = 'UPGMA + bootstrap'
+    details = ""
+    data = "@data.lezgian_HO"
+
+
+    [analysis.data.lezgian_S5]
+    tool = 'mrbayes'
+    model = 'f81+gamma'
+    details = ""
+    data = "@data.lezgian"
+
+
+    [analysis.data.lezgian_HO_S5]
+    tool = 'mrbayes'
+    model = 'f81+gamma'
+    details = ""
+    data = "@data.lezgian_HO"
+
+
+    [analysis.data.lezgian_S6]
+    tool = 'tnt'
+    model = 'Unweighted Maximum Parsimony'
+    details = ""
+    data = "@data.lezgian"
+
+
+    [analysis.data.lezgian_HO_S6]
+    tool = 'tnt'
+    model = 'Unweighted Maximum Parsimony'
+    details = ""
+    data = "@data.lezgian_HO"
+
+
+    [analysis.data.tsezic_F11]
+    tool = 'manual'
+    model = ''
+    details = ""
+    data = "@data.tsezic"
+
+
+    [analysis.data.tsezic_HO_F11]
+    tool = 'manual'
+    model = ''
+    details = ""
+    data = "@data.tsezic_HO"
+
+
+    [analysis.data.tsezic_F12]
+    tool = 'splitstree'
+    model = 'neigbornet + bootstrapping'
+    details = ""
+    data = "@data.tsezic"
+
+
+    [analysis.data.tsezic_HO_F12]
+    tool = 'splitstree'
+    model = 'neigbornet + bootstrapping'
+    details = ""
+    data = "@data.tsezic_HO"
+
+
+    [analysis.data.tsezic_F13]
+    tool = 'lingpy'
+    model = 'minimal lateral network'
+    details = ""
+    data = "@data.tsezic"
+
+
+    [analysis.data.tsezic_HO_F13]
+    tool = 'lingpy'
+    model = 'minimal lateral network'
+    details = ""
+    data = "@data.tsezic_HO"
+
+
+    [analysis.data.tsezic_F14]
+    tool = 'manual'
+    model = ''
+    details = ""
+    data = "@data.tsezic"
+
+
+    [analysis.data.tsezic_HO_F14]
+    tool = 'manual'
+    model = ''
+    details = ""
+    data = "@data.tsezic_HO"
+
+
+    [analysis.data.tsezic_S7]
+    tool = 'starling'
+    model = 'StarlingNJ + binary nodes only'
+    details = ""
+    data = "@data.tsezic"
+
+
+    [analysis.data.tsezic_HO_S7]
+    tool = 'starling'
+    model = 'StarlingNJ + binary nodes only'
+    details = ""
+    data = "@data.tsezic_HO"
+
+
+    [analysis.data.tsezic_S8]
+    tool = 'starling'
+    model = 'StarlingNJ'
+    details = ""
+    data = "@data.tsezic"
+
+
+    [analysis.data.tsezic_HO_S8]
+    tool = 'starling'
+    model = 'StarlingNJ'
+    details = ""
+    data = "@data.tsezic_HO"
+
+
+    [analysis.data.tsezic_S9]
+    tool = 'splitstree'
+    model = 'NJ+bootstrap'
+    details = ""
+    data = "@data.tsezic"
+
+
+    [analysis.data.tsezic_HO_S9]
+    tool = 'splitstree'
+    model = 'NJ+bootstrap'
+    details = ""
+    data = "@data.tsezic_HO"
+
+
+    [analysis.data.tsezic_S10]
+    tool = 'splitstree'
+    model = 'UPGMA + bootstrap'
+    details = ""
+    data = "@data.tsezic"
+
+
+    [analysis.data.tsezic_HO_S10]
+    tool = 'splitstree'
+    model = 'UPGMA + bootstrap'
+    details = ""
+    data = "@data.tsezic_HO"
+
+
+    [analysis.data.tsezic_S11]
+    tool = 'mrbayes'
+    model = 'f81+gamma'
+    details = ""
+    data = "@data.tsezic"
+
+
+    [analysis.data.tsezic_HO_S11]
+    tool = 'mrbayes'
+    model = 'f81+gamma'
+    details = ""
+    data = "@data.tsezic_HO"
+
+
+    [analysis.data.tsezic_S12]
+    tool = 'tnt'
+    model = 'Unweighted Maximum Parsimony'
+    details = ""
+    data = "@data.tsezic"
+
+
+    [analysis.data.tsezic_HO_S12]
+    tool = 'tnt'
+    model = 'Unweighted Maximum Parsimony'
+    details = ""
+    data = "@data.tsezic_HO"
+

@@ -1,0 +1,83 @@
+title = "Environmental conditions do not predict diversification rates in the Bantu languages"
+
+doi = "10.1016/j.heliyon.2019.e02630"
+
+abstract = """
+The global distribution of language diversity mirrors that of several variables related to ecosystem
+productivity. It has been argued that this is driven by the size of social networks, which tend to be
+larger in harsher climates to ensure food security, leading to reduced language divergence. Is this
+pattern purely synchronic, or is there also a quantifiable relationship between environmental conditions
+and language diversification over time? We used a spatio-temporal phylogeny of the Bantu language family
+to estimate local diversification rates at the times and locations of language divergence. We compared
+these data against spatially-explicit reconstructions of several palaeoclimate and palaeovegetation
+variables (mean annual temperature and the temperature of the coldest and warmest quarter, annual
+precipitation and the precipitation of the wettest and driest quarter, growing degree days, the length of
+the growing season, and net primary production), to investigate a potential link between local
+environmental factors and diversification rates in the Bantu languages. A regression analysis does not
+suggest a statistically significant relationship between climatic or ecological variables and linguistic
+diversification over time. We find a strong positive correlation between pairwise linguistic and
+geographic distances in the Bantu languages, arguing for a dominant role of isolation as a result of the
+rapid Bantu expansion that might have overwhelmed any potential influence of local environmental factors.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Robert Beyer", "Joy S. Singarayer", "Jay T. Stock", "Andrea Manica"
+]
+
+# parts of the world
+groups = ['Bantu']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Beyer2019"  # @xxxx
+
+# type of study
+type = ['macroevolutionary']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "A test of whether environmental conditions affect diversification rates in Bantu languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.environmental]
+    ntaxa = 424
+    nchars = 9
+    nsites = 9
+    datatype = 'environmental factors'
+    source = ''
+    items = ''
+    comment = ''
+
+    [data.geographical]
+    ntaxa = 424
+    nchars = 2
+    nsites = 2
+    datatype = 'distance'
+    source = ''
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.bantu]
+    source = '@Grollemund2015'
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.ltt]
+    tool = 'ape'
+    model = 'lineages-through-time'
+    details = ""
+
+    [analysis.regression]
+    tool = 'unknown'  # can't see this in OSF code repository
+    model = ''
+    details = ""

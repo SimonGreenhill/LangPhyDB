@@ -1,0 +1,91 @@
+title = "Rapid radiation of the inner Indo-European languages: an advanced approach to Indo-European lexicostatistics"
+
+doi = "10.1515/ling-2020-0060"
+
+abstract = """
+
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Alexei S. Kassian",
+    "Mikhail Zhivlov",
+    "George Starostin",
+    "Artem A. Trofimov",
+    "Petr A. Kocharov",
+    "Anna Kuritsyna",
+    "Mikhail N. Saenko"
+]
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Kassian2021"  # @xxxx
+
+# type of study
+type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+
+    [data.lezgian]
+    ntaxa = 20
+    nchars = 110
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@GLED'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.label]
+    source = '@xxx'
+    comment = ''
+
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.label]
+    taxa = []
+    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "ybp" # ybp
+    description = ""
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = ''
+    model = ''
+    details = ""
+
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.label]
+    taxa = []
+    age = "hpd(median, lower, upper)"
+    units = "ybp"
+    notes = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

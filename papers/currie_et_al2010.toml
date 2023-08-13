@@ -1,0 +1,81 @@
+title = "Rise and fall of political complexity in island South-East Asia and the Pacific"
+
+doi = "10.1038/nature09461"
+
+abstract = """
+There is disagreement about whether human political evolution has proceeded through a sequence of incremental increases in complexity, or whether larger, non-sequential increases have occurred. The extent to which societies have decreased in complexity is also unclear. These debates have continued largely in the absence of rigorous, quantitative tests. We evaluated six competing models of political evolution in Austronesian-speaking societies using phylogenetic methods. Here we show that in the best-fitting model political complexity rises and falls in a sequence of small steps. This is closely followed by another model in which increases are sequential but decreases can be either sequential or in bigger drops. The results indicate that large, non-sequential jumps in political complexity have not occurred during the evolutionary history of these societies. This suggests that, despite the numerous contingent pathways of human history, there are regularities in cultural evolution that can be detected using computational phylogenetic methods.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Thomas E. Currie", "Simon J. Greenhill", "Russell D. Gray", "Toshikazu Hasegawa", "Ruth Mace"
+]
+
+# parts of the world
+groups = ['Austronesian']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Currie2010"  # @xxxx
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Rise and fall of political complexity in island South-East Asia and the Pacific"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.polcomplex]
+    ntaxa = 84
+    nchars = 1
+    nsites = 1
+    datatype = 'ethnographic features'
+    source = '@EthAtlas'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.g2009]
+    source = '@Gray2009'
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.bt_unilinear]
+    tool = 'bayestraits'
+    model = 'multistate+rjmcmc+traitmodel'
+    details = ""
+
+    [analysis.bt_relaxed_unilinear]
+    tool = 'bayestraits'
+    model = 'multistate+rjmcmc+traitmodel'
+    details = ""
+
+    [analysis.bt_full]
+    tool = 'bayestraits'
+    model = 'multistate+rjmcmc+traitmodel'
+    details = ""
+
+    [analysis.bt_alternative_trajectories]
+    tool = 'bayestraits'
+    model = 'multistate+rjmcmc+traitmodel'
+    details = ""
+
+    [analysis.bt_alternative_trajectories_reversible]
+    tool = 'bayestraits'
+    model = 'multistate+rjmcmc+traitmodel'
+    details = ""
+
+    [analysis.bt_rectilinear]
+    tool = 'bayestraits'
+    model = 'multistate+rjmcmc+traitmodel'
+    details = ""
+

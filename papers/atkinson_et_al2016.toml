@@ -1,0 +1,129 @@
+title = "Cultural and Environmental Predictors of Pre- European Deforestation on Pacific Islands"
+
+doi = "10.1371/journal.pone.0156340"
+
+abstract = """
+The varied islands of the Pacific provide an ideal natural experiment for studying the factors shaping human
+impact on the environment. Previous research into pre-European deforestation across the Pacific indicated a
+major effect of environment but did not account for cultural variation or control for dependencies in the data
+due to shared cultural ancestry and geographic proximity. The relative importance of environment and culture on
+Pacific deforestation and forest replacement and the extent to which environmental impact is con- strained by
+cultural ancestry therefore remain unexplored. Here we use comparative phylogenetic methods to model the effect of
+nine ecological and two cultural variables on pre-European Pacific forest outcomes at 80 locations across 67
+islands. We show that some but not all ecological features remain important predictors of forest outcomes after
+accounting for cultural covariates and non-independence in the data. Controlling for ecology, cultural variation
+in agricultural intensification predicts deforestation and forest replacement, and there is some evidence that
+land tenure norms predict forest replacement. These findings indicate that, alongside ecology, cultural factors
+also predict pre-European Pacific forest outcomes. Although forest outcomes covary with cultural ancestry, this
+effect disappears after controlling for geographic proximity and ecology. This suggests that forest out- comes
+were not tightly constrained by colonists’ cultural ancestry, but instead reflect a combination of ecological
+constraints and the short-term responses of each culture in the face of those constraints.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Quentin D. Atkinson",
+    "Ties Coomber",
+    "Sam Passmore",
+    "Simon J. Greenhill",
+    "Geoff Kushnick"
+]
+
+# parts of the world
+groups = ['Austronesian']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Atkinson2016"
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Model the effect of nine ecological and two cultural variables on pre-European Pacific forest outcomes"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.ecology]
+    ntaxa = 80
+    nchars = 10
+    nsites = 10
+    datatype = 'environmental factors'
+    source = ''
+    items = ''
+    comment = ''
+
+    [data.cultural]
+    ntaxa = 80
+    nchars = 2
+    nsites = 2
+    datatype = 'ethnographic features'
+    source = '@DPLACE'
+    items = ''
+    comment = ''
+
+    [data.abvd]
+    ntaxa = 119
+    nchars = 210
+    nsites = 7750
+    datatype = 'lexical cognates'
+    source = '@Greenhill2008'
+    items = 'swadesh200'
+    comment = ''
+
+    [data.distance]
+    ntaxa = 80
+    nchars = 2
+    nsites = 72
+    datatype = 'distance'
+    source = ''
+    items = ''
+    comment = ''
+
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.poc]
+    taxa = ['ocea1241']
+    age = "normal(3200, 100)" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "y2000" # ybp
+    description = ""
+
+    [calibration.pep]
+    taxa = ['east2449']
+    age = "normal(1400, 200)" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "y2000" # ybp
+    description = ""
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.beast]
+    tool = 'beast'
+    model = 'covarion+relaxed'
+    details = ""
+    data = "@data.abvd"
+
+    [analysis.signal]
+    tool = 'phytools'
+    model = 'lambda'
+    details = ""
+    data = "@data.ecological;@data.cultural"
+
+    [analysis.pgls]
+    tool = 'phytools'
+    model = 'lambda'
+    details = "freckleton-jetz"
+    data = "@data.ecological;@data.cultural;@data.distance;@analysis.beast"
+    
+
+[inferredages]
+    
+    notes = "n.b. root is calibrated and enforced so inferred ages are not interesting"

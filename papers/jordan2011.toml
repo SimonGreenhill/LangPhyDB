@@ -1,0 +1,73 @@
+title = "A Phylogenetic Analysis of the Evolution of Austronesian Sibling Terminologies"
+
+doi = "10.3378/027.083.0209"
+
+abstract = """
+Social structure in human societies is underpinned by the variable expression of ideas about relatedness
+between different types of kin. We express these ideas through language in our kin terminology: to delineate
+who is kin and who is not, and to attach meanings to the types of kin labels associated with different
+individuals. Cross-culturally, there is a regular and restricted range of patterned variation in kin
+terminologies, and to date, our understanding of this diversity has been hampered by inadequate techniques
+for dealing with the hierarchical relatedness of languages (Galton’s Problem). Here I use maximum-likelihood
+and Bayesian phylogenetic comparative methods to begin to tease apart the processes underlying the evolution
+of kin terminologies in the Austronesian language family, focusing on terms for siblings. I infer (1) the
+probable ancestral states and (2) evolutionary models of change for the semantic distinctions of relative
+age (older/younger sibling) and relative sex (same-sex/opposite-sex). Analyses show that early Austronesian
+languages contained the relative-age, but not the relative-sex distinction; the latter was reconstructed
+firmly only for the ancestor of Eastern Malayo-Polynesian languages. Both distinctions were best
+characterized by evolutionary models where the gains and losses of the semantic distinctions were equally
+likely. A multi-state model of change examined how the relative-sex distinction could be elaborated and
+found that some transitions in kin terms were not possible: jumps from absence to heavily elaborated were
+very unlikely, as was piece-wise dismantling of elaborate distinctions. Cultural ideas about what types of
+kin distinctions are important can be embedded in the semantics of language; using a phylogenetic
+evolutionary framework we can understand how those distinctions in meaning change through time.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Fiona M. Jordan"]
+
+# parts of the world
+groups = ['Austronesian']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Jordan2011"  # @xxxx
+
+# type of study
+type = ['trait']
+
+# short description of the study, one line.
+description = "A phylogenetic analysis of the relative age and relative-sex kinship distinctions in Austronesian societies."
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.kinship]
+    ntaxa = 208
+    nchars = 2
+    nsites = 2
+    datatype = 'ethnographic features'
+    source = ''
+    items = ''
+    comment = 'relative age & relative sex distinctions'
+
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.g2009]
+    source = '@Gray2009'
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.bayestraits]
+    tool = 'bayestraits'
+    model = 'multistate+rjhp+asr'
+    details = ""
+    data = "@phylogenies.g2009;@data.kinship"
+

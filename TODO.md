@@ -9,17 +9,16 @@
 * Gray et al. 2010. On the shape and fabric of human history. Philosophical transactions of the Royal Society of London. Series B, Biological sciences 365.3923–33. doi:10.1098/rstb.2010.0162.
 * Greenhill, Simon J.; Thomas E. Currie.; and Russell D. Gray. 2009. Does horizontal transmission invalidate cultural phylogenies? Proceedings. Biological sciences / The Royal Society 276.2299–306. doi:10.1098/rspb.2008.1944.
 * Greenhill, Simon J.; Quentin D. Atkinson.; Andrew Meade.; and Russell D. Gray. 2010. The shape and tempo of language evolution. Proceedings of the Royal Society B: Biological Sciences 277. doi:10.1098/rspb.2010.0051.
-* Guardiano & Longobardi 2005. “Parametric Comparison and Language Taxonomy”. In: Grammaticalization and parametric variation. Ed. by Montserrat Batllori et al. Oxford: Oxford University Press, pp. 149–174.
+* Guardiano & Longobardi 2005. "Parametric Comparison and Language Taxonomy". In: Grammaticalization and parametric variation. Ed. by Montserrat Batllori et al. Oxford: Oxford University Press, pp. 149–174.
 * Heggarty, P., Maguire, W., & McMahon, A. 2010. Splits or waves? Trees or webs? How divergence measures and network analysis can unravel language histories. Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences., 365, 3829–3843. https://doi.org/10.1098/rstb.2010.0099
 * Holman, Eric W. and Søren Wichmann. 2017. New evidence from linguistic phylogenetics identifies limits to punctuational change. Systematic Biology 66.4: 604-610. DOI: https://doi.org/10.1093/sysbio/syw106.
 * Holman, Eric W., Søren Wichmann, Cecil H. Brown, and E. Anthon Eff. 2015. Inheritance and diffusion of language and culture: A comparative perspective. Social Evolution & History 14.1:49-64.
 * Hübler 2022 - Hübler, Nataliia. 2022. Phylogenetic signal and rate of evolutionary change in language structures. Royal Society Open Science 9. 211252. doi:10.1098/rsos.211252.
 * Hübler and Greenhill 2023 -
-* Kassian, Alexei S. 2017. "Linguistic homoplasy and phylogeny reconstruction. The cases of Lezgian and Tsezic languages (North Caucasus) " Folia Linguistica, vol. 51, no. s38-s1, pp. 217-262. https://doi.org/10.1515/flih-2017-0008
 * Kassian, Alexei. 2015. Towards a formal genealogical classification of the Lezgian languages (North Caucasus): Testing various phylogenetic methods on lexical data. PLoS ONE 10(2): e0116950. doi:10.1371/journal.pone.0116950.
 * Kassian, A. S., Zhivlov, M., Starostin, G., Trofimov, A. A., Kocharov, P. A., Kuritsyna, A., & Saenko, M. N. (2021). Rapid radiation of the inner Indo-European languages: an advanced approach to Indo-European lexicostatistics. Linguistics, 59(4), 949–979. https://doi.org/10.1515/ling-2020-0060
 * McMahon A, McMahon R. 2006 Why linguists don’t do dates: Evidence from Indo-European and Australian languages. In Phylogenetic methods and the prehistory of languages (eds P Forster, C Renfrew), pp. 153–160. McDonald Institute for Archaeological Research: Cambridge. 
-* Nakhleh, D. Ringe, and T. Warnow, 2005. "Perfect Phylogenetic Networks: A New Methodology for Reconstructing the Evolutionary History of Natural Languages." LANGUAGE, Journal of the Linguistic Society of America, 81(2):382-420,.
+* Nakhleh, D. Ringe, and T. Warnow, 2005. "Perfect Phylogenetic Networks: A New Methodology for Reconstructing the Evolutionary History of Natural Languages." Language, 81(2):382-420,.
 * Nelson-Sathi, Shijulal.; Johann-Mattis List.; Hans Geisler.; Heiner Fangerau.; Russell D. Gray.; William Martin.; and Tal Dagan. 2011. Networks uncover hidden lexical borrowing in Indo-European language evolution. Proceedings of the Royal Society B: Biological Sciences 278.1794–803. doi:10.1098/rspb.2010.1917.
 * Pagel, M.; Q. D. Atkinson.; A. S. Calude.; and A. Meade. 2013. Ultraconserved words point to deep language ancestry across Eurasia. Proceedings of the National Academy of Sciences 110.8471–8476. doi:10.1073/pnas.1218726110.
 * Pavel Duda and Jan Zrzavý 2019. Chapter: 12 Towards a global phylogeny of human populations based on genetic and linguistic data. In book: Modern Human Origins and Dispersal. Publisher: Kerns Verlag. Editors: Yonatan Sahle, Hugo Reyes-Centeno, Christian Bentz. ISBN: 978-3-935751-30-8 https://www.researchgate.net/publication/332298707_Towards_a_global_phylogeny_of_human_populations_based_on_genetic_and_linguistic_data
@@ -30,7 +29,7 @@
 * Rama, Taraka, Çağrı Çöltekin, and Pavel Sofroniev. 2017. Computational analysis of Gondi dialects. In Proceedings of the Fourth Workshop on NLP for Similar Languages, Varieties and Dialects (VarDial), pages 26–35, Valencia, Spain. Association for Computational Linguistics.
 * Rama, Taraka. 2018. Three tree priors and five datasets: A study of Indo-European phylogenetics
 * Ritchie, Andrew M.; and Simon Y W Ho. 2019. Influence of the tree prior and sampling scale on Bayesian phylogenetic estimates of the origin times of language families. Journal of Language Evolution 4.108–123. doi:10.1093/jole/lzz005.
-* Smith & Rama, Environmental factors affect the evolution of linguistic subgroups in Borneo, Diachronica.
+* Smith & Rama, 2021. Environmental factors affect the evolution of linguistic subgroups in Borneo, Diachronica. http://dx.doi.org/10.17613/v31m-0w40
 * Syrjänen, K., Maurits, L., Leino, U., Honkola, T., Rota, J., & Vesakoski, O. (2021). Crouching TIGER, hidden structure: Exploring the nature of linguistic data using TIGER values. Journal of Language Evolution, 6(2), 99–118. https://doi.org/10.1093/jole/lzab004
 * Walker & Hamilton 2010 - Social complexity and linguistic diversity in the Austronesian and Bantu population expansions. Proceedings. Biological sciences / The Royal Society. doi:10.1098/rspb.2010.1942. http://www.ncbi.nlm.nih.gov/pubmed/20961903.
 * Warnow, D. Ringe, and A. Taylor, 1995 "Reconstructing the evolutionary history of natural languages." IRCS Report 95-16. Philadelphia 1995): Institute for Research in Cognitive Science, University of Pennsylvania. Technical report, 18 pp. 	
@@ -39,21 +38,16 @@
   
 ## Comparative Analysis
 
-* Atkinson QD, Coomber T, Passmore S, Greenhill SJ, & Kushnick G. 2016. Cultural and Environmental Predictors of Pre-European Deforestation on Pacific Islands. PLoS ONE 11(5): e0156340.
 * Barbieri C, Blasi DE, Arango-Isaza E, Sotiropoulos AG, Hammarström H, Wichmann S, Greenhill SJ, Gray RD, Forkel R, Bickel B, & Shimizu KK. 2022. A global analysis of matches and mismatches between human genetic and linguistic histories. Proceedings of the National Academy of Sciences, 119(47).
 * Bromham L, Hua X, Fitzpatrick T, & Greenhill SJ. 2015. Rate of language evolution is affected by population size. Proceedings of the National Academy of Sciences, USA. 201419704.
-* Calude, A. S., & Verkerk, A. (2016). The typology and diachrony of higher numerals in Indo-European: A phylogenetic comparative study. Journal of Language Evolution, April, lzw003. https://doi.org/10.1093/jole/lzw003
 * Carling, Gerd.; and Chundra Cathcart. 2021. Reconstructing the evolution of Indo-European grammar. Language 97. Linguistic Society of America.561–598. doi:10.1353/lan.2021.0047.
-* Currie, Thomas E.; Simon J. Greenhill.; Russell D. Gray.; Toshikazu Hasegawa.; and Ruth Mace. 2010. Rise and fall of political complexity in island South-East Asia and the Pacific. Nature 467. Evolutionary Cognitive Science Research Center, Graduate School of Arts and Sciences, University of Tokyo 153-8902, Japan. t.currie@ucl.ac.uk.801–804. doi:10.1038/nature09461.
 * Dediu 2011. A Bayesian phylogenetic approach to estimating the stability of linguistic features and the genetic biasing of tone. Proceedings of the Royal Society B: Biological Sciences 278.474–479. doi:10.1098/rspb.2010.1595.
 * Di Garbo, F., & Verkerk, A. (2022). A typology of northwestern Bantu gender systems. Linguistics, 60(4), 1169–1239. https://doi.org/10.1515/ling-2020-0217
 * Greenhill SJ, Hua X, Welsh CF, Schneemann H & Bromham L. 2018. Population Size and the Rate of Language Evolution: A Test Across Indo-European, Austronesian, and Bantu Languages. Frontiers in Psychology, 9:576.
 * Guillon, Myrtille.; and Ruth Mace. 2016. A phylogenetic comparative study of Bantu kinship terminology finds limited support for its co-evolution with social organisation. PLoS ONE 11.1–15. doi:10.1371/journal.pone.0147920.
-* Holden, Clare J.; and Stephen J Shennan. 2005. How tree-like is cultural evolution? The evolution of cultural diversity: a phylogenetic approach, ed. by Ruth Mace, Clare J Holden, and Stephen J Shennan, 13–30. London: UCL PRess.
 * Jackson JC, Watts J, Henry TR, List JM, Forkel R, Mucha PJ, Greenhill SJ, Gray RD, & Lindquist KA. 2019 Emotion semantics show both cultural variation and universal structure. Science, 366, 1517-1522.
-* Jordan, Fiona Marie. 2011. A Phylogenetic Analysis of the Evolution of Austronesian Sibling Terminologies A Phylogenetic Analysis of the Evolution of Austronesian. Human Biology 83.297–321. doi:10.3378/027.083.0209.
 * Jordan, Fiona Marie.; Russell D. Gray.; Simon J. Greenhill.; and Ruth Mace. 2009. Matrilocal residence is ancestral in Austronesian societies. Proceedings of the Royal Society B: Biological Sciences 276.1957–64. doi:10.1098/rspb.2009.0088.
-* Levinson SC, Greenhill SJ, Gray RD & Dunn M. 2011. Universal typological dependencies should be detectable in the history of language families. Linguistic Typology, 15: 509-534.
+* Macklin-Cordes, J. L., & Round, E. R. (2022). Challenges of sampling and how phylogenetic comparative methods help: with a case study of the Pama-Nyungan laminal contrast. Linguistic Typology, 26(3), 533–572. https://doi.org/10.1515/lingty-2021-0025
 * Moran, S., Grossman, E. & Verkerk, A. Investigating diachronic trends in phonological inventories using BDPROTO. Lang Resources & Evaluation 55, 79–103 (2021). https://doi.org/10.1007/s10579-019-09483-3
 * Moravec JC, Atkinson QD, Bowern C, Greenhill SJ, Jordan D, Ross RM, Gray RD, Marsland S & Cox MP. 2018. Post-Marital Residence Patterns Show Lineage-Specific Evolution. Evolution and Human Behavior, 39(6): 594-601.
 * Pagel, M. (2000). Maximum-likelihood models for glottochronology and for reconstructing linguistic phylogenies. In Time depth in historical linguistics.
@@ -62,12 +56,11 @@
 * Pagel, M., Atkinson, Q. D., S. Calude, A., & Meade, A. (2013). Ultraconserved words point to deep language ancestry across Eurasia. Proceedings of the National Academy of Sciences, 110(21), 8471–8476. https://doi.org/10.1073/pnas.1218726110
 * Pagel, M., & Meade, A. (2006). Estimating rates of lexical replacement on phylogenetic trees of languages. In P. Forster & C. Renfrew (Eds.), Phylogenetic methods and the prehistory of languages (Vol. 1, pp. 173–182). McDonald Institute for Archaeological Research. 
 * Passmore S, Barth W, Greenhill SJ, Quinn K, Sheard C, Argyriou P, Birchall J, Bowern C, Calladine J, Deb A, Diederen A, Metsäranta NP, Araujo LH, Schembri R, Hickey-Hall J, Honkola T, Mitchell A, Poole L, Rácz PM, Roberts SG, Ross RM, Thomas-Colquhoun E, Evans N, Jordan FM. 2023. Kinbank: A global database of kinship terminology. PLoS One, 18(5), e0283218.
-* Ringe and T. Warnow. 2008 "Linguistic history and computational cladistics." In: Origin and Evolution of Languages: Approaches, Models, Paradigms, B. Laks (ed.), Equinox Publishing, March 2008. 	
 * Ringe Jr., D. A., Warnow, T., Taylor, A., Michailov, A., & Levinson, L. (1998). Computational cladistics and the position of Tocharian. In V. Mair (Ed.), The Bronze Age and Early Iron Age Peoples of Eastern Central Asia, Volume 1: Archeology, Migration and Nomadism: Journal of Indo-European Studies Monograph Series (Vol. 26). Institute for the Study of Man.
+* Round, E., Dockum, R., & Ryder, R. J. (2022). Evolution and Trade-Off Dynamics of Functional Load. Entropy, 24(4), 507. https://doi.org/10.3390/e24040507
 * Shirtz, S., Talamo, L., & Verkerk, A. (2021). The Evolutionary Dynamics of Negative Existentials in Indo-European. Frontiers in Communication, 6, 661862. https://doi.org/10.3389/fcomm.2021.661862
 * Teixidor-Toneu I, Kool A, Greenhill SJ, Kjesrud K, Sandstedt JJ, Manzanilla V, Jordan FM. 2021. Historical, archaeological and linguistic evidence test the phylogenetic inference of Viking-Age plant use. Philosophical Transactions of the Royal Society B: Biological Sciences, 376, 20200086.
 * Verkerk, A. (2019). Detecting non-tree-like signal using multiple tree topologies. Understanding Language Genealogy, 9(1), 9–69. Portico. https://doi.org/10.1075/jhl.17009.ver
-* Verkerk, A., & Di Garbo, F. (2022). Sociogeographic correlates of typological variation in northwestern Bantu gender systems. Language Dynamics and Change, 12(2), 155-223. https://doi.org/10.1163/22105832-bja10017
 * Walker, Robert S.; Kim R Hill.; Mark V Flinn.; and Ryan M Ellsworth. 2011. Evolutionary History of Hunter-Gatherer Marriage Practices. (Ed.) Pawel Michalak. PLoS ONE 6.e19066. doi:10.1371/journal.pone.0019066.
 * Warnow & Michailov 1998 - Warnow, A. T., & Michailov, L. L. (1998). Computational Cladistics and the Position of Tocharian. In V. Mair (Ed.), The Bronze Age and early Iron Age peoples of eastern Central Asia (pp. 391–414). JIES Monograph.
 * Warnow 1997. "Mathematical approaches to comparative linguistics." Proceedings of the National Academy of Sciences, Vol. 94, pp. 6585-6590, 1997. 	
@@ -75,6 +68,10 @@
 * Warnow et al. 2006 - Warnow, S.N. Evans, D. Ringe, and L. Nakhleh, "A stochastic model of language evolution that incorporates homoplasy and borrowing." Phylogenetic Methods and the Prehistory of Languages. MacDonald Institute for Archaeological Research.
 
 # Still Deciding To Include Or Not
+
+## Phylogenies used as just a control in a regression
+
+* Verkerk, A., & Di Garbo, F. (2022). Sociogeographic correlates of typological variation in northwestern Bantu gender systems. Language Dynamics and Change, 12(2), 155-223. https://doi.org/10.1163/22105832-bja10017
 
 
 ## Criticisms

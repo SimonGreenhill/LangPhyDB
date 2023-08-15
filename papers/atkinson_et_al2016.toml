@@ -69,7 +69,7 @@ description = "Model the effect of nine ecological and two cultural variables on
     nchars = 210
     nsites = 7750
     datatype = 'lexical cognates'
-    source = '@Greenhill2008'
+    source = '@ABVD'
     items = 'swadesh200'
     comment = ''
 

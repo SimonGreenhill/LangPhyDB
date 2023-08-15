@@ -1,0 +1,145 @@
+title = "The Encoding of Manner Predications and Resultatives in Oceanic: A Typological and Historical Overview"
+
+doi = "10.1353/ol.2013.0010"
+
+abstract = """
+This paper is concerned with the encoding of resultatives and manner predications in Oceanic languages. Our point
+of departure is a typological overview of the encoding strategies and their geographical distribution, and we
+investigate their historical traits by the use of phylogenetic comparative methods. A full theory of the
+historical pathways is not always accessible for all the attested encoding strategies, given the data available
+for this study. However, tentative theories about the development and origin of the attested strategies are
+given. One of the most frequent strategy types used to encode both manner predications and resultatives has been
+given special emphasis. This is a construction in which a reflex form of the Proto-Oceanic causative *pa-/*paka-
+modifies the second verb in serial verb constructions.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Annemarie Verkerk", "Benedicte Haraldstad Frostad"]
+
+
+# parts of the world
+groups = ['Austronesian']
+
+# bibkey citation in sources.bib
+bibkey = "@Verkerk2013"  # @xxxx
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "A phylogenetic study of resultatives and manner predications in Oceanic languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.oceanic]
+    ntaxa = 66
+    nchars = 11
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.manual]
+    source = '@LRC2002'
+    comment = ''
+
+    [phylogenies.g2009]
+    source = '@Gray2009'
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.fig1]
+    tool = 'mesquite'
+    model = 'asr+ml+mk1'
+    details = "*pa-/*paka- strategy"
+    data = "@phylogenies.manual; @data.oceanic"
+    
+    [analysis.fig2]
+    tool = 'mesquite'
+    model = 'asr+ml+mk1'
+    details = "classificatory prefixes strategy"
+    data = "@phylogenies.manual; @data.oceanic"
+
+    [analysis.fig3]
+    tool = 'mesquite'
+    model = 'asr+ml+mk1'
+    details = "lexicalized V2 strategy"
+    data = "@phylogenies.manual; @data.oceanic"
+
+    [analysis.fig4]
+    tool = 'mesquite'
+    model = 'asr+ml+mk1'
+    details = "unmarked SVC strategy"
+    data = "@phylogenies.manual; @data.oceanic"
+
+    [analysis.fig5]
+    tool = 'mesquite'
+    model = 'asr+ml+mk1'
+    details = "adjective adjunct strategy"
+    data = "@phylogenies.manual; @data.oceanic"
+
+    [analysis.bayestraits]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "five strategies analysis"
+    data = "@phylogenies.g2009; @data.oceanic"
+
+    [analysis.bayestraits_recoded]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "recoded to three strategies"
+    data = "@phylogenies.g2009; @data.oceanic"
+
+    [analysis.bayestraits_fossil_papaka]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "root (Proto-Oceanic) fossilised to have the *pa-/*paka- strategy"
+    data = "@phylogenies.g2009; @data.oceanic"
+
+    [analysis.bayestraits_fossil_grammaticalized]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "root (Proto-Oceanic) fossilised to have one of the two grammaticalized strategies"
+    data = "@phylogenies.g2009; @data.oceanic"
+
+    [analysis.bayestraits_fossil_svc]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "root (Proto-Oceanic) fossilised to have the unmarked SVC strategy"
+    data = "@phylogenies.g2009; @data.oceanic"
+
+
+    [analysis.bayestraits_restricted_model_1]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "unrestricted model"
+    data = "@phylogenies.g2009; @data.oceanic"
+
+    [analysis.bayestraits_restricted_model_2]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "q02 = q12 = 0"
+    data = "@phylogenies.g2009; @data.oceanic"
+
+    [analysis.bayestraits_restricted_model_3]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "q02 = q12 = q01 = q10 = 0"
+    data = "@phylogenies.g2009; @data.oceanic"
+
+    [analysis.bayestraits_restricted_model_4]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "q20 = q21 = 0"
+    data = "@phylogenies.g2009; @data.oceanic"

@@ -2,7 +2,7 @@
 
 * Auderset S, Greenhill SJ, DiCanio CT & Campbell EW. 2023. Subgrouping in a 'dialect continuum': A Bayesian phylogenetic analysis of the Mixtecan language family. Journal of Language Evolution.
 * Barbançon, S.N. Evans, L. Nakhleh, D. Ringe, and T. Warnow 2013. "An experimental study comparing linguistic phylogenetic reconstruction methods." Diachronica 30(2):143-170. 
-* Bryant 2006 - radiation and network breaking
+* Bentz, C., Dediu, D., Verkerk, A. et al. The evolution of language families is shaped by the environment beyond neutral drift. Nat Hum Behav 2, 816–821 (2018). https://doi.org/10.1038/s41562-018-0457-6
 * Ceolin et al. 2021 - phil trans.
 * Forster, P., Toth, A. & Bandelt, H.-J. 1998 Evolutionary network analysis of word lists: visualizing the relationships between alpine Romance languages. J. Quant. Linguist. 5, 174 –187. (doi:10.1080/09296179808590125)
 * Forster, P., Polzin, T. & Röhl, A. 2006 Evolution of English basic vocabulary within the network of Germanic languages. In Phylogenetic methods and the prehistory of languages (eds P. Forster & C. Renfrew), pp. 131–138. Cambridge, UK: McDonald Institute for Archaeological Research.
@@ -22,7 +22,7 @@
 * Nelson-Sathi, Shijulal.; Johann-Mattis List.; Hans Geisler.; Heiner Fangerau.; Russell D. Gray.; William Martin.; and Tal Dagan. 2011. Networks uncover hidden lexical borrowing in Indo-European language evolution. Proceedings of the Royal Society B: Biological Sciences 278.1794–803. doi:10.1098/rspb.2010.1917.
 * Pagel, M.; Q. D. Atkinson.; A. S. Calude.; and A. Meade. 2013. Ultraconserved words point to deep language ancestry across Eurasia. Proceedings of the National Academy of Sciences 110.8471–8476. doi:10.1073/pnas.1218726110.
 * Pavel Duda and Jan Zrzavý 2019. Chapter: 12 Towards a global phylogeny of human populations based on genetic and linguistic data. In book: Modern Human Origins and Dispersal. Publisher: Kerns Verlag. Editors: Yonatan Sahle, Hugo Reyes-Centeno, Christian Bentz. ISBN: 978-3-935751-30-8 https://www.researchgate.net/publication/332298707_Towards_a_global_phylogeny_of_human_populations_based_on_genetic_and_linguistic_data
-* Rama, Taraka and Søren Wichmann. 2018. Towards identifying the optimal datasize for lexically-based Bayesian inference of linguistic phylogenies. 27th International Conference on Computational Linguistics (COLING 2018), Santa Fe, New-Mexico, USA. https://www.aclweb.org/anthology/C18-1134/
+* Pompei, S., Loreto, V., & Tria, F. (2011). On the Accuracy of Language Trees. PLoS ONE, 6.
 * Rama, Taraka and Søren Wichmann. 2020. A test of Generalized Bayesian dating: A new linguistic dating method. PLoS ONE 15(8): e0236522. https://doi.org/10.1371/journal.pone.0236522.
 * Rama, Taraka Johann-Mattis List, Johannes Wahle, and Gerhard Jäger. 2018. Are Automatic Methods for Cognate Detection Good Enough for Phylogenetic Reconstruction in Historical Linguistics?. In Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 2 (Short Papers), pages 393–400, New Orleans, Louisiana. Association for Computational Linguistics
 * Rama, Taraka and Johann-Mattis List. 2019. An Automated Framework for Fast Cognate Detection and Bayesian Phylogenetic Inference in Computational Historical Linguistics. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics, pages 6225–6235, Florence, Italy. Association for Computational Linguistics.
@@ -42,12 +42,13 @@
 * Bromham L, Hua X, Fitzpatrick T, & Greenhill SJ. 2015. Rate of language evolution is affected by population size. Proceedings of the National Academy of Sciences, USA. 201419704.
 * Carling, Gerd.; and Chundra Cathcart. 2021. Reconstructing the evolution of Indo-European grammar. Language 97. Linguistic Society of America.561–598. doi:10.1353/lan.2021.0047.
 * Dediu 2011. A Bayesian phylogenetic approach to estimating the stability of linguistic features and the genetic biasing of tone. Proceedings of the Royal Society B: Biological Sciences 278.474–479. doi:10.1098/rspb.2010.1595.
+* Dediu, D. (n.d.). Making Genealogical Language Classifications Available for Phylogenetic Analysis: Newick Trees, Unified Identifiers, and Branch Length. Language Dynamics and Change.
+* Dediu, D., & Cysouw, M. (2013). Some structural aspects of language are more stable than others: A comparison of seven methods. PloS One, 8(1), e55009. https://doi.org/10.1371/journal.pone.0055009
+* Dediu, D., & Levinson, S. C. (2012). Abstract profiles of structural stability point to universal tendencies, family-specific factors, and ancient connections between languages. PloS One, 7(9), e45198. https://doi.org/10.1371/journal.pone.0045198
 * Di Garbo, F., & Verkerk, A. (2022). A typology of northwestern Bantu gender systems. Linguistics, 60(4), 1169–1239. https://doi.org/10.1515/ling-2020-0217
 * Greenhill SJ, Hua X, Welsh CF, Schneemann H & Bromham L. 2018. Population Size and the Rate of Language Evolution: A Test Across Indo-European, Austronesian, and Bantu Languages. Frontiers in Psychology, 9:576.
 * Guillon, Myrtille.; and Ruth Mace. 2016. A phylogenetic comparative study of Bantu kinship terminology finds limited support for its co-evolution with social organisation. PLoS ONE 11.1–15. doi:10.1371/journal.pone.0147920.
 * Jackson JC, Watts J, Henry TR, List JM, Forkel R, Mucha PJ, Greenhill SJ, Gray RD, & Lindquist KA. 2019 Emotion semantics show both cultural variation and universal structure. Science, 366, 1517-1522.
-* Jordan, Fiona Marie.; Russell D. Gray.; Simon J. Greenhill.; and Ruth Mace. 2009. Matrilocal residence is ancestral in Austronesian societies. Proceedings of the Royal Society B: Biological Sciences 276.1957–64. doi:10.1098/rspb.2009.0088.
-* Macklin-Cordes, J. L., & Round, E. R. (2022). Challenges of sampling and how phylogenetic comparative methods help: with a case study of the Pama-Nyungan laminal contrast. Linguistic Typology, 26(3), 533–572. https://doi.org/10.1515/lingty-2021-0025
 * Moran, S., Grossman, E. & Verkerk, A. Investigating diachronic trends in phonological inventories using BDPROTO. Lang Resources & Evaluation 55, 79–103 (2021). https://doi.org/10.1007/s10579-019-09483-3
 * Moravec JC, Atkinson QD, Bowern C, Greenhill SJ, Jordan D, Ross RM, Gray RD, Marsland S & Cox MP. 2018. Post-Marital Residence Patterns Show Lineage-Specific Evolution. Evolution and Human Behavior, 39(6): 594-601.
 * Pagel, M. (2000). Maximum-likelihood models for glottochronology and for reconstructing linguistic phylogenies. In Time depth in historical linguistics.

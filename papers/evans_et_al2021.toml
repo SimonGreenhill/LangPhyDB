@@ -34,7 +34,7 @@ groups = []  # 'Austronesian', etc
 bibkey = "@Evans2021"  # @xxxx
 
 # type of study
-type = ['review', 'tutorial']
+type = ['review', 'tutorial', 'methodological']
 
 # short description of the study, one line.
 description = "Best practice guidelines for language phylogenies"

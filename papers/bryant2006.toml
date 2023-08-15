@@ -1,0 +1,85 @@
+title = "Radiation and Network Breaking in Polynesian Linguistics"
+
+doi = ""
+
+abstract = """
+The exploration and settlement of Polynesia was surely one of the greatest navigational feats in all human
+history. At a time when Europeans were tentatively edging out into the Mediterranean, Austronesians had
+colonised half the globe [7]. Even more extraordinary is that, at least according to Sharp [11], all of this
+exploration was carried out in primitive sailing vessels capable only of coastal navigation. Sharp claimed
+that the Polynesians had neither the technology nor the skills required for intentional voyages of longer
+than 200 miles from a coastline. Hawaii, Easter Island and New Zealand were discovered by accident, perhaps
+when the early sea-farers were blown off course in a storm. For many, this process of accidental settlement
+followed by isolation made Polynesia a convenient laboratory for studying cultural, genetic, and linguistic
+evolution [5]. Polynesian societies were assumed to be more or less isolated from external influences and
+from each other. Consequently, Polynesia was one place where phyletic (tree-based) models of linguistic and
+cultural evolution could be applied without hesitation. However the ‘myth of primitive isolation’ [14] has
+been deconstructed. Sharp’s theory of accidental discovery has given way to theories of systematic and
+intentional exploration. Polynesian sailing, navigational, and exploratory techniques were far more
+sophisticated than had been at first thought [8]. Hawaii, Easter Island, and New Zealand were discovered not
+by accident, but through planned and systematic exploration. Indeed the initial discoveries were followed by
+multiple return voyages. Eastern and western Polynesia were linked by extensive trading networks. The
+Polynesian islands were far from isolated
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['David Bryant']
+
+
+# parts of the world
+groups = ['Austronesian']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Bryant2006"  # @xxxx
+
+# type of study
+type = ['network', 'methodological']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "A phylogenetic network analysis of Polynesian languages, with an explicit model for the effect of network breaking on linguistic patterns"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.accessibility]
+    ntaxa = 11
+    nchars = 1
+    nsites = 1
+    datatype = 'distance'
+    source = ''
+    items = ''
+    comment = 'accessibility matrix'
+
+    [data.lexicon]
+    ntaxa = 11
+    nchars = 200
+    nsites = 200
+    datatype = 'lexical cognates'
+    source = '@POLLEX'
+    items = 'swadesh200'
+    comment = 'multistate'
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+
+    [analysis.mds]
+    tool = 'Xgvis'
+    model = 'MDS'
+    details = ""
+    
+    [analysis.nnet]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+
+    [analysis.networkbreaking]
+    tool = 'model'
+    model = ''
+    details = "mathematical model based analysis of Polynesian settlement"
+
+

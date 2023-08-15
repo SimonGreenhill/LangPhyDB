@@ -1,0 +1,121 @@
+title = "Cultural Phylogenetics of the Tupi Language Family in Lowland South America"
+
+doi = "10.1371/journal.pone.0035025"
+
+abstract = """
+Recent advances in automated assessment of basic vocabulary lists allow the construction of linguistic phylogenies
+useful for tracing dynamics of human population expansions, reconstructing ancestral cultures, and modeling
+transition rates of cultural traits over time. 
+
+Here we investigate the Tupi expansion, a widely-dispersed language family in lowland South America, with a
+distance-based phylogeny based on 40-word vocabulary lists from 48 languages. We coded 11 cultural traits across
+the diverse Tupi family including traditional warfare patterns, post-marital residence, corporate structure,
+community size, paternity beliefs, sibling terminology, presence of canoes, tattooing, shamanism, men's houses,
+and lip plugs.
+
+The linguistic phylogeny supports a Tupi homeland in west-central Brazil with subsequent major expansions across
+much of lowland South America. Consistently, ancestral reconstructions of cultural traits over the linguistic
+phylogeny suggest that social complexity has tended to decline through time, most notably in the independent
+emergence of several nomadic hunter-gatherer societies. Estimated rates of cultural change across the Tupi
+expansion are on the order of only a few changes per 10,000 years, in accord with previous cultural phylogenetic
+results in other language families around the world, and indicate a conservative nature to much of human culture.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Robert S. Walker",
+    "Søren Wichmann",
+    "Thomas Mailund",
+    "Curtis J. Atkisson",
+]
+
+# parts of the world
+groups = ['Tupi']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Walker2012"  # @xxxx
+
+# type of study
+type = ['phylogenetic', 'phylogeography', 'trait']
+
+# short description of the study, one line.
+description = "Phylogenetic modelling of the Tupi language expansion"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.asjp]
+    ntaxa = 48
+    nchars = 40
+    nsites = 1
+    datatype = 'lexical distances'
+    source = '@ASJP14'
+    items = ''
+    comment = ''
+
+    [data.cultural]
+    ntaxa = 48
+    nchars = 11
+    nsites = 11
+    datatype = 'ethnographic features'
+    source = ''
+    items = ''
+    comment = ''
+
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.scaling]
+    taxa = []
+    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "ybp" # ybp
+    description = ""
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = 'MEGA'
+    model = 'nj'
+    details = ""
+
+    [analysis.splitdist]
+    tool = 'splitdist'
+    model = ''
+    details = "compare tree to accepted classification"
+
+    [analysis.quartets]
+    tool = 'QDist'
+    model = ''
+    details = "compare tree to accepted classification"
+
+    [analysis.phylogeography]
+    tool = 'GenGIS'
+    model = ''
+    details = "not inference, redrawing of NJ tree"
+
+    [analysis.m1p]
+    tool = 'mesquite'
+    model = 'm1p'
+    details = ""
+    data = "@data.cultural"
+
+    [analysis.m2p]
+    tool = 'mesquite'
+    model = 'm2p'
+    details = ""
+    data = "@data.cultural"
+
+
+[inferredages]
+    
+    notes = "ages are enforced not inferred"
+    

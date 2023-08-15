@@ -1,0 +1,219 @@
+title = "Towards identifying the optimal datasize for lexically-based Bayesian inference of linguistic phylogenies"
+
+doi = ""
+
+abstract = """
+Bayesian linguistic phylogenies are standardly based on cognate matrices for words referring
+to a fix set of meanings - typically around 100-200. To this day there has not been any empirical
+investigation into which datasize is optimal. Here we determine, across a set of language families, the
+optimal number of meanings required for the best performance in Bayesian phylogenetic inference. We rank
+meanings by stability, infer phylogenetic trees using first the most stable meaning, then the two most
+stable meanings, and so on, computing the quartet distance of the resulting tree to the tree proposed by
+language family experts at each step of datasize increase. When a gold standard tree is not available we
+propose to instead compute the quartet distance between the tree based on the n-most stable meaning and the
+one based on the n + 1-most stable meanings, increasing n from 1 to N − 1, where N is the total number of
+meanings. The assumption here is that the value of n for which the quartet distance begins to stabilize is
+also the value at which the quality of the tree ceases to improve. We show that this assumption is borne
+out. The results of the two methods vary across families, and the optimal number of meanings appears to
+correlate with the number of languages under consideration.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['Taraka Rama', 'Søren Wichmann']
+
+# parts of the world
+groups = ['Global']
+
+# bibkey citation in sources.bib
+bibkey = "@RamaWichmann2018"  # @xxxx
+
+# type of study
+type = ['methodological']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Assessment of the minimum dataset size required for Bayesian phylogenetic analysis"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.austronesian]
+        ntaxa = 96
+        nchars = 210
+        nsites = "?"
+        datatype = 'lexical cognates'
+        source = '@ABVD'
+        items = ''
+        comment = ''
+
+    [data.mayan]
+        ntaxa = 30
+        nchars = 100
+        nsites = "?"
+        datatype = 'lexical cognates'
+        source = '@WichmannHolman2013'
+        items = ''
+        comment = ''
+
+    [data.mixezoque]
+        ntaxa = 10
+        nchars = 100
+        nsites = "?"
+        datatype = 'lexical cognates'
+        source = '@Cysouw2006'
+        items = ''
+        comment = ''
+
+    [data.indoeuropean]
+        ntaxa = 52
+        nchars = 208
+        nsites = "?"
+        datatype = 'lexical cognates'
+        source = '@IELex'
+        items = ''
+        comment = ''
+
+    [data.utoaztecan]
+        ntaxa = 31
+        nchars = 100
+        nsites = "?"
+        datatype = 'lexical cognates'
+        source = '@Miller1984'
+        items = ''
+        comment = ''
+
+    [data.afroasiatic]
+        ntaxa = 25
+        nchars = 100
+        nsites = "?"
+        datatype = 'lexical cognates'
+        source = '@Militarev2000'
+        items = ''
+        comment = ''
+
+    [data.bai]
+        ntaxa = 9
+        nchars = 110
+        nsites = "?"
+        datatype = 'lexical cognates'
+        source = '@Wang2006'
+        items = ''
+        comment = ''
+
+    [data.chinese]
+        ntaxa = 18
+        nchars = 180
+        nsites = "?"
+        datatype = 'lexical cognates'
+        source = '@Daxue1964'
+        items = ''
+        comment = ''
+
+    [data.monkhmer]
+        ntaxa = 16
+        nchars = 100
+        nsites = "?"
+        datatype = 'lexical cognates'
+        source = '@Peiros1998'
+        items = ''
+        comment = ''
+
+    [data.obugrian]
+        ntaxa = 21
+        nchars = 110
+        nsites = "?"
+        datatype = 'lexical cognates'
+        source = '@Zhivlov2011'
+        items = ''
+        comment = ''
+
+    [data.tujia]
+        ntaxa = 5
+        nchars = 109
+        nsites = "?"
+        datatype = 'lexical cognates'
+        source = '@GLED'
+        items = ''
+        comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.austronesian]
+    tool = 'mrbayes'
+    model = 'gtr+gamma'
+    data = "@data.austronesian"
+    details = ""
+
+
+    [analysis.mayan]
+    tool = 'mrbayes'
+    model = 'gtr+gamma'
+    data = "@data.mayan"
+    details = ""
+
+
+    [analysis.mixezoque]
+    tool = 'mrbayes'
+    model = 'gtr+gamma'
+    data = "@data.mixezoque"
+    details = ""
+
+
+    [analysis.indoeuropean]
+    tool = 'mrbayes'
+    model = 'gtr+gamma'
+    data = "@data.indoeuropean"
+    details = ""
+
+
+    [analysis.utoaztecan]
+    tool = 'mrbayes'
+    model = 'gtr+gamma'
+    data = "@data.utoaztecan"
+    details = ""
+
+
+    [analysis.afroasiatic]
+    tool = 'mrbayes'
+    model = 'gtr+gamma'
+    data = "@data.afroasiatic"
+    details = ""
+
+
+    [analysis.bai]
+    tool = 'mrbayes'
+    model = 'gtr+gamma'
+    data = "@data.bai"
+    details = ""
+
+
+    [analysis.chinese]
+    tool = 'mrbayes'
+    model = 'gtr+gamma'
+    data = "@data.chinese"
+    details = ""
+
+
+    [analysis.monkhmer]
+    tool = 'mrbayes'
+    model = 'gtr+gamma'
+    data = "@data.monkhmer"
+    details = ""
+
+
+    [analysis.obugrian]
+    tool = 'mrbayes'
+    model = 'gtr+gamma'
+    data = "@data.obugrian"
+    details = ""
+
+
+    [analysis.tujia]
+    tool = 'mrbayes'
+    model = 'gtr+gamma'
+    data = "@data.tujia"
+    details = ""

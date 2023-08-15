@@ -1,0 +1,97 @@
+title = "Challenges of sampling and how phylogenetic comparative methods help: with a case study of the Pama-Nyungan laminal contrast"
+
+doi = "10.1515/lingty-2021-0025"
+
+abstract = """
+Phylogenetic comparative methods are new in our field and are shrouded, for most linguists, in at least a little
+mystery. Yet the path that led to their discovery in comparative biology is so similar to the methodological
+history of balanced sampling, that it is only an accident of history that they were not discovered by a linguistic
+typologist. Here we clarify the essential logic behind phylogenetic comparative methods and their fundamental
+relatedness to a deep intellectual tradition focussed on sampling. Then we introduce concepts, methods and tools
+which will enable typologists to use these methods in everyday typological research. The key commonality of
+phylogenetic comparative methods and balanced sampling is that they attempt to deal with statistical
+non-independence due to genealogy. Whereas sampling can never achieve independence and requires most comparative
+data to be discarded, phylogenetic comparative methods achieve independence while retaining and using all
+comparative data. We discuss the essential notions of phylogenetic signal; uncertainty about trees; typological
+averages and proportions that are sensitive to genealogy; comparison across language families; and the effects of
+areality. Extensive supplementary materials illustrate computational tools for practical analysis and we
+illustrate the methods discussed with a typological case study of the laminal contrast in Pama-Nyungan.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['Jayden L. Macklin-Cordes', 'Erich R. Round']
+
+
+# parts of the world
+groups = ['Pama-Nyungan']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@MacklinCordes2022"  # @xxxx
+
+# type of study
+type = ['trait', 'tutorial']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Investigating the Pama-Nyungan laminal contrasts"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.laminalcontrast]
+    ntaxa = 216
+    nchars = 1
+    nsites = 1
+    datatype = 'phonetic traits'
+    source = '@PHOIBLE'
+    items = ''
+    comment = ''
+
+    [data.laminalcontrast_frequency]
+    ntaxa = 76
+    nchars = 9
+    nsites = 9
+    datatype = 'frequency'
+    source = '@PHOIBLE'
+    items = ''
+    comment = 'the relative predominance of pre-palatals versus dentals in nine phonotactic positions'
+
+
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.pn]
+    source = '@MacklinCordes2021'
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.d]
+    tool = 'caper'
+    model = 'phylo.d'
+    details = ""
+    data = "@data.laminalcontrast"
+
+    [analysis.k]
+    tool = 'picante'
+    model = 'multiPhylosignal'
+    details = ""
+    data = "data@laminalcontrast_frequency"
+    
+    
+    [analysis.proportion_ACL]
+    tool = 'phyloWeights'
+    model = 'ACL'
+    details = ""
+    data = "data@laminalcontrast"
+    
+    [analysis.proportion_BM]
+    tool = 'phyloWeights'
+    model = 'BM'
+    details = ""
+    data = "data@laminalcontrast"

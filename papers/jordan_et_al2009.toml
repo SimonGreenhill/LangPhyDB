@@ -1,0 +1,69 @@
+title = "Matrilocal residence is ancestral in Austronesian societies"
+
+doi = "10.1098/rspb.2009.0088"
+
+abstract = """
+The nature of social life in human prehistory is elusive, yet knowing how kinship systems evolve is critical
+for understanding population history and cultural diversity. Post-marital residence rules specify
+sex-specific dispersal and kin association, influencing the pattern of genetic markers across populations.
+Cultural phylogenetics allows us to practise ‘virtual archaeology’ on these aspects of social life that
+leave no trace in the archaeological record. Here we show that early Austronesian societies practised
+matrilocal post-marital residence. Using a Markov-chain Monte Carlo comparative method implemented in a
+Bayesian phylogenetic framework, we estimated the type of residence at each ancestral node in a sample of
+Austronesian language trees spanning 135 Pacific societies. Matrilocal residence has been hypothesized for
+proto-Oceanic society (ca 3500 BP), but we find strong evidence that matrilocality was predominant in
+earlier Austronesian societies ca 5000–4500 BP, at the root of the language family and its early branches.
+Our results illuminate the divergent patterns of mtDNA and Y-chromosome markers seen in the Pacific. The
+analysis of present-day cross-cultural data in this way allows us to directly address cultural evolutionary
+and life-history processes in prehistory.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Fiona M. Jordan", "Russell D. Gray", "Simon J. Greenhill", "Ruth Mace"]
+
+# parts of the world
+groups = ['Austronesian']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Jordan2009"  # @xxxx
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Reconstruction of postmarital residence rules in Austronesian languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.residence]
+    ntaxa = 15
+    nchars = 1
+    nsites = 1
+    datatype = 'ethnographic features'
+    source = '@EthAtlas'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.g2009]
+    source = '@Gray2009'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.bayestraits]
+    tool = 'bayestraits'
+    model = 'multistate+asr'
+    details = ""
+
+    [analysis.bayestraits_fossil]
+    tool = 'bayestraits'
+    model = 'multistate+asr+fossil'
+    details = ""

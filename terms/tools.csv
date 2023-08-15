@@ -10,6 +10,7 @@ beast2,http://www.beast2.org/
 caper,R package caper
 corHMM,
 geiger,
+GenGIS,
 hisse,R package hisse
 iqtree,
 lingpy,
@@ -17,22 +18,27 @@ macclade,
 mantel,
 manual,Lovingly handcrafted bespoke visualisation
 MCMCglmm,
+MEGA,
 mesquite,
+model,mathematical model
 mrbayes,http://nbisweden.github.io/MrBayes/
 network,
 paup*,
 phylip,
 phylogemetric,
+phyloWeights,https://github.com/erichround/phyloWeights/
 phytools,
 picante,
 poy5,
 punctuatedwebapp,http://www.evolution.reading.ac.uk/pe/index.html
 pylotiger,
+QDist,http://birc.au.dk/software/qdist
 QuartetDist,https://almob.biomedcentral.com/articles/10.1186/1748-7188-1-16
 r,misc R
 r8s,http://ceiba.biosci.arizona.edu/r8s/index.html
 raxml,
 revbayes,https://revbayes.github.io/
+splitdist,http://birc.au.dk/software/splitdist/
 splitstree,http://www.splitstree.org/
 starling,
 structure,
@@ -40,3 +46,4 @@ tnt,
 traitlab,https://sites.google.com/site/traitlab/
 unknown,?
 vegan,R Vegan package
+Xgvis,

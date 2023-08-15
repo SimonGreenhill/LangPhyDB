@@ -1,0 +1,82 @@
+title = "A comparison of verbal person marking across Tupian languages"
+
+doi = "10.1590/1981-81222015000200007"
+
+abstract = """
+This paper explores the diachrony of the verbal person marking system across the large and structurally diverse
+Tupian language family. I argue that the historical development of these different patterns are best informed by
+analyzing their synchronic distributions with regard to the current evolutionary hypotheses on the family. I apply
+a parsimony reconstruction model across the topology of two different classifications and compare the results with
+what is known from traditional historical linguistic work. This study is able to provide support for previous
+claims about the family and also generates a number of additional hypotheses about the intermediate stages of
+development of these patterns.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Joshua Birchall"]
+
+# parts of the world
+groups = ['Tupian']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Birchall2015"  # @xxxx
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Analyses the morphosyntactic diachrony of verbal person marking systems in Tupian"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.verbal]
+    ntaxa = 15
+    nchars = 2
+    nsites = 2
+    datatype = 'structural features'
+    source = ''
+    items = ''
+    comment = ''
+
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.asjp]
+    source = '@Walker2012'
+    comment = ''
+
+    [phylogenies.manual]
+    source = '@Rodrigues2007'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.mesquite_indexation_asjp]
+    tool = 'mesquite'
+    model = 'asr+mp'
+    details = ""
+    data = "@phylogenies.asjp;@data.verbal"
+
+    [analysis.mesquite_indexation_rodrigues]
+    tool = 'mesquite'
+    model = 'asr+mp'
+    details = ""
+    data = "@phylogenies.manual;@data.verbal"
+
+    [analysis.mesquite_markersets_asjp]
+    tool = 'mesquite'
+    model = 'asr+mp'
+    details = ""
+    data = "@phylogenies.asjp;@data.verbal"
+
+    [analysis.mesquite_markersets_rodrigues]
+    tool = 'mesquite'
+    model = 'asr+mp'
+    details = ""
+    data = "@phylogenies.manual;@data.verbal"

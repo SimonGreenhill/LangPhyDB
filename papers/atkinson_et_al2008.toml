@@ -44,7 +44,7 @@ description = "95 Bantu languages, 65 Indo-European languages, 330 Austronesian 
     comment = ''
     
     [phylogenies.austronesian]
-    source = '@Greenhill2008'
+    source = '@ABVD'
     comment = ''
     
     

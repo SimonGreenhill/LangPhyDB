@@ -1,0 +1,70 @@
+title = "Historical, archaeological and linguistic evidence test the phylogenetic inference of Viking-Age plant use"
+
+doi = "10.1098/rstb.2020.0086"
+
+abstract = """
+In this paper, past plant knowledge serves as a case study to highlight the promise and challenges of
+interdisciplinary data collection and interpretation in cultural evolution. Plants are central to human
+life and yet, apart from the role of major crops, people–plant relations have been marginal to the study of
+culture. Archaeological, linguistic, and historical evidence are often limited when it comes to studying the
+past role of plants. This is the case in the Nordic countries, where extensive collections of various plant
+use records are absent until the 1700s. Here, we test if relatively recent ethnobotanical data can be used
+to trace back ancient plant knowledge in the Nordic countries. Phylogenetic inferences of ancestral states
+are evaluated against historical, linguistic, and archaeobotanical evidence. The exercise allows us to
+discuss the opportunities and shortcomings of using phylogenetic comparative methods to study past botanical
+knowledge. We propose a ‘triangulation method’ that not only combines multiple lines of evidence, but also
+quantitative and qualitative approaches.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Irene Teixidor-Toneu",
+    "Anneleen Kool",
+    "Simon J. Greenhill",
+    "Karoline Kjesrud",
+    "Jade J. Sandstedt",
+    "Vincent Manzanilla",
+    "Fiona M. Jordan",
+]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Teixedortoneu2021"  # @xxxx
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Infers the ancestral Viking plant toolkit"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.nordic]
+    ntaxa = 9
+    nchars = 108  # 12 plants, 9 uses 
+    nsites = 108
+    datatype = 'ethnobotanical'
+    source = ''
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.heggarty]
+    source = '@Heggarty2023'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.asr]
+    tool = 'corHMM'
+    model = 'rayDISC'
+    details = ""

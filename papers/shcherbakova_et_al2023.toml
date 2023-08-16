@@ -1,0 +1,82 @@
+title = "Societies of strangers do not speak grammatically simpler languages"
+
+doi = "10.1126/sciadv.adf7704"
+
+abstract = """
+Many recent proposals claim that languages adapt to their environments. The linguistic niche hypothesis claims
+that languages with numerous native speakers and substantial proportions of nonnative speakers (societies of
+strangers) tend to lose grammatical distinctions. In contrast, languages in small, isolated communities should
+maintain or expand their grammatical markers. Here, we test these claims using a global dataset of grammatical
+structures, Grambank. We model the impact of the number of native speakers, the proportion of nonnative speakers,
+the number of linguistic neighbors, and the status of a language on grammatical complexity while controlling for
+spatial and phylogenetic autocorrelation. We deconstruct 'grammatical complexity' into two separate dimensions:
+how much morphology a language has ('fusion') and the amount of information oblig- atorily encoded in the grammar
+('informativity'). We find several instances of weak positive associations but no inverse correlations between
+grammatical complexity and sociodemographic factors. Our findings cast doubt on the widespread claim that
+grammatical complexity is shaped by the sociolinguistic environment
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Olena Shcherbakova",
+    "Susanne Maria Michaelis",
+    "Hannah J. Haynie",
+    "Sam Passmore",
+    "Volker Gast",
+    "Russell D. Gray",
+    "Simon J. Greenhill",
+    "Damián E. Blasi",
+    "Hedvig Skirgård",
+]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Shcherbakova2023"
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "A test of the linguistic niche hypothesis that languages with many non-native speakers tend to lose grammatical distinctions"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.grambank]
+    ntaxa = 1314
+    nchars = 2
+    nsites = 2
+    datatype = 'structural features'
+    source = '@Grambank'
+    items = ''
+    comment = ''
+
+    [data.sociodemographic]
+    ntaxa = 1314
+    nchars = 7
+    nsites = 7
+    datatype = 'demographic'
+    source = ''
+    items = ''
+    comment = ''
+    
+# published phylogenies
+[phylogenies]
+    [phylogenies.global]
+    source = '@Bouckaert2022'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.INLA]
+    tool = 'r'
+    model = 'spatiophylogenetic'
+    details = ""
+    data = "@data.grambank;@data.sociodemographic;@phylogenies.global"

@@ -1,0 +1,27 @@
+title = "Modeling linguistic evolution: a look under the hood"
+
+doi = "10.1515/lingvan-2017-0043"
+
+abstract = """
+This paper takes a detailed look at some popular models of evolution used in contemporary diachronic linguistic
+research, focusing on the continuous-time Markov model, a particularly popular choice. I provide an exposition of
+the math underlying the CTM model, seldom discussed in linguistic papers. I show that in some work, a lack of
+explicit reference to the underlying computation creates some difficulty in interpreting results, particularly in
+the domain of ancestral state reconstruction. I conclude by adumbrating some ways in which linguists may be able
+to exploit these models to investigate a suite of factors which may influence diachronic linguistic change.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['Chundra Cathcart']
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Cathcart2018"
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Review of trait models"

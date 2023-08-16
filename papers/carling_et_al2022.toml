@@ -1,0 +1,31 @@
+title = "Reconstructing the origins of language families and variation"
+
+doi = "10.1093/oxfordhb/9780198813781.013.34"
+
+abstract = """
+The chapter looks at language variation and change, and the relation of these processes to language reconstruction
+and classification. The chapter gives an overview of theories, models, methods, and data, describing how diversity
+and variation is modelled and measured for reconstruction and classification within traditional, comparative and
+statistical, evolutionary, or phylogenetic methods. First, the chapter identifies the basic principles of language
+change and the way in which these differ within various subdomains of language. A second part delves into the
+outcomes of change, describing the diverse results of sound change, lexical change, and typological/morphosyntactic
+change. Here, important aspects include the inherent propensity of change, the role of arbitrariness, the role of
+systems, horizontal transfer, and the outcome of change at macro-levels. Finally, the chapter deals with the issue
+of the ontological status of the reconstruction, and how various theoretical approaches may affect the
+interpretation of results. The chapter reviews results and controversies arising from current research.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Gerd Carling", "Chundra Cathcart", "Erich R. Round"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Carling2022"
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+
+# short description of the study, one line.
+description = "Review of phylogenetic methods."

@@ -3,7 +3,13 @@
 * Auderset S, Greenhill SJ, DiCanio CT & Campbell EW. 2023. Subgrouping in a 'dialect continuum': A Bayesian phylogenetic analysis of the Mixtecan language family. Journal of Language Evolution.
 * Barbançon, S.N. Evans, L. Nakhleh, D. Ringe, and T. Warnow 2013. "An experimental study comparing linguistic phylogenetic reconstruction methods." Diachronica 30(2):143-170. 
 * Bentz, C., Dediu, D., Verkerk, A. et al. The evolution of language families is shaped by the environment beyond neutral drift. Nat Hum Behav 2, 816–821 (2018). https://doi.org/10.1038/s41562-018-0457-6
+* Carling, G., & Cathcart, C. (2021). Reconstructing the evolution of Indo-European grammar. Language. https://doi.org/10.1353/lan.0.0253
+* Carling, G., & Cathcart, C. (2021). Evolutionary dynamics of Indo-European alignment patterns. Diachronica, 38(3), 358–412. Portico. https://doi.org/10.1075/dia.19043.car
+* Cathcart, C., Carling, G., Larsson, F., Johansson, N., & Round, E. (2022). Areal pressure in grammatical evolution. Diachronica, 1–34. https://doi.org/10.1075/dia.16035.cat
+* Cathcart, C., Borja Herce and Balthasar Bickel. 2022. Decoupling speed of change and long-term preference in language evolution: insights from Romance verb stem alternations. In Andrea Ravignani et al. (eds.), The evolution of language: Proceedings of the Joint Conference on Language Evolution (JCoLE), Nijmegen, pp. 101–108. Joint Conference on Language Evolution (JCoLE).
+* Cathcart, C., Hölzl, A., Jäger, G., Widmer, P., & Bickel, B. (2020). Numeral classifiers and number marking in Indo-Iranian: A phylogenetic approach. Language Dynamics and Change, 11(2), 273-325. https://doi.org/10.1163/22105832-bja10013
 * Ceolin et al. 2021 - phil trans.
+* Dediu, D., & Levinson, S. C. (2012). Abstract Profiles of Structural Stability Point to Universal Tendencies, Family-Specific Factors, and Ancient Connections between Languages. PLoS ONE, 7(9), e45198. https://doi.org/10.1371/journal.pone.0045198
 * Forster, P., Toth, A. & Bandelt, H.-J. 1998 Evolutionary network analysis of word lists: visualizing the relationships between alpine Romance languages. J. Quant. Linguist. 5, 174 –187. (doi:10.1080/09296179808590125)
 * Forster, P., Polzin, T. & Röhl, A. 2006 Evolution of English basic vocabulary within the network of Germanic languages. In Phylogenetic methods and the prehistory of languages (eds P. Forster & C. Renfrew), pp. 131–138. Cambridge, UK: McDonald Institute for Archaeological Research.
 * Gray et al. 2010. On the shape and fabric of human history. Philosophical transactions of the Royal Society of London. Series B, Biological sciences 365.3923–33. doi:10.1098/rstb.2010.0162.
@@ -15,8 +21,10 @@
 * Holman, Eric W., Søren Wichmann, Cecil H. Brown, and E. Anthon Eff. 2015. Inheritance and diffusion of language and culture: A comparative perspective. Social Evolution & History 14.1:49-64.
 * Hübler 2022 - Hübler, Nataliia. 2022. Phylogenetic signal and rate of evolutionary change in language structures. Royal Society Open Science 9. 211252. doi:10.1098/rsos.211252.
 * Hübler and Greenhill 2023 -
+* Jäger, G., & Wahle, J. (2021). Phylogenetic Typology. Frontiers in Psychology, 12. https://doi.org/10.3389/fpsyg.2021.682132
 * Kassian, Alexei. 2015. Towards a formal genealogical classification of the Lezgian languages (North Caucasus): Testing various phylogenetic methods on lexical data. PLoS ONE 10(2): e0116950. doi:10.1371/journal.pone.0116950.
 * Kassian, A. S., Zhivlov, M., Starostin, G., Trofimov, A. A., Kocharov, P. A., Kuritsyna, A., & Saenko, M. N. (2021). Rapid radiation of the inner Indo-European languages: an advanced approach to Indo-European lexicostatistics. Linguistics, 59(4), 949–979. https://doi.org/10.1515/ling-2020-0060
+* Maurits, L., & Griffiths, T. L. (2014). Tracing the roots of syntax with Bayesian phylogenetics. Proceedings of the National Academy of Sciences, 111(37), 13576–13581. https://doi.org/10.1073/pnas.1319042111
 * McMahon A, McMahon R. 2006 Why linguists don’t do dates: Evidence from Indo-European and Australian languages. In Phylogenetic methods and the prehistory of languages (eds P Forster, C Renfrew), pp. 153–160. McDonald Institute for Archaeological Research: Cambridge. 
 * Nakhleh, D. Ringe, and T. Warnow, 2005. "Perfect Phylogenetic Networks: A New Methodology for Reconstructing the Evolutionary History of Natural Languages." Language, 81(2):382-420,.
 * Nelson-Sathi, Shijulal.; Johann-Mattis List.; Hans Geisler.; Heiner Fangerau.; Russell D. Gray.; William Martin.; and Tal Dagan. 2011. Networks uncover hidden lexical borrowing in Indo-European language evolution. Proceedings of the Royal Society B: Biological Sciences 278.1794–803. doi:10.1098/rspb.2010.1917.
@@ -31,6 +39,7 @@
 * Ritchie, Andrew M.; and Simon Y W Ho. 2019. Influence of the tree prior and sampling scale on Bayesian phylogenetic estimates of the origin times of language families. Journal of Language Evolution 4.108–123. doi:10.1093/jole/lzz005.
 * Smith & Rama, 2021. Environmental factors affect the evolution of linguistic subgroups in Borneo, Diachronica. http://dx.doi.org/10.17613/v31m-0w40
 * Syrjänen, K., Maurits, L., Leino, U., Honkola, T., Rota, J., & Vesakoski, O. (2021). Crouching TIGER, hidden structure: Exploring the nature of linguistic data using TIGER values. Journal of Language Evolution, 6(2), 99–118. https://doi.org/10.1093/jole/lzab004
+* Verkerk, A. (2014). Diachronic change in Indo-European motion event encoding. Journal of Historical Linguistics, 4(1), 40–83. Portico. https://doi.org/10.1075/jhl.4.1.02ver
 * Walker & Hamilton 2010 - Social complexity and linguistic diversity in the Austronesian and Bantu population expansions. Proceedings. Biological sciences / The Royal Society. doi:10.1098/rspb.2010.1942. http://www.ncbi.nlm.nih.gov/pubmed/20961903.
 * Warnow, D. Ringe, and A. Taylor, 1995 "Reconstructing the evolutionary history of natural languages." IRCS Report 95-16. Philadelphia 1995): Institute for Research in Cognitive Science, University of Pennsylvania. Technical report, 18 pp. 	
 * Wichmann, Søren, Eric W. Holman, Taraka Rama, and Robert S. Walker. 2011. Correlates of reticulation in linguistic phylogenies. Language Dynamics and Change 1: 205-240.
@@ -58,7 +67,6 @@
 * Pagel, M., & Meade, A. (2006). Estimating rates of lexical replacement on phylogenetic trees of languages. In P. Forster & C. Renfrew (Eds.), Phylogenetic methods and the prehistory of languages (Vol. 1, pp. 173–182). McDonald Institute for Archaeological Research. 
 * Passmore S, Barth W, Greenhill SJ, Quinn K, Sheard C, Argyriou P, Birchall J, Bowern C, Calladine J, Deb A, Diederen A, Metsäranta NP, Araujo LH, Schembri R, Hickey-Hall J, Honkola T, Mitchell A, Poole L, Rácz PM, Roberts SG, Ross RM, Thomas-Colquhoun E, Evans N, Jordan FM. 2023. Kinbank: A global database of kinship terminology. PLoS One, 18(5), e0283218.
 * Ringe Jr., D. A., Warnow, T., Taylor, A., Michailov, A., & Levinson, L. (1998). Computational cladistics and the position of Tocharian. In V. Mair (Ed.), The Bronze Age and Early Iron Age Peoples of Eastern Central Asia, Volume 1: Archeology, Migration and Nomadism: Journal of Indo-European Studies Monograph Series (Vol. 26). Institute for the Study of Man.
-* Round, E., Dockum, R., & Ryder, R. J. (2022). Evolution and Trade-Off Dynamics of Functional Load. Entropy, 24(4), 507. https://doi.org/10.3390/e24040507
 * Shirtz, S., Talamo, L., & Verkerk, A. (2021). The Evolutionary Dynamics of Negative Existentials in Indo-European. Frontiers in Communication, 6, 661862. https://doi.org/10.3389/fcomm.2021.661862
 * Teixidor-Toneu I, Kool A, Greenhill SJ, Kjesrud K, Sandstedt JJ, Manzanilla V, Jordan FM. 2021. Historical, archaeological and linguistic evidence test the phylogenetic inference of Viking-Age plant use. Philosophical Transactions of the Royal Society B: Biological Sciences, 376, 20200086.
 * Verkerk, A. (2019). Detecting non-tree-like signal using multiple tree topologies. Understanding Language Genealogy, 9(1), 9–69. Portico. https://doi.org/10.1075/jhl.17009.ver

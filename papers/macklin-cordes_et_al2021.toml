@@ -50,26 +50,36 @@ description = "investigation of phylogenetic signal in Pama-Nyungan languages"
     items = ''
     comment = 'Biphones (bigrams)'
 
-# published phylogenies
-[phylogenies]
-    [phylogenies.bouckaert2018]
-    source = '@Bouckaert2018'
+    [data.lexicon]
+    ntaxa = 285
+    nchars = 250
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@chirila'
+    items = ''
     comment = ''
-
+    
 
 # analysis information
 [analysis]
     
     notes = ""
     
+    [analysis.beast]
+    tool = 'beast2'
+    model = 'sdollo+?'
+    details = "?"
+    data = '@data.lexicon'
+    
     [analysis.signal]
     tool = 'picante'
     model = ''
     details = ""
+    data = '@data.biphones;@analysis.beast'
 
 
 [links]
-phlorest = { title = "Phlorest Dataset", link = "" }
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/macklincordes_et_al2021" }
 cldf = { title = "CLDF Dataset", link = "" }
 dplace = { title = "D-PLACE Dataset", link = "" }
 links = []

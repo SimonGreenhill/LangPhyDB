@@ -6,17 +6,16 @@ abstract = """
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
-authors = [
-]
+authors = []
 
 # parts of the world
 groups = []  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
-bibkey = ""  # @xxxx
+bibkey = "@"
 
 # type of study
-type = []  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+type = []  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
 
 # short description of the study, one line.
 description = ""
@@ -63,7 +62,7 @@ description = ""
     tool = ''
     model = ''
     details = ""
-
+    data = ""
 
 [inferredages]
     

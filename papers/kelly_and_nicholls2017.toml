@@ -1,0 +1,92 @@
+title = "Lateral transfer in Stochastic Dollo models"
+
+doi = "10.1214/17-AOAS1040"
+
+abstract = """
+Lateral transfer, a process whereby species exchange evolutionary traits through nonancestral relationships,
+is a frequent source of model misspecification in phylogenetic inference. Lateral transfer obscures the
+phylogenetic signal in the data as the histories of affected traits are mosaics of the overall phylogeny. We
+control for the effect of lateral transfer in a Stochastic Dollo model and a Bayesian setting. Our likelihood
+is highly intractable, as the parameters are the solution of a sequence of large systems of differential
+equations representing the expected evolution of traits along a tree. We illustrate our method on a data set
+of lexical traits in Eastern Polynesian languages, and obtain an improved fit over the corresponding model
+without lateral transfer.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Luke J. Kelly", "Geoff K. Nicholls"]
+
+# parts of the world
+groups = ['Austronesian']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Kelly_2017"
+
+# type of study
+type = ['phylogenetic', 'methodological']
+
+# short description of the study, one line.
+description = "Presentation of the Stochastic Dollo Model with Lateral Transfers"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.poly_0]
+    ntaxa = 11
+    nchars = 968
+    nsites = 968
+    datatype = 'lexical cognates'
+    source = '@ABVD'
+    items = ''
+    comment = ''
+
+
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.EP]
+    taxa = ['east2449']
+    age = "uniform(1150, 1800)" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "y2000" # ybp
+    description = ""
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.sd]
+    tool = 'traitlab'
+    model = 'stochasticdollo'
+    details = ""
+    data = ""
+
+    [analysis.sdlt]
+    tool = 'traitlab'
+    model = 'stochasticdollo+lateral'
+    details = "best-fitting model"
+    data = ""
+
+    [analysis.sd_nosingletons]
+    tool = 'traitlab'
+    model = 'stochasticdollo'
+    details = ""
+    data = "singleton sites removed"
+
+    [analysis.sdlt_nosingletons]
+    tool = 'traitlab'
+    model = 'stochasticdollo+lateral'
+    details = "best-fitting model"
+    data = "singleton sites removed"
+
+
+[inferredages]
+    
+    notes = "root age is enforced and not reported."
+    

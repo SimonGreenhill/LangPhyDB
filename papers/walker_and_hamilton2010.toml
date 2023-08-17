@@ -1,0 +1,84 @@
+title = "Social complexity and linguistic diversity in the Austronesian and Bantu population expansions"
+
+doi = "10.1098/rspb.2010.1942"
+
+abstract = """
+Reconstructing the rise and fall of social complexity in human societies through time is fundamental for
+understanding some of the most important transformations in human history. Phylogenetic methods based on
+language diversity provide a means to reconstruct pre-historic events and model the transition rates of
+cultural change through time. We model and compare the evolution of social complexity in Austronesian (n ¼
+88) and Bantu (n ¼ 89) societies, two of the world’s largest language families with societies representing a
+wide spectrum of social complexity. Our results show that in both language families, social complexity tends
+to build and decline in an incremental fashion, while the Austronesian phylogeny provides evidence for
+additional severe demographic bottlenecks. We suggest that the greater linguistic diversity of the
+Austronesian language family than Bantu likely follows the different biogeographic structure of the two
+regions. Cultural evolution in both the Bantu and Austronesian cases was not a simple linear process, but
+more of a wave-like process closely tied to the demography of expanding populations and the spatial structure
+of the colonized regions.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Robert S. Walker", "Marcus J. Hamilton"]
+
+# parts of the world
+groups = ['Austronesian', 'Bantu']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Walker_2010"
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Analysis of social complexity in Bantu and Austronesian societies."
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.ea_bantu]
+    ntaxa = 89
+    nchars = 1
+    nsites = 1
+    datatype = 'ethnographic features'
+    source = '@EthAtlas'
+    items = ''
+    comment = ''
+
+    [data.ea_austronesian]
+    ntaxa = 88
+    nchars = 1
+    nsites = 1
+    datatype = 'ethnographic features'
+    source = '@EthAtlas'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.g2009]
+    source = '@Gray2009'
+    comment = ''
+
+    [phylogenies.holden]
+    source = '@Holden2005'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.austronesian]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = ""
+    data = "@data.ea_austronesian; @phylogenies.g2009"
+
+    [analysis.bantu]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = ""
+    data = "@data.ea_bantu; @phylogenies.holden"
+

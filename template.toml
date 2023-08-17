@@ -1,18 +1,19 @@
-title = ""
+title = "%(title)s"
 
-doi = ""
+doi = "%(doi)s"
 
 abstract = """
+%(abstract)s
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
-authors = []
+authors = [%(authors)s]
 
 # parts of the world
 groups = []  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
-bibkey = "@"
+bibkey = "@%(bibkey)s"
 
 # type of study
 type = []  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial

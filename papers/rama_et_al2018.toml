@@ -1,0 +1,717 @@
+title = "Are Automatic Methods for Cognate Detection Good Enough for Phylogenetic Reconstruction in Historical Linguistics?"
+
+doi = ""
+
+abstract = """
+We evaluate the performance of state-of-the-art algorithms for automatic cognate detection by
+comparing how useful automatically inferred cognates are for the task of phylogenetic inference compared to
+classical manually annotated cognate sets. Our findings suggest that phylogenies inferred from automated cognate
+sets come close to phylogenies inferred from expert-annotated ones, although on average, the latter are still
+superior. We conclude that future work on phylogenetic reconstruction can profit much from automatic cognate
+detection. Especially where scholars are merely interested in exploring the bigger picture of a language family’s
+phylogeny, algorithms for automatic cognate detection are a useful complement for current research on language
+phylogenies.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Taraka Rama", "Johann-Mattis List", "Johannes Wahle", "Gerhard Jäger"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Rama2018"
+
+# type of study
+type = ['methodological']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Assessment of whether automatic cognate methods give reasonable answers"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.austronesian]
+    ntaxa = 45
+    nchars = 210
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@ABVD'
+    items = ''
+    comment = ''
+
+    [data.austroasiatic]
+    ntaxa = 58
+    nchars = 200
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Sidwell2015'
+    items = ''
+    comment = ''
+
+    [data.indoeuropean]
+    ntaxa = 42
+    nchars = 208
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@IELex'
+    items = ''
+    comment = ''
+
+    [data.pamanyungan]
+    ntaxa = 67
+    nchars = 183
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@CHIRILA'
+    items = ''
+    comment = ''
+    
+    [data.sinotibetan]
+    ntaxa = 64
+    nchars = 110
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Peiros2004'
+    items = ''
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+
+
+    [analysis.austronesian_turchin]
+    tool = 'lingpy'
+    model = 'turchin'
+    details = ""
+    data = "@data.austronesian"
+
+
+    [analysis.austronesian_levenshtein]
+    tool = 'lingpy'
+    model = 'levenshtein'
+    details = ""
+    data = "@data.austronesian"
+
+
+    [analysis.austronesian_SCA]
+    tool = 'lingpy'
+    model = 'SCA'
+    details = ""
+    data = "@data.austronesian"
+
+
+    [analysis.austronesian_lexstat]
+    tool = 'lingpy'
+    model = 'lexstat'
+    details = ""
+    data = "@data.austronesian"
+
+
+    [analysis.austronesian_onlinePMI]
+    tool = 'custom'
+    model = 'onlinePMI'
+    details = ""
+    data = "@data.austronesian"
+
+
+    [analysis.austronesian_SVM]
+    tool = 'custom'
+    model = 'SVM'
+    details = ""
+    data = "@data.austronesian"
+
+
+    [analysis.austroasiatic_turchin]
+    tool = 'lingpy'
+    model = 'turchin'
+    details = ""
+    data = "@data.austroasiatic"
+
+
+    [analysis.austroasiatic_levenshtein]
+    tool = 'lingpy'
+    model = 'levenshtein'
+    details = ""
+    data = "@data.austroasiatic"
+
+
+    [analysis.austroasiatic_SCA]
+    tool = 'lingpy'
+    model = 'SCA'
+    details = ""
+    data = "@data.austroasiatic"
+
+
+    [analysis.austroasiatic_lexstat]
+    tool = 'lingpy'
+    model = 'lexstat'
+    details = ""
+    data = "@data.austroasiatic"
+
+
+    [analysis.austroasiatic_onlinePMI]
+    tool = 'custom'
+    model = 'onlinePMI'
+    details = ""
+    data = "@data.austroasiatic"
+
+
+    [analysis.austroasiatic_SVM]
+    tool = 'custom'
+    model = 'SVM'
+    details = ""
+    data = "@data.austroasiatic"
+
+
+    [analysis.indoeuropean_turchin]
+    tool = 'lingpy'
+    model = 'turchin'
+    details = ""
+    data = "@data.indoeuropean"
+
+
+    [analysis.indoeuropean_levenshtein]
+    tool = 'lingpy'
+    model = 'levenshtein'
+    details = ""
+    data = "@data.indoeuropean"
+
+
+    [analysis.indoeuropean_SCA]
+    tool = 'lingpy'
+    model = 'SCA'
+    details = ""
+    data = "@data.indoeuropean"
+
+
+    [analysis.indoeuropean_lexstat]
+    tool = 'lingpy'
+    model = 'lexstat'
+    details = ""
+    data = "@data.indoeuropean"
+
+
+    [analysis.indoeuropean_onlinePMI]
+    tool = 'custom'
+    model = 'onlinePMI'
+    details = ""
+    data = "@data.indoeuropean"
+
+
+    [analysis.indoeuropean_SVM]
+    tool = 'custom'
+    model = 'SVM'
+    details = ""
+    data = "@data.indoeuropean"
+
+
+    [analysis.pamanyungan_turchin]
+    tool = 'lingpy'
+    model = 'turchin'
+    details = ""
+    data = "@data.pamanyungan"
+
+
+    [analysis.pamanyungan_levenshtein]
+    tool = 'lingpy'
+    model = 'levenshtein'
+    details = ""
+    data = "@data.pamanyungan"
+
+
+    [analysis.pamanyungan_SCA]
+    tool = 'lingpy'
+    model = 'SCA'
+    details = ""
+    data = "@data.pamanyungan"
+
+
+    [analysis.pamanyungan_lexstat]
+    tool = 'lingpy'
+    model = 'lexstat'
+    details = ""
+    data = "@data.pamanyungan"
+
+
+    [analysis.pamanyungan_onlinePMI]
+    tool = 'custom'
+    model = 'onlinePMI'
+    details = ""
+    data = "@data.pamanyungan"
+
+
+    [analysis.pamanyungan_SVM]
+    tool = 'custom'
+    model = 'SVM'
+    details = ""
+    data = "@data.pamanyungan"
+
+
+    [analysis.sinotibetan_turchin]
+    tool = 'lingpy'
+    model = 'turchin'
+    details = ""
+    data = "@data.sinotibetan"
+
+
+    [analysis.sinotibetan_levenshtein]
+    tool = 'lingpy'
+    model = 'levenshtein'
+    details = ""
+    data = "@data.sinotibetan"
+
+
+    [analysis.sinotibetan_SCA]
+    tool = 'lingpy'
+    model = 'SCA'
+    details = ""
+    data = "@data.sinotibetan"
+
+
+    [analysis.sinotibetan_lexstat]
+    tool = 'lingpy'
+    model = 'lexstat'
+    details = ""
+    data = "@data.sinotibetan"
+
+
+    [analysis.sinotibetan_onlinePMI]
+    tool = 'custom'
+    model = 'onlinePMI'
+    details = ""
+    data = "@data.sinotibetan"
+
+
+    [analysis.sinotibetan_SVM]
+    tool = 'custom'
+    model = 'SVM'
+    details = ""
+    data = "@data.sinotibetan"
+
+
+    [analysis.austronesian_turchin_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.austronesian; cognates from @analysis.austronesian_turchin"
+
+
+    [analysis.austronesian_levenshtein_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.austronesian; cognates from @analysis.austronesian_levenshtein"
+
+
+    [analysis.austronesian_SCA_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.austronesian; cognates from @analysis.austronesian_SCA"
+
+
+    [analysis.austronesian_lexstat_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.austronesian; cognates from @analysis.austronesian_lexstat"
+
+
+    [analysis.austronesian_onlinePMI_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.austronesian; cognates from @analysis.austronesian_onlinePMI"
+
+
+    [analysis.austronesian_SVM_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.austronesian; cognates from @analysis.austronesian_SVM"
+
+
+    [analysis.austroasiatic_turchin_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.austroasiatic; cognates from @analysis.austroasiatic_turchin"
+
+
+    [analysis.austroasiatic_levenshtein_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.austroasiatic; cognates from @analysis.austroasiatic_levenshtein"
+
+
+    [analysis.austroasiatic_SCA_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.austroasiatic; cognates from @analysis.austroasiatic_SCA"
+
+
+    [analysis.austroasiatic_lexstat_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.austroasiatic; cognates from @analysis.austroasiatic_lexstat"
+
+
+    [analysis.austroasiatic_onlinePMI_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.austroasiatic; cognates from @analysis.austroasiatic_onlinePMI"
+
+
+    [analysis.austroasiatic_SVM_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.austroasiatic; cognates from @analysis.austroasiatic_SVM"
+
+
+    [analysis.indoeuropean_turchin_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.indoeuropean; cognates from @analysis.indoeuropean_turchin"
+
+
+    [analysis.indoeuropean_levenshtein_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.indoeuropean; cognates from @analysis.indoeuropean_levenshtein"
+
+
+    [analysis.indoeuropean_SCA_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.indoeuropean; cognates from @analysis.indoeuropean_SCA"
+
+
+    [analysis.indoeuropean_lexstat_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.indoeuropean; cognates from @analysis.indoeuropean_lexstat"
+
+
+    [analysis.indoeuropean_onlinePMI_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.indoeuropean; cognates from @analysis.indoeuropean_onlinePMI"
+
+
+    [analysis.indoeuropean_SVM_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.indoeuropean; cognates from @analysis.indoeuropean_SVM"
+
+
+    [analysis.pamanyungan_turchin_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.pamanyungan; cognates from @analysis.pamanyungan_turchin"
+
+
+    [analysis.pamanyungan_levenshtein_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.pamanyungan; cognates from @analysis.pamanyungan_levenshtein"
+
+
+    [analysis.pamanyungan_SCA_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.pamanyungan; cognates from @analysis.pamanyungan_SCA"
+
+
+    [analysis.pamanyungan_lexstat_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.pamanyungan; cognates from @analysis.pamanyungan_lexstat"
+
+
+    [analysis.pamanyungan_onlinePMI_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.pamanyungan; cognates from @analysis.pamanyungan_onlinePMI"
+
+
+    [analysis.pamanyungan_SVM_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.pamanyungan; cognates from @analysis.pamanyungan_SVM"
+
+
+    [analysis.sinotibetan_turchin_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.sinotibetan; cognates from @analysis.sinotibetan_turchin"
+
+
+    [analysis.sinotibetan_levenshtein_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.sinotibetan; cognates from @analysis.sinotibetan_levenshtein"
+
+
+    [analysis.sinotibetan_SCA_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.sinotibetan; cognates from @analysis.sinotibetan_SCA"
+
+
+    [analysis.sinotibetan_lexstat_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.sinotibetan; cognates from @analysis.sinotibetan_lexstat"
+
+
+    [analysis.sinotibetan_onlinePMI_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.sinotibetan; cognates from @analysis.sinotibetan_onlinePMI"
+
+
+    [analysis.sinotibetan_SVM_mcmc]
+    tool = 'mrbayes'
+    model = 'GTR+asc+igr'
+    details = ""
+    data = "@data.sinotibetan; cognates from @analysis.sinotibetan_SVM"
+
+
+    [analysis.austronesian_turchin_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.austronesian_turchin_mcmc vs. glottolog"
+
+
+    [analysis.austronesian_levenshtein_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.austronesian_levenshtein_mcmc vs. glottolog"
+
+
+    [analysis.austronesian_SCA_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.austronesian_SCA_mcmc vs. glottolog"
+
+
+    [analysis.austronesian_lexstat_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.austronesian_lexstat_mcmc vs. glottolog"
+
+
+    [analysis.austronesian_onlinePMI_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.austronesian_onlinePMI_mcmc vs. glottolog"
+
+
+    [analysis.austronesian_SVM_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.austronesian_SVM_mcmc vs. glottolog"
+
+
+    [analysis.austroasiatic_turchin_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.austroasiatic_turchin_mcmc vs. glottolog"
+
+
+    [analysis.austroasiatic_levenshtein_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.austroasiatic_levenshtein_mcmc vs. glottolog"
+
+
+    [analysis.austroasiatic_SCA_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.austroasiatic_SCA_mcmc vs. glottolog"
+
+
+    [analysis.austroasiatic_lexstat_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.austroasiatic_lexstat_mcmc vs. glottolog"
+
+
+    [analysis.austroasiatic_onlinePMI_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.austroasiatic_onlinePMI_mcmc vs. glottolog"
+
+
+    [analysis.austroasiatic_SVM_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.austroasiatic_SVM_mcmc vs. glottolog"
+
+
+    [analysis.indoeuropean_turchin_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.indoeuropean_turchin_mcmc vs. glottolog"
+
+
+    [analysis.indoeuropean_levenshtein_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.indoeuropean_levenshtein_mcmc vs. glottolog"
+
+
+    [analysis.indoeuropean_SCA_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.indoeuropean_SCA_mcmc vs. glottolog"
+
+
+    [analysis.indoeuropean_lexstat_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.indoeuropean_lexstat_mcmc vs. glottolog"
+
+
+    [analysis.indoeuropean_onlinePMI_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.indoeuropean_onlinePMI_mcmc vs. glottolog"
+
+
+    [analysis.indoeuropean_SVM_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.indoeuropean_SVM_mcmc vs. glottolog"
+
+
+    [analysis.pamanyungan_turchin_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.pamanyungan_turchin_mcmc vs. glottolog"
+
+
+    [analysis.pamanyungan_levenshtein_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.pamanyungan_levenshtein_mcmc vs. glottolog"
+
+
+    [analysis.pamanyungan_SCA_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.pamanyungan_SCA_mcmc vs. glottolog"
+
+
+    [analysis.pamanyungan_lexstat_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.pamanyungan_lexstat_mcmc vs. glottolog"
+
+
+    [analysis.pamanyungan_onlinePMI_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.pamanyungan_onlinePMI_mcmc vs. glottolog"
+
+
+    [analysis.pamanyungan_SVM_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.pamanyungan_SVM_mcmc vs. glottolog"
+
+
+    [analysis.sinotibetan_turchin_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.sinotibetan_turchin_mcmc vs. glottolog"
+
+
+    [analysis.sinotibetan_levenshtein_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.sinotibetan_levenshtein_mcmc vs. glottolog"
+
+
+    [analysis.sinotibetan_SCA_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.sinotibetan_SCA_mcmc vs. glottolog"
+
+
+    [analysis.sinotibetan_lexstat_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.sinotibetan_lexstat_mcmc vs. glottolog"
+
+
+    [analysis.sinotibetan_onlinePMI_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.sinotibetan_onlinePMI_mcmc vs. glottolog"
+
+
+    [analysis.sinotibetan_SVM_mcmc_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.sinotibetan_SVM_mcmc vs. glottolog"
+
+    

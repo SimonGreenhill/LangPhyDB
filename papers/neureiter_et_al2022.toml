@@ -1,0 +1,176 @@
+title = "Detecting contact in language trees: a Bayesian phylogenetic model with horizontal transfer"
+
+doi = "10.1057/s41599-022-01211-7"
+
+abstract = """
+Phylogenetic trees are a central tool for studying language evolution and have wide
+implications for understanding cultural evolution as a whole. For example, they have been the basis of
+studies on the evolution of musical instruments, religious beliefs and political complexity. Bayesian
+phylogenetic methods are transparent regarding the data and assumptions underlying the inference. One of
+these assumptions—that languages change independently—is incompatible with the reality of language evolution,
+particularly with language contact. When speakers interact, languages frequently borrow linguistic traits
+from each other. Phylogenetic methods ignore this issue, which can lead to errors in the reconstruction. More
+importantly, they neglect the rich history of language contact. A principled way of integrating language
+contact in phylogenetic methods is sorely missing. We present contacTrees, a Bayesian phylogenetic model with
+horizontal transfer for language evolution. The model efficiently infers the phylogenetic tree of a language
+family and contact events between its clades. The implementation is available as a package for the
+phylogenetics software BEAST 2. We apply contacTrees in a simulation study and a case study on a subset of
+well-documented Indo-European languages. The simulation study demonstrates that contacTrees correctly
+reconstructs the history of a simulated language family, including simulated contact events. Moreover, it
+shows that ignoring contact can lead to systematic errors in the estimated tree height, rate of change and
+tree topology, which can be avoided with contacTrees. The case study confirms that contacTrees reconstructs
+known contact events in the history of Indo-European and finds known loanwords, demonstrating its practical
+potential. The model has a higher statistical fit to the data than a conventional phylogenetic
+reconstruction, and the reconstructed tree height is significantly closer to well-attested estimates. Our
+method closes a long-standing gap between the theoretical and empirical models of cultural evolution. The
+implications are especially relevant for less documented language families, where our knowledge of past
+contacts and linguistic borrowings is limited. Since linguistic phylogenies have become the backbone of many
+studies of cultural evolution, the addition of this integral piece of the puzzle is crucial in the endeavour
+to understand the history of human culture.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Nico Neureiter", "Peter Ranacher", "Nour Efrat-Kowalsky", "Gereon A. Kaiping", "Robert Weibel", "Paul Widmer", "Remco R. Bouckaert"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Neureiter_2022"
+
+# type of study
+type = ['methodological']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Presentation of contacTrees, a Bayesian phylogenetic model to infer the phylogenetic history of a language family and horizontal transfer between its branches. "
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.ielex]
+    ntaxa = 39
+    nchars = 206
+    nsites = 1419
+    datatype = 'lexical cognates'
+    source = '@IELex'
+    items = 'swadesh200'
+    comment = 'subset'
+
+# date calibrations
+[calibrations]
+
+    notes = "uses @bouckaert2012 calibrations"
+
+    [calibration.tmrca_Brythonic]
+    taxa = ["bryt1239"]
+    age = "normal(1550.0, 100.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.tmrca_FrenchIberian]
+    taxa = ["west2813"]
+    age = "normal(1400.0, 100.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.tmrca_WestGermanic]
+    taxa = ["west2793"]
+    age = "normal(1550.0, 100.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.tmrca_Northwest-Germanic]
+    taxa = ["nort3152"]
+    age = "normal(1875.0, 150.0)"
+    units = "ybp"
+    description = ""
+    
+    [calibration.tmrca_Celtic]
+    taxa = ["celt1248"]
+    age = "uniform(1700.0, 10000.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.oldirish_height]
+    taxa = ["oldi1245"]
+    age = "normal(1250.0, 100.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.oldnorse_height]
+    taxa = ["oldn1244"]
+    age = "normal(775.0, 100.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.oldhighgerman_height]
+    taxa = ["oldh1241"]
+    age = "normal(1050.0, 100.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.oldenglish_height]
+    taxa = ["olde1238"]
+    age = "normal(1000.0, 100.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.latin_height]
+    taxa = ["lati1261"]
+    age = "normal(2050.0, 150.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.latin_chain_1]
+    taxa = ["lati1261", 'medi1250']
+    age = "normal(2050.0, 10.0)"
+    units = "ybp"
+    description = ""
+
+    [calibration.latin_chain_2]
+    taxa = ["lati1261", 'medi1250', 'late1252']
+    age = "normal(1000.0, 10.0)"
+    units = "ybp"
+    description = ""
+
+# analysis information
+[analysis]
+    
+    notes = ""
+
+    [analysis.conventional]
+    tool = 'beast2'
+    model = 'bdskyline+covarion+relaxed'
+    details = "Γ = 0"
+    data = ""
+
+    [analysis.contacTrees]
+    tool = 'beast2'
+    model = 'bdskyline+covarion+relaxed+contacTrees'
+    details = "Γ = 0.25"
+    data = ""
+
+    [analysis.conventional_filtered]
+    tool = 'beast2'
+    model = 'bdskyline+covarion+relaxed'
+    details = "Γ = 0, known loanwords removed"
+    data = ""
+
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.Celtic-Germanic-Romance_CT]
+    taxa = []
+    age = "5384.0"
+    units = "ybp"
+    notes = "with contact edges"
+    
+    [inferredage.Celtic-Germanic-Romance_noCT]
+    taxa = []
+    age = "7206.2"
+    units = "ybp"
+    notes = ""

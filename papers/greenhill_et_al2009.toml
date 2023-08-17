@@ -1,0 +1,33 @@
+title = "Does horizontal transmission invalidate cultural phylogenies?"
+
+doi = "10.1098/rspb.2008.1944"
+
+abstract = """
+Phylogenetic methods have recently been applied to studies of cultural evolution. However, it has been claimed that the large amount of horizontal transmission that sometimes occurs between cultural groups invalidates the use of these methods. Here, we use a natural model of linguistic evolution to simulate borrowing between languages. The results show that tree topologies constructed with Bayesian phylogenetic methods are robust to realistic levels of borrowing. Inferences about divergence dates are slightly less robust and show a tendency to underestimate dates. Our results demonstrate that realistic levels of reticulation between cultures do not invalidate a phylogenetic approach to cultural and linguistic evolution.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Simon J. Greenhill", "Thomas E. Currie", "Russell D. Gray"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Greenhill2009c"
+
+# type of study
+type = ['methodological']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Simulation study assessing the affect of borrowing on language phylogenies"
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.simulations]
+    tool = 'traitlab'
+    model = 'dollo'
+    details = ""
+    data = ""
+

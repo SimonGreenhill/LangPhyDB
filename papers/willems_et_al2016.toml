@@ -1,0 +1,153 @@
+title = "Using hybridization networks to retrace the evolution of Indo-European languages"
+
+doi = "10.1186/s12862-016-0745-6"
+
+abstract = """
+Background
+Curious parallels between the processes of species and language evolution have
+been observed by many researchers. Retracing the evolution of Indo-European (IE) languages remains one of
+the most intriguing intellectual challenges in historical linguistics. Most of the IE language studies use
+the traditional phylogenetic tree model to represent the evolution of natural languages, thus not taking
+into account reticulate evolutionary events, such as language hybridization and word borrowing which can be
+associated with species hybridization and horizontal gene transfer, respectively. More recently, implicit
+evolutionary networks, such as split graphs and minimal lateral networks, have been used to account for
+reticulate evolution in linguistics.
+
+Results
+Striking parallels existing between the evolution of species and natural languages allowed us to apply three
+computational biology methods for reconstruction of phylogenetic networks to model the evolution of IE
+languages. We show how the transfer of methods between the two disciplines can be achieved, making necessary
+methodological adaptations. Considering basic vocabulary data from the well-known Dyen’s lexical database,
+which contains word forms in 84 IE languages for the meanings of a 200-meaning Swadesh list, we adapt a
+recently developed computational biology algorithm for building explicit hybridization networks to study the
+evolution of IE languages and compare our findings to the results provided by the split graph and galled
+network methods.
+
+Conclusion
+We conclude that explicit phylogenetic networks can be successfully used to identify donors and recipients
+of lexical material as well as the degree of influence of each donor language on the corresponding recipient
+languages. We show that our algorithm is well suited to detect reticulate relationships among languages, and
+present some historical and linguistic justification for the results obtained. Our findings could be further
+refined if relevant syntactic, phonological and morphological data could be analyzed along with the
+available lexical data.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Matthieu Willems", "Etienne Lord", "Louise Laforest", "Gilbert Labelle", "François-Joseph Lapointe", "Anna Maria Di Sciullo", "Vladimir Makarenkov"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Willems_2016"
+
+# type of study
+type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Adapts a recently developed computational biology method to identify explicitly hybrid languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.ie]
+    ntaxa = 84
+    nchars = 200
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Dyen1992;@IELex'
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.ie_explicit_hn]
+    tool = 'custom'
+    model = 'explicit hybridisation network'
+    details = "full 84 subset"
+    data = ""
+
+    [analysis.ie_nnet]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "full 84 subset"
+    data = ""
+
+    [analysis.westgermanic_nnet]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "west germanic subset"
+    data = ""
+
+    [analysis.westgermanic_explicit_hn]
+    tool = 'custom'
+    model = 'explicit hybridisation network'
+    details = "west germanic subset"
+    data = ""
+
+    [analysis.westgermanic_galled_network]
+    tool = 'dendroscope'
+    model = 'galled network'
+    details = "west germanic subset"
+    data = ""
+
+    [analysis.northgermanic_nnet]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "north germanic subset"
+    data = ""
+
+    [analysis.northgermanic_explicit_hn]
+    tool = 'custom'
+    model = 'explicit hybridisation network'
+    details = "north germanic subset"
+    data = ""
+
+    [analysis.northgermanic_galled_network]
+    tool = 'dendroscope'
+    model = 'galled network'
+    details = "north germanic subset"
+    data = ""
+
+    [analysis.latin_nnet]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "latin (romance?) subset"
+    data = ""
+
+    [analysis.latin_explicit_hn]
+    tool = 'custom'
+    model = 'explicit hybridisation network'
+    details = "latin (romance?) subset"
+    data = ""
+
+    [analysis.latin_galled_network]
+    tool = 'dendroscope'
+    model = 'galled network'
+    details = "latin (romance?) subset"
+    data = ""
+
+    [analysis.wordtree_galled_network_EDIT]
+    tool = 'custom'
+    model = 'explicit hybridisation network'
+    details = "edit distance from words"
+    data = ""
+
+    [analysis.wordtree_galled_network_SCA]
+    tool = 'custom'
+    model = 'explicit hybridisation network'
+    details = "SCA distance from words"
+    data = ""
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = ["http://www.trex.uqam.ca/biolinguistics"]

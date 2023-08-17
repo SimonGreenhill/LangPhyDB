@@ -10,6 +10,7 @@ beast2,http://www.beast2.org/
 caper,R package caper
 corHMM,
 custom,Custom tool
+dendroscope,
 geiger,
 GenGIS,
 hisse,R package hisse
@@ -18,6 +19,7 @@ lingpy,
 macclade,
 mantel,
 manual,Lovingly handcrafted bespoke visualisation
+MAPLE,
 MCMCglmm,
 MEGA,
 mesquite,

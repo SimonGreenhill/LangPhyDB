@@ -1,0 +1,628 @@
+title = "An Automated Framework for Fast Cognate Detection and Bayesian Phylogenetic Inference in Computational Historical Linguistics"
+
+doi = ""
+
+abstract = """
+We present a fully automated workflow for phylogenetic reconstruction on large datasets,
+consisting of two novel methods, one for fast detection of cognates and one for fast Bayesian phylogenetic
+inference. Our results show that the methods take less than a few minutes to process language families that have
+so far required large amounts of time and computational power. Moreover, the cognates and the trees inferred from
+the method are quite close, both to gold standard cognate judgments and to expert language family trees. Given
+its speed and ease of application, our framework is specifically useful for the exploration of very large
+datasets in historical linguistics.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Taraka Rama", "Johann-Mattis List"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Rama2019"
+
+# type of study
+type = ['methodological']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Develop a fast automated cognate and phylogeny reconstruction approach"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.austronesian]
+    ntaxa = 45
+    nchars = 210
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@ABVD'
+    items = ''
+    comment = ''
+
+    [data.austroasiatic]
+    ntaxa = 58
+    nchars = 200
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Sidwell2015'
+    items = ''
+    comment = ''
+
+    [data.indoeuropean]
+    ntaxa = 42
+    nchars = 208
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@IELex'
+    items = ''
+    comment = ''
+
+    [data.pamanyungan]
+    ntaxa = 67
+    nchars = 183
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@CHIRILA'
+    items = ''
+    comment = ''
+    
+    [data.sinotibetan]
+    ntaxa = 64
+    nchars = 110
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Peiros2004'
+    items = ''
+    comment = ''
+
+    [data.bahnaric]
+    ntaxa = "?"
+    nchars = "?"
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Sidwell2015'
+    items = ''
+    comment = ''
+
+
+    [data.chinese]
+    ntaxa = 18
+    nchars = 180
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Daxue1964'
+    items = ''
+    comment = ''
+
+
+    [data.huon]
+    ntaxa = "?"
+    nchars = "?"
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@McElhanon1967'
+    items = ''
+    comment = ''
+
+
+    [data.romance]
+    ntaxa = "?"
+    nchars = "?"
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@GLED'
+    items = ''
+    comment = ''
+
+
+    [data.tujia]
+    ntaxa = 5
+    nchars = 109
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@GLED'
+    items = ''
+    comment = ''
+
+
+    [data.uralic]
+    ntaxa = "?"
+    nchars = "?"
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Syrjanen2013'
+    items = ''
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+
+
+    [analysis.austronesian_ConsonantClassMatching_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.austronesian"
+
+
+    [analysis.austronesian_BipSkip-CC_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.austronesian"
+
+
+    [analysis.austronesian_BipSkip-IM_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.austronesian"
+
+
+    [analysis.austronesian_SCA_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.austronesian"
+
+
+    [analysis.austroasiatic_ConsonantClassMatching_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.austroasiatic"
+
+
+    [analysis.austroasiatic_BipSkip-CC_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.austroasiatic"
+
+
+    [analysis.austroasiatic_BipSkip-IM_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.austroasiatic"
+
+
+    [analysis.austroasiatic_SCA_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.austroasiatic"
+
+
+    [analysis.indoeuropean_ConsonantClassMatching_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.indoeuropean"
+
+
+    [analysis.indoeuropean_BipSkip-CC_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.indoeuropean"
+
+
+    [analysis.indoeuropean_BipSkip-IM_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.indoeuropean"
+
+
+    [analysis.indoeuropean_SCA_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.indoeuropean"
+
+
+    [analysis.pamanyungan_ConsonantClassMatching_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.pamanyungan"
+
+
+    [analysis.pamanyungan_BipSkip-CC_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.pamanyungan"
+
+
+    [analysis.pamanyungan_BipSkip-IM_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.pamanyungan"
+
+
+    [analysis.pamanyungan_SCA_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.pamanyungan"
+
+
+    [analysis.sinotibetan_ConsonantClassMatching_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.sinotibetan"
+
+
+    [analysis.sinotibetan_BipSkip-CC_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.sinotibetan"
+
+
+    [analysis.sinotibetan_BipSkip-IM_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.sinotibetan"
+
+
+    [analysis.sinotibetan_SCA_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.sinotibetan"
+
+
+    [analysis.bahnaric_ConsonantClassMatching_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.bahnaric"
+
+
+    [analysis.bahnaric_BipSkip-CC_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.bahnaric"
+
+
+    [analysis.bahnaric_BipSkip-IM_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.bahnaric"
+
+
+    [analysis.bahnaric_SCA_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.bahnaric"
+
+
+    [analysis.chinese_ConsonantClassMatching_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.chinese"
+
+
+    [analysis.chinese_BipSkip-CC_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.chinese"
+
+
+    [analysis.chinese_BipSkip-IM_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.chinese"
+
+
+    [analysis.chinese_SCA_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.chinese"
+
+
+    [analysis.huon_ConsonantClassMatching_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.huon"
+
+
+    [analysis.huon_BipSkip-CC_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.huon"
+
+
+    [analysis.huon_BipSkip-IM_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.huon"
+
+
+    [analysis.huon_SCA_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.huon"
+
+
+    [analysis.romance_ConsonantClassMatching_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.romance"
+
+
+    [analysis.romance_BipSkip-CC_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.romance"
+
+
+    [analysis.romance_BipSkip-IM_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.romance"
+
+
+    [analysis.romance_SCA_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.romance"
+
+
+    [analysis.tujia_ConsonantClassMatching_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.tujia"
+
+
+    [analysis.tujia_BipSkip-CC_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.tujia"
+
+
+    [analysis.tujia_BipSkip-IM_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.tujia"
+
+
+    [analysis.tujia_SCA_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.tujia"
+
+
+    [analysis.uralic_ConsonantClassMatching_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.uralic"
+
+
+    [analysis.uralic_BipSkip-CC_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.uralic"
+
+
+    [analysis.uralic_BipSkip-IM_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.uralic"
+
+
+    [analysis.uralic_SCA_test]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@analysis.uralic"
+
+
+    [analysis.austronesian_ConsonantClassMatching_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.austronesian_ConsonantClassMatching vs. glottolog"
+
+
+    [analysis.austronesian_BipSkip-CC_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.austronesian_BipSkip-CC vs. glottolog"
+
+
+    [analysis.austronesian_BipSkip-IM_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.austronesian_BipSkip-IM vs. glottolog"
+
+
+    [analysis.austronesian_SCA_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.austronesian_SCA vs. glottolog"
+
+
+    [analysis.austroasiatic_ConsonantClassMatching_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.austroasiatic_ConsonantClassMatching vs. glottolog"
+
+
+    [analysis.austroasiatic_BipSkip-CC_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.austroasiatic_BipSkip-CC vs. glottolog"
+
+
+    [analysis.austroasiatic_BipSkip-IM_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.austroasiatic_BipSkip-IM vs. glottolog"
+
+
+    [analysis.austroasiatic_SCA_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.austroasiatic_SCA vs. glottolog"
+
+
+    [analysis.indoeuropean_ConsonantClassMatching_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.indoeuropean_ConsonantClassMatching vs. glottolog"
+
+
+    [analysis.indoeuropean_BipSkip-CC_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.indoeuropean_BipSkip-CC vs. glottolog"
+
+
+    [analysis.indoeuropean_BipSkip-IM_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.indoeuropean_BipSkip-IM vs. glottolog"
+
+
+    [analysis.indoeuropean_SCA_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.indoeuropean_SCA vs. glottolog"
+
+
+    [analysis.pamanyungan_ConsonantClassMatching_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.pamanyungan_ConsonantClassMatching vs. glottolog"
+
+
+    [analysis.pamanyungan_BipSkip-CC_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.pamanyungan_BipSkip-CC vs. glottolog"
+
+
+    [analysis.pamanyungan_BipSkip-IM_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.pamanyungan_BipSkip-IM vs. glottolog"
+
+
+    [analysis.pamanyungan_SCA_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.pamanyungan_SCA vs. glottolog"
+
+
+    [analysis.sinotibetan_ConsonantClassMatching_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.sinotibetan_ConsonantClassMatching vs. glottolog"
+
+
+    [analysis.sinotibetan_BipSkip-CC_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.sinotibetan_BipSkip-CC vs. glottolog"
+
+
+    [analysis.sinotibetan_BipSkip-IM_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.sinotibetan_BipSkip-IM vs. glottolog"
+
+
+    [analysis.sinotibetan_SCA_gqd]
+    tool = 'QuartetDist'
+    model = ''
+    details = ""
+    data = "@analysis.sinotibetan_SCA vs. glottolog"
+
+
+    [analysis.austronesian_MAPLE]
+    tool = 'MAPLE'
+    model = ''
+    details = ""
+    data = "@analysis.austronesian"
+
+
+    [analysis.austroasiatic_MAPLE]
+    tool = 'MAPLE'
+    model = ''
+    details = ""
+    data = "@analysis.austroasiatic"
+
+
+    [analysis.indoeuropean_MAPLE]
+    tool = 'MAPLE'
+    model = ''
+    details = ""
+    data = "@analysis.indoeuropean"
+
+
+    [analysis.pamanyungan_MAPLE]
+    tool = 'MAPLE'
+    model = ''
+    details = ""
+    data = "@analysis.pamanyungan"
+
+
+    [analysis.sinotibetan_MAPLE]
+    tool = 'MAPLE'
+    model = ''
+    details = ""
+    data = "@analysis.sinotibetan"
+

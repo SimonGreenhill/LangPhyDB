@@ -1,0 +1,34 @@
+title = "Can Bayesian phylogeography reconstruct migrations and expansions in linguistic evolution?"
+
+doi = "10.1098/rsos.201079"
+
+abstract = """Bayesian phylogeography has been used in historical linguistics to reconstruct homelands and
+expansions of language families, but the reliability of these reconstructions has remained unclear. We
+contribute to this discussion with a simulation study where we distinguish two types of spatial processes:
+migration, where populations or languages leave one place for another, and expansion, where populations or
+languages gradually expand their territory. We simulate migration and expansion in two scenarios with
+varying degrees of spatial directional trends and evaluate the performance of state-of-the-art
+phylogeographic methods. Our results show that these methods fail to reconstruct migrations, but work
+surprisingly well on expansions, even under severe directional trends. We demonstrate that migrations and
+expansions have typical phylogenetic and spatial patterns, which in the one case inhibit and in the other
+facilitate phylogeographic reconstruction. Furthermore, we propose descriptive statistics to identify
+whether a real sample of languages, their relationship and spatial distribution, better fits a migration or
+an expansion scenario. Bringing together the results of the simulation study and theoretical arguments, we
+make recommendations for assessing the adequacy of phylogeographic models to reconstruct the spatial
+evolution of languages. """
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Nico Neureiter", "Peter Ranacher", "Rik van Gijn", "Balthasar Bickel", "Robert Weibel"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Neureiter_2021"
+
+# type of study
+type = ['phylogeography', 'methodological']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Simulation study of phylogeographic methods"
+

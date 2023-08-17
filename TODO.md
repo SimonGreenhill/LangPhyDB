@@ -38,7 +38,6 @@
 * Rama, Taraka. 2018. Three tree priors and five datasets: A study of Indo-European phylogenetics
 * Ritchie, Andrew M.; and Simon Y W Ho. 2019. Influence of the tree prior and sampling scale on Bayesian phylogenetic estimates of the origin times of language families. Journal of Language Evolution 4.108–123. doi:10.1093/jole/lzz005.
 * Smith & Rama, 2021. Environmental factors affect the evolution of linguistic subgroups in Borneo, Diachronica. http://dx.doi.org/10.17613/v31m-0w40
-* Syrjänen, K., Maurits, L., Leino, U., Honkola, T., Rota, J., & Vesakoski, O. (2021). Crouching TIGER, hidden structure: Exploring the nature of linguistic data using TIGER values. Journal of Language Evolution, 6(2), 99–118. https://doi.org/10.1093/jole/lzab004
 * Verkerk, A. (2014). Diachronic change in Indo-European motion event encoding. Journal of Historical Linguistics, 4(1), 40–83. Portico. https://doi.org/10.1075/jhl.4.1.02ver
 * Walker & Hamilton 2010 - Social complexity and linguistic diversity in the Austronesian and Bantu population expansions. Proceedings. Biological sciences / The Royal Society. doi:10.1098/rspb.2010.1942. http://www.ncbi.nlm.nih.gov/pubmed/20961903.
 * Warnow, D. Ringe, and A. Taylor, 1995 "Reconstructing the evolutionary history of natural languages." IRCS Report 95-16. Philadelphia 1995): Institute for Research in Cognitive Science, University of Pennsylvania. Technical report, 18 pp. 	

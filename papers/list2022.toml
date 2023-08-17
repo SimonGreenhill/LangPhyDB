@@ -1,0 +1,444 @@
+title = "Correcting a bias in {TIGER} rates resulting from high amounts of invariant and singleton cognate sets"
+
+doi = "10.1093/jole/lzab007"
+
+abstract = """
+In a recent issue of the Journal of Language Evolution, Syrja¨ nen et al. (2021) investigate the suitability of
+computing Cummins and McInerney’s (2011) TIGER rates for estimating the tree-likeness of linguistic datasets
+compiled for phylogenetic reconstruction. The authors test the TIGER rates on a diverse sample of simulated data,
+which by and large conﬁrms the usefulness of TIGER rates as an analytic tool for investigating linguistic data,
+but they test them only on one real-world dataset of Uralic languages which turns out to behave quite differently
+from the simulated data. When testing the TIGER rates on additional datasets, I detected a bias in the computation
+which leads to an unnatural increase in those cases where a dataset contains many characters with invariant or
+singleton states. To overcome this problem, I suggest a modiﬁed variant of TIGER rates, which is provided in the
+form of a freely available Python package. Testing the modiﬁed TIGER scores on the simulated data of Syrja¨ nen et
+al. shows that the corrected TIGER rates still readily distinguish between different degrees of treelikeness.
+Testing them on a dataset in which the number of singletons and invariants was artiﬁcially increased further shows
+that the corrected TIGER rates are not inﬂuenced by the bias. A ﬁnal tests on seven linguistic datasets show the
+usefulness of the corrected TIGER rates on a larger variety of linguistic datasets and illustrate the importance
+to take speciﬁc aspects of linguistic data into account when using biological methods in the domain of language
+evolution.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['Johann-Mattis List']
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@List2022"
+
+# type of study
+type = ['tiger', 'methodological']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Correcting a bias in TIGER rates"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.uralic]
+    ntaxa = 26
+    nchars = 313
+    nsites = 313
+    datatype = 'lexical cognates'
+    source = '@UraLex'
+    items = ''
+    comment = ''
+
+    [data.dravidian]
+    ntaxa = 20
+    nchars = 100
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Kolipakam2018'
+    items = ''
+    comment = ''
+
+    [data.mixezoquean]
+    ntaxa = 10
+    nchars = 110
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Cysouw2006'
+    items = ''
+    comment = ''
+
+    [data.aslian]
+    ntaxa = 30
+    nchars = 146
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Dunn2013aslian'
+    items = ''
+    comment = ''
+
+    [data.semitic]
+    ntaxa = 21
+    nchars = 150
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Feleke2021'
+    items = ''
+    comment = ''
+
+    [data.japonic]
+    ntaxa = 10
+    nchars = 200
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Hattori1973'
+    items = ''
+    comment = ''
+
+    [data.palaung]
+    ntaxa = 10
+    nchars = 200
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Deepadung2015'
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.TIGER_uralex]
+    tool = 'tiger-calculator'
+    model = ''
+    details = ''
+    data = '@data.uralex'
+
+    [analysis.CORRECTED_tiger_uralex]
+    tool = 'pylotiger'
+    model = ''
+    details = ''
+    data = '@data.uralex'
+
+    [analysis.TIGER_simulation_borrowing_5pc]
+    tool = 'tiger-calculator'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_5pc'
+
+    [analysis.CORRECTED_tiger_simulation_borrowing_5pc]
+    tool = 'pylotiger'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_5pc'
+
+    [analysis.TIGER_simulation_borrowing_10pc]
+    tool = 'tiger-calculator'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_10pc'
+
+    [analysis.CORRECTED_tiger_simulation_borrowing_10pc]
+    tool = 'pylotiger'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_10pc'
+
+    [analysis.TIGER_simulation_borrowing_15pc]
+    tool = 'tiger-calculator'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_15pc'
+
+    [analysis.CORRECTED_tiger_simulation_borrowing_15pc]
+    tool = 'pylotiger'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_15pc'
+
+    [analysis.TIGER_simulation_borrowing_20pc]
+    tool = 'tiger-calculator'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_20pc'
+
+    [analysis.CORRECTED_tiger_simulation_borrowing_20pc]
+    tool = 'pylotiger'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_20pc'
+
+    [analysis.TIGER_simulation_borrowing_dialect_chain]
+    tool = 'tiger-calculator'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_dialect_chain'
+
+    [analysis.CORRECTED_tiger_simulation_borrowing_dialect_chain]
+    tool = 'pylotiger'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_dialect_chain'
+
+    [analysis.TIGER_simulation_borrowing_swamp]
+    tool = 'tiger-calculator'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_swamp'
+
+    [analysis.CORRECTED_tiger_simulation_borrowing_swamp]
+    tool = 'pylotiger'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_swamp'
+
+    [analysis.increasedsingletons_TIGER_0]
+    tool = 'tiger-calculator'
+    model = ''
+    details = 'increased singletons proportion = 0.000000'
+    data = '@data.uralex'
+
+    [analysis.increasedsingletons_TIGER_02]
+    tool = 'tiger-calculator'
+    model = ''
+    details = 'increased singletons proportion = 0.200000'
+    data = '@data.uralex'
+
+    [analysis.increasedsingletons_TIGER_04]
+    tool = 'tiger-calculator'
+    model = ''
+    details = 'increased singletons proportion = 0.400000'
+    data = '@data.uralex'
+
+    [analysis.increasedsingletons_TIGER_06]
+    tool = 'tiger-calculator'
+    model = ''
+    details = 'increased singletons proportion = 0.600000'
+    data = '@data.uralex'
+
+    [analysis.increasedsingletons_TIGER_08]
+    tool = 'tiger-calculator'
+    model = ''
+    details = 'increased singletons proportion = 0.800000'
+    data = '@data.uralex'
+
+    [analysis.increasedsingletons_CORRECTED_0]
+    tool = 'pylotiger'
+    model = ''
+    details = 'increased singletons proportion = 0.000000'
+    data = '@data.uralex'
+
+    [analysis.increasedsingletons_CORRECTED_02]
+    tool = 'pylotiger'
+    model = ''
+    details = 'increased singletons proportion = 0.200000'
+    data = '@data.uralex'
+
+    [analysis.increasedsingletons_CORRECTED_04]
+    tool = 'pylotiger'
+    model = ''
+    details = 'increased singletons proportion = 0.400000'
+    data = '@data.uralex'
+
+    [analysis.increasedsingletons_CORRECTED_06]
+    tool = 'pylotiger'
+    model = ''
+    details = 'increased singletons proportion = 0.600000'
+    data = '@data.uralex'
+
+    [analysis.increasedsingletons_CORRECTED_08]
+    tool = 'pylotiger'
+    model = ''
+    details = 'increased singletons proportion = 0.800000'
+    data = '@data.uralex'
+
+    [analysis.increasedinvariants_TIGER_0]
+    tool = 'tiger-calculator'
+    model = ''
+    details = 'increased invariants proportion = 0.000000'
+    data = '@data.uralex'
+
+    [analysis.increasedinvariants_TIGER_02]
+    tool = 'tiger-calculator'
+    model = ''
+    details = 'increased invariants proportion = 0.200000'
+    data = '@data.uralex'
+
+    [analysis.increasedinvariants_TIGER_04]
+    tool = 'tiger-calculator'
+    model = ''
+    details = 'increased invariants proportion = 0.400000'
+    data = '@data.uralex'
+
+    [analysis.increasedinvariants_TIGER_06]
+    tool = 'tiger-calculator'
+    model = ''
+    details = 'increased invariants proportion = 0.600000'
+    data = '@data.uralex'
+
+    [analysis.increasedinvariants_TIGER_08]
+    tool = 'tiger-calculator'
+    model = ''
+    details = 'increased invariants proportion = 0.800000'
+    data = '@data.uralex'
+
+    [analysis.increasedinvariants_CORRECTED_0]
+    tool = 'pylotiger'
+    model = ''
+    details = 'increased invariants proportion = 0.000000'
+    data = '@data.uralex'
+
+    [analysis.increasedinvariants_CORRECTED_02]
+    tool = 'pylotiger'
+    model = ''
+    details = 'increased invariants proportion = 0.200000'
+    data = '@data.uralex'
+
+    [analysis.increasedinvariants_CORRECTED_04]
+    tool = 'pylotiger'
+    model = ''
+    details = 'increased invariants proportion = 0.400000'
+    data = '@data.uralex'
+
+    [analysis.increasedinvariants_CORRECTED_06]
+    tool = 'pylotiger'
+    model = ''
+    details = 'increased invariants proportion = 0.600000'
+    data = '@data.uralex'
+
+    [analysis.increasedinvariants_CORRECTED_08]
+    tool = 'pylotiger'
+    model = ''
+    details = 'increased invariants proportion = 0.800000'
+    data = '@data.uralex'
+
+    [analysis.comparison_TIGER_uralex]
+    tool = 'tiger-calculator'
+    model = ''
+    details = ''
+    data = '@data.uralex'
+
+    [analysis.comparison_CORRECTED_uralex]
+    tool = 'pylotiger'
+    model = ''
+    details = ''
+    data = '@data.uralex'
+
+    [analysis.comparison_delta_uralex]
+    tool = 'phylogemetric'
+    model = ''
+    details = ''
+    data = '@data.uralex'
+
+    [analysis.comparison_TIGER_dravidian]
+    tool = 'tiger-calculator'
+    model = ''
+    details = ''
+    data = '@data.dravidian'
+
+    [analysis.comparison_CORRECTED_dravidian]
+    tool = 'pylotiger'
+    model = ''
+    details = ''
+    data = '@data.dravidian'
+
+    [analysis.comparison_delta_dravidian]
+    tool = 'phylogemetric'
+    model = ''
+    details = ''
+    data = '@data.dravidian'
+
+    [analysis.comparison_TIGER_mixezoquean]
+    tool = 'tiger-calculator'
+    model = ''
+    details = ''
+    data = '@data.mixezoquean'
+
+    [analysis.comparison_CORRECTED_mixezoquean]
+    tool = 'pylotiger'
+    model = ''
+    details = ''
+    data = '@data.mixezoquean'
+
+    [analysis.comparison_delta_mixezoquean]
+    tool = 'phylogemetric'
+    model = ''
+    details = ''
+    data = '@data.mixezoquean'
+
+    [analysis.comparison_TIGER_aslian]
+    tool = 'tiger-calculator'
+    model = ''
+    details = ''
+    data = '@data.aslian'
+
+    [analysis.comparison_CORRECTED_aslian]
+    tool = 'pylotiger'
+    model = ''
+    details = ''
+    data = '@data.aslian'
+
+    [analysis.comparison_delta_aslian]
+    tool = 'phylogemetric'
+    model = ''
+    details = ''
+    data = '@data.aslian'
+
+    [analysis.comparison_TIGER_semitic]
+    tool = 'tiger-calculator'
+    model = ''
+    details = ''
+    data = '@data.semitic'
+
+    [analysis.comparison_CORRECTED_semitic]
+    tool = 'pylotiger'
+    model = ''
+    details = ''
+    data = '@data.semitic'
+
+    [analysis.comparison_delta_semitic]
+    tool = 'phylogemetric'
+    model = ''
+    details = ''
+    data = '@data.semitic'
+
+    [analysis.comparison_TIGER_japonic]
+    tool = 'tiger-calculator'
+    model = ''
+    details = ''
+    data = '@data.japonic'
+
+    [analysis.comparison_CORRECTED_japonic]
+    tool = 'pylotiger'
+    model = ''
+    details = ''
+    data = '@data.japonic'
+
+    [analysis.comparison_delta_japonic]
+    tool = 'phylogemetric'
+    model = ''
+    details = ''
+    data = '@data.japonic'
+
+    [analysis.comparison_TIGER_palaung]
+    tool = 'tiger-calculator'
+    model = ''
+    details = ''
+    data = '@data.palaung'
+
+    [analysis.comparison_CORRECTED_palaung]
+    tool = 'pylotiger'
+    model = ''
+    details = ''
+    data = '@data.palaung'
+
+    [analysis.comparison_delta_palaung]
+    tool = 'phylogemetric'
+    model = ''
+    details = ''
+    data = '@data.palaung'
+
+
+
+    
+    

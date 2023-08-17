@@ -9,6 +9,7 @@ beast,https://beast.community
 beast2,http://www.beast2.org/
 caper,R package caper
 corHMM,
+custom,Custom tool
 geiger,
 GenGIS,
 hisse,R package hisse
@@ -42,6 +43,7 @@ splitdist,http://birc.au.dk/software/splitdist/
 splitstree,http://www.splitstree.org/
 starling,
 structure,
+tiger-calculator,https://github.com/kasyrj/tiger-calculator
 tnt,
 traitlab,https://sites.google.com/site/traitlab/
 unknown,?

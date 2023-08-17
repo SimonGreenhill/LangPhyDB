@@ -1,0 +1,265 @@
+title = "Crouching TIGER, hidden structure: Exploring the nature of linguistic data using TIGER values"
+
+doi = "10.1093/jole/lzab004"
+
+abstract = """
+In recent years, techniques such as Bayesian inference of phylogeny have become a standard part of the
+quantitative linguistic toolkit. While these tools successfully model the tree-like component of a linguistic
+dataset, real-world datasets generally include a combination of tree-like and nontree-like signals. Alongside
+developing techniques for modeling nontree-like data, an important requirement for future quantitative work is to
+build a principled understanding of this structural complexity of linguistic datasets. Some techniques exist for
+exploring the general structure of a linguistic dataset, such as NeighborNets, d scores, and Q-residuals;
+however, these methods are not without limitations or drawbacks. In general, the question of what kinds of
+historical structure a linguistic dataset can contain and how these might be detected or measured remains
+critically underexplored from an objective, quantitative perspective. In this article, we propose TIGER values, a
+metric that estimates the internal consistency of a genetic dataset, as an additional metric for assessing how
+tree-like a linguistic dataset is. We use TIGER values to explore simulated language data ranging from very
+tree-like to completely unstructured, and also use them to analyze a cognate-coded basic vocabulary dataset of
+Uralic languages. As a point of comparison for the TIGER values, we also explore the same data using d scores,
+Q-residuals, and NeighborNets. Our results suggest that TIGER values are capable of both ranking tree-like
+datasets according to their degree of treelikeness, as well as distinguishing datasets with tree-like structure
+from datasets with a nontree-like structure. Consequently, we argue that TIGER values serve as a useful metric
+for measuring the historical heterogeneity of datasets. Our results also highlight the complexities in measuring
+treelikeness from linguistic data, and how the metrics approach this question from different perspectives.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Kaj Syrjänen",
+    "Luke Maurits",
+    "Unni Leino",
+    "Terhi Honkola",
+    "Jadranka Rota",
+    "Outi Vesakoski",
+]
+
+# parts of the world
+groups = ['Uralic']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Syrjaenen2021"
+
+# type of study
+type = ['methodological', 'tiger', 'qresidual', 'delta']
+
+# short description of the study, one line.
+description = "Applies a metric TIGER to Uralic languages with a simulation study of the effectiveness"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.uralic]
+    ntaxa = 26
+    nchars = 313
+    nsites = 313
+    datatype = 'lexical cognates'
+    source = '@UraLex'
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+
+    [analysis.simulation_borrowing_5pc]
+    tool = 'custom'
+    model = ''
+    details = 'simulated data with 5% of datapoints at most being borrowed'
+
+    [analysis.simulation_borrowing_10pc]
+    tool = 'custom'
+    model = ''
+    details = 'simulated data with 10% of datapoints at most being borrowed'
+
+    [analysis.simulation_borrowing_15pc]
+    tool = 'custom'
+    model = ''
+    details = 'simulated data with 15% of datapoints at most being borrowed'
+
+    [analysis.simulation_borrowing_20pc]
+    tool = 'custom'
+    model = ''
+    details = 'simulated data with 20% of datapoints at most being borrowed'
+
+    [analysis.simulation_borrowing_dialect_chain]
+    tool = 'custom'
+    model = ''
+    details = 'simulated data to mimic a dialect chain'
+
+    [analysis.simulation_borrowing_swamp]
+    tool = 'custom'
+    model = ''
+    details = 'simulated data to be unstructured signal (i.e. a "swamp")'
+
+    [analysis.tiger_uralex]
+    tool = 'tiger-calculator'
+    model = ''
+    details = ''
+    data = '@data.uralex'
+    
+    [analysis.delta_uralex]
+    tool = 'phylogemetric'
+    model = ''
+    details = ''
+    data = '@data.uralex'
+    
+    [analysis.qresidual_uralex]
+    tool = 'phylogemetric'
+    model = ''
+    details = ''
+    data = '@data.uralex'
+    
+    [analysis.neighbornet_uralex]
+    tool = 'splitstree'
+    model = ''
+    details = ''
+    data = '@data.uralex'
+    
+    [analysis.tiger_simulation_borrowing_5pc]
+    tool = 'tiger-calculator'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_5pc'
+    
+    [analysis.delta_simulation_borrowing_5pc]
+    tool = 'phylogemetric'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_5pc'
+    
+    [analysis.qresidual_simulation_borrowing_5pc]
+    tool = 'phylogemetric'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_5pc'
+    
+    [analysis.neighbornet_simulation_borrowing_5pc]
+    tool = 'splitstree'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_5pc'
+    
+    [analysis.tiger_simulation_borrowing_10pc]
+    tool = 'tiger-calculator'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_10pc'
+    
+    [analysis.delta_simulation_borrowing_10pc]
+    tool = 'phylogemetric'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_10pc'
+    
+    [analysis.qresidual_simulation_borrowing_10pc]
+    tool = 'phylogemetric'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_10pc'
+    
+    [analysis.neighbornet_simulation_borrowing_10pc]
+    tool = 'splitstree'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_10pc'
+    
+    [analysis.tiger_simulation_borrowing_15pc]
+    tool = 'tiger-calculator'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_15pc'
+    
+    [analysis.delta_simulation_borrowing_15pc]
+    tool = 'phylogemetric'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_15pc'
+    
+    [analysis.qresidual_simulation_borrowing_15pc]
+    tool = 'phylogemetric'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_15pc'
+    
+    [analysis.neighbornet_simulation_borrowing_15pc]
+    tool = 'splitstree'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_15pc'
+    
+    [analysis.tiger_simulation_borrowing_20pc]
+    tool = 'tiger-calculator'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_20pc'
+    
+    [analysis.delta_simulation_borrowing_20pc]
+    tool = 'phylogemetric'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_20pc'
+    
+    [analysis.qresidual_simulation_borrowing_20pc]
+    tool = 'phylogemetric'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_20pc'
+    
+    [analysis.neighbornet_simulation_borrowing_20pc]
+    tool = 'splitstree'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_20pc'
+    
+    [analysis.tiger_simulation_borrowing_dialect_chain]
+    tool = 'tiger-calculator'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_dialect_chain'
+    
+    [analysis.delta_simulation_borrowing_dialect_chain]
+    tool = 'phylogemetric'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_dialect_chain'
+
+    [analysis.qresidual_simulation_borrowing_dialect_chain]
+    tool = 'phylogemetric'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_dialect_chain'
+    
+    [analysis.neighbornet_simulation_borrowing_dialect_chain]
+    tool = 'splitstree'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_dialect_chain'
+    
+    [analysis.tiger_simulation_borrowing_swamp]
+    tool = 'tiger-calculator'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_swamp'
+    
+    [analysis.delta_simulation_borrowing_swamp]
+    tool = 'phylogemetric'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_swamp'
+    
+    [analysis.qresidual_simulation_borrowing_swamp]
+    tool = 'phylogemetric'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_swamp'
+    
+    [analysis.neighbornet_simulation_borrowing_swamp]
+    tool = 'splitstree'
+    model = ''
+    details = ''
+    data = '@analysis.simulation_borrowing_swamp'
+    
+

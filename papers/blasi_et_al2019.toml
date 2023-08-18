@@ -1,0 +1,581 @@
+title = "Human sound systems are shaped by post-Neolithic changes in bite configuration"
+
+doi = "10.1126/science.aav3218"
+
+abstract = """
+Linguistic diversity, now and in the past, is widely regarded to be independent of biological changes that took
+place after the emergence of Homo sapiens We show converging evidence from paleoanthropology, speech biomechanics,
+ethnography, and historical linguistics that labiodental sounds (such as "f" and "v") were innovated after the
+Neolithic. Changes in diet attributable to food-processing technologies modified the human bite from an
+edge-to-edge configuration to one that preserves adolescent overbite and overjet into adulthood. This change
+favored the emergence and maintenance of labiodentals. Our findings suggest that language is shaped not only by
+the contingencies of its history, but also by culturally induced changes in human biology.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Damián E. Blasi", "Steven Moran", "Scott R. Moisik", "Paul Widmer", "Dan Dediu", "Balthasar Bickel"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Blasi_2019"
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Effect of farming on phonology"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.phonemes]
+    ntaxa = 53
+    nchars = 10
+    nsites = 10
+    datatype = 'phonetic traits'
+    source = ''
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.bouckaert]
+    source = '@Bouckaert2012'
+    comment = ''
+
+    [phylogenies.chang]
+    source = '@Chang2015'
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+
+    [analysis.bayestraits_ml_phylogenies.bouckaert_ER_w]
+    tool = 'bayestraits'
+    model = 'discrete ml ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.bouckaert_ARD_w]
+    tool = 'bayestraits'
+    model = 'discrete ml ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.bouckaert_ER_w]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.bouckaert_ARD_w]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.bouckaert_ER_p]
+    tool = 'bayestraits'
+    model = 'discrete ml ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.bouckaert_ARD_p]
+    tool = 'bayestraits'
+    model = 'discrete ml ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.bouckaert_ER_p]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.bouckaert_ARD_p]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.bouckaert_ER_dh]
+    tool = 'bayestraits'
+    model = 'discrete ml ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.bouckaert_ARD_dh]
+    tool = 'bayestraits'
+    model = 'discrete ml ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.bouckaert_ER_dh]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.bouckaert_ARD_dh]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.bouckaert_ER_m]
+    tool = 'bayestraits'
+    model = 'discrete ml ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.bouckaert_ARD_m]
+    tool = 'bayestraits'
+    model = 'discrete ml ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.bouckaert_ER_m]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.bouckaert_ARD_m]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.bouckaert_ER_kw]
+    tool = 'bayestraits'
+    model = 'discrete ml ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.bouckaert_ARD_kw]
+    tool = 'bayestraits'
+    model = 'discrete ml ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.bouckaert_ER_kw]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.bouckaert_ARD_kw]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.bouckaert_ER_gwh]
+    tool = 'bayestraits'
+    model = 'discrete ml ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.bouckaert_ARD_gwh]
+    tool = 'bayestraits'
+    model = 'discrete ml ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.bouckaert_ER_gwh]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.bouckaert_ARD_gwh]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.bouckaert_ER_kj]
+    tool = 'bayestraits'
+    model = 'discrete ml ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.bouckaert_ARD_kj]
+    tool = 'bayestraits'
+    model = 'discrete ml ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.bouckaert_ER_kj]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.bouckaert_ARD_kj]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.bouckaert_ER_b]
+    tool = 'bayestraits'
+    model = 'discrete ml ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.bouckaert_ARD_b]
+    tool = 'bayestraits'
+    model = 'discrete ml ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.bouckaert_ER_b]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.bouckaert_ARD_b]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.bouckaert_ER_bh]
+    tool = 'bayestraits'
+    model = 'discrete ml ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.bouckaert_ARD_bh]
+    tool = 'bayestraits'
+    model = 'discrete ml ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.bouckaert_ER_bh]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.bouckaert_ARD_bh]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.bouckaert_ER_gw]
+    tool = 'bayestraits'
+    model = 'discrete ml ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.bouckaert_ARD_gw]
+    tool = 'bayestraits'
+    model = 'discrete ml ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.bouckaert_ER_gw]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.bouckaert_ARD_gw]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.chang_ER_w]
+    tool = 'bayestraits'
+    model = 'discrete ml ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.chang_ARD_w]
+    tool = 'bayestraits'
+    model = 'discrete ml ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.chang_ER_w]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.chang_ARD_w]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.chang_ER_p]
+    tool = 'bayestraits'
+    model = 'discrete ml ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.chang_ARD_p]
+    tool = 'bayestraits'
+    model = 'discrete ml ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.chang_ER_p]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.chang_ARD_p]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.chang_ER_dh]
+    tool = 'bayestraits'
+    model = 'discrete ml ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.chang_ARD_dh]
+    tool = 'bayestraits'
+    model = 'discrete ml ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.chang_ER_dh]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.chang_ARD_dh]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.chang_ER_m]
+    tool = 'bayestraits'
+    model = 'discrete ml ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.chang_ARD_m]
+    tool = 'bayestraits'
+    model = 'discrete ml ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.chang_ER_m]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.chang_ARD_m]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.chang_ER_kw]
+    tool = 'bayestraits'
+    model = 'discrete ml ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.chang_ARD_kw]
+    tool = 'bayestraits'
+    model = 'discrete ml ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.chang_ER_kw]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.chang_ARD_kw]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.chang_ER_gwh]
+    tool = 'bayestraits'
+    model = 'discrete ml ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.chang_ARD_gwh]
+    tool = 'bayestraits'
+    model = 'discrete ml ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.chang_ER_gwh]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.chang_ARD_gwh]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.chang_ER_kj]
+    tool = 'bayestraits'
+    model = 'discrete ml ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.chang_ARD_kj]
+    tool = 'bayestraits'
+    model = 'discrete ml ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.chang_ER_kj]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.chang_ARD_kj]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.chang_ER_b]
+    tool = 'bayestraits'
+    model = 'discrete ml ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.chang_ARD_b]
+    tool = 'bayestraits'
+    model = 'discrete ml ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.chang_ER_b]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.chang_ARD_b]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.chang_ER_bh]
+    tool = 'bayestraits'
+    model = 'discrete ml ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.chang_ARD_bh]
+    tool = 'bayestraits'
+    model = 'discrete ml ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.chang_ER_bh]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.chang_ARD_bh]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.chang_ER_gw]
+    tool = 'bayestraits'
+    model = 'discrete ml ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_ml_phylogenies.chang_ARD_gw]
+    tool = 'bayestraits'
+    model = 'discrete ml ARD'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.chang_ER_gw]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ER'
+    details = ""
+    data = ""
+    [analysis.bayestraits_mcmc_phylogenies.chang_ARD_gw]
+    tool = 'bayestraits'
+    model = 'discrete mcmc ARD'
+    details = ""
+    data = ""
+
+    [analysis.simmap_phylogenies.bouckaert_w]
+    tool = 'phytools'
+    model = 'simmap'
+    details = "best fitting model from Bayestraits"
+    data = ""
+
+    [analysis.simmap_phylogenies.bouckaert_gwh]
+    tool = 'phytools'
+    model = 'simmap'
+    details = "best fitting model from Bayestraits"
+    data = ""
+
+    [analysis.simmap_phylogenies.bouckaert_kj]
+    tool = 'phytools'
+    model = 'simmap'
+    details = "best fitting model from Bayestraits"
+    data = ""
+
+    [analysis.simmap_phylogenies.bouckaert_kw]
+    tool = 'phytools'
+    model = 'simmap'
+    details = "best fitting model from Bayestraits"
+    data = ""
+
+    [analysis.simmap_phylogenies.bouckaert_p]
+    tool = 'phytools'
+    model = 'simmap'
+    details = "best fitting model from Bayestraits"
+    data = ""
+
+    [analysis.simmap_phylogenies.bouckaert_m]
+    tool = 'phytools'
+    model = 'simmap'
+    details = "best fitting model from Bayestraits"
+    data = ""
+
+    [analysis.simmap_phylogenies.bouckaert_b]
+    tool = 'phytools'
+    model = 'simmap'
+    details = "best fitting model from Bayestraits"
+    data = ""
+
+    [analysis.simmap_phylogenies.bouckaert_dh]
+    tool = 'phytools'
+    model = 'simmap'
+    details = "best fitting model from Bayestraits"
+    data = ""
+
+    [analysis.simmap_phylogenies.bouckaert_bh]
+    tool = 'phytools'
+    model = 'simmap'
+    details = "best fitting model from Bayestraits"
+    data = ""
+
+    [analysis.simmap_phylogenies.bouckaert_gw]
+    tool = 'phytools'
+    model = 'simmap'
+    details = "best fitting model from Bayestraits"
+    data = ""
+
+    [analysis.simmap_phylogenies.chang_w]
+    tool = 'phytools'
+    model = 'simmap'
+    details = "best fitting model from Bayestraits"
+    data = ""
+
+    [analysis.simmap_phylogenies.chang_gwh]
+    tool = 'phytools'
+    model = 'simmap'
+    details = "best fitting model from Bayestraits"
+    data = ""
+
+    [analysis.simmap_phylogenies.chang_kj]
+    tool = 'phytools'
+    model = 'simmap'
+    details = "best fitting model from Bayestraits"
+    data = ""
+
+    [analysis.simmap_phylogenies.chang_kw]
+    tool = 'phytools'
+    model = 'simmap'
+    details = "best fitting model from Bayestraits"
+    data = ""
+
+    [analysis.simmap_phylogenies.chang_p]
+    tool = 'phytools'
+    model = 'simmap'
+    details = "best fitting model from Bayestraits"
+    data = ""
+
+    [analysis.simmap_phylogenies.chang_m]
+    tool = 'phytools'
+    model = 'simmap'
+    details = "best fitting model from Bayestraits"
+    data = ""
+
+    [analysis.simmap_phylogenies.chang_b]
+    tool = 'phytools'
+    model = 'simmap'
+    details = "best fitting model from Bayestraits"
+    data = ""
+
+    [analysis.simmap_phylogenies.chang_dh]
+    tool = 'phytools'
+    model = 'simmap'
+    details = "best fitting model from Bayestraits"
+    data = ""
+
+    [analysis.simmap_phylogenies.chang_bh]
+    tool = 'phytools'
+    model = 'simmap'
+    details = "best fitting model from Bayestraits"
+    data = ""
+
+    [analysis.simmap_phylogenies.chang_gw]
+    tool = 'phytools'
+    model = 'simmap'
+    details = "best fitting model from Bayestraits"
+    data = ""
+
+

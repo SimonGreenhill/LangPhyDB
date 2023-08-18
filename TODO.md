@@ -21,7 +21,6 @@
 * Hübler and Greenhill 2023 -
 * Jäger, G., & Wahle, J. (2021). Phylogenetic Typology. Frontiers in Psychology, 12. https://doi.org/10.3389/fpsyg.2021.682132
 * Kassian, Alexei. 2015. Towards a formal genealogical classification of the Lezgian languages (North Caucasus): Testing various phylogenetic methods on lexical data. PLoS ONE 10(2): e0116950. doi:10.1371/journal.pone.0116950.
-* Kassian, A. S., Zhivlov, M., Starostin, G., Trofimov, A. A., Kocharov, P. A., Kuritsyna, A., & Saenko, M. N. (2021). Rapid radiation of the inner Indo-European languages: an advanced approach to Indo-European lexicostatistics. Linguistics, 59(4), 949–979. https://doi.org/10.1515/ling-2020-0060
 * Maurits, L., & Griffiths, T. L. (2014). Tracing the roots of syntax with Bayesian phylogenetics. Proceedings of the National Academy of Sciences, 111(37), 13576–13581. https://doi.org/10.1073/pnas.1319042111
 * McMahon A, McMahon R. 2006 Why linguists don’t do dates: Evidence from Indo-European and Australian languages. In Phylogenetic methods and the prehistory of languages (eds P Forster, C Renfrew), pp. 153–160. McDonald Institute for Archaeological Research: Cambridge. 
 * Nakhleh, D. Ringe, and T. Warnow, 2005. "Perfect Phylogenetic Networks: A New Methodology for Reconstructing the Evolutionary History of Natural Languages." Language, 81(2):382-420,.
@@ -34,7 +33,7 @@
 * Rama, Taraka. 2018. Three tree priors and five datasets: A study of Indo-European phylogenetics
 * Ritchie, Andrew M.; and Simon Y W Ho. 2019. Influence of the tree prior and sampling scale on Bayesian phylogenetic estimates of the origin times of language families. Journal of Language Evolution 4.108–123. doi:10.1093/jole/lzz005.
 * Smith & Rama, 2021. Environmental factors affect the evolution of linguistic subgroups in Borneo, Diachronica. http://dx.doi.org/10.17613/v31m-0w40
-* Verkerk, A. (2014). Diachronic change in Indo-European motion event encoding. Journal of Historical Linguistics, 4(1), 40–83. Portico. https://doi.org/10.1075/jhl.4.1.02ver
+* Verkerk, A. (2014). Diachronic change in Indo-European motion event encoding. Journal of Historical Linguistics, 4(1), 40–83. https://doi.org/10.1075/jhl.4.1.02ver
 * Warnow, D. Ringe, and A. Taylor, 1995 "Reconstructing the evolutionary history of natural languages." IRCS Report 95-16. Philadelphia 1995): Institute for Research in Cognitive Science, University of Pennsylvania. Technical report, 18 pp. 	
 * Wichmann, Søren, Eric W. Holman, Taraka Rama, and Robert S. Walker. 2011. Correlates of reticulation in linguistic phylogenies. Language Dynamics and Change 1: 205-240.
 * Yanovich, Igor. 2020. Phylogenetic linguistic evidence and the Dene-Yeniseian homeland. Diachronica 37.410–446. doi:10.1075/dia.17038.yan.

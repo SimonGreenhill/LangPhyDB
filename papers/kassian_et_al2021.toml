@@ -18,7 +18,7 @@ authors = [
 ]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Indo-European']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Kassian2021"  # @xxxx
@@ -27,15 +27,15 @@ bibkey = "@Kassian2021"  # @xxxx
 type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
 
 # short description of the study, one line.
-description = ""
+description = "Reconstruction of Indo-European"
 
 # data
 [data]
 
     notes = ""
 
-    [data.lezgian]
-    ntaxa = 20
+    [data.gled]
+    ntaxa = 13
     nchars = 110
     nsites = "?"
     datatype = 'lexical cognates'
@@ -43,23 +43,130 @@ description = ""
     items = ''
     comment = ''
 
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
+    [data.gled_stage1]
+    ntaxa = 13
+    nchars = 110
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@GLED'
+    items = ''
+    comment = 'Stage-1. High-quality dataset with traditional root cognacy.'
+
+    [data.gled_stage2]
+    ntaxa = 13
+    nchars = 110
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@GLED'
+    items = ''
+    comment = 'Stage-2. Dataset without derivational drift.'
+    
+    [data.gled_stage3]
+    ntaxa = 13
+    nchars = 110
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@GLED'
+    items = ''
+    comment = 'Stage-3. Homoplasy-optimized dataset'
 
 
+
+        
 # date calibrations
 [calibrations]
 
     notes = ""
 
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
+    [calibration.OldHittite]
+    taxa = ['hitt1242']
+    age = "uniform(3600, 3450)"
+    units = "ybp" 
+    description = "OldHittite	1650–1500 bc	1550 bc"
+
+    [calibration.TocharianB]
+    taxa = ['tokh1243']
+    age = "uniform(1550, 1050)"
+    units = "ybp" 
+    description = "TocharianB	400–900 ad	650 ad"
+
+    [calibration.AncientAtticGreek]
+    taxa = ['anci1242']
+    age = "2325"
+    units = "ybp" 
+    description = "AncientAtticGreek	375 bc	375 bc"
+
+    [calibration.ClassicalArmenian]
+    taxa = ['clas1249']
+    age = "uniform(1550, 1450)"
+    units = "ybp" 
+    description = "ClassicalArmenian	400–500 ad	450 ad"
+
+    [calibration.Albanian]
+    taxa = ['alba1267']
+    age = "0"
+    units = "ybp" 
+    description = "Albanian	1950 ad	1950 ad"
+
+    [calibration.ArchaicLatin]
+    taxa = ["lati1261"]
+    age = "2150"
+    units = "ybp" 
+    description = "ArchaicLatin	200 bc	200 bc"
+
+    [calibration.OldIrish]
+    taxa = ["oldi1245"]
+    age = "uniform(1250, 1050)"
+    units = "ybp" 
+    description = "OldIrish	700–900 ad	800 ad"
+
+    [calibration.Proto-Brittonic]
+    taxa = ['bryt1239']
+    age = "uniform(1650, 1350)"
+    units = "ybp" 
+    description = "Proto-Brittonic	300–600 ad	450 ad"
+
+    [calibration.Proto-Germanic]
+    taxa = ['germ1287']
+    age = "uniform(2450, 2250)"
+    units = "ybp" 
+    description = "Proto-Germanic	500–300 bc	400 bc"
+
+    [calibration.Proto-Slavic]
+    taxa = ['slav1255']
+    age = "uniform(1949, 1650)"
+    units = "ybp" 
+    description = "Proto-Slavic	1–300 ad	100 ad"
+
+    [calibration.Proto-EastBaltic]
+    taxa = ['east2280']
+    age = "uniform(2350, 1951)"
+    units = "ybp" 
+    description = "Proto-EastBaltic	400–1 bc	200 bc"
+
+    [calibration.OldIndicAtharvaveda]
+    taxa = ['sans1269']
+    age = "uniform(3150, 2950)"
+    units = "ybp" 
+    description = "OldIndicAtharvaveda	1200–1000 bc	1100 bc"
+
+    [calibration.Proto-Iranian]
+    taxa = ['iran1269']
+    age = "uniform(3450, 2950)"
+    units = "ybp" 
+    description = "Proto-Iranian	1500–1000 bc	1300 bc"
+
+    [calibration.Proto-Samoyed]
+    taxa = ['samo1298']
+    age = "uniform(2900, 2700)"
+    units = "ybp" 
+    description = "Proto-Samoyed	950–750 bc	800 bc"
+
+    [calibration.Proto-Indo-European]
+    taxa = ['indo1319']
+    age = "uniform(5450, 10450)"
+    units = "ybp" 
+    description = "Proto-Indo-European	3500–8500 bc"
 
 
 # analysis information
@@ -67,25 +174,119 @@ description = ""
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
+    [analysis.tree_nj_gled_stage1]
+    tool = 'starling'
+    model = 'StarlingNJ'
+    details = ""
+    data = "@data.gled_stage1"
+
+    [analysis.tree_bayesian_gled_stage1]
+    tool = 'mrbayes'
+    model = 'F81+covarion+gamma+restriction+relaxedTK02'
+    details = ""
+    data = "@data.gled_stage1"
+
+    [analysis.tree_parsimony_gled_stage1]
+    tool = 'tnt'
     model = ''
     details = ""
+    data = "@data.gled_stage1"
+
+    [analysis.tree_nj_gled_stage2]
+    tool = 'starling'
+    model = 'StarlingNJ'
+    details = ""
+    data = "@data.gled_stage2"
+
+    [analysis.tree_bayesian_gled_stage2]
+    tool = 'mrbayes'
+    model = 'F81+covarion+gamma+restriction+relaxedTK02'
+    details = ""
+    data = "@data.gled_stage2"
+
+    [analysis.tree_parsimony_gled_stage2]
+    tool = 'tnt'
+    model = ''
+    details = ""
+    data = "@data.gled_stage2"
+
+    [analysis.tree_nj_gled_stage3]
+    tool = 'starling'
+    model = 'StarlingNJ'
+    details = ""
+    data = "@data.gled_stage3"
+
+    [analysis.tree_bayesian_gled_stage3]
+    tool = 'mrbayes'
+    model = 'F81+covarion+gamma+restriction+relaxedTK02'
+    details = ""
+    data = "@data.gled_stage3"
+
+    [analysis.tree_parsimony_gled_stage3]
+    tool = 'tnt'
+    model = ''
+    details = ""
+    data = "@data.gled_stage3"
+
+
 
 
 [inferredages]
     
     notes = ""
     
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
+    [inferredage.AnatolianSplit]
+    taxa = ["anat1257"]
+    age = "hpd(5636, 5400, 6089)"
+    units = "ybp" # ybp
+    notes = "Anatolian split-off (root): 4139–3450 bc (mean 3686 bc)"
+
+    [inferredage.TocharianSplit]
+    taxa = ["tokh1241"]
+    age = "hpd(4961, 4212, 5677)"
+    units = "ybp" # ybp
+    notes = "Tocharian split-off: 3727–2262 bc (mean 3011 bc)"
+
+    [inferredage.InnerIEBreakUp]
+    taxa = ["clas1257"]
+    age = "hpd(4667, 4112, 5307)"
+    units = "ybp" # ybp
+    notes = "Inner IE break-up: 3357–2162 bc (mean 2717 bc)"
+
+    [inferredage.GreekArmenianBreakUp]
+    taxa = ["grae1234", "arme1241"]
+    age = "hpd(3965, 3357, 4626)"
+    units = "ybp" # ybp
+    notes = "Greek-Armenian break-up: 2676–1407 bc (mean 2015 bc)"
+
+    [inferredage.ItalicGermanicCelticBreakUp]
+    taxa = ["ital1284", "germ1287", "celt1248"]
+    age = "hpd(4030, 3487, 4605)"
+    units = "ybp" # ybp
+    notes = "Italic-Germanic-Celtic break-up: 2655–1537 bc (mean 2080 bc)"
+
+    [inferredage.InsularCelticBreakUp]
+    taxa = ["insu1254"]
+    age = "hpd(2193, 1855, 2546)"
+    units = "ybp" # ybp
+    notes = "Insular Celtic break-up: 596bc–95 ad (mean 243 bc)"
+
+    [inferredage.BaltoSlavicIndoIranianBreakUp]
+    taxa = ["balt1263", "indo1320"]
+    age = "hpd(4191, 3740, 4673)"
+    units = "ybp" # ybp
+    notes = "Balto-Slavic–Indo-Iranian break-up: 2723–1790 bc (mean 2241 bc)"
+
+    [inferredage.BaltoSlavicBreakUp]
+    taxa = ["balt1263"]
+    age = "hpd(3200, 2805, 3636)"
+    units = "ybp" # ybp
+    notes = "Balto-Slavic break-up: 1686–855 bc (mean 1250 bc)"
+
+    [inferredage.IndoIranianBreakUp]
+    taxa = ["indo1320"]
+    age = "hpd(3690, 3408, 3994)"
+    units = "ybp" # ybp
+    notes = "Indo-Iranian break-up: 2044–1458 bc (mean 1740 bc)"
 
 
-[links]
-phlorest = { title = "Phlorest Dataset", link = "" }
-cldf = { title = "CLDF Dataset", link = "" }
-dplace = { title = "D-PLACE Dataset", link = "" }
-links = []

@@ -1,0 +1,115 @@
+title = "Methods: On the use of networks in the study of language contact"
+
+doi = "10.1075/z.211.04bak"
+
+abstract = """
+This chapter provides an overview of the phylogenetic models used in this
+book. In the introduction, we present the aims and limitations of the chapter
+and clarify some basic concepts. After presenting the steps of linguistic 
+phylogenetic analyses, we proceed to explain the different data types that are 
+examined in this book, such as lexical and typological features, and describe how
+these are coded. In the final sections, we discuss the resulting network and tree
+models and how to interpret the graphic representations built using linguistic
+data. In short, this chapter enables the reader to interpret the graphs and to as-
+sess the validity of the results.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Peter Bakker", "Eeva M. Sippola", "Finn Borchsenius"]
+
+# parts of the world
+groups = ['Creoles']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Bakker_2017"
+
+# type of study
+type = ['network', 'tutorial']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Overview of phylogenetic network methods applied to creoles"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.guaporemamore]
+    ntaxa = 24
+    nchars = 21
+    nsites = "?"
+    datatype = 'structural features'
+    source = '@Crevels2008'
+    items = ''
+    comment = 'Feature matrix for 21 properties of 24 Guaporé-Mamoré languages (Brazil, Bolivia), from Crevels & van der Voort (2008)'
+
+
+    [data.dutch]
+    ntaxa = 6
+    nchars = "?"
+    nsites = "?"
+    datatype = 'structural features'
+    source = '@Bakker2011'
+    items = ''
+    comment = ''
+
+    [data.creole]
+    ntaxa = 24
+    nchars = "?"
+    nsites = "?"
+    datatype = 'structural features'
+    source = '@Holm2007'
+    items = ''
+    comment = ''
+
+    [data.frenchcreole]
+    ntaxa = 13
+    nchars = "?"
+    nsites = "?"
+    datatype = 'structural features'
+    source = '@Daval_Markussen_2017c'
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.network1]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "@data.guaporemamore"
+
+    [analysis.network2a]
+    tool = 'splitstree'
+    model = 'split decomposition'
+    details = ""
+    data = "@data.dutch"
+
+    [analysis.network2b]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "@data.dutch"
+
+    [analysis.network3]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "creoles only (n=18)"
+    data = "@data.creole"
+    
+    [analysis.network4]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "full dataset"
+    data = "@data.creole"
+    
+    [analysis.network5]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "@data.frenchcreole"
+
+    

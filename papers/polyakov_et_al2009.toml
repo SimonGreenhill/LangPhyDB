@@ -1,0 +1,83 @@
+title = "Using {WALS} and Jazyki mira"
+
+doi = "10.1515/LITY.2009.008"
+
+abstract = """
+The article’s primary concern is to address the usage ofThe world atlas of language structures through comparing it
+with another typological database of similar scope, Jazyki mira. Such a comparison is carried out based ona set of
+criteria. First, the scope of the databases is compared, as well as their differences and similarities in
+structure, in the number of errors, and in the existing user interfaces. Then calculations of typological
+similarity and temporal stability of language features based on the data provided by bothdatabases are compared.
+Finally, conclusions are drawn as to the relative efficiency and usefulness of these databases for different aims
+of research or educational goals.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Vladimir N. Polyakov", "Valery D. Solovyev", "Søren Wichmann", "Oleg Belyaev"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Polyakov_2009"
+
+# type of study
+type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Comparison of WALS, Jazyki mira, and ASJP trees using Neighbor-Joining"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.asjp]
+    ntaxa = 38
+    nchars = 40
+    nsites = 1
+    datatype = 'lexical distance'
+    source = '@ASJP'
+    items = ''
+    comment = ''
+
+    [data.wals]
+    ntaxa = 38
+    nchars = "?"
+    nsites = "?"
+    datatype = 'structural features'
+    source = '@WALS'
+    items = ''
+    comment = ''
+    
+    [data.jazykimira]
+    ntaxa = 38
+    nchars = "?"
+    nsites = "?"
+    datatype = 'structural features'
+    source = '@JazykiMira'
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.asjp]
+    tool = 'splitstree'
+    model = 'nj'
+    details = ""
+    data = "@data.asjp"
+
+    [analysis.wals]
+    tool = 'splitstree'
+    model = 'nj'
+    details = ""
+    data = "@data.wals"
+
+    [analysis.jazykimira]
+    tool = 'splitstree'
+    model = 'nj'
+    details = ""
+    data = "@data.jazykimira"

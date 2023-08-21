@@ -1,0 +1,103 @@
+title = "Cognitive creolistics and semantic primes: A phylogenetic network analysis"
+
+doi = "10.1075/z.211.13lev"
+
+abstract = """
+This study presents a semantics-driven lexical comparison of 20 creole languages and
+five European lexifier languages. Breaking new ground into under-
+standing creole semantics, it utilizes insights from both cognitive semantics
+(in particular, the Natural Semantic Metalanguage approach) and phylogenetic
+approaches to linguistics comparisons. We provide an extensive study of label-meaning
+correlations as a way of exploring the relationship between word
+labels and word meanings across creoles and lexifiers. We conclude that creoles
+are not simply “versions” of their lexifier languages, and that it is misleading
+to say that creoles are “based” on European languages in their basic lexical-semantic
+configuration. At the same time, we find that creoles do relate more
+closely to their historical lexifiers than to other creoles, and that the lexical-semantic
+perspective adds a new dimension to the typology of creoles, nuancing
+the pictures from grammar-based comparisons.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Carsten Levisen", "Kristoffer Friis Bøegh"]
+
+# parts of the world
+groups = ['Creoles']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Levisen_2017"
+
+# type of study
+type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Creole networks from Natural Semantic Metalanguage primes."
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.nsm]
+    ntaxa = 25
+    nchars = "?"
+    nsites = "?"
+    datatype = 'semantic primes'
+    source = ''
+    items = ''
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.nnet1]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Network of contemporary Dutch, English, French, Portuguese and Spanish, based on mess analysis of semantic primes."
+    data = ""
+
+    [analysis.nnet2]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Network of English, English-related creoles, Dutch French, Spanish and Portuguese, based on mess analysis of semantic primes."
+    data = ""
+
+    [analysis.nnet3]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Network of English-related creoles based on mess analysis of semantic primes (highlighting an English-creole “core” cluster)."
+    data = ""
+
+    [analysis.nnet4]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Network of English and English-related creoles based on binary mess analysis of semantic primes."
+    data = ""
+
+    [analysis.nnet5]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Network based on mess analysis of semantic primes (Dutch-related creoles added)"
+    data = ""
+
+    [analysis.nnet6]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Network based on mess analysis of semantic primes (French-related creoles added)"
+    data = ""
+
+    [analysis.nnet7]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Network based on mess analysis of semantic primes (Iberoromance-related creoles added)."
+    data = ""
+
+    [analysis.nnet8]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Network of creoles based on mess analysis of semantic primes (lexifiers excluded)."
+    data = ""
+

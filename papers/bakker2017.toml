@@ -1,0 +1,98 @@
+title = "Dutch creoles compared with their lexifier"
+
+doi = "10.1075/z.211.10bak"
+
+abstract = """
+In this chapter, we compare lexical and grammatical data from three Dutch-based
+creoles: Virgin Islands Creole Dutch, Berbice Creole and Skepi Dutch
+of Guyana. We consider the lexicons, as well as phonological and typological
+patterns, and both synchronic and diachronic comparisons are made.
+Typologically, Berbice Creole appears closer to Dutch than the other two
+creoles, but lexically it is the farthest from Dutch. For some of the analyses,
+phylogenetic software was used to visualize connections and distances between
+each of the creoles and the lexifier Dutch. The conclusion is that the
+three creoles came into being independently. From a diachronic perspective,
+the documented forms of Virgin Islands Creole Dutch show mostly a gradual
+move away from Dutch and toward a more creole-like profile in the 20th
+century
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Peter Bakker"]
+
+# parts of the world
+groups = ['Creoles']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Bakker_2017b"
+
+# type of study
+type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Evaluation of the relationships between the Dutch creoles"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.phonotactics]
+    ntaxa = 6
+    nchars = "?"
+    nsites = "?"
+    datatype = 'phonetic traits'
+    source = ''
+    items = ''
+    comment = ''
+
+    [data.lexicon]
+    ntaxa = 6
+    nchars = 200
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.nnet1]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Comparison of lexicon of Skepi, Berbice Creole, and Virgin Islands Creole Dutch, based on etymologies of a word list with 211 items."
+    data = ""
+
+    [analysis.nnet2]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Phonotactic distances between final consonant clusters in Skepi, VICD and the two components of Berbice Creole"
+    data = ""
+    
+    [analysis.nnet3]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "General phonotactic distances between Skepi, VICD and the two components of Berbice Creole"
+    data = ""
+    
+    [analysis.nnet4]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "A network of Dutch, Berbice Creole, and three varieties of Virgin Islands Creole Dutch, based on typological data."
+    data = ""
+    
+    [analysis.nnet5]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Rooted tree with Dutch, three varieties of Virgin Islands Creole Dutch,and Berbice Creole, based on typological data."
+    data = ""
+
+    [analysis.nnet6]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "A network of structural properties of the Dutch creoles."
+    data = ""
+    

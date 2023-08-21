@@ -1,0 +1,28 @@
+title = "From basic to cultural semantics"
+
+doi = "10.1075/z.211.18lev"
+
+abstract = """
+In this section, I would like to sum up the main insights and achievements of the
+semantics section of the book (Chapters 13–15) and give suggestions for future
+work. I would also like to critically reflect on the limits, problems and obstacles
+for utilizing phylogenetic analysis, and at the same time highlight some of the
+promises, and potentials for integrating lexical and semantic evidence in the study
+of postcolonial linguistic communities.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Carsten Levisen"]
+
+# parts of the world
+groups = ['Creoles']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Levisen_2017d"
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Review of creole networks based on natural semantic metalanguage"
+

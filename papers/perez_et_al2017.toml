@@ -1,0 +1,87 @@
+title = "Afro-Hispanic varieties in comparison: New light from phylogeny"
+
+doi = "10.1075/z.211.12per"
+
+abstract = """
+This study examines the potential of phylogenetic analysis in the classification
+and comparison of Spanish contact varieties, with special focus on three Afro-Hispanic
+varieties spoken in South America. Our analysis is based on typological and dialectal
+comparative data. The results of the phylogenetic analysis show
+clear clusters of standard varieties and creole varieties, while the placement of
+other contact varieties in the network has to be interpreted in the light of the
+data collection methods and socio-historical information about the varieties
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Danae Perez", "Sandro Sessarego", "Eeva M. Sippola"]
+
+# parts of the world
+groups = ['Creoles']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Perez_2017"
+
+# type of study
+type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Network evaluation of the Afro-Hispanic Creoles"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.typological_sessarego]
+    ntaxa = 12
+    nchars = 72
+    nsites = 72
+    datatype = 'structural features'
+    source = ''
+    items = ''
+    comment = ''
+
+    [data.typological_perez]
+    ntaxa = 12
+    nchars = 72
+    nsites = 72
+    datatype = 'structural features'
+    source = ''
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.nnet1]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Afro-Hispanic varieties (dataset from Sessarego), standard varieties of Spanish, other Spanish dialects, and creoles in a 48-feature Neighbor-Net."
+    data = ""
+
+    [analysis.nnet2]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Afro-Hispanic varieties (datasets from Perez on Afro-Yungueño and Sessarego on Afro-Chinchano and Afro-Choteño) compared with standard varieties of Spanish, other Spanish dialects, and creoles in a 48-feature Neighbor-Net."
+    data = ""
+
+    [analysis.nnet3]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Sessarego’s data on Afro-Hispanic varieties compared with standard varieties of Spanish, other Spanish dialects, and creoles in a 72-feature Neighbor-Net."
+    data = ""
+
+    [analysis.nnet4]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Perez’s data on Afro-Yungueño compared with Sessarego’s Afro-Hispanic varieties, standard varieties of Spanish, other Spanish dialects, and creoles in a 72-feature Neighbor-Net."
+    data = ""
+
+    [analysis.nnet5]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Neighbor-Net network based on 72 features including three datasets on Afro-Yungueño, other Afro-Hispanic varieties, standard varieties of Spanish, creoles, and other Spanish dialects."
+    data = ""
+

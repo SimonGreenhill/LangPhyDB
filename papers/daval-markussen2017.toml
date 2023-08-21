@@ -1,0 +1,64 @@
+title = "The typology and classification of French-based creoles: A global perspective."
+
+doi = "10.1075/z.211.08dav"
+
+abstract = """
+The main aim of this chapter is to examine the internal relationships of several
+French-based creoles and to provide a classification of these languages, a problem
+that has been left unsolved (or only partially solved) by creolists so far. We show
+that the issue can be tackled with a phylogenetic approach based on a selection of
+lexical and structural features, resulting in suggestive patterns on the connections
+between the various creoles in the sample. An advantage in using phylogenetic
+methods is that it also allows us to assess the relative degree of divergence of a
+creole from its lexifier. Therefore, French was added to the sample of French-based
+creoles. The results obtained using this method are largely in accordance with previous
+attempts from various scholars and show that the application of phylogenetic
+tools to the study of contact languages can complement traditional methods
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Aymeric Daval-Markussen"]
+
+# parts of the world
+groups = ['Creoles']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Daval_Markussen_2017c"
+
+# type of study
+type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Evaluation of the relationships between the French-based creoles."
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.creoles]
+    ntaxa = 13
+    nchars = 66
+    nsites = 66
+    datatype = 'mixed'
+    source = ''
+    items = ''
+    comment = '66 lexical and grammatical features in 12 French-based creoles and in their lexifier, French'
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.network_1]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "creoles only"
+    data = ""
+
+    [analysis.network_2]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "full data"
+    data = ""

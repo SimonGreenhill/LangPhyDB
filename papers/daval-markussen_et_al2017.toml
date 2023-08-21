@@ -1,0 +1,101 @@
+title = "West African languages and creoles worldwide"
+
+doi = "10.1075/z.211.07dav"
+
+abstract = """
+In creole studies, there has been a long tradition of discussing the respective
+contributions of African languages in the genesis of creoles spoken primarily
+in the Atlantic and the Indian Oceans. Creolists have often assumed that the
+African languages that contributed to the creation of creoles were typologically
+rather uniform (e.g. Singler 1988). Very few studies have compared more than
+a handful of languages when searching for African influences in creoles (e.g.
+Parkvall 2000). In this chapter, we investigate the claim that the African languages
+involved in the colonial settings, and hence in the creation of various
+creole languages, were typologically homogeneous. Moreover, we assess the
+extent to which a selection of proposed stable features is shared (i) between cre-
+oles with and without African influence, (ii) between creoles and West African
+languages known to have influenced these creoles, and finally, (iii) between
+creoles and their lexifiers.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Aymeric Daval-Markussen", "Kristoffer Friis Bøegh", "Peter Bakker"]
+
+# parts of the world
+groups = ['Creoles']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Daval_Markussen_2017b"
+
+# type of study
+type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Network analysis of West African creoles"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.all]
+    ntaxa = 104
+    nchars = 42
+    nsites = 42
+    datatype = 'structural features'
+    source = '@Boegh2016;@WALS;@Bakker2011'
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.nnet_1]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "niger-congo subset"
+    data = ""
+
+    [analysis.nnet_2]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "African languages with our sample of lexifier languages."
+    data = ""
+
+    [analysis.nnet_3]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Neighbor-Net of 23 creoles and 46 Niger-Congo languages."
+    data = ""
+
+    [analysis.nnet_4]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Neighbor-Net of 45 creoles and 46 Niger-Congo languages."
+    data = ""
+
+    [analysis.nnet_5]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Neighbor-Net of 45 creoles and 12 lexifiers."
+    data = ""
+
+    [analysis.nnet_6]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Neighbor-Net of 45 creoles, 46 African languages and 12 lexifiers with 30 stable features."
+    data = ""
+
+    [analysis.nnet_7]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Neighbor-Net of 45 creoles, 46 African languages and 12 lexifiers with 20 stable features."
+    data = ""
+
+    [analysis.nnet_8]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Neighbor-Net of 45 creoles, 46 African languages and 12 lexifiers with 10 stable features."
+    data = ""

@@ -1,0 +1,35 @@
+title = "Phylogenetics in biology and linguistics"
+
+doi = "10.1075/z.211.03bor"
+
+abstract = """
+The main goal of this chapter is to introduce the reader to the parallels
+and commonalities that exist between the fields of biology and linguistics.
+Researchers from both fields faced similar problems when seeking to account
+for the descent and diversification of related entities (species, languages).
+Therefore, they often sought mutual inspiration and opted for similar solutions.
+This has resulted in a convergence of models and methods in both fields. This
+chapter is divided into two parts. Firstly, we review some of the methodological
+and conceptual developments that have occurred in biology since the emer-
+gence of the field of evolutionary biology. There will be an emphasis on the last
+decade, where a variety of computer-based analyses have been developed. To
+illustrate the benefits of these tools, phylogenetic methods are applied in the
+second part of the chapter to a group of high-contact languages (creoles), which
+have long defied attempts at classification due to their multiple ancestry.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Finn Borchsenius", "Aymeric Daval-Markussen", "Peter Bakker"]
+
+# parts of the world
+groups = ['global', 'Creoles']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Borchsenius_2017"
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Review of phylogenies in biology and linguistics with focus on creoles"
+

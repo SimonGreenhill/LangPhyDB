@@ -1,0 +1,30 @@
+title = "Creole typology II: Typological features of creoles: From early proposals to phylogenetic approaches and comparisons with non-creoles"
+
+doi = "10.1075/z.211.06dav"
+
+abstract = """
+In the late 1950s, creolists started drawing lists of shared lexical and grammatical properties of creole
+languages. In this chapter, a number of proposals and features are presented. We show that few of the
+proposed common properties are in fact shared by all creoles. We also discuss typological studies in
+which samples of creoles are compared with samples of non-creoles. Creoles, despite their diversity, tend
+to cluster in a different pattern from non-creoles, even when non-European creoles are added, providing
+robust evidence for a creole typological profile. Finally, the chapter deals with the neglected area of
+diachronic aspects of creoles. No systematic surveys comparing language change in creoles and non-creoles
+have yet been conducted. The pre-existence of a pidgin phase is a plausible explanation for some of the
+major differences observed between creoles and non-creoles.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Aymeric Daval-Markussen", "Peter Bakker"]
+
+# parts of the world
+groups = ['Creoles']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Daval_Markussen_2017"
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Compares Creole vs. Non-Creole languages"

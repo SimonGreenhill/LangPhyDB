@@ -1,0 +1,32 @@
+title = "Complementing creole studies with phylogenetics"
+
+doi = "10.1075/z.211.17sip"
+
+abstract = """
+Creole studies is a field devoted to the empirical description and study of creole languages and to the theoretical issues
+related to their formation and develop- ment, which are closely tied to theories of language acquisition and change. In
+addition to descriptions of individual creoles and their cultural and sociohistorical contexts, the field has since its
+beginnings been interested in the nature of the in- teraction between the substrates, lexifiers, and universal forces that
+shape creole languages (Kouwenberg & Singler 2008). In this book, an important addition to creole studies is made by
+large-scale typological comparisons of a wide range of creoles and related varieties, such as restructured Afro-Hispanic
+varieties, from different geographical regions. This kind of comparison has not been undertaken in such a great volume until
+recently, although smaller scale comparisons have been made (Holm & Patrick 2007). The comparative perspective was more prom-
+inent in the early years of modern creolistics (Taylor 1956; Hancock 1975, etc.), and it is making a comeback with this volume
+and some other recent works of a similar nature (Bakker et al. 2011). The results obtained in the studies included in this
+volume shed light on the current state of creole studies and indicate some promising lines for future research.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Eeva M. Sippola"]
+
+# parts of the world
+groups = ['Creoles']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Sippola_2017b"
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Review of creole studies using networks."

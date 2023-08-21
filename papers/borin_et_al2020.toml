@@ -1,0 +1,63 @@
+title = "A bird's-eye view on South Asian languages through {LSI}"
+
+doi = "https://doi.org/10.1515/jsall-2021-2034"
+
+abstract = """
+We present initial exploratory work on illuminating the long-standing
+question of areal versus genealogical connections in South Asia using computational
+data visualization tools. With respect to genealogy, we focus on the sub-
+classification of Indo-Aryan, the most ubiquitous language family of South Asia. The
+intent here is methodological: we explore computational methods for visualizing
+large datasets of linguistic features, in our case 63 features from 200 languages
+representing four language families of South Asia, coming out of a digitized version
+of Grierson’s Linguistic Survey of India. To this dataset we apply phylogenetic soft-
+ware originally developed in the context of computational biology for clustering the
+languages and displaying the clusters in the form of networks. We further explore
+multiple correspondence analysis as a way of illustrating how linguistic feature
+bundles correlate with extrinsically defined groupings of languages (genealogical
+and geographical). Finally, map visualization of combinations of linguistic features
+and language genealogy is suggested as an aid in distinguishing genealogical and
+areal features. On the whole, our results are in line with the conclusions of earlier
+studies: Areality and genealogy are strongly intertwined in South Asia, the traditional lower-level subclassification of Indo-Aryan is largely upheld, and there is a
+clearly discernible areal east–west divide cutting across language families
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Lars Borin", "Anju Saxena", "Bernard Comrie", "Shafqat Mumtaz Virk"]
+
+# parts of the world
+groups = ['India']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Borin_2020"
+
+# type of study
+type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Initial exploratory work illuminating the long-standing question of areal versus genealogical connections in South Asia"
+
+# data
+[data]
+
+    notes = "This gives us a dataset with 200 languages (out of 240) and 63 features (out of 72),"
+    
+    [data.LSI]
+    ntaxa = 200
+    nchars = 63
+    nsites = 63
+    datatype = 'structural features'
+    source = '@LSI'
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.nnet]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = ""

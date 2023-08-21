@@ -1,0 +1,30 @@
+title = "Linguistics and evolutionary biology continue to cross-fertilize each other and may do so even more in the future, including in the field of creolistics"
+
+doi = "10.1075/z.211.19bor"
+
+abstract = """
+Linguistics and biology have a long tradition of cross-fertilization and borrowing of ideas (Atkinson & Gray 2005).
+Even before the birth of evolutionary theory in biology in the middle of the 19th century, linguists had adopted
+phylogenetic thinking, and by the end of that century, linguists were conceptually ahead of biology when it came to
+understanding and reconstructing the process of phylogenesis. The advent of computerized analytical methods in the
+late 20th century, coupled with an exponential growth in the amount of primary data, particularly DNA sequences, led
+to an explosive development of computational methods in evolutionary biology. Many of these new methods have been
+adopted by linguists. At the same time, linguistic data are increasingly being used in biological studies, relating
+to human evolution and other fields such as the domestication history of important crop plants (e.g. Mir et al.
+2013).
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Finn Borchsenius"]
+
+# parts of the world
+groups = ['Creoles']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Borchsenius_2017b"
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Review article"

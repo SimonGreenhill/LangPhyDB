@@ -1,0 +1,86 @@
+title = "Phylogenetic trees: Grammar versus vocabulary"
+
+doi = "10.22363/2687-0088-26460"
+
+abstract = """
+Traditionally, genealogical relationships between languages are established on the basis of phonetic and lexical
+data. The question whether genealogical relationships among languages can be defined based on grammatical data
+remains unanswered. The objective of this article is to compare two phylogenetic trees: one built using the
+Automated Similarity Judgment Program (ASJP) project, and one using the World Atlas of Language Structures
+(WALS). We include data from WALS representing 27 languages from 5 language families of all continents that are
+deemed to be sufficiently well described. A Hamming distance matrix was calculated for all languages under study,
+and, based on the matrix, a phylogenetic tree was built. The trees built according to WALS and ASJP data are
+compared with each other and with a tree built by the classical comparative historical method. Both the
+ASJP-based tree and the WALS-based tree have their advantages and disadvantages. The ASJP-based tree is a good
+reflection of the evolutionary divergence of languages. Similarities of languages as calculated based on the
+typological database of WALS can provide information on the history of languages both in terms of genealogical
+descent and contact with other languages. The ASJP-based tree reflects genealogical relationship well at a
+relatively small time depth, while the WALS-based tree reflects genealogical relationship well at large time
+intervals. We suggest a new variant of a phylogenetic tree that includes information on both the divergence (ASJP
+project) and the convergence (WALS project) of languages, combining the benefits of both of these trees, although
+the problem of borrowings remains. The present research reveals prospects for future studies of genealogical
+relations among languages based on large-scale descriptions of their grammatical structures.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Vladimir N. Polyakov", "Elena A. Makarova", "Valery D. Solovyev"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Polyakov_2022"
+
+# type of study
+type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Comparison of trees built from structural and lexical data"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.wals]
+    ntaxa = 27
+    nchars = "?"
+    nsites = 1
+    datatype = 'structural distance'
+    source = '@WALS'
+    items = ''
+    comment = 'hamming'
+
+    [data.asjp]
+    ntaxa = 27
+    nchars = 40
+    nsites = 1
+    datatype = 'lexical distance'
+    source = '@ASJP17'
+    items = ''
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree_wals]
+    tool = 'MEGA'
+    model = 'nj'
+    details = ""
+    data = "@data.wals"
+
+    [analysis.tree_asjp]
+    tool = 'MEGA'
+    model = 'nj'
+    details = ""
+    data = "@data.asjp"
+
+    [analysis.tree_combined]
+    tool = 'manual'
+    model = ''
+    details = ""
+    data = "@data.asjp;@data.wals"
+

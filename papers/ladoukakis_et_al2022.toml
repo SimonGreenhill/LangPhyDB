@@ -1,0 +1,32 @@
+title = "Toward an evolutionary framework for language variation and change"
+
+doi = "10.1002/bies.202100216"
+
+abstract = """
+In this paper, we identify the parallels and the differences between language and life as evolvable systems in
+pursuit of a framework that will investigate language change from the perspective of a general theory of
+evolution. Despite the consensus that languages change similarly to species, as reflected in the construction of
+language trees, the field has mainly applied biological techniques to specific problems of historical linguistics
+and has not systematically engaged in disentangling the basic concepts (population, reproductive unit,
+inheritance, etc.) and the core processes underlying evolutionary theory, namely mutation, selection, drift, and
+migration, as applied to language. We develop such a proposal. Treating language as an evolvable system places
+previous studies in a novel perspective, as it offers an elegant unifying framework that can accommodate current
+knowledge, utilize the rich theoretical framework of evolutionary biology, and synthesize many independent strands
+of inquiry, initiating a whole new research program.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Emmanuel D. Ladoukakis", "Dimitris Michelioudakis", "Elena Anagnostopoulou"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Ladoukakis_2022"
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Review article of the parallels between language and life"
+

@@ -1,0 +1,82 @@
+title = "The simple emerging from the complex: Nominal number in Juba Arabic creole."
+
+doi = "10.1075/z.211.09gol"
+
+abstract = """
+This chapter examines the system of nominal number in Juba Arabic. Its complexity
+is compared with its superstrate language, Sudanese Arabic, and its
+substrate, the Nilotic language Bari. It also compares its similarity with a number
+of creoles, Nilotic languages and Arabic dialects. Both Arabic and Nilotic
+languages are notorious for their complex systems of nominal number, making
+Juba Arabic an interesting case for the study of creole complexity. Following
+Bakker et al. (2011), I use computational phylogenetic tools to look at the linguistic
+similarity of the languages under examination. The findings show that
+Juba Arabic is simpler than its constrates, and that it is more similar to unrelated
+creoles than the languages from which it emerged.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Yonatan Goldshtein"]
+
+# parts of the world
+groups = ['Creoles']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Goldshtein_2017"
+
+# type of study
+type = ['network', 'distance']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Comparison of nominal number in Juba Arabic"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.creoles]
+    ntaxa = 13
+    nchars = 30
+    nsites = 30
+    datatype = 'structural features'
+    source = ''
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.network]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = ""
+
+    [analysis.network_subset]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "6 creoles only"
+    data = ""
+
+    [analysis.network_subset_arabic]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "Neighbor-Net over three Arabic dialects and Juba Arabic."
+    data = ""
+
+    [analysis.nj_F1_23]
+    tool = 'splitstree'
+    model = 'neighborjoining'
+    details = "Neighbor-joining tree based on features related to number marking (F1–23)."
+    data = ""
+
+    [analysis.nj2_F24_30]
+    tool = 'splitstree'
+    model = 'neighborjoining'
+    details = "Neighbor-joining tree based on agreement (F24–30)."
+    data = ""
+
+

@@ -1,0 +1,88 @@
+title = "The semantics of Englishes and Creoles: Pacific and Australian perspectives"
+
+doi = "10.1075/z.211.15lev"
+
+abstract = """
+This chapter provides a lexical-semantic comparison of a selection of Englishes and English-related creoles in the
+Australia-Pacific area. Faced with the co- nundrum in sociolinguistic classificatory practice and its contested
+categories: “language”, “creole”, “dialect”, “variety”, and “English(es)”, we will attempt to circumvent the
+problematic of metavocabulary by taking a new, two-pronged approach. Firstly, we rely on semantic primes, simple
+words meanings such as I, you, people, body, big, small, know, think, see, hear as our comparandum, and compare
+and contrast the lexicalizations of these basic meanings across our sample. Secondly, we utilize phylogenetic
+networks for visualizing our results and as a tool for forming new hypotheses. Our results provide counter-evi-
+dence to the claim that Melanesian and Australian creoles are “varieties of English”. In our sample, we find three
+basic types of relations. “Shared-core” types (Australian English v. New Zealand English); “closely related core”
+types (Hawai’i Creole v. Anglo Englishes); and “distantly related core” types (Tok Pisin v. Anglo English, Kriol
+v. Anglo English, or Yumplatok v. Anglo English). We measure our results against Scandinavian languages in order
+to explore the language-dialect question, and against Trinidadian – a Caribbean creole, in or- der to explore the
+extent of lexical-semantic areality. We conclude that current sociolinguistic metavocabulary is inadequate for
+representing the complexity of the new ways of speaking in the Australia-Pacific region, and we suggest a
+principled areal-semantic investigation of words based on semantic principles.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Carsten Levisen", "Carol Priestley", "Sophie Nicholls", "Yonatan Goldshtein"]
+
+# parts of the world
+groups = ['Creoles']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Levisen_2017c"
+
+# type of study
+type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Networks of Australian and Pacific Creoles based on Natural Semantic Metalanguage"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.nsm]
+    ntaxa = 10
+    nchars = "?"
+    nsites = "?"
+    datatype = 'semantic primes'
+    source = ''
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.network1]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "The Australia-Pacific Network."
+    data = ""
+
+    [analysis.network2]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "The Australia-Pacific Network, Anglo Englishes excluded."
+    data = ""
+
+    [analysis.network3]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "The Australia-Pacific Network, Trinidadian Creole added."
+    data = ""
+
+    [analysis.network4]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "The Australia-Pacific Network, Danish Added."
+    data = ""
+    
+    [analysis.network5]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "The Australia-Pacific Network, Scandinavian Network Added."
+    data = ""
+    
+    
+    

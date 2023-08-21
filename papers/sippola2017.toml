@@ -1,0 +1,76 @@
+title = "Similarities and differences among Iberian creoles"
+
+doi = "10.1075/z.211.11sip"
+
+abstract = """
+This study provides an account of the classifications of Iberian creoles based on a
+phylogenetic network analysis of typological and lexical data. It maps the shared
+linguistic traits of these creoles and compares the differences between them. The
+results of the typological analysis support previous classifications, showing a
+clear division between Atlantic and Asian creoles, and the main subgroups are
+divided geographically. However, connections between the subgroups are less
+clear due to the degree of detail of the typological feature values. The similarities
+consist of typologically unmarked features that are shared with the lexifiers. The
+differences are a result of areal substrate and adstrate influence.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Eeva M. Sippola"]
+
+# parts of the world
+groups = ['Creoles']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Sippola_2017"
+
+# type of study
+type = ['network', 'distance', 'delta']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Network evaluation of the relationships among Iberian creoles"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.APICS]
+    ntaxa = 19
+    nchars = 130
+    nsites = 130
+    datatype = 'structural features'
+    source = '@APICS'
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.nnet1]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "A split graph of a Neighbor-Net analysis of the 130 APiCS features in 19 Iberian creoles."
+    data = ""
+
+    [analysis.nnet2]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "A splits graph of a Neighbor-Net analysis of 21 APiCS features of the nominal domain in 19 Iberian creoles."
+    data = ""
+
+    [analysis.mp]
+    tool = 'paup*'
+    model = 'maximum parsimony'
+    details = ""
+    data = ""
+
+    [analysis.delta]
+    tool = 'splitstree'
+    model = 'delta'
+    details = ""
+    data = ""
+    
+    
+    

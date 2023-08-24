@@ -1,0 +1,69 @@
+title = "Reconstructing the Evolutionary History of Natural Languages"
+
+doi = ""
+
+abstract = """
+In this paper we present a new methodology for determining the evolutionary history of related languages.
+Our methodology uses linguistic information encoded as qualitative characters, and provides much greater
+precision than previous methods. Our analysis of Indo-European (IE) languages resolves questions that have
+troubled scholars for over a century.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Tandy Warnow", "Donald A. Ringe", "Ann Taylor"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Warnow_1996"
+
+# type of study
+type = ['phylogenetic', 'methodological']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Development of the perfect phylogeny algorithm as applied to Indo-European"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.ie]
+    ntaxa = 11
+    nchars = 208
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree1]
+    tool = 'perfect'
+    model = ''
+    details = ""
+    data = ""
+
+    [analysis.tree2]
+    tool = 'perfect'
+    model = ''
+    details = "without germanic"
+    data = ""
+
+    [analysis.tree3]
+    tool = 'perfect'
+    model = ''
+    details = "incompatible characters 'impugned' and removed"
+    data = ""
+
+    [analysis.network_with_germanic]
+    tool = 'manual'
+    model = ''
+    details = "extra edges drawn on tree 3"
+    data = ""
+

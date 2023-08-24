@@ -8,6 +8,9 @@ Papers deemed to fall outside scope, alphabetically by first author surname.
 * Bowern, C., Epps, P., Gray, R., Hill, J., Hunley, K., McConvell, P., & Zentz, J. (2011). Does Lateral Transmission Obscure Inheritance in Hunter-Gatherer Languages? PLoS ONE, 6(9), e25195. https://doi.org/10.1371/journal.pone.0025195
     - no explicit phylogenetic analysis
 
+* Bromham L, Hua X, Fitzpatrick T, & Greenhill SJ 2015. Rate of language evolution is affected by population size. Proceedings of the National Academy of Sciences, USA 201419704.
+    - no explicit phylogenetic analysis
+
 ## C
 ## D
 ## E
@@ -25,9 +28,15 @@ Papers deemed to fall outside scope, alphabetically by first author surname.
 
 * Levinson SC, Greenhill SJ, Gray RD & Dunn M. 2011. Universal typological dependencies should be detectable in the history of language families. Linguistic Typology, 15: 509-534.
     - position piece/response to criticism of Dunn et al. 2011.
-
+* Longobardi G, Ceolin A, Bortolussi L, Guardiano C, Irimia MA, Michelioudakis D, Radkevich N, & Sgarro A. 2016. Mathematical modeling of grammatical diversity supports the historical reality of formal syntax. Universität Tübingen. https://doi.org/10.15496/PUBLIKATION-10122
+    - no explicit phylogenetic analysis
 
 ## M
+
+* Muysken P & van Gijn R. 2016. River thinking: Arawakan and Pano-Tacanan in the Upper Amazon Transition Area. Proceedings of the Leiden Workshop on Capturing Phylogenetic Algorithms for Linguistics.
+    - No explicit phylogenetic analysis
+
+
 ## N
 ## O
 ## P
@@ -42,6 +51,10 @@ Papers deemed to fall outside scope, alphabetically by first author surname.
 ## U
 ## V
 ## W
+
+* Wahle J. 2016. An approach to cross-concept cognacy identification. Proceedings of the Leiden Workshop on Capturing Phylogenetic Algorithms for Linguistics.
+    - No explicit phylogenetic analysis
+
 ## X
 ## Y
 ## Z

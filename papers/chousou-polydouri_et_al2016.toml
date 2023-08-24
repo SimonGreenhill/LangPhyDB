@@ -1,0 +1,129 @@
+title = "A test of coding procedures for lexical data with Tup i-Guaran i and Chapacuran languages"
+
+doi = "10.15496/publikation-10062"
+
+abstract = """
+Recent phylogenetic studies in historical linguistics have focused on lexical data. However, the way that such data are coded into characters for phylogenetic analysis has been approached in different ways, without investigating how coding methods may affect the results. In this paper, we compare three different coding methods for lexical data (multistate meaning-based characters, binary root-meaning characters, and binary cognate characters) in a Bayesian framework, using data from the Tup ́ı-Guaran ́ı and Chapacuran language families as case studies. We show that, contrary to prior expectations, different coding methods can have a significant impact on the topology of the resulting trees.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Natalia Chousou-Polydouri", "Joshua Birchall", "Sérgio Meira", "Zachary O'Hagan", "Lev Michael"]
+
+# parts of the world
+groups = ["Chapacuran", "Tupi-Guarani"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@ChousouPolydouri_2016"
+
+# type of study
+type = ['methodological']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Explores the effect of cognate coding choice on phylogenetic topology in Chapacuran and Tupi-Guarani languages"
+
+# data
+[data]
+
+    notes = """We compare three coding procedures based on different types of characters: 1) multistate meaning-based characters; 2) binary root-meaning characters; and 3) binary cognate characters"""
+    
+    [data.tupiguarani_ms]
+    ntaxa = 33
+    nchars = 547
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Michael2015'
+    items = ''
+    comment = ''
+
+    [data.tupiguarani_binary_root_meaning]
+    ntaxa = 33
+    nchars = 547
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Michael2015'
+    items = ''
+    comment = ''
+
+    [data.tupiguarani_binary]
+    ntaxa = 33
+    nchars = 547
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Michael2015'
+    items = ''
+    comment = ''
+
+
+    [data.chapacuran_ms]
+    ntaxa = 11
+    nchars = 126
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Birchall_et_al2016'
+    items = ''
+    comment = ''
+
+    [data.chapacuran_binary_root_meaning]
+    ntaxa = 11
+    nchars = 126
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Birchall_et_al2016'
+    items = ''
+    comment = ''
+
+    [data.chapacuran_binary]
+    ntaxa = 11
+    nchars = 126
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Birchall_et_al2016'
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+
+        [analysis.chapacuran_binary]
+        tool = 'beast'
+        model = ''
+        details = "as for Birchall et al. 2016"
+        data = "@data.chapacuran_binary"
+
+
+        [analysis.chapacuran_binary_root_meaning]
+        tool = 'beast'
+        model = ''
+        details = "as for Birchall et al. 2016"
+        data = "@data.chapacuran_binary_root_meaning"
+
+
+        [analysis.chapacuran_ms]
+        tool = 'beast'
+        model = ''
+        details = "as for Birchall et al. 2016"
+        data = "@data.chapacuran_ms"
+
+
+        [analysis.tupiguarani_binary]
+        tool = 'mrbayes'
+        model = ''
+        details = "as for Michael et al. 2015"
+        data = "@data.tupiguarani_binary"
+
+
+        [analysis.tupiguarani_binary_root_meaning]
+        tool = 'mrbayes'
+        model = ''
+        details = "as for Michael et al. 2015"
+        data = "@data.tupiguarani_binary_root_meaning"
+
+
+        [analysis.tupiguarani_ms]
+        tool = 'mrbayes'
+        model = ''
+        details = "as for Michael et al. 2015"
+        data = "@data.tupiguarani_ms"

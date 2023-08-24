@@ -1,0 +1,131 @@
+title = "Exploring correlations in genetic and cultural variation across language families in northeast Asia"
+
+doi = "10.1126/sciadv.abd9223"
+
+abstract = """Culture evolves in ways that are analogous to, but distinct from, genomes. Previous
+studies examined similarities between cultural variation and genetic variation (population
+history) at small scales within language families, but few studies have empirically investigated
+these parallels across language families using diverse cultural data. We report an analysis
+comparing culture and genomes from in and around northeast Asia spanning 11 language families. We
+extract and summarize the variation in language (grammar, phonology, lexicon), music (song
+structure, performance style), and genomes (genome-wide SNPs) and test for correlations. We find
+that grammatical structure correlates with population history (genetic history). Recent contact
+and shared descent fail to explain the signal, suggesting relationships that arose before the
+formation of current families. Our results suggest that grammar might be a cultural indicator of
+population history while also demonstrating differences among cultural and genetic relationships
+that highlight the complex nature of human history. """
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Hiromi Matsumae", "Peter Ranacher", "Patrick E. Savage", "Damián E. Blasi", "Thomas E. Currie", "Kae Koganebuchi", "Nao Nishida", "Takehiro Sato", "Hideyuki Tanabe", "Atsushi Tajima", "Steven Brown", "Mark Stoneking", "Kentaro K. Shimizu", "Hiroki Oota", "Balthasar Bickel"]
+
+# parts of the world
+groups = ['Asia']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Matsumae_2021"
+
+# type of study
+type = ['distance', 'network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Comparison of musical, genetic, linguistic (phonetic, grammatical, lexical) distances in North Asia"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.music]
+    ntaxa = 14
+    nchars = 41
+    nsites = "?"
+    datatype = 'musical distance'
+    source = ''
+    items = ''
+    comment = ''
+
+    [data.genetic]
+    ntaxa = 14
+    nchars = 37093
+    nsites = 37093
+    datatype = 'genetic SNPs'
+    source = ''
+    items = ''
+    comment = ''
+
+    [data.lexicon]
+    ntaxa = 14
+    nchars = 40
+    nsites = 40
+    datatype = 'lexical distance'
+    source = '@ASJP19'
+    items = ''
+    comment = ''
+
+    [data.grammar]
+    ntaxa = 14
+    nchars = 25
+    nsites = 25
+    datatype = 'grammatical distance'
+    source = '@WALS;@Autotyp'
+    items = ''
+    comment = ''
+
+    [data.phonology]
+    ntaxa = 14
+    nchars = 87
+    nsites = 87
+    datatype = 'phonetic distance'
+    source = '@PHOIBLE;@ANUWPD'
+    items = ''
+    comment = ''
+
+    [data.geograpy]
+    ntaxa = 14
+    nchars = 2
+    nsites = 2
+    datatype = 'distance'
+    source = ''
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.network_1]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "@data.music"
+
+    [analysis.network_2]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "@data.genetic"
+    
+    [analysis.network_3]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "@data.lexicon"
+    
+    [analysis.network_4]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "@data.grammar"
+    
+    [analysis.network_5]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "@data.phonology"
+
+    [analysis.rda]
+    tool = 'r'
+    model = ''
+    details = ""
+    data = "@data.phonology"

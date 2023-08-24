@@ -1,0 +1,28 @@
+title = "Mathematical approaches to comparative linguistics"
+
+doi = "10.1073/pnas.94.13.6585"
+
+abstract = """
+The inference of the evolutionary history of a set of languages is a complex problem. Although some languages are
+known to be related through descent from common ancestral languages, for other languages determining whether such a
+relationship holds is itself a difficult problem. In this paper we report on new methods, developed by linguists
+Johanna Nichols (University of California, Berkeley), Donald Ringe and Ann Taylor (University of Pennsylvania,
+Philadelphia), and me, for answering some of the most difficult questions in this domain. These methods and the
+results of the analyses based on these methods were presented in November 1995 at the Symposium on the Frontiers of
+Science held by the National Academy of Sciences.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Tandy Warnow"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Warnow_1997"
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Review discussion of work presented at in November 1995 at the Symposium on the Frontiers of Science held by the National Academy of Sciences."

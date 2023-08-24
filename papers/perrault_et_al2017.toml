@@ -1,0 +1,67 @@
+title = "Tongues on the {EDGE}: language preservation priorities based on threat and lexical distinctiveness"
+
+doi = "10.1098/rsos.171218"
+
+abstract = """
+Languages are being lost at rates exceeding the global loss of biodiversity. With the extinction of a language we
+lose irreplaceable dimensions of culture and the insight it provides on human history and the evolution of
+linguistic diversity. When setting conservation goals, biologists give higher priority to species likely to go
+extinct. Recent methods now integrate information on species evolutionary relationships to prioritize the
+conservation of those with a few close relatives. Advances in the construction of language trees allow us to use
+these methods to develop language preservation priorities that minimize loss of linguistic diversity. The
+evolutionarily distinct and globally endangered (EDGE) metric, used in conservation biology, accounts for a
+species’ originality (evolutionary distinctiveness—ED) and its likelihood of extinction (global endangerment—GE).
+Here, we use a similar framework to inform priorities for language preservation by generating rankings for 350
+Austronesian languages. Kavalan, Tanibili, Waropen and Sengseng obtained the highest EDGE scores, while Xârâcùù
+(Canala), Nengone and Palauan are among the most linguistically distinct, but are not currently threatened. We
+further provide a way of dealing with incomplete trees, a common issue for both species and language trees.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Nicolas Perrault", "Maxwell J. Farrell", "T. Jonathan Davies"]
+
+# parts of the world
+groups = ['Austronesian']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Perrault_2017"
+
+# type of study
+type = ['macroevolutionary']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Models evolutionary distinctiveness in Austronesian languages vs. endangerment risk"
+
+# data
+[data]
+
+    notes = ""
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.gray]
+    source = '@Gray2009'
+    comment = ''
+    
+    [phylogenies.ethologue]
+    source = '@Ethnologue17'
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.edge]
+    tool = 'r'
+    model = ''
+    details = ""
+    data = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

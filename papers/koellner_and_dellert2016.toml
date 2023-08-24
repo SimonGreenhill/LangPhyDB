@@ -1,0 +1,60 @@
+title = "Ancestral state reconstruction and loanword detection"
+
+doi = "10.15496/PUBLIKATION-10061"
+
+abstract = """
+Building on established applications of methods from bioinformatics to historical linguistics, we investigate the potential of different ancestral state reconstruction (ASR) methods for the task of loanword detection. Based on a very simple criterion for deriving loanword judgments from reconstructed ancestral states, we compare the performance of two state-of-the-art approaches to ASR against a very simple threshold-based, more linguistically motivated reconstruction method. We evaluate on the Indo-European cognacy judgments encoded in the IELex database. While overall performance is very low due to the properties of the dataset, there are marked differences in precision between the three methods, demonstrating that the development of specialized reconstruction methods for computational historical linguistics is worth pursuing.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Marisa Köllner", "Johannes Dellert"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Koellner_2016"
+
+# type of study
+type = ['trait', 'asr']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Testing of different ancestral state reconstruction approaches for loanword detection"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.ielex]
+    ntaxa = 95
+    nchars = 207
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@IELex'
+    items = ''
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.mp]
+    tool = 'paup*'
+    model = 'sankoff'
+    details = ""
+    data = ""
+
+    [analysis.ml]
+    tool = 'phangorn'
+    model = ''
+    details = ""
+    data = ""
+
+    [analysis.threshold]
+    tool = 'custom'
+    model = ''
+    details = "we test a hitherto unpublished threshold-based reconstruction method which is inspired by the way in which the presence of cognate classes in proto- languages is inferred in historical linguistics."
+    data = ""

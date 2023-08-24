@@ -1,0 +1,77 @@
+title = "Dative sickness: A phylogenetic analysis of argument structure evolution in Germanic"
+
+doi = "10.1353/lan.2017.0012"
+
+abstract = """
+A major argument against the feasibility of reconstructing syntax for proto-stages is the widely discussed lack of directionality of syntactic change. In a recent typology of changes in argument structure constructions based on Germanic (Barðdal 2015), several different, yet opposing, changes are reported. These include, among others, processes sometimes called dative sickness, nominative sickness, and accusative sickness. In order to tease apart the roles of the different processes, we have carried out a phylogenetic trait analysis on a predefined data set of twelve predicates found across the Germanic phyla using the MULTISTATE method. This is, as far as we are aware, the first application of the MULTISTATE method (Pagel et al. 2004) in historical syntax. The results clearly favor one of the models, the dative sickness model, over any other model, as this model is the only one that can accurately account for both the observed diversity of case frames and the independently proposed philological reconstructions. Methods of evolutionary trait analysis can be used to model evolutionary paths of argument structure constructions, and they provide the perfect testing ground for hypotheses arrived at through philological reconstruction, based on classical historical-comparative methods
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Michael Dunn", "Tonya Kim Dewey", "Carlee Arnett", "Thórhallur Eythórsson", "Jóhanna Barðdal"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Dunn_2017"
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "A phylogenetic analysis of argument structure evolution in Germanic"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.germanic]
+    ntaxa = 16
+    nchars = 12
+    nsites = "?"
+    datatype = 'syntactical features'
+    source = ''
+    items = ''
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = 'manual'
+    model = ''
+    details = "manual? time-scaled"
+    data = ""
+    
+
+    [analysis.bayestraits_unconstrained]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = ""
+    data = ""
+    
+
+    [analysis.bayestraits_nominative_sickness]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = ""
+    data = ""
+    
+
+    [analysis.bayestraits_dative_sickness]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = ""
+    data = ""
+    
+
+    [analysis.bayestraits_accusative_sickness]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = ""
+    data = ""
+    

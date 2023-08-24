@@ -33,7 +33,7 @@ groups = ['Austronesian']  # 'Austronesian', etc
 bibkey = "@Jordan2011"  # @xxxx
 
 # type of study
-type = ['trait']
+type = ['trait', 'asr']
 
 # short description of the study, one line.
 description = "A phylogenetic analysis of the relative age and relative-sex kinship distinctions in Austronesian societies."

@@ -1,0 +1,184 @@
+title = "The Evolutionary Dynamics of Negative Existentials in Indo-European"
+
+doi = "10.3389/fcomm.2021.661862"
+
+abstract = """
+Where in earlier work diachronic change is used to explain away exceptions to typologies, linguistic typologists have started to make use of explicit diachronic models as explanations for typological distributions. A topic that lends itself for this approach especially well is that of negation. In this article, we assess the explanatory value of a specific hypothesis, the Negative Existential Cycle (NEC), on the distribution of negative existential strategies (“types”) in 106 Indo-European languages. We use Bayesian phylogenetic comparative methods to infer posterior distributions of transition rates and parameters, thus applying rational methods to construct and evaluate a set of different models under which the attested typological distribution could have evolved. We find that the frequency of diachronic processes that affect negative existentials outside of the NEC cannot be ignored—the unidirectional NEC alone cannot explain the evolution of negative existential strategies in our sample. We show that non-unidirectional evolutionary models, especially those that allow for different and multiple transitions between strategies, provide better fit. In addition, the phylogenetic modeling is impacted by the expected skewed distribution of negative existential strategies in our sample, pointing out the need for densely sampled and family-based typological research.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Shahar Shirtz", "Luigi Talamo", "Annemarie Verkerk"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Shirtz_2021"
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Explore how Negative Existentials evolve in Indo-European"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.IE]
+    ntaxa = 106
+    nchars = 3
+    nsites = 3
+    datatype = 'structural features'
+    source = ''
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.glottolog]
+    source = '@Glottolog23'
+    comment = ''
+
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = 'r'
+    model = ''
+    details = "random resolution of polytomies and grafen transform"
+    data = ""
+
+
+
+    [analysis.bayestraits_RJ.FULL]
+    tool = 'bayestraits'
+    model = 'multistate+rjhp'
+    details = "various rates set to zero"
+    data = ""
+    
+
+    [analysis.bayestraits_RJ_17PAR]
+    tool = 'bayestraits'
+    model = 'multistate+rjhp'
+    details = "various rates set to zero"
+    data = ""
+    
+
+    [analysis.bayestraits_RJ_16PAR]
+    tool = 'bayestraits'
+    model = 'multistate+rjhp'
+    details = "various rates set to zero"
+    data = ""
+    
+
+    [analysis.bayestraits_RJ_15PAR]
+    tool = 'bayestraits'
+    model = 'multistate+rjhp'
+    details = "various rates set to zero"
+    data = ""
+    
+
+    [analysis.bayestraits_RJ_14PAR]
+    tool = 'bayestraits'
+    model = 'multistate+rjhp'
+    details = "various rates set to zero"
+    data = ""
+    
+
+    [analysis.bayestraits_RJ_13PAR]
+    tool = 'bayestraits'
+    model = 'multistate+rjhp'
+    details = "various rates set to zero"
+    data = ""
+    
+
+    [analysis.bayestraits_RJ_12PAR]
+    tool = 'bayestraits'
+    model = 'multistate+rjhp'
+    details = "various rates set to zero"
+    data = ""
+    
+
+    [analysis.bayestraits_RJ_11PAR]
+    tool = 'bayestraits'
+    model = 'multistate+rjhp'
+    details = "various rates set to zero"
+    data = ""
+    
+
+    [analysis.bayestraits_RJ_10PAR]
+    tool = 'bayestraits'
+    model = 'multistate+rjhp'
+    details = "various rates set to zero"
+    data = ""
+    
+
+    [analysis.bayestraits_RJ_9PAR_BC]
+    tool = 'bayestraits'
+    model = 'multistate+rjhp'
+    details = "various rates set to zero"
+    data = ""
+    
+
+    [analysis.bayestraits_RJ_9PAR_C]
+    tool = 'bayestraits'
+    model = 'multistate+rjhp'
+    details = "various rates set to zero"
+    data = ""
+    
+
+    [analysis.bayestraits_RJ_9PAR_CA]
+    tool = 'bayestraits'
+    model = 'multistate+rjhp'
+    details = "various rates set to zero"
+    data = ""
+
+
+    [analysis.bayestraits_NEC_extra]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "various rates set to zero"
+    data = ""
+    
+    [analysis.bayestraits_REVNEC_extra]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "various rates set to zero"
+    data = ""
+
+    [analysis.bayestraits_NEC_ALL_X]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "various rates set to zero"
+    data = ""
+
+    [analysis.bayestraits_REVNEC_ALL_X]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "various rates set to zero"
+    data = ""
+
+    [analysis.bayestraits_PARSIMONY]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "various rates set to zero"
+    data = ""
+
+    [analysis.bayestraits_NEC_PARSIMONY]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "various rates set to zero"
+    data = ""
+
+    [analysis.bayestraits_ALL_THROUGH_X]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "various rates set to zero"
+    data = ""
+    

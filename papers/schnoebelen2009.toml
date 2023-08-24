@@ -1,0 +1,48 @@
+title = "(Un)classifying Shabo: phylogenetic methods and results"
+
+doi = ""
+
+abstract = """
+
+"""
+
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Tyler Schnoebelen"]
+
+# parts of the world
+groups = ['Nilo-Saharan']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Schnoebelen2009"
+
+# type of study
+type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "An investigation of the sub-grouping of Shabo in Nilo-Saharan"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.ns]
+    ntaxa = 50
+    nchars = 47
+    nsites = 47
+    datatype = 'structural features'
+    source = '@WALS;@Schnoebelen2009'
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.nnet]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = ""

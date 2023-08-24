@@ -1,0 +1,119 @@
+title = "Investigating the potential of ancestral state reconstruction algorithms in historical linguistics"
+
+doi = "10.15496/publikation-10059"
+
+abstract = """
+Current efforts in computational historical linguistics are predominantly
+concerned with phylogenetic inference. However, methods for
+ancestral state reconstruction have been only sporadically
+applied. This is surprising since reconstruction is
+considered essential both in evolutionary biology and
+in classical historical linguistics. In contradistinction
+to phylogenetic algorithms, automatic reconstruction
+methods presuppose phylogenic information in order
+to explain what has evolved when and where.
+Here we report a pilot study on the potential
+of reconstruction algorithms in historical linguistics.
+Based on an explicit family tree, we apply different
+algorithms to wordlist data in order to infer how the
+words evolved along the phylogeny, and which words
+were used without change of meaning in the ancestral
+languages.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Gerhard Jäger", "Johann-Mattis List"]
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Jaeger_2016"
+
+# type of study
+type = ['trait', 'asr']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Evaluation of Ancestral State Reconstruction in Indo-European and Austronesian languages."
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.ielex]
+    ntaxa = 153
+    nchars = 207
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@IELex'
+    items = ''
+    comment = ''
+
+    [data.abvd]
+    ntaxa = 100
+    nchars = 210
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@ABVD'
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = """
+    we compared three different methods for ancestral state reconstruction: (a) Sankoff parsimony [7] with binary
+    state characters, (b) Sankoff parsimony with multistate characters, and (c) weighted parsimony for binary
+    state characters based on the minimal lateral networks (MLN) method [8]."""
+    
+    [analysis.tree_IE]
+    tool = 'beast'
+    model = '?'
+    details = ""
+    data = "@data.ielex"
+
+    [analysis.tree_AN]
+    tool = 'beast'
+    model = '?'
+    details = ""
+    data = "@data.abvd"
+    
+
+    [analysis.asr_IE_mp_binary]
+    tool = 'lingpy'
+    model = 'sankoff'
+    details = "binary coded cognates"
+    data = "@data.ielex"
+
+    [analysis.asr_IE_mp_multistate]
+    tool = 'lingpy'
+    model = 'sankoff'
+    details = "multi-state coded cognates"
+    data = "@data.ielex"
+
+    [analysis.asr_IE_mp_weighted_parsimony]
+    tool = 'lingpy'
+    model = ''
+    details = "MLN network with binary coded data"
+    data = "@data.ielex"
+
+
+    [analysis.asr_AN_mp_binary]
+    tool = 'lingpy'
+    model = 'sankoff'
+    details = "binary coded cognates"
+    data = "@data.abvd"
+
+    [analysis.asr_AN_mp_multistate]
+    tool = 'lingpy'
+    model = 'sankoff'
+    details = "multi-state coded cognates"
+    data = "@data.abvd"
+
+    [analysis.asr_AN_mp_weighted_parsimony]
+    tool = 'lingpy'
+    model = ''
+    details = "MLN network with binary coded data"
+    data = "@data.abvd"
+

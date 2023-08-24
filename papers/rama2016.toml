@@ -1,0 +1,245 @@
+title = "Ancestry sampling for Indo-European phylogeny and dates"
+
+doi = "10.15496/publikation-10121"
+
+abstract = """
+The date of the root of the Indo-European language family received much attention due to the application of Bayesian phylogenetic methods since the beginning of the last decade. The inferred root date of the family moved along with the development of new methods and better data. In this paper, I compare two dating techniques known as node-dating and total evidence dating for the Indo-European language family. I find that the total evidence dating based on a birth death tree infers age which is consistent with the Steppe hypothesis of spread of Indo-European languages.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Taraka Rama"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Rama_2016"
+
+# type of study
+type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Compares the effect of node-dating vs. total-evidence dating on Indo-European age estimates."
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.ielex]
+    ntaxa = 95
+    nchars = 100
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@IELex'
+    items = ''
+    comment = ''
+
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.AncientGreek]
+    taxa = ["anci1242"]
+    age = "uniform(2400, 2500)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.Armenian]
+    taxa = ["arme1241"]
+    age = "lognormal(250, 0.7, 1500)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.Avestan]
+    taxa = ["aves1237"]
+    age = "uniform(2450, 2550)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.Balto-Slavic]
+    taxa = ["balt1263"]
+    age = "lognormal(500,1.0, 950)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.Celtic]
+    taxa = ["celt1248"]
+    age = "lognormal(500, 0.75, 1200)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.ClassicalArmenian]
+    taxa = ["clas1249"]
+    age = "uniform(1300, 1600)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.Germanic]
+    taxa = ["germ1287"]
+    age = "lognormal(400, 0.4, 1635)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.Gothic]
+    taxa = ["goth1244"]
+    age = "uniform(1625, 1675)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.Hittite]
+    taxa = ["hitt1242"]
+    age = "uniform(3500, 3600)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.Indo-Aryan]
+    taxa = ["indo1321"]
+    age = "exponential(180, 3000)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.Indo-Iranian]
+    taxa = ["indo1320"]
+    age = "lognormal(900, 0.4, 3000)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.Iranian]
+    taxa = ["iran1269"]
+    age = "lognormal(500, 0.7, 2450)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.Latin]
+    taxa = ["lati1261"]
+    age = "uniform(2100, 2200)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.Luvian]
+    taxa = ["cune1239"]
+    age = "uniform(3275, 3425)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.Lycian]
+    taxa = ["lyci1241"]
+    age = "uniform(2350, 2450)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.OldChurchSlavonic]
+    taxa = ["chur1257"]
+    age = "uniform(950, 1050)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.OldEnglish]
+    taxa = ["olde1238"]
+    age = "uniform(950, 1050)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.OldHighGerman]
+    taxa = ["oldh1241"]
+    age = "uniform(1000, 1100)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.OldIrish]
+    taxa = ["oldi1245"]
+    age = "uniform(1100, 1300)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.OldNorse]
+    taxa = ["oldn1244"]
+    age = "uniform(750, 850)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.OldPersian]
+    taxa = ["oldp1254"]
+    age = "uniform(2375, 2525)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.OldPrussian]
+    taxa = ["prus1238"]
+    age = "uniform(500, 600)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.Oscan]
+    taxa = ["osca1245"]
+    age = "uniform(2100, 2300)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.Romance]
+    taxa = ["roma1334"]
+    age = "exponential(50, 2050)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.TocharianA]
+    taxa = ["tokh1242"]
+    age = "uniform(1200, 1500)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.TocharianB]
+    taxa = ["tokh1243"]
+    age = "uniform(1200, 1500)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.Umbrian]
+    taxa = ["umbr1253"]
+    age = "uniform(2100, 2300)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.VedicSanskrit]
+    taxa = ["sans1269"]
+    age = "uniform(3000, 3500)"
+    units = "ybp" # ybp
+    description = ""
+
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.node_dating]
+    tool = 'mrbayes'
+    model = 'fbd+gtr+igr+asc'
+    details = "node dates only"
+    data = ""
+
+    [analysis.node_and_tip_dating]
+    tool = 'mrbayes'
+    model = 'fbd+gtr+igr+asc'
+    details = "node and tip dates"
+    data = ""
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.node_dating]
+    taxa = []
+    age = "hpd(11165, 8669, 13920)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.tip_dating]
+    taxa = []
+    age = "hpd(6434, 5186, 7754)"
+    units = "ybp"
+    notes = ""

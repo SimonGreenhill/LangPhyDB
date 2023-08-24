@@ -1,0 +1,106 @@
+title = "A Phylogenetic Comparative Study of Bantu Kinship Terminology Finds Limited Support for Its Co-Evolution with Social Organisation"
+
+doi = "10.1371/journal.pone.0147920"
+
+abstract = """
+The classification of kin into structured groups is a diverse phenomenon which is ubiquitous in human culture. For populations which are organized into large agropastoral groupings of sedentary residence but not governed within the context of a centralised state, such as our study sample of 83 historical Bantu-speaking groups of sub-Saharan Africa, cultural kinship norms guide all aspects of everyday life and social organization. Such rules operate in part through the use of differing terminological referential systems of familial organization. Although the cross-cultural study of kinship terminology was foundational in Anthropology, few modern studies have made use of statistical advances to further our sparse understanding of the structuring and diversification of terminological systems of kinship over time. In this study we use Bayesian Markov Chain Monte Carlo methods of phylogenetic comparison to investigate the evolution of Bantu kinship terminology and reconstruct the ancestral state and diversification of cousin terminology in this family of sub-Saharan ethnolinguistic groups. Using a phylogenetic tree of Bantu languages, we then test the prominent hypothesis that structured variation in systems of cousin terminology has co-evolved alongside adaptive change in patterns of descent organization, as well as rules of residence. We find limited support for this hypothesis, and argue that the shaping of systems of kinship terminology is a multifactorial process, concluding with possible avenues of future research.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Myrtille Guillon", "Ruth Mace"]
+
+# parts of the world
+groups = ['Bantu']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Guillon_2016"
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Explores the evolution of kinship systems vs. social organisation in Bantu"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.ea]
+    ntaxa = 120
+    nchars = 3
+    nsites = 3
+    datatype = 'ethnographic features'
+    source = '@DPLACE;@EthAtlas'
+    items = ''
+    comment = '3 features extracted: To test these hypotheses, we are using the Ethnographic Atlas [66, 67], which contains global data on cousin terminology (variable 27), categorising societies under one of the six Murdock typologies, as well as global data on descent practices (variable 43), and rules of residence after marriage (variable 11)..'
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.grollemund]
+    source = '@Grollemund2015'
+    comment = ''
+
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.asr]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = ""
+    data = ""
+
+    [analysis.asr_rjhp]
+    tool = 'bayestraits'
+    model = 'multistate+rjhp'
+    details = ""
+    data = ""
+
+    [analysis.consensus]
+    tool = 'bayestrees'
+    model = ''
+    details = ""
+    data = ""
+
+    [analysis.coevolution1_dep]
+    tool = 'bayestraits'
+    model = 'discrete+dependent'
+    details = ""
+    data = ""
+    
+    [analysis.coevolution2_dep]
+    tool = 'bayestraits'
+    model = 'discrete+dependent'
+    details = ""
+    data = ""
+    
+    [analysis.coevolution3_dep]
+    tool = 'bayestraits'
+    model = 'discrete+dependent'
+    details = ""
+    data = ""
+
+
+
+    [analysis.coevolution1_indep]
+    tool = 'bayestraits'
+    model = 'discrete+independent'
+    details = ""
+    data = ""
+    
+    [analysis.coevolution2_indep]
+    tool = 'bayestraits'
+    model = 'discrete+independent'
+    details = ""
+    data = ""
+    
+    [analysis.coevolution3_indep]
+    tool = 'bayestraits'
+    model = 'discrete+independent'
+    details = ""
+    data = ""
+    

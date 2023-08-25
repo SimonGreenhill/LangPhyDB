@@ -1,0 +1,99 @@
+title = "Why linguists don’t do dates: Evidence from Indo-European and Australian languages"
+
+doi = ""
+
+abstract = """
+The use of phylogenetic methods and models for linguistic data has contributed considerably to the current
+development of quantitative comparative linguistics, and on any measure is therefore a step forward. Our view is
+that any replacement of arguments from authority with repeatable, testable methods must be a force for good.
+However, just as many historical linguists accept and see the value in lexicostatistics while rejecting its
+application to dating language splits in glottochronology, so we might embrace the development of tree- based or
+network-based quantitative methods (Ringe et al. 2002; McMahon & McMahon 2003; 2004; 2005) without accepting
+dating here either. The main difficulty in dating is that certain assumptions of general in- dependence of rates
+and direction of change are invalid tor language: more precisely, they may be invalid for some languages all the
+time, and are certainly invalid for all languages some of the time. Consequently, any calculated dates for splits
+within the best tree (strictly speaking, the collection of best splits) constructed using Monte-Carlo simulation
+Maximum Likelihood estimates will be subject to a degree of error depend- ing on the vagaries of linguistic and
+external history. We here critically compare the merits of phylogenetic reconstruction and classification versus
+the pitfalls of phylogenetic dating.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['April McMahon', 'Robert McMahon']
+
+# parts of the world
+groups = ['Indo-European', 'Pama-Nyungan']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@McMahon2006"
+
+# type of study
+type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Network analysis of Indo-European and Pama-Nyungan languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.ie]
+    ntaxa = "?"
+    nchars = "?"
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Dyen1992'
+    items = ''
+    comment = ''
+
+    [data.pn]
+    ntaxa = "?"
+    nchars = "?"
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Nash2002'
+    items = ''
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.ie_splitgraph]
+    tool = 'splitstree'
+    model = 'splitgraph'
+    details = ""
+    data = "@data.ie"
+
+    [analysis.pn_splitgraph]
+    tool = 'splitstree'
+    model = 'splitgraph'
+    details = ""
+    data = "@data.pn"
+
+    [analysis.pn_nnet]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "@data.pn"
+
+    [analysis.pn_nnet_lolo]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "@data.pn:lolo subset"
+
+    [analysis.pn_nnet_hihi]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "@data.pn:hihisubset"
+    
+    [analysis.germanic_network]
+    tool = 'network'
+    model = 'median joining'
+    details = "germanic subset"
+    data = "@data.ie"

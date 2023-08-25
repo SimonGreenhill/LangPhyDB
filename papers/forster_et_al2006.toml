@@ -1,0 +1,49 @@
+title = "Evolution of English basic vocabulary within the network of Germanic languages"
+
+doi = ""
+
+abstract = """
+Within the Germanic languages (Fig11.1), English basic vocabulary appears to be an anomaly...
+"""
+
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Peter Forster", "Tobias Polzin", "Arne Röhl"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Forster2006"
+
+# type of study
+type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "A network analysis of English within Germanic"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.germanic]
+    ntaxa = 21
+    nchars = 100
+    nsites = 100
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'swadesh100'
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.network]
+    tool = 'network'
+    model = 'median-joining-steiner'
+    details = ""
+    data = ""

@@ -1,0 +1,81 @@
+title = "Quantifying uncertainty in a stochastic model of vocabulary evolution"
+
+doi = ""
+
+abstract = """
+This paper makes a statistical exploration of certain
+human vocabulary data. We would like to know
+whether the data in question can be used to infer
+language ancestry. The data we treat is a representation
+due to Gray & Atkinson (2003) of the Dyen et al.
+(1997) Indo-European lexical corpus. Gray & Atkin-
+son (2003) supplement the lexical data with a small
+but important collection of historical constraints.
+Can we infer the pattern and timing of events in the
+history of the Indo-European language group from
+these data? We reformulate this question in some-
+thing like statistical terms. For the processes which
+shaped the data, can we construct a mathematical
+model with the following properties: the symbols
+of the mathematical model are in one to one correspondence
+with elements of the real-world system;
+the data is a likely outcome of the model; the model
+has predictive power?
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Geoff K. Nicholls", "Russell D. Gray"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Nicholls2006"
+
+# type of study
+type = ['methodological']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Development of the stochastic dollo model as applied to Indo-European"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.ie]
+    ntaxa = 87
+    nchars = 200
+    nsites = 2398
+    datatype = 'lexical cognates'
+    source = '@Gray2003'
+    items = 'swadesh200'
+    comment = ''
+
+# date calibrations
+[calibrations]
+
+    notes = "as per @Gray2003"
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.sd]
+    tool = 'traitlab'
+    model = 'stochastic dollo'
+    details = ""
+    data = ""
+
+    [analysis.sd2]
+    tool = 'traitlab'
+    model = 'stochastic dollo'
+    details = ""
+    data = "sample of 31 languages"
+
+[inferredages]
+    
+    notes = "not required"
+    

@@ -1,0 +1,1449 @@
+title = "Frequency of word-use predicts rates of lexical evolution throughout Indo-European history"
+
+doi = "10.1038/nature06176"
+
+abstract = """
+Greek speakers say ‘‘oura ́ ’’, Germans ‘‘schwanz’’ and the French ‘‘queue’’ to describe what English speakers call a ‘tail’, but all of these languages use a related form of ‘two’ to describe the number after one. Among more than 100 Indo-European languages and dialects, the words for some meanings (such as ‘tail’) evolve rapidly, being expressed across languages by dozens of unrelated words, while others evolve much more slowly—such as the number ‘two’, for which all Indo-European language speakers use the same related word-form1. No general linguistic mechanism has been advanced to explain this striking variation in rates of lexical replacement among meanings. Here we use four large and divergent language corpora (English2, Spanish3, Russian4 and Greek5) and a comparative database of 200 fundamental vocabulary meanings in 87 Indo-European languages6 to show that the frequency with which these words are used in modern language predicts their rate of replacement over thousands of years of Indo-European language evolution. Across all 200 meanings, frequently used words evolve at slower rates and infrequently used words evolve more rapidly. This relationship holds separately and identically across parts of speech for each of the four language corpora, and accounts for approximately 50% of the variation in historical rates of lexical replacement. We propose that the frequency with which specific words are used in everyday language exerts a general and law-like influence on their rates of evolution. Our findings are consistent with social models of word change that emphasize the role of selection, and suggest that owing to the ways that humans use language, some words will evolve slowly and others rapidly across all languages.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Mark Pagel", "Quentin D. Atkinson", "Andrew Meade"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Pagel_2007"
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Estimated the rates of lexical evolution for 200 fundamental vocabulary meanings in 87 Indo-European languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.dyen]
+    ntaxa = 87
+    nchars = 200
+    nsites = 4049
+    datatype = 'lexical cognates'
+    source = '@Dyen1992;@Gray2003'
+    items = ''
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = 'bayesphylogenies'
+    model = 'm2p+gamma'
+    details = ""
+    data = ""
+
+
+    [analysis.rate_word_1]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 1"
+    data = ""
+    
+
+    [analysis.rate_word_2]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 2"
+    data = ""
+    
+
+    [analysis.rate_word_3]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 3"
+    data = ""
+    
+
+    [analysis.rate_word_4]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 4"
+    data = ""
+    
+
+    [analysis.rate_word_5]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 5"
+    data = ""
+    
+
+    [analysis.rate_word_6]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 6"
+    data = ""
+    
+
+    [analysis.rate_word_7]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 7"
+    data = ""
+    
+
+    [analysis.rate_word_8]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 8"
+    data = ""
+    
+
+    [analysis.rate_word_9]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 9"
+    data = ""
+    
+
+    [analysis.rate_word_10]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 10"
+    data = ""
+    
+
+    [analysis.rate_word_11]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 11"
+    data = ""
+    
+
+    [analysis.rate_word_12]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 12"
+    data = ""
+    
+
+    [analysis.rate_word_13]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 13"
+    data = ""
+    
+
+    [analysis.rate_word_14]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 14"
+    data = ""
+    
+
+    [analysis.rate_word_15]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 15"
+    data = ""
+    
+
+    [analysis.rate_word_16]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 16"
+    data = ""
+    
+
+    [analysis.rate_word_17]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 17"
+    data = ""
+    
+
+    [analysis.rate_word_18]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 18"
+    data = ""
+    
+
+    [analysis.rate_word_19]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 19"
+    data = ""
+    
+
+    [analysis.rate_word_20]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 20"
+    data = ""
+    
+
+    [analysis.rate_word_21]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 21"
+    data = ""
+    
+
+    [analysis.rate_word_22]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 22"
+    data = ""
+    
+
+    [analysis.rate_word_23]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 23"
+    data = ""
+    
+
+    [analysis.rate_word_24]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 24"
+    data = ""
+    
+
+    [analysis.rate_word_25]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 25"
+    data = ""
+    
+
+    [analysis.rate_word_26]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 26"
+    data = ""
+    
+
+    [analysis.rate_word_27]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 27"
+    data = ""
+    
+
+    [analysis.rate_word_28]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 28"
+    data = ""
+    
+
+    [analysis.rate_word_29]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 29"
+    data = ""
+    
+
+    [analysis.rate_word_30]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 30"
+    data = ""
+    
+
+    [analysis.rate_word_31]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 31"
+    data = ""
+    
+
+    [analysis.rate_word_32]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 32"
+    data = ""
+    
+
+    [analysis.rate_word_33]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 33"
+    data = ""
+    
+
+    [analysis.rate_word_34]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 34"
+    data = ""
+    
+
+    [analysis.rate_word_35]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 35"
+    data = ""
+    
+
+    [analysis.rate_word_36]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 36"
+    data = ""
+    
+
+    [analysis.rate_word_37]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 37"
+    data = ""
+    
+
+    [analysis.rate_word_38]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 38"
+    data = ""
+    
+
+    [analysis.rate_word_39]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 39"
+    data = ""
+    
+
+    [analysis.rate_word_40]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 40"
+    data = ""
+    
+
+    [analysis.rate_word_41]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 41"
+    data = ""
+    
+
+    [analysis.rate_word_42]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 42"
+    data = ""
+    
+
+    [analysis.rate_word_43]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 43"
+    data = ""
+    
+
+    [analysis.rate_word_44]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 44"
+    data = ""
+    
+
+    [analysis.rate_word_45]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 45"
+    data = ""
+    
+
+    [analysis.rate_word_46]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 46"
+    data = ""
+    
+
+    [analysis.rate_word_47]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 47"
+    data = ""
+    
+
+    [analysis.rate_word_48]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 48"
+    data = ""
+    
+
+    [analysis.rate_word_49]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 49"
+    data = ""
+    
+
+    [analysis.rate_word_50]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 50"
+    data = ""
+    
+
+    [analysis.rate_word_51]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 51"
+    data = ""
+    
+
+    [analysis.rate_word_52]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 52"
+    data = ""
+    
+
+    [analysis.rate_word_53]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 53"
+    data = ""
+    
+
+    [analysis.rate_word_54]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 54"
+    data = ""
+    
+
+    [analysis.rate_word_55]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 55"
+    data = ""
+    
+
+    [analysis.rate_word_56]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 56"
+    data = ""
+    
+
+    [analysis.rate_word_57]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 57"
+    data = ""
+    
+
+    [analysis.rate_word_58]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 58"
+    data = ""
+    
+
+    [analysis.rate_word_59]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 59"
+    data = ""
+    
+
+    [analysis.rate_word_60]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 60"
+    data = ""
+    
+
+    [analysis.rate_word_61]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 61"
+    data = ""
+    
+
+    [analysis.rate_word_62]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 62"
+    data = ""
+    
+
+    [analysis.rate_word_63]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 63"
+    data = ""
+    
+
+    [analysis.rate_word_64]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 64"
+    data = ""
+    
+
+    [analysis.rate_word_65]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 65"
+    data = ""
+    
+
+    [analysis.rate_word_66]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 66"
+    data = ""
+    
+
+    [analysis.rate_word_67]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 67"
+    data = ""
+    
+
+    [analysis.rate_word_68]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 68"
+    data = ""
+    
+
+    [analysis.rate_word_69]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 69"
+    data = ""
+    
+
+    [analysis.rate_word_70]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 70"
+    data = ""
+    
+
+    [analysis.rate_word_71]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 71"
+    data = ""
+    
+
+    [analysis.rate_word_72]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 72"
+    data = ""
+    
+
+    [analysis.rate_word_73]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 73"
+    data = ""
+    
+
+    [analysis.rate_word_74]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 74"
+    data = ""
+    
+
+    [analysis.rate_word_75]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 75"
+    data = ""
+    
+
+    [analysis.rate_word_76]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 76"
+    data = ""
+    
+
+    [analysis.rate_word_77]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 77"
+    data = ""
+    
+
+    [analysis.rate_word_78]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 78"
+    data = ""
+    
+
+    [analysis.rate_word_79]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 79"
+    data = ""
+    
+
+    [analysis.rate_word_80]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 80"
+    data = ""
+    
+
+    [analysis.rate_word_81]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 81"
+    data = ""
+    
+
+    [analysis.rate_word_82]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 82"
+    data = ""
+    
+
+    [analysis.rate_word_83]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 83"
+    data = ""
+    
+
+    [analysis.rate_word_84]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 84"
+    data = ""
+    
+
+    [analysis.rate_word_85]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 85"
+    data = ""
+    
+
+    [analysis.rate_word_86]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 86"
+    data = ""
+    
+
+    [analysis.rate_word_87]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 87"
+    data = ""
+    
+
+    [analysis.rate_word_88]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 88"
+    data = ""
+    
+
+    [analysis.rate_word_89]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 89"
+    data = ""
+    
+
+    [analysis.rate_word_90]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 90"
+    data = ""
+    
+
+    [analysis.rate_word_91]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 91"
+    data = ""
+    
+
+    [analysis.rate_word_92]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 92"
+    data = ""
+    
+
+    [analysis.rate_word_93]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 93"
+    data = ""
+    
+
+    [analysis.rate_word_94]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 94"
+    data = ""
+    
+
+    [analysis.rate_word_95]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 95"
+    data = ""
+    
+
+    [analysis.rate_word_96]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 96"
+    data = ""
+    
+
+    [analysis.rate_word_97]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 97"
+    data = ""
+    
+
+    [analysis.rate_word_98]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 98"
+    data = ""
+    
+
+    [analysis.rate_word_99]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 99"
+    data = ""
+    
+
+    [analysis.rate_word_100]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 100"
+    data = ""
+    
+
+    [analysis.rate_word_101]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 101"
+    data = ""
+    
+
+    [analysis.rate_word_102]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 102"
+    data = ""
+    
+
+    [analysis.rate_word_103]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 103"
+    data = ""
+    
+
+    [analysis.rate_word_104]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 104"
+    data = ""
+    
+
+    [analysis.rate_word_105]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 105"
+    data = ""
+    
+
+    [analysis.rate_word_106]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 106"
+    data = ""
+    
+
+    [analysis.rate_word_107]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 107"
+    data = ""
+    
+
+    [analysis.rate_word_108]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 108"
+    data = ""
+    
+
+    [analysis.rate_word_109]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 109"
+    data = ""
+    
+
+    [analysis.rate_word_110]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 110"
+    data = ""
+    
+
+    [analysis.rate_word_111]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 111"
+    data = ""
+    
+
+    [analysis.rate_word_112]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 112"
+    data = ""
+    
+
+    [analysis.rate_word_113]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 113"
+    data = ""
+    
+
+    [analysis.rate_word_114]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 114"
+    data = ""
+    
+
+    [analysis.rate_word_115]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 115"
+    data = ""
+    
+
+    [analysis.rate_word_116]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 116"
+    data = ""
+    
+
+    [analysis.rate_word_117]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 117"
+    data = ""
+    
+
+    [analysis.rate_word_118]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 118"
+    data = ""
+    
+
+    [analysis.rate_word_119]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 119"
+    data = ""
+    
+
+    [analysis.rate_word_120]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 120"
+    data = ""
+    
+
+    [analysis.rate_word_121]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 121"
+    data = ""
+    
+
+    [analysis.rate_word_122]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 122"
+    data = ""
+    
+
+    [analysis.rate_word_123]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 123"
+    data = ""
+    
+
+    [analysis.rate_word_124]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 124"
+    data = ""
+    
+
+    [analysis.rate_word_125]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 125"
+    data = ""
+    
+
+    [analysis.rate_word_126]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 126"
+    data = ""
+    
+
+    [analysis.rate_word_127]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 127"
+    data = ""
+    
+
+    [analysis.rate_word_128]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 128"
+    data = ""
+    
+
+    [analysis.rate_word_129]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 129"
+    data = ""
+    
+
+    [analysis.rate_word_130]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 130"
+    data = ""
+    
+
+    [analysis.rate_word_131]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 131"
+    data = ""
+    
+
+    [analysis.rate_word_132]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 132"
+    data = ""
+    
+
+    [analysis.rate_word_133]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 133"
+    data = ""
+    
+
+    [analysis.rate_word_134]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 134"
+    data = ""
+    
+
+    [analysis.rate_word_135]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 135"
+    data = ""
+    
+
+    [analysis.rate_word_136]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 136"
+    data = ""
+    
+
+    [analysis.rate_word_137]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 137"
+    data = ""
+    
+
+    [analysis.rate_word_138]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 138"
+    data = ""
+    
+
+    [analysis.rate_word_139]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 139"
+    data = ""
+    
+
+    [analysis.rate_word_140]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 140"
+    data = ""
+    
+
+    [analysis.rate_word_141]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 141"
+    data = ""
+    
+
+    [analysis.rate_word_142]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 142"
+    data = ""
+    
+
+    [analysis.rate_word_143]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 143"
+    data = ""
+    
+
+    [analysis.rate_word_144]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 144"
+    data = ""
+    
+
+    [analysis.rate_word_145]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 145"
+    data = ""
+    
+
+    [analysis.rate_word_146]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 146"
+    data = ""
+    
+
+    [analysis.rate_word_147]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 147"
+    data = ""
+    
+
+    [analysis.rate_word_148]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 148"
+    data = ""
+    
+
+    [analysis.rate_word_149]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 149"
+    data = ""
+    
+
+    [analysis.rate_word_150]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 150"
+    data = ""
+    
+
+    [analysis.rate_word_151]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 151"
+    data = ""
+    
+
+    [analysis.rate_word_152]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 152"
+    data = ""
+    
+
+    [analysis.rate_word_153]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 153"
+    data = ""
+    
+
+    [analysis.rate_word_154]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 154"
+    data = ""
+    
+
+    [analysis.rate_word_155]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 155"
+    data = ""
+    
+
+    [analysis.rate_word_156]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 156"
+    data = ""
+    
+
+    [analysis.rate_word_157]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 157"
+    data = ""
+    
+
+    [analysis.rate_word_158]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 158"
+    data = ""
+    
+
+    [analysis.rate_word_159]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 159"
+    data = ""
+    
+
+    [analysis.rate_word_160]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 160"
+    data = ""
+    
+
+    [analysis.rate_word_161]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 161"
+    data = ""
+    
+
+    [analysis.rate_word_162]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 162"
+    data = ""
+    
+
+    [analysis.rate_word_163]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 163"
+    data = ""
+    
+
+    [analysis.rate_word_164]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 164"
+    data = ""
+    
+
+    [analysis.rate_word_165]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 165"
+    data = ""
+    
+
+    [analysis.rate_word_166]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 166"
+    data = ""
+    
+
+    [analysis.rate_word_167]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 167"
+    data = ""
+    
+
+    [analysis.rate_word_168]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 168"
+    data = ""
+    
+
+    [analysis.rate_word_169]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 169"
+    data = ""
+    
+
+    [analysis.rate_word_170]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 170"
+    data = ""
+    
+
+    [analysis.rate_word_171]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 171"
+    data = ""
+    
+
+    [analysis.rate_word_172]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 172"
+    data = ""
+    
+
+    [analysis.rate_word_173]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 173"
+    data = ""
+    
+
+    [analysis.rate_word_174]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 174"
+    data = ""
+    
+
+    [analysis.rate_word_175]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 175"
+    data = ""
+    
+
+    [analysis.rate_word_176]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 176"
+    data = ""
+    
+
+    [analysis.rate_word_177]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 177"
+    data = ""
+    
+
+    [analysis.rate_word_178]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 178"
+    data = ""
+    
+
+    [analysis.rate_word_179]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 179"
+    data = ""
+    
+
+    [analysis.rate_word_180]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 180"
+    data = ""
+    
+
+    [analysis.rate_word_181]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 181"
+    data = ""
+    
+
+    [analysis.rate_word_182]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 182"
+    data = ""
+    
+
+    [analysis.rate_word_183]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 183"
+    data = ""
+    
+
+    [analysis.rate_word_184]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 184"
+    data = ""
+    
+
+    [analysis.rate_word_185]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 185"
+    data = ""
+    
+
+    [analysis.rate_word_186]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 186"
+    data = ""
+    
+
+    [analysis.rate_word_187]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 187"
+    data = ""
+    
+
+    [analysis.rate_word_188]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 188"
+    data = ""
+    
+
+    [analysis.rate_word_189]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 189"
+    data = ""
+    
+
+    [analysis.rate_word_190]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 190"
+    data = ""
+    
+
+    [analysis.rate_word_191]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 191"
+    data = ""
+    
+
+    [analysis.rate_word_192]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 192"
+    data = ""
+    
+
+    [analysis.rate_word_193]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 193"
+    data = ""
+    
+
+    [analysis.rate_word_194]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 194"
+    data = ""
+    
+
+    [analysis.rate_word_195]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 195"
+    data = ""
+    
+
+    [analysis.rate_word_196]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 196"
+    data = ""
+    
+
+    [analysis.rate_word_197]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 197"
+    data = ""
+    
+
+    [analysis.rate_word_198]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 198"
+    data = ""
+    
+
+    [analysis.rate_word_199]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 199"
+    data = ""
+    
+
+    [analysis.rate_word_200]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "rate estimate of word 200"
+    data = ""
+    

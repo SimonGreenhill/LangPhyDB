@@ -1,0 +1,102 @@
+title = "Perfect Phylogenetic Networks: A New Methodology for Reconstructing the Evolutionary History of Natural Languages"
+
+doi = "10.1353/lan.2005.0078"
+
+abstract = """
+In this article we extend the model of language evolution exemplified in Ringe et al. 2002, which recovers
+phylogenetic trees optimized according to a criterion of weighted maximum compatibility, to include cases in
+which languages remain in contact and trade linguistic material as they evolve. We describe our analysis of an
+Indo-European (IE) dataset (originally assembled by Ringe and Taylor) based on this new model. Our study shows
+that this new model fits the IE family well and suggests that the early evolution of IE involved only limited
+contact between distinct lineages. Furthermore, the candidate histories we obtain appear to be consistent with
+archaeological findings, which suggests that this method may be of practical use. The case at hand provides no
+opportunity to explore the problem of conflict between network optimization criteria; that problem must be left
+to future research.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Luay Nakhleh", "Donald A. Ringe", "Tandy Warnow"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Nakhleh_2005b"
+
+# type of study
+type = ['phylogenetic', 'network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Perfect Phylogenetic Networks of Indo-European"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.ie]
+    ntaxa = 24
+    nchars = 294
+    nsites = 294
+    datatype = 'mixed'
+    source = '@Ringe2002'
+    items = ''
+    comment = 'Our database includes twenty-two phonological characters encoding regular sound changes (or, more often, sets of sound changes) that occurred in the prehistories of various languages in the database, thirteen morphological characters encoding details of inflection (or, in one case, of word formation), and 259 lexical characters defined by meanings on a basic wordlist.'
+
+
+# analysis information
+[analysis]
+    
+    notes = "We analyzed five candidate genetic trees, three (Trees A, B, and C, shown in Figures 5 through 7) that our team has come to regard in recent years as worthy of serious investigation and two (Trees D and E, shown in Figures 8 and 9) that were suggested to us by Craig Melchert"
+    
+    [analysis.tree_A]
+    tool = 'unknown'
+    model = 'perfect phylogeny'
+    details = "Tree A was constructed using Perfect Phylogeny software"
+
+    [analysis.tree_b]
+    tool = 'manual'
+    model = ''
+    details = "Trees B and C can be obtained by modifying Tree A in linguistically plausible ways"
+
+    [analysis.tree_c]
+    tool = 'manual'
+    model = ''
+    details = "Trees B and C can be obtained by modifying Tree A in linguistically plausible ways"
+
+    [analysis.tree_d]
+    tool = 'manual'
+    model = ''
+    details = "Trees D and E were suggested to us by our colleague Craig Melchert."
+
+    [analysis.tree_e]
+    tool = 'manual'
+    model = ''
+    details = "Trees D and E were suggested to us by our colleague Craig Melchert."
+
+
+    # Our brute-force analysis produced twenty-three PPNs exhibiting only three contact edges each: sixteen PPNs based on Tree A, four based on Tree B, one on Tree C, two on TreeD, and none on TreeE.
+    [analysis.tree_A_bruteforce_PPN]
+    tool = 'unknown'
+    model = 'perfect phylogeny'
+    details = ""
+
+    [analysis.tree_b_bruteforce_PPN]
+    tool = 'unknown'
+    model = 'perfect phylogeny'
+    details = ""
+
+    [analysis.tree_c_bruteforce_PPN]
+    tool = 'unknown'
+    model = 'perfect phylogeny'
+    details = ""
+
+    [analysis.tree_d_bruteforce_PPN]
+    tool = 'unknown'
+    model = 'perfect phylogeny'
+    details = ""
+
+    [analysis.tree_e_bruteforce_PPN]
+    tool = 'unknown'
+    model = 'perfect phylogeny'
+    details = ""

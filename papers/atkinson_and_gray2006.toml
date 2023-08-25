@@ -24,7 +24,7 @@ authors = [
 groups = ['Indo-European']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
-bibkey = "@Atkinson2004b"  # @xxxx
+bibkey = "@Atkinson2006b"  # @xxxx
 
 # type of study
 type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait

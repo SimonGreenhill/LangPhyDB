@@ -1,0 +1,36 @@
+title = "A stochastic model of language evolution that incorporates homoplasy and borrowing."
+
+doi = ""
+
+abstract = """
+The inference of evolutionary history, whether in biology or in linguistics, is aided by a carefully considered
+model of the evolutionary process and a reconstruction method which is expected to produce a reasonably accurate
+estimation of the true evolutionary history when the real data match the model assumptions and are of sufficient
+quantity.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Tandy Warnow",
+    "Steven N. Evans",
+    "Donald A. Ringe",
+    "Luay Nakhleh"
+]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Warnow2006"
+
+# type of study
+type = ['methodological']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Theoretical presentation of the Perfect Phylogeny method"
+
+# data
+[data]
+
+    notes = "no data used"
+    

@@ -14,8 +14,19 @@ Papers deemed to fall outside scope, alphabetically by first author surname.
 ## C
 ## D
 ## E
+
+* Evans, SN, Ringe DA, & Warnow T. (2006). Inference of Divergence times as a statistical inverse problem. In P Forster & C Renfrew (Eds.), Phylogenetic methods and the prehistory of languages (Vol. 1, pp. 119-120). McDonald Institute for Archaeological Research.
+    - no explicit phylogenetic analysis.
+
 ## F
 ## G
+
+* Garrett, A. (2006). Convergence in the formation of Indo-European subgroups: Phylogeny and Chronology. In P Forster & C Renfrew (Eds.), Phylogenetic methods and the prehistory of languages (Vol. 1, pp. 139-151). McDonald Institute for Archaeological Research.
+    - no explicit phylogenetic analysis.
+
+* Greenhill SJ, Hua X, Welsh CF, Schneemann H & Bromham L 2018. Population Size and the Rate of Language Evolution: A Test Across Indo-European, Austronesian, and Bantu Languages. Frontiers in Psychology, 9:576.
+    - no explicit phylogenetic analysis.
+
 ## H
 
 * Hartmann, F., & Riegger, C. (2022). The Burgundian language and its phylogeny. NOWELE, 75(1), 42–80. Portico. https://doi.org/10.1075/nowele.00062.har
@@ -52,8 +63,13 @@ Papers deemed to fall outside scope, alphabetically by first author surname.
 ## V
 ## W
 
+
 * Wahle J. 2016. An approach to cross-concept cognacy identification. Proceedings of the Leiden Workshop on Capturing Phylogenetic Algorithms for Linguistics.
     - No explicit phylogenetic analysis
+
+* Walker RS, Hill KR, Flinn MV & Ellsworth RM. 2011. Evolutionary History of Hunter-Gatherer Marriage Practices. PLoS ONE 6.e19066. doi:10.1371/journal.pone.0019066
+    - phylogeny is from mtDNA
+
 
 ## X
 ## Y

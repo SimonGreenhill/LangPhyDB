@@ -3,6 +3,7 @@ ade4,
 ape,
 arlequin,
 barrier,
+bayeslang,
 bayesphylogenies,http://www.evolution.reading.ac.uk/BayesPhy.html
 bayestraits,http://www.evolution.reading.ac.uk/BayesTraits.html
 bayestrees,
@@ -46,6 +47,7 @@ raxml,
 revbayes,https://revbayes.github.io/
 splitdist,http://birc.au.dk/software/splitdist/
 splitstree,http://www.splitstree.org/
+stan,
 starling,
 structure,
 tiger-calculator,https://github.com/kasyrj/tiger-calculator

@@ -1,0 +1,83 @@
+title = "Phylogenetic signal and rate of evolutionary change in language structures"
+
+doi = "10.1098/rsos.211252"
+
+abstract = """
+Within linguistics, there is an ongoing debate about whether some language structures remain stable over time,
+which structures these are and whether they can be used to uncover the relationships between languages. However,
+there is no consensus on the definition of the term ‘stability’. I define ‘stability’ as a high phylogenetic
+signal and a low rate of change. I use metric D to measure the phylogenetic signal and Hidden Markov Model to
+calculate the evolutionary rate for 171 structural features coded for 12 Japonic, 2 Koreanic, 14 Mongolic, 11
+Tungusic and 21 Turkic languages. To more deeply investigate the differences in evolutionary dynamics of
+structural features across areas of grammar, I divide the features into 4 language domains, 13 functional
+categories and 9 parts of speech. My results suggest that there is a correlation between the phylogenetic signal
+and evolutionary rate and that, overall, two-thirds of the features have a high phylogenetic signal and over a
+half of the features evolve at a slow rate. Specifically, argument marking (flagging and indexing), derivation and
+valency appear to be the most stable functional categories, pronouns and nouns the most stable parts of speech,
+and phonological and morphological levels the most stable language domains.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Nataliia Hübler"]
+
+# parts of the world
+groups = ['Tungusic', 'Mongolian', 'Japonic', 'Koreanic', 'Turkic']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Huebler_2022"
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Investigation of structural rates of change."
+
+# data
+[data]
+
+    notes = "171 structural features coded for 12 Japonic, 2 Koreanic, 14 Mongolic, 11 Tungusic and 21 Turkic languages"
+    
+    [data.structure]
+    ntaxa = 60
+    nchars = 171
+    nsites = 60
+    datatype = 'structural features'
+    source = ''
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = 'beast2'
+    model = 'covarion+relaxed+constraints'
+    details = "no data beyond topological constraints"
+    data = "data free pseudo-posterior"
+
+    [analysis.signal]
+    tool = 'caper'
+    model = 'phylo.D'
+    details = ""
+    data = ""
+
+    [analysis.rates_ER]
+    tool = 'corHMM'
+    model = 'ER'
+    details = ""
+    data = ""
+
+    [analysis.rates_ARD]
+    tool = 'corHMM'
+    model = 'ARD'
+    details = ""
+    data = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "https://zenodo.org/record/5720838#.YnjMrS0RppQ" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

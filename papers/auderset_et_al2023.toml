@@ -1,0 +1,197 @@
+title = "Subgrouping in a `dialect continuum': A Bayesian phylogenetic analysis of the Mixtecan language family"
+
+doi = "10.1093/jole/lzad004"
+
+abstract = """
+Subgrouping language varieties within dialect continua poses challenges for the application of the comparative method of histor- ical linguistics, and similar claims have been made for the use of Bayesian phylogenetic methods. In this article, we present the first Bayesian phylogenetic analysis of the Mixtecan language family of southern Mexico and show that the method produces valuable results and new insights with respect to subgrouping beyond what the comparative method and dialect geography have provided. Our findings reveal potential new subgroups that should be further investigated. We show that some unexpected groupings raise important questions for phylogenetics and historical linguistics about the effects of different methods of primary data gathering and organization that should be considered when interpreting subgrouping results.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Sandra Auderset", "Simon J. Greenhill", "Christian T. DiCanio", "Eric W. Campbell"]
+
+# parts of the world
+groups = ['Mixtecan']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Auderset_2023"
+
+# type of study
+type = ['phylogenetic', 'dating', 'delta', 'qresidual']
+
+# short description of the study, one line.
+description = "A phylogenetic analysis of the Mixtecan languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.broad]
+    ntaxa = 137
+    nchars = 209
+    nsites = 1183
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'swadesh200'
+    comment = ''
+
+    [data.fine]
+    ntaxa = 137
+    nchars = 209
+    nsites = 1254
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'swadesh200'
+    comment = ''
+
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.tip1]
+    taxa = ['chic1273']
+    age = "60" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.tip2]
+    taxa = ['diux1235']
+    age = "350" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.tip3]
+    taxa = ['tepe1280']
+    age = "50" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "ybp" # ybp
+    description = ""
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.broad_delta]
+    tool = 'phylogemetric'
+    model = 'delta'
+    details = ""
+    data = "@data.broad"
+
+    [analysis.fine_delta]
+    tool = 'phylogemetric'
+    model = 'delta'
+    details = ""
+    data = "@data.fine"
+
+    [analysis.broad_qresidual]
+    tool = 'phylogemetric'
+    model = 'qresidual'
+    details = ""
+    data = "@data.broad"
+
+    [analysis.fine_qresidual]
+    tool = 'phylogemetric'
+    model = 'qresidual'
+    details = ""
+    data = "@data.fine"
+
+
+    [analysis.beast_broad_strict]
+    tool = 'beast2'
+    model = 'bdsky+covarion+strict'
+    details = ""
+    data = "@data.broad"
+
+
+    [analysis.beast_fine_strict]
+    tool = 'beast2'
+    model = 'bdsky+covarion+strict'
+    details = ""
+    data = "@data.fine"
+
+
+    [analysis.beast_broad_relaxed]
+    tool = 'beast2'
+    model = 'bdsky+covarion+relaxed'
+    details = ""
+    data = "@data.broad"
+
+
+    [analysis.beast_fine_relaxed]
+    tool = 'beast2'
+    model = 'bdsky+covarion+relaxed'
+    details = ""
+    data = "@data.fine"
+
+
+    [analysis.beast_broad_strict_calibrations_BETS]
+    tool = 'beast2'
+    model = 'bdsky+covarion+strict+calibrations(BETS)'
+    details = ""
+    data = "@data.broad"
+
+
+    [analysis.beast_broad_strict_nocalibrations_BETS]
+    tool = 'beast2'
+    model = 'bdsky+covarion+strict+nocalibrations(BETS)'
+    details = ""
+    data = "@data.broad"
+
+
+    [analysis.beast_fine_strict_calibrations_BETS]
+    tool = 'beast2'
+    model = 'bdsky+covarion+strict+calibrations(BETS)'
+    details = ""
+    data = "@data.fine"
+
+
+    [analysis.beast_fine_strict_nocalibrations_BETS]
+    tool = 'beast2'
+    model = 'bdsky+covarion+strict+nocalibrations(BETS)'
+    details = ""
+    data = "@data.fine"
+
+
+    [analysis.beast_broad_relaxed_calibrations_BETS]
+    tool = 'beast2'
+    model = 'bdsky+covarion+relaxed+calibrations(BETS)'
+    details = ""
+    data = "@data.broad"
+
+
+    [analysis.beast_broad_relaxed_nocalibrations_BETS]
+    tool = 'beast2'
+    model = 'bdsky+covarion+relaxed+nocalibrations(BETS)'
+    details = ""
+    data = "@data.broad"
+
+
+    [analysis.beast_fine_relaxed_calibrations_BETS]
+    tool = 'beast2'
+    model = 'bdsky+covarion+relaxed+calibrations(BETS)'
+    details = ""
+    data = "@data.fine"
+
+
+    [analysis.beast_fine_relaxed_nocalibrations_BETS]
+    tool = 'beast2'
+    model = 'bdsky+covarion+relaxed+nocalibrations(BETS)'
+    details = ""
+    data = "@data.fine"
+
+
+
+[inferredages]
+    
+    notes = "Overall, the temporal information has little impact on our models"
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/auderset_et_al2023" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

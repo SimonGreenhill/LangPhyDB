@@ -1,0 +1,75 @@
+title = "At the boundaries of syntactic prehistory"
+
+doi = "10.1098/rstb.2020.0197"
+
+abstract = """ Can language relatedness be established without cognate words? This question has remained
+unresolved since the nineteenth century, leaving language prehistory beyond etymologically established families
+largely undefined. We address this problem through a theory of universal syntactic characters. We show that not
+only does syntax allow for comparison across distinct traditional language families, but that the probability of
+deeper historical relatedness between such families can be statistically tested through a dedicated algorithm
+which implements the concept of 'possible languages' suggested by a formal syntactic theory. Controversial
+clusters such as e.g. Altaic and Uralo-Altaic are significantly supported by our test, while other possible
+macro-groupings, e.g. Indo-Uralic or Basque-(Northeast) Caucasian, prove to be indistinguishable from a randomly
+generated distribution of language distances. These results suggest that syntactic diversity, modelled through a
+generative biolinguistic framework, can be used to provide a proof of historical relationship between different
+families irrespectively of the presence of a common lexicon from which regular sound correspondences can be
+determined; therefore, we argue that syntax may expand the time limits imposed by the classical comparative
+method. """
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Andrea Ceolin", "Cristina Guardiano", "Giuseppe Longobardi", "Monica Alexandrina Irimia", "Luca Bortolussi", "Andrea Sgarro"]
+
+# parts of the world
+groups = ['Indo-European', 'global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Ceolin_2021"
+
+# type of study
+type = ['phylogenetic', 'distance']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Phylogeny of Eurasian languages using syntactical features"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.syntax]
+    ntaxa = 58
+    nchars = 94
+    nsites = 94
+    datatype = 'syntactical features'
+    source = ''
+    items = ''
+    comment = ''
+
+    [data.geography]
+    ntaxa = 58
+    nchars = 1
+    nsites = 1
+    datatype = 'distance'
+    source = ''
+    items = ''
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.upgma]
+    tool = 'unknown'
+    model = 'upgma'
+    details = ""
+    data = ""
+
+    [analysis.mantel]
+    tool = 'unknown'
+    model = 'mantel'
+    details = ""
+    data = "@data.geography;@data.syntax"
+
+

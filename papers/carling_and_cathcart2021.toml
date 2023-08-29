@@ -1,0 +1,262 @@
+title = "Evolutionary dynamics of Indo-European alignment patterns"
+
+doi = "10.1075/dia.19043.car"
+
+abstract = """
+This paper employs phylogenetic modeling to reconstruct the alignment
+system of Indo-European. We use a data set of categorical morphosyntactic
+features, which take states such as ‘nominative-accusative’, ‘active-stative’, or
+‘ergative’. We analyze these characters with a standard Bayesian comparative
+phylogenetic method, inferring transition rates between character states on
+the basis of a phylogenetic representation of the languages in the data. Using
+these rates, we then reconstruct the probability of presence of traits at the
+root and nodes of Indo-European. We find that the most probable align-
+ment system for Proto-Indo-European is a nominative-accusative system,
+with low probabilities of neutral marking and ergativity in the categories
+lower in grammatical hierarchies (nouns, past). Using a test of phylogenetic
+signal, we find that characters pertaining to categories higher in hierarchies
+show greater phylogenetic stability than categories lower in hierarchies. We
+examine our results in relation to theories of Proto-Indo-European align-
+ment as well as to general typology.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Gerd Carling", "Chundra Cathcart"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Carling_2021"
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Reconstructs the morphosyntactical alignment of Indo-European"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.DiACL]
+    ntaxa = 126
+    nchars = 9
+    nsites = 9
+    datatype = 'syntactical features'
+    source = '@DiACL'
+    items = ''
+    comment = ''
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.label]
+    taxa = []
+    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "ybp" # ybp
+    description = ""
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = 'unknown'
+    model = 'unknown'
+    details = "uniformly sample branch lengths from chronologically realistic intervals. This yields a tree with a root age uniformly distributed between 7000 and 6000 years BP. We scale branch lengths by dividing them by 1000."
+    data = ""
+
+    [analysis.rate_1]
+    tool = 'stan'
+    model = 'custom'
+    details = ""
+    data = ""
+
+
+    [analysis.rate_2]
+    tool = 'stan'
+    model = 'custom'
+    details = ""
+    data = ""
+
+
+    [analysis.rate_3]
+    tool = 'stan'
+    model = 'custom'
+    details = ""
+    data = ""
+
+
+    [analysis.rate_4]
+    tool = 'stan'
+    model = 'custom'
+    details = ""
+    data = ""
+
+
+    [analysis.rate_5]
+    tool = 'stan'
+    model = 'custom'
+    details = ""
+    data = ""
+
+
+    [analysis.rate_6]
+    tool = 'stan'
+    model = 'custom'
+    details = ""
+    data = ""
+
+
+    [analysis.rate_7]
+    tool = 'stan'
+    model = 'custom'
+    details = ""
+    data = ""
+
+
+    [analysis.rate_8]
+    tool = 'stan'
+    model = 'custom'
+    details = ""
+    data = ""
+
+
+    [analysis.rate_9]
+    tool = 'stan'
+    model = 'custom'
+    details = ""
+    data = ""
+
+
+    [analysis.asr_1]
+    tool = 'stan'
+    model = 'custom'
+    details = ""
+    data = ""
+
+
+    [analysis.asr_2]
+    tool = 'stan'
+    model = 'custom'
+    details = ""
+    data = ""
+
+
+    [analysis.asr_3]
+    tool = 'stan'
+    model = 'custom'
+    details = ""
+    data = ""
+
+
+    [analysis.asr_4]
+    tool = 'stan'
+    model = 'custom'
+    details = ""
+    data = ""
+
+
+    [analysis.asr_5]
+    tool = 'stan'
+    model = 'custom'
+    details = ""
+    data = ""
+
+
+    [analysis.asr_6]
+    tool = 'stan'
+    model = 'custom'
+    details = ""
+    data = ""
+
+
+    [analysis.asr_7]
+    tool = 'stan'
+    model = 'custom'
+    details = ""
+    data = ""
+
+
+    [analysis.asr_8]
+    tool = 'stan'
+    model = 'custom'
+    details = ""
+    data = ""
+
+
+    [analysis.asr_9]
+    tool = 'stan'
+    model = 'custom'
+    details = ""
+    data = ""
+
+
+    [analysis.signal_1]
+    tool = 'stan'
+    model = 'custom'
+    details = "delta metric of Borges et al. 2018"
+    data = ""
+
+
+    [analysis.signal_2]
+    tool = 'stan'
+    model = 'custom'
+    details = "delta metric of Borges et al. 2018"
+    data = ""
+
+
+    [analysis.signal_3]
+    tool = 'stan'
+    model = 'custom'
+    details = "delta metric of Borges et al. 2018"
+    data = ""
+
+
+    [analysis.signal_4]
+    tool = 'stan'
+    model = 'custom'
+    details = "delta metric of Borges et al. 2018"
+    data = ""
+
+
+    [analysis.signal_5]
+    tool = 'stan'
+    model = 'custom'
+    details = "delta metric of Borges et al. 2018"
+    data = ""
+
+
+    [analysis.signal_6]
+    tool = 'stan'
+    model = 'custom'
+    details = "delta metric of Borges et al. 2018"
+    data = ""
+
+
+    [analysis.signal_7]
+    tool = 'stan'
+    model = 'custom'
+    details = "delta metric of Borges et al. 2018"
+    data = ""
+
+
+    [analysis.signal_8]
+    tool = 'stan'
+    model = 'custom'
+    details = "delta metric of Borges et al. 2018"
+    data = ""
+
+
+    [analysis.signal_9]
+    tool = 'stan'
+    model = 'custom'
+    details = "delta metric of Borges et al. 2018"
+    data = ""
+

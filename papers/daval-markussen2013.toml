@@ -1,0 +1,93 @@
+title = "First steps towards a typological profile of creoles"
+
+doi = "10.1080/03740463.2014.880606"
+
+abstract = """
+In the past four decades, several scholars have proposed lists of typical creole features: e.g.
+Taylor (1971), Bickerton (1981), Markey (1982), McWhorter (1998), Holm and Patrick (2007). However, when these
+were tested against individual creoles or sets of creoles, the results were, at best, mixed: there are no creoles
+that adhere to all the features selected by these authors, and worse yet, quite a few of the proposed features are
+only found in a minority of creoles. Nevertheless, the studies by Parkvall (2008) and Bakker et al. (2011) clearly
+point in the direction of a specific typological profile for creoles: creoles are overall less complex than
+non-creoles (Parkvall 2008), and selections of different sets of structural properties all suggest distinctive
+properties of creoles (Bakker et al. 2011). These authors, however, have not been able to pinpoint the individual
+features that distinguish creoles from non-creoles.
+
+In this paper, we continue along the lines laid down by Parkvall (2008) and Bakker et al. (2011). We will show
+that three structural features are sufficient to distinguish 18 creoles reliably and unequivocally from a sample
+of hundreds of non-creole languages worldwide.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Aymeric Daval-Markussen"]
+
+# parts of the world
+groups = ['Creoles']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Daval_Markussen_2013"
+
+# type of study
+type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Attempts to develop a typological profile of creoles"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.creoles]
+    ntaxa = 50
+    nchars = 69
+    nsites = 69
+    datatype = 'structural features'
+    source = '@HolmPatrickCCS2007'
+    items = ''
+    comment = ''
+
+    [data.wals]
+    ntaxa = 134
+    nchars = 4
+    nsites = 4
+    datatype = 'structural features'
+    source = '@WALS'
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.neighborjoining69]
+    tool = 'splitstree'
+    model = 'neighborjoining+bootstrapping'
+    details = "69 features"
+    data = ""
+
+    [analysis.neighborjoining18]
+    tool = 'splitstree'
+    model = 'neighborjoining+bootstrapping'
+    details = "reduced feature set of 18 features"
+    data = ""
+
+    [analysis.neighborjoining69_multistate]
+    tool = 'splitstree'
+    model = 'neighborjoining+bootstrapping'
+    details = "multistate coding"
+    data = ""
+
+
+    [analysis.neighborjoining4_wals]
+    tool = 'splitstree'
+    model = 'neighborjoining+bootstrapping'
+    details = "reduced to 4 characters"
+    data = "@data.wals"
+
+    [analysis.neighborjoining3_wals]
+    tool = 'splitstree'
+    model = 'neighborjoining+bootstrapping'
+    details = "reduced to 3 characters"
+    data = "@data.wals"

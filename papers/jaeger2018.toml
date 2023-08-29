@@ -52,6 +52,6 @@ description = "Global phylogeny from ASJP database using Pointwise Mutual Inform
     notes = ""
     
     [analysis.tree]
-    tool = ''
+    tool = 'custom'
     model = ''
     details = ""

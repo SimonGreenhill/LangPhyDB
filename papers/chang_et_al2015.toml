@@ -40,29 +40,291 @@ bibkey = "@Chang2015"
 type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
 
 # short label of taxa "37 languages from.."
-description = "52 Indo-European languages"
+description = "Phylogenetic analysis of Indo-European languages"
 
 # data
 [data]
-    [data.lexicon]
-    ntaxa = 52
-    nchars = ""
-    nsites = ""
+    [data.bouckaert]
+    ntaxa = 103
+    nchars = 207
+    nsites = 5992
     datatype = 'lexical cognates'
-    source = ''
+    source = '@Bouckaert2012'
     items = 'swadesh200'
     comment = ''
     
+    [data.broad]
+    ntaxa = 94
+    nchars = 197
+    nsites = 5694
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'swadesh200'
+    comment = 'Of the 207 meaning classes in IELEX, three (‘blow’, ‘father’, ‘mother’) were excluded as being especially susceptible to sound symbolism, and seven others were excluded because they were unattested in more than 30% of the languages, probably due to the fact that they are not in the Dyen data set, which was constructed around the 200 items proposed by Swadesh (1952).'
+    
+    [data.medium]
+    ntaxa = 82
+    nchars = 143
+    nsites = 3279
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'swadesh200'
+    comment = 'Our medium data set uses a subset of eighty-two languages and 143 meaning classes from the broad data set, chosen so that no language would have too many hidden cells'
+    
+    [data.narrow]
+    ntaxa = 52
+    nchars = 143
+    nsites = 2350
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'swadesh200'
+    comment = 'We assembled a narrow data set by removing from the medium data set any modern language that lacks an ancestor in the data set, leaving fifty-two languages.'
+
+[calibration]
+    [calibration.Hittite]
+    taxa = ['hitt1242']
+    age = "normal(3400, 100)"
+    units = "ybp" # ybp
+    description = "Hittite (hit) "
+
+    [calibration.VedicSanskrit]
+    taxa = ['sans1269']
+    age = "normal(3250, 250)"
+    units = "ybp" # ybp
+    description = "Vedic Sanskrit (san)"
+
+    [calibration.Avestan]
+    taxa = ['aves1237']
+    age = "normal(2500, 50)"
+    units = "ybp" # ybp
+    description = "Avestan (ave) "
+
+    [calibration.Sogdian]
+    taxa = ['sogd1245']
+    age = "normal(1300, 100)"
+    units = "ybp" # ybp
+    description = "Sogdian (sog)"
+
+    [calibration.AncientGreek]
+    taxa = ["anci1242"]
+    age = "normal(2450, 50)"
+    units = "ybp" # ybp
+    description = "Ancient Greek (grc)"
+
+    [calibration.Latin]
+    taxa = ['lati1261']
+    age = "normal(2150, 50)"
+    units = "ybp" # ybp
+    description = "Latin (lat)"
+
+    [calibration.Gothic]
+    taxa = ['goth1244']
+    age = "normal(1650, 25)"
+    units = "ybp" # ybp
+    description = "Gothic (got)"
+
+    [calibration.OldHighGerman]
+    taxa = ['oldh1241']
+    age = "normal(1150, 50)"
+    units = "ybp" # ybp
+    description = "Old High German (goh)"
+
+    [calibration.OldEnglish]
+    taxa = ['olde1238']
+    age = "normal(1000, 50)"
+    units = "ybp" # ybp
+    description = "Old English (ang)"
+
+    [calibration.OldWestNorse]
+    taxa = ['oldw1240']
+    age = "normal(800, 50)"
+    units = "ybp" # ybp
+    description = "Old West Norse (non, ‘Old Norse’)"
+
+    [calibration.ClassicalArmenian]
+    taxa = ['clas1249']
+    age = "normal(1550, 50)"
+    units = "ybp" # ybp
+    description = "Classical Armenian (xcl)"
+
+    [calibration.TocharianA]
+    taxa = ['tokh1242']
+    age = "normal(1350, 150)"
+    units = "ybp" # ybp
+    description = "Tocharian A (xto)"
+
+    [calibration.TocharianB]
+    taxa = ['tokh1243']
+    age = "normal(1350, 150)"
+    units = "ybp" # ybp
+    description = "Tocharian B (txb)"
+
+    [calibration.OldIrish]
+    taxa = ['oldi1245']
+    age = "normal(1200, 100)"
+    units = "ybp" # ybp
+    description = "Old Irish (sga)"
+
+    [calibration.Cornish]
+    taxa = ['oldc1252']
+    age = "normal(300, 100)"
+    units = "ybp" # ybp
+    description = "Cornish (cor)"
+
+    [calibration.OldChurchSlavic]
+    taxa = ['chur1257']
+    age = "normal(1000, 50)"
+    units = "ybp" # ybp
+    description = "Old Church Slavic (chu)"
+
+    [calibration.OldPrussian]
+    taxa = ['prus1238']
+    age = "normal(550, 50)"
+    units = "ybp" # ybp
+    description = "Old Prussian (prg)"
+
+
 
 # analysis information
 [analysis]
-    [analysis.tree]
-    tool = ''
-    model = ''
-    details = ""
+
+    [analysis.A1a]
+    tool = 'beast2'
+    model = 'covarion+relaxed'
+    details = "A1a: Narrow dataset"
+    data = ""
+
+
+    [analysis.A1b]
+    tool = 'beast2'
+    model = 'covarion+relaxed'
+    details = "A1b: corrected for root advergence "
+    data = ""
+
+
+    [analysis.A2a]
+    tool = 'beast2'
+    model = 'covarion+relaxed'
+    details = "A2a: Medium dataset "
+    data = ""
+
+
+    [analysis.A2b]
+    tool = 'beast2'
+    model = 'covarion+relaxed'
+    details = "A2b: corrected for root advergence"
+    data = ""
+
+
+    [analysis.A3a]
+    tool = 'beast2'
+    model = 'covarion+relaxed'
+    details = "A3a: Broad dataset"
+    data = ""
+
+
+    [analysis.A3b]
+    tool = 'beast2'
+    model = 'covarion+relaxed'
+    details = "A3b: corrected for root advergence"
+    data = ""
+
+
+    [analysis.A4]
+    tool = 'beast2'
+    model = 'covarion+relaxed'
+    details = "A4: Exclude loans"
+    data = ""
+
+
+    [analysis.A5]
+    tool = 'beast2'
+    model = 'covarion+relaxed'
+    details = "A5: Fewer meaning classes"
+    data = ""
+
+
+    [analysis.A6]
+    tool = 'beast2'
+    model = 'covarion+relaxed'
+    details = "A6: Constant pop. coal. tree prior"
+    data = ""
+
+
+    [analysis.A7]
+    tool = 'beast2'
+    model = 'covarion+relaxed'
+    details = "A7: Covarion (no rate var., fixed hfreq.)"
+    data = ""
+
+
+    [analysis.B1]
+    tool = 'beast2'
+    model = 'covarion+relaxed'
+    details = "B1: Replication of B. et al."
+    data = ""
+
+
+    [analysis.B2]
+    tool = 'beast2'
+    model = 'covarion+relaxed'
+    details = "B2: B1 omitting poorly attested languages"
+    data = ""
+
+
+    [analysis.B3]
+    tool = 'beast2'
+    model = 'covarion+relaxed'
+    details = "B3: B2 adding ancestry constraints"
+    data = ""
+
+
+    [analysis.C1]
+    tool = 'beast2'
+    model = 'ctmc+relaxed'
+    details = "C1: RSC, anc. constraints"
+    data = ""
+
+
+    [analysis.C2]
+    tool = 'beast2'
+    model = 'ctmc+relaxed'
+    details = "C2: RSC (homo.), anc. constraint "
+    data = ""
+
+
+    [analysis.C3]
+    tool = 'beast2'
+    model = 'ctmc+relaxed'
+    details = "C3: RSC, no anc. constraints"
+    data = ""
+
+
+    [analysis.C4]
+    tool = 'beast2'
+    model = 'ctmc+relaxed'
+    details = "C4: RSC (homo.), no anc. constraints"
+    data = ""
+
+
+    [analysis.C5]
+    tool = 'beast2'
+    model = 'sdollo+relaxed'
+    details = "C5: SDC (homo.), no anc. constraints"
+    data = ""
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.ProtoIndoEuropean]
+    taxa = ["indo1319"]
+    age = "hpd(5950,7190,4870)"
+    units = "y2000"
+    notes = 'A1 Narrow dataset'
 
 
 [links]
-phlorest = { title = "Phlorest Dataset", link = "" }
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/chang_et_al2015" }
 cldf = { title = "CLDF Dataset", link = "" }
 links = []

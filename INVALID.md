@@ -13,6 +13,10 @@ Papers deemed to fall outside scope, alphabetically by first author surname.
 
 ## C
 ## D
+
+* Dediu, D, & Cysouw, M (2013). Some structural aspects of language are more stable than others: A comparison of seven methods. PloS One, 8(1), e55009. https://doi.org/10.1371/journal.pone.0055009
+    - essentially just reports the results of Dediu (2011)
+
 ## E
 
 * Evans, SN, Ringe DA, & Warnow T. (2006). Inference of Divergence times as a statistical inverse problem. In P Forster & C Renfrew (Eds.), Phylogenetic methods and the prehistory of languages (Vol. 1, pp. 119-120). McDonald Institute for Archaeological Research.

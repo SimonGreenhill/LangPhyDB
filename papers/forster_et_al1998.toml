@@ -1,0 +1,50 @@
+title = "Evolutionary network analysis of word lists: Visualising the relationships between alpine romance languages"
+
+doi = "10.1080/09296179808590125"
+
+abstract = """ The tree model and the wave model of language evolution are united into one geometric network
+model. A related approach has previously been used for reconstructing DNA evolution, and we now present a network
+approach for diagnostic word lists of closely related languages. When applied to 17 Alpine Romance languages, the
+resulting evolutionary network reproduces known linguistic relationships and also fairly accurately reflects the
+geographic location of each language """
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Peter Forster", "Alfred Toth", "Hans-Jürgen Bandelt"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Forster_1998"
+
+# type of study
+type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Network analysis of Alpine Romance language varieties"
+
+# data
+[data]
+
+    notes = "We have chosen translations of the list of 100 diag- nostic words proposed by Swadesh (1955)"
+    
+    [data.romance]
+    ntaxa = 95
+    nchars = 100
+    nsites = 100
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'swadesh100'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.mj]
+    tool = 'network'
+    model = 'median joining'
+    details = ""
+    data = ""
+

@@ -1,0 +1,399 @@
+title = "A Bayesian phylogenetic approach to estimating the stability of linguistic features and the genetic biasing of tone"
+
+doi = "10.1098/rspb.2010.1595"
+
+abstract = """
+Language is a hallmark of our species and understanding linguistic diversity is an area of major
+interest. Genetic factors influencing the cultural transmission of language provide a powerful and elegant
+explanation for aspects of the present day linguistic diversity and a window into the emergence and evolution of
+language. In particular, it has recently been proposed that linguistic tone—the usage of voice pitch to convey
+lexical and grammatical meaning—is biased by two genes involved in brain growth and development, ASPM and
+Microcephalin. This hypothesis predicts that tone is a stable characteristic of language because of its ‘genetic
+anchoring’. The present paper tests this prediction using a Bayesian phylogenetic framework applied to a large set
+of linguistic features and language families, using multiple software implementations, data codings, stability
+estimations, linguistic classifications and outgroup choices. The results of these different methods and datasets
+show a large agreement, suggesting that this approach produces reliable estimates of the stability of linguistic
+data. Moreover, linguistic tone is found to be stable across methods and datasets, providing suggestive support
+for the hypothesis of genetic influences on its distribution.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Dan Dediu"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Dediu_2010"
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "A phylogenetic analysis of the stability of tone"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.wals]
+    ntaxa = 2650
+    nchars = 141
+    nsites = 141
+    datatype = 'structural features'
+    source = '@WALS'
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+
+    [analysis.tree_mrbayes_binary_wals_outgroup_basque]
+        tool = 'mrbayes'
+        model = 'restriction+gamma'
+        details = "constrained to match wals"
+        data = ""
+        
+    [analysis.tree_mrbayes_binary_wals_outgroup_ainu]
+        tool = 'mrbayes'
+        model = 'restriction+gamma'
+        details = "constrained to match wals"
+        data = ""
+        
+    [analysis.tree_mrbayes_binary_ethnologue_outgroup_1]
+        tool = 'mrbayes'
+        model = 'restriction+gamma'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_binary_ethnologue_outgroup_2]
+        tool = 'mrbayes'
+        model = 'restriction+gamma'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_binary_ethnologue_outgroup_3]
+        tool = 'mrbayes'
+        model = 'restriction+gamma'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_binary_ethnologue_outgroup_4]
+        tool = 'mrbayes'
+        model = 'restriction+gamma'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_binary_ethnologue_outgroup_5]
+        tool = 'mrbayes'
+        model = 'restriction+gamma'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_binary_ethnologue_outgroup_6]
+        tool = 'mrbayes'
+        model = 'restriction+gamma'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_binary_ethnologue_outgroup_7]
+        tool = 'mrbayes'
+        model = 'restriction+gamma'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_binary_ethnologue_outgroup_8]
+        tool = 'mrbayes'
+        model = 'restriction+gamma'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_binary_ethnologue_outgroup_9]
+        tool = 'mrbayes'
+        model = 'restriction+gamma'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_binary_ethnologue_outgroup_10]
+        tool = 'mrbayes'
+        model = 'restriction+gamma'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_binary_ethnologue_outgroup_11]
+        tool = 'mrbayes'
+        model = 'restriction+gamma'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_binary_ethnologue_outgroup_12]
+        tool = 'mrbayes'
+        model = 'restriction+gamma'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_binary_ethnologue_outgroup_13]
+        tool = 'mrbayes'
+        model = 'restriction+gamma'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_binary_ethnologue_outgroup_14]
+        tool = 'mrbayes'
+        model = 'restriction+gamma'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_binary_ethnologue_outgroup_15]
+        tool = 'mrbayes'
+        model = 'restriction+gamma'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_binary_ethnologue_outgroup_16]
+        tool = 'mrbayes'
+        model = 'restriction+gamma'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_binary_ethnologue_outgroup_17]
+        tool = 'mrbayes'
+        model = 'restriction+gamma'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_binary_ethnologue_outgroup_18]
+        tool = 'mrbayes'
+        model = 'restriction+gamma'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_binary_ethnologue_outgroup_19]
+        tool = 'mrbayes'
+        model = 'restriction+gamma'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_binary_ethnologue_outgroup_20]
+        tool = 'mrbayes'
+        model = 'restriction+gamma'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_binary_ethnologue_outgroup_21]
+        tool = 'mrbayes'
+        model = 'restriction+gamma'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_binary_ethnologue_outgroup_22]
+        tool = 'mrbayes'
+        model = 'restriction+gamma'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_binary_ethnologue_outgroup_23]
+        tool = 'mrbayes'
+        model = 'restriction+gamma'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_polymorphic_wals_outgroup_basque]
+        tool = 'mrbayes'
+        model = 'custom'
+        details = "constrained to match wals"
+        data = ""
+        
+    [analysis.tree_mrbayes_polymorphic_wals_outgroup_ainu]
+        tool = 'mrbayes'
+        model = 'custom'
+        details = "constrained to match wals"
+        data = ""
+        
+    [analysis.tree_mrbayes_polymorphic_ethnologue_outgroup_1]
+        tool = 'mrbayes'
+        model = 'custom'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_polymorphic_ethnologue_outgroup_2]
+        tool = 'mrbayes'
+        model = 'custom'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_polymorphic_ethnologue_outgroup_3]
+        tool = 'mrbayes'
+        model = 'custom'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_polymorphic_ethnologue_outgroup_4]
+        tool = 'mrbayes'
+        model = 'custom'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_polymorphic_ethnologue_outgroup_5]
+        tool = 'mrbayes'
+        model = 'custom'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_polymorphic_ethnologue_outgroup_6]
+        tool = 'mrbayes'
+        model = 'custom'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_polymorphic_ethnologue_outgroup_7]
+        tool = 'mrbayes'
+        model = 'custom'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_polymorphic_ethnologue_outgroup_8]
+        tool = 'mrbayes'
+        model = 'custom'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_polymorphic_ethnologue_outgroup_9]
+        tool = 'mrbayes'
+        model = 'custom'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_polymorphic_ethnologue_outgroup_10]
+        tool = 'mrbayes'
+        model = 'custom'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_polymorphic_ethnologue_outgroup_11]
+        tool = 'mrbayes'
+        model = 'custom'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_polymorphic_ethnologue_outgroup_12]
+        tool = 'mrbayes'
+        model = 'custom'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_polymorphic_ethnologue_outgroup_13]
+        tool = 'mrbayes'
+        model = 'custom'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_polymorphic_ethnologue_outgroup_14]
+        tool = 'mrbayes'
+        model = 'custom'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_polymorphic_ethnologue_outgroup_15]
+        tool = 'mrbayes'
+        model = 'custom'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_polymorphic_ethnologue_outgroup_16]
+        tool = 'mrbayes'
+        model = 'custom'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_polymorphic_ethnologue_outgroup_17]
+        tool = 'mrbayes'
+        model = 'custom'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_polymorphic_ethnologue_outgroup_18]
+        tool = 'mrbayes'
+        model = 'custom'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_polymorphic_ethnologue_outgroup_19]
+        tool = 'mrbayes'
+        model = 'custom'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_polymorphic_ethnologue_outgroup_20]
+        tool = 'mrbayes'
+        model = 'custom'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_polymorphic_ethnologue_outgroup_21]
+        tool = 'mrbayes'
+        model = 'custom'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_polymorphic_ethnologue_outgroup_22]
+        tool = 'mrbayes'
+        model = 'custom'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_mrbayes_polymorphic_ethnologue_outgroup_23]
+        tool = 'mrbayes'
+        model = 'custom'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_bayeslang_binary_wals]
+        tool = 'bayeslang'
+        model = 'custom'
+        details = "constrained to match wals"
+        data = ""
+        
+    [analysis.tree_bayeslang_binary_ethnologue]
+        tool = 'bayeslang'
+        model = 'custom'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+    [analysis.tree_bayeslang_polymorphic_wals]
+        tool = 'bayeslang'
+        model = 'custom'
+        details = "constrained to match wals"
+        data = ""
+        
+    [analysis.tree_bayeslang_polymorphic_ethnologue]
+        tool = 'bayeslang'
+        model = 'custom'
+        details = "constrained to match ethnologue"
+        data = ""
+        
+# spec:
+# for progr in ('mrbayes', 'bayeslang'):
+#     for ds in ('binary', 'polymorphic'):
+#
+#         # model
+#         if progr == 'mrbayes' and ds == 'binary':
+#             m = 'restriction+gamma'
+#         elif progr == 'mrbayes' and ds == 'original':
+#             m = 'standard+gamma'
+#         else:
+#             m = 'custom'
+#
+#         for classif in ('wals', 'ethnologue'):
+#             label = 'tree_%s_%s_%s' % (progr, ds, classif)
+#
+#             if classif == 'ethnologue' and progr == 'mrbayes':
+#                 for outgroup in range(1, 24):
+#                     print(analysis(label = "%s_outgroup_%d" % (label, outgroup), tool = progr, model = m, details = "constrained to match %s" % classif))
+#             elif classif == 'wals' and progr == 'mrbayes':
+#                 for outgroup in ('basque', 'ainu'):
+#                     print(analysis(label = "%s_outgroup_%s" % (label, outgroup), tool = progr, model = m, details = "constrained to match %s" % classif))
+#             else:
+#                 print(analysis(label = label, tool = progr, model = m, details = "constrained to match %s" % classif))
+#

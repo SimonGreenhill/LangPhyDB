@@ -4,6 +4,7 @@ demographic,demographic data
 distance,geographic distance data
 environmental factors,environmental factors
 ethnobotanical,ethnobotany
+ethnobotanical features,
 ethnographic features,ethnographic features
 frequency,frequency
 genetic SNPs,genetic SNP data
@@ -14,8 +15,8 @@ lexical cognates (autodetected),auto detected cognate data
 lexical distance,
 lexical distances,lexical distances
 mixed,mixed datatypes
-musical distance,
 morphological traits,morphological characters
+musical distance,
 phonetic distance,phonetic distance
 phonetic traits,phonetic characters
 semantic primes,NSM

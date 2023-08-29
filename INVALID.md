@@ -38,6 +38,10 @@ Papers deemed to fall outside scope, alphabetically by first author surname.
 
 ## I
 ## J
+
+* Jackson JC, Watts J, Henry TR, List JM, Forkel R, Mucha PJ, Greenhill SJ, Gray RD, & Lindquist KA 2019 Emotion semantics show both cultural variation and universal structure. Science, 366, 1517-1522.
+    - No explicit phylogenetic analysis
+
 ## K
 ## L
 
@@ -67,6 +71,9 @@ Papers deemed to fall outside scope, alphabetically by first author surname.
 ## V
 ## W
 
+
+* Warnow, D Ringe, and A Taylor, 1995 "Reconstructing the evolutionary history of natural languages." IRCS Report 95-16. Philadelphia 1995): Institute for Research in Cognitive Science, University of Pennsylvania. Technical report, 18 pp. 	
+    - Conference report
 
 * Wahle J. 2016. An approach to cross-concept cognacy identification. Proceedings of the Leiden Workshop on Capturing Phylogenetic Algorithms for Linguistics.
     - No explicit phylogenetic analysis

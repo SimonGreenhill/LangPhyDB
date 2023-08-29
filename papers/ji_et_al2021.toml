@@ -1,0 +1,100 @@
+title = "A phylogenetic analysis of dispersal norms, descent and subsistence in Sino-Tibetans"
+
+doi = "10.1016/j.evolhumbehav.2021.12.002"
+
+abstract = """
+Sex-biased dispersal has long been of interest to anthropologists and biologists, as it can
+structure populations and determine patterns of kinship, relatedness and cooperation. In most contemporary human
+societies, females usually disperse at marriage. In a minority of human societies, male dispersal, bisexual
+philopatry, or both sexes dispersing is practiced. Previous studies suggest that emergence of either agriculture,
+cattle pastoralism, or patriliny is associated with female-biased dispersal in certain language families. The
+ancestral patterns of sex- specific dispersal and its ecological correlates in Sino-Tibetans remain uncertain.
+Here we use comparative phylogenetic methods to infer the evolutionary history of sex-specific dispersal in
+Sino-Tibetan groups, and tested for coevolution between subsistence (agriculture and cattle-keeping), descent and
+sex-specific dispersal. We use a variety of ethnographic and historical sources to identify dispersal strategies
+across Sino-Tibetan phylogenetic trees (n = 97). We found that 1) earliest Sino-Tibetan groups were likely
+patrilocal; 2) agricul- ture likely co-evolved with only female dispersal patterns, but the result is sensitive to
+alternative coding strategy; 3) there is no evidence that domestic cattle co-evolved with dispersal patterns of
+either gender; and 4) kinship descent likely co-evolved with female dispersal, but not with male dispersal.
+Moreover, change from state of “patrilineal” to “non-patrilineal” triggered change in female dispersal patterns,
+from “female non-stay” to “female stay”. Our results suggest that change in descent drove change in
+female-specific dispersal pattern in Sino-Tibetans. Our findings illustrated how subsistence or descent can play
+different roles in shaping sex-biased dispersal patterns.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Ting Ji", "Hanzhi Zhang", "Mark Pagel", "Ruth Mace"]
+
+# parts of the world
+groups = ['Sino-Tibetan']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Ji_2022"
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "A phylogenetic analysis of dispersal norms, descent and subsistence in Sino-Tibetans"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.ethno]
+    ntaxa = 131
+    nchars = 3
+    nsites = 3
+    datatype = 'ethnographic features'
+    source = ''
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.zhang]
+    source = '@Zhang2020'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.asr_male]
+    tool = 'bayestraits'
+    model = 'multistate+rjmcmc'
+    details = ""
+    data = ""
+
+    [analysis.asr_female]
+    tool = 'bayestraits'
+    model = 'multistate+rjmcmc'
+    details = ""
+    data = ""
+
+    [analysis.dispersal_1_indep]
+    tool = 'bayestraits'
+    model = 'discrete+rjmcmc'
+    details = ""
+    data = ""
+
+    [analysis.dispersal_1_dep]
+    tool = 'bayestraits'
+    model = 'discrete+rjmcmc'
+    details = ""
+    data = ""
+
+    [analysis.agriculture_2_indep]
+    tool = 'bayestraits'
+    model = 'discrete+rjmcmc'
+    details = ""
+    data = ""
+
+    [analysis.agriculture_2_dep]
+    tool = 'bayestraits'
+    model = 'discrete+rjmcmc'
+    details = ""
+    data = ""
+

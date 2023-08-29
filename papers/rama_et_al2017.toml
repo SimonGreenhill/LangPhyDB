@@ -1,0 +1,56 @@
+title = "Computational analysis of Gondi dialects"
+
+doi = "10.18653/v1/W17-1203"
+
+abstract = """
+
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Taraka Rama", "Çağrı Çöltekin", "Pavel Sofroniev"]
+
+# parts of the world
+groups = ['Dravidian']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Rama_2017"
+
+# type of study
+type = ['phylogenetic', 'methodological']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "A computational analysis of Gondi dialects"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.gondi]
+    ntaxa = 46
+    nchars = 210
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.gabmap]
+    tool = 'gabmap'
+    model = 'mds'
+    details = ""
+    data = ""
+
+    [analysis.tree]
+    tool = 'mrbayes'
+    model = '?'
+    details = ""
+    data = ""
+
+[links]
+links = ["https://github.com/ PhyloStar/Gondi-Dialect-Analysis"]

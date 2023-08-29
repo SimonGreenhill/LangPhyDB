@@ -15,7 +15,6 @@
 * Holman, E W & Wichmann S. 2017. New evidence from linguistic phylogenetics identifies limits to punctuational change. Systematic Biology 66.4: 604-610. DOI: https://doi.org/10.1093/sysbio/syw106.
 * Holman, E W, Wichmann S, Brown CH, & Eff EA. 2015. Inheritance and diffusion of language and culture: A comparative perspective. Social Evolution & History 14.1:49-64.
 * Jäger, G, & Wahle, J (2021). Phylogenetic Typology. Frontiers in Psychology, 12. https://doi.org/10.3389/fpsyg.2021.682132
-* Jackson JC, Watts J, Henry TR, List JM, Forkel R, Mucha PJ, Greenhill SJ, Gray RD, & Lindquist KA 2019 Emotion semantics show both cultural variation and universal structure. Science, 366, 1517-1522.
 * Jackson, J.C., Lindquist, K., Drabble, R. et al. Valence-dependent mutation in lexical evolution. Nat Hum Behav 7, 190–199 (2023). https://doi.org/10.1038/s41562-022-01483-8
 * Jing, Y., Widmer, P., & Bickel, B. (2023). Word order evolves at similar rates in main and subordinate clauses. Diachronica. https://doi.org/10.1075/dia.20035.jin
 * Kassian, A. 2015. Towards a formal genealogical classification of the Lezgian languages (North Caucasus): Testing various phylogenetic methods on lexical data. PLoS ONE 10(2): e0116950. doi:10.1371/journal.pone.0116950.
@@ -31,14 +30,12 @@
 * Pompei, S, Loreto, V, & Tria, F (2011). On the Accuracy of Language Trees. PLoS ONE, 6.
 * Rama, T. 2018. Three tree priors and five datasets: A study of Indo-European phylogenetics
 * Rama, Taraka and Søren Wichmann. 2020. A test of Generalized Bayesian dating: A new linguistic dating method. PLoS ONE 15(8): e0236522. https://doi.org/10.1371/journal.pone.0236522.
-* Rama, Taraka, Çağrı Çöltekin, and Pavel Sofroniev. 2017. Computational analysis of Gondi dialects. In Proceedings of the Fourth Workshop on NLP for Similar Languages, Varieties and Dialects (VarDial), pages 26–35, Valencia, Spain. Association for Computational Linguistics.
 * Ringe Jr., D A, Warnow, T, Taylor, A, Michailov, A, & Levinson, L (1998). Computational cladistics and the position of Tocharian. In V Mair (Ed.), The Bronze Age and Early Iron Age Peoples of Eastern Central Asia, Volume 1: Archeology, Migration and Nomadism: Journal of Indo-European Studies Monograph Series (Vol. 26). Institute for the Study of Man.
 * Ritchie, Andrew M; and Simon Y W Ho. 2019. Influence of the tree prior and sampling scale on Bayesian phylogenetic estimates of the origin times of language families. Journal of Language Evolution 4.108–123. doi:10.1093/jole/lzz005.
 * Skelton, Christina Michelle. 2015. Borrowing, character weight, and preliminary cluster analysis in a phylogenetic analysis of the ancient greek dialects. Indo-European Linguistics 3. 84-117.
 * Smith & Rama, 2021. Environmental factors affect the evolution of linguistic subgroups in Borneo, Diachronica. http://dx.doi.org/10.17613/v31m-0w40
-* Teixidor-Toneu I, Kool A, Greenhill SJ, Kjesrud K, Sandstedt JJ, Manzanilla V, Jordan FM 2021. Historical, archaeological and linguistic evidence test the phylogenetic inference of Viking-Age plant use. Philosophical Transactions of the Royal Society B: Biological Sciences, 376, 20200086.
 * Verkerk, A (2014). Diachronic change in Indo-European motion event encoding. Journal of Historical Linguistics, 4(1), 40–83. https://doi.org/10.1075/jhl.4.1.02ver
-* Verkerk, A (2019). Detecting non-tree-like signal using multiple tree topologies. Understanding Language Genealogy, 9(1), 9–69. Portico. https://doi.org/10.1075/jhl.17009.ver
+* Verkerk, A (2019). Detecting non-tree-like signal using multiple tree topologies. Journal of Historical Linguistics, 9(1), 9–69. https://doi.org/10.1075/jhl.17009.ver
 * Warnow & Michailov 1998 - Warnow, A T, & Michailov, L L (1998). Computational Cladistics and the Position of Tocharian. In V Mair (Ed.), The Bronze Age and early Iron Age peoples of eastern Central Asia (pp. 391–414). JIES Monograph.
 * Wichmann, Søren, Eric W Holman, Taraka Rama, and Robert S Walker. 2011. Correlates of reticulation in linguistic phylogenies. Language Dynamics and Change 1: 205-240.
 * Yanovich, Igor. 2020. Phylogenetic linguistic evidence and the Dene-Yeniseian homeland. Diachronica 37.410–446. doi:10.1075/dia.17038.yan.
@@ -58,10 +55,6 @@
 ## Phylogenies used as just a control in a regression
 
 * Verkerk, A, & Di Garbo, F (2022). Sociogeographic correlates of typological variation in northwestern Bantu gender systems. Language Dynamics and Change, 12(2), 155-223. https://doi.org/10.1163/22105832-bja10017
-
-## Conference reports etc
-
-* Warnow, D Ringe, and A Taylor, 1995 "Reconstructing the evolutionary history of natural languages." IRCS Report 95-16. Philadelphia 1995): Institute for Research in Cognitive Science, University of Pennsylvania. Technical report, 18 pp. 	
 
 ## Critical papers
 

@@ -1,0 +1,62 @@
+title = "Reconstructing the History of Marriage Strategies in Indo-European-Speaking Societies: Monogamy and Polygyny"
+
+doi = "10.3378/027.083.0106"
+
+abstract = """ Explanations for the emergence of monogamous marriage have focused on the cross-cultural
+distribution of marriage strategies, thus failing to account for their history. In this paper I
+reconstruct the pattern of change in marriage strategies in the history of societies speaking
+Indo-European languages, using cross-cultural data in the systematic and explicitly historical
+framework afforded by the phylogenetic comparative approach. The analysis provides evidence in support
+of Proto-Indo-European monogamy, and that this pattern may have extended back to Proto-Indo-Hittite.
+These reconstructions push the origin of monogamous marriage into prehistory, well beyond the earliest
+instances documented in the historical record; this, in turn, challenges notions that the
+cross-cultural distribution of monogamous marriage reflects features of social organization typically
+associated with Eurasian societies, and with "societal complexity" and "modernization" more generally.
+I discuss implications of these findings in the context of the archaeological and genetic evidence on
+prehistoric social organization. """
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Laura Fortunato"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Fortunato_2011"
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "A phylogenetic analysis of marriage strategy in Indo-European"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.ea]
+    ntaxa = 27
+    nchars = 1
+    nsites = 1
+    datatype = 'ethnographic features'
+    source = '@EthAtlas'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.indoeuropean]
+    source = '@Pagel_2007'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.bayestraits]
+    tool = 'bayestraits'
+    model = 'multistate+rjmcmc'
+    details = ""
+    data = ""

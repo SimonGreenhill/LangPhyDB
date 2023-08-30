@@ -1,0 +1,88 @@
+title = "Your place or mine? A phylogenetic comparative analysis of marital residence in Indo-European and Austronesian societies"
+
+doi = "10.1098/rstb.2010.0017"
+
+abstract = """
+Accurate reconstruction of prehistoric social organization is important if we are to put together
+satisfactory multidisciplinary scenarios about, for example, the dispersal of human groups. Such
+considerations apply in the case of Indo-European and Austronesian, two large-scale language families
+that are thought to represent Neolithic expansions. Ancestral kinship patterns have mostly been
+inferred through reconstruction of kin terminologies in ancestral proto-languages using the linguistic
+comparative method, and through geographical or distributional arguments based on the comparative
+patterns of kin terms and ethnographic kinship ‘facts’. While these approaches are detailed and
+valuable, the processes through which conclusions have been drawn from the data fail to provide
+explicit criteria for systematic testing of alternative hypotheses. Here, we use language trees derived
+using phylogenetic tree-building techniques on Indo-European and Austronesian vocabulary data. With
+these trees, ethnographic data and Bayesian phylogenetic comparative methods, we statistically
+reconstruct past marital residence and infer rates of cultural change between different residence
+forms, showing Proto-Indo-European to be virilocal and Proto-Malayo-Polynesian uxorilocal. The
+instability of uxorilocality and the rare loss of virilocality once gained emerge as common features of
+both families """
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Laura Fortunato", "Fiona M. Jordan"]
+
+# parts of the world
+groups = ['Indo-European', 'Austronesian']
+
+# bibkey citation in sources.bib
+bibkey = "@Fortunato_2010"
+
+# type of study
+type = ['trait', 'asr']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "A phylogenetic analysis of residence patterns in Indo-European and Austronesian"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.austronesian]
+    ntaxa = 135
+    nchars = 1
+    nsites = 1
+    datatype = 'ethnographic features'
+    source = '@EthAtlas;@Jordan2009'
+    items = ''
+    comment = ''
+
+    [data.indoeuropean]
+    ntaxa = 27
+    nchars = 1
+    nsites = 1
+    datatype = 'ethnographic features'
+    source = '@EthAtlas'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    notes = "We used the posterior probability samples of language trees published in Pagel et al. (2007) for IE and in Jordan et al.(2009) for AN"
+
+    [phylogenies.austronesian]
+    source = '@Jordan2009'
+    comment = ''
+
+    [phylogenies.indoeuropean]
+    source = '@Pagel_2007'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.bayestraits_an]
+    tool = 'bayestraits'
+    model = 'multistate+rjmcmc'
+    details = ""
+    data = "@data.austronesian"
+
+    [analysis.bayestraits_ie]
+    tool = 'bayestraits'
+    model = 'multistate+rjmcmc'
+    details = ""
+    data = "@data.indoeuropean"
+

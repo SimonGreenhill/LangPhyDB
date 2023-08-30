@@ -1,0 +1,65 @@
+title = "Métodos numéricos de la bioinformática aplicados al estudio diacrónico de las lenguas chibchas"
+
+doi = ""
+
+abstract = """
+In this study we applied methods from the area of bioinformatics to generate a
+genealogical classification of 17 languages of the Chibchan family based on a list
+of core vocabulary. We aligned all the words from all the possible language pairs
+by means of the Needleman–Wunsch algorithm, originally developed for genetic
+sequence alignment. Then, we calculated a normalized distance between the alig-
+ned words, taking into account the number of distinctive features that diverged
+between the phonemes. This procedure resembles the traditional lexicostatistical
+method, but it differs in the fact that it does not involve a binary labeling of cog-
+nates. Based on the mean distance between every language pair, we generated
+a binary tree. The results suggest that manual identification of cognates can be
+omitted in genealogical classification of languages and that, on the contrary, a
+calculation of phonological distances in terms of distinctive features can produce
+more precise groupings.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['David Jiménez', 'Haakon S. Krohn', 'Ernesto García-Estrada', 'Viviana Solís Solís']
+
+# parts of the world
+groups = ['Chibchan']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Jimenez_2023"
+
+# type of study
+type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Constructs a phylogeny for Chibchan languages from a lexical distance"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.chibchan]
+    ntaxa = 17
+    nchars = 95
+    nsites = 95
+    datatype = 'lexical distance'
+    source = ''
+    items = 'swadesh100'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = ""
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

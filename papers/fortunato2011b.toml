@@ -1,0 +1,53 @@
+title = "Reconstructing the History of Residence Strategies in Indo-European{\textemdash}Speaking Societies: Neo-, Uxori-, and Virilocality"
+
+doi = "10.3378/027.083.0107"
+
+abstract = """
+Linguists and archaeologists have used reconstructions of early Indo-European residence strategies to constrain hypotheses about the homeland and trajectory of dispersal of Indo-European languages; however, these reconstructions are largely based on unsystematic and a historical use of the linguistic and ethnographic evidence, coupled with substantial bias in interpretation. Here I use cross-cultural data in a phylogenetic comparative framework to reconstruct the pattern of change in residence strategies in the history of societies speaking Indo-European languages. The analysis provides evidence in support of prevailing virilocality with alternative neolocality for Proto-Indo-European, and that this pattern may have extended back to Proto-Indo-Hittite. These findings bolster interpretations of the archaeological evidence that emphasize the "non-matricentric" structure of early Indo-European society; however, they also counter the notion that early Indo-European society was strongly "patricentric." I discuss implications of these findings in the context of the archaeological and genetic evidence on prehistoric social organization. 
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Laura Fortunato"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Fortunato_2011b"
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "A phylogenetic analysis of residence strategy in Indo-European"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.ea]
+    ntaxa = 27
+    nchars = 1
+    nsites = 1
+    datatype = 'ethnographic features'
+    source = '@EthAtlas'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.indoeuropean]
+    source = '@Pagel_2007'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.bayestraits]
+    tool = 'bayestraits'
+    model = 'multistate+rjmcmc'
+    details = ""
+    data = ""

@@ -1,0 +1,115 @@
+title = "From bridewealth to dowry?"
+
+doi = "10.1007/s12110-006-1000-4"
+
+abstract = """
+Significant amounts of wealth have been exchanged as part of marriage settlements throughout history. Although various models have been proposed for interpreting these practices, their development over time has not been investigated systematically. In this paper we use a Bayesian MCMC phylogenetic comparative approach to reconstruct the evolution of two forms of wealth transfers at marriage, dowry and bridewealth, for 51 Indo-European cultural groups. Results indicate that dowry is more likely to have been the ancestral practice, and that a minimum of four changes to bridewealth is necessary to explain the observed distribution of the two states across the cultural groups.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Laura Fortunato", "Clare J. Holden", "Ruth Mace"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Fortunato_2006"
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "A phylogenetic analysis of bridewealth and dowry in Indo-European societies"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.ie]
+    ntaxa = 95
+    nchars = 200
+    nsites = 2449 
+    datatype = 'lexical cognates'
+    source = '@Dyen1992'
+    items = 'swadesh200'
+    comment = ''
+
+    [data.ea]
+    ntaxa = 52
+    nchars = 2
+    nsites = 2 
+    datatype = 'ethnographic features'
+    source = '@EthAtlas'
+    items = ''
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree_m1p]
+    tool = 'bayesphylogenies'
+    model = 'm1p+gamma'
+    details = ""
+    data = "@data.ie"
+
+    [analysis.tree_m2p]
+    tool = 'bayesphylogenies'
+    model = 'm1p+gamma'
+    details = ""
+    data = "@data.ie"
+
+    [analysis.bayestraits_m1p_charcoding_A]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "character coding version A"
+    data = "@tree_m1p;@data.ea"
+
+    [analysis.bayestraits_m2p_charcoding_A]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "character coding version A"
+    data = "@tree_m2p;@data.ea"
+
+
+    [analysis.bayestraits_m1p_charcoding_B]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "character coding version B"
+    data = "@tree_m1p;@data.ea"
+
+    [analysis.bayestraits_m2p_charcoding_B]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "character coding version B"
+    data = "@tree_m2p;@data.ea"
+
+
+    [analysis.bayestraits_m1p_charcoding_C]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "character coding version C"
+    data = "@tree_m1p;@data.ea"
+
+    [analysis.bayestraits_m2p_charcoding_C]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "character coding version C"
+    data = "@tree_m2p;@data.ea"
+
+
+    [analysis.bayestraits_m1p_charcoding_D]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "character coding version D"
+    data = "@tree_m1p;@data.ea"
+
+    [analysis.bayestraits_m2p_charcoding_D]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = "character coding version D"
+    data = "@tree_m2p;@data.ea"
+

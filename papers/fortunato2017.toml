@@ -1,0 +1,27 @@
+title = "Insights From Evolutionary Anthropology on the (Pre)history of the Nuclear Family"
+
+doi = "10.1177/1069397117691006"
+
+abstract = """ My aim in this article is to elucidate the relevance of the evolutionary paradigm to the
+study of kinship and marriage systems. I begin with a discussion of conceptual and methodological issues
+that arise in approaching human social systems from an evolutionary perspective. I then narrow the focus
+on key tools used in contemporary cross-cultural research within evolutionary anthropology. Next, as a
+case study, I provide an overview of work aimed at reconstructing the (pre)history of the nuclear family
+in Indo-European speaking societies, focusing on the interplay between monogamous marriage and neolocal
+residence. I conclude with musings on the prospect of a biologically based social anthropology. """
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Laura Fortunato"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Fortunato_2017"
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Review article of inferences about family and kinship as learnt via phylogenetic methods"
+

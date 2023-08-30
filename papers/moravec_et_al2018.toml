@@ -1,0 +1,272 @@
+title = "Post-marital residence patterns show lineage-specific evolution"
+
+doi = "10.1016/j.evolhumbehav.2018.06.002"
+
+abstract = """
+Where a newly-married couple lives, termed post-marital residence, varies
+cross-culturally and changes over time. While many factors have been proposed as drivers of this
+change, among them general features of human societies like warfare, migration and gendered division of
+subsistence labour, little is known about whether changes in residence patterns exhibit global
+regularities. Here, we study ethnographic observations of post-marital residence in societies from five
+large language families (Austronesian, Bantu, Indo-European, Pama-Nyungan and Uto-Aztecan),
+encompassing 371 ethnolinguistic groups ranging widely in local ecologies and lifeways, and covering
+over half the world's population and geographical area. We apply Bayesian comparative methods to test
+the hypothesis that post-marital residence patterns have evolved in similar ways across different
+geographical regions. By reconstructing past post-marital residence states, we compare transition rates
+and models of evolution across groups, while integrating the historical descent relationships of human
+societies. We find that each language family possesses its own best fitting model, demonstrating that
+the mode and pace of post-marital residence evolution is lineage-specific rather than global.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Jiří C. Moravec", "Quentin D. Atkinson", "Claire Bowern", "Simon J. Greenhill", "Fiona M. Jordan", "Robert M. Ross", "Russell D. Gray", "Stephen Marsland", "Murray P. Cox"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Moravec_2018"
+
+# type of study
+type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Investigates global patterns of post-marital residence."
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.bantu]
+    ntaxa = "?"
+    nchars = 2
+    nsites = 2
+    datatype = 'ethnographic features'
+    source = '@Murdock1967;@Gray1999;@Opie2014'
+    items = 'ethatlas'
+
+    [data.austronesian]
+    ntaxa = "?"
+    nchars = 2
+    nsites = 2
+    datatype = 'ethnographic features'
+    source = '@Murdock1967;@Gray1999;@Jordan2009'
+    items = 'ethatlas'
+
+    [data.indoeuropean]
+    ntaxa = "?"
+    nchars = 2
+    nsites = 2
+    datatype = 'ethnographic features'
+    source = '@Murdock1967;@Gray1999;@Fortunato_2011;Fortunato_2010'
+    items = 'ethatlas'
+
+    [data.pamanyungan]
+    ntaxa = "?"
+    nchars = 2
+    nsites = 2
+    datatype = 'ethnographic features'
+    source = '@Murdock1967;@Gray1999'
+    items = 'ethatlas'
+
+    [data.utoaztecan]
+    ntaxa = "?"
+    nchars = 2
+    nsites = 2
+    datatype = 'ethnographic features'
+    source = '@Murdock1967;@Gray1999'
+    items = 'ethatlas'
+
+# Indo-European, Pama- Nyungan, and Uto-Aztecan. 
+# Indo-European (Fortunato, 2011; Fortunato & Jordan, 2010) 
+# whose phylogenies and post-marital residence state encodings were obtained from the authors.
+
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.bantu]
+    source = '@Currie2013'
+    comment = ""
+
+    [phylogenies.austronesian]
+    source = '@Gray2009'
+    comment = ""
+
+    [phylogenies.utoaztecan]
+    source = '@Greenhill2023'
+    comment = ""
+
+    [phylogenies.indoeuropean]
+    source = '@Bouckaert2012'
+    comment = ""
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    #  Pama-Nyungan language data were obtained from the Chirila database
+    #  (Bowern, 2016) and re-analysed with BayesPhylogenies v 1.1 (Pagel &
+    #  Meade, 2004) running for 10^7 generations using the m1p model,
+    
+    [analysis.pamanyungan]
+    tool = 'bayesphylogenies'
+    model = 'm1p'
+    details = ""
+    data = "@Chirila"
+
+    # bayestraits
+    [analysis.bayestraits_austronesian]
+        tool = 'bayestraits'
+        model = 'multistate+rjmcmc'
+        details = ""
+        data = "@data.austronesian"
+
+
+    [analysis.bayestraits_bantu]
+        tool = 'bayestraits'
+        model = 'multistate+rjmcmc'
+        details = ""
+        data = "@data.bantu"
+
+
+    [analysis.bayestraits_indoeuropean]
+        tool = 'bayestraits'
+        model = 'multistate+rjmcmc'
+        details = ""
+        data = "@data.indoeuropean"
+
+
+    [analysis.bayestraits_utoaztecan]
+        tool = 'bayestraits'
+        model = 'multistate+rjmcmc'
+        details = ""
+        data = "@data.utoaztecan"
+
+
+    [analysis.bayestraits_pamanyungan]
+        tool = 'bayestraits'
+        model = 'multistate+rjmcmc'
+        details = ""
+        data = "@data.pamanyungan"
+
+    # To determine whether each language family has its own mode of evolution, we tested each tree to
+    # ascertain whether the transition ma- trix from any other tree was as good a fit or better to its
+    # data. To do so, we calculated the likelihoods of observed residence states for a parti- cular
+    # language family tree given the rate matrices of each other lan- guage family.
+    [analysis.bayestraits_austronesian_with_rate_from_bantu]
+        tool = 'bayestraits'
+        model = 'multistate+rjmcmc'
+        details = ""
+        data = "@data.austronesian;@bayestraits_bantu"
+        
+
+    [analysis.bayestraits_austronesian_with_rate_from_indoeuropean]
+        tool = 'bayestraits'
+        model = 'multistate+rjmcmc'
+        details = ""
+        data = "@data.austronesian;@bayestraits_indoeuropean"
+        
+
+    [analysis.bayestraits_austronesian_with_rate_from_utoaztecan]
+        tool = 'bayestraits'
+        model = 'multistate+rjmcmc'
+        details = ""
+        data = "@data.austronesian;@bayestraits_utoaztecan"
+        
+
+    [analysis.bayestraits_austronesian_with_rate_from_pamanyungan]
+        tool = 'bayestraits'
+        model = 'multistate+rjmcmc'
+        details = ""
+        data = "@data.austronesian;@bayestraits_pamanyungan"
+        
+
+    [analysis.bayestraits_bantu_with_rate_from_indoeuropean]
+        tool = 'bayestraits'
+        model = 'multistate+rjmcmc'
+        details = ""
+        data = "@data.bantu;@bayestraits_indoeuropean"
+        
+
+    [analysis.bayestraits_bantu_with_rate_from_utoaztecan]
+        tool = 'bayestraits'
+        model = 'multistate+rjmcmc'
+        details = ""
+        data = "@data.bantu;@bayestraits_utoaztecan"
+        
+
+    [analysis.bayestraits_bantu_with_rate_from_pamanyungan]
+        tool = 'bayestraits'
+        model = 'multistate+rjmcmc'
+        details = ""
+        data = "@data.bantu;@bayestraits_pamanyungan"
+        
+
+    [analysis.bayestraits_indoeuropean_with_rate_from_utoaztecan]
+        tool = 'bayestraits'
+        model = 'multistate+rjmcmc'
+        details = ""
+        data = "@data.indoeuropean;@bayestraits_utoaztecan"
+        
+
+    [analysis.bayestraits_indoeuropean_with_rate_from_pamanyungan]
+        tool = 'bayestraits'
+        model = 'multistate+rjmcmc'
+        details = ""
+        data = "@data.indoeuropean;@bayestraits_pamanyungan"
+        
+
+    [analysis.bayestraits_utoaztecan_with_rate_from_pamanyungan]
+        tool = 'bayestraits'
+        model = 'multistate+rjmcmc'
+        details = ""
+        data = "@data.utoaztecan;@bayestraits_pamanyungan"
+        
+    # To place rates in a more easily interpretable context, we simulated the number of residence
+    # changes on each language tree as defined by its unique transition matrix. Following Huelsenbeck
+    # and colleagues (Huelsenbeck, Nielsen, & Bollback, 2003) and using the R package phytools v 0.5-64
+    # (Revell, 2012), 5000 SIMMAP simulations of re- sidence evolution were run using the mean rate
+    # transition matrices for each tree.
+    [analysis.simmap_austronesian]
+        tool = 'phytools'
+        model = 'simmap'
+        details = "x500"
+        data = "@bayestraits_austronesian"
+        
+
+    [analysis.simmap_bantu]
+        tool = 'phytools'
+        model = 'simmap'
+        details = "x500"
+        data = "@bayestraits_bantu"
+        
+
+    [analysis.simmap_indoeuropean]
+        tool = 'phytools'
+        model = 'simmap'
+        details = "x500"
+        data = "@bayestraits_indoeuropean"
+        
+
+    [analysis.simmap_utoaztecan]
+        tool = 'phytools'
+        model = 'simmap'
+        details = "x500"
+        data = "@bayestraits_utoaztecan"
+        
+
+    [analysis.simmap_pamanyungan]
+        tool = 'phytools'
+        model = 'simmap'
+        details = "x500"
+        data = "@bayestraits_pamanyungan"
+    
+    
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

@@ -1,7 +1,6 @@
 # TODO
 
 * Barbançon et al. "An experimental study comparing linguistic phylogenetic reconstruction methods." Diachronica 30(2):143-170. 
-* Barbieri C et al. 2022. A global analysis of matches and mismatches between human genetic and linguistic histories. Proceedings of the National Academy of Sciences, 119(47).
 * Bentz et al. 2018. The evolution of language families is shaped by the environment beyond neutral drift. Nat Hum Behav 2, 816–821. https://doi.org/10.1038/s41562-018-0457-6
 * Carling & Cathcart. 2021. Reconstructing the evolution of Indo-European grammar. Language. https://doi.org/10.1353/lan.0.0253
 * Cathcart et al. 2022. Areal pressure in grammatical evolution. Diachronica, 1–34. https://doi.org/10.1075/dia.16035.cat

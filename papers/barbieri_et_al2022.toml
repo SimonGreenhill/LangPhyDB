@@ -1,0 +1,73 @@
+title = "A global analysis of matches and mismatches between human genetic and linguistic histories"
+
+doi = "10.1073/pnas.2122084119"
+
+abstract = """
+Human history is written in both our genes and our languages. The extent to which our biological and linguistic histories are congruent has been the subject of considerable debate, with clear examples of both matches and mismatches. To disentangle the patterns of demographic and cultural transmission, we need a global systematic assessment of matches and mismatches. Here, we assemble a genomic database (GeLaTo, or Genes and Languages Together) specifically curated to investigate genetic and linguistic diversity worldwide. We find that most populations in GeLaTo that speak languages of the same language family (i.e., that descend from the same ancestor language) are also genetically highly similar. However, we also identify nearly 20% mismatches in populations geneti- cally close to linguistically unrelated groups. These mismatches, which occur within the time depth of known linguistic relatedness up to about 10,000 y, are scattered around the world, suggesting that they are a regular outcome in human history. Most mismatches result from populations shifting to the language of a neighboring population that is genet- ically different because of independent demographic histories. In line with the regularity of such shifts, we find that only half of the language families in GeLaTo are genetically more cohesive than expected under spatial autocorrelations. Moreover, the genetic and linguistic divergence times of population pairs match only rarely, with Indo-European standing out as the family with most matches in our sample. Together, our database and findings pave the way for systematically disentangling demographic and cultural history and for quantifying processes of shifts in language and social identities on a global scale.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Chiara Barbieri", "Damián E. Blasi", "Epifanía Arango-Isaza", "Alexandros G. Sotiropoulos", "Harald Hammarström", "Søren Wichmann", "Simon J. Greenhill", "Russell D. Gray", "Robert Forkel", "Balthasar Bickel", "Kentaro K. Shimizu"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Barbieri_2022"
+
+# type of study
+type = ['macroevolutionary']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Compares genetic and linguistic data for matches and mismatches"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.gelato]
+    ntaxa = 4000
+    nchars = 50000
+    nsites = 50000
+    datatype = 'genetic SNPs'
+    source = ''
+    items = ''
+    comment = 'for more than 4,000 individuals representing 397 genetic populations speaking 295 languages.'
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.indoeuropean]
+    source = '@Chang2015'
+    comment = ''
+
+    [phylogenies.austronesian]
+    source = '@Gray2009'
+    comment = ''
+
+    [phylogenies.turkic]
+    source = '@Savelyev_2020'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.quartets_an]
+    tool = 'Quartet'
+    model = ''
+    details = ""
+    data = "@phylogenies.austronesian"
+
+    [analysis.quartets_ie]
+    tool = 'Quartet'
+    model = ''
+    details = ""
+    data = "@phylogenies.indoeuropean"
+
+    [analysis.quartets_tk]
+    tool = 'Quartet'
+    model = ''
+    details = ""
+    data = "@phylogenies.turkic"

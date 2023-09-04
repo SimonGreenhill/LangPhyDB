@@ -1,0 +1,31 @@
+title = "Trees, thickets, or something in between? Recent theoretical and empirical work in cultural phylogeny"
+
+doi = "10.1080/15659801.2013.825431"
+
+abstract = """ Anthropology has always had as one of its goals the explanation of human cultural diversity across
+space and through time. Over the past several decades, there has been a growing appreciation among anthropologists
+and other social scientists that the phylogenetic approaches which biologists have developed to reconstruct the
+evolutionary relationships of species are useful tools for building and explaining patterns of human diversity.
+Phylogenetic methods offer a means of creating testable propositions of heritable continuity – how one thing is
+related to another in terms of descent. Such methods have now been applied to a wide range of cultural phenomena,
+including languages, projectile points, textiles, marital customs, and political organization. Here we discuss
+several cultural phylogenies and demonstrate how they were used to address longstanding anthropological issues.
+Even keeping in mind that phylogenetic trees are nothing more than hypotheses about evolutionary relationships,
+some researchers have argued that when it comes to cultural behaviors and their products, tree building is
+theoretically unwarranted. We examine the issues that critics raise and find that they in no way sound the death
+knell for cultural phylogenetic work. """
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Michael J. O'Brien", "Mark Collard", "Briggs Buchanan", "Matthew T. Boulanger"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@O_Brien_2013"
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+
+# short description of the study, one line.
+description = "Review of cultural phylogenetic applications in anthropology"

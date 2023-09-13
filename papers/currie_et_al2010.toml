@@ -18,8 +18,9 @@ groups = ['Austronesian']  # 'Austronesian', etc
 bibkey = "@Currie2010"  # @xxxx
 
 # type of study
-type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
-framework = []
+type = ['trait']
+framework = ['bayesian']
+
 
 # short description of the study, one line.
 description = "Rise and fall of political complexity in island South-East Asia and the Pacific"
@@ -79,4 +80,5 @@ description = "Rise and fall of political complexity in island South-East Asia a
     tool = 'bayestraits'
     model = 'multistate+rjmcmc+traitmodel'
     details = ""
+
 

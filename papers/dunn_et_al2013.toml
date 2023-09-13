@@ -34,6 +34,7 @@ bibkey = "@Dunn2013aslian"  # @xxxx
 
 # type of study
 type = ['phylogenetic', 'dating', 'phylogeography']
+framework = ['bayesian']
 
 # short label of taxa "37 languages from.."
 description = "28 Aslian languages"

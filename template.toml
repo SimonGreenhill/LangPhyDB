@@ -17,7 +17,7 @@ bibkey = "@%(bibkey)s"
 
 # type of study
 type = []  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
-framework = [] # 'bayesian', 'parsimony', 'network', 'likelihood'
+ # 'bayesian', 'parsimony', 'network', 'likelihood'
 
 # short description of the study, one line.
 description = ""

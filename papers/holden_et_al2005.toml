@@ -22,6 +22,7 @@ bibkey = "@Holden2005"
 
 # type of study
 type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
+framework = ['bayesian', 'parsimony']
 
 # short label of taxa "37 languages from.."
 description = "95 Bantu languages"

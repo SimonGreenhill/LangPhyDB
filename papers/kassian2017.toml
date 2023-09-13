@@ -29,8 +29,9 @@ groups = ["Lezgian", "Tsezic"]  # 'Austronesian', etc
 bibkey = "@Kassian2017"
 
 # type of study
-type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
-framework = []
+type = ['phylogenetic']
+framework = ['bayesian', 'parsimony', 'statistical']
+
 
 # short description of the study, one line.
 description = "Comparison of phylogenetic methods with and without 'homoplasy optimised' data in Tsezic and Lezgian languages."
@@ -345,4 +346,5 @@ description = "Comparison of phylogenetic methods with and without 'homoplasy op
     model = 'Unweighted Maximum Parsimony'
     details = ""
     data = "@data.tsezic_HO"
+
 

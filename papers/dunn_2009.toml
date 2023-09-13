@@ -28,7 +28,8 @@ groups = ["Island Melanesia"]  # 'Austronesian', etc
 bibkey = "@Dunn2009"
 
 # type of study
-type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
+type = ['phylogenetic']
+framework = ['bayesian', 'statistical']
 
 # short label of taxa "37 languages from.."
 description = "31 Island Melanesia languages"
@@ -99,3 +100,4 @@ description = "31 Island Melanesia languages"
 phlorest = { title = "Phlorest Dataset", link = "" }
 cldf = { title = "CLDF Dataset", link = "" }
 links = []
+

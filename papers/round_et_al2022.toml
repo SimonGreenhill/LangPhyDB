@@ -30,8 +30,9 @@ groups = ['Pama-Nyungan']  # 'Austronesian', etc
 bibkey = "@Round2022"  # @xxxx
 
 # type of study
-type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
-framework = []
+type = ['trait']
+framework = ['likelihood', 'statistical']
+
 
 # short description of the study, one line.
 description = "Modelling the trade-offs in functional load in phonological contrasts in Pama-Nyungan languages"
@@ -117,4 +118,5 @@ description = "Modelling the trade-offs in functional load in phonological contr
     model = 'correlation'
     details = ""
     data = "@data.FLC;@data.FLP"
+
 

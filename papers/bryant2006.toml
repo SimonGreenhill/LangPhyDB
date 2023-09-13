@@ -33,8 +33,8 @@ groups = ['Austronesian']  # 'Austronesian', etc
 bibkey = "@Bryant2006"  # @xxxx
 
 # type of study
-type = ['network', 'methodological']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
-framework = []
+type = ['methodological', 'phylogenetic']
+framework = ['network']
 
 # short description of the study, one line.
 description = "A phylogenetic network analysis of Polynesian languages, with an explicit model for the effect of network breaking on linguistic patterns"
@@ -82,5 +82,6 @@ description = "A phylogenetic network analysis of Polynesian languages, with an 
     tool = 'model'
     model = ''
     details = "mathematical model based analysis of Polynesian settlement"
+
 
 

@@ -23,7 +23,8 @@ groups = ["Island Melanesia"]  # 'Austronesian', etc
 bibkey = "@Dunnetal2005"
 
 # type of study
-type = ["phylogenetic"]
+type = ['phylogenetic']
+framework = ['parsimony']
 
 # short label of taxa "37 languages from.."
 description = "31 Island Melanesia languages"
@@ -66,3 +67,6 @@ description = "31 Island Melanesia languages"
 phlorest = { }
 lexibank = { }
 links = []
+
+
+

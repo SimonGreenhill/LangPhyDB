@@ -32,7 +32,8 @@ groups = ['Tasmania', 'Australia']  # 'Austronesian', etc
 bibkey = "@BowernTasmania2012"  # @xxxx
 
 # type of study
-type = ['phylogenetic', 'dating', 'network']
+type = ['phylogenetic', 'dating']
+framework = ['network', 'bayesian']
 
 description = '26 Tasmanian languages'
 

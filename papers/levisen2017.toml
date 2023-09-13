@@ -21,9 +21,11 @@ groups = ['Creoles']  # 'Austronesian', etc
 bibkey = "@Levisen_2017d"
 
 # type of study
-type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
-framework = []
+type = ['review']
+framework = ['other']
+
 
 # short description of the study, one line.
 description = "Review of creole networks based on natural semantic metalanguage"
+
 

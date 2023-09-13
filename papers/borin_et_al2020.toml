@@ -32,8 +32,8 @@ groups = ['India']  # 'Austronesian', etc
 bibkey = "@Borin_2020"
 
 # type of study
-type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
-framework = []
+type = ['phylogenetic']
+framework = ['network']
 
 # short description of the study, one line.
 description = "Initial exploratory work illuminating the long-standing question of areal versus genealogical connections in South Asia"
@@ -62,3 +62,4 @@ description = "Initial exploratory work illuminating the long-standing question 
     model = 'neighbornet'
     details = ""
     data = ""
+

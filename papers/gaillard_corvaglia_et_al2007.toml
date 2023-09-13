@@ -25,8 +25,9 @@ groups = ['Oïl Varieties', 'Southern Italo-Romance']
 bibkey = "@GaillardCorvaglia2007"  # @xxxx
 
 # type of study
-type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
-framework = []
+type = ['phylogenetic']
+framework = ['parsimony']
+
 
 # short description of the study, one line.
 description = "A test of phylogenetic methods on dialect data"

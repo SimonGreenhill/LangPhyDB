@@ -21,7 +21,8 @@ groups = ["Austronesian"]  # 'Austronesian', etc
 bibkey = "@Gray2009"
 
 # type of study
-type = ["phylogenetic", "dating"]
+type = ['phylogenetic', 'dating']
+framework = ['bayesian']
 
 # short label of taxa "37 languages from.."
 description = "400 Austronesian languages"
@@ -177,3 +178,4 @@ description = "400 Austronesian languages"
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/gray_et_al2009" }
 cldf = { title = "CLDF Dataset", link = "https://github.com/lexibank/abvd" }
 links = []
+

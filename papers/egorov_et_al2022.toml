@@ -36,6 +36,7 @@ bibkey = "@Egorov2022"
 
 # type of study
 type = ['phylogenetic', 'dating']
+framework = ['bayesian', 'parsimony']
 
 # short label of taxa "37 languages from.."
 description = "3 languages, and 15 reconstructed proto-languages"

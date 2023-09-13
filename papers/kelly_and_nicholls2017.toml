@@ -24,7 +24,8 @@ bibkey = "@Kelly_2017"
 
 # type of study
 type = ['phylogenetic', 'methodological']
-framework = []
+framework = ['bayesian']
+
 
 # short description of the study, one line.
 description = "Presentation of the Stochastic Dollo Model with Lateral Transfers"
@@ -91,3 +92,4 @@ description = "Presentation of the Stochastic Dollo Model with Lateral Transfers
     
     notes = "root age is enforced and not reported."
     
+

@@ -26,7 +26,8 @@ groups = ['Bantu']  # 'Austronesian', etc
 bibkey = "@DeSchryver2015"  # @xxxx
 
 # type of study
-type = ['phylogenetic', 'network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+type = ['phylogenetic']
+framework = ['network', 'bayesian']
 
 # short label of taxa "37 languages from.."
 description = "95 Kikongo languages"

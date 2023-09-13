@@ -20,7 +20,8 @@ groups = ["Austronesian"]  # 'Austronesian', etc
 bibkey = "@GrayJordan2000"
 
 # type of study
-type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
+type = ['phylogenetic']
+framework = ['parsimony']
 
 # short label of taxa "37 languages from.."
 description = "77 Austronesian languages"
@@ -49,3 +50,4 @@ description = "77 Austronesian languages"
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/gray_and_jordan2000" }
 lexibank = { }
 links = []
+

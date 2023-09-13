@@ -31,7 +31,8 @@ groups = ['Bantu']  # 'Austronesian', etc
 bibkey = "@Gunnink2022"  # @xxxx
 
 # type of study
-type = ['phylogenetic', 'trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+type = ['phylogenetic', 'trait']
+framework = ['bayesian', 'parsimony']
 
 # short label of taxa "37 languages from.."
 description = "79 Bantu languages with a focus on Southern Bantu"

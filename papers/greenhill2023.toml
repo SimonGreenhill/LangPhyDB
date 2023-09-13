@@ -23,7 +23,8 @@ groups = []  # 'Austronesian', etc
 bibkey = "@Greenhill2023"  # @xxxx
 
 # type of study
-type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+type = ['review']
+framework = ['other']
 
 # short label of taxa "37 languages from.."
 description = "Review article"

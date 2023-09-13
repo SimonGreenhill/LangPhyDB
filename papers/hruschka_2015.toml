@@ -46,7 +46,8 @@ groups = ["Turkic"]  # 'Austronesian', etc
 bibkey = "@Hruschka2015"
 
 # type of study
-type = ["phylogenetic", "dating"]
+type = ['phylogenetic', 'dating']
+framework = ['bayesian']
 
 # short label of taxa "37 languages from.."
 description = "26 Turkic languages"
@@ -112,3 +113,4 @@ description = "26 Turkic languages"
 phlorest = { title = "Phlorest Dataset", link = "" }
 cldf = { title = "CLDF Dataset", link = "" }
 links = []
+

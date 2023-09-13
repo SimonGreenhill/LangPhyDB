@@ -68,7 +68,8 @@ groups = ['Indo-European']  # 'Austronesian', etc
 bibkey = "Heggarty2023"  # @xxxx
 
 # type of study
-type = ['phylogenetic', 'dating']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+type = ['phylogenetic', 'dating']
+framework = ['bayesian']
 
 # short label of taxa "37 languages from.."
 description = "161 Indo-European languages"

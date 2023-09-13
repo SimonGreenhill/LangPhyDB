@@ -18,7 +18,8 @@ groups = ["Tucanoan"]  # 'Austronesian', etc
 bibkey = "@Chacon2015"
 
 # type of study
-type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
+type = ['phylogenetic']
+framework = ['statistical', 'distance']
 
 # short label of taxa "37 languages from.."
 description = "21 Tucanoan languages"
@@ -58,3 +59,4 @@ description = "21 Tucanoan languages"
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/chacon_and_list2015" }
 lexibank = { }
 links = []
+

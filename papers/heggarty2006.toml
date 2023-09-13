@@ -21,7 +21,8 @@ bibkey = "@Heggarty2006"  # @xxxx
 
 # type of study
 type = ['phylogenetic']
-framework = []
+framework = ['distance']
+
 
 # short description of the study, one line.
 description = "Discussion of phylogenetic methods, promoting the use of phonetic data"

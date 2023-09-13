@@ -22,8 +22,9 @@ groups = ['global']  # 'Austronesian', etc
 bibkey = "@Rama2019"
 
 # type of study
-type = ['methodological']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
-framework = []
+type = ['methodological']
+framework = ['statistical']
+
 
 # short description of the study, one line.
 description = "Develop a fast automated cognate and phylogeny reconstruction approach"
@@ -626,4 +627,5 @@ description = "Develop a fast automated cognate and phylogeny reconstruction app
     model = ''
     details = ""
     data = "@analysis.sinotibetan"
+
 

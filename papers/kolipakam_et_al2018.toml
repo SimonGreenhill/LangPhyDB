@@ -25,7 +25,8 @@ groups = ["Dravidian"]  # 'Austronesian', etc
 bibkey = "@Kolipakam2018"
 
 # type of study
-type = ["phylogenetic", "dating", "network", "delta", "qresidual"]
+type = ['phylogenetic', 'dating', 'delta', 'qresidual']
+framework = ['network', 'bayesian']
 
 # short label of taxa "37 languages from.."
 description = "20 Dravidian languages"
@@ -213,3 +214,4 @@ description = "20 Dravidian languages"
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/kolipakam_et_al2018" }
 cldf = { title = "CLDF Dataset", link = "https://github.com/lexibank/drvalex" }
 links = []
+

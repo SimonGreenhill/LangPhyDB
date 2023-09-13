@@ -24,7 +24,8 @@ groups = ["Uralic"]  # 'Austronesian', etc
 bibkey = "@Honkola2013"
 
 # type of study
-type = ["phylogenetic", "dating", "macroevolutionary"]
+type = ['phylogenetic', 'dating', 'macroevolutionary']
+framework = ['bayesian']
 
 # short label of taxa "37 languages from.."
 description = "17 Uralic languages"
@@ -95,3 +96,4 @@ description = "17 Uralic languages"
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/honkola_et_al2013" }
 cldf = { title = "CLDF Dataset", link = "" }
 links = []
+

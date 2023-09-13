@@ -25,6 +25,7 @@ bibkey = "Greenhill2017"
 
 # type of study
 type = ['macroevolutionary', 'delta', 'qresidual']
+framework = ['bayesian']
 
 # short label of taxa "37 languages from.."
 description = "81 Austronesian languages"

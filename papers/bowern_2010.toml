@@ -19,7 +19,8 @@ groups = ["Karnic"]  # 'Austronesian', etc
 bibkey = "@Bowern2010"
 
 # type of study
-type = ["network"]  # phylogenetic,phylogeography,macroevolutionary,trait
+type = ['phylogenetic']
+framework = ['network']
 
 # short label of taxa "37 languages from.."
 description = "25 Karnic languages"
@@ -57,3 +58,4 @@ description = "25 Karnic languages"
 phlorest = { }
 lexibank = { }
 links = []
+

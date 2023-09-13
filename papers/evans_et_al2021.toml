@@ -35,8 +35,10 @@ bibkey = "@Evans2021"  # @xxxx
 
 # type of study
 type = ['review', 'tutorial', 'methodological']
-framework = []
+framework = ['other']
+
 
 # short description of the study, one line.
 description = "Best practice guidelines for language phylogenies"
+
 

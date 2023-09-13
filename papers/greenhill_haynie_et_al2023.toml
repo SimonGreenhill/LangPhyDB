@@ -33,6 +33,7 @@ bibkey = "@GreenhillHaynie2023"  # @xxxx
 
 # type of study
 type = ['phylogenetic', 'dating', 'phylogenetic', 'trait', 'asr']
+framework = ['bayesian']
 
 # short label of taxa "37 languages from.."
 description = "33 Uto-Aztecan and Kiowa-Tanoan languages"

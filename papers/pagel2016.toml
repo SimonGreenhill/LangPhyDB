@@ -16,9 +16,11 @@ groups = ['global']  # 'Austronesian', etc
 bibkey = "@Pagel_2016"
 
 # type of study
-type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
-framework = []
+type = ['review']
+framework = ['other']
+
 
 # short description of the study, one line.
 description = "Review article on language evolution with phylogenetics focus"
+
 

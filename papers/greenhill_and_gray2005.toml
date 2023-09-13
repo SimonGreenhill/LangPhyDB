@@ -20,7 +20,8 @@ groups = ["Austronesian"]  # 'Austronesian', etc
 bibkey = "@Greenhill2005"
 
 # type of study
-type = ["phylogenetic", "network"]
+type = ['phylogenetic']
+framework = ['network', 'bayesian', 'parsimony']
 
 # short label of taxa "37 languages from.."
 description = "77 Austronesian languages"
@@ -40,7 +41,7 @@ description = "77 Austronesian languages"
 [analysis]
     [analysis.parsimony]
     tool = 'paup*'
-    model = ''
+    model = 'maximum parsimony'
     details = ""
 
     [analysis.mcmc]
@@ -57,3 +58,4 @@ description = "77 Austronesian languages"
 phlorest = {}
 lexibank = {}
 links = []
+

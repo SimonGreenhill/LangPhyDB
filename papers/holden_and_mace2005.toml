@@ -24,7 +24,7 @@ bibkey = "@Holden2005b"  # @xxxx
 
 # type of study
 type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
-framework = []
+framework = ['bayesian']
 
 # short description of the study, one line.
 description = "Phylogenetic test of the relationship between the adoption of cattle and matrilineal descent."

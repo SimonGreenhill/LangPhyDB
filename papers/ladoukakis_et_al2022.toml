@@ -25,9 +25,11 @@ groups = ['global']  # 'Austronesian', etc
 bibkey = "@Ladoukakis_2022"
 
 # type of study
-type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
-framework = []
+type = ['review']
+framework = ['other']
+
 
 # short description of the study, one line.
 description = "Review article of the parallels between language and life"
+
 

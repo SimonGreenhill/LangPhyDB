@@ -23,7 +23,7 @@ bibkey = "@Blasi_2019"
 
 # type of study
 type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
-framework = []
+framework = ['bayesian', 'likelihood']
 
 # short description of the study, one line.
 description = "Effect of farming on phonology"

@@ -30,7 +30,8 @@ groups = ['review']  # 'Austronesian', etc
 bibkey = "@Gray2005"  # @xxxx
 
 # type of study
-type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+type = ['review']
+framework = ['other']
 
 # short label of taxa "37 languages from.."
 description = "Perspective on Dunn et al. (2005)"

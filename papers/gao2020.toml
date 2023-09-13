@@ -24,7 +24,8 @@ groups = ['Sino-Tibetan']  # 'Austronesian', etc
 bibkey = "@Gao2020"  # @xxxx
 
 # type of study
-type = ['phylogenetic', 'network', 'delta']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+type = ['phylogenetic', 'delta']
+framework = ['network']
 
 # short label of taxa "37 languages from.."
 description = "51 Tibeto-Burman languages"

@@ -26,8 +26,8 @@ groups = ['Indo-European', 'global']  # 'Austronesian', etc
 bibkey = "@Ceolin_2021"
 
 # type of study
-type = ['phylogenetic', 'distance']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
-framework = []
+type = ['phylogenetic']
+framework = ['distance']
 
 # short description of the study, one line.
 description = "Phylogeny of Eurasian languages using syntactical features"
@@ -72,5 +72,6 @@ description = "Phylogeny of Eurasian languages using syntactical features"
     model = 'mantel'
     details = ""
     data = "@data.geography;@data.syntax"
+
 
 

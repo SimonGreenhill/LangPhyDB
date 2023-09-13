@@ -25,8 +25,10 @@ groups = ['global']  # 'Austronesian', etc
 bibkey = "@O_Brien_2013"
 
 # type of study
-type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
-framework = []
+type = ['review']
+framework = ['other']
+
 
 # short description of the study, one line.
 description = "Review of cultural phylogenetic applications in anthropology"
+

@@ -19,7 +19,8 @@ groups = ["Indo-European"]  # 'Austronesian', etc
 bibkey = "@Gray2003"
 
 # type of study
-type = ["phylogenetic", "dating"]
+type = ['phylogenetic', 'dating']
+framework = ['bayesian']
 
 # short label of taxa "37 languages from.."
 description = "87 Indo-European languages"
@@ -158,3 +159,4 @@ description = "87 Indo-European languages"
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/gray_and_atkinson2003" }
 cldf = { title = "CLDF Dataset", link = "https://github.com/lexibank/dyenindoeuropean/" }
 links = []
+

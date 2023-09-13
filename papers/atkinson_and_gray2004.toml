@@ -28,8 +28,8 @@ groups = ['Indo-European']  # 'Austronesian', etc
 bibkey = "@Atkinson2004"  # @xxxx
 
 # type of study
-type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
-framework = []
+type = ['review']
+framework = ['other']
 
 # short label of taxa "37 languages from.."
 description = "Review discussing the Indo-European phylogeny by Gray & Atkinson 2003"
@@ -39,3 +39,4 @@ phlorest = { title = "Phlorest Dataset", link = "" }
 cldf = { title = "CLDF Dataset", link = "" }
 dplace = { title = "D-PLACE Dataset", link = "" }
 links = []
+

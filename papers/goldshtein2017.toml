@@ -25,8 +25,9 @@ groups = ['Creoles']  # 'Austronesian', etc
 bibkey = "@Goldshtein_2017"
 
 # type of study
-type = ['network', 'distance']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
-framework = []
+type = ['phylogenetic']
+framework = ['network', 'distance']
+
 
 # short description of the study, one line.
 description = "Comparison of nominal number in Juba Arabic"
@@ -79,5 +80,6 @@ description = "Comparison of nominal number in Juba Arabic"
     model = 'neighborjoining'
     details = "Neighbor-joining tree based on agreement (F24–30)."
     data = ""
+
 
 

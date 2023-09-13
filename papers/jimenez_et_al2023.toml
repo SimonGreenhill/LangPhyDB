@@ -29,7 +29,7 @@ bibkey = "@Jimenez_2023"
 
 # type of study
 type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
-framework = []
+
 
 # short description of the study, one line.
 description = "Constructs a phylogeny for Chibchan languages from a lexical distance"

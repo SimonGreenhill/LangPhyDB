@@ -18,8 +18,9 @@ groups = ['Indo-European']  # 'Austronesian', etc
 bibkey = "@Forster_1998"
 
 # type of study
-type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
-framework = []
+type = ['phylogenetic']
+framework = ['network']
+
 
 # short description of the study, one line.
 description = "Network analysis of Alpine Romance language varieties"
@@ -48,4 +49,5 @@ description = "Network analysis of Alpine Romance language varieties"
     model = 'median joining'
     details = ""
     data = ""
+
 

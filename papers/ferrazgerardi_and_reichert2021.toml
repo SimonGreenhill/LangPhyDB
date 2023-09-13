@@ -19,7 +19,8 @@ groups = ["Tupi-Guarani"]  # 'Austronesian', etc
 bibkey = "@FerrazGerardi_2021"
 
 # type of study
-type = ["phylogenetic", "network", "delta", "qresidual"]
+type = ['phylogenetic', 'delta', 'qresidual']
+framework = ['network', 'bayesian']
 
 # short label of taxa "37 languages from.."
 description = "38 Tupi-Guarani languages"
@@ -82,3 +83,4 @@ description = "38 Tupi-Guarani languages"
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/gerardi_and_reichert2021" }
 cldf = { title = "CLDF Dataset", link = "https://github.com/lexibank/gerarditupi" }
 links = []
+

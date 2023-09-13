@@ -37,7 +37,8 @@ groups = ['Tupian',]  # 'Austronesian', etc
 bibkey = "@Galucio2015"  # @xxxx
 
 # type of study
-type = ['phylogenetic', 'network', 'delta']
+type = ['phylogenetic', 'delta']
+framework = ['network']
 
 # short label of taxa "37 languages from.."
 description = "23 Tupí languages"

@@ -28,8 +28,9 @@ groups = ['Creoles']  # 'Austronesian', etc
 bibkey = "@Daval_Markussen_2013"
 
 # type of study
-type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
-framework = []
+type = ['phylogenetic']
+framework = ['network']
+
 
 # short description of the study, one line.
 description = "Attempts to develop a typological profile of creoles"
@@ -92,3 +93,4 @@ description = "Attempts to develop a typological profile of creoles"
     model = 'neighborjoining+bootstrapping'
     details = "reduced to 3 characters"
     data = "@data.wals"
+

@@ -16,8 +16,9 @@ groups = ['Indo-European']  # 'Austronesian', etc
 bibkey = "@Fortunato_2006"
 
 # type of study
-type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
-framework = []
+type = ['trait']
+framework = ['bayesian']
+
 
 # short description of the study, one line.
 description = "A phylogenetic analysis of bridewealth and dowry in Indo-European societies"
@@ -113,4 +114,5 @@ description = "A phylogenetic analysis of bridewealth and dowry in Indo-European
     model = 'multistate'
     details = "character coding version D"
     data = "@tree_m2p;@data.ea"
+
 

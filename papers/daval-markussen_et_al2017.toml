@@ -28,8 +28,9 @@ groups = ['Creoles']  # 'Austronesian', etc
 bibkey = "@Daval_Markussen_2017b"
 
 # type of study
-type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
-framework = []
+type = ['phylogenetic']
+framework = ['network']
+
 
 # short description of the study, one line.
 description = "Network analysis of West African creoles"
@@ -100,3 +101,4 @@ description = "Network analysis of West African creoles"
     model = 'neighbornet'
     details = "Neighbor-Net of 45 creoles, 46 African languages and 12 lexifiers with 10 stable features."
     data = ""
+

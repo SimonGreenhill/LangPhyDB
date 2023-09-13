@@ -16,8 +16,9 @@ groups = ['global']  # 'Austronesian', etc
 bibkey = "@Greenhill2009c"
 
 # type of study
-type = ['methodological']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
-framework = []
+type = ['methodological']
+framework = ['bayesian']
+
 
 # short description of the study, one line.
 description = "Simulation study assessing the affect of borrowing on language phylogenies"
@@ -31,4 +32,5 @@ description = "Simulation study assessing the affect of borrowing on language ph
     model = 'dollo'
     details = ""
     data = ""
+
 

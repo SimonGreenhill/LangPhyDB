@@ -21,7 +21,8 @@ groups = ['Austronesian']  # 'Austronesian', etc
 bibkey = "@Greenhill2012"
 
 # type of study
-type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+type = ['review']
+framework = ['other']
 
 # short label of taxa "37 languages from.."
 description = "Review of language phylogenies with focus on defending Gray et al. 2009"

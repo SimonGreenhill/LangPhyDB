@@ -29,7 +29,7 @@ bibkey = "@McMahon2003"  # @xxxx
 
 # type of study
 type = ['phylogenetic',]
-framework = ['parsimony']
+framework = ['parsimony', 'distance']
 
 # short label of taxa "37 languages from.."
 description = "95 Indo-European languages"

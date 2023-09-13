@@ -17,7 +17,7 @@ bibkey = "@Fortunato_2011b"
 
 # type of study
 type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
-framework = []
+framework = ['bayesian']
 
 # short description of the study, one line.
 description = "A phylogenetic analysis of residence strategy in Indo-European"

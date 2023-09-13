@@ -27,8 +27,9 @@ groups = ['global']  # 'Austronesian', etc
 bibkey = "@Dediu_2010"
 
 # type of study
-type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
-framework = []
+type = ['trait']
+framework = ['bayesian']
+
 
 # short description of the study, one line.
 description = "A phylogenetic analysis of the stability of tone"
@@ -398,3 +399,4 @@ description = "A phylogenetic analysis of the stability of tone"
 #             else:
 #                 print(analysis(label = label, tool = progr, model = m, details = "constrained to match %s" % classif))
 #
+

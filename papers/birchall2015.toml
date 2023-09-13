@@ -22,8 +22,8 @@ groups = ['Tupian']  # 'Austronesian', etc
 bibkey = "@Birchall2015"  # @xxxx
 
 # type of study
-type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
-framework = []
+type = ['trait']
+framework = ['parsimony']
 
 # short description of the study, one line.
 description = "Analyses the morphosyntactic diachrony of verbal person marking systems in Tupian"
@@ -81,3 +81,4 @@ description = "Analyses the morphosyntactic diachrony of verbal person marking s
     model = 'asr+mp'
     details = ""
     data = "@phylogenies.manual;@data.verbal"
+

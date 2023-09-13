@@ -34,7 +34,7 @@ bibkey = "@Jordan2011"  # @xxxx
 
 # type of study
 type = ['trait', 'asr']
-framework = []
+framework = ['bayesian']
 
 # short description of the study, one line.
 description = "A phylogenetic analysis of the relative age and relative-sex kinship distinctions in Austronesian societies."

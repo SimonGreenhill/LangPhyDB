@@ -33,8 +33,9 @@ groups = ['Indo-European']  # 'Austronesian', etc
 bibkey = "@Widmer2017"  # @xxxx
 
 # type of study
-type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
-framework = []
+type = ['trait']
+framework = ['likelihood']
+
 
 # short description of the study, one line.
 description = "Models the evolution of 5 noun-phrase types in Indo-European languages"

@@ -19,7 +19,8 @@ groups = ["Huon Peninsula"]  # 'Austronesian', etc
 bibkey = "@Greenhill2015"
 
 # type of study
-type = ["phylogenetic", "network", "qresidual"]
+type = ['phylogenetic', 'qresidual']
+framework = ['network', 'bayesian']
 
 # short label of taxa "37 languages from.."
 description = "14 Huon Peninsula languages"
@@ -68,3 +69,4 @@ description = "14 Huon Peninsula languages"
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/greenhill2015" }
 cldf = { title = "CLDF Dataset", link = "" }
 links = []
+

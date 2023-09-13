@@ -20,7 +20,8 @@ groups = ["Timor-Alor-Pantar"]  # 'Austronesian', etc
 bibkey = "@KaipingKlamer_2022"
 
 # type of study
-type = ["phylogenetic", "dating", "delta", "qresidual"]
+type = ['phylogenetic', 'dating', 'delta', 'qresidual']
+framework = ['bayesian']
 
 # short label of taxa "37 languages from.."
 description = "48 Timor-Alor-Pantar languages"
@@ -196,3 +197,4 @@ description = "48 Timor-Alor-Pantar languages"
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/kaiping_and_klamer2022" }
 cldf = { title = "CLDF Dataset", link = "https://github.com/lessersunda/lexirumah-data" }
 links = []
+

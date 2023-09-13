@@ -26,8 +26,9 @@ groups = ['Creoles']  # 'Austronesian', etc
 bibkey = "@Daval_Markussen_2017c"
 
 # type of study
-type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
-framework = []
+type = ['phylogenetic']
+framework = ['network']
+
 
 # short description of the study, one line.
 description = "Evaluation of the relationships between the French-based creoles."
@@ -63,3 +64,4 @@ description = "Evaluation of the relationships between the French-based creoles.
     model = 'neighbornet'
     details = "full data"
     data = ""
+

@@ -16,8 +16,8 @@ groups = ['Indo-European']  # 'Austronesian', etc
 bibkey = "@Dunn_2017"
 
 # type of study
-type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
-framework = []
+type = ['trait']
+framework = ['bayesian']
 
 # short description of the study, one line.
 description = "A phylogenetic analysis of argument structure evolution in Germanic"
@@ -76,3 +76,4 @@ description = "A phylogenetic analysis of argument structure evolution in German
     details = ""
     data = ""
     
+

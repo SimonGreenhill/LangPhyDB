@@ -25,8 +25,9 @@ groups = ['global']  # 'Austronesian', etc
 bibkey = "@Carling2022"
 
 # type of study
-type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
-framework = []
+type = ['review']
+framework = ['other']
 
 # short description of the study, one line.
 description = "Review of phylogenetic methods."
+

@@ -22,7 +22,8 @@ groups = ["Semitic"]  # 'Austronesian', etc
 bibkey = "@Kitchen2009"
 
 # type of study
-type = ["phylogenetic", "dating"]
+type = ['phylogenetic', 'dating']
+framework = ['bayesian']
 
 # short label of taxa "37 languages from.."
 description = "25 Semitic languages"
@@ -167,3 +168,4 @@ description = "25 Semitic languages"
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/kitchen_et_al2009" }
 cldf = { title = "CLDF Dataset", link = "https://github.com/lexibank/kitchensemitic" }
 links = []
+

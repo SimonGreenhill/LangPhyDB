@@ -21,7 +21,8 @@ groups = ["Pama-Nyungan"]  # 'Austronesian', etc
 bibkey = "@Bouckaert2018"
 
 # type of study
-type = ["phylogenetic", "dating", "phylogeography"]  # phylogenetic,phylogeography,macroevolutionary,trait
+type = ['phylogenetic', 'dating', 'phylogeography']
+framework = ['bayesian']
 
 # short label of taxa "37 languages from.."
 description = "306 Pama-Nyungan languages"
@@ -104,3 +105,4 @@ description = "306 Pama-Nyungan languages"
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/bouckaert_et_al2018" }
 cldf = { title = "CLDF Dataset", link = "" }  # https://github.com/lexibank/lexibank/issues/195
 links = []
+

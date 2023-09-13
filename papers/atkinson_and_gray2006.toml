@@ -27,8 +27,9 @@ groups = ['Indo-European']  # 'Austronesian', etc
 bibkey = "@Atkinson2006b"  # @xxxx
 
 # type of study
-type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
-framework = []
+type = ['review']
+framework = ['other']
+
 
 # short label of taxa "37 languages from.."
 description = "Review article discussing the Indo-European phylogeny from Gray & Atkinson (2003)"

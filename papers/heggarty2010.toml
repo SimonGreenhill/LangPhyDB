@@ -22,8 +22,9 @@ groups = ['Aymara', 'Quechua']
 bibkey = "@Heggarty2010"  # @xxxx
 
 # type of study
-type = ['network', 'review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
-framework = []
+type = ['review', 'phylogenetic']
+framework = ['network', 'other']
+
 
 # short description of the study, one line.
 description = "Review of confusions regarding wordlists and lexicostatistics"
@@ -37,3 +38,4 @@ description = "Review of confusions regarding wordlists and lexicostatistics"
     [phylogenies.andes_nnet_lolo]
     source = '@McMahon2005'
     
+

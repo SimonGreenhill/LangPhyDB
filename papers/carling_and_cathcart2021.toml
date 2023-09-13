@@ -30,8 +30,8 @@ groups = ['Indo-European']  # 'Austronesian', etc
 bibkey = "@Carling_2021"
 
 # type of study
-type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
-framework = []
+type = ['trait']
+framework = ['bayesian']
 
 # short description of the study, one line.
 description = "Reconstructs the morphosyntactical alignment of Indo-European"
@@ -260,4 +260,5 @@ description = "Reconstructs the morphosyntactical alignment of Indo-European"
     model = 'custom'
     details = "delta metric of Borges et al. 2018"
     data = ""
+
 

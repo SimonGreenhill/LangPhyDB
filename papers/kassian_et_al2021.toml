@@ -24,8 +24,9 @@ groups = ['Indo-European']  # 'Austronesian', etc
 bibkey = "@Kassian2021"  # @xxxx
 
 # type of study
-type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
-framework = []
+type = ['phylogenetic']
+framework = ['bayesian', 'parsimony', 'statistical']
+
 
 # short description of the study, one line.
 description = "Reconstruction of Indo-European"
@@ -289,5 +290,6 @@ description = "Reconstruction of Indo-European"
     age = "hpd(3690, 3408, 3994)"
     units = "ybp" # ybp
     notes = "Indo-Iranian break-up: 2044–1458 bc (mean 1740 bc)"
+
 
 

@@ -26,8 +26,9 @@ groups = ['Indo-European']  # 'Austronesian', etc
 bibkey = "@Goldstein2020"  # @xxxx
 
 # type of study
-type = ['tutorial']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
-framework = []
+type = ['tutorial']
+framework = ['distance', 'parsimony', 'likelihood']
+
 
 # short description of the study, one line.
 description = "Tutorial on Indo-European phylogenetics in R"

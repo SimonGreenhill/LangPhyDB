@@ -23,7 +23,8 @@ groups = ['Indo-European', 'Aymara', 'Quechua']
 bibkey = "@McMahon2005"  # @xxxx
 
 # type of study
-type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+framework = ['network']
 
 # short description of the study, one line.
 description = "Network investigation into Aymara and Quechua"

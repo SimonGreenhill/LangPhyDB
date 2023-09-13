@@ -25,6 +25,7 @@ bibkey = "@Warnow2006"
 
 # type of study
 type = ['methodological']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+framework = []
 
 # short description of the study, one line.
 description = "Theoretical presentation of the Perfect Phylogeny method"

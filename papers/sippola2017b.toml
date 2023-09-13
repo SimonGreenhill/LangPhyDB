@@ -27,6 +27,7 @@ bibkey = "@Sippola_2017b"
 
 # type of study
 type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+framework = []
 
 # short description of the study, one line.
 description = "Review of creole studies using networks."

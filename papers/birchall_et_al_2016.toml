@@ -20,7 +20,8 @@ groups = ["Chapacuran"]  # 'Austronesian', etc
 bibkey = "@Birchall_et_al2016"
 
 # type of study
-type = ["phylogenetic", "dating", "network", "delta", "qresidual"]
+type = ["phylogenetic", "dating", "delta", "qresidual"]
+framework = ['bayesian', 'network']
 
 # short label of taxa "37 languages from.."
 description = "10 Chapacuran languages"

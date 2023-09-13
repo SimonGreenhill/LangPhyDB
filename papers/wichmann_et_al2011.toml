@@ -1,0 +1,65 @@
+title = "Correlates of Reticulation in Linguistic Phylogenies"
+
+doi = "10.1163/221058212X648072"
+
+abstract = """
+This paper discusses phylogenetic reticulation using linguistic data from the Automated Similarity Judgment
+Program or ASJP (Holman et al., 2008; Wichmann et al., 2010a). It contributes methodologically to the examination
+of two measures of reticulation in distance-based phylogenetic data, specifically the δ score of Holland et al.
+(2002) and the more recent Q-residuals of Gray et al. (2010). It is shown that the δ score is a more adequate
+measure of reticulation. Our empirical analyses examine possible correlations between δ and (a) the size (number
+of languages), (b) age, and (c) heterogeneity of language groups, (d) linguistic isolation of individual languages
+within their respective phylogenies, and (e) the status of speech forms as dialects or recently emerged languages.
+Among these, only (d) is significantly correlated with δ. Our interpretation is that δ is a realistic measure of
+reticulation and sensitive to effects of socio-historical events such as language extinction. Finally, we
+correlate average δ scores for different language families with the goodness of fit between ASJP and expert
+classifications, showing that the δ scores explain much of the variance.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Eric W. Holman", "Robert S. Walker", "Taraka Rama", "Søren Wichmann"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Holman_2011"
+
+# type of study
+type = ['macroevolutionary', 'delta', 'qresidual']
+framework = []
+
+# short description of the study, one line.
+description = "Investigation into the relationship between reticulation and language family size"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.asjp]
+    ntaxa = "?"
+    nchars = 40
+    nsites = 1
+    datatype = 'lexical distance'
+    source = '@ASJP14'
+    items = ''
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.delta]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = ""
+
+    [analysis.qresidual]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = ""

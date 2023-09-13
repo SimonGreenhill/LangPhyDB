@@ -23,6 +23,7 @@ bibkey = "@Birchall2015"  # @xxxx
 
 # type of study
 type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+framework = []
 
 # short description of the study, one line.
 description = "Analyses the morphosyntactic diachrony of verbal person marking systems in Tupian"

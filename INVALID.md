@@ -69,6 +69,10 @@ Papers deemed to fall outside scope, alphabetically by first author surname.
 ## T
 ## U
 ## V
+
+* Verkerk, A, & Di Garbo, F (2022). Sociogeographic correlates of typological variation in northwestern Bantu gender systems. Language Dynamics and Change, 12(2), 155-223. https://doi.org/10.1163/22105832-bja10017
+    - phylogeny only used as control in regression analysis
+
 ## W
 
 

@@ -31,6 +31,7 @@ bibkey = "@BenHamed2005"  # @xxxx
 
 # type of study
 type = ['phylogenetic']
+framework = []
 
 # short description of the study, one line.
 description = "Exploratory study reconstructing phylogeny with vowel systems"

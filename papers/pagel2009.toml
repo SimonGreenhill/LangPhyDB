@@ -25,6 +25,7 @@ bibkey = "@Pagel2009"  # @xxxx
 
 # type of study
 type = ['review']
+framework = []
 
 # short description of the study, one line.
 description = "Review of language as a culturally transmitted replicators"

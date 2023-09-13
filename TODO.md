@@ -38,7 +38,6 @@
 * Verkerk. 2014. Diachronic change in Indo-European motion event encoding. Journal of Historical Linguistics, 4(1), 40–83. https://doi.org/10.1075/jhl.4.1.02ver
 * Verkerk. 2019. Detecting non-tree-like signal using multiple tree topologies. Journal of Historical Linguistics, 9(1), 9–69. https://doi.org/10.1075/jhl.17009.ver
 * Warnow & Michailov. 1998. Computational Cladistics and the Position of Tocharian. In V Mair (Ed.), The Bronze Age and early Iron Age peoples of eastern Central Asia (pp. 391–414). JIES Monograph.
-* Wichmann et al. 2011. Correlates of reticulation in linguistic phylogenies. Language Dynamics and Change 1: 205-240.
 * Yanovich. 2020. Phylogenetic linguistic evidence and the Dene-Yeniseian homeland. Diachronica 37.410–446. doi:10.1075/dia.17038.yan.
 
 
@@ -47,15 +46,10 @@
 
 ## Structure/Admixture studies:
 
-* Bowern, Claire (2012) ‘The Riddle of Tasmanian Languages’, Proceedings of the Royal Society B: Biological Sciences, 279: 4590–4595. (Added already for other reasons)
 * Hübler, N., & Greenhill, S. J. (2022). Modelling admixture across language levels to evaluate deep history claims. Journal of Language Evolution, 7(2), 166–183. https://doi.org/10.1093/jole/lzad002
 * Norvik, Miina, et al. (2022) Uralic Typology in the Light of a New Comprehensive Dataset’, Journal of Uralic Linguistics, 1: 4–42.
 * Reesink, Ger, Ruth Singer, and Michael Dunn (2009) "Explaining the Linguistic Diversity of Sahul Using Population Models", PLoS Biology, 7: e1000241.
 * Syrjänen, Kaj, et al. (2016) "Applying Population Genetic Approaches within Languages: Finnish Dialects as Linguistic Populations", Language Dynamics and Change, 6: 235–283.
-
-## Phylogenies used as just a control in a regression
-
-* Verkerk, A, & Di Garbo, F (2022). Sociogeographic correlates of typological variation in northwestern Bantu gender systems. Language Dynamics and Change, 12(2), 155-223. https://doi.org/10.1163/22105832-bja10017
 
 ## Critical papers
 

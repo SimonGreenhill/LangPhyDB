@@ -28,7 +28,8 @@ groups = ['Japonic']  # 'Austronesian', etc
 bibkey = "@Lee2014"  # @xxxx
 
 # type of study
-type = ['phylogenetic', 'network', 'delta', 'qresidual', 'macroevolutionary']
+type = ['phylogenetic', 'delta', 'qresidual', 'macroevolutionary']
+framework = ['network', 'statistical']
 
 # short description of the study, one line.
 description = "Exploring the effect of Ocean barriers on the diversification of Japonic languages"

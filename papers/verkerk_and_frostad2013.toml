@@ -25,6 +25,7 @@ bibkey = "@Verkerk2013"  # @xxxx
 
 # type of study
 type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+framework = ['likelihood', 'bayesian']
 
 # short description of the study, one line.
 description = "A phylogenetic study of resultatives and manner predications in Oceanic languages"

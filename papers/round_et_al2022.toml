@@ -31,6 +31,7 @@ bibkey = "@Round2022"  # @xxxx
 
 # type of study
 type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+framework = []
 
 # short description of the study, one line.
 description = "Modelling the trade-offs in functional load in phonological contrasts in Pama-Nyungan languages"

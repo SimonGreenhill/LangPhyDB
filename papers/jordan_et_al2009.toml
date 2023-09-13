@@ -29,6 +29,7 @@ bibkey = "@Jordan2009"  # @xxxx
 
 # type of study
 type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+framework = []
 
 # short description of the study, one line.
 description = "Reconstruction of postmarital residence rules in Austronesian languages"

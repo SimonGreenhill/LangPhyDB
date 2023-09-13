@@ -31,9 +31,10 @@ bibkey = "@Wu2023"  # @xxxx
 
 # type of study
 type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+framework = ['bayesian', 'likelihood']
 
 # short label of taxa "37 languages from.."
-description = "Evolution of tono in 106 Sino-Tibetan languages"
+description = "Evolution of tone in 106 Sino-Tibetan languages"
 
 # data
 [data]

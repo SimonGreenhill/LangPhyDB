@@ -1,12 +1,13 @@
 label,description
 asr,Ancestral State Reconstruction
 criticism,
+d-statistic,
 dating,phylogenetic dating
 delta,Reticulation metric delta
-distance,1980s
+distance,distance methods (UPGMA, NJ)
+likelihood,Maximum Likelihood methods
 macroevolutionary,Inferring macroevolutionary processes from the data
 methodological,methodological development
-network,Inferring the phylogenetic network of the taxa
 phylogenetic,Inferring the phylogeny of the taxa
 phylogeography,Inferring the geography of the taxa
 qresidual,Reticulation metric Q-Residual

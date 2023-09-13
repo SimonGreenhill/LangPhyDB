@@ -19,7 +19,8 @@ groups = ["Semitic"]  # 'Austronesian', etc
 bibkey = "@Zemanek2018"
 
 # type of study
-type = ["network"]  # phylogenetic,phylogeography,macroevolutionary,trait
+type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
+framework = ['parsimony', 'network']
 
 # short label of taxa "37 languages from.."
 description = "14 Semitic languages"

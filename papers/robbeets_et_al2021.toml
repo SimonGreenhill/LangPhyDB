@@ -60,6 +60,7 @@ bibkey = "@Robbeets2021"
 
 # type of study
 type = ["phylogenetic", "phylogeography", "dating"]
+framework = ['bayesian']
 
 # short label of taxa "37 languages from.."
 description = "98 Transeurasian languages"

@@ -27,6 +27,7 @@ bibkey = "@Daval_Markussen_2017c"
 
 # type of study
 type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+framework = []
 
 # short description of the study, one line.
 description = "Evaluation of the relationships between the French-based creoles."

@@ -20,7 +20,8 @@ groups = ["Timor-Alor-Pantar"]  # 'Austronesian', etc
 bibkey = "@Robinson_2012"
 
 # type of study
-type = ["phylogenetic", "delta", "network"]
+type = ["phylogenetic", "delta"]
+framework = ['bayesian', 'network']
 
 # short label of taxa "37 languages from.."
 description = "13 Timor-Alor-Pantar languages"

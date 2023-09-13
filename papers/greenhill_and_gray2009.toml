@@ -20,6 +20,7 @@ bibkey = "@Greenhill2009"  # @xxxx
 
 # type of study
 type = ['phylogenetic', 'dating']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+framework = []
 
 # short description of the study, one line.
 description = "Tutorial paper on language phylogenies with focus on Austronesian"

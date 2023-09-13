@@ -19,7 +19,8 @@ groups = ["Japonic"]  # 'Austronesian', etc
 bibkey = "@Lee2011"
 
 # type of study
-type = ["phylogenetic", "dating", "network"]
+type = ["phylogenetic", "dating"]
+framework = ['bayesian', 'network']
 
 # short label of taxa "37 languages from.."
 description = "59 Japonic languages"

@@ -20,6 +20,7 @@ bibkey = "@Warnow_1996"
 
 # type of study
 type = ['phylogenetic', 'methodological']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+framework = ['parsimony']
 
 # short description of the study, one line.
 description = "Development of the perfect phylogeny algorithm as applied to Indo-European"

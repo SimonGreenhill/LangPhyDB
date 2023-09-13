@@ -22,6 +22,7 @@ bibkey = "@Zhang2019"
 
 # type of study
 type = ["phylogenetic", "dating"]
+framework = ['bayesian']
 
 # short label of taxa "37 languages from.."
 description = "109 Sino-Tibetan languages"

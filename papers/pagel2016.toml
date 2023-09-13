@@ -1,0 +1,24 @@
+title = "Darwinian perspectives on the evolution of human languages"
+
+doi = "10.3758/s13423-016-1072-z"
+
+abstract = """
+Human languages evolve by a process of descent with modification in which parent languages give rise to daughter languages over time and in a manner that mimics the evolution of biological species. Descent with modification is just one of many parallels between biological and linguistic evolution that, taken together, offer up a Darwinian perspective on how languages evolve. Combined with statistical methods borrowed from evolutionary biology, this Darwinian perspective has brought new opportunities to the study of the evolution of human languages. These include the statistical inference of phylogenetic trees of languages, the study of how linguistic traits evolve over thousands of years of language change, the reconstruction of ancestral or proto-languages, and using language change to date historical events.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Mark Pagel"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Pagel_2016"
+
+# type of study
+type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+framework = []
+
+# short description of the study, one line.
+description = "Review article on language evolution with phylogenetics focus"
+

@@ -41,6 +41,7 @@ bibkey = "@Syrjaenen2021"
 
 # type of study
 type = ['methodological', 'tiger', 'qresidual', 'delta']
+framework = ['network']
 
 # short description of the study, one line.
 description = "Applies a metric TIGER to Uralic languages with a simulation study of the effectiveness"

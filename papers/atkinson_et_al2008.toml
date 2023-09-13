@@ -23,6 +23,7 @@ bibkey = "@Atkinson2008"
 
 # type of study
 type = ['macroevolutionary']
+framework = ['bayesian']
 
 # short label of taxa "37 languages from.."
 description = "95 Bantu languages, 65 Indo-European languages, 330 Austronesian languages"

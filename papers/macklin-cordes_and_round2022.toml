@@ -29,7 +29,8 @@ groups = ['Pama-Nyungan']  # 'Austronesian', etc
 bibkey = "@MacklinCordes2022"  # @xxxx
 
 # type of study
-type = ['trait', 'tutorial']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+type = ['trait', 'tutorial', 'd-statistic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+framework = ['likelihood']
 
 # short description of the study, one line.
 description = "Investigating the Pama-Nyungan laminal contrasts"
@@ -82,7 +83,6 @@ description = "Investigating the Pama-Nyungan laminal contrasts"
     model = 'multiPhylosignal'
     details = ""
     data = "data@laminalcontrast_frequency"
-    
     
     [analysis.proportion_ACL]
     tool = 'phyloWeights'

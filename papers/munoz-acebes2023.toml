@@ -1,0 +1,56 @@
+title = "Cladística e Historia de la Lengua Alemana: introducción al uso de PAUP"
+
+doi = "10.5944/rhd.vol.7.2022.33655"
+
+abstract = """
+En el presente estudio desarrollamos un análisis en torno al uso y la utilidad de herramientas estadísticas para el análisis de la lingüística histórica. En concreto, nos centramos en PAUP* y las múltiples posibilidades de análisis que nos permite. De este modo, analizamos los archivos proporcionados por el proyecto IELEX siguiendo los criterios de Máxima Parsimonia y Máxima Verosimilitud, desarrollando una interpretación de los datos proporcionados y proporcionando también una guía de los comandos y procesos seguidos que puede servir de ayuda y guía al investigador. Del mismo modo, pretendemos abogar por el uso de la estadística y de las múltiples herramientas que proporciona para los análisis de tipo cuantitativo en el ámbito de las Humanidades Digitales.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Javier Muñoz-Acebes"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Munoz_Acebes_2023"
+
+# type of study
+type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+framework = ['parsimony', 'likelihood'] # 'bayesian', 'parsimony', 'network', 'likelihood'
+
+# short description of the study, one line.
+description = "Evaluate the performance of Maximum Parsimony and Maximum Likelihood trees for Indo-European"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.ielex]
+    ntaxa = 94
+    nchars = 200
+    nsites = 3937
+    datatype = 'lexical cognates'
+    source = '@IELex'
+    items = ''
+    comment = ''
+
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.mp]
+    tool = 'paup*'
+    model = 'maximum parsimony + bootstrapping'
+    details = ""
+    data = ""
+
+    [analysis.ml]
+    tool = 'paup*'
+    model = 'maximum likelihood + bootstrapping'
+    details = ""
+    data = ""

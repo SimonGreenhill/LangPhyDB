@@ -29,6 +29,7 @@ bibkey = "@Moravec_2018"
 
 # type of study
 type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+framework = ['bayesian']
 
 # short description of the study, one line.
 description = "Investigates global patterns of post-marital residence."

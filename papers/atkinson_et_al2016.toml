@@ -37,6 +37,7 @@ bibkey = "@Atkinson2016"
 
 # type of study
 type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+framework = ['bayesian', 'likelihood']
 
 # short description of the study, one line.
 description = "Model the effect of nine ecological and two cultural variables on pre-European Pacific forest outcomes"

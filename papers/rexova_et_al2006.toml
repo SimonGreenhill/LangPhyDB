@@ -22,6 +22,7 @@ bibkey = "@Rexova2006"
 
 # type of study
 type = ["phylogenetic"]
+framework = ['parsimony', 'bayesian']
 
 # short label of taxa "37 languages from.."
 description = "87 Bantu languages"

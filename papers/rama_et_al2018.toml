@@ -24,6 +24,7 @@ bibkey = "@Rama2018"
 
 # type of study
 type = ['methodological']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+framework = ['bayesian']
 
 # short description of the study, one line.
 description = "Assessment of whether automatic cognate methods give reasonable answers"

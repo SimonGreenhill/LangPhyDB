@@ -27,6 +27,7 @@ bibkey = "@Nicholls2008"  # @xxxx
 
 # type of study
 type = ['phylogenetic', 'dating']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+framework = ['bayesian']
 
 # short description of the study, one line.
 description = "Phylogenetic dating of Indo-European language family"

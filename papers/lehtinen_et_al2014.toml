@@ -24,7 +24,8 @@ groups = ["Uralic"]  # 'Austronesian', etc
 bibkey = "@Lehtinen2014"
 
 # type of study
-type = ["phylogenetic", "network", "delta"]
+type = ['phylogenetic', 'delta']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+framework = ['network', 'bayesian']
 
 # short label of taxa "37 languages from.."
 description = "18 Uralic languages"

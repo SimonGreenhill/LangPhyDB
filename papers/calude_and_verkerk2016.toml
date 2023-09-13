@@ -29,6 +29,7 @@ bibkey = "@Calude2016"  # @xxxx
 
 # type of study
 type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+framework = []
 
 # short description of the study, one line.
 description = "Phylogenetic analysis of numerals 11-19 in Indo-European"

@@ -18,6 +18,7 @@ bibkey = "@Forster2006"
 
 # type of study
 type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+framework = []
 
 # short description of the study, one line.
 description = "A network analysis of English within Germanic"

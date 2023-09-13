@@ -25,8 +25,8 @@ groups = ['Sinitic']  # 'Austronesian', etc
 bibkey = "@Szeto2018"  # @xxxx
 
 # type of study
-type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
-
+type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+framework = ['network']
 # short label of taxa "37 languages from.."
 description = "42 Sinitic dialects"
 

@@ -30,7 +30,8 @@ groups = ['Kra-Dai']  # 'Austronesian', etc
 bibkey = "@Dockum2018"  # @xxxx
 
 # type of study
-type = ['phylogenetic', 'delta', 'qresidual', 'network']
+type = ['phylogenetic', 'delta', 'qresidual', 'network', 'd-statistic']
+framework = []
 
 # short description of the study, one line.
 description = "Assesses whether phonetic features show phylogenetic signal in the Tai-Kadai languages."

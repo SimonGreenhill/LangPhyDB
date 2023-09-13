@@ -28,7 +28,8 @@ groups = ['Creoles']  # 'Austronesian', etc
 bibkey = "@Levisen_2017"
 
 # type of study
-type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+framework = ['network']
 
 # short description of the study, one line.
 description = "Creole networks from Natural Semantic Metalanguage primes."

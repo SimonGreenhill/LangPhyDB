@@ -20,7 +20,8 @@ groups = ["Dene-Yeniseian"]  # 'Austronesian', etc
 bibkey = "@Sicoli2014"
 
 # type of study
-type = ["phylogenetic", "network", "delta", "qresidual"]
+type = ["phylogenetic", "delta", "qresidual"]
+framework = ['bayesian', 'network']
 
 # short label of taxa "37 languages from.."
 description = "40 Dene-Yeniseian languages"

@@ -32,6 +32,7 @@ bibkey = "@Eska2004"  # @xxxx
 
 # type of study
 type = ['criticism']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+framework = []
 
 # short description of the study, one line.
 description = "Criticism article focused mainly on Forster & Toth (2003) but raising general points"

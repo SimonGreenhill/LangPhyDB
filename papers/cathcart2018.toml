@@ -22,6 +22,7 @@ bibkey = "@Cathcart2018"
 
 # type of study
 type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+framework = []
 
 # short description of the study, one line.
 description = "Review of trait models"

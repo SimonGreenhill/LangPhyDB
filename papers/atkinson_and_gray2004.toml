@@ -29,6 +29,7 @@ bibkey = "@Atkinson2004"  # @xxxx
 
 # type of study
 type = ['review']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+framework = []
 
 # short label of taxa "37 languages from.."
 description = "Review discussing the Indo-European phylogeny by Gray & Atkinson 2003"

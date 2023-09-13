@@ -37,6 +37,7 @@ bibkey = "@Shcherbakova2023"
 
 # type of study
 type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+framework = ['bayesian']
 
 # short description of the study, one line.
 description = "A test of the linguistic niche hypothesis that languages with many non-native speakers tend to lose grammatical distinctions"

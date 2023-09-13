@@ -30,6 +30,7 @@ bibkey = "@Kassian2017"
 
 # type of study
 type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+framework = []
 
 # short description of the study, one line.
 description = "Comparison of phylogenetic methods with and without 'homoplasy optimised' data in Tsezic and Lezgian languages."

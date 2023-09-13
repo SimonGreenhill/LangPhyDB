@@ -35,6 +35,7 @@ bibkey = "@Sheard2020"  # @xxxx
 
 # type of study
 type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+framework = ['bayesian', 'likelihood']
 
 # short description of the study, one line.
 description = "Testing the proposed relationship between grandparent and grandchild terms in Pama-Nyungan languages"

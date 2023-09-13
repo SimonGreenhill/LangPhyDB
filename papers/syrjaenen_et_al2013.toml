@@ -25,6 +25,7 @@ bibkey = "@Syrjanen2013"
 
 # type of study
 type = ["phylogenetic"]  # phylogenetic,phylogeography,macroevolutionary,trait
+framework = ['bayesian']
 
 # short label of taxa "37 languages from.."
 description = "17 Uralic languages"

@@ -1,0 +1,83 @@
+title = "A New Method for Computational Cladistics: An Afro-Asiatic Case Study"
+
+doi = "10.1111/1467-968x.12128"
+
+abstract = """
+This paper makes two contributions. First, we introduce a new method for computational cladistics that produces a
+rooted tree by minimising the number of homoplasies. This method is compared with lexicostatistics and maximum
+parsimony. We validate the method on Indo‐European data and show that the tree derived is consistent with current
+understanding of the internal cladistics of that family. Secondly, we turn the method to treat the less well
+studied problem of the internal cladistics of Afro‐Asiatic. We show that there is good evidence for a North/South
+division in Afro‐Asiatic with Berber, Egyptian and Semitic in the North and Chadic, Cushitic and Omotic in the
+South. There is also tentative evidence for further grouping of Egyptian with Semitic and Cushitic with Omotic.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Hezekiah Akiva Bacovcin", "David Wilson"]
+
+# parts of the world
+groups = ['Afro-Asiatic']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Bacovcin_2018"
+
+# type of study
+type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+framework = ['parsimony']
+
+# short description of the study, one line.
+description = "A computational cladistic study using minimum homoplasy on Afro-Asiatic"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.indoeuropean]
+    ntaxa = 24
+    nchars = 430
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Ringe2002'
+    items = ''
+    comment = ''
+
+    
+    [data.afroasiatic]
+    ntaxa = 12
+    nchars = 147
+    nsites = "?"
+    datatype = 'mixed'
+    source = ''
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+
+    [analysis.ie_maximumparsimony]
+    tool = 'paup*'
+    model = 'maximum parsimony'
+    details = ""
+    data = "@data.indoeuropean"
+    
+    [analysis.ie_minimumhomoplasy]
+    tool = 'paup*'
+    model = 'minimum homoplasy'
+    details = ""
+    data = "@data.indoeuropean"
+
+
+    [analysis.aa_maximumparsimony]
+    tool = 'paup*'
+    model = 'maximum parsimony'
+    details = ""
+    data = "@data.afroasiatic"
+    
+    [analysis.aa_minimumhomoplasy]
+    tool = 'paup*'
+    model = 'minimum homoplasy'
+    details = ""
+    data = "@data.afroasiatic"

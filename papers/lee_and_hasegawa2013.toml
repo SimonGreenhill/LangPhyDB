@@ -21,7 +21,7 @@ bibkey = "@Lee_2013"
 
 # type of study
 type = ["phylogenetic", "dating", "phylogeography", "delta", "qresidual"]
-
+framework = ['bayesian', 'statistical']
 # short label of taxa "37 languages from.."
 description = "19 Ainu languages"
 

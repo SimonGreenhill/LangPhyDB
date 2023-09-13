@@ -33,6 +33,7 @@ bibkey = "@Beyer2019"  # @xxxx
 
 # type of study
 type = ['macroevolutionary']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+framework = []
 
 # short description of the study, one line.
 description = "A test of whether environmental conditions affect diversification rates in Bantu languages"

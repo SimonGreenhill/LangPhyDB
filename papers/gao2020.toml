@@ -86,7 +86,7 @@ description = "51 Tibeto-Burman languages"
 
     [analysis.nj]
     tool = 'splitstree'
-    model = 'nj'
+    model = 'neighborjoining'
     details = ""
     data = "data.gao100"
 

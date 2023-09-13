@@ -24,7 +24,8 @@ groups = ['Creoles']  # 'Austronesian', etc
 bibkey = "@Sippola_2017"
 
 # type of study
-type = ['network', 'distance', 'delta']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+type = ['delta']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+framework = ['network', 'parsimony', 'distance']
 
 # short description of the study, one line.
 description = "Network evaluation of the relationships among Iberian creoles"

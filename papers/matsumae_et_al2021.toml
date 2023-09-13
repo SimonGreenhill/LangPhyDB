@@ -25,7 +25,8 @@ groups = ['Asia']  # 'Austronesian', etc
 bibkey = "@Matsumae_2021"
 
 # type of study
-type = ['distance', 'network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+framework = ['distance', 'network']
 
 # short description of the study, one line.
 description = "Comparison of musical, genetic, linguistic (phonetic, grammatical, lexical) distances in North Asia"

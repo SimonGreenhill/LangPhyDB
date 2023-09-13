@@ -29,6 +29,7 @@ bibkey = "@RamaWichmann2018"  # @xxxx
 
 # type of study
 type = ['methodological']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+framework = ['bayesian']
 
 # short description of the study, one line.
 description = "Assessment of the minimum dataset size required for Bayesian phylogenetic analysis"

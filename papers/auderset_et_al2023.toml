@@ -17,6 +17,7 @@ bibkey = "@Auderset_2023"
 
 # type of study
 type = ['phylogenetic', 'dating', 'delta', 'qresidual']
+framework = ['bayesian']
 
 # short description of the study, one line.
 description = "A phylogenetic analysis of the Mixtecan languages"

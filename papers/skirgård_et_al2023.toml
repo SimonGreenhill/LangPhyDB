@@ -133,6 +133,7 @@ bibkey = "@Grambank"
 
 # type of study
 type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+framework = ['bayesian']
 
 # short description of the study, one line.
 description = "Presentation of the global database Grambank with phylogenetic analysis of stable features"

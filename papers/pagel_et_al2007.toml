@@ -17,6 +17,7 @@ bibkey = "@Pagel_2007"
 
 # type of study
 type = ['trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+framework = ['bayesian']
 
 # short description of the study, one line.
 description = "Estimated the rates of lexical evolution for 200 fundamental vocabulary meanings in 87 Indo-European languages"

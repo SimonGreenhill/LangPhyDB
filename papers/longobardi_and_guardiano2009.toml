@@ -28,6 +28,7 @@ bibkey = "@Longobardi2009"  # @xxxx
 
 # type of study
 type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+framework = ['parsimony']
 
 # short label of taxa "37 languages from.."
 description = "28 European languages"

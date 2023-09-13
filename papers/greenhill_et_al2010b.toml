@@ -17,6 +17,7 @@ bibkey = "@Greenhill2010b"
 
 # type of study
 type = ['network', 'trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+framework = []
 
 # short description of the study, one line.
 description = "Evaluation of the relative evolutionary rates of both typological and lexical features in the Austronesian and Indo-European language families"

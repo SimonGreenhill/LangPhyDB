@@ -29,6 +29,7 @@ bibkey = "@Pagel2018"  # @xxxx
 
 # type of study
 type = ['trait']
+framework = ['bayesian']
 
 # short description of the study, one line.
 description = "Investigation into the rates of numeral evolution in Indo-European, Bantu, and Austronesian."

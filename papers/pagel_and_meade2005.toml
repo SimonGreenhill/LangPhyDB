@@ -30,6 +30,7 @@ bibkey = "@Pagel2005"  # @xxxx
 
 # type of study
 type = ['tutorial', 'trait']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+framework = ['bayesian']
 
 # short description of the study, one line.
 description = "An example paper explaining phylogenetic comparative methods."

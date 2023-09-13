@@ -19,7 +19,8 @@ groups = ["Mayan"]  # 'Austronesian', etc
 bibkey = "@atkinson2006"
 
 # type of study
-type = ["phylogenetic", "dating", "network", "trait"]
+type = ["phylogenetic", "dating", "trait"]
+framework = ['network', 'bayesian']
 
 # short label of taxa "37 languages from.."
 description = "30 Mayan languages"

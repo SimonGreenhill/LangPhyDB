@@ -32,8 +32,8 @@ groups = ['Indo-European']
 bibkey = "@Longobardi2013"
 
 # type of study
-type = ['phylogenetic', 'distance',]  # phylogenetic,dating,phylogeography,macroevolutionary,trait
-
+type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+framework = ['parsimony', 'distance']
 # short label of taxa "37 languages from.."
 description = "26 Indo-European languages"
 
@@ -147,7 +147,7 @@ description = "26 Indo-European languages"
 
     [analysis.parsimony]
     tool = 'paup*'
-    model = 'mp'
+    model = 'maximumparsimony'
     details = ""
     data = "data.syntax37"
 

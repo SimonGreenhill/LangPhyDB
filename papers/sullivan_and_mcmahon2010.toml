@@ -21,7 +21,8 @@ groups = []  # 'Austronesian', etc
 bibkey = "@Sullivan2010"  # @xxxx
 
 # type of study
-type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
+framework = ['network']
 
 # short description of the study, one line.
 description = "Comparison of phonetic distances using Neighbor-Net"

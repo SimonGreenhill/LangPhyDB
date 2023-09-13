@@ -30,7 +30,8 @@ groups = ['Creoles']  # 'Austronesian', etc
 bibkey = "@Levisen_2017c"
 
 # type of study
-type = ['network']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+framework = ['network']
 
 # short description of the study, one line.
 description = "Networks of Australian and Pacific Creoles based on Natural Semantic Metalanguage"

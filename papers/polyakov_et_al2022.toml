@@ -33,6 +33,7 @@ bibkey = "@Polyakov_2022"
 
 # type of study
 type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+framework = ['distance']
 
 # short description of the study, one line.
 description = "Comparison of trees built from structural and lexical data"
@@ -68,13 +69,13 @@ description = "Comparison of trees built from structural and lexical data"
     
     [analysis.tree_wals]
     tool = 'MEGA'
-    model = 'nj'
+    model = 'neighborjoining'
     details = ""
     data = "@data.wals"
 
     [analysis.tree_asjp]
     tool = 'MEGA'
-    model = 'nj'
+    model = 'neighborjoining'
     details = ""
     data = "@data.asjp"
 

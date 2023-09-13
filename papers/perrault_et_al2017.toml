@@ -1,4 +1,4 @@
-title = "Tongues on the {EDGE}: language preservation priorities based on threat and lexical distinctiveness"
+title = "Tongues on the EDGE: language preservation priorities based on threat and lexical distinctiveness"
 
 doi = "10.1098/rsos.171218"
 
@@ -28,6 +28,7 @@ bibkey = "@Perrault_2017"
 
 # type of study
 type = ['macroevolutionary']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+framework = []
 
 # short description of the study, one line.
 description = "Models evolutionary distinctiveness in Austronesian languages vs. endangerment risk"

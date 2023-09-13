@@ -37,6 +37,7 @@ bibkey = "@Walker2012"  # @xxxx
 
 # type of study
 type = ['phylogenetic', 'phylogeography', 'trait']
+framework = ['distance', 'network', 'likelihood']
 
 # short description of the study, one line.
 description = "Phylogenetic modelling of the Tupi language expansion"
@@ -84,7 +85,7 @@ description = "Phylogenetic modelling of the Tupi language expansion"
     
     [analysis.tree]
     tool = 'MEGA'
-    model = 'nj'
+    model = 'neigborjoining'
     details = ""
 
     [analysis.splitdist]

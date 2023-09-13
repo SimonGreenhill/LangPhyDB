@@ -20,7 +20,8 @@ groups = ["Sinitic"]  # 'Austronesian', etc
 bibkey = "@Hamed:2006er"
 
 # type of study
-type = ["phylogenetic", "network", "distance"]
+type = ["phylogenetic"]
+framework = ['network', 'distance', 'parsimony']
 
 # short label of taxa "37 languages from.."
 description = "23 Sinitic languages"

@@ -22,6 +22,7 @@ bibkey = "@Whiteley2019"
 
 # type of study
 type = ["phylogenetic"]
+framework = ['parsimony']
 
 # short label of taxa "37 languages from.."
 description = "105 Bantu languages"

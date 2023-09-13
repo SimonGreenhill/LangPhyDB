@@ -20,7 +20,8 @@ groups = ["Arawakan"]  # 'Austronesian', etc
 bibkey = "@Walker2011"
 
 # type of study
-type = ["phylogenetic", "network", "phylogeography"]  # phylogenetic,phylogeography,macroevolutionary,trait
+type = ["phylogenetic", "phylogeography"]  # phylogenetic,phylogeography,macroevolutionary,trait
+framework = ['bayesian',  "network"]
 
 # short label of taxa "37 languages from.."
 description = "60 Arawakan languages"

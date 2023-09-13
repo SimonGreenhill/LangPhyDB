@@ -17,6 +17,7 @@ bibkey = "@Rama_2016"
 
 # type of study
 type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+framework = ['bayesian']
 
 # short description of the study, one line.
 description = "Compares the effect of node-dating vs. total-evidence dating on Indo-European age estimates."

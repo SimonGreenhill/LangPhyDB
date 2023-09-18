@@ -18,7 +18,7 @@ order patterns (noun-postposition, noun-genitive, and verb-object order).
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
-authors = ['Andrea Calude', 'Annemarie Verkerk']
+authors = ['Andreea S. Calude', 'Annemarie Verkerk']
 
 
 # parts of the world

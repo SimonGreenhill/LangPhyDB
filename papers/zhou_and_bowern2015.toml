@@ -7,13 +7,13 @@ Researchers have long been interested in the evolution of culture and the ways i
 can be reconstructed and tracked. Within the realm of language, these questions are increasingly investigated with
 Bayesian phylogenetic methods. However, such work in cultural phylogenetics could be improved by more explicit
 quantification of reconstruction and transition probabilities. We apply such methods to numerals in the languages
-of Australia. As a large phylogeny with almost universal ‘lowlimit’ systems, Australian languages are ideal for
+of Australia. As a large phylogeny with almost universal 'lowlimit' systems, Australian languages are ideal for
 investigating numeral change over time. We reconstruct the most likely extent of the system at the root and use
 that information to explore the ways numerals evolve. We show that these systems do not increment serially, but
 most commonly vary their upper limits between 3 and 5. While there is evidence for rapid system elaboration beyond
 the lower limits, languages lose numerals as well as gain them. We investigate the ways larger numerals build on
 smaller bases, and show that there is a general tendency to both gain and replace 4 by combining 2 þ 2 (rather
-than inventing a new unanalysable word ‘four’). We develop a series of methods for quantifying and visualizing the
+than inventing a new unanalysable word 'four'). We develop a series of methods for quantifying and visualizing the
 results.
 """
 

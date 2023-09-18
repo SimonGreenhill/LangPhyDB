@@ -9,8 +9,8 @@ ancestral languages, and the edges represent the genetic relations between the
 languages. Languages not only inherit characteristics from their ancestors but also
 sometimes borrow them from other languages. Such borrowings can be represented by
 additional non-tree edges. This paper addresses the problem of computing a small
-number of additional edges that turn a phylogeny into a “perfect phylogenetic
-network”. To solve this problem, we use answer set programming, which represents a
+number of additional edges that turn a phylogeny into a "perfect phylogenetic
+network". To solve this problem, we use answer set programming, which represents a
 given computational problem as a logic program whose answer sets correspond to
 solutions. Using the answer set solver smodels, with some heuristics and optimization
 techniques, we have generated a few conjectures regarding the evolution of

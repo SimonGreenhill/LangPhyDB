@@ -6,7 +6,7 @@ abstract = """
 The nature of social life in human prehistory is elusive, yet knowing how kinship systems evolve is critical
 for understanding population history and cultural diversity. Post-marital residence rules specify
 sex-specific dispersal and kin association, influencing the pattern of genetic markers across populations.
-Cultural phylogenetics allows us to practise ‘virtual archaeology’ on these aspects of social life that
+Cultural phylogenetics allows us to practise 'virtual archaeology' on these aspects of social life that
 leave no trace in the archaeological record. Here we show that early Austronesian societies practised
 matrilocal post-marital residence. Using a Markov-chain Monte Carlo comparative method implemented in a
 Bayesian phylogenetic framework, we estimated the type of residence at each ancestral node in a sample of

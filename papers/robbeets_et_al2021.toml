@@ -4,7 +4,7 @@ title = "Triangulation supports agricultural spread of the Transeurasian languag
 doi = "10.1038/s41586-021-04108-8"
 
 abstract = """
-The origin and early dispersal of speakers of Transeurasian languages—that is, Japanese, Korean, Tungusic, Mongolic and Turkic—is among the most disputed issues of Eurasian population history. A key problem is the relationship between linguistic dispersals, agricultural expansions and population movements. Here we address this question by ‘triangulating’ genetics, archaeology and linguistics in a unified perspective. We report wide-ranging datasets from these disciplines, including a comprehensive Transeurasian agropastoral and basic vocabulary; an archaeological database of 255 Neolithic–Bronze Age sites from Northeast Asia; and a collection of ancient genomes from Korea, the Ryukyu islands and early cereal farmers in Japan, complementing previously published genomes from East Asia. Challenging the traditional ‘pastoralist hypothesis’, we show that the common ancestry and primary dispersals of Transeurasian languages can be traced back to the first farmers moving across Northeast Asia from the Early Neolithic onwards, but that this shared heritage has been masked by extensive cultural interaction since the Bronze Age. As well as marking considerable progress in the three individual disciplines, by combining their converging evidence we show that the early spread of Transeurasian speakers was driven by agriculture.
+The origin and early dispersal of speakers of Transeurasian languages—that is, Japanese, Korean, Tungusic, Mongolic and Turkic—is among the most disputed issues of Eurasian population history. A key problem is the relationship between linguistic dispersals, agricultural expansions and population movements. Here we address this question by 'triangulating' genetics, archaeology and linguistics in a unified perspective. We report wide-ranging datasets from these disciplines, including a comprehensive Transeurasian agropastoral and basic vocabulary; an archaeological database of 255 Neolithic–Bronze Age sites from Northeast Asia; and a collection of ancient genomes from Korea, the Ryukyu islands and early cereal farmers in Japan, complementing previously published genomes from East Asia. Challenging the traditional 'pastoralist hypothesis', we show that the common ancestry and primary dispersals of Transeurasian languages can be traced back to the first farmers moving across Northeast Asia from the Early Neolithic onwards, but that this shared heritage has been masked by extensive cultural interaction since the Bronze Age. As well as marking considerable progress in the three individual disciplines, by combining their converging evidence we show that the early spread of Transeurasian speakers was driven by agriculture.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
@@ -53,7 +53,12 @@ authors = [
 ]
 
 # parts of the world
-groups = ["Transeurasian"]  # 'Austronesian', etc
+groups = [
+
+    'Transeurasian', 'Turkic', 'Mongolic', 'Tungusic', 'Koreanic', 'Japonic',
+
+
+]  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Robbeets2021"

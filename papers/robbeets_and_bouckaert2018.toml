@@ -14,7 +14,7 @@ authors = [
 ]
 
 # parts of the world
-groups = ["Transeurasian"]  # 'Austronesian', etc
+groups = ["Transeurasian", 'Turkic', 'Mongolic', 'Tungusic', 'Koreanic', 'Japonic' ]  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Robbeets_2018"

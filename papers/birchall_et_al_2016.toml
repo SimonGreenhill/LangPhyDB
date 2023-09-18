@@ -43,21 +43,21 @@ description = "10 Chapacuran languages"
     # corrected for 2010 starting 180 - (2010 - 1950)
     age = "120"
     units = "ybp" # ybp
-    description = "Although the primary source of data on Tapakura and Kitemoka was only published in the early twentieth century in Créqui-Montfort and Rivet (1913), the data were originally collected during d’Orbigny’s trip through lowland Bolivia, which took place between 1826 and 1833."
+    description = "Although the primary source of data on Tapakura and Kitemoka was only published in the early twentieth century in Créqui-Montfort and Rivet (1913), the data were originally collected during d'Orbigny's trip through lowland Bolivia, which took place between 1826 and 1833."
 
     [calibration.kitemoka]
     taxa = ["kite1237"]
     # corrected for 2010 starting 180 - (2010 - 1950)
     age = "120"
     units = "ybp" # ybp
-    description = "Although the primary source of data on Tapakura and Kitemoka was only published in the early twentieth century in Créqui-Montfort and Rivet (1913), the data were originally collected during d’Orbigny’s trip through lowland Bolivia, which took place between 1826 and 1833"
+    description = "Although the primary source of data on Tapakura and Kitemoka was only published in the early twentieth century in Créqui-Montfort and Rivet (1913), the data were originally collected during d'Orbigny's trip through lowland Bolivia, which took place between 1826 and 1833"
 
     [calibration.tapekura_and_kitemoka]
     taxa = ["kite1238"]
     # corrected for 2010 starting 236 - (2010 - 1950)
     age = "lognormal(250, 0.6, 176, realspace=True)"
     units = "ybp" # ybp
-    description = "The Tapakura people were first contacted in the 1580s during an expedition led by Lorenzo Suarez de Figueroa (Meireles 1989:66). By 1630, the Tapakuras were already in close contact with Jesuit missionaries and portions of the population were considered yanacona, a regional term meaning serf or servant of the Spaniards (Maurtua 1909 [cited in Métraux 1948]). However, the first clear mention of the Kitemoka people is not until the settlement of the mission Concepción de Chiquitos in 1707 (d’Orbigny 1839a:596). Calibration: This calibration was implemented as a log-normal distribution with a mean of 250 years (in real space), a standard deviation of 0.6, and an offset of 236 years."
+    description = "The Tapakura people were first contacted in the 1580s during an expedition led by Lorenzo Suarez de Figueroa (Meireles 1989:66). By 1630, the Tapakuras were already in close contact with Jesuit missionaries and portions of the population were considered yanacona, a regional term meaning serf or servant of the Spaniards (Maurtua 1909 [cited in Métraux 1948]). However, the first clear mention of the Kitemoka people is not until the settlement of the mission Concepción de Chiquitos in 1707 (d'Orbigny 1839a:596). Calibration: This calibration was implemented as a log-normal distribution with a mean of 250 years (in real space), a standard deviation of 0.6, and an offset of 236 years."
 
     [calibration.tora]
     taxa = ["tora1263"]

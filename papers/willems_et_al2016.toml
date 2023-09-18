@@ -17,7 +17,7 @@ Results
 Striking parallels existing between the evolution of species and natural languages allowed us to apply three
 computational biology methods for reconstruction of phylogenetic networks to model the evolution of IE
 languages. We show how the transfer of methods between the two disciplines can be achieved, making necessary
-methodological adaptations. Considering basic vocabulary data from the well-known Dyen’s lexical database,
+methodological adaptations. Considering basic vocabulary data from the well-known Dyen's lexical database,
 which contains word forms in 84 IE languages for the meanings of a 200-meaning Swadesh list, we adapt a
 recently developed computational biology algorithm for building explicit hybridization networks to study the
 evolution of IE languages and compare our findings to the results provided by the split graph and galled

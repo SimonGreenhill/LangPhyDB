@@ -41,7 +41,7 @@ description = "40 varieties from Tupí-Guaraní"
 # data
 [data]
 
-    notes = "The first round was composed of two studies that differ in the subset of concepts used: a “full” study, with all concepts described above filtered to ensure they were missing at most in 20% of the languages, and a “swadesh” study using the list of [87] (see Appendix C in S1 File) as close as possible, filtered to ensure they were missing in at most 30% of the cases"
+    notes = 'The first round was composed of two studies that differ in the subset of concepts used: a "full" study, with all concepts described above filtered to ensure they were missing at most in 20% of the languages, and a "swadesh" study using the list of [87] (see Appendix C in S1 File) as close as possible, filtered to ensure they were missing in at most 30% of the cases'
     
     [data.full]
     ntaxa = 95
@@ -174,7 +174,7 @@ description = "40 varieties from Tupí-Guaraní"
     [analysis.tiger]
     tool = 'pylotiger'
     model = ''
-    details = """We assessed the degree of tree-likeliness by computing the concepts’ TIGER scores [91, 92] with
+    details = """We assessed the degree of tree-likeliness by computing the concepts' TIGER scores [91, 92] with
     the implementation by [93], obtaining a mean score of 0.14 (±0.14) (individual scores are reported in
     Appendix K of S1 File)."""
 

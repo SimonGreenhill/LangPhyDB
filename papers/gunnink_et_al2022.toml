@@ -69,7 +69,7 @@ description = "79 Bantu languages with a focus on Southern Bantu"
     [analysis.tree]
     tool = 'mrbayes'
     model = 'restrictionsite+noabsencesites'
-    details = "The evolution of the characters was modeled with a simple binary (restriction site) model (with “noabsencesites” ascertainment correction, since all absent characters are not observable"
+    details = "The evolution of the characters was modeled with a simple binary (restriction site) model (with \"noabsencesites\" ascertainment correction, since all absent characters are not observable"
 
     [analysis.asr]
     tool = 'mesquite'

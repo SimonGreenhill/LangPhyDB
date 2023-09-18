@@ -24,7 +24,10 @@ efficiency of the suggested coding is discussed.
 authors = ["Mahé Ben Hamed", "Pierre Darlu", "Nathalie Vallée"]
 
 # parts of the world
-groups = ['Indo-European', 'Uralic', 'Altaic', 'Niger-Kordofanian', 'Afro-Asiatic']
+groups = [
+    'Indo-European', 'Uralic', 'Niger-Kordofanian', 'Afro-Asiatic',
+    'Altaic', 'Turkic', 'Mongolic', 'Tungusic', 'Koreanic', 'Japonic'
+]
 
 # bibkey citation in sources.bib
 bibkey = "@BenHamed2005"  # @xxxx

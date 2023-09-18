@@ -71,13 +71,13 @@ description = "Network evaluation of the Afro-Hispanic Creoles"
     [analysis.nnet3]
     tool = 'splitstree'
     model = 'neighbornet'
-    details = "Sessarego’s data on Afro-Hispanic varieties compared with standard varieties of Spanish, other Spanish dialects, and creoles in a 72-feature Neighbor-Net."
+    details = "Sessarego's data on Afro-Hispanic varieties compared with standard varieties of Spanish, other Spanish dialects, and creoles in a 72-feature Neighbor-Net."
     data = ""
 
     [analysis.nnet4]
     tool = 'splitstree'
     model = 'neighbornet'
-    details = "Perez’s data on Afro-Yungueño compared with Sessarego’s Afro-Hispanic varieties, standard varieties of Spanish, other Spanish dialects, and creoles in a 72-feature Neighbor-Net."
+    details = "Perez's data on Afro-Yungueño compared with Sessarego's Afro-Hispanic varieties, standard varieties of Spanish, other Spanish dialects, and creoles in a 72-feature Neighbor-Net."
     data = ""
 
     [analysis.nnet5]

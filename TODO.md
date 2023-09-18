@@ -26,7 +26,6 @@
 * Nelson-Sathi et al. 2011. Networks uncover hidden lexical borrowing in Indo-European language evolution. Proceedings of the Royal Society B: Biological Sciences 278.1794–803. doi:10.1098/rspb.2010.1917.
 * Pagel 2000. Maximum-likelihood models for glottochronology and for reconstructing linguistic phylogenies. In Time depth in historical linguistics.
 * Pagel 2000. The History, Rate and Pattern of World Linguistic Evolution. In C Knight, M Studdert-Kennedy, & J Hurford (Eds.), The evolutionary emergence of language (pp. 391–416). Cambridge University Press.
-* Pagel et al. 2013. Ultraconserved words point to deep language ancestry across Eurasia. Proceedings of the National Academy of Sciences 110.8471–8476. doi:10.1073/pnas.1218726110.
 * Passmore et al. 2023. Kinbank: A global database of kinship terminology. PLoS One, 18(5), e0283218.
 * Pompei et al. 2011. On the Accuracy of Language Trees. PLoS ONE, 6.
 * Rama. 2018. Three tree priors and five datasets: A study of Indo-European phylogenetics
@@ -47,7 +46,7 @@
 ## Structure/Admixture studies:
 
 * Hübler, N., & Greenhill, S. J. (2022). Modelling admixture across language levels to evaluate deep history claims. Journal of Language Evolution, 7(2), 166–183. https://doi.org/10.1093/jole/lzad002
-* Norvik, Miina, et al. (2022) Uralic Typology in the Light of a New Comprehensive Dataset’, Journal of Uralic Linguistics, 1: 4–42.
+* Norvik, Miina, et al. (2022) Uralic Typology in the Light of a New Comprehensive Dataset', Journal of Uralic Linguistics, 1: 4–42.
 * Reesink, Ger, Ruth Singer, and Michael Dunn (2009) "Explaining the Linguistic Diversity of Sahul Using Population Models", PLoS Biology, 7: e1000241.
 * Syrjänen, Kaj, et al. (2016) "Applying Population Genetic Approaches within Languages: Finnish Dialects as Linguistic Populations", Language Dynamics and Change, 6: 235–283.
 

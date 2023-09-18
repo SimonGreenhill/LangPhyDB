@@ -61,7 +61,7 @@ description = "Phylogenetic analysis of Indo-European languages"
     datatype = 'lexical cognates'
     source = ''
     items = 'swadesh200'
-    comment = 'Of the 207 meaning classes in IELEX, three (‘blow’, ‘father’, ‘mother’) were excluded as being especially susceptible to sound symbolism, and seven others were excluded because they were unattested in more than 30% of the languages, probably due to the fact that they are not in the Dyen data set, which was constructed around the 200 items proposed by Swadesh (1952).'
+    comment = "Of the 207 meaning classes in IELEX, three ('blow', 'father', 'mother') were excluded as being especially susceptible to sound symbolism, and seven others were excluded because they were unattested in more than 30% of the languages, probably due to the fact that they are not in the Dyen data set, which was constructed around the 200 items proposed by Swadesh (1952)."
     
     [data.medium]
     ntaxa = 82
@@ -140,7 +140,7 @@ description = "Phylogenetic analysis of Indo-European languages"
     taxa = ['oldw1240']
     age = "normal(800, 50)"
     units = "ybp" # ybp
-    description = "Old West Norse (non, ‘Old Norse’)"
+    description = "Old West Norse (non, 'Old Norse')"
 
     [calibration.ClassicalArmenian]
     taxa = ['clas1249']

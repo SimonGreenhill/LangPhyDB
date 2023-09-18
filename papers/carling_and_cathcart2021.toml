@@ -5,8 +5,8 @@ doi = "10.1075/dia.19043.car"
 abstract = """
 This paper employs phylogenetic modeling to reconstruct the alignment
 system of Indo-European. We use a data set of categorical morphosyntactic
-features, which take states such as ‘nominative-accusative’, ‘active-stative’, or
-‘ergative’. We analyze these characters with a standard Bayesian comparative
+features, which take states such as 'nominative-accusative', 'active-stative', or
+'ergative'. We analyze these characters with a standard Bayesian comparative
 phylogenetic method, inferring transition rates between character states on
 the basis of a phylogenetic representation of the languages in the data. Using
 these rates, we then reconstruct the probability of presence of traits at the

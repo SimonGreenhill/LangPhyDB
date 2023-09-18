@@ -11,8 +11,8 @@ should be built on the basis of high-quality input data elaborated with the help
 methods (such as Neighbor-joining, Bayesian MCMC, and Maximum parsimony), and ancestral character states,
 allowing us to reveal a certain number of homoplastic characters. Secondly, after the detected instances
 of homo- plasy are eliminated from the input matrix, the consensus tree is to be compiled again. It is
-expected that after homoplastic optimization it will be possible to better resolve individual “problem
-clades”, and generally the homoplasy-optimized phylogeny should be more robust than the tree constructed
+expected that after homoplastic optimization it will be possible to better resolve individual "problem
+clades", and generally the homoplasy-optimized phylogeny should be more robust than the tree constructed
 initially. The proposed procedure is tested on the 110-item Swadesh wordlists of the Lezgian and Tsezic
 groups. The Lezgian and Tsezic results generally support theoretical expectations. The MLN (minimal
 lateral network) method, currently implemented in the LingPy software, is a helpful tool for the

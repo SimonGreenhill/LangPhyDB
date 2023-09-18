@@ -4,7 +4,7 @@ doi = "10.1093/jole/lzab007"
 
 abstract = """
 In a recent issue of the Journal of Language Evolution, Syrja¨ nen et al. (2021) investigate the suitability of
-computing Cummins and McInerney’s (2011) TIGER rates for estimating the tree-likeness of linguistic datasets
+computing Cummins and McInerney's (2011) TIGER rates for estimating the tree-likeness of linguistic datasets
 compiled for phylogenetic reconstruction. The authors test the TIGER rates on a diverse sample of simulated data,
 which by and large conﬁrms the usefulness of TIGER rates as an analytic tool for investigating linguistic data,
 but they test them only on one real-world dataset of Uralic languages which turns out to behave quite differently

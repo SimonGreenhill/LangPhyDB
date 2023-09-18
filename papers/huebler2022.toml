@@ -5,7 +5,7 @@ doi = "10.1098/rsos.211252"
 abstract = """
 Within linguistics, there is an ongoing debate about whether some language structures remain stable over time,
 which structures these are and whether they can be used to uncover the relationships between languages. However,
-there is no consensus on the definition of the term ‘stability’. I define ‘stability’ as a high phylogenetic
+there is no consensus on the definition of the term 'stability'. I define 'stability' as a high phylogenetic
 signal and a low rate of change. I use metric D to measure the phylogenetic signal and Hidden Markov Model to
 calculate the evolutionary rate for 171 structural features coded for 12 Japonic, 2 Koreanic, 14 Mongolic, 11
 Tungusic and 21 Turkic languages. To more deeply investigate the differences in evolutionary dynamics of

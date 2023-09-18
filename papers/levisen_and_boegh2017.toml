@@ -10,8 +10,8 @@ standing creole semantics, it utilizes insights from both cognitive semantics
 approaches to linguistics comparisons. We provide an extensive study of label-meaning
 correlations as a way of exploring the relationship between word
 labels and word meanings across creoles and lexifiers. We conclude that creoles
-are not simply “versions” of their lexifier languages, and that it is misleading
-to say that creoles are “based” on European languages in their basic lexical-semantic
+are not simply "versions" of their lexifier languages, and that it is misleading
+to say that creoles are "based" on European languages in their basic lexical-semantic
 configuration. At the same time, we find that creoles do relate more
 closely to their historical lexifiers than to other creoles, and that the lexical-semantic
 perspective adds a new dimension to the typology of creoles, nuancing
@@ -69,7 +69,7 @@ description = "Creole networks from Natural Semantic Metalanguage primes."
     [analysis.nnet3]
     tool = 'splitstree'
     model = 'neighbornet'
-    details = "Network of English-related creoles based on mess analysis of semantic primes (highlighting an English-creole “core” cluster)."
+    details = "Network of English-related creoles based on mess analysis of semantic primes (highlighting an English-creole \"core\" cluster)."
     data = ""
 
     [analysis.nnet4]

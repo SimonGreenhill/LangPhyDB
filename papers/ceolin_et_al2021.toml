@@ -20,7 +20,12 @@ method. """
 authors = ["Andrea Ceolin", "Cristina Guardiano", "Giuseppe Longobardi", "Monica Alexandrina Irimia", "Luca Bortolussi", "Andrea Sgarro"]
 
 # parts of the world
-groups = ['Indo-European', 'global']  # 'Austronesian', etc
+groups = [
+    'Indo-European', 'Uralic', 'Basque', 
+    'Altaic', 'Turkic', 'Mongolic', 'Tungusic', 'Koreanic', 'Japonic',
+    
+
+]  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Ceolin_2021"

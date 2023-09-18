@@ -10,7 +10,7 @@ classification of Indo-Aryan, the most ubiquitous language family of South Asia.
 intent here is methodological: we explore computational methods for visualizing
 large datasets of linguistic features, in our case 63 features from 200 languages
 representing four language families of South Asia, coming out of a digitized version
-of Grierson’s Linguistic Survey of India. To this dataset we apply phylogenetic soft-
+of Grierson's Linguistic Survey of India. To this dataset we apply phylogenetic soft-
 ware originally developed in the context of computational biology for clustering the
 languages and displaying the clusters in the form of networks. We further explore
 multiple correspondence analysis as a way of illustrating how linguistic feature

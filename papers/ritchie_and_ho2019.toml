@@ -3,55 +3,84 @@ title = "Influence of the tree prior and sampling scale on Bayesian phylogenetic
 doi = "10.1093/jole/lzz005"
 
 abstract = """
-
-"""
+Bayesian phylogenetic methods derived from evolutionary biology can be used to reconstruct the
+history of human languages using databases of cognate words. These analyses have produced exciting
+results regarding the origins and dispersal of linguistic and cultural groups through prehistory.
+Bayesian lexical dating requires the specification of priors on all model parameters. This includes
+the use of a prior on divergence times, often combined with a prior on tree topology and referred to
+as a tree prior. Violation of the underlying assumptions of the tree prior can lead to an erroneous
+estimate of the timescale of language evolution. To investigate these impacts, we tested the
+sensitivity of Bayesian dating to the tree prior in analyses of four lexical data sets. Our results
+show that estimates of the origin times of language families are robust to the choice of tree prior
+for lexical data, though less so than when Bayesian phylogenetic methods are used to analyse genetic
+data sets. We also used the relative fit of speciation and coalescent tree priors to determine the
+ability of speciation models to describe language diversification at four different taxonomic levels.
+We found that speciation priors were preferred over a constant-size coalescent prior regardless of
+taxonomic scale. However, data sets with narrower taxonomic and geographic sampling exhibited a
+poorer fit to ideal birthdeath model expectations. Our results encourage further investigation into
+the nature of language diversification at different sampling scales. """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
-authors = ["Andrew M Ritchie", "Simon Y W Ho"]
+authors = ["Andrew M. Ritchie", "Simon Y. W. Ho"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Ritchie_2019"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['methodological', 'phylogenetic', 'dating']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
-description = ""
+description = "A test of the sensitivity of Bayesian dating to the tree prior in analyses of four lexical data sets"
 
 # data
 [data]
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
+    [data.ainu]
+    ntaxa = 19
+    nchars = 200
+    nsites = 350
     datatype = 'lexical cognates'
-    source = '@xxx'
+    source = '@Lee_2013'
     items = ''
-    comment = ''
+    comment = '19 samples, 350 characters; Lee and Hasegawa 2013)'
 
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
+    [data.japonic]
+    ntaxa = 59
+    nchars = 210
+    nsites = 675
+    datatype = 'lexical cognates'
+    source = '@Lee2011'
+    items = ''
+    comment = '59 samples, 675 characters; Lee and Hasegawa 2011).'
+
+    [data.semitic]
+    ntaxa = 25
+    nchars = 100
+    nsites = 674
+    datatype = 'lexical cognates'
+    source = '@Kitchen2009'
+    items = ''
+    comment = 'Semitic language family (25 samples, 674 characters; Kitchen et al. 2009).'
+
+    [data.indoeuropean]
+    ntaxa = 103
+    nchars = 200
+    nsites = 5997
+    datatype = 'lexical cognates'
+    source = '@Bouckaert2012'
+    items = ''
+    comment = 'Indo-European language family (103 languages, 5,997 characters; Bouckaert et al. 2012).'
 
 
 # date calibrations
 [calibrations]
 
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
+    notes = "used the calibrations from the original studies for each dataset"
 
 
 # analysis information
@@ -59,22 +88,460 @@ description = ""
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
-    details = ""
-    data = ""
+
+    [analysis.ainu_1]
+        tool = 'beast2'
+        model = 'ctmc+gamma+relaxed+birthdeath-constant'
+        details = ""
+        data = "@data.ainu"
+    
+
+    [analysis.ainu_2]
+        tool = 'beast2'
+        model = 'ctmc+gamma+relaxed+birthdeath-skyline'
+        details = ""
+        data = "@data.ainu"
+    
+
+    [analysis.ainu_3]
+        tool = 'beast2'
+        model = 'ctmc+gamma+relaxed+coalescent-constant'
+        details = ""
+        data = "@data.ainu"
+    
+
+    [analysis.ainu_4]
+        tool = 'beast2'
+        model = 'ctmc+gamma+relaxed+coalescent-skyline'
+        details = ""
+        data = "@data.ainu"
+    
+
+    [analysis.ainu_5]
+        tool = 'beast2'
+        model = 'ctmc+relaxedgamma+relaxed+birthdeath-constant'
+        details = ""
+        data = "@data.ainu"
+    
+
+    [analysis.ainu_6]
+        tool = 'beast2'
+        model = 'ctmc+relaxedgamma+relaxed+birthdeath-skyline'
+        details = ""
+        data = "@data.ainu"
+    
+
+    [analysis.ainu_7]
+        tool = 'beast2'
+        model = 'ctmc+relaxedgamma+relaxed+coalescent-constant'
+        details = ""
+        data = "@data.ainu"
+    
+
+    [analysis.ainu_8]
+        tool = 'beast2'
+        model = 'ctmc+relaxedgamma+relaxed+coalescent-skyline'
+        details = ""
+        data = "@data.ainu"
+    
+
+    [analysis.ainu_9]
+        tool = 'beast2'
+        model = 'bcov+relaxed+birthdeath-constant'
+        details = ""
+        data = "@data.ainu"
+    
+
+    [analysis.ainu_10]
+        tool = 'beast2'
+        model = 'bcov+relaxed+birthdeath-skyline'
+        details = ""
+        data = "@data.ainu"
+    
+
+    [analysis.ainu_11]
+        tool = 'beast2'
+        model = 'bcov+relaxed+coalescent-constant'
+        details = ""
+        data = "@data.ainu"
+    
+
+    [analysis.ainu_12]
+        tool = 'beast2'
+        model = 'bcov+relaxed+coalescent-skyline'
+        details = ""
+        data = "@data.ainu"
+    
+
+    [analysis.ainu_13]
+        tool = 'beast2'
+        model = 'sdollo+gamma+relaxed+birthdeath-constant'
+        details = ""
+        data = "@data.ainu"
+    
+
+    [analysis.ainu_14]
+        tool = 'beast2'
+        model = 'sdollo+gamma+relaxed+birthdeath-skyline'
+        details = ""
+        data = "@data.ainu"
+    
+
+    [analysis.ainu_15]
+        tool = 'beast2'
+        model = 'sdollo+gamma+relaxed+coalescent-constant'
+        details = ""
+        data = "@data.ainu"
+    
+
+    [analysis.ainu_16]
+        tool = 'beast2'
+        model = 'sdollo+gamma+relaxed+coalescent-skyline'
+        details = ""
+        data = "@data.ainu"
+    
+
+
+    [analysis.japonic_1]
+        tool = 'beast2'
+        model = 'ctmc+gamma+relaxed+birthdeath-constant'
+        details = ""
+        data = "@data.japonic"
+    
+
+    [analysis.japonic_2]
+        tool = 'beast2'
+        model = 'ctmc+gamma+relaxed+birthdeath-skyline'
+        details = ""
+        data = "@data.japonic"
+    
+
+    [analysis.japonic_3]
+        tool = 'beast2'
+        model = 'ctmc+gamma+relaxed+coalescent-constant'
+        details = ""
+        data = "@data.japonic"
+    
+
+    [analysis.japonic_4]
+        tool = 'beast2'
+        model = 'ctmc+gamma+relaxed+coalescent-skyline'
+        details = ""
+        data = "@data.japonic"
+    
+
+    [analysis.japonic_5]
+        tool = 'beast2'
+        model = 'ctmc+relaxedgamma+relaxed+birthdeath-constant'
+        details = ""
+        data = "@data.japonic"
+    
+
+    [analysis.japonic_6]
+        tool = 'beast2'
+        model = 'ctmc+relaxedgamma+relaxed+birthdeath-skyline'
+        details = ""
+        data = "@data.japonic"
+    
+
+    [analysis.japonic_7]
+        tool = 'beast2'
+        model = 'ctmc+relaxedgamma+relaxed+coalescent-constant'
+        details = ""
+        data = "@data.japonic"
+    
+
+    [analysis.japonic_8]
+        tool = 'beast2'
+        model = 'ctmc+relaxedgamma+relaxed+coalescent-skyline'
+        details = ""
+        data = "@data.japonic"
+    
+
+    [analysis.japonic_9]
+        tool = 'beast2'
+        model = 'bcov+relaxed+birthdeath-constant'
+        details = ""
+        data = "@data.japonic"
+    
+
+    [analysis.japonic_10]
+        tool = 'beast2'
+        model = 'bcov+relaxed+birthdeath-skyline'
+        details = ""
+        data = "@data.japonic"
+    
+
+    [analysis.japonic_11]
+        tool = 'beast2'
+        model = 'bcov+relaxed+coalescent-constant'
+        details = ""
+        data = "@data.japonic"
+    
+
+    [analysis.japonic_12]
+        tool = 'beast2'
+        model = 'bcov+relaxed+coalescent-skyline'
+        details = ""
+        data = "@data.japonic"
+    
+
+    [analysis.japonic_13]
+        tool = 'beast2'
+        model = 'sdollo+gamma+relaxed+birthdeath-constant'
+        details = ""
+        data = "@data.japonic"
+    
+
+    [analysis.japonic_14]
+        tool = 'beast2'
+        model = 'sdollo+gamma+relaxed+birthdeath-skyline'
+        details = ""
+        data = "@data.japonic"
+    
+
+    [analysis.japonic_15]
+        tool = 'beast2'
+        model = 'sdollo+gamma+relaxed+coalescent-constant'
+        details = ""
+        data = "@data.japonic"
+    
+
+    [analysis.japonic_16]
+        tool = 'beast2'
+        model = 'sdollo+gamma+relaxed+coalescent-skyline'
+        details = ""
+        data = "@data.japonic"
+    
+
+    [analysis.indoeuropean_1]
+        tool = 'beast2'
+        model = 'ctmc+gamma+relaxed+birthdeath-constant'
+        details = ""
+        data = "@data.indoeuropean"
+    
+
+    [analysis.indoeuropean_2]
+        tool = 'beast2'
+        model = 'ctmc+gamma+relaxed+birthdeath-skyline'
+        details = ""
+        data = "@data.indoeuropean"
+    
+
+    [analysis.indoeuropean_3]
+        tool = 'beast2'
+        model = 'ctmc+gamma+relaxed+coalescent-constant'
+        details = ""
+        data = "@data.indoeuropean"
+    
+
+    [analysis.indoeuropean_4]
+        tool = 'beast2'
+        model = 'ctmc+gamma+relaxed+coalescent-skyline'
+        details = ""
+        data = "@data.indoeuropean"
+    
+
+    [analysis.indoeuropean_5]
+        tool = 'beast2'
+        model = 'ctmc+relaxedgamma+relaxed+birthdeath-constant'
+        details = ""
+        data = "@data.indoeuropean"
+    
+
+    [analysis.indoeuropean_6]
+        tool = 'beast2'
+        model = 'ctmc+relaxedgamma+relaxed+birthdeath-skyline'
+        details = ""
+        data = "@data.indoeuropean"
+    
+
+    [analysis.indoeuropean_7]
+        tool = 'beast2'
+        model = 'ctmc+relaxedgamma+relaxed+coalescent-constant'
+        details = ""
+        data = "@data.indoeuropean"
+    
+
+    [analysis.indoeuropean_8]
+        tool = 'beast2'
+        model = 'ctmc+relaxedgamma+relaxed+coalescent-skyline'
+        details = ""
+        data = "@data.indoeuropean"
+    
+
+    [analysis.indoeuropean_9]
+        tool = 'beast2'
+        model = 'bcov+relaxed+birthdeath-constant'
+        details = ""
+        data = "@data.indoeuropean"
+    
+
+    [analysis.indoeuropean_10]
+        tool = 'beast2'
+        model = 'bcov+relaxed+birthdeath-skyline'
+        details = ""
+        data = "@data.indoeuropean"
+    
+
+    [analysis.indoeuropean_11]
+        tool = 'beast2'
+        model = 'bcov+relaxed+coalescent-constant'
+        details = ""
+        data = "@data.indoeuropean"
+    
+
+    [analysis.indoeuropean_12]
+        tool = 'beast2'
+        model = 'bcov+relaxed+coalescent-skyline'
+        details = ""
+        data = "@data.indoeuropean"
+    
+
+    [analysis.indoeuropean_13]
+        tool = 'beast2'
+        model = 'sdollo+gamma+relaxed+birthdeath-constant'
+        details = ""
+        data = "@data.indoeuropean"
+    
+
+    [analysis.indoeuropean_14]
+        tool = 'beast2'
+        model = 'sdollo+gamma+relaxed+birthdeath-skyline'
+        details = ""
+        data = "@data.indoeuropean"
+    
+
+    [analysis.indoeuropean_15]
+        tool = 'beast2'
+        model = 'sdollo+gamma+relaxed+coalescent-constant'
+        details = ""
+        data = "@data.indoeuropean"
+    
+
+    [analysis.indoeuropean_16]
+        tool = 'beast2'
+        model = 'sdollo+gamma+relaxed+coalescent-skyline'
+        details = ""
+        data = "@data.indoeuropean"
+    
+
+    [analysis.semitic_1]
+        tool = 'beast2'
+        model = 'ctmc+gamma+relaxed+birthdeath-constant'
+        details = ""
+        data = "@data.semitic"
+    
+
+    [analysis.semitic_2]
+        tool = 'beast2'
+        model = 'ctmc+gamma+relaxed+birthdeath-skyline'
+        details = ""
+        data = "@data.semitic"
+    
+
+    [analysis.semitic_3]
+        tool = 'beast2'
+        model = 'ctmc+gamma+relaxed+coalescent-constant'
+        details = ""
+        data = "@data.semitic"
+    
+
+    [analysis.semitic_4]
+        tool = 'beast2'
+        model = 'ctmc+gamma+relaxed+coalescent-skyline'
+        details = ""
+        data = "@data.semitic"
+    
+
+    [analysis.semitic_5]
+        tool = 'beast2'
+        model = 'ctmc+relaxedgamma+relaxed+birthdeath-constant'
+        details = ""
+        data = "@data.semitic"
+    
+
+    [analysis.semitic_6]
+        tool = 'beast2'
+        model = 'ctmc+relaxedgamma+relaxed+birthdeath-skyline'
+        details = ""
+        data = "@data.semitic"
+    
+
+    [analysis.semitic_7]
+        tool = 'beast2'
+        model = 'ctmc+relaxedgamma+relaxed+coalescent-constant'
+        details = ""
+        data = "@data.semitic"
+    
+
+    [analysis.semitic_8]
+        tool = 'beast2'
+        model = 'ctmc+relaxedgamma+relaxed+coalescent-skyline'
+        details = ""
+        data = "@data.semitic"
+    
+
+    [analysis.semitic_9]
+        tool = 'beast2'
+        model = 'bcov+relaxed+birthdeath-constant'
+        details = ""
+        data = "@data.semitic"
+    
+
+    [analysis.semitic_10]
+        tool = 'beast2'
+        model = 'bcov+relaxed+birthdeath-skyline'
+        details = ""
+        data = "@data.semitic"
+    
+
+    [analysis.semitic_11]
+        tool = 'beast2'
+        model = 'bcov+relaxed+coalescent-constant'
+        details = ""
+        data = "@data.semitic"
+    
+
+    [analysis.semitic_12]
+        tool = 'beast2'
+        model = 'bcov+relaxed+coalescent-skyline'
+        details = ""
+        data = "@data.semitic"
+    
+
+    [analysis.semitic_13]
+        tool = 'beast2'
+        model = 'sdollo+gamma+relaxed+birthdeath-constant'
+        details = ""
+        data = "@data.semitic"
+    
+
+    [analysis.semitic_14]
+        tool = 'beast2'
+        model = 'sdollo+gamma+relaxed+birthdeath-skyline'
+        details = ""
+        data = "@data.semitic"
+    
+
+    [analysis.semitic_15]
+        tool = 'beast2'
+        model = 'sdollo+gamma+relaxed+coalescent-constant'
+        details = ""
+        data = "@data.semitic"
+    
+
+    [analysis.semitic_16]
+        tool = 'beast2'
+        model = 'sdollo+gamma+relaxed+coalescent-skyline'
+        details = ""
+        data = "@data.semitic"
+    
 
 [inferredages]
     
-    notes = ""
+    notes = "multiple"
     
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
-
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }

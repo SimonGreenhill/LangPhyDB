@@ -3,10 +3,10 @@ title = "Phylogenetic signal in phonotactics"
 doi = "10.1075/dia.20004.mac"
 
 abstract = """
-Phylogenetic methods have broad potential in linguistics beyond tree infer- ence. Here, we show how
+Phylogenetic methods have broad potential in linguistics beyond tree inference. Here, we show how
 a phylogenetic approach opens the possibility of gaining historical insights from entirely new
 kinds of linguistic data – in this instance, statistical phonotactics. We extract phonotactic data
-from 112 Pama-Nyungan vocabularies and apply tests for phylogenetic signal, quanti- fying the
+from 112 Pama-Nyungan vocabularies and apply tests for phylogenetic signal, quantifying the
 degree to which the data reflect phylogenetic history. We test three datasets: (1) binary variables
 recording the presence or absence of biphones (two-segment sequences) in a lexicon (2) frequencies
 of transitions between segments, and (3) frequencies of transitions between natural sound classes.

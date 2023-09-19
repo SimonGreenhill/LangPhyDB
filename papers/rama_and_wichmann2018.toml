@@ -4,7 +4,7 @@ doi = ""
 
 abstract = """
 Bayesian linguistic phylogenies are standardly based on cognate matrices for words referring
-to a fix set of meanings - typically around 100-200. To this day there has not been any empirical
+to a fix set of meanings − typically around 100-200. To this day there has not been any empirical
 investigation into which datasize is optimal. Here we determine, across a set of language families, the
 optimal number of meanings required for the best performance in Bayesian phylogenetic inference. We rank
 meanings by stability, infer phylogenetic trees using first the most stable meaning, then the two most

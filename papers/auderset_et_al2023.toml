@@ -1,10 +1,17 @@
-title = "Subgrouping in a `dialect continuum': A Bayesian phylogenetic analysis of the Mixtecan language family"
+title = "Subgrouping in a 'dialect continuum': A Bayesian phylogenetic analysis of the Mixtecan language family"
 
 doi = "10.1093/jole/lzad004"
 
 abstract = """
-Subgrouping language varieties within dialect continua poses challenges for the application of the comparative method of histor- ical linguistics, and similar claims have been made for the use of Bayesian phylogenetic methods. In this article, we present the first Bayesian phylogenetic analysis of the Mixtecan language family of southern Mexico and show that the method produces valuable results and new insights with respect to subgrouping beyond what the comparative method and dialect geography have provided. Our findings reveal potential new subgroups that should be further investigated. We show that some unexpected groupings raise important questions for phylogenetics and historical linguistics about the effects of different methods of primary data gathering and organization that should be considered when interpreting subgrouping results.
-"""
+Subgrouping language varieties within dialect continua poses challenges for the application of the
+comparative method of historical linguistics, and similar claims have been made for the use of
+Bayesian phylogenetic methods. In this article, we present the first Bayesian phylogenetic analysis
+of the Mixtecan language family of southern Mexico and show that the method produces valuable results
+and new insights with respect to subgrouping beyond what the comparative method and dialect geography
+have provided. Our findings reveal potential new subgroups that should be further investigated. We
+show that some unexpected groupings raise important questions for phylogenetics and historical
+linguistics about the effects of different methods of primary data gathering and organization that
+should be considered when interpreting subgrouping results. """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Sandra Auderset", "Simon J. Greenhill", "Christian T. DiCanio", "Eric W. Campbell"]

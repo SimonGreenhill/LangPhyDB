@@ -1,0 +1,78 @@
+title = "Applying Population Genetic Approaches within Languages"
+
+doi = "10.1163/22105832-00602002"
+
+abstract = """
+The adoption of evolutionary approaches to study language change as a type of non-biological
+evolution has gained increasing interest and introduced a variety of quantitative tools to
+linguistics. The focus has thus far mainly been on language families, or 'linguistic macroevolution,'
+and taken the shape of linguistic phylogenetics. Here we explore whether evolutionary methods could
+be applicable for studying intralingual variation ('linguistic microevolution') by testing a
+population genetic clustering method for analyzing the 'population structure' of Finnish dialects.
+We compare the results with traditional dialect divisions established in the literature and with 
+k-medoids clustering, which is free from biological assumptions. The results are encouragingly
+similar to each other and agree with traditional views, suggesting that population genetic tools
+could be a useful addition to the dialectological toolkit. We also show how the results of the
+model-based clustering could serve as a basis for further study.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Kaj Syrjänen", "Terhi Honkola", "Jyri Lehtinen", "Antti Leino", "Outi Vesakoski"]
+
+# parts of the world
+groups = ['Finnish']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Syrj_nen_2016"
+
+# type of study
+type = ['structure', 'phylogenetic']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['statistical'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+
+description = "A quantitative investigation of the Finnish dialects."
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.finnishdialectatlas]
+    ntaxa = 525
+    nchars = 213
+    nsites = 213
+    datatype = 'mixed'
+    source = '@EmbletonWheeler1997;EmbletonWheeler2000'
+    items = ''
+    comment = 'mainly morphological and phonological features'
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.structure]
+    tool = 'structure'
+    model = ''
+    details = ""
+    data = ""
+
+    [analysis.kmediods]
+    tool = 'r'
+    model = 'cluster::pam'
+    details = ""
+    data = ""
+    
+    [analysis.fst]
+    tool = 'GenAlEx'
+    model = 'fST'
+    details = ""
+    data = ""
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

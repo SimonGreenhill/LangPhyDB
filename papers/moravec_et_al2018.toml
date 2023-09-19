@@ -79,7 +79,7 @@ description = "Investigates global patterns of post-marital residence."
     source = '@Murdock1967;@Gray1999'
     items = 'ethatlas'
 
-# Indo-European, Pama- Nyungan, and Uto-Aztecan. 
+# Indo-European, Pama-Nyungan, and Uto-Aztecan. 
 # Indo-European (Fortunato, 2011; Fortunato & Jordan, 2010) 
 # whose phylogenies and post-marital residence state encodings were obtained from the authors.
 
@@ -154,9 +154,9 @@ description = "Investigates global patterns of post-marital residence."
         data = "@data.pamanyungan"
 
     # To determine whether each language family has its own mode of evolution, we tested each tree to
-    # ascertain whether the transition ma- trix from any other tree was as good a fit or better to its
-    # data. To do so, we calculated the likelihoods of observed residence states for a parti- cular
-    # language family tree given the rate matrices of each other lan- guage family.
+    # ascertain whether the transition matrix from any other tree was as good a fit or better to its
+    # data. To do so, we calculated the likelihoods of observed residence states for a particular
+    # language family tree given the rate matrices of each other language family.
     [analysis.bayestraits_austronesian_with_rate_from_bantu]
         tool = 'bayestraits'
         model = 'multistate+rjmcmc'
@@ -229,7 +229,7 @@ description = "Investigates global patterns of post-marital residence."
     # To place rates in a more easily interpretable context, we simulated the number of residence
     # changes on each language tree as defined by its unique transition matrix. Following Huelsenbeck
     # and colleagues (Huelsenbeck, Nielsen, & Bollback, 2003) and using the R package phytools v 0.5-64
-    # (Revell, 2012), 5000 SIMMAP simulations of re- sidence evolution were run using the mean rate
+    # (Revell, 2012), 5000 SIMMAP simulations of residence evolution were run using the mean rate
     # transition matrices for each tree.
     [analysis.simmap_austronesian]
         tool = 'phytools'

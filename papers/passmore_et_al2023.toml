@@ -1,0 +1,102 @@
+title = "Kinbank: A global database of kinship terminology"
+
+doi = "10.1371/journal.pone.0283218"
+
+abstract = """
+For a single species, human kinship organization is both remarkably diverse and
+strikingly organized. Kinship terminology is the structured vocabulary used to classify, refer to,
+and address relatives and family. Diversity in kinship terminology has been analyzed by 
+anthropologists for over 150 years, although recurrent patterning across cultures remains 
+incompletely explained. Despite the wealth of kinship data in the anthropological record, comparative studies
+of kinship terminology are hindered by data accessibility. Here we present Kinbank, a new database of
+210,903 kinterms from a global sample of 1,229 spoken languages. Using open-access and transparent
+data provenance, Kinbank offers an extensible resource for kinship terminology, enabling researchers
+to explore the rich diversity of human family organization and to test longstanding hypotheses about
+the origins and drivers of recurrent patterns. We illustrate our contribution with two examples. We
+demonstrate strong gender bias in the phonological structure of parent terms across 1,022 languages,
+and we show that there is no evidence for a coevolutionary relationship between cross-cousin mar-
+riage and bifurcate-merging terminology in Bantu languages. Analysing kinship data is """
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    
+    "Sam Passmore", "Wolfgang Barth", "Simon J. Greenhill", "Kyla Quinn", "Catherine Sheard",
+    "Paraskevi Argyriou", "Joshua Birchall", "Claire Bowern", "Jasmine Calladine", "Angarika Deb",
+    "Anouk Diederen", "Niklas P. Metsäranta", "Luis Henrique Araujo", "Rhiannon Schembri", 
+    "Jo Hickey-Hall", "Terhi Honkola", "Alice Mitchell", "Lucy Poole", "Péter M. Rácz", 
+    "Sean G. Roberts", "Robert M. Ross", "Ewan Thomas-Colquhoun", "Nicholas Evans", "Fiona M. Jordan"
+
+]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Passmore_2023"
+
+# type of study
+type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.bantu]
+    ntaxa = 95
+    nchars = 100
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@xxx'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.label]
+    source = '@xxx'
+    comment = ''
+
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.label]
+    taxa = []
+    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "ybp" # ybp
+    description = ""
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = ''
+    model = ''
+    details = ""
+    data = ""
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.label]
+    taxa = []
+    age = "hpd(median, lower, upper)"
+    units = "ybp"
+    notes = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

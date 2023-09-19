@@ -1,0 +1,256 @@
+title = "On the shape and fabric of human history"
+
+doi = "10.1098/rstb.2010.0162"
+
+abstract = """
+In this paper we outline two debates about the nature of human cultural history. The first focuses on
+the extent to which human history is tree-like (its shape), and the second on the unity of that
+history (its fabric). Proponents of cultural phylogenetics are often accused of assuming that human
+history has been both highly tree-like and consisting of tightly linked lineages. Critics have
+pointed out obvious exceptions to these assumptions. Instead of a priori dichotomous disputes about
+the validity of cultural phylogenetics, we suggest that the debate is better conceptualized as
+involving positions along continuous dimensions. The challenge for empirical research is, therefore,
+to determine where particular aspects of culture lie on these dimensions. We discuss the ability of
+current computational methods derived from evolutionary biology to address these questions. These
+methods are then used to compare the extent to which lexical evolution is tree-like in different
+parts of the world and to evaluate the coherence of cultural and linguistic lineages.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Russell D. Gray", "David Bryant", "Simon J. Greenhill"]
+
+# parts of the world
+groups = ['Austronesian', 'Indo-European',]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Gray_2010"
+
+# type of study
+type = ['delta', 'qresidual', 'phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
+ # 'bayesian', 'parsimony', 'network', 'likelihood'
+framework = ['statistical', 'network', 'bayesian', 'likelihood']
+
+# short description of the study, one line.
+description = "A paper reviewing the tree-like-ness of culture and language."
+
+
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.ie]
+    ntaxa = 85
+    nchars = 200
+    nsites = 200
+    datatype = 'lexical cognates'
+    source = '@Dyen1992'
+    items = 'swadesh200'
+    comment = ''
+    
+    [data.an]
+    ntaxa = 400
+    nchars = 210
+    nsites = 34440
+    datatype = 'lexical cognates'
+    source = '@Greenhilletal2008'
+    items = 'swadesh200'
+    comment = ''
+    
+
+
+    [data.canoes]
+    ntaxa = 111
+    nchars = 134
+    nsites = 134
+    datatype = 'material culture'
+    source = '@Rogers2009'
+    items = ''
+    comment = ''
+    
+    [data.wals_austronesian]
+    ntaxa = 20
+    nchars = 138
+    nsites = 138
+    datatype = 'structural features'
+    source = '@WALS;Greenhill2010b'
+    items = ''
+    comment = 'from @Greenhill2010b'
+
+    [data.wals_indoeuropean]
+    ntaxa = 20
+    nchars = 138
+    nsites = 138
+    datatype = 'structural features'
+    source = '@WALS;Greenhill2010b'
+    items = ''
+    comment = 'from @Greenhill2010b'
+
+    [data.lexical_austronesian]
+    ntaxa = 20
+    nchars = 210
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@ABVD;Greenhill2010b'
+    items = ''
+    comment = 'from @Greenhill2010b'
+
+    [data.lexical_indoeuropean]
+    ntaxa = 20
+    nchars = 200
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Dyen1992;Greenhill2010b'
+    items = ''
+    comment = 'from @Greenhill2010b'
+    
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.nnet_ie]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "subset of @data.ie"
+
+    [analysis.nnet_polynesian]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "subset of @data.an"
+
+    [analysis.delta_ie]
+    tool = 'splitstree'
+    model = 'delta'
+    details = ""
+    data = "subset of @data.ie"
+
+    [analysis.delta_polynesian]
+    tool = 'splitstree'
+    model = 'delta'
+    details = ""
+    data = "subset of @data.an"
+
+    [analysis.qresidual_ie]
+    tool = 'splitstree'
+    model = 'qresidual'
+    details = ""
+    data = "subset of @data.ie"
+
+    [analysis.qresidual_polynesian]
+    tool = 'splitstree'
+    model = 'qresidual'
+    details = ""
+    data = "subset of @data.an"
+
+    
+    
+    [analysis.nnet_austronesian_lexicon]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "from @Greenhill2010b"
+    data = "@data.lexical_austronesian"
+
+    [analysis.nnet_austronesian_grammar]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "from @Greenhill2010b"
+    data = "@data.wals_austronesian"
+
+    [analysis.nnet_indoeuropean_lexicon]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "from @Greenhill2010b"
+    data = "@data.lexical_indoeuropean"
+
+    [analysis.nnet_indoeuropean_grammar]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "from @Greenhill2010b"
+    data = "@data.wals_indoeuropean"
+
+
+    [analysis.delta_austronesian_lexicon]
+    tool = 'splitstree'
+    model = 'delta'
+    details = ""
+    data = "@data.lexical_austronesian"
+
+    [analysis.delta_austronesian_grammar]
+    tool = 'splitstree'
+    model = 'delta'
+    details = ""
+    data = "@data.wals_austronesian"
+
+    [analysis.delta_indoeuropean_lexicon]
+    tool = 'splitstree'
+    model = 'delta'
+    details = ""
+    data = "@data.lexical_indoeuropean"
+
+    [analysis.delta_indoeuropean_grammar]
+    tool = 'splitstree'
+    model = 'delta'
+    details = ""
+    data = "@data.wals_indoeuropean"
+    
+
+    [analysis.qresidual_austronesian_lexicon]
+    tool = 'splitstree'
+    model = 'qresidual'
+    details = ""
+    data = "@data.lexical_austronesian"
+
+    [analysis.qresidual_austronesian_grammar]
+    tool = 'splitstree'
+    model = 'qresidual'
+    details = ""
+    data = "@data.wals_austronesian"
+
+    [analysis.qresidual_indoeuropean_lexicon]
+    tool = 'splitstree'
+    model = 'qresidual'
+    details = ""
+    data = "@data.lexical_indoeuropean"
+
+    [analysis.qresidual_indoeuropean_grammar]
+    tool = 'splitstree'
+    model = 'qresidual'
+    details = ""
+    data = "@data.wals_indoeuropean"
+    
+
+    [analysis.canoe_tree]
+    tool = 'beast'
+    model = 'ctmc+gamma'
+    details = "constrained to match @Rogers2009 canoes data"
+    data = "@data.an"
+
+    [analysis.canoe_sitelikelihoods]
+    tool = 'mesquite'
+    model = 'm1p'
+    details = ""
+    data = "@data.canoe"
+
+
+    [analysis.canoes_functional]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "functional data subset"
+    data = "@data.canoes"
+
+    [analysis.canoes_symbolic]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "symbolic data subset"
+    data = "@data.canoes"
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

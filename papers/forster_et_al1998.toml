@@ -28,7 +28,7 @@ description = "Network analysis of Alpine Romance language varieties"
 # data
 [data]
 
-    notes = "We have chosen translations of the list of 100 diag- nostic words proposed by Swadesh (1955)"
+    notes = "We have chosen translations of the list of 100 diagnostic words proposed by Swadesh (1955)"
     
     [data.romance]
     ntaxa = 95

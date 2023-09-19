@@ -4,7 +4,19 @@ doi = "10.1075/ltba.21019.wu"
 
 abstract = """
 Kho-Bwa, Hrusish, Mishmic, Tani, and Tshangla are language clusters that
-have been recurrently proposed as subgroups of the Trans-Himalayan (also known as Tibeto-Burman and Sino-Tibetan) language family. Nonetheless, their internal classification, as well as the relation with each other and with other linguistic groups in the family, is hitherto unresolved. We use lexical data on these groups and dated phylogenies to investigate such internal classifications. We base our examination on previous research into the language family in the Tibet-Arunachal area, and follow a computer-assisted approach of language comparison to perform Bayesian phylolinguistic analysis. As earlier phyloge- netic studies on this family included little data related to this geographic area, we took a subset of the best available dataset and extended it with vocabularies for the Kho-Bwa and Hrusish clusters, also including one Mishmic, two Tani, two Tshangla, and five East Bodish languages to cover the major languages and linguistic subgroups neighboring these clusters. Our results shed light on the internal and external classification of the Kho-Bwa, Hrusish and Bodish lan- guages, and allow us to share valuable experience on the extent to which similar approaches can be applied to the phylogenetic analysis of the Trans-Himalayan language family.
+have been recurrently proposed as subgroups of the Trans-Himalayan (also known as Tibeto-Burman and
+Sino-Tibetan) language family. Nonetheless, their internal classification, as well as the relation
+with each other and with other linguistic groups in the family, is hitherto unresolved. We use
+lexical data on these groups and dated phylogenies to investigate such internal classifications. We
+base our examination on previous research into the language family in the Tibet-Arunachal area, and
+follow a computer-assisted approach of language comparison to perform Bayesian phylolinguistic
+analysis. As earlier phylogenetic studies on this family included little data related to this
+geographic area, we took a subset of the best available dataset and extended it with vocabularies for
+the Kho-Bwa and Hrusish clusters, also including one Mishmic, two Tani, two Tshangla, and five East
+Bodish languages to cover the major languages and linguistic subgroups neighboring these clusters.
+Our results shed light on the internal and external classification of the Kho-Bwa, Hrusish and Bodish
+languages, and allow us to share valuable experience on the extent to which similar approaches can
+be applied to the phylogenetic analysis of the Trans-Himalayan language family.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill

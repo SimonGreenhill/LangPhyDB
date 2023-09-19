@@ -1,0 +1,71 @@
+title = "Phylogenetic linguistic evidence and the Dene-Yeniseian homeland"
+
+doi = "10.1075/dia.17038.yan"
+
+abstract = """
+Sicoli & Holton (2014) (PLoS ONE 9:3, e91722) use computational phylogenetics to argue that
+linguistic data from the putative, but likely, Dene-Yeniseian macro-family are better compatible with
+a homeland in Beringia (i.e., northeastern Siberia plus northwestern Alaska) than with one in central
+Siberia or deeper Asia. I show that a more careful examination of the data invalidates this
+conclusion: in fact, linguistic data do not support Beringia as the homeland. In the course of
+showing this, I discuss, without requiring a deep mathematical background, a number of methodological
+issues concerning computational phylogenetic analyses of linguistic data and drawing inferences from
+them. The aim is to contribute to making computational phylogenetics less of a black box for
+historical linguists. I conclude with a brief overview of the current evidence bearing on the
+Dene-Yeniseian homeland from linguistics, archaeology, folklore studies and genetics, and suggest
+current best practice for linguistic phylogenetics, the use of which would have helped to avoid some
+of the problems in Sicoli and Holton's Dene-Yeniseian study, and in turn the percolation of those
+problems into subsequent synthetic interdisciplinary research.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Igor Yanovich"]
+
+# parts of the world
+groups = ['Dene-Yeniseian']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Yanovich_2020"
+
+# type of study
+type = ['criticism', 'methodological']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = "A critical evaluation of Sicoli and Holton (2014)"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.structure]
+    ntaxa = 40
+    nchars = 90  # was 116 but 26 excluded as noninformative
+    nsites = ""
+    datatype = 'structural features'
+    source = ''
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.mrbayes1]
+    tool = 'mrbayes'
+    model = 'm2p+strict+gamma4+uniformtreeprior'
+    details = ""
+    data = ""
+
+    [analysis.mrbayes2]
+    tool = 'mrbayes'
+    model = 'm2p+strict+gamma4+birthdeath'
+    details = ""
+    data = ""
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

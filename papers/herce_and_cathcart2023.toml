@@ -1,0 +1,102 @@
+title = "Short vs Long Stem Alternations in Romance Verbal Inflection: The S-Morphome"
+
+doi = "https://doi.org/10.1111/1467-968X.12271"
+
+abstract = """
+Some verbs in Romance (e.g. the reflexes of faciō ‘do’, dīcō ‘say’, habeō ‘have’, sapiō ‘know’, possum ‘be able’, and volō ‘want’) display alternations between a short (e.g. It. f-are, f-a, d-ire) and a long (e.g. It. fac-evo, dic-e, dic-evo) stem. This paper contains an exploration of the lexical and paradigmatic distribution of these stem alternations across Romance varieties to trace when they emerged, how and why. The results suggest a comparatively early emergence as a result of the interaction between preexisting morphological predictability relations within the paradigm and an evolutionary preference for shorter forms in high-frequency word forms and lexemes.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Borja Herce", "Chundra A. Cathcart"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Herce_2023"
+
+# type of study
+type = ['trait']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = "Explores the lexical and paradigmatic distribution of stem alternations across Romance varieties"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.romance]
+    ntaxa = 77
+    nchars = 6
+    nsites = 6
+    datatype = 'morphological traits'
+    source = '@Beniamine_2022'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.round2021]
+    source = '@glottoTrees'
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.scm1]
+    tool = 'phytools'
+    model = 'stochastic character mapping'
+    details = ""
+    data = ""
+
+    [analysis.scm2]
+    tool = 'phytools'
+    model = 'stochastic character mapping'
+    details = ""
+    data = ""
+
+    [analysis.scm3]
+    tool = 'phytools'
+    model = 'stochastic character mapping'
+    details = ""
+    data = ""
+
+    [analysis.scm4]
+    tool = 'phytools'
+    model = 'stochastic character mapping'
+    details = ""
+    data = ""
+
+    [analysis.scm5]
+    tool = 'phytools'
+    model = 'stochastic character mapping'
+    details = ""
+    data = ""
+
+    [analysis.scm6]
+    tool = 'phytools'
+    model = 'stochastic character mapping'
+    details = ""
+    data = ""
+
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.label]
+    taxa = []
+    age = "hpd(median, lower, upper)"
+    units = "ybp"
+    notes = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

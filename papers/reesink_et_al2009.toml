@@ -3,55 +3,56 @@ title = "Explaining the Linguistic Diversity of Sahul Using Population Models"
 doi = "https://doi.org/10.1371/journal.pbio.1000241"
 
 abstract = """
-
+The region of the ancient Sahul continent (present day Australia and New Guinea, and surrounding
+islands) is home to extreme linguistic diversity. Even apart from the huge Austronesian language family, which
+spread into the area after the breakup of the Sahul continent in the Holocene, there are hundreds of languages
+from many apparently unrelated families. On each of the subcontinents, the generally accepted classification
+recognizes one large, widespread family and a number of unrelatable smaller families. If these language families
+are related to each other, it is at a depth which is inaccessible to standard linguistic methods. We have inferred
+the history of structural characteristics of these languages under an admixture model, using a Bayesian algorithm
+originally developed to discover populations on the basis of recombining genetic markers. This analysis identifies
+10 ancestral language populations, some of which can be identified with clearly defined phylogenetic groups. The
+results also show traces of early dispersals, including hints at ancient connections between Australian languages
+and some Papuan groups (long hypothesized, never before demonstrated). Systematic language contact effects between
+members of big phylogenetic groups are also detected, which can in some cases be identified with a diffusional or
+substrate signal. Most interestingly, however, there remains striking evidence of a phylogenetic signal, with many
+languages showing negligible amounts of admixture.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Ger Reesink", "Ruth Singer", "Michael Dunn"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = [
+    'Trans-New Guinea', 'Pama-Nyungan',  'Austronesian', 'Andamanese', 'Timor-Alor-Pantar',
+    'Other',
+#    33 non-TNG languages from various families;
+#   10 non-PN languages belonging to various other small families; in
+
+]
 
 # bibkey citation in sources.bib
 bibkey = "@Reesink_2009"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['structure']
+framework = ['network', 'statistical'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
-description = ""
+description = "Inferring the history of the Sahul languages using structural characteristics of these languages and an admixture model"
 
 # data
 [data]
 
-    notes = ""
+    notes = "we coded a total of 121 languages for 160 characters, 155 of which"
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    [data.structure]
+    ntaxa = 121
+    nchars = 155
+    nsites = 160
+    datatype = 'structural features'
+    source = ''
     items = ''
     comment = ''
-
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
-
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
 
 
 # analysis information
@@ -59,22 +60,17 @@ description = ""
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
+    [analysis.network]
+    tool = 'splitstree'
+    model = 'neighbornet'
     details = ""
     data = ""
 
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
-
+    [analysis.structure]
+    tool = 'structure'
+    model = ''
+    details = ""
+    data = ""
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }

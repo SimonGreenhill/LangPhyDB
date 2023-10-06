@@ -1,0 +1,64 @@
+title = "Best practices in justifying calibrations for dating language families"
+
+doi = "10.1093/jole/lzz009"
+
+abstract = """ The use of computational methods to assign absolute datings to language divergence is
+receiving renewed interest, as modern approaches based on Bayesian statistics offer alternatives to the
+discredited techniques of glottochronology. The datings provided by these new analyses depend crucially on
+the use of calibration, but the methodological issues surrounding calibration have received comparatively
+little attention. Especially, underappreciated is the extent to which traditional historical linguistic
+scholarship can contribute to the calibration process via loanword analysis. Aiming at a wide audience, we
+provide a detailed discussion of calibration theory and practice, evaluate previously used calibrations,
+recommend best practices for justifying calibrations, and provide a concrete example of these practices via
+a detailed derivation of calibrations for the Uralic language family. This article aims to inspire a higher
+quality of scholarship surrounding all statistical approaches to language dating, and especially closer
+engagement between practitioners of statistical methods and traditional historical linguists, with the
+former thinking more carefully about the arguments underlying their calibrations and the latter more
+clearly identifying results of their work which are relevant to calibration, or even suggesting
+calibrations directly. """
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Luke Maurits", "Mervi de Heer", "Terhi Honkola", "Michael Dunn", "Outi Vesakoski"]
+
+# parts of the world
+groups = ['Uralic']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Maurits_2019"
+
+# type of study
+type = ['methodological']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = "Discussion of best practice for calibrating language expansions"
+
+# data
+[data]
+
+    notes = "none used"
+    
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.finnic]
+    taxa = []
+    age = "norma(1.225, 0.23)" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "millennia" # ybp
+    description = ""
+
+
+    [calibration.permic]
+    taxa = []
+    age = "revlognorma(-0.18, 0.18, 1.85)"
+    units = "millennia" # ybp
+    description = ""
+
+
+    [calibration.saamic]
+    taxa = []
+    age = "normal(1.70, 0.153)"
+    units = "millennia" # ybp
+    description = ""

@@ -3,7 +3,19 @@ title = "The shape and tempo of language evolution"
 doi = "10.1098/rspb.2010.0051"
 
 abstract = """
-There are approximately 7000 languages spoken in the world today. This diversity reflects the legacy of thousands of years of cultural evolution. How far back we can trace this history depends largely on the rate at which the different components of language evolve. Rates of lexical evolution are widely thought to impose an upper limit of 6000 – 10 000 years on reliably identifying language relationships. In contrast, it has been argued that certain structural elements of language are much more stable. Just as biologists use highly conserved genes to uncover the deepest branches in the tree of life, highly stable linguistic features hold the promise of identifying deep relationships between the world's languages. Here, we present the first global network of languages based on this typological information. We evaluate the relative evolution- ary rates of both typological and lexical features in the Austronesian and Indo-European language families. The first indications are that typological features evolve at similar rates to basic vocabulary but their evolution is substantially less tree-like. Our results suggest that, while rates of vocabulary change are correlated between the two language families, the rates of evolution of typological features and structural subtypes show no consistent relationship across families.
+There are approximately 7000 languages spoken in the world today. This diversity reflects the legacy of thousands
+of years of cultural evolution. How far back we can trace this history depends largely on the rate at which the
+different components of language evolve. Rates of lexical evolution are widely thought to impose an upper limit
+of 6000 – 10 000 years on reliably identifying language relationships. In contrast, it has been argued that
+certain structural elements of language are much more stable. Just as biologists use highly conserved genes to
+uncover the deepest branches in the tree of life, highly stable linguistic features hold the promise of
+identifying deep relationships between the world's languages. Here, we present the first global network of
+languages based on this typological information. We evaluate the relative evolutionary rates of both
+typological and lexical features in the Austronesian and Indo-European language families. The first indications
+are that typological features evolve at similar rates to basic vocabulary but their evolution is substantially
+less tree-like. Our results suggest that, while rates of vocabulary change are correlated between the two
+language families, the rates of evolution of typological features and structural subtypes show no consistent
+relationship across families.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill

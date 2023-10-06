@@ -3,81 +3,208 @@ title = "An experimental study comparing linguistic phylogenetic reconstruction 
 doi = "10.1075/dia.30.2.01bar"
 
 abstract = """
-
+This paper reports a simulation study comparing and evaluating the performance of different linguistic phylogeny reconstruction methods on model datasets for which the true trees are known. UPGMA performed least well, then (in ascending order) neighbor joining, the method of Gray & Atkinson and finally maximum parsimony. Weighting characters greatly improves the accuracy of maximum parsimony and maximum compatibility if the characters with high weights exhibit low homoplasy.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["François Barbançon", "Steven N. Evans", "Luay Nakhleh", "Donald A. Ringe", "Tandy Warnow"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Barban_on_2013"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['methodological']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['distance', 'parsimony', 'likelihood', 'bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
-description = ""
+description = "Flawed simulation study to evaluate the effectiveness of phylogenetic methods."
 
 # data
 [data]
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    [data.simulated]
+    ntaxa = 30
+    nchars = 360
+    nsites = 260
+    datatype = 'simulated data'
+    source = ''
     items = ''
     comment = ''
-
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
-
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
-
 
 # analysis information
 [analysis]
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
-    details = ""
-    data = ""
+    [analysis.simulation_basic_experiment_upgma]
+        tool = 'paup*'
+        model = 'upgma'
+        details = ""
+        data = ""
+        
 
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
+    [analysis.simulation_basic_experiment_maximum_parsimony]
+        tool = 'paup*'
+        model = 'maximum parsimony'
+        details = ""
+        data = ""
+        
 
+    [analysis.simulation_basic_experiment_neighbor_joining]
+        tool = 'paup*'
+        model = 'neighbor joining'
+        details = ""
+        data = ""
+        
 
-[links]
-phlorest = { title = "Phlorest Dataset", link = "" }
-cldf = { title = "CLDF Dataset", link = "" }
-dplace = { title = "D-PLACE Dataset", link = "" }
-links = []
+    [analysis.simulation_basic_experiment_weighted_maximum_parsimony]
+        tool = 'paup*'
+        model = 'weighted maximum parsimony'
+        details = ""
+        data = ""
+        
+
+    [analysis.simulation_basic_experiment_weighted_maximum_compatibility]
+        tool = 'paup*'
+        model = 'weighted maximum compatibility'
+        details = ""
+        data = ""
+        
+
+    [analysis.simulation_basic_experiment_bayesian]
+        tool = 'mrbayes'
+        model = 'bayesian'
+        details = ""
+        data = ""
+        
+
+    [analysis.simulation_experiment2_upgma]
+        tool = 'paup*'
+        model = 'upgma'
+        details = ""
+        data = ""
+        
+
+    [analysis.simulation_experiment2_maximum_parsimony]
+        tool = 'paup*'
+        model = 'maximum parsimony'
+        details = ""
+        data = ""
+        
+
+    [analysis.simulation_experiment2_neighbor_joining]
+        tool = 'paup*'
+        model = 'neighbor joining'
+        details = ""
+        data = ""
+        
+
+    [analysis.simulation_experiment2_weighted_maximum_parsimony]
+        tool = 'paup*'
+        model = 'weighted maximum parsimony'
+        details = ""
+        data = ""
+        
+
+    [analysis.simulation_experiment2_weighted_maximum_compatibility]
+        tool = 'paup*'
+        model = 'weighted maximum compatibility'
+        details = ""
+        data = ""
+        
+
+    [analysis.simulation_experiment2_bayesian]
+        tool = 'mrbayes'
+        model = 'bayesian'
+        details = ""
+        data = ""
+        
+
+    [analysis.simulation_experiment3_upgma]
+        tool = 'paup*'
+        model = 'upgma'
+        details = ""
+        data = ""
+        
+
+    [analysis.simulation_experiment3_maximum_parsimony]
+        tool = 'paup*'
+        model = 'maximum parsimony'
+        details = ""
+        data = ""
+        
+
+    [analysis.simulation_experiment3_neighbor_joining]
+        tool = 'paup*'
+        model = 'neighbor joining'
+        details = ""
+        data = ""
+        
+
+    [analysis.simulation_experiment3_weighted_maximum_parsimony]
+        tool = 'paup*'
+        model = 'weighted maximum parsimony'
+        details = ""
+        data = ""
+        
+
+    [analysis.simulation_experiment3_weighted_maximum_compatibility]
+        tool = 'paup*'
+        model = 'weighted maximum compatibility'
+        details = ""
+        data = ""
+        
+
+    [analysis.simulation_experiment3_bayesian]
+        tool = 'mrbayes'
+        model = 'bayesian'
+        details = ""
+        data = ""
+        
+
+    [analysis.simulation_experiment4_upgma]
+        tool = 'paup*'
+        model = 'upgma'
+        details = ""
+        data = ""
+        
+
+    [analysis.simulation_experiment4_maximum_parsimony]
+        tool = 'paup*'
+        model = 'maximum parsimony'
+        details = ""
+        data = ""
+        
+
+    [analysis.simulation_experiment4_neighbor_joining]
+        tool = 'paup*'
+        model = 'neighbor joining'
+        details = ""
+        data = ""
+        
+
+    [analysis.simulation_experiment4_weighted_maximum_parsimony]
+        tool = 'paup*'
+        model = 'weighted maximum parsimony'
+        details = ""
+        data = ""
+        
+
+    [analysis.simulation_experiment4_weighted_maximum_compatibility]
+        tool = 'paup*'
+        model = 'weighted maximum compatibility'
+        details = ""
+        data = ""
+        
+
+    [analysis.simulation_experiment4_bayesian]
+        tool = 'mrbayes'
+        model = 'bayesian'
+        details = ""
+        data = ""
+        
+

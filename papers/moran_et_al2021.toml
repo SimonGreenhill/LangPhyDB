@@ -3,77 +3,242 @@ title = "Investigating diachronic trends in phonological inventories using {BDPR
 doi = "10.1007/s10579-019-09483-3"
 
 abstract = """
-
+Here we present an expanded version of BDPROTO, a database comprising phonological inventory data
+from 257 ancient and reconstructed languages. These data were extracted from historical linguistic reconstructions
+and brought together into a single unified, normalized, accessible, and Unicode-compliant language resource. This
+dataset is publicly available and we aim to engage language scientists doing research on language change and
+language evolution. Furthermore, we identify a hitherto undiscussed temporal bias that complicates the simple
+comparison of ancient and reconstructed languages with present-day languages. Due to the sparsity of the data
+and the absence of statistical and computational methods that can adequately handle this bias, we instead directly
+target rates of change within and across families, thereby providing a case study to highlight BDPROTO's research
+viability; using phylogenetic comparative methods and high-resolution language family trees, we investigate
+whether consonantal and vocalic systems differ in their rates of change over the last 10,000 years. In light of
+the compilation of BDPROTO and the findings of our case study, we discuss the challenges involved in comparing the
+sound systems of reconstructed languages with modern day languages.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Steven Moran", "Eitan Grossman", "Annemarie Verkerk"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Moran_2020"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['asr', 'trait']
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
-description = ""
+description = "Presentation of BDPROTO database, includes phylogenetic reconstruction of ancestral proto-language phoneme inventories and rates of evolution"
 
 # data
 [data]
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
+    [data.bdproto]
+    ntaxa = 257
+    nchars = "?"
     nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    datatype = 'phonetic traits'
+    source = ''
     items = ''
     comment = ''
 
 # published phylogenies
 [phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
+    [phylogenies.arawakan]
+    source = '@Walker2011'
     comment = ''
 
+    [phylogenies.austronesian]
+    source = '@Gray2009'
+    comment = ''
 
-# date calibrations
-[calibrations]
+    [phylogenies.bantu]
+    source = '@Grollemund2015'
+    comment = ''
 
-    notes = ""
+    [phylogenies.dravidian]
+    source = '@Kolipakam2018'
+    comment = ''
 
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
+    [phylogenies.indoeuropean]
+    source = '@Bouckaert2012'
+    comment = ''
 
+    [phylogenies.pamanyungan]
+    source = '@Bowern2012'
+    comment = ''
+
+    [phylogenies.tupiguarani]
+    source = '@Michael2015'
+    comment = ''
+
+    [phylogenies.turkic]
+    source = '@Hruschka2015'
+    comment = ''
 
 # analysis information
 [analysis]
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
-    details = ""
-    data = ""
+    [analysis.bayestraits_arawakan_consonant]
+        tool = 'bayestraits'
+        model = 'continuous'
+        details = "asr of number of consonant in the arawakan proto language"
+        data = "@bdproto;@phylogenies.arawakan"
+        
 
-[inferredages]
+    [analysis.bayestraits_arawakan_vowel]
+        tool = 'bayestraits'
+        model = 'continuous'
+        details = "asr of number of vowel in the arawakan proto language"
+        data = "@bdproto;@phylogenies.arawakan"
+        
+
+    [analysis.bayestraits_austronesian_consonant]
+        tool = 'bayestraits'
+        model = 'continuous'
+        details = "asr of number of consonant in the austronesian proto language"
+        data = "@bdproto;@phylogenies.austronesian"
+        
+
+    [analysis.bayestraits_austronesian_vowel]
+        tool = 'bayestraits'
+        model = 'continuous'
+        details = "asr of number of vowel in the austronesian proto language"
+        data = "@bdproto;@phylogenies.austronesian"
+        
+
+    [analysis.bayestraits_bantu_consonant]
+        tool = 'bayestraits'
+        model = 'continuous'
+        details = "asr of number of consonant in the bantu proto language"
+        data = "@bdproto;@phylogenies.bantu"
+        
+
+    [analysis.bayestraits_bantu_vowel]
+        tool = 'bayestraits'
+        model = 'continuous'
+        details = "asr of number of vowel in the bantu proto language"
+        data = "@bdproto;@phylogenies.bantu"
+        
+
+    [analysis.bayestraits_dravidian_consonant]
+        tool = 'bayestraits'
+        model = 'continuous'
+        details = "asr of number of consonant in the dravidian proto language"
+        data = "@bdproto;@phylogenies.dravidian"
+        
+
+    [analysis.bayestraits_dravidian_vowel]
+        tool = 'bayestraits'
+        model = 'continuous'
+        details = "asr of number of vowel in the dravidian proto language"
+        data = "@bdproto;@phylogenies.dravidian"
+        
+
+    [analysis.bayestraits_indoeuropean_consonant]
+        tool = 'bayestraits'
+        model = 'continuous'
+        details = "asr of number of consonant in the indoeuropean proto language"
+        data = "@bdproto;@phylogenies.indoeuropean"
+        
+
+    [analysis.bayestraits_indoeuropean_vowel]
+        tool = 'bayestraits'
+        model = 'continuous'
+        details = "asr of number of vowel in the indoeuropean proto language"
+        data = "@bdproto;@phylogenies.indoeuropean"
+        
+
+    [analysis.bayestraits_pamanyungan_consonant]
+        tool = 'bayestraits'
+        model = 'continuous'
+        details = "asr of number of consonant in the pamanyungan proto language"
+        data = "@bdproto;@phylogenies.pamanyungan"
+        
+
+    [analysis.bayestraits_pamanyungan_vowel]
+        tool = 'bayestraits'
+        model = 'continuous'
+        details = "asr of number of vowel in the pamanyungan proto language"
+        data = "@bdproto;@phylogenies.pamanyungan"
+        
+
+    [analysis.bayestraits_tupiguarani_consonant]
+        tool = 'bayestraits'
+        model = 'continuous'
+        details = "asr of number of consonant in the tupiguarani proto language"
+        data = "@bdproto;@phylogenies.tupiguarani"
+        
+
+    [analysis.bayestraits_tupiguarani_vowel]
+        tool = 'bayestraits'
+        model = 'continuous'
+        details = "asr of number of vowel in the tupiguarani proto language"
+        data = "@bdproto;@phylogenies.tupiguarani"
+        
+
+    [analysis.bayestraits_turkic_consonant]
+        tool = 'bayestraits'
+        model = 'continuous'
+        details = "asr of number of consonant in the turkic proto language"
+        data = "@bdproto;@phylogenies.turkic"
+        
+
+    [analysis.bayestraits_turkic_vowel]
+        tool = 'bayestraits'
+        model = 'continuous'
+        details = "asr of number of vowel in the turkic proto language"
+        data = "@bdproto;@phylogenies.turkic"
+        
+    [analysis.bayestraits_austronesian_consonant_multistate]
+        tool = 'bayestraits'
+        model = 'multistate'
+        details = "asr of number of consonant in the austronesian proto language"
+        data = "@bdproto;@phylogenies.austronesian"
+        
+
+    [analysis.bayestraits_austronesian_vowel_multistate]
+        tool = 'bayestraits'
+        model = 'multistate'
+        details = "asr of number of vowel in the austronesian proto language"
+        data = "@bdproto;@phylogenies.austronesian"
+        
+
+    [analysis.bayestraits_bantu_consonant_multistate]
+        tool = 'bayestraits'
+        model = 'multistate'
+        details = "asr of number of consonant in the bantu proto language"
+        data = "@bdproto;@phylogenies.bantu"
+        
+
+    [analysis.bayestraits_bantu_vowel_multistate]
+        tool = 'bayestraits'
+        model = 'multistate'
+        details = "asr of number of vowel in the bantu proto language"
+        data = "@bdproto;@phylogenies.bantu"
+        
+
+    [analysis.bayestraits_pamanyungan_consonant_multistate]
+        tool = 'bayestraits'
+        model = 'multistate'
+        details = "asr of number of consonant in the pamanyungan proto language"
+        data = "@bdproto;@phylogenies.pamanyungan"
+        
+
+    [analysis.bayestraits_pamanyungan_vowel_multistate]
+        tool = 'bayestraits'
+        model = 'multistate'
+        details = "asr of number of vowel in the pamanyungan proto language"
+        data = "@bdproto;@phylogenies.pamanyungan"
+        
+
     
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
 
 
 [links]

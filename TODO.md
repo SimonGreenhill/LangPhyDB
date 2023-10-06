@@ -8,7 +8,6 @@
 * Pagel 2000. Maximum-likelihood models for glottochronology and for reconstructing linguistic phylogenies. In Time depth in historical linguistics.
 * Pagel 2000. The History, Rate and Pattern of World Linguistic Evolution. In C Knight, M Studdert-Kennedy, & J Hurford (Eds.), The evolutionary emergence of language (pp. 391–416). Cambridge University Press.
 * Ringe et al. 1998. Computational cladistics and the position of Tocharian. In V Mair (Ed.), The Bronze Age and Early Iron Age Peoples of Eastern Central Asia, Volume 1: Archeology, Migration and Nomadism: Journal of Indo-European Studies Monograph Series (Vol. 26). Institute for the Study of Man.
-* Skelton. 2015. Borrowing, character weight, and preliminary cluster analysis in a phylogenetic analysis of the ancient greek dialects. Indo-European Linguistics 3. 84-117.
 * Warnow & Michailov. 1998. Computational Cladistics and the Position of Tocharian. In V Mair (Ed.), The Bronze Age and early Iron Age peoples of eastern Central Asia (pp. 391–414). JIES Monograph.
 
 

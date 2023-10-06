@@ -1,0 +1,111 @@
+title = "Borrowing, Character Weighting, and Preliminary Cluster Analysis in a Phylogenetic Analysis of the Ancient Greek Dialects"
+
+doi = "10.1163/22125892-00301003"
+
+abstract = """
+Phylogenetic systematics is an increasingly popular tool in historical linguistics for reconstructing the
+evolutionary histories of groups of languages. One problem in applying phylogenetic methods to languages is that
+phylogenetic methods assume evolution takes place strictly by descent with modification, whereas borrowing
+between languages is common. This paper tests two different methods for addressing borrowing in phylogenetic
+analysis of language on a dataset representing the dialects of ancient Greek: character weighting and preliminary
+cluster analysis. Both methods show promise; they correctly recovered the subgrouping of the Greek dialects and
+were able to improve the resolution of the tree compared to the preliminary analysis. However, they recovered
+conflicting subgroupings of the West Greek dialects. This result is most likely due to a circular dialect
+continuum within West Greek. Using phylogenetic methods in situations which match their assumptions is crucial;
+for the West Greek dialects, phylogenetic network methods would be more appropriate.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Christina Michelle Skelton"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Skelton_2015"
+
+# type of study
+type = ['phylogenetic']
+framework = ['parsimony'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = "A phylogenetic analysis of the Greek dialects."
+
+# data
+[data]
+
+    notes = "in total, the phylogenetic data matrix consists of 22 taxa, representing most dialects from the Greek mainland, the Aegean islands, Asia Minor, and Cyprus, and 85 phylogenetic characters. There are 40 phonological, 20 morphological, 3 syntactic, and 22 lexical characters, all function words."
+    
+    [data.greek]
+    ntaxa = 22
+    nchars = 85
+    nsites = 85
+    datatype = 'mixed'
+    source = ''
+    items = ''
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree_unweighted]
+    tool = 'paup*'
+    model = 'maximumparsimony'
+    details = "unweighted characters"
+    data = ""
+
+    [analysis.tree_2]
+    tool = 'paup*'
+    model = 'maximumparsimony'
+    details = "differentially weighted characters"
+    data = ""
+
+    [analysis.tree_3]
+    tool = 'paup*'
+    model = 'maximumparsimony'
+    details = "differentially weighted characters"
+    data = ""
+
+    [analysis.tree_4]
+    tool = 'paup*'
+    model = 'maximumparsimony'
+    details = "differentially weighted characters"
+    data = ""
+
+    [analysis.tree_5]
+    tool = 'paup*'
+    model = 'maximumparsimony'
+    details = "differentially weighted characters"
+    data = ""
+
+    [analysis.tree_6]
+    tool = 'paup*'
+    model = 'maximumparsimony'
+    details = "differentially weighted characters"
+    data = ""
+
+    [analysis.tree_7]
+    tool = 'paup*'
+    model = 'maximumparsimony'
+    details = "differentially weighted characters"
+    data = ""
+
+    [analysis.tree_8]
+    tool = 'paup*'
+    model = 'maximumparsimony'
+    details = "differentially weighted characters"
+    data = ""
+
+    [analysis.nmds]
+    tool = 'r'
+    model = 'MASS:isoMDS'
+    details = ""
+    data = ""
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = ["http://www.christinaskelton.com/public/files/ Greek_Dialects_14_Mycenaean04.nex"]

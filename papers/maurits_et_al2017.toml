@@ -1,19 +1,19 @@
-title = "Areal pressure in grammatical evolution"
+title = "{BEASTling}: A software tool for linguistic phylogenetics using {BEAST} 2"
 
-doi = "10.1075/dia.16035.cat"
+doi = "10.1371/journal.pone.0180908"
 
 abstract = """
 
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
-authors = ["Chundra Cathcart", "Gerd Carling", "Filip Larsson", "Niklas Johansson", "Erich R. Round"]
+authors = ["Luke Maurits", "Robert Forkel", "Gereon A. Kaiping", "Quentin D. Atkinson"]
 
 # parts of the world
 groups = []  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
-bibkey = "@Cathcart_2022"
+bibkey = "@Maurits_2017"
 
 # type of study
 type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,

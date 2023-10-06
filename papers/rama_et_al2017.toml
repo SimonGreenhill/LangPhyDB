@@ -3,7 +3,10 @@ title = "Computational analysis of Gondi dialects"
 doi = "10.18653/v1/W17-1203"
 
 abstract = """
-
+This paper presents a computational analysis of Gondi dialects spoken in central India. We present
+a digitized data set of the dialect area, and analyze the data using different techniques from dialectometry, deep
+learning, and computational biology. We show that the methods largely agree with each other and with the earlier
+non-computational analyses of the language group.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill

@@ -3,55 +3,48 @@ title = "Tracing the roots of syntax with Bayesian phylogenetics"
 doi = "10.1073/pnas.1319042111"
 
 abstract = """
-
-"""
+The ordering of subject, verb, and object is one of the fundamental components of the syntax of natural languages.
+The distribution of basic word orders across the world's languages is highly nonuniform, with the majority of
+languages being either subject-object-verb (SOV) or subject-verb-object (SVO). Explaining this fact using
+psychological accounts of language acquisition or processing requires understanding how the present distribution
+has resulted from ancestral distributions and the rates of change between orders. We show that Bayesian
+phylogenetics can provide quantitative answers to three important questions: how word orders are likely to change
+over time, which word orders were dominant historically, and whether strong inferences about the origins of syntax
+can be drawn from modern languages. We find that SOV to SVO change is more common than the reverse and VSO to SVO
+change is more common than VSO to SOV, and that if the seven language families we consider share a common ancestor
+then that common ancestor likely had SOV word order, but also that there are limits on how confidently we can make
+inferences about ancestral word order based on modern-day observations. These results shed new light on old
+questions from historical linguistics and provide clear targets for psychological explanations of word-order
+distributions. """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Luke Maurits", "Thomas L. Griffiths"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Maurits_2014"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['asr']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
-description = ""
+description = "Investigating which order of subject, object, and verb is most stable"
 
 # data
 [data]
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    [data.wals]
+    ntaxa = 671
+    nchars = 1
+    nsites = 1
+    datatype = 'structural features'
+    source = '@WALS'
     items = ''
     comment = ''
-
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
-
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
 
 
 # analysis information
@@ -60,24 +53,8 @@ description = ""
     notes = ""
     
     [analysis.tree]
-    tool = ''
-    model = ''
-    details = ""
+    tool = 'custom'
+    model = 'neighborjoining'
+    details = "time in state + asr"
     data = ""
 
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
-
-
-[links]
-phlorest = { title = "Phlorest Dataset", link = "" }
-cldf = { title = "CLDF Dataset", link = "" }
-dplace = { title = "D-PLACE Dataset", link = "" }
-links = []

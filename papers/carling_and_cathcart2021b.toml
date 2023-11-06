@@ -3,43 +3,52 @@ title = "Reconstructing the evolution of Indo-European grammar"
 doi = "10.1353/lan.2021.0047"
 
 abstract = """
-
+This study uses phylogenetic methods adopted from computational biology in order
+to reconstruct features of Proto-Indo-European morphosyntax. We estimate the
+probability of the presence of typological features in Proto-Indo-European on the
+assumption that these features change according to a stochastic process governed
+by evolutionary transition rates between them. We compare these probabilities to
+previous reconstructions of Proto-Indo-European morphosyntax, which use either the
+comparative-historical method or implicational typology. We find that our
+reconstruction yields strong support for a canonical model (synthetic,
+nominative-accusative, headfinal) of the protolanguage and low support for any
+alternative model. Observing the evolutionary dynamics of features in our data
+set, we conclude that morphological features have slower rates of change, whereas
+syntactic traits change faster. Additionally, more frequent, unmarked traits in
+grammatical hierarchies have slower change rates when compared to less frequent,
+marked ones, which indicates that universal patterns of economy and frequency
+impact language change within the family.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Gerd Carling", "Chundra Cathcart"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Indo-European']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Carling_2021b"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['asr']
+framework = ['bayesian']
 # short description of the study, one line.
-description = ""
+description = "Reconstructing the evolution of Indo-European grammar"
 
 # data
 [data]
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    [data.indoeuropean]
+    ntaxa = 125
+    nchars = 65
+    nsites = 65
+    datatype = 'syntactical features'
+    source = '@DiACL'
     items = ''
     comment = ''
 
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
 
 
 # date calibrations
@@ -47,10 +56,1263 @@ description = ""
 
     notes = ""
 
-    [calibration.label]
+
+    [calibration.Albanian_Tosk]
+    taxa = ["alba1268"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Assamese]
+    taxa = ["assa1263"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Balkan_Romani]
+    taxa = ["balk1252"]
+    age = "uniform(1000, 1500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Bengali]
+    taxa = ["beng1280"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Brythonic]
+    taxa = ["bryt1239"]
+    age = "uniform(500, 700)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Bulgarian]
+    taxa = ["bulg1262"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Catalan]
+    taxa = ["stan1289"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Classical_Greek]
+    taxa = ["anci1249"]
+    age = "uniform(-500, 0)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Cornish]
+    taxa = ["corn1251"]
+    age = "uniform(1500, 1750)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Czech]
+    taxa = ["czec1258"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Danish]
+    taxa = ["dani1285"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Dutch]
+    taxa = ["dutc1256"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Eastern_Baltic]
+    taxa = ["Senn 1966"]
+    age = "uniform(600, 800)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.East_Slavic]
+    taxa = ["Fortson"]
+    age = "uniform(800, 1100)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Faroese]
+    taxa = ["faro1244"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Gothic]
+    taxa = ["goth1244"]
+    age = "uniform(0, 750)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Hittite]
+    taxa = ["hitt1242"]
+    age = "uniform(-1800, -1200)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Icelandic]
+    taxa = ["icel1247"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Irish]
+    taxa = ["iris1253"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Latvian]
+    taxa = ["latv1249"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Lithuanian]
+    taxa = ["lith1251"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Luwian]
+    taxa = ["luvi1235"]
+    age = "uniform(-1500, -500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Manx]
+    taxa = ["manx1243"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Middle_Breton]
+    taxa = ["midd1359"]
+    age = "uniform(1000, 1500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Middle_Dutch]
+    taxa = ["midd1321"]
+    age = "uniform(1000, 1500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Middle_Greek]
+    taxa = ["midd1362"]
+    age = "uniform(500, 1500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Middle_Irish]
+    taxa = ["midd1360"]
+    age = "uniform(1000, 1500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Middle_Welsh]
+    taxa = ["midd1363"]
+    age = "uniform(1000, 1500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Modern_Armenian]
+    taxa = ["east2768"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Modern_Greek]
+    taxa = ["mode1248"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.North_Germanic]
+    taxa = ["Fortson"]
+    age = "uniform(500, 700)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Norwegian_Bokmal]
+    taxa = ["norw1259"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Norwegian_Nynorsk]
+    taxa = ["norw1262"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Nuristani]
+    taxa = ["Degener"]
+    age = "uniform(-1500, -1100)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Old_Church_Slavonic]
+    taxa = ["chur1257"]
+    age = "uniform(750, 1250)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Old_Danish]
+    taxa = ["oldd1239"]
+    age = "uniform(1200, 1400)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Old_Irish]
+    taxa = ["oldi1246"]
+    age = "uniform(500, 1000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Old_Norse]
+    taxa = ["[date changed]"]
+    age = "uniform(750, 1000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Old_Russian]
+    taxa = ["oldr1238"]
+    age = "uniform(1000, 1500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Old_Swedish]
+    taxa = ["olds1252"]
+    age = "uniform(1000, 1500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Polish]
+    taxa = ["poli1260"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Proto-Anatolian]
+    taxa = ["anat1257"]
+    age = "uniform(-3000, -2500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Proto-Armenian]
+    taxa = ["arme1241"]
+    age = "uniform(-1250, -750)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Proto-Baltic]
+    taxa = ["east2280"]
+    age = "uniform(0, 500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Proto-Balto-Slavic]
+    taxa = ["balt1263"]
+    age = "uniform(-500, 0)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Proto-Celtic]
+    taxa = ["celt1248"]
+    age = "uniform(-1000, -250)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Proto-Core-IE]
+    taxa = ["clas1257"]
+    age = "uniform(-3500, -3000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Proto-Germanic]
+    taxa = ["germ1287"]
+    age = "uniform(-500, 0)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Proto-Greco-Armenian]
+    taxa = ["arme1241", "grae1234"]
+    age = "uniform(-2500, -2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Proto-Greek]
+    taxa = ["gree1276"]
+    age = "uniform(-1500, -1000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Proto-Indo-Aryan]
+    taxa = ["indo1321"]
+    age = "uniform(-1500, -1200)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Proto-Indo-European]
+    taxa = ["indo1319"]
+    age = "uniform(-5000, -4000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Proto-Indo-Iranian]
+    taxa = ["indo1320"]
+    age = "uniform(-2300, -1700)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Proto-Iranian]
+    taxa = ["iran1269"]
+    age = "uniform(-1500, -1100)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Proto-Italic]
+    taxa = ["ital1284"]
+    age = "uniform(-2000, -1250)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Proto-Italo-Celtic]
+    taxa = ["ital1284", "celt1248"]
+    age = "uniform(-2250, -1750)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Proto-Slavic]
+    taxa = ["slav1255"]
+    age = "uniform(0, 500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Proto-Tocharian]
+    taxa = ["tokh1241"]
+    age = "uniform(-750, -500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Romani]
+    taxa = ["Matras?"]
+    age = "uniform(800, 900)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Romani_Sepecides]
+    taxa = ["sepe1242"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Scottish_Gaelic]
+    taxa = ["scot1245"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Serbian]
+    taxa = ["serb1264"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Serbo-Croatian]
+    taxa = ["sout1528"]
+    age = "uniform(1500, 1600)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Sinhalese-Maldivian]
     taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
+    age = "uniform(-100, 100)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Slovene]
+    taxa = ["slov1268"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Southern_Indo-Aryan]
+    taxa = ["Masica p. 46"]
+    age = "uniform(0, 300)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Swedish]
+    taxa = ["stan1279"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Tocharian_A]
+    taxa = ["tokh1242"]
+    age = "uniform(500, 1000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Tocharian_B]
+    taxa = ["tokh1243"]
+    age = "uniform(250, 1250)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Ukrainian]
+    taxa = ["ukra1253"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Upper_Sorbian]
+    taxa = ["uppe1395"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Welsh]
+    taxa = ["wels1247"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Ashkun]
+    taxa = ["ashk1246"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Avestan]
+    taxa = ["aves1237"]
+    age = "uniform(-1000, -750)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Baluchi]
+    taxa = ["balo1260"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Breton]
+    taxa = ["bret1244"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Core_Romance]
+    taxa = ["roma1334"]
+    age = "uniform(200, 500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Croatian]
+    taxa = ["croa1245"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.East_Germanic]
+    taxa = ["east2805"]
+    age = "uniform(0, 200)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Elfdalian]
+    taxa = ["elfd1234"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.English]
+    taxa = ["stan1293"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.French]
+    taxa = ["stan1290"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Frisian]
+    taxa = ["fris1239"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Friulian]
+    taxa = ["friu1240"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.German]
+    taxa = ["stan1295"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Gilaki]
+    taxa = ["gila1241"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Goidelic]
+    taxa = ["goid1240"]
+    age = "uniform(500, 700)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Gujarati]
+    taxa = ["guja1252"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Hindi]
+    taxa = ["hind1269"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Italian]
+    taxa = ["ital1282"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Kashmiri]
+    taxa = ["kash1277"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Khowar]
+    taxa = ["khow1242"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Kurdish]
+    taxa = ["kurd1259"]
+    age = "uniform(900, 1000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Ladin]
+    taxa = ["ladi1250"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Latin]
+    taxa = ["lati1261"]
+    age = "uniform(-500, 0)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Latino-Faliscan]
+    taxa = ["lati1262"]
+    age = "uniform(-1000, -700)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Lechitic]
+    taxa = ["lech1241"]
+    age = "uniform(1100, 1300)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Low_German]
+    taxa = ["lowg1239"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Maithili]
+    taxa = ["mait1250"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Marathi]
+    taxa = ["mara1378"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Middle_English]
+    taxa = ["midd1317"]
+    age = "uniform(1000, 1500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Middle_High_German]
+    taxa = ["midd1343"]
+    age = "uniform(1000, 1500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Middle_Low_German]
+    taxa = ["midd1318"]
+    age = "uniform(1250, 1500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Nepali]
+    taxa = ["nepa1254"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Old_Dutch]
+    taxa = ["oldd1238"]
+    age = "uniform(750, 1000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Old_English]
+    taxa = ["olde1238"]
+    age = "uniform(500, 1000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Old_Frisian]
+    taxa = ["oldf1241"]
+    age = "uniform(750, 1500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Old_Italian]
+    taxa = ["fior1236"]
+    age = "uniform(1000, 1500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Old_Persian]
+    taxa = ["oldp1255"]
+    age = "uniform(-500, 250)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Old_Portuguese]
+    taxa = ["oldp1257"]
+    age = "uniform(750, 1500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Old_Provencal]
+    taxa = ["oldp1253"]
+    age = "uniform(750, 1250)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Old_Prussian]
+    taxa = ["prus1238"]
+    age = "uniform(1250, 1750)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Old_Saxon]
+    taxa = ["olds1250"]
+    age = "uniform(750, 1250)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Old_Spanish]
+    taxa = ["olds1249"]
+    age = "uniform(1000, 1500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Pali]
+    taxa = ["pali1273"]
+    age = "uniform(-250, 250)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Parachi]
+    taxa = ["para1299"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Pashto]
+    taxa = ["pash1269"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Portuguese]
+    taxa = ["port1283"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Prasun]
+    taxa = ["pras1239"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Provencal]
+    taxa = ["prov1235"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Romanian]
+    taxa = ["roma1327"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Romani_Burgenland]
+    taxa = ["vlax1238"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Romansh]
+    taxa = ["roma1326"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Russian]
+    taxa = ["russ1263"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Sanskrit]
+    taxa = ["sans1269"]
+    age = "uniform(-500, 0)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Sardinian]
+    taxa = ["sard1257"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Shughni]
+    taxa = ["shug1248"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Sicilian]
+    taxa = ["sici1248"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Sindhi]
+    taxa = ["sind1272"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Sogdian]
+    taxa = ["sogd1245"]
+    age = "uniform(0, 1000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.South_Slavic]
+    taxa = ["sout3147"]
+    age = "uniform(700, 900)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Spanish]
+    taxa = ["stan1288"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Tajik]
+    taxa = ["taji1245"]
+    age = "uniform(1200, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Urdu]
+    taxa = ["urdu1245"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Vlax_Romani]
+    taxa = ["vlax1238"]
+    age = "uniform(1000, 1500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Vulgar_Latin]
+    taxa = ["vulg1234"]
+    age = "uniform(0, 200)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Wakhi]
+    taxa = ["wakh1245"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Walloon]
+    taxa = ["wall1255"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Western_Romance]
+    taxa = ["west2813"]
+    age = "uniform(500, 600)"
+    units = "y2000"
+    description = ""
+
+    [calibration.West_Germanic]
+    taxa = ["west2793"]
+    age = "uniform(300, 500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.West_Slavic]
+    taxa = ["west2792"]
+    age = "uniform(900, 1100)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Ossetian_Iron]
+    taxa = ["iron1242"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Angloromani]
+    taxa = ["angl1239"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Eastern_Indo-Aryan]
+    taxa = ["indo1323"]
+    age = "uniform(0, 300)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Eastern_Iranian]
+    taxa = ["cent2399"]
+    age = "uniform(-1200, -1000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.East_Norse]
+    taxa = ["olde1240"]
+    age = "uniform(1000, 1200)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Romani_Sinte]
+    taxa = ["sint1235"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Italo_Romance]
+    taxa = ["lati1262"]
+    age = "uniform(600, 700)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Middle_Persian]
+    taxa = ["midd1352"]
+    age = "uniform(250, 1250)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Maldivian]
+    taxa = ["dhiv1236"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Kati]
+    taxa = ["kati1270"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Konkani]
+    taxa = ["goan1235"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Kurdish_Kurmanji]
+    taxa = ["nort2641"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Kurdish_Sorani]
+    taxa = ["cent1972"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Punjabi]
+    taxa = ["lahn1241"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Romani_Arli]
+    taxa = ["arli1238"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Romani_Bugurdzi]
+    taxa = ["bugu1249"]
+    age = "uniform(1500, 1750)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Romani_Kale]
+    taxa = ["wels1246"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Romani_Kelderash]
+    taxa = ["kald1238"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Romani_Lovara]
+    taxa = ["lova1240"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Old_French]
+    taxa = ["oldf1239"]
+    age = "uniform(750, 1250)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Old_High_German]
+    taxa = ["oldh1241"]
+    age = "uniform(750, 1000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Oriya]
+    taxa = ["adiv1239"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Prakrit]
+    taxa = ["midd1350"]
+    age = "uniform(-250, 250)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Scandoromani]
+    taxa = ["scan1239"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Swiss_German]
+    taxa = ["swis1247"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Sinhalese]
+    taxa = ["sinh1246"]
+    age = "uniform(1250, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Talysh]
+    taxa = ["taly1247"]
+    age = "uniform(1750, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Persian]
+    taxa = ["fars1254"]
+    age = "uniform(1000, 2000)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Western_Baltic]
+    taxa = ["prus1238"]
+    age = "uniform(600, 800)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Western_Indo-Aryan]
+    taxa = ["midl1245"]
+    age = "uniform(-500, 0)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Khari_Boli]
+    taxa = []
+    age = "uniform(1000, 1200)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Central_Indo-Aryan]
+    taxa = []
+    age = "uniform(0, 300)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Northern_Indo-Aryan]
+    taxa = []
+    age = "uniform(0, 300)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Northern_Romani]
+    taxa = []
+    age = "uniform(1000, 1500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Northwestern_Indo-Aryan]
+    taxa = []
+    age = "uniform(0, 300)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Proto-Nuclear-IE]
+    taxa = []
+    age = "uniform(-4000, -3500)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Western_Iranian]
+    taxa = []
+    age = "uniform(-100, -800)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.West_Norse]
+    taxa = ["oldw1240"]
+    age = "uniform(1000, 1200)"
+    units = "y2000"
+    description = ""
+
+
+    [calibration.Yiddish]
+    taxa = ["west2361"]
+    age = "uniform(1500, 2000)"
+    units = "y2000"
     description = ""
 
 
@@ -60,21 +1322,401 @@ description = ""
     notes = ""
     
     [analysis.tree]
-    tool = ''
-    model = ''
-    details = ""
-    data = ""
+        tool = 'custom'
+        model = 'random'
+        details = "custom python script to randomly sample node ages on a fixed tree topology"
+        data = ""
+
+    [analysis.trait_1]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_2]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_3]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_4]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_5]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_6]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_7]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_8]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_9]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_10]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_11]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_12]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_13]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_14]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_15]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_16]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_17]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_18]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_19]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_20]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_21]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_22]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_23]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_24]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_25]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_26]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_27]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_28]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_29]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_30]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_31]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_32]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_33]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_34]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_35]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_36]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_37]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_38]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_39]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_40]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_41]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_42]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_43]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_44]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_45]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_46]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_47]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_48]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_49]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_50]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_51]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_52]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_53]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_54]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_55]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_56]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_57]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_58]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_59]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_60]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_61]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_62]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_63]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+    [analysis.trait_64]
+        tool = 'stan'
+        model = 'm2p+asr'
+        details = ""
+        data = ""
+        
+
 
 [inferredages]
     
-    notes = ""
+    notes = "enforced by calibration, not inferred"
     
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
-
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }

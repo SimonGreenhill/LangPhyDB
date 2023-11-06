@@ -1,0 +1,81 @@
+title = "Phylogenetic analyses for the origin of sortal classifiers in Mongolic, Tungusic, and Turkic languages"
+
+doi = "https://doi.org/10.1075/consl.00031.her"
+
+abstract = """
+Numeral classifiers are one of the most common types of nominal
+classification systems. Their geographical distribution worldwide is
+concentrated in Asia, which infers a scheme of diffusion from a linguistic
+innovation. This study investigates the origin of classifier systems in the
+Mongolic, Tungusic, and Turkic languages in the Altaic region with a
+phylogenetic analysis based on data from 55 languages. The Single Origin
+Hypothesis suggests that Sinitic is the most probable original source of
+classifier systems found in Asia (Her & Li 2023). Under this hypothesis,
+classifiers are unlikely to be an indigenous feature of the Altaic region, and
+indeed their phylogenetic signal turns out to be weak. We also conduct a
+qualitative analysis on the classifier inventory of the studied languages to
+assess the robustness of phylogenetic methods. The results also indicate that
+classifiers are most likely a borrowed feature in the Mongolic, Tungusic, and
+Turkic languages.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Marc Allassonnière-Tang", "Zhong-Liang Gao", "Shen-An Chen", "One-Soon Her"]
+
+# parts of the world
+groups = ['Mongolic', 'Tungusic', 'Turkic']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Allassonni_re_Tang_2023"
+
+# type of study
+type = ['d-statistic']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian', 'likelihood'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = "Phylogenetic analyses for the origin of sortal classifiers in Mongolic, Tungusic, and Turkic languages"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.classifiers]
+    ntaxa = 55
+    nchars = 1
+    nsites = 1
+    datatype = 'structural features'
+    source = '@WACL'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.robbeets]
+    source = '@Robbeets_2018'
+    comment = ''
+
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.glottolog]
+    tool = 'mrbayes'
+    model = ''
+    details = ""
+    data = "@Glottolog23"
+    comment = "monophyly constraints only, data-free"
+
+    [analysis.D_glottolog]
+    tool = 'caper'
+    model = 'phylo.d'
+    details = ""
+    data = "@analysis.glottolog; @data.classifiers"
+
+    [analysis.D_robbeets]
+    tool = 'caper'
+    model = 'phylo.d'
+    details = ""
+    data = "@analysis.robbeets; @data.classifiers"

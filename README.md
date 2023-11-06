@@ -21,3 +21,12 @@ Review and tutorial papers that discuss either of these topics are also included
 * `trait`: Studies that model the history of a particular cultural or linguistic trait(s).
 * `review`: A review style article that discusses the above studies
 * `tutorial`: A tutorial style article that describes how to do these studies.
+
+
+## Citation:
+
+If you find this project helpful, please cite:
+
+```
+Greenhill, S. J. (2023). [Language Phylogenies](https://doi.org/10.1093/oxfordhb/9780198869252.013.61). The Oxford Handbook of Cultural Evolution, C61P1-C61P248. https://doi.org/10.1093/oxfordhb/9780198869252.013.61
+```

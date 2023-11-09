@@ -3,55 +3,65 @@ title = "Diachronic change in Indo-European motion event encoding"
 doi = "10.1075/jhl.4.1.02ver"
 
 abstract = """
-
+There are many different syntactic constructions that languages can use to
+encode motion events. In recent decades, great advances have been made in the
+description and study of these syntactic constructions from languages spoken
+around the world (Talmy 1985, 1991, Slobin 1996, 2004). However, relatively
+little attention has been paid to historical change in these systems (exceptions are
+Vincent 1999, Dufresne, Dupuis & Tremblay 2003, Kopecka 2006 and Peyraube
+2006). In this article, diachronic change of motion event encoding systems in
+Indo-European is investigated using the available historical–comparative data
+and phylogenetic comparative methods adopted from evolutionary biology. It
+is argued that Proto-Indo-European was not satellite-framed, as suggested by
+Talmy (2007) and Acedo Matellán and Mateu (2008), but had a mixed motion
+event encoding system, as is suggested by the available historical–comparative
+data.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Annemarie Verkerk"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Indo-European']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Verkerk_2014"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['asr', 'trait']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['likelihood', 'statistical'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
-description = ""
+description = "Diachronic change in Indo-European motion event encoding"
 
 # data
 [data]
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    [data.motion]
+    ntaxa = 20
+    nchars = 2
+    nsites = 2
+    datatype = 'structural distance'
+    source = ''
+    items = ''
+    comment = 'Principle Components PC1 & 2'
+
+    [data.location]
+    ntaxa = 20
+    nchars = 2
+    nsites = 2
+    datatype = 'distance'
+    source = ''
     items = ''
     comment = ''
-
+    
+    
 # published phylogenies
 [phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
+    [phylogenies.indoeuropean]
+    source = '@Bouckaert2012'
     comment = ''
-
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
 
 
 # analysis information
@@ -59,21 +69,36 @@ description = ""
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
+    [analysis.lambda_pc1]
+    tool = 'phytools'
+    model = 'phylosig'
+    details = "lambda"
+    data = ""
+
+    [analysis.lambda_pc2]
+    tool = 'phytools'
+    model = 'phylosig'
+    details = "lambda"
+    data = ""
+
+    [analysis.asr_pc1]
+    tool = 'geiger'
+    model = 'fitContinuous'
     details = ""
     data = ""
 
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
+    [analysis.asr_pc2]
+    tool = 'geiger'
+    model = 'fitContinuous'
+    details = ""
+    data = ""
+
+    [analysis.mantel]
+    tool = 'vegan'
+    model = 'mantel.partial'
+    details = ""
+    data = "@data.model:PC1;@data.location"
+
 
 
 [links]

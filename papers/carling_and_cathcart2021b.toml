@@ -21,7 +21,7 @@ impact language change within the family.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
-authors = ["Gerd Carling", "Chundra Cathcart"]
+authors = ["Gerd Carling", "Chundra A. Cathcart"]
 
 # parts of the world
 groups = ['Indo-European']  # 'Austronesian', etc

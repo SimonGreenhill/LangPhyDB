@@ -3,14 +3,42 @@ title = "The evolution of lexical semantics dynamics, directionality, and drift"
 doi = "10.3389/fcomm.2023.1126249"
 
 abstract = """
+Introduction: The directionality of semantic change is problematic in traditional
+comparative models of language reconstruction. Compared to, e.g., phonological and morphological
+change, the directions of meaning change over time are potentially endless and difficult to
+reconstruct. The current paper attempts to reconstruct the mechanisms of lexical meaning change by a
+quantitative model. We use a data set of 104 core concepts in 160 Eurasian languages from several
+families, which are coded for colexification as well as cognacy, including semantic change of
+lexemes in etymologies. In addition, the various meanings are coded for semantic relation to the
+core concept, including relations such as metaphor, metonymy, generalization, specialization,
+holonymy, and meronymy. Further, concepts are coded into classes and semantic properties, including
+factors such as animacy, count/mass, concrete/abstract, or cultural connotations, such as
+taboo/non-taboo.
 
+Methodology: We use a phylogenetic comparative model to reconstruct the probability of presence at
+hidden nodes of different colexifying meanings inside etymological trees. We find that these
+reconstructions come close to meaning reconstructions based on the comparative method. By means of
+the phylogenetic reconstructions, we measure the evolutionary dynamics of meaning loss of co-
+lexifying meanings as well as concepts.
+
+Results and discussion: These change rates are highly varying, from almost complete stability to
+complete unstability. Change rates vary between different semantic classes, where for instance wild
+animals have low change rates and domestic animals and implements have high change rates. We find a
+negative correlation between taboo animals and change rate, i.e., taboo animals have lower change
+rates than non-taboo words. Further, we find a negative correlation between animacy and change rate,
+indicating that animate nouns have lower change rate than inanimate nouns. A further result is a
+negative correlation between change rate and degree of borrowing (borrowability) of concepts,
+indicating that lexemes that are more likely to be borrowed are less likely to change semantically.
+Among semantic relations, we find that metonomy is more frequent than any other change, including
+metaphor, and that a change from general to more specific is in all cases more frequent than the
+other way round.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Gerd Carling", "Sandra Cronhamn", "Olof Lundgren", "Victor Bogren Svensson", "Johan Frid"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Indo-European', 'Kartvelian', 'Northwest Caucasian', 'Dagestanian', 'Uralic', 'Turkic', 'Semitic']
 
 # bibkey citation in sources.bib
 bibkey = "@Carling_2023"
@@ -26,12 +54,12 @@ description = ""
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
+    [data.DiACL]
+    ntaxa = 160
+    nchars = 104
+    nsites = 13060
     datatype = 'lexical cognates'
-    source = '@xxx'
+    source = '@DiACL'
     items = ''
     comment = ''
 

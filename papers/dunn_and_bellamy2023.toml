@@ -1,0 +1,102 @@
+title = "Evolution and Spread of Politeness Systems in Indo-European"
+
+doi = "10.1111/1467-968X.12260"
+
+abstract = """
+In this paper, we investigate the phenomenon of pronominal politeness in the Indo-European languages
+and demonstrate that the processes of change of pronominal systems related to politeness follow two
+evolutionary regimes, one inside the 'Standard Average European' (SAE) linguistic area and another
+outside of it. Historical processes of language change differ at different levels of linguistic
+structure. In general, we presume that lower level, unconscious aspects of language change slowly
+over phylogenetic time, giving rise to patterns of relationship that can often be described as a
+family tree. Aspects of language that are consciously manipulated by speakers are expected to vary
+at a faster rate and to diffuse within areas of contact. Politeness is a social phenomenon, so we
+expect these systems to be highly susceptible to areal norms of interaction. We show that the
+similarities of SAE politeness systems can be accounted for with a model of convergence due to
+parallel evolution in a shared (social-demographic) environment, rather than by genealogical
+relatedness or borrowing. By quantifying and testing factors determining rates of structural change,
+we offer a novel and realistic approach that can explain similarities between distantly related
+languages sharing the same environment.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Michael Dunn", "Kate Bellamy"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Dunn_2023"
+
+# type of study
+type = ['trait']
+framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = "Evolution and Spread of Politeness Systems in Indo-European"
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.pronouns]
+    ntaxa = 94
+    nchars = 8
+    nsites = 8
+    datatype = 'structural features'
+    source = ''
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.indoeuropean]
+    source = '@DunnTresoldi2021'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.simmap1_1rate]
+    tool = 'brownie.lite'
+    model = 'simmap+1rate'
+    details = ""
+    data = "PC1"
+
+    [analysis.simmap1_2rate]
+    tool = 'brownie.lite'
+    model = 'simmap+2rate'
+    details = ""
+    data = "PC1"
+
+    [analysis.simmap2_1rate]
+    tool = 'brownie.lite'
+    model = 'simmap+1rate'
+    details = ""
+    data = "PC2"
+    
+    [analysis.simmap2_2rate]
+    tool = 'brownie.lite'
+    model = 'simmap+2rate'
+    details = ""
+    data = "PC2"
+    
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.label]
+    taxa = []
+    age = "hpd(median, lower, upper)"
+    units = "ybp"
+    notes = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

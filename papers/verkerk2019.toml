@@ -3,55 +3,76 @@ title = "Detecting non-tree-like signal using multiple tree topologies"
 doi = "10.1075/jhl.17009.ver"
 
 abstract = """
-
+Recent applications of phylogenetic methods to historical linguistics have been
+criticized for assuming a tree structure in which ancestral languages differentiate and split up
+into daughter languages, while language evolution is inherently non-tree-like (François 2014; Blench
+2015: 32–33). This article attempts to contribute to this debate by discussing the use of the
+multiple topologies method (Pagel & Meade 2006a) implemented in BayesPhylogenies (Pagel & Meade
+2004). This method is applied to lexical datasets from four different language families:
+Austronesian (Gray, Drummond & Greenhill 2009), Sinitic (Ben Hamed & Wang 2006), Indo-European
+(Bouckaert et al. 2012), and Japonic (Lee & Hasegawa 2011). Evidence for multiple topologies is
+found in all families except, surprisingly, Austronesian. It is suggested that reticulation may
+arise from a number of processes, including dialect chain break-up, borrowing (both shortly after
+language splits and later on), incomplete lineage sorting, and characteristics of lexical datasets.
+It is shown that the multiple topologies method is a useful tool to study the dynamics of language
+evolution.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Annemarie Verkerk"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Austronesian', 'Indo-European', 'Sinitic', 'Japonic']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Verkerk_2019"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['macroevolutionary']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
-description = ""
+description = "Detecting non-tree-like signal using multiple tree topologies"
 
 # data
 [data]
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
+    [data.austronesian]
+    ntaxa = 400
+    nchars = 200
+    nsites = 34440
     datatype = 'lexical cognates'
-    source = '@xxx'
+    source = '@Gray2009'
     items = ''
     comment = ''
 
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
+    [data.indoeuropean]
+    ntaxa = 103
+    nchars = 207
+    nsites = 5997
+    datatype = 'lexical cognates'
+    source = '@Bouckaert2012'
+    items = ''
     comment = ''
 
+    [data.sinitic]
+    ntaxa = 24
+    nchars = 200
+    nsites = 200
+    datatype = 'lexical cognates'
+    source = '@Hamed:2006er'
+    items = ''
+    comment = ''
 
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
+    [data.japonic]
+    ntaxa = 59
+    nchars = 210
+    nsites = 675
+    datatype = 'lexical cognates'
+    source = '@Lee2011'
+    items = 'swadesh200'
+    comment = ''
 
 
 # analysis information
@@ -59,25 +80,220 @@ description = ""
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
-    details = ""
+    [analysis.simulation]
+    tool = 'bayesphylogenies'
+    model = 'm2p'
+    details = "simulate data under two topologies (how?) combine and analyse using bayesphylogenies with multiple topologies"
     data = ""
 
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
+    [analysis.austronesian_m2p]
+        tool = 'bayesphylogenies'
+        model = 'm2p'
+        details = ""
+        data = "@data.austronesian"
+        
+    [analysis.austronesian_m2p_topologies2]
+        tool = 'bayesphylogenies'
+        model = 'm2p+topologies2'
+        details = ""
+        data = "@data.austronesian"
+        
+    [analysis.austronesian_covarion]
+        tool = 'bayesphylogenies'
+        model = 'covarion'
+        details = ""
+        data = "@data.austronesian"
+        
+    [analysis.austronesian_covarion_topologies2]
+        tool = 'bayesphylogenies'
+        model = 'covarion+topologies2'
+        details = ""
+        data = "@data.austronesian"
+        
+    [analysis.austronesian_m2p_gamma]
+        tool = 'bayesphylogenies'
+        model = 'm2p+gamma'
+        details = ""
+        data = "@data.austronesian"
+        
+    [analysis.austronesian_m2p_gamma_topologies2]
+        tool = 'bayesphylogenies'
+        model = 'm2p+gamma+topologies2'
+        details = ""
+        data = "@data.austronesian"
+        
+    [analysis.austronesian_covarion_gamma]
+        tool = 'bayesphylogenies'
+        model = 'covarion+gamma'
+        details = ""
+        data = "@data.austronesian"
+        
+    [analysis.austronesian_covarion_gamma_topologies2]
+        tool = 'bayesphylogenies'
+        model = 'covarion+gamma+topologies2'
+        details = ""
+        data = "@data.austronesian"
+        
+    [analysis.indoeuropean_m2p]
+        tool = 'bayesphylogenies'
+        model = 'm2p'
+        details = ""
+        data = "@data.indoeuropean"
+        
+    [analysis.indoeuropean_m2p_topologies2]
+        tool = 'bayesphylogenies'
+        model = 'm2p+topologies2'
+        details = ""
+        data = "@data.indoeuropean"
+        
+    [analysis.indoeuropean_covarion]
+        tool = 'bayesphylogenies'
+        model = 'covarion'
+        details = ""
+        data = "@data.indoeuropean"
+        
+    [analysis.indoeuropean_covarion_topologies2]
+        tool = 'bayesphylogenies'
+        model = 'covarion+topologies2'
+        details = ""
+        data = "@data.indoeuropean"
+        
+    [analysis.indoeuropean_m2p_gamma]
+        tool = 'bayesphylogenies'
+        model = 'm2p+gamma'
+        details = ""
+        data = "@data.indoeuropean"
+        
+    [analysis.indoeuropean_m2p_gamma_topologies2]
+        tool = 'bayesphylogenies'
+        model = 'm2p+gamma+topologies2'
+        details = ""
+        data = "@data.indoeuropean"
+        
+    [analysis.indoeuropean_covarion_gamma]
+        tool = 'bayesphylogenies'
+        model = 'covarion+gamma'
+        details = ""
+        data = "@data.indoeuropean"
+        
+    [analysis.indoeuropean_covarion_gamma_topologies2]
+        tool = 'bayesphylogenies'
+        model = 'covarion+gamma+topologies2'
+        details = ""
+        data = "@data.indoeuropean"
+        
+    [analysis.semitic_m2p]
+        tool = 'bayesphylogenies'
+        model = 'm2p'
+        details = ""
+        data = "@data.semitic"
+        
+    [analysis.semitic_m2p_topologies2]
+        tool = 'bayesphylogenies'
+        model = 'm2p+topologies2'
+        details = ""
+        data = "@data.semitic"
+        
+    [analysis.semitic_covarion]
+        tool = 'bayesphylogenies'
+        model = 'covarion'
+        details = ""
+        data = "@data.semitic"
+        
+    [analysis.semitic_covarion_topologies2]
+        tool = 'bayesphylogenies'
+        model = 'covarion+topologies2'
+        details = ""
+        data = "@data.semitic"
+        
+    [analysis.semitic_m2p_gamma]
+        tool = 'bayesphylogenies'
+        model = 'm2p+gamma'
+        details = ""
+        data = "@data.semitic"
+        
+    [analysis.semitic_m2p_gamma_topologies2]
+        tool = 'bayesphylogenies'
+        model = 'm2p+gamma+topologies2'
+        details = ""
+        data = "@data.semitic"
+        
+    [analysis.semitic_covarion_gamma]
+        tool = 'bayesphylogenies'
+        model = 'covarion+gamma'
+        details = ""
+        data = "@data.semitic"
+        
+    [analysis.semitic_covarion_gamma_topologies2]
+        tool = 'bayesphylogenies'
+        model = 'covarion+gamma+topologies2'
+        details = ""
+        data = "@data.semitic"
+        
+    [analysis.japonic_m2p]
+        tool = 'bayesphylogenies'
+        model = 'm2p'
+        details = ""
+        data = "@data.japonic"
+        
+    [analysis.japonic_m2p_topologies2]
+        tool = 'bayesphylogenies'
+        model = 'm2p+topologies2'
+        details = ""
+        data = "@data.japonic"
+        
+    [analysis.japonic_covarion]
+        tool = 'bayesphylogenies'
+        model = 'covarion'
+        details = ""
+        data = "@data.japonic"
+        
+    [analysis.japonic_covarion_topologies2]
+        tool = 'bayesphylogenies'
+        model = 'covarion+topologies2'
+        details = ""
+        data = "@data.japonic"
+        
+    [analysis.japonic_m2p_gamma]
+        tool = 'bayesphylogenies'
+        model = 'm2p+gamma'
+        details = ""
+        data = "@data.japonic"
+        
+    [analysis.japonic_m2p_gamma_topologies2]
+        tool = 'bayesphylogenies'
+        model = 'm2p+gamma+topologies2'
+        details = ""
+        data = "@data.japonic"
+        
+    [analysis.japonic_covarion_gamma]
+        tool = 'bayesphylogenies'
+        model = 'covarion+gamma'
+        details = ""
+        data = "@data.japonic"
+        
+    [analysis.japonic_covarion_gamma_topologies2]
+        tool = 'bayesphylogenies'
+        model = 'covarion+gamma+topologies2'
+        details = ""
+        data = "@data.japonic"
+        
+    [analysis.network_minority]
+        tool = 'splitstree'
+        model = 'neighbornet'
+        details = "minority topology from @analysis.indoeuropean_m2p_gamma_topologies2"
+        data = ""
+
+    [analysis.network_majority]
+        tool = 'splitstree'
+        model = 'neighbornet'
+        details = "majority topology from @analysis.indoeuropean_m2p_gamma_topologies2"
+        data = ""
+
 
 
 [links]
-phlorest = { title = "Phlorest Dataset", link = "" }
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/verkerk2019" }
 cldf = { title = "CLDF Dataset", link = "" }
 dplace = { title = "D-PLACE Dataset", link = "" }
 links = []

@@ -7,7 +7,7 @@ abstract = """
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
-authors = ["Chundra Cathcart", "Gerd Carling", "Filip Larsson", "Niklas Johansson", "Erich R. Round"]
+authors = ["Chundra A. Cathcart", "Gerd Carling", "Filip Larsson", "Niklas Johansson", "Erich R. Round"]
 
 # parts of the world
 groups = []  # 'Austronesian', etc

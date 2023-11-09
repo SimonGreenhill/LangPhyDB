@@ -16,7 +16,7 @@ interpretation of results. The chapter reviews results and controversies arising
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
-authors = ["Gerd Carling", "Chundra Cathcart", "Erich R. Round"]
+authors = ["Gerd Carling", "Chundra A. Cathcart", "Erich R. Round"]
 
 # parts of the world
 groups = ['global']  # 'Austronesian', etc

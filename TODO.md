@@ -9,6 +9,7 @@
 * Pagel 2000. The History, Rate and Pattern of World Linguistic Evolution. In C Knight, M Studdert-Kennedy, & J Hurford (Eds.), The evolutionary emergence of language (pp. 391–416). Cambridge University Press.
 * Ringe et al. 1998. Computational cladistics and the position of Tocharian. In V Mair (Ed.), The Bronze Age and Early Iron Age Peoples of Eastern Central Asia, Volume 1: Archeology, Migration and Nomadism: Journal of Indo-European Studies Monograph Series (Vol. 26). Institute for the Study of Man.
 * Warnow & Michailov. 1998. Computational Cladistics and the Position of Tocharian. In V Mair (Ed.), The Bronze Age and early Iron Age peoples of eastern Central Asia (pp. 391–414). JIES Monograph.
+* Witzlack-Makarevich, Alena, Taras Zakharko, Lennart Bierkandt, Fernando Zúñiga & Balthasar Bickel. 2016. DecomposingHierarchical Alignment: Co-Arguments as Conditions on Alignment and the Limits of Referential Hierarchies asExplanations in Verb Agreement. Linguistics 54. 531–561. doi:10.1515/ling-2016-0011. 
 
 
 

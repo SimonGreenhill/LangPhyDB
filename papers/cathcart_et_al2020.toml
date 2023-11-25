@@ -3,42 +3,56 @@ title = "Numeral classifiers and number marking in Indo-Iranian"
 doi = "10.1163/22105832-bja10013"
 
 abstract = """
-
+This paper investigates the origins of sortal numeral classifiers in the Indo-Iranian languages. While these are
+often assumed to result from contact with non-Indo-European languages, an alternative possibility is that
+classifiers developed as a response to the rise of optional plural marking. This alternative is in line with the
+so-called Greenberg-Sanches-Slobin (henceforth GSS) generalization. The GSS generalization holds that the presence
+of sortal numeral classifiers across languages is negatively correlated with obligatory plural marking on nouns. We
+assess the extent to which Indo-Iranian classifier development is influenced by loosening of restrictions on plural
+marking using a sample of 65 languages and a Bayesian phylogenetic model, inferring posterior distributions over
+evolutionary transition rates between typological states and using these rates to reconstruct the history of
+classifiers and number marking throughout Indo-Iranian, constrained by historically attested states. We find broad
+support for a diachronically oriented construal of the GSS generalization, but find no evidence for a strong bias
+against the synchronic co-occurrence of classifiers and obligatory plural marking. Inspection of the most likely
+diachronic trajectories in individual lineages in the tree shows a stronger effect of the GSS among Iranian
+languages than Indo-Aryan languages. Taken as a whole, these findings suggest that the association of classifiers
+and optional number marking in Indo-Iranian is neither solely the effect of universal mechanisms nor of the
+contingency of local contact histories.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Chundra A. Cathcart", "Andreas Hölzl", "Gerhard Jäger", "Paul Widmer", "Balthasar Bickel"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Indo-European']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Cathcart_2020"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['trait']
+framework = ['bayesian']
 # short description of the study, one line.
-description = ""
+description = "Numeral classifiers and number marking in Indo-Iranian"
 
 # data
 [data]
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    [data.asjp]
+    datatype = 'lexical distances'
+    source = '@ASJP18'
     items = ''
     comment = ''
 
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
+    [data.classifiers]
+    ntaxa = 65
+    nchars = 4
+    nsites = 4
+    datatype = 'structural features'
+    source = ''
+    items = ''
     comment = ''
 
 
@@ -47,11 +61,84 @@ description = ""
 
     notes = ""
 
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    [calibration.root]
+    taxa = ['indo1320']
+    age = "uniform(3600, 3800)" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
     units = "ybp" # ybp
     description = ""
+
+    [calibration.Sanskrit]
+        taxa = ['sans1269']
+        age = "uniform(3000, 3400)"
+        units = "ybp" # ybp
+        description = ""
+    
+    [calibration.Pali]
+        taxa = ['pali1273']
+        age = "uniform(2000, 2300)"
+        units = "ybp" # ybp
+        description = ""
+    
+    [calibration.Prakrit]
+        taxa = ['maha1305']
+        age = "uniform(2000, 2300)"
+        units = "ybp" # ybp
+        description = ""
+    
+    [calibration.OldEastRajasthani]
+        taxa = ['dhun1238']
+        age = "uniform(200, 0400)"
+        units = "ybp" # ybp
+        description = ""
+    
+    [calibration.Avestan]
+        taxa = ['aves1237']
+        age = "uniform(2600, 2800)"
+        units = "ybp" # ybp
+        description = ""
+    
+    [calibration.KhotaneseSaka]
+        taxa = ['khot1251']
+        age = "uniform(1100, 1300)"
+        units = "ybp" # ybp
+        description = ""
+    
+    [calibration.Khwarezmian]
+        taxa = ['khwa1238']
+        age = "uniform(800, 1000)"
+        units = "ybp" # ybp
+        description = ""
+    
+    [calibration.Sogdian]
+        taxa = ['sogd1245']
+        age = "uniform(1000, 1200)"
+        units = "ybp" # ybp
+        description = ""
+    
+    [calibration.Bactrian]
+        taxa = ['bact1239']
+        age = "uniform(1000, 1200)"
+        units = "ybp" # ybp
+        description = ""
+    
+    [calibration.Parthian]
+        taxa = ['part1239']
+        age = "uniform(1800, 2000)"
+        units = "ybp" # ybp
+        description = ""
+    
+    [calibration.MiddlePersian]
+        taxa = ['pahl1241']
+        age = "uniform(1400, 1800)"
+        units = "ybp" # ybp
+        description = ""
+    
+    [calibration.OldPersian]
+        taxa = ['oldp1254']
+        age = "uniform(2300, 2500)"
+        units = "ybp" # ybp
+        description = ""
+    
 
 
 # analysis information
@@ -60,20 +147,87 @@ description = ""
     notes = ""
     
     [analysis.tree]
-    tool = ''
-    model = ''
+    tool = 'revbayes'
+    model = 'gtr+birthdeath+gamma+relaxed'
+    details = ""
+    data = "@ASJP18"
+    
+    [analysis.rate1]
+    tool = 'stan'
+    model = 'custom'
+    details = ""
+    data = ""
+    
+    [analysis.rate2]
+    tool = 'stan'
+    model = 'custom'
+    details = ""
+    data = ""
+
+    [analysis.rate3]
+    tool = 'stan'
+    model = 'custom'
+    details = ""
+    data = ""
+
+    [analysis.rate4]
+    tool = 'stan'
+    model = 'custom'
+    details = ""
+    data = ""
+
+    [analysis.rate5]
+    tool = 'stan'
+    model = 'custom'
+    details = ""
+    data = ""
+
+    [analysis.rate6]
+    tool = 'stan'
+    model = 'custom'
+    details = ""
+    data = ""
+
+    [analysis.rate7]
+    tool = 'stan'
+    model = 'custom'
+    details = ""
+    data = ""
+
+    [analysis.rate8]
+    tool = 'stan'
+    model = 'custom'
+    details = ""
+    data = ""
+
+    [analysis.scm1]
+    tool = 'phytools'
+    model = 'simmap'
+    details = ""
+    data = ""
+
+    [analysis.scm2]
+    tool = 'phytools'
+    model = 'simmap'
+    details = ""
+    data = ""
+
+    [analysis.scm3]
+    tool = 'phytools'
+    model = 'simmap'
+    details = ""
+    data = ""
+
+    [analysis.scm4]
+    tool = 'phytools'
+    model = 'simmap'
     details = ""
     data = ""
 
 [inferredages]
     
-    notes = ""
+    notes = "root age constrained"
     
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
 
 
 [links]

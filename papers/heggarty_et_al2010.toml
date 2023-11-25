@@ -3,55 +3,58 @@ title = "Splits or waves? Trees or webs? How divergence measures and network ana
 doi = "10.1098/rstb.2010.0099"
 
 abstract = """
-
+Linguists have traditionally represented patterns of divergence within a language family in terms
+of either a 'splits' model, corresponding to a branching family tree structure, or the wave model,
+resulting in a (dialect) continuum. Recent phylogenetic analyses, however, have tended to assume
+the former as a viable idealization also for the latter. But the contrast matters, for it typically
+reflects different processes in the real world: speaker populations either separated by migrations,
+or expanding over continuous territory. Since history often leaves a complex of both patterns
+within the same language family, ideally we need a single model to capture both, and tease apart
+the respective contributions of each. The 'network' type of phylogenetic method offers this, so we
+review recent applications to language data. Most have used lexical data, encoded as binary or
+multi-state characters. We look instead at continuous distance measures of divergence in phonetics.
+Our output networks combine branch- and continuum-like signals in ways that correspond well to
+known histories (illustrated for Germanic, and particularly English). We thus challenge the
+traditional insistence on shared innovations, setting out a new, principled explanation for why
+complex language histories can emerge correctly from distance measures, despite shared retentions
+and parallel innovations.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Paul Heggarty", "Warren Maguire", "April McMahon"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Indo-European']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Heggarty_2010"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
-# short description of the study, one line.
-description = ""
+type = ['phylogenetic']
+framework = ['network'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 
 # data
 [data]
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    [data.germanic]
+    ntaxa = 52
+    nchars = 1
+    nsites = 1
+    datatype = 'phonetic distance'
+    source = ''
     items = ''
     comment = ''
 
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
+    [data.english]
+    ntaxa = 40
+    nchars = 1
+    nsites = 1
+    datatype = 'phonetic distance'
+    source = ''
+    items = ''
     comment = ''
-
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
 
 
 # analysis information
@@ -59,21 +62,18 @@ description = ""
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
+    [analysis.germanic]
+    tool = 'splitstree'
+    model = 'neighbornet'
     details = ""
-    data = ""
+    data = "@data.germanic"
 
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
+    [analysis.english]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "@data.english"
+
 
 
 [links]

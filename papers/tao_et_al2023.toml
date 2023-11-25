@@ -1,0 +1,189 @@
+title = "Phylogenetic evidence reveals early Kra-Dai divergence and dispersal in the late Holocene"
+
+doi = "10.1038/s41467-023-42761-x"
+
+abstract = """
+Studying language evolution brings a crucial perspective to bear on questions of human prehistory.
+As the most linguistically diverse region on earth, East and Southeast Asia have witnessed
+extensive sociocultural and ethnic contacts among different language communities. Especially, the
+Kra-Dai language family exhibits tremendous socio-cultural importance in these regions. Due to
+limited historical accounts, however, there are several controversies on their linguistic
+relatedness, ambiguities regarding the divergence time, and uncertainties on the dispersal
+patterns. To address these issues, here we apply Bayesian phylogenetic methods to analyze the
+largest lexical dataset containing 646 cognate sets compiled for 100 Kra-Dai languages. Our dated
+phylogenetic tree showed their initial divergence occurring approximately 4000 years BP.
+Phylogeographic results supported the early Kra-Dai language dispersal from the Guangxi-Guangdong
+area of South China towards Mainland Southeast Asia. Coupled with genetic, archaeological,
+paleoecologic, and paleoclimatic data, we demonstrated that the Kra-Dai language diversification
+could have coincided with their demic diffusion and agricultural spread shaped by the global
+climate change in the late Holocene. The interdisciplinary alignments shed light on reconstructing
+the prehistory of Kra-Dai languages and provide an indispensable piece of the puzzle for further
+studying prehistoric human activities in East and Southeast Asia.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Yuxin Tao", "Yuancheng Wei", "Jiaqi Ge", "Yan Pan", "Wenmin Wang", "Qianqi Bi", "Pengfei Sheng", "Changzhong Fu", "Wuyun Pan", "Li Jin", "Hong-Xiang Zheng", "Menghan Zhang"]
+
+# parts of the world
+groups = ['Kra-Dai']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Tao_2023"
+
+# type of study
+type = ['phylogenetic', 'dating', 'phylogeography']
+framework = ['bayesian']
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.kd]
+    ntaxa = 100
+    nchars = 100
+    nsites = 646
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'swadesh100'
+    comment = ''
+
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.Kra]
+    taxa = ["kada1291"]
+    age = "normal(2500, 250)"
+    units = "ybp" # ybp
+    description = "The splits of Kra languages  occurred from the Shang Dynasty to Han Dynasty"
+
+    [calibration.Hlai]
+    taxa = ["hlai1239"]
+    age = "uniform(0, 3000)"
+    units = "ybp" # ybp
+    description = "The ancestry of Hlai people started the migration to Hainan Island at roughly 4000-5000 years BP, and further migrated into the Wuzhishan mountain region of present Hainan province after the ancestry of Ong-Be people migrated into Northern Hainan Island at approximately 2500 years BP."
+
+    [calibration.Hlai_Originate]
+    taxa = ["hlai1239"]
+    age = "uniform(0, 5000)+originate"
+    units = "ybp" # ybp
+    description = "The ancestry of Hlai languages started the migration to Hainan Island at roughly 4000-5000 years BP, and further migrated into the Wuzhishan mountain region of present Hainan province after the ancestry of Ong-Be languages migrated into Northern Hainan Island at approximately 2500 years BP."
+
+    [calibration.Ong-Be]
+    taxa = ["ling1270"]
+    age = "normal(2000, 250)"
+    units = "ybp" # ybp
+    description = "The ancestry of Ong-Be languages migrated into Northern Hainan Island at approximately 2500 years BP."
+
+    [calibration.Kam-Sui]
+    taxa = ["kams1241"]
+    age = "normal(1200, 100)"
+    units = "ybp" # ybp
+    description = "During the Sui and Tang dynasties, the ancestors of Dong and Mulam people started northwestward migration from Western Guangdong and Eastern Guangxi provinces to the Rongjiang county of Guizhou province, and further gradually dispersed to the border area of Hunan, Guizhou, Guangxi provinces."
+
+    [calibration.Biao_Lakkia]
+    taxa = ["lakk1237"]
+    age = "normal(600, 50)"
+    units = "ybp" # ybp
+    description = "The splits of Biao and Lakkia languages occurred at 600 - 700 years BP."
+
+    [calibration.Tai]
+    taxa = ["sout3184"]
+    age = "uniform(0, 2220)"
+    units = "ybp" # ybp
+    description = "The ancestry of southwest Tai languages (e.g. Shan, Dai, Thai) migrated westward after Qin unified six States (~2200 years BP). Thus, the divergence of proto-Tai languages occurred no more than 2200 years BP."
+
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.beast_ctmc_strict]
+    tool = 'beast2'
+    model = 'ctmc+strict'
+    details = ""
+    data = ""
+
+    [analysis.beast_ctmc_relaxed]
+    tool = 'beast2'
+    model = 'ctmc+relaxed'
+    details = ""
+    data = ""
+
+    [analysis.beast_ctmc_gamma4_strict]
+    tool = 'beast2'
+    model = 'ctmc+gamma4+strict'
+    details = ""
+    data = ""
+
+    [analysis.beast_ctmc_gamma4_relaxed]
+    tool = 'beast2'
+    model = 'ctmc+gamma4+relaxed'
+    details = ""
+    data = ""
+
+    [analysis.beast_covarion_strict]
+    tool = 'beast2'
+    model = 'covarion+strict'
+    details = ""
+    data = ""
+
+    [analysis.beast_covarion_relaxed]
+    tool = 'beast2'
+    model = 'covarion+relaxed'
+    details = ""
+    data = ""
+
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.Proto-Kra-Dai]
+    taxa = ["taik1256"]
+    age = "hpd(4041, 2741, 5550)"
+    units = "ybp" # ybp
+    notes = ""
+
+    [inferredage.Proto-Kra]
+    taxa = ["kada1291"]
+    age = "hpd(2435, 1967, 2909)"
+    units = "ybp" # ybp
+    notes = ""
+
+    [inferredage.Proto-Hlai]
+    taxa = ["hlai1238"]
+    age = "hpd(1155, 443, 2035)"
+    units = "ybp" # ybp
+    notes = ""
+
+    [inferredage.Proto-Ong-Be]
+    taxa = ["ling1270"]
+    age = "hpd(1750, 1299, 2226)"
+    units = "ybp" # ybp
+    notes = ""
+
+    [inferredage.Proto-Kam-Sui]
+    taxa = ["kams1241"]
+    age = "hpd(1222, 1044, 1410)"
+    units = "ybp" # ybp
+    notes = ""
+
+    [inferredage.Proto-Tai]
+    taxa = ["daic1237"]
+    age = "hpd(1360, 873, 1903)"
+    units = "ybp" # ybp
+    notes = ""
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/tao_et_al2023" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

@@ -37,7 +37,7 @@ groups = ["Indo-European"]  # 'Austronesian', etc
 bibkey = "@Chang2015"
 
 # type of study
-type = ['phylogenetic']
+type = ['phylogenetic', 'dating']
 framework = ['bayesian']
 
 # short label of taxa "37 languages from.."
@@ -320,9 +320,113 @@ description = "Phylogenetic analysis of Indo-European languages"
     
     [inferredage.ProtoIndoEuropean]
     taxa = ["indo1319"]
-    age = "hpd(5950,7190,4870)"
-    units = "y2000"
+    age = "hpd(5950, 7190, 4870)"
+    units = "ybp"
     notes = 'A1 Narrow dataset'
+
+
+    [inferredage.A1_Narrow]
+    taxa = ["indo1319"]
+    age = "hpd(5950, 7190, 4870)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.A1_Corrected]
+    taxa = ["indo1319"]
+    age = "hpd(6580, 7790, 5730)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.A2_Medium]
+    taxa = ["indo1319"]
+    age = "hpd(6410, 7910, 5190)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.A2_Corrected]
+    taxa = ["indo1319"]
+    age = "hpd(6740, 8330, 5510)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.A3_Broad]
+    taxa = ["indo1319"]
+    age = "hpd(5930, 7250, 4860)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.A4_ExcludeLoans]
+    taxa = ["indo1319"]
+    age = "hpd(6060, 7280, 5000)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.A5_FewerMeaningClasses]
+    taxa = ["indo1319"]
+    age = "hpd(6060, 7590, 4870)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.A6_ConstantPopCoalTreePrior]
+    taxa = ["indo1319"]
+    age = "hpd(6130, 7420, 5070)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.A7_Covarion]
+    taxa = ["indo1319"]
+    age = "hpd(6140, 7710, 4760)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.B1_]
+    taxa = ["indo1319"]
+    age = "hpd(7750, 9720, 6180)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.B2_]
+    taxa = ["indo1319"]
+    age = "hpd(6810, 8780, 5400)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.B3_]
+    taxa = ["indo1319"]
+    age = "hpd(6440, 8670, 5110)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.C1_RSC_AncConstraints]
+    taxa = ["indo1319"]
+    age = "hpd(6470, 8700, 4920)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.C2_RSC_HomoAncConstraints]
+    taxa = ["indo1319"]
+    age = "hpd(5780, 7380, 4550)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.C3_RSC_NoAncConstraints]
+    taxa = ["indo1319"]
+    age = "hpd(7670, 9460, 6190)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.C4_RSC_HomoNoAncConstraints]
+    taxa = ["indo1319"]
+    age = "hpd(6890, 8350, 5670)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.C5_SDC_HomoNoAncConstraints]
+    taxa = ["indo1319"]
+    age = "hpd(7060, 8390, 5940)"
+    units = "ybp"
+    notes = ""
+
 
 
 [links]

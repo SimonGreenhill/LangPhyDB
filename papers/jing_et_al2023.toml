@@ -3,81 +3,71 @@ title = "Word order evolves at similar rates in main and subordinate clauses"
 doi = "10.1075/dia.20035.jin"
 
 abstract = """
+It remains an open issue whether word orders in subordinate clauses are more conservative or innovative thanmain clauses in syntactic change. Using 47 dependency-annotated corpora and Bayesian phylogenetic inference, weexplore the evolution of S/V, V/O, and S/O orders across main and subordinate clauses in Indo-European. Our resultsreveal similar rates of change across clause types, with no evidence for any inherent conservatism of subordinate ormain clauses. Our models also support evolutionary biases towards SV, VO, and SO orders, consistent with theoriesof dependency length minimization that favor verb-medial orders and with theories of a subject preference thatfavor SO orders. Finally, our results show that while the word order in the proto-language cannot be estimatedwith any reasonable degree of certainty, the early history of the family was dominated by a moderate preferencefor SVO orders, with substantial uncertainty between VO and OV orders in both main and subordinate clauses. 
 
+(PDF) Syntactic Harmony, Flexibility and Change in Language Use. Available from: https://www.researchgate.net/publication/351919632_Syntactic_Harmony_Flexibility_and_Change_in_Language_Use [accessed Nov 24 2023]..
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Yingqi Jing", "Paul Widmer", "Balthasar Bickel"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Indo-European']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Jing_2023"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['trait']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
-description = ""
+description = "Analysis of Word Order"
 
 # data
 [data]
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    [data.UD]
+    ntaxa = 26
+    nchars = 3
+    nsites = 3
+    datatype = 'frequency'
+    source = '@UD'
     items = ''
     comment = ''
 
 # published phylogenies
 [phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
+    [phylogenies.bouckaert]
+    source = '@Bouckaert2012'
     comment = ''
 
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
+    [phylogenies.chang]
+    source = '@Chang2015'
+    comment = ''
 
 
 # analysis information
 [analysis]
     
     notes = ""
-    
-    [analysis.tree]
-    tool = ''
-    model = ''
-    details = ""
-    data = ""
 
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
+    [analysis.tree_bouckaert]
+    tool = 'phytools'
+    model = 'm2p'
+    details = ""
+    data = "data coded as transformed frequencies; @phylogenies.bouckaert"
+
+    [analysis.tree_chang]
+    tool = 'phytools'
+    model = 'm2p'
+    details = ""
+    data = "data coded as transformed frequencies; @phylogenies.chang"
 
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }
 cldf = { title = "CLDF Dataset", link = "" }
 dplace = { title = "D-PLACE Dataset", link = "" }
-links = []
+links = ['https://doi.org/10.17605/OSF.IO/X8U2R']

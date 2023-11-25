@@ -1,19 +1,19 @@
-title = "The evolution of matrilineal kinship organization"
+title = "Testing Inferences about Language Contact on Morphosyntax: A Typological Case Study on Alorese{\textendash}Adang Contact"
 
-doi = "10.1098/rspb.2012.1926"
+doi = "https://doi.org/10.1111/1467-968X.12284"
 
 abstract = """
 
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
-authors = ["Laura Fortunato"]
+authors = ["Kaius Sinnemäki", "Noora Ahola"]
 
 # parts of the world
 groups = []  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
-bibkey = "@Fortunato_2012"
+bibkey = "@Sinnem_ki_2023"
 
 # type of study
 type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,

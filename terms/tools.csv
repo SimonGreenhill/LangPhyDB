@@ -10,6 +10,7 @@ bayestrees,
 beast,https://beast.community
 beast2,http://www.beast2.org/
 brownie.lite,R package brownie
+brms,Bayesian Regression Models using 'Stan'
 caper,R package caper
 corHMM,
 custom,Custom tool

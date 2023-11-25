@@ -3,77 +3,112 @@ title = "New Evidence from Linguistic Phylogenetics Identifies Limits to Punctua
 doi = "10.1093/sysbio/syw106"
 
 abstract = """
-
+Since the early 1970s, biologists have debated whether evolution is punctuated by speciation events with bursts of
+cladogenetic changes, or whether evolution tends to be of a more gradual, anagenetic nature. A similar discussion
+among linguists has barely begun, but the present results suggest that there is also room for controversy over this
+issue in linguistics. The only previous study correlated the number of nodes in linguistic phylogenies with branch
+lengths and found support for punctuated equilibrium. We replicate this result for branch lengths, but find no
+support for punctuated equilibrium using a different, automated measure of linguistic divergence and a much larger
+data set. With the automated measure, segments of trees containing more nodes show no greater divergence from an
+outgroup than segments containing fewer nodes.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Eric W. Holman", "Søren Wichmann"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Holman_2016"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
-# short description of the study, one line.
-description = ""
+type = ['macroevolutionary']
+framework = ['statistical']
+description = "New Evidence from Linguistic Phylogenetics Identifies Limits to Punctuational Change"
 
 # data
 [data]
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    [data.asjp]
+    datatype = 'lexical distance'
+    source = '@ASJP16'
     items = ''
     comment = ''
 
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
+    [data.abvd]
+    datatype = 'lexical cognates'
+    source = '@ABVD'
+    items = ''
+    comment = ''
+
+    [data.ielex]
+    datatype = 'lexical cognates'
+    source = '@IELex'
+    items = ''
+    comment = ''
+
+    [data.bastin]
+    datatype = 'lexical cognates'
+    source = '@Bastinetal1999'
+    items = ''
     comment = ''
 
 
-# date calibrations
-[calibrations]
+# published phylogenies
+[phylogenies]
+    [phylogenies.defilippo2012]
+    source = '@de_Filippo_2012'
+    comment = ''
 
-    notes = ""
+    [phylogenies.currie2013]
+    source = '@Currie2013'
+    comment = ''
 
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
+    [phylogenies.kitchen2009]
+    source = '@Kitchen2009'
+    comment = ''
 
+    [phylogenies.grayatkinson2003]
+    source = '@Gray2003'
+    comment = ''
+
+    [phylogenies.gray_et_al2009]
+    source = '@Gray2009'
+    comment = ''
+
+    [phylogenies.bowern_atkinson2012]
+    source = '@Bowern2012'
+    comment = ''
+
+    [phylogenies.wheeler_whiteley2014]
+    source = '@Wheeler2014'
+    comment = ''
+
+    [phylogenies.walker2011]
+    source = '@Walker2011'
+    comment = ''
+
+    [phylogenies.glottolog]
+    source = '@Glottolog23'
+    comment = ''
+
+    [phylogenies.ethnologue]
+    source = '@Ethnologue17'
+    comment = ''
 
 # analysis information
 [analysis]
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
+    [analysis.statistical]
+    tool = 'r'
     model = ''
     details = ""
     data = ""
-
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
 
 
 [links]

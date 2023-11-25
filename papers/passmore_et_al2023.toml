@@ -35,64 +35,76 @@ groups = ['global']  # 'Austronesian', etc
 bibkey = "@Passmore_2023"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['trait']
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
-description = ""
+description = "Presentation of the Kinbank database with some illustrative analyses"
 
 # data
 [data]
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    [data.kinbank_mother_father]
+    ntaxa = 1022
+    nchars = 2
+    nsites = 2
+    datatype = 'phonetic traits'
+    source = '@Passmore_2023'
     items = ''
     comment = ''
 
+    [data.kinbank_crossness]
+    ntaxa = 56
+    nchars = 1
+    nsites = 1
+    datatype = 'structural features'
+    source = '@Passmore_2023'
+    items = ''
+    comment = ''
+    
+    [data.ea]
+    ntaxa = 56
+    nchars = 1
+    nsites = 1
+    datatype = 'ethnographic features'
+    source = '@DPLACE;@EthAtlas'
+    items = ''
+    comment = 'EA023 Cousin Marriage'
+    
+    
 # published phylogenies
 [phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
+    [phylogenies.jaeger2018]
+    source = '@Jaeger2018'
     comment = ''
 
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
-
+    [phylogenies.grollemund]
+    source = '@Grollemund2015'
+    comment = ''
 
 # analysis information
 [analysis]
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
+    [analysis.mother_vs_father]
+    tool = 'brms'
+    model = 'phylogenetic regression'
     details = ""
-    data = ""
+    data = "@phylogenies.jaeger2018; @data.kinbank_mother_father"
 
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
+    [analysis.crossness_d]
+    tool = 'bayestraits'
+    model = 'dependent'
+    details = ""
+    data = "@phylogenies.grollemund; @data.ea; @data.kinbank_crossness"
+
+    [analysis.crossness_i]
+    tool = 'bayestraits'
+    model = 'independent'
+    details = ""
+    data = "@phylogenies.grollemund; @data.ea; @data.kinbank_crossness"
 
 
 [links]

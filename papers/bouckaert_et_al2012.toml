@@ -294,13 +294,13 @@ description = "103 Indo-European languages"
 
 [inferredages]
     
-    notes = "From Correction"
+    notes = "Original Ages -- see also the Correction"
     
     [inferredage.root]
     taxa = ['indo1319']
-    age = "hpd(7579, 5972, 9351)"
+    age = "hpd(8466, 7116, 10410)"
     units = "y2000"
-    notes = "7579 years BP; 95% HPD interval = 5972 to 9351 years BP."
+    notes = "The inferred location (Fig. 1) and timing [95% highest posterior density (HPD) interval, 7116 to 10,410 years ago] of Indo-European origin is congruent with the proposal that the family began to diverge with the spread of agriculture..."
 
 
 [links]

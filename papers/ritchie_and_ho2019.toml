@@ -537,10 +537,6 @@ description = "A test of the sensitivity of Bayesian dating to the tree prior in
         details = ""
         data = "@data.semitic"
     
-
-[inferredages]
-    
-    notes = "multiple"
     
 
 [links]

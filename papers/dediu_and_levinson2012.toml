@@ -3,55 +3,52 @@ title = "Abstract Profiles of Structural Stability Point to Universal Tendencies
 doi = "10.1371/journal.pone.0045198"
 
 abstract = """
-
+Language is the best example of a cultural evolutionary system, able to retain a phylogenetic
+signal over many thousands of years. The temporal stability (conservatism) of basic vocabulary is
+relatively well understood, but the stability of the structural properties of language (phonology,
+morphology, syntax) is still unclear. Here we report an extensive Bayesian phylogenetic
+investigation of the structural stability of numerous features across many language families and we
+introduce a novel method for analyzing the relationships between the ''stability profiles'' of
+language families. We found that there is a strong universal component across language families,
+suggesting the existence of universal linguistic, cognitive and genetic constraints. Against this
+background, however, each language family has a distinct stability profile, and these profiles
+cluster by geographic area and likely deep genealogical relationships. These stability profiles
+seem to show, for example, the ancient historical relationships between the Siberian and American
+language families, presumed to be separated by at least 12,000 years, and possible connections
+between the Eurasian families. We also found preliminary support for the punctuated evolution of
+structural features of language across families, types of features and geographic areas. Thus, such
+higher-level properties of language seen as an evolutionary system might allow the investigation of
+ancient connections between languages and shed light on the peopling of the world.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Dan Dediu", "Stephen C. Levinson"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Dediu_2012"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['trait']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
-description = ""
+description = "A phylogenetic analysis of the stability of typological features"
 
 # data
 [data]
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    [data.wals]
+    ntaxa = 459
+    nchars = 86
+    nsites = 86
+    datatype = 'structural features'
+    source = '@WALS'
     items = ''
-    comment = ''
-
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
-
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
+    comment = 'multiple codings and subsets'
 
 
 # analysis information
@@ -59,21 +56,78 @@ description = ""
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
-    details = ""
-    data = ""
-
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
+    [analysis.mrbayes_binary_ethnologue]
+        tool = 'mrbayes'
+        model = 'm2p'
+        details = "subset of WALS data, coded as binary, that matched the classification in ethnologue"
+        data = "@data.wals"
+        
+    [analysis.mrbayes_binary_wals]
+        tool = 'mrbayes'
+        model = 'm2p'
+        details = "subset of WALS data, coded as binary, that matched the classification in wals"
+        data = "@data.wals"
+        
+    [analysis.mrbayes_binary_glottolog]
+        tool = 'mrbayes'
+        model = 'm2p'
+        details = "subset of WALS data, coded as binary, that matched the classification in glottolog"
+        data = "@data.wals"
+        
+    [analysis.mrbayes_polymorphic_ethnologue]
+        tool = 'mrbayes'
+        model = 'm2p'
+        details = "subset of WALS data, coded as polymorphic, that matched the classification in ethnologue"
+        data = "@data.wals"
+        
+    [analysis.mrbayes_polymorphic_wals]
+        tool = 'mrbayes'
+        model = 'm2p'
+        details = "subset of WALS data, coded as polymorphic, that matched the classification in wals"
+        data = "@data.wals"
+        
+    [analysis.mrbayes_polymorphic_glottolog]
+        tool = 'mrbayes'
+        model = 'm2p'
+        details = "subset of WALS data, coded as polymorphic, that matched the classification in glottolog"
+        data = "@data.wals"
+        
+    [analysis.bayeslang_binary_ethnologue]
+        tool = 'bayeslang'
+        model = 'm2p'
+        details = "subset of WALS data, coded as binary, that matched the classification in ethnologue"
+        data = "@data.wals"
+        
+    [analysis.bayeslang_binary_wals]
+        tool = 'bayeslang'
+        model = 'm2p'
+        details = "subset of WALS data, coded as binary, that matched the classification in wals"
+        data = "@data.wals"
+        
+    [analysis.bayeslang_binary_glottolog]
+        tool = 'bayeslang'
+        model = 'm2p'
+        details = "subset of WALS data, coded as binary, that matched the classification in glottolog"
+        data = "@data.wals"
+        
+    [analysis.bayeslang_polymorphic_ethnologue]
+        tool = 'bayeslang'
+        model = 'm2p'
+        details = "subset of WALS data, coded as polymorphic, that matched the classification in ethnologue"
+        data = "@data.wals"
+        
+    [analysis.bayeslang_polymorphic_wals]
+        tool = 'bayeslang'
+        model = 'm2p'
+        details = "subset of WALS data, coded as polymorphic, that matched the classification in wals"
+        data = "@data.wals"
+        
+    [analysis.bayeslang_polymorphic_glottolog]
+        tool = 'bayeslang'
+        model = 'm2p'
+        details = "subset of WALS data, coded as polymorphic, that matched the classification in glottolog"
+        data = "@data.wals"
+        
 
 
 [links]

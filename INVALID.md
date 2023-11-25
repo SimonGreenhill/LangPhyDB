@@ -23,6 +23,10 @@ Papers deemed to fall outside scope, alphabetically by first author surname.
     - no explicit phylogenetic analysis.
 
 ## F
+
+* Fortunato, L. (2012). The evolution of matrilineal kinship organization. Proceedings of the Royal Society B: Biological Sciences, 279(1749), 4939–4945. https://doi.org/10.1098/rspb.2012.1926
+    - no explicit phylogenetic analysis.
+
 ## G
 
 * Garrett, A. (2006). Convergence in the formation of Indo-European subgroups: Phylogeny and Chronology. In P Forster & C Renfrew (Eds.), Phylogenetic methods and the prehistory of languages (Vol. 1, pp. 139-151). McDonald Institute for Archaeological Research.

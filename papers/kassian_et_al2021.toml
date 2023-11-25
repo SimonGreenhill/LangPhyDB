@@ -3,7 +3,17 @@ title = "Rapid radiation of the inner Indo-European languages: an advanced appro
 doi = "10.1515/ling-2020-0060"
 
 abstract = """
-
+In this article we present a new reconstruction of Indo-European phylogeny based on 13 110-item basic wordlists for
+protolanguages of IE subgroups (Proto-Germanic, Proto-Slavic, etc.) or ancient languages of the corresponding
+subgroups (Hittite, Ancient Greek, etc.). We apply reasonably formal techniques of linguistic data collection and
+post-processing (onomasiological reconstruction, derivational drift elimination, homoplastic optimization) that
+have been recently proposed or specially developed for the present study. We use sequential phylogenetic workflow
+and obtain a consensus tree based on several algorithms (Bayesian inference, maximum parsimony, neighbor joining;
+without topological constraints applied). The resulting tree topology and datings are entirely compatible with
+established expert views. Our main finding is the multifurcation of the Inner IE clade into four branches ca.
+3357–2162 BC: (1) Greek-Armenian, (2) Albanian, (3) Italic-Germanic-Celtic, (4) Balto-Slavic–Indo-Iranian. The
+proposed radiation scenario may be reconciled with diverse opinions on Inner IE branchings previously expressed by
+Indo-Europeanists.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
@@ -236,56 +246,111 @@ description = "Reconstruction of Indo-European"
 [inferredages]
     
     notes = ""
-    
-    [inferredage.AnatolianSplit]
-    taxa = ["anat1257"]
+
+
+    [inferredage.Stage2_AnatolianSplit]
+    taxa = ["indo1319"]
+    units = "ybp" # ybp
+    age = "hpd(5697, 6264, 5400)"
+    notes = "Anatolian split-off (root): 4314-3450 bc (mean 3747 bc)"
+
+    [inferredage.Stage2_TocharianSplit]
+    taxa = ["tokh1241"]
+    units = "ybp" # ybp
+    age = "hpd(4924, 5771, 4049)"
+    notes = "Tocharian split-off: 3821–2099 bc (mean 2974 bc)"
+
+    [inferredage.Stage2_InnerIEBreakUp]
+    taxa = ["clas1257"]
+    units = "ybp" # ybp
+    age = "hpd(4752, 5522, 4095)"
+    notes = "Inner IE break-up: 3572–2145 bc (mean 2802 bc)"
+
+    [inferredage.Stage2_GreekArmenianBreakUp]
+    taxa = ["grae1234", "arme1241"]
+    units = "ybp" # ybp
+    age = "hpd(3936, 4697, 3214)"
+    notes = "Greek-Armenian break-up: 2747–1264 bc (mean 1986 bc)"
+
+    [inferredage.Stage2_ItalicGermanicCelticBreakUp]
+    taxa = ["ital1284", "germ1287", "celt1248"]
+    units = "ybp" # ybp
+    age = "hpd(4078, 4775, 3393)"
+    notes = "Italic-Germanic-Celtic break-up: 2825–1443 bc (mean 2128 bc)"
+
+    [inferredage.Stage2_InsularCelticBreakUp]
+    taxa = ["insu1254"]
+    units = "ybp" # ybp
+    age = "hpd(2167, 2555, 1812)"
+    notes = "Insular Celtic break-up: 605bc–138ad (mean 217 bc)"
+
+    [inferredage.Stage2_BaltoSlavicIndoIranianBreakUp]
+    taxa = ["balt1263", "indo1320"]
+    units = "ybp" # ybp
+    age = "hpd(4316, 4883, 3797)"
+    notes = "Balto-Slavic–Indo-Iranian break-up: 2933–1847 bc (mean 2366 bc)"
+
+    [inferredage.Stage2_BaltoSlavicBreakUp]
+    taxa = ["balt1263"]
+    units = "ybp" # ybp
+    age = "hpd(3281, 3757, 2832)"
+    notes = "Balto-Slavic break-up: 1807–882 bc (mean 1331 bc)"
+
+    [inferredage.Stage2_IndoIranianBreakUp]
+    taxa = ["indo1320"]
+    units = "ybp" # ybp
+    age = "hpd(4180, 4050, 3397)"
+    notes = "Indo-Iranian break-up: 2100–1447 bc (mean 2230 bc)"
+
+    [inferredage.Stage3_AnatolianSplit]
+    taxa = ["indo1319"]
     age = "hpd(5636, 5400, 6089)"
     units = "ybp" # ybp
     notes = "Anatolian split-off (root): 4139–3450 bc (mean 3686 bc)"
 
-    [inferredage.TocharianSplit]
+    [inferredage.Stage3_TocharianSplit]
     taxa = ["tokh1241"]
     age = "hpd(4961, 4212, 5677)"
     units = "ybp" # ybp
     notes = "Tocharian split-off: 3727–2262 bc (mean 3011 bc)"
 
-    [inferredage.InnerIEBreakUp]
+    [inferredage.Stage3_InnerIEBreakUp]
     taxa = ["clas1257"]
     age = "hpd(4667, 4112, 5307)"
     units = "ybp" # ybp
     notes = "Inner IE break-up: 3357–2162 bc (mean 2717 bc)"
 
-    [inferredage.GreekArmenianBreakUp]
+    [inferredage.Stage3_GreekArmenianBreakUp]
     taxa = ["grae1234", "arme1241"]
     age = "hpd(3965, 3357, 4626)"
     units = "ybp" # ybp
     notes = "Greek-Armenian break-up: 2676–1407 bc (mean 2015 bc)"
 
-    [inferredage.ItalicGermanicCelticBreakUp]
+    [inferredage.Stage3_ItalicGermanicCelticBreakUp]
     taxa = ["ital1284", "germ1287", "celt1248"]
     age = "hpd(4030, 3487, 4605)"
     units = "ybp" # ybp
     notes = "Italic-Germanic-Celtic break-up: 2655–1537 bc (mean 2080 bc)"
 
-    [inferredage.InsularCelticBreakUp]
+    [inferredage.Stage3_InsularCelticBreakUp]
     taxa = ["insu1254"]
     age = "hpd(2193, 1855, 2546)"
     units = "ybp" # ybp
     notes = "Insular Celtic break-up: 596bc–95 ad (mean 243 bc)"
 
-    [inferredage.BaltoSlavicIndoIranianBreakUp]
+    [inferredage.Stage3_BaltoSlavicIndoIranianBreakUp]
     taxa = ["balt1263", "indo1320"]
     age = "hpd(4191, 3740, 4673)"
     units = "ybp" # ybp
     notes = "Balto-Slavic–Indo-Iranian break-up: 2723–1790 bc (mean 2241 bc)"
 
-    [inferredage.BaltoSlavicBreakUp]
+    [inferredage.Stage3_BaltoSlavicBreakUp]
     taxa = ["balt1263"]
     age = "hpd(3200, 2805, 3636)"
     units = "ybp" # ybp
     notes = "Balto-Slavic break-up: 1686–855 bc (mean 1250 bc)"
 
-    [inferredage.IndoIranianBreakUp]
+    [inferredage.Stage3_IndoIranianBreakUp]
     taxa = ["indo1320"]
     age = "hpd(3690, 3408, 3994)"
     units = "ybp" # ybp

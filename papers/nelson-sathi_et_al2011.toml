@@ -3,77 +3,215 @@ title = "Networks uncover hidden lexical borrowing in Indo-European language evo
 doi = "10.1098/rspb.2010.1917"
 
 abstract = """
-
+Language evolution is traditionally described in terms of family trees with ancestral languages splitting into
+descendent languages. However, it has long been recognized that language evolution also entails horizontal
+components, most commonly through lexical borrowing. For example, the English language was heavily influenced by
+Old Norse and Old French; eight per cent of its basic vocabulary is borrowed. Borrowing is a distinctly
+non-tree-like process—akin to horizontal gene transfer in genome evolution—that cannot be recovered by phylogenetic
+trees. Here, we infer the frequency of hidden borrowing among 2346 cognates (etymologically related words) of basic
+vocabulary distributed across 84 Indo-European languages. The dataset includes 124 (5%) known borrowings. Applying
+the uniformitarian principle to inventory dynamics in past and present basic vocabularies, we find that 1373 (61%)
+of the cognates have been affected by borrowing during their history. Our approach correctly identified 117 (94%)
+known borrowings. Reconstructed phylogenetic networks that capture both vertical and horizontal components of
+evolutionary history reveal that, on average, eight per cent of the words of basic vocabulary in each Indo-European
+language were involved in borrowing during evolution. Basic vocabulary is often assumed to be relatively resistant
+to borrowing. Our results indicate that the impact of borrowing is far more widespread than previously thought.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Shijulal Nelson-Sathi", "Johann-Mattis List", "Hans Geisler", "Heiner Fangerau", "Russell D. Gray", "William Martin", "Tal Dagan"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Indo-European']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Nelson_Sathi_2010"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['macroevolutionary']
+framework = ['network', 'bayesian', 'likelihood']
 # short description of the study, one line.
-description = ""
+description = "Networks uncover hidden lexical borrowing in Indo-European language evolution"
 
 # data
 [data]
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
+    [data.dyen]
+    ntaxa = 87
+    nchars = 200
+    nsites = 4049
     datatype = 'lexical cognates'
-    source = '@xxx'
+    source = '@Dyen1992;@Gray2003'
     items = ''
     comment = ''
 
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
+    [data.tob]
+    ntaxa = 73
+    nchars = 100
+    nsites = 73
+    datatype = 'lexical cognates'
+    source = '@TowerOfBabel'
+    items = ''
     comment = ''
-
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
-
 
 # analysis information
 [analysis]
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
+    [analysis.tree_dyen]
+    tool = 'mrbayes'
+    model = 'restrictionsite'
     details = ""
-    data = ""
+    data = "@data.dyen"
 
-[inferredages]
+    [analysis.tree_tob]
+    tool = 'mrbayes'
+    model = 'restrictionsite'
+    details = ""
+    data = "@data.tob"
+
+    [analysis.tree_dyen_nj]
+    tool = 'splitstree'
+    model = 'neighborjoining'
+    details = ""
+    data = "@data.dyen"
+
+    [analysis.tree_tob_nj]
+    tool = 'splitstree'
+    model = 'neighborjoining'
+    details = ""
+    data = "@data.tob"
+
+
+    # MLN
     
-    notes = ""
+    [analysis.mln_tree_dyen_LossOnly]
+        tool = 'lingpy'
+        model = 'mln(LossOnly)'
+        details = ""
+        data = "@analysis.tree_dyen"
+        
+    [analysis.mln_tree_tob_LossOnly]
+        tool = 'lingpy'
+        model = 'mln(LossOnly)'
+        details = ""
+        data = "@analysis.tree_tob"
+        
+    [analysis.mln_tree_dyen_nj_LossOnly]
+        tool = 'lingpy'
+        model = 'mln(LossOnly)'
+        details = ""
+        data = "@analysis.tree_dyen_nj"
+        
+    [analysis.mln_tree_tob_nj_LossOnly]
+        tool = 'lingpy'
+        model = 'mln(LossOnly)'
+        details = ""
+        data = "@analysis.tree_tob_nj"
+        
+    [analysis.mln_tree_dyen_Borrowing1]
+        tool = 'lingpy'
+        model = 'mln(Borrowing1)'
+        details = ""
+        data = "@analysis.tree_dyen"
+        
+    [analysis.mln_tree_tob_Borrowing1]
+        tool = 'lingpy'
+        model = 'mln(Borrowing1)'
+        details = ""
+        data = "@analysis.tree_tob"
+        
+    [analysis.mln_tree_dyen_nj_Borrowing1]
+        tool = 'lingpy'
+        model = 'mln(Borrowing1)'
+        details = ""
+        data = "@analysis.tree_dyen_nj"
+        
+    [analysis.mln_tree_tob_nj_Borrowing1]
+        tool = 'lingpy'
+        model = 'mln(Borrowing1)'
+        details = ""
+        data = "@analysis.tree_tob_nj"
+        
+    [analysis.mln_tree_dyen_Borrowing4]
+        tool = 'lingpy'
+        model = 'mln(Borrowing4)'
+        details = ""
+        data = "@analysis.tree_dyen"
+        
+    [analysis.mln_tree_tob_Borrowing4]
+        tool = 'lingpy'
+        model = 'mln(Borrowing4)'
+        details = ""
+        data = "@analysis.tree_tob"
+        
+    [analysis.mln_tree_dyen_nj_Borrowing4]
+        tool = 'lingpy'
+        model = 'mln(Borrowing4)'
+        details = ""
+        data = "@analysis.tree_dyen_nj"
+        
+    [analysis.mln_tree_tob_nj_Borrowing4]
+        tool = 'lingpy'
+        model = 'mln(Borrowing4)'
+        details = ""
+        data = "@analysis.tree_tob_nj"
+        
+    [analysis.mln_tree_dyen_Borrowing8]
+        tool = 'lingpy'
+        model = 'mln(Borrowing8)'
+        details = ""
+        data = "@analysis.tree_dyen"
+        
+    [analysis.mln_tree_tob_Borrowing8]
+        tool = 'lingpy'
+        model = 'mln(Borrowing8)'
+        details = ""
+        data = "@analysis.tree_tob"
+        
+    [analysis.mln_tree_dyen_nj_Borrowing8]
+        tool = 'lingpy'
+        model = 'mln(Borrowing8)'
+        details = ""
+        data = "@analysis.tree_dyen_nj"
+        
+    [analysis.mln_tree_tob_nj_Borrowing8]
+        tool = 'lingpy'
+        model = 'mln(Borrowing8)'
+        details = ""
+        data = "@analysis.tree_tob_nj"
+        
+    [analysis.mln_tree_dyen_Borrowing16]
+        tool = 'lingpy'
+        model = 'mln(Borrowing16)'
+        details = ""
+        data = "@analysis.tree_dyen"
+        
+    [analysis.mln_tree_tob_Borrowing16]
+        tool = 'lingpy'
+        model = 'mln(Borrowing16)'
+        details = ""
+        data = "@analysis.tree_tob"
+        
+    [analysis.mln_tree_dyen_nj_Borrowing16]
+        tool = 'lingpy'
+        model = 'mln(Borrowing16)'
+        details = ""
+        data = "@analysis.tree_dyen_nj"
+        
+    [analysis.mln_tree_tob_nj_Borrowing16]
+        tool = 'lingpy'
+        model = 'mln(Borrowing16)'
+        details = ""
+        data = "@analysis.tree_tob_nj"
+        
     
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
+
+
+
 
 
 [links]

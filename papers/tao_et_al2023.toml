@@ -31,7 +31,7 @@ groups = ['Kra-Dai']  # 'Austronesian', etc
 bibkey = "@Tao_2023"
 
 # type of study
-type = ['phylogenetic', 'dating', 'phylogeography']
+type = ['phylogenetic', 'dating', 'phylogeography', 'delta', 'qresidual']
 framework = ['bayesian']
 
 # data

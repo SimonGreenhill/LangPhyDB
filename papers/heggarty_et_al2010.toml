@@ -13,7 +13,7 @@ within the same language family, ideally we need a single model to capture both,
 the respective contributions of each. The 'network' type of phylogenetic method offers this, so we
 review recent applications to language data. Most have used lexical data, encoded as binary or
 multi-state characters. We look instead at continuous distance measures of divergence in phonetics.
-Our output networks combine branch- and continuum-like signals in ways that correspond well to
+Our output networks combine branch and continuum-like signals in ways that correspond well to
 known histories (illustrated for Germanic, and particularly English). We thus challenge the
 traditional insistence on shared innovations, setting out a new, principled explanation for why
 complex language histories can emerge correctly from distance measures, despite shared retentions

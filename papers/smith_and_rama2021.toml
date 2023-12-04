@@ -3,42 +3,47 @@ title = "Environmental factors affect the evolution of linguistic subgroups in B
 doi = "10.17613/v31m-0w40"
 
 abstract = """
-
+This study investigates the relatedness and history of the Austronesian languages
+of Borneo, which is the third largest island in the world and home to
+significant linguistic diversity. We apply Bayesian phylogenetic dating methods
+to lexical cognate data based on four historical calibration points to
+infer a dated phylogeny of 87 languages. The inferred tree topology agrees
+with the mid and lower-level subgrouping proposals based on the classical
+comparative method, but suggests a different higher-level organization. The
+root age of the dated tree is shallower than the archaeological estimates but
+agrees with a hypothesis of a past linguistic leveling event. The inferred
+homelands of the major linguistic subgroups from a Bayesian phylogeographic
+analysis agree with the homeland proposals from archaeology and
+linguistics. The inferred homelands for four of the eight subgroups support
+the riverine homeland hypothesis whereby the major linguistic subgroups
+developed initially in communities situated along Borneo's major rivers.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
-authors = ["Alex Smith", "Taraka Rama"]
+authors = ["Alexander D. Smith", "Taraka Rama"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Austronesian']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Smith_2021"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
-# short description of the study, one line.
-description = ""
+type = ['phylogenetic', 'phylogeography', 'delta', 'qresidual']
+framework = ['bayesian', 'network']
 
 # data
 [data]
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    [data.borneo]
+    ntaxa = 87
+    nchars = 229
+    nsites = 2966
+    datatype = 'lexical cognates (autodetected)'
+    source = ''
     items = ''
-    comment = ''
-
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
     comment = ''
 
 
@@ -47,9 +52,33 @@ description = ""
 
     notes = ""
 
-    [calibration.label]
+    [calibration.ukit_buket]
+    taxa = ["buka1263"]
+    age = "uniform(250, 350)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.punan]
+    taxa = ["puna1280"]
+    age = "uniform(500, 600)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.tunjung_benuaq]
+    taxa = ["grea1283"]
+    age = "uniform(600, 5000)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.maanyan_dusun]
+    taxa = ["maan1238", "dusu1267"]
+    age = "uniform(1300, 1400)"
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.root]
     taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    age = "uniform(0, 10000)"
     units = "ybp" # ybp
     description = ""
 
@@ -59,19 +88,63 @@ description = ""
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
+    [analysis.mrbayes_unconstrained]
+    tool = 'mrbayes'
+    model = 'ctmc+gamma4+igr+fbd'
     details = ""
     data = ""
+
+    [analysis.mrbayes_constrained]
+    tool = 'mrbayes'
+    model = 'ctmc+gamma4+igr+fbd'
+    details = ""
+    data = "topology constrained"
+
+    [analysis.delta]
+    tool = 'splitstree'
+    model = 'delta'
+    details = ""
+    data = ""
+
+    [analysis.qresidual]
+    tool = 'splitstree'
+    model = 'qresidual'
+    details = ""
+    data = ""
+
+    [analysis.btv]
+    tool = 'bayestraits'
+    model = 'btv'
+    details = ""
+    data = ""
+
+    [analysis.btf]
+    tool = 'bayestraits'
+    model = 'btf'
+    details = ""
+    data = ""
+
+    [analysis.btf_fossil]
+    tool = 'bayestraits'
+    model = 'btf_fossil'
+    details = ""
+    data = ""
+    
+
 
 [inferredages]
     
     notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
+
+    [inferredage.mrbayes_unconstrained]
+    taxa = ["nort3253", "land1261", "mala1536", "grea1283"]  # Borneo
+    age = "hpd(2692, 2085, 3421)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.mrbayes_constrained]
+    taxa = ["nort3253", "land1261", "mala1536", "grea1283"]  # Borneo
+    age = "hpd(2992, 2318, 3900)"
     units = "ybp"
     notes = ""
 

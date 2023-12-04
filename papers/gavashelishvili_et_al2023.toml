@@ -1,0 +1,172 @@
+title = "The time and place of origin of South Caucasian languages: insights into past human societies, ecosystems and human population genetics"
+
+doi = "10.1038/s41598-023-45500-w"
+
+abstract = """
+This study re-examines the linguistic phylogeny of the South Caucasian linguistic family (aka the
+Kartvelian linguistic family) and attempts to identify its Urheimat. We apply Bayesian
+phylogenetics to infer a dated phylogeny of the South Caucasian languages. We infer the Urheimat
+and the reasons for the split of the Kartvelian languages by taking into consideration (1) the past
+distribution ranges of wildlife elements whose names can be traced back to proto-Kartvelian roots,
+(2) the distribution ranges of past cultures and (3) the genetic variations of past and extant
+human populations. Our best-fit Bayesian phylogenetic model is in agreement with the widely
+accepted topology suggested by previous studies. However, in contrast to these studies, our model
+suggests earlier mean split dates, according to which the divergence between Svan and Karto-Zan
+occurred in the early Copper Age, while Georgian and Zan diverged in the early Iron Age. The split
+of Zan into Megrelian and Laz is widely attributed to the spread of Georgian and/or Georgian
+speakers in the seventh-eighth centuries CE. Our analyses place the Kartvelian Urheimat in an area
+that largely intersects the Colchis glacial refugium in the South Caucasus. The divergence of
+Kartvelian languages is strongly associated with differences in the rate of technological
+expansions in relation to landscape heterogeneity, as well as the emergence of state-run
+communities. Neolithic societies could not colonize dense forests, whereas Copper Age societies
+made limited progress in this regard, but not to the same degree of success achieved by Bronze and
+Iron Age societies. The paper also discusses the importance of glacial refugia in laying the
+foundation for linguistic families and where Indo-European languages might have originated.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Alexander Gavashelishvili", "Merab Chukhua", "Kakhi Sakhltkhutsishvili", "Dilek Koptekin", "Mehmet Somel"]
+
+# parts of the world
+groups = ['Kartvelian']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Gavashelishvili_2023"
+
+# type of study
+type = ['phylogenetic']
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+
+# data
+[data]
+
+    notes = "254 meaning concepts (i.e. meaning classes) across the Kartvelian languages: Georgian, Old Georgian, Megrelian, Laz and Svan. Of these languages all but Old Georgian are spoken today. According to historical records Old Georgian existed until ~ 900 years ago9,25–31. These meaning concepts were extracted from the merger of the Leipzig-Jakarta 200 list32 and the Jena 200 list33. "
+    
+    [data.kartvelian]
+    ntaxa = 5
+    nchars = 251
+    nsites = 736
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = ''
+
+# date calibrations
+[calibrations]
+
+    notes = "1200 −/ + 10 years BP was put on the Zan internal node—i.e. a prior for the split time between Laz and Megrelian "
+
+    [calibration.zan]
+    taxa = ['zann1245']
+    age = "normal(1200, 10)"
+    units = "ybp" # ybp
+    description = ""
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+
+    [analysis.tree1]
+        tool = 'beast2'
+        model = 'ctmc+strict+FBD'
+        details = ""
+        data = "@data.kartvelian"
+    
+
+    [analysis.tree2]
+        tool = 'beast2'
+        model = 'ctmc+relaxed+FBD'
+        details = ""
+        data = "@data.kartvelian"
+    
+
+    [analysis.tree3]
+        tool = 'beast2'
+        model = 'ctmc+4gamma+strict+FBD'
+        details = ""
+        data = "@data.kartvelian"
+    
+
+    [analysis.tree4]
+        tool = 'beast2'
+        model = 'ctmc+4gamma+relaxed+FBD'
+        details = ""
+        data = "@data.kartvelian"
+    
+
+    [analysis.tree5]
+        tool = 'beast2'
+        model = 'sdollo+strict+FBD'
+        details = ""
+        data = "@data.kartvelian"
+    
+
+    [analysis.tree6]
+        tool = 'beast2'
+        model = 'sdollo+relaxed+FBD'
+        details = ""
+        data = "@data.kartvelian"
+    
+
+    [analysis.tree7]
+        tool = 'beast2'
+        model = 'sdollo+4gamma+strict+FBD'
+        details = ""
+        data = "@data.kartvelian"
+    
+
+    [analysis.tree8]
+        tool = 'beast2'
+        model = 'sdollo+4gamma+relaxed+FBD'
+        details = ""
+        data = "@data.kartvelian"
+    
+
+    [analysis.tree9]
+        tool = 'beast2'
+        model = 'covarion+strict+FBD'
+        details = ""
+        data = "@data.kartvelian"
+    
+
+    [analysis.tree10]
+        tool = 'beast2'
+        model = 'covarion+relaxed+FBD'
+        details = ""
+        data = "@data.kartvelian"
+    
+
+[inferredages]
+    
+    notes = """In terms of chronology, our best-fit model estimated the mean root age to be 7641 BP
+    (95% highest posterior density (HPD): 18,626–1169 BP) for the split between Svan and
+    Karto-Zan. The mean age for the split between Georgian and Zan was estimated at 2617 BP (95%
+    HPD: 4323–1178 BP). The mean age for the split of Zan into Megrelian and Laz was estimated at
+    1200 BP (95% HPD: 1219–1180 BP)."""
+    
+    [inferredage.kart1248]
+    taxa = ['kart1248']
+    age = "hpd(7641, 1169, 18626)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.geor1252]
+    taxa = ["geor1252"]
+    age = "hpd(2617, 1178, 4323)"
+    units = "ybp"
+    notes = ""
+
+    [inferredage.zann1245]
+    taxa = ["zann1245"]
+    age = "hpd(1200, 1180, 1219)"
+    units = "ybp"
+    notes = "n.b. used a calibration"
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/gavashelishvili_et_al2023" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

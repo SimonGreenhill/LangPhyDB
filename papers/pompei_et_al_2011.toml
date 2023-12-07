@@ -3,55 +3,64 @@ title = "On the Accuracy of Language Trees"
 doi = "10.1371/journal.pone.0020109"
 
 abstract = """
-
-"""
+Historical linguistics aims at inferring the most likely language phylogenetic tree starting from
+information concerning the evolutionary relatedness of languages. The available information are
+typically lists of homologous (lexical, phonological, syntactic) features or characters for many
+different languages: a set of parallel corpora whose compilation represents a paramount achievement
+in linguistics. From this perspective the reconstruction of language trees is an example of inverse
+problems: starting from present, incomplete and often noisy, information, one aims at inferring the
+most likely past evolutionary history. A fundamental issue in inverse problems is the evaluation of
+the inference made. A standard way of dealing with this question is to generate data with
+artificial models in order to have full access to the evolutionary process one is going to infer.
+This procedure presents an intrinsic limitation: when dealing with real data sets, one typically
+does not know which model of evolution is the most suitable for them. A possible way out is to
+compare algorithmic inference with expert classifications. This is the point of view we take here
+by conducting a thorough survey of the accuracy of reconstruction methods as compared with the
+Ethnologue expert classifications. We focus in particular on state-of-the-art distance-based
+methods for phylogeny reconstruction using worldwide linguistic databases. In order to assess the
+accuracy of the inferred trees we introduce and characterize two generalizations of standard
+definitions of distances between trees. Based on these scores we quantify the relative performances
+of the distance-based algorithms considered. Further we quantify how the completeness and the
+coverage of the available databases affect the accuracy of the reconstruction. Finally we draw some
+conclusions about where the accuracy of the reconstructions in historical linguistics stands and
+about the leading directions to improve it. """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Simone Pompei", "Vittorio Loreto", "Francesca Tria"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['global']
 
 # bibkey citation in sources.bib
 bibkey = "@Pompei_2011"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
-# short description of the study, one line.
-description = ""
+type = ['methodological', 'phylogenetic']
+framework = ['parsimony', 'likelihood']
 
 # data
 [data]
 
     notes = ""
     
-    [data.bantu]
+    [data.asjp]
     ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    nchars = 40
+    nsites = 1
+    datatype = 'lexical distance'
+    source = '@ASJP'
     items = ''
     comment = ''
 
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
+    [data.abvd]
+    ntaxa = 305
+    nchars = 210
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@ABVD'
+    items = ''
     comment = ''
 
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
 
 
 # analysis information
@@ -59,21 +68,1841 @@ description = ""
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
-    details = ""
-    data = ""
+    [analysis.Afro-Asiatic_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
 
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
+    [analysis.Afro-Asiatic_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Afro-Asiatic_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Afro-Asiatic_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Afro-Asiatic_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Afro-Asiatic_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Algic_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Algic_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Algic_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Algic_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Algic_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Algic_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Altaic_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Altaic_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Altaic_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Altaic_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Altaic_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Altaic_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Arawakan_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Arawakan_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Arawakan_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Arawakan_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Arawakan_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Arawakan_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Australian_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Australian_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Australian_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Australian_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Australian_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Australian_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Austro-Asiatic_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Austro-Asiatic_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Austro-Asiatic_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Austro-Asiatic_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Austro-Asiatic_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Austro-Asiatic_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Austronesian_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Austronesian_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Austronesian_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Austronesian_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Austronesian_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Austronesian_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Border_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Border_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Border_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Border_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Border_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Border_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Bosavi_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Bosavi_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Bosavi_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Bosavi_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Bosavi_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Bosavi_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Cariban_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Cariban_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Cariban_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Cariban_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Cariban_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Cariban_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Chibchan_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Chibchan_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Chibchan_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Chibchan_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Chibchan_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Chibchan_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Dravidian_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Dravidian_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Dravidian_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Dravidian_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Dravidian_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Dravidian_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Eleman_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Eleman_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Eleman_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Eleman_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Eleman_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Eleman_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Great_Andamanese_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Great_Andamanese_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Great_Andamanese_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Great_Andamanese_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Great_Andamanese_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Great_Andamanese_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Hmong-Mien_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Hmong-Mien_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Hmong-Mien_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Hmong-Mien_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Hmong-Mien_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Hmong-Mien_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Hokan_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Hokan_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Hokan_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Hokan_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Hokan_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Hokan_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Indo-European_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Indo-European_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Indo-European_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Indo-European_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Indo-European_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Indo-European_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Kadugli_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Kadugli_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Kadugli_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Kadugli_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Kadugli_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Kadugli_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Khoisan_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Khoisan_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Khoisan_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Khoisan_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Khoisan_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Khoisan_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Kiwaian_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Kiwaian_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Kiwaian_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Kiwaian_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Kiwaian_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Kiwaian_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Lakes_Plain_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Lakes_Plain_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Lakes_Plain_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Lakes_Plain_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Lakes_Plain_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Lakes_Plain_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Lower_Sepik-Ramu_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Lower_Sepik-Ramu_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Lower_Sepik-Ramu_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Lower_Sepik-Ramu_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Lower_Sepik-Ramu_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Lower_Sepik-Ramu_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Macro-Ge_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Macro-Ge_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Macro-Ge_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Macro-Ge_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Macro-Ge_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Macro-Ge_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Marind_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Marind_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Marind_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Marind_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Marind_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Marind_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Mayan_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Mayan_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Mayan_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Mayan_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Mayan_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Mayan_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Mixe-Zoque_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Mixe-Zoque_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Mixe-Zoque_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Mixe-Zoque_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Mixe-Zoque_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Mixe-Zoque_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Morehead_and_Upper_Maro_Rivers_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Morehead_and_Upper_Maro_Rivers_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Morehead_and_Upper_Maro_Rivers_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Morehead_and_Upper_Maro_Rivers_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Morehead_and_Upper_Maro_Rivers_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Morehead_and_Upper_Maro_Rivers_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Na-Dene_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Na-Dene_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Na-Dene_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Na-Dene_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Na-Dene_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Na-Dene_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Nakh-Daghestanian_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Nakh-Daghestanian_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Nakh-Daghestanian_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Nakh-Daghestanian_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Nakh-Daghestanian_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Nakh-Daghestanian_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Niger-Congo_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Niger-Congo_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Niger-Congo_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Niger-Congo_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Niger-Congo_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Niger-Congo_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Nilo-Saharan_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Nilo-Saharan_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Nilo-Saharan_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Nilo-Saharan_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Nilo-Saharan_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Nilo-Saharan_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Oto-Manguean_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Oto-Manguean_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Oto-Manguean_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Oto-Manguean_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Oto-Manguean_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Oto-Manguean_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Panoan_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Panoan_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Panoan_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Panoan_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Panoan_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Panoan_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Penutian_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Penutian_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Penutian_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Penutian_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Penutian_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Penutian_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Quechuan_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Quechuan_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Quechuan_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Quechuan_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Quechuan_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Quechuan_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Salishan_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Salishan_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Salishan_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Salishan_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Salishan_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Salishan_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Sepik_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Sepik_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Sepik_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Sepik_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Sepik_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Sepik_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Sino-Tibetan_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Sino-Tibetan_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Sino-Tibetan_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Sino-Tibetan_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Sino-Tibetan_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Sino-Tibetan_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Sko_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Sko_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Sko_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Sko_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Sko_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Sko_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Tai-Kadai_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Tai-Kadai_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Tai-Kadai_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Tai-Kadai_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Tai-Kadai_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Tai-Kadai_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Torricelli_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Torricelli_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Torricelli_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Torricelli_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Torricelli_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Torricelli_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Totonacan_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Totonacan_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Totonacan_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Totonacan_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Totonacan_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Totonacan_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Trans-New_Guinea_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Trans-New_Guinea_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Trans-New_Guinea_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Trans-New_Guinea_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Trans-New_Guinea_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Trans-New_Guinea_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Tucanoan_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Tucanoan_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Tucanoan_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Tucanoan_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Tucanoan_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Tucanoan_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Tupian_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Tupian_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Tupian_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Tupian_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Tupian_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Tupian_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Uralic_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Uralic_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Uralic_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Uralic_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Uralic_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Uralic_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Uto-Aztecan_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Uto-Aztecan_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Uto-Aztecan_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Uto-Aztecan_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Uto-Aztecan_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Uto-Aztecan_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.West_Papuan_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.West_Papuan_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.West_Papuan_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.West_Papuan_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.West_Papuan_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.West_Papuan_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Western_Fly_neighborjoining_LDN]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Western_Fly_FastME_LDN]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Western_Fly_FastSBiX_LDN]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Western_Fly_neighborjoining_LDND]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Western_Fly_FastME_LDND]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Western_Fly_FastSBiX_LDND]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Austronesian_neighborjoining_LDN_ABVD]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ABVD"
+
+    [analysis.Austronesian_neighborjoining_LDN_ASJP]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Austronesian_FastME_LDN_ABVD]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ABVD"
+
+    [analysis.Austronesian_FastME_LDN_ASJP]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Austronesian_FastSBiX_LDN_ABVD]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ABVD"
+
+    [analysis.Austronesian_FastSBiX_LDN_ASJP]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Austronesian_neighborjoining_LDND_ABVD]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ABVD"
+
+    [analysis.Austronesian_neighborjoining_LDND_ASJP]
+    tool = 'unknown'
+    model = 'neighborjoining'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Austronesian_FastME_LDND_ABVD]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ABVD"
+
+    [analysis.Austronesian_FastME_LDND_ASJP]
+    tool = 'unknown'
+    model = 'FastME'
+    details = ''
+    data = "@ASJP"
+
+    [analysis.Austronesian_FastSBiX_LDND_ABVD]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ABVD"
+
+    [analysis.Austronesian_FastSBiX_LDND_ASJP]
+    tool = 'unknown'
+    model = 'FastSBiX'
+    details = ''
+    data = "@ASJP"
 
 
 [links]

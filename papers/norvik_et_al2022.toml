@@ -3,77 +3,65 @@ title = "Uralic typology in the light of a new comprehensive dataset"
 doi = "10.1075/jul.00002.nor"
 
 abstract = """
-
+This paper presents the Uralic Areal Typology Online (UraTyp 1.0), a typological dataset of 35
+Uralic languages and a total of 360 features, mainly covering the levels of morphology, syntax, and
+phonology. The features belong to two different datasets: 195 features' definitions originate from
+the Grambank (GB) database, developed for comparison of world language typology, whereas 165
+features (UT) have been designed specifically to describe the typological variation within the
+Uralic language family. We present a series of analyses of the dataset demonstrating its scope and
+possibilities. The complete data set correctly identifies the main Uralic subgroups in a Principal
+Components Analysis, whereas GB data alone is insufficiently granular to detect this
+family-internal structure. Similar analyses limited to various typological subdomains also give
+variable results. A model-based admixture analysis identifies four distinct areas of historical
+interaction: Saami, Finnic, the Volga area and Ob-Ugric.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Miina Norvik", "Yingqi Jing", "Michael Dunn", "Robert Forkel", "Terhi Honkola", "Gerson Klumpp", "Richard Kowalik", "Helle Metslang", "Karl Pajusalu", "Minerva Piha", "Eva Saar", "Sirkka Saarinen", "Outi Vesakoski"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Uralic']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Norvik_2022"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
-# short description of the study, one line.
-description = ""
+type = ['structure']
+framework = ['statistical']
 
 # data
 [data]
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    [data.UraTyp]
+    ntaxa = 33
+    nchars = 165
+    nsites = 165
+    datatype = 'mixed'
+    source = ''
     items = ''
     comment = ''
 
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
+    [data.Grambank]
+    ntaxa = 29
+    nchars = 195
+    nsites = 195
+    datatype = 'structural features'
+    source = '@Grambank'
+    items = ''
     comment = ''
-
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
-
-
+    
 # analysis information
 [analysis]
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
+    [analysis.snmf]
+    tool = 'LEA'
+    model = 'sNMF'
     details = ""
     data = ""
-
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
 
 
 [links]

@@ -3,53 +3,62 @@ title = "Areal pressure in grammatical evolution"
 doi = "10.1075/dia.16035.cat"
 
 abstract = """
-
+This article investigates the evolutionary and spatial dynamics of typological characters in 117
+Indo-European languages. We partition types of change (i.e., gain or loss) for each variant
+according to whether they bring about a simplification in morphosyntactic patterns that must be
+learned, whether they are neutral (i.e., neither simplifying nor introducing complexity) or whether
+they introduce a more complex pattern. We find that changes which introduce complexity show
+significantly less areal signal (according to a metric we devise) than changes which simplify and
+neutral changes, but we find no significant differences between the latter two groups. This result
+is compatible with a scenario where certain types of parallel change are more likely to be mediated
+by advergence and contact between proximate speech communities, while other developments are due
+purely to drift and are largely independent of intercultural contact.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Chundra A. Cathcart", "Gerd Carling", "Filip Larsson", "Niklas Johansson", "Erich R. Round"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Indo-European']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Cathcart_2022"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
-# short description of the study, one line.
-description = ""
+type = ['asr', 'trait', 'phylogenetic', 'phylogeography']
+framework = ['bayesian']
 
 # data
 [data]
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    [data.DiACL_structure]
+    ntaxa = 117
+    nchars = 108
+    nsites = 108
+    datatype = 'syntactical features'
+    source = '@DiACL'
     items = ''
     comment = ''
 
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
+    [data.DiACL_lexicon]
+    ntaxa = 117
+    nchars = 100
+    nsites = 100
+    datatype = 'lexical cognates'
+    source = '@DiACL'
+    items = 'swadesh100'
     comment = ''
-
 
 # date calibrations
 [calibrations]
 
     notes = ""
 
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    [calibration.root]
+    taxa = ['indo1319']
+    age = "normal(6500, 2000)"
     units = "ybp" # ybp
     description = ""
 
@@ -60,18 +69,31 @@ description = ""
     notes = ""
     
     [analysis.tree]
-    tool = ''
-    model = ''
+    tool = 'beast'
+    model = 'restrictionsite+gamma4+relaxed'
     details = ""
-    data = ""
+    data = "@DiACL_lexicon"
+
+    [analysis.phylogeography]
+    tool = 'beast'
+    model = 'restrictionsite+gamma4+relaxed+phylogeography'
+    details = ""
+    data = "@DiACL_lexicon"
+
+    [analysis.rates]
+    tool = 'custom'
+    model = 'm2p'
+    details = ""
+    data = "@DiACL_structure"
+
 
 [inferredages]
     
     notes = ""
     
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
+    [inferredage.root]
+    taxa = ['indo1319']
+    age = "hpd(7139, 6850, 7396)"
     units = "ybp"
     notes = ""
 
@@ -80,4 +102,4 @@ description = ""
 phlorest = { title = "Phlorest Dataset", link = "" }
 cldf = { title = "CLDF Dataset", link = "" }
 dplace = { title = "D-PLACE Dataset", link = "" }
-links = []
+links = ["https://github.com/chundrac/areal-pressure-gram-evo"]

@@ -95,7 +95,7 @@ description = "306 Pama-Nyungan languages"
     notes = ""
     
     [inferredage.tree2]
-    taxa = ['chap1271']
+    taxa = ['pama1250']
     age = "hpd(5671, 4455, 6966)"
     units = "y2000"
     notes = "5671 is mean not median"

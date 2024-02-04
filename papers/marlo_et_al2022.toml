@@ -1,0 +1,73 @@
+title = "A phylogenetic classification of Luyia language varieties"
+
+doi = "10.5281/zenodo.6393807"
+
+abstract = """
+This paper presents the results of a comparative study of the Luyia cluster of Bantu
+languages spoken in western Kenya and eastern Uganda. We propose a new classifi-
+cation of Luyia and neighboring languages using phylogenetic methods. Our study
+is based on a 200-item wordlist of basic vocabulary, representing 33 language va-
+rieties from the Luyia cluster and its closest neighbors, including Ganda, Gwere,
+and Soga to the west, and Gusii and Kuria to the south. Our results are broadly
+consistent with past classifications by Mould (1976, 1981) and Williams (1973), but
+refine our understanding of the relatedness of the target languages by employing
+more extensive data from more languages within the Luyia cluster and others in
+the region.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Michael R. Marlo", "Rebecca Grollemund", "Thanh Nguyen", "Erik Platner", "Sarah Pribe", "Alexa Thein"]
+
+# parts of the world
+groups = ['Bantu']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Marlo_2022"
+
+# type of study
+type = ['phylogenetic']
+framework = ['network', 'bayesian']
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = """33 primary datasets, plus 4 outgroup languages,. The 33 primary datasets, which
+are indicated with an asterisk in Table 4, represent 29 language varieties: 16 Luyia
+varieties (e.g. Bukusu, Tiriki, Wanga) and 13 Bantu languages to the west (e.g.
+Ganda, Soga) and south (e.g. Kuria, Gusii)."""
+    
+    [data.luyia]
+    ntaxa = 33
+    nchars = 151
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'swadesh200'
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.network]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = ""
+    
+    [analysis.tree]
+    tool = 'unknown'
+    model = 'unknown'
+    details = ""
+    data = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

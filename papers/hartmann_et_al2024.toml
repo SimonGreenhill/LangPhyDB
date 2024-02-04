@@ -1,0 +1,144 @@
+title = "Investigating environmental effects on phonology using diachronic models"
+
+doi = "10.1017/ehs.2023.33"
+
+abstract = """
+Previous work has proposed various mechanisms by which the environment may affect the
+emergence of linguistic features. For example, dry air may cause careful control of pitch
+to be more effortful, and so affect the emergence of linguistic distinctions that rely on
+pitch such as lexical tone or vowel inventories. Criticisms of these proposals point out
+that there are both historical and geographic confounds that need to be controlled for. We
+take a causal inference approach to this problem to design the most detailed test of the
+theory to date. We analyse languages from the Bantu language family, using a prior
+geographic–phylogenetic tree of relationships to establish where and when languages were
+spoken. This is combined with estimates of humidity for those times and places, taken from
+historical climate models. We then estimate the strength of causal relationships in a
+causal path model, controlling for various influences of inheritance and borrowing. We
+find no evidence to support the previous claims that humidity affects the emergence of
+lexical tone. This study shows how using causal inference approaches lets us test complex
+causal claims about the cultural evolution of language.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Frederik Hartmann", "Seán G. Roberts", "Paul Valdes", "Rebecca Grollemund"]
+
+# parts of the world
+groups = ['Bantu']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Hartmann_2024"
+
+# type of study
+type = ['macroevolutionary']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.phoible_tones]
+    ntaxa = 210
+    nchars = 1
+    nsites = 1
+    datatype = 'phonetic traits'
+    source = '@PHOIBLE'
+    items = ''
+    comment = ''
+
+    [data.phoible_vowels]
+    ntaxa = 161
+    nchars = 1
+    nsites = 1
+    datatype = 'phonetic traits'
+    source = '@PHOIBLE'
+    items = ''
+    comment = ''
+
+    [data.phoible_vowel_ratio]
+    ntaxa = 383
+    nchars = 1
+    nsites = 1
+    datatype = 'phonetic traits'
+    source = '@PHOIBLE'
+    items = ''
+    comment = ''
+
+    [data.humidity]
+    ntaxa = 383
+    nchars = 1
+    nsites = 1
+    datatype = 'environmental factors'
+    source = ''
+    items = ''
+    comment = ''
+    
+# published phylogenies
+[phylogenies]
+    [phylogenies.grollemund]
+    source = '@Grollemund2015'
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.lambda_tone]
+    tool = 'bayestraits'
+    model = 'lamba'
+    details = ""
+    data = "@data.phoible_tone"
+
+    [analysis.lambda_vowels]
+    tool = 'bayestraits'
+    model = 'lamba'
+    details = ""
+    data = "@data.phoible_vowels"
+
+    [analysis.lambda_vowel_ratio]
+    tool = 'bayestraits'
+    model = 'lamba'
+    details = ""
+    data = "@data.phoible_vowel_ratio"
+
+    [analysis.lambda_humidity]
+    tool = 'bayestraits'
+    model = 'lamba'
+    details = ""
+    data = "@data.humidity"
+
+    [analysis.discrete_tone_vs_humidity]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = ""
+    data = "@data.humidity;@data.phoible_tone"
+
+    [analysis.continuous_tone_vs_humidity]
+    tool = 'bayestraits'
+    model = 'continuous'
+    details = ""
+    data = "@data.humidity;@data.phoible_tone"
+
+
+    [analysis.stan_lin]
+    tool = 'stan'
+    model = 'geography+phylogeny, gaussian (simplified)'
+    details = ""
+    data = ""
+
+    [analysis.stan_gp]
+    tool = 'stan'
+    model = 'geography+phylogeny, gaussian'
+    details = ""
+    data = ""
+    
+    
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = ['https://github.com/seannyD/TonesClimateGeoPhylo_Public']

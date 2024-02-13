@@ -1,24 +1,37 @@
 title = "Testing Inferences about Language Contact on Morphosyntax: A Typological Case Study on Alorese-Adang Contact"
 
-doi = "https://doi.org/10.1111/1467-968X.12284"
+doi = "10.1111/1467-968X.12284"
 
 abstract = """
-
+When linguists make inferences about language contact, control data is required for
+reliable analysis. Historical data or reconstructions are typically used for that purpose.
+However, historical data is globally mostly unavailable, and reconstructions are laborious
+if comparing outcomes of language contact in a typological way. We assess a recent
+typological proposal (Di Garbo & Napoleão de Souza 2023) that argues that using a single
+language, called Benchmark language, can serve as a viable control for making inferences
+about contact. To evaluate this approach, we use as a case study a documented contact
+situation in Eastern Indonesia between the Austronesian language Alorese and the Papuan
+language Adang. We sample languages related to Alorese and use computational phylogenetic
+methods for ancestral reconstruction to analyse if using a single Benchmark produces
+deviating inferences about contact compared to using Bayesian ancestral reconstructions.
+Additionally, we test for isolation by distance effects by analysing if the probability of
+contact effects correlates with increasing geographic distance from the contact region.
+The results suggest that no isolation by distance effects exist in the data and that none
+of the single Benchmarks significantly deviate from the ancestral reconstructions.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Kaius Sinnemäki", "Noora Ahola"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Austronesian']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Sinnem_ki_2023"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
-# short description of the study, one line.
+type = ['asr']
+framework = ['bayesian']
 description = ""
 
 # data
@@ -26,55 +39,32 @@ description = ""
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
+    [data.alorese]
+    ntaxa = 22
+    nchars = 12
     nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    datatype = 'structural features'
+    source = ''
     items = ''
     comment = ''
 
 # published phylogenies
 [phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
+    [phylogenies.glottolog]
+    source = '@Glottolog47'
     comment = ''
-
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
 
 
 # analysis information
 [analysis]
     
-    notes = ""
+    notes = "The model has been implemented in the ancThresh function of the phytools library (Revell 2012) in R (R Core Team 2023; see Supplement S2 for other libraries and Supplement S3 for the R code"
     
-    [analysis.tree]
-    tool = ''
-    model = ''
+    [analysis.asr]
+    tool = 'phytools'
+    model = 'ancThresh'
     details = ""
     data = ""
-
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
-
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }

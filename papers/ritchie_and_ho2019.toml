@@ -536,8 +536,12 @@ description = "A test of the sensitivity of Bayesian dating to the tree prior in
         model = 'sdollo+gamma+relaxed+coalescent-skyline'
         details = ""
         data = "@data.semitic"
+
+
+[inferredages]
     
-    
+    notes = "no obvious date choice"
+
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }

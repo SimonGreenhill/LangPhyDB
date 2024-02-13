@@ -3,78 +3,146 @@ title = "Towards a Formal Genealogical Classification of the Lezgian Languages (
 doi = "10.1371/journal.pone.0116950"
 
 abstract = """
-
+A lexicostatistical classification is proposed for 20 languages and
+dialects of the Lezgian group of the North Caucasian family, based on meticulously
+compiled 110-item wordlists, published as part of the Global Lexicostatistical Database
+project. The lexical data have been subsequently analyzed with the aid of the principal
+phylogenetic methods, both distance-based and character-based: Starling neighbor joining
+(StarlingNJ), Neighbor joining (NJ), Unweighted pair group method with arithmetic mean
+(UPGMA), Bayesian Markov chain Monte Carlo (MCMC), Unweighted maximum parsimony (UMP).
+Cognation indexes within the input matrix were marked by two different algorithms:
+traditional etymological approach and phonetic similarity, i.e., the automatic method of
+consonant classes (Levenshtein distances). Due to certain reasons (first of all, high
+lexicographic quality of the wordlists and a consensus about the Lezgian phylogeny among
+Caucasologists), the Lezgian database is a perfect testing area for appraisal of
+phylogenetic methods. For the etymology-based input matrix, all the phylogenetic methods,
+with the possible exception of UMP, have yielded trees that are sufficiently compatible
+with each other to generate a consensus phylogenetic tree of the Lezgian lects. The
+obtained consensus tree agrees with the traditional expert classification as well as some
+of the previously proposed formal classifications of this linguistic group. Contrary to
+theoretical expectations, the UMP method has suggested the least plausible tree of all. In
+the case of the phonetic similarity-based input matrix, the distance-based methods
+(StarlingNJ, NJ, UPGMA) have produced the trees that are rather close to the consensus
+etymology-based tree and the traditional expert classification, whereas the
+character-based methods (Bayesian MCMC, UMP) have yielded less likely topologies.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Alexei S. Kassian"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Lezgian']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Kassian_2015"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['phylogenetic']
+framework = ['distance', 'parsimony', 'bayesian']
+
 # short description of the study, one line.
 description = ""
 
 # data
 [data]
 
-    notes = ""
-    
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
+    notes = "Cognation indexes within the input matrix were marked by two different algorithms: traditional etymological approach and phonetic similarity, i.e., the automatic method of consonant classes (Levenshtein distances). D"
+
+    [data.GLED_cognates]
+    ntaxa = 20
+    nchars = 110
+    nsites = 110
     datatype = 'lexical cognates'
-    source = '@xxx'
+    source = '@GLED'
     items = ''
     comment = ''
 
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
+    [data.GLED_distance]
+    ntaxa = 20
+    nchars = 1
+    nsites = 1
+    datatype = 'lexical distance'
+    source = '@GLED'
+    items = ''
     comment = ''
-
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
 
 
 # analysis information
 [analysis]
     
     notes = ""
+
+    [analysis.tree_cognate_starling_binary]
+    tool = 'starling'
+    model = 'StarlingNJ'
+    details = ""
+    data = "@data.GLED_cognates"
+
+    [analysis.tree_cognate_starling_neighboring]
+    tool = 'starling'
+    model = 'StarlingNJ'
+    details = ""
+    data = "@data.GLED_cognates"
+
+    [analysis.tree_cognate_nj]
+    tool = 'splitstree'
+    model = 'neighbor-joining'
+    details = ""
+    data = "@data.GLED_cognates"
+
+    [analysis.tree_cognate_upgma]
+    tool = 'splitstree'
+    model = 'UPGMA'
+    details = ""
+    data = "@data.GLED_cognates"
+
+    [analysis.tree_cognate_mcmc]
+    tool = 'mrbayes'
+    model = 'F81+gamma'
+    details = ""
+    data = "@data.GLED_cognates"
+
+    [analysis.tree_cognate_ump]
+    tool = 'tnt'
+    model = 'parsimony'
+    details = ""
+    data = "@data.GLED_cognates"
     
-    [analysis.tree]
-    tool = ''
+    [analysis.tree_manual]
+    tool = 'manual'
     model = ''
     details = ""
-    data = ""
-
-[inferredages]
+    data = "@data.GLED_cognates"
     
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
+    [analysis.tree_distance_starling_neighboring]
+    tool = 'starling'
+    model = 'StarlingNJ'
+    details = ""
+    data = "@data.GLED_distance"
 
+    [analysis.tree_distance_nj]
+    tool = 'splitstree'
+    model = 'neighbor-joining'
+    details = ""
+    data = "@data.GLED_distance"
+
+    [analysis.tree_distance_upgma]
+    tool = 'splitstree'
+    model = 'UPGMA'
+    details = ""
+    data = "@data.GLED_distance"
+
+    [analysis.tree_distance_mcmc]
+    tool = 'mrbayes'
+    model = 'F81+gamma'
+    details = ""
+    data = "@data.GLED_distance"
+
+    [analysis.tree_distance_ump]
+    tool = 'tnt'
+    model = 'parsimony'
+    details = ""
+    data = "@data.GLED_distance"
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }

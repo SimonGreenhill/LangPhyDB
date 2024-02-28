@@ -181,13 +181,13 @@ description = "Tutorial paper on language phylogenies with focus on Austronesian
     taxa = ['aust1307']
     age = "5310"
     units = "y2000"
-    notes = ""
+    details = ""
 
     [inferredage.proto_malayo_polynesian]
     taxa = ['mala1545']
     age = "4240"
     units = "y2000"
-    notes = ""
+    details = ""
 
 
 [links]

@@ -270,7 +270,8 @@ description = "103 Indo-European languages"
     tool = 'beast2'
     model = 'covarion+relaxed'
     details = "best fitting model"
-
+    best = 'true'
+    
     [analysis.tree5]
     tool = 'beast2'
     model = 'sdollo+strict'
@@ -300,7 +301,7 @@ description = "103 Indo-European languages"
     taxa = ['indo1319']
     age = "hpd(8466, 7116, 10410)"
     units = "y2000"
-    notes = "The inferred location (Fig. 1) and timing [95% highest posterior density (HPD) interval, 7116 to 10,410 years ago] of Indo-European origin is congruent with the proposal that the family began to diverge with the spread of agriculture..."
+    details = "The inferred location (Fig. 1) and timing [95% highest posterior density (HPD) interval, 7116 to 10,410 years ago] of Indo-European origin is congruent with the proposal that the family began to diverge with the spread of agriculture..."
 
 
 [links]

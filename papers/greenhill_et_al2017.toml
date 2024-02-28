@@ -163,6 +163,7 @@ description = "81 Austronesian languages"
     model = 'ctmc+relaxed+dirichlet(lognormal)'
     data = "data.lexicon;data.structure"
     details = "best fitting model"
+    best = 'true'
 
     [analysis.dpmm_relaxed_exponential]
     tool = 'beast2'

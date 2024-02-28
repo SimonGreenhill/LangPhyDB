@@ -59,6 +59,7 @@ description = "194 Pama-Nyungan languages"
     tool = 'beast'
     model = 'stochasticdollo+relaxed'
     details = "best fitting model"
+    best = 'true'
 
     [analysis.tree5]
     tool = 'beast'

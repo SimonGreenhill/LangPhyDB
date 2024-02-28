@@ -108,7 +108,7 @@ description = "Robustness analyses on Gray et al. 2009 Austronesian phylogeny"
     taxa = ['aust1307']
     age = "hpd(5117, 4660, 5680)"
     units = "y2000"
-    notes = ""
+    details = ""
 
 
 [links]

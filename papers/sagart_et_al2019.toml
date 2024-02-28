@@ -78,6 +78,7 @@ description = "50 Sino-Tibetan languages"
     tool = 'beast2'
     model = 'covarion+relaxed+fbd'
     details = ""
+    best = 'true'
 
     [analysis.tree3]
     tool = 'beast2'
@@ -101,57 +102,57 @@ description = "50 Sino-Tibetan languages"
     taxa = ['sino1245']
     age = "hpd(7184, 5093, 9568)"
     units = "ybp"
-    notes = ""
-
+    details = "best fitting model"
+    best = 'true'
 
     [inferredage.Lolo-Qiangic]
     taxa = ["lolo1265"]
     age = "hpd(4300, 3000, 5700)"
     units = "y2000"
-    notes = "best fitting model"
-
-
+    details = "best fitting model"
+    best = 'true'
+    
     [inferredage.Tibetan-Qiangic]
     taxa = ["burm1265"]
     age = "hpd(4800, 3300, 6300)"
     units = "y2000"
-    notes = "best fitting model"
-
+    details = "best fitting model"
+    best = 'true'
 
     [inferredage.Kiranti]
     taxa = ["kira1253"]
     age = "hpd(3600, 2400, 5100)"
     units = "y2000"
-    notes = "best fitting model"
-
+    details = "best fitting model"
+    best = 'true'
 
     [inferredage.Tani-Idu]
     taxa = ["tani1259", "idum1241"]
     age = "hpd(4100, 2400, 5800)"
     units = "y2000"
-    notes = "best fitting model"
-
+    details = "best fitting model"
+    best = 'true'
 
     [inferredage.Sal]
     taxa = ["brah1260"]
     age = "hpd(4700, 3100, 6700)"
     units = "y2000"
-    notes = "best fitting model"
-
+    details = "best fitting model"
+    best = 'true'
 
     [inferredage.Kuki-Karbi]
     taxa = ["kuki1246", "karb1240"]
     age = "hpd(5000, 3400, 6700)"
     units = "y2000"
-    notes = "best fitting model"
-
+    details = "best fitting model"
+    best = 'true'
 
     [inferredage.Sinitic]
     taxa = ["sini1245"]
     age = '2600'
     units = "y2000"
-    notes = "best fitting model"
-
+    details = "best fitting model"
+    best = 'true'
 
 
 [links]

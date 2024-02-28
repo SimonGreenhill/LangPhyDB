@@ -52,16 +52,12 @@ description = "15 Koreanic languages"
 
 # analysis information
 [analysis]
-    [analysis.tree]
-    tool = 'beast'
-    model = 'covarion+relaxed'
-    details = "best fitting model"
-
     [analysis.tree1]
     tool = 'beast'
     model = 'covarion+relaxed'
     details = "best fitting model"
-
+    best = 'true'
+    
     [analysis.tree2]
     tool = 'beast'
     model = 'covarion+strict'
@@ -101,6 +97,7 @@ description = "15 Koreanic languages"
     tool = 'barrier'
     model = ''
     details = ""
+
 
 [inferredages]
     notes = "'divergence times are not shown as they may potentially be misleading'"

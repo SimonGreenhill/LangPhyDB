@@ -106,6 +106,7 @@ description = "10 Chapacuran languages"
     tool = 'beast'
     model = 'ctmc+relaxed'
     details = "best fitting model"
+    best = "true"
 
     [analysis.tree3]
     tool = 'beast'
@@ -141,25 +142,26 @@ description = "10 Chapacuran languages"
     taxa = ['chap1271']
     age = "hpd(1039, 525, 1619)"
     units = "ybp"
-    notes = "best fitting model"
+    details = "best fitting model"
+    best = "true"
 
     [inferredage.tree1]
     taxa = ['chap1271']
     age = "hpd(1207, 783, 1692)"
     units = "ybp"
-    notes = ""
+    details = ""
 
     [inferredage.tree3]
     taxa = ['chap1271']
     age = "hpd(1276, 793, 1831)"
     units = "ybp"
-    notes = ""
+    details = ""
 
     [inferredage.tree4]
     taxa = ['chap1271']
     age = "hpd(1320, 899, 1812)"
     units = "ybp"
-    notes = ""
+    details = ""
 
 
 [links]

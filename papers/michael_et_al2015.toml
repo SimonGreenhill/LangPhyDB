@@ -54,7 +54,7 @@ description = "32 Tupi-Guarani languages"
     tool = 'mrbayes'
     model = 'restriction+gamma'
     details = "best fitting model"
-
+    best = "true"
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/michael_et_al2015" }

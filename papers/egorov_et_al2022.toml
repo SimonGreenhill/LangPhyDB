@@ -219,7 +219,7 @@ description = "3 languages, and 15 reconstructed proto-languages"
     taxa = ['turk1311']
     age = "hpd(2437, 1704, 3299)"
     units = "y2000"
-    notes = ""
+    details = ""
 
 
 [links]

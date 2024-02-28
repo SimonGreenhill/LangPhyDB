@@ -255,7 +255,7 @@ description = "103 Indo-European languages"
     tool = 'beast2'
     model = 'covarion+relaxed'
     details = "best fitting model"
-
+    best = 'true'
 
 
 [inferredages]
@@ -266,7 +266,7 @@ description = "103 Indo-European languages"
     taxa = ['indo1319']
     age = "hpd(7579, 5972, 9351)"
     units = "y2000"
-    notes = "7579 years BP; 95% HPD interval = 5972 to 9351 years BP."
+    details = "7579 years BP; 95% HPD interval = 5972 to 9351 years BP."
 
 
 [links]

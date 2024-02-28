@@ -145,7 +145,8 @@ description = "400 Austronesian languages"
     tool = 'bayesphylogenies'
     model = 'm1p+covarion'
     details = "best fitting model"
-
+    best = 'true'
+    
     [analysis.tree2]
     tool = 'bayesphylogenies'
     model = 'm2p'
@@ -171,7 +172,7 @@ description = "400 Austronesian languages"
     taxa = ['aust1307']
     age = "hpd(5230, 4750, 5800)"
     units = "y2000"
-    notes = ""
+    details = ""
 
 
 [links]

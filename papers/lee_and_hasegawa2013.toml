@@ -91,7 +91,8 @@ description = "19 Ainu languages"
     [analysis.tree7]
     tool = 'beast'
     model = 'stochasticdollo+bsp+relaxed+phylogeography(gamma)'
-    details = ""
+    details = "best-fitting model"
+    best = "true"
 
     [analysis.tree8]
     tool = 'beast'
@@ -101,12 +102,13 @@ description = "19 Ainu languages"
 
 [inferredages]
     notes = ""
+    
     [inferredage.ainu]
     taxa = ['ainu1252']
     age = "hpd(1288, 820, 1862)"
     units = "ybp"
-    notes = ""
-
+    details = ""
+    best = "true"
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/lee_and_hasegawa2013" }

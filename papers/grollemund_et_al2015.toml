@@ -84,13 +84,13 @@ description = "425 Bantu languages"
     taxa = ['sout3152']
     age = "6929.7±418.6"
     units = "ybp"
-    notes = ""
+    details = ""
 
     [inferredage.bantu]
     taxa = ['narr1281']
     age = "4846.5±138.1"
     units = "ybp"
-    notes = ""
+    details = ""
 
 
 [links]

@@ -455,145 +455,145 @@ description = "Comparison of multiple dating models for Indo-European"
     taxa = ['indo1319']
     age = "normal(8764, 544)"
     units = "y2000"
-    notes = ""
+    details = ""
 
     [inferredage.DF2]
     taxa = ['indo1319']
     age = "normal(9201, 670)"
     units = "y2000"
-    notes = ""
+    details = ""
 
     [inferredage.DF3]
     taxa = ['indo1319']
     age = "normal(8794, 533)"
     units = "y2000"
-    notes = ""
+    details = ""
 
     [inferredage.DF4]
     taxa = ['indo1319']
     age = "normal(8699, 561)"
     units = "y2000"
-    notes = ""
+    details = ""
 
     [inferredage.DF5]
     taxa = ['indo1319']
     age = "normal(8829, 520)"
     units = "y2000"
-    notes = ""
+    details = ""
 
     [inferredage.DF6]
     taxa = ['indo1319']
     age = "normal(9936, 843)"
     units = "y2000"
-    notes = ""
+    details = ""
 
     [inferredage.DF7]
     taxa = ['indo1319']
     age = "normal(9176, 855)"
     units = "y2000"
-    notes = ""
+    details = ""
 
     [inferredage.DF8]
     taxa = ['indo1319']
     age = "normal(7900, 735)"
     units = "y2000"
-    notes = ""
+    details = ""
 
     [inferredage.DF9]
     taxa = ['indo1319']
     age = "normal(8590, 748)"
     units = "y2000"
-    notes = ""
+    details = ""
 
     [inferredage.DD10]
     taxa = ['indo1319']
     age = "normal(7400, 218)"
     units = "y2000"
-    notes = ""
+    details = ""
 
     [inferredage.DD11]
     taxa = ['indo1319']
     age = "normal(8714, 410)"
     units = "y2000"
-    notes = ""
+    details = ""
 
     [inferredage.DD12]
     taxa = ['indo1319']
     age = "normal(7834, 360)"
     units = "y2000"
-    notes = ""
+    details = ""
 
     [inferredage.RF1]
     taxa = ['indo1319']
     age = "normal(7964, 645)"
     units = "y2000"
-    notes = ""
+    details = ""
 
     [inferredage.RF2]
     taxa = ['indo1319']
     age = "normal(7942, 702)"
     units = "y2000"
-    notes = ""
+    details = ""
 
     [inferredage.RF3]
     taxa = ['indo1319']
     age = "normal(9166, 671)"
     units = "y2000"
-    notes = ""
+    details = ""
 
     [inferredage.RF4]
     taxa = ['indo1319']
     age = "normal(9770, 1150)"
     units = "y2000"
-    notes = ""
+    details = ""
 
     [inferredage.RF5]
     taxa = ['indo1319']
     age = "normal(7106, 671)"
     units = "y2000"
-    notes = ""
+    details = ""
 
     [inferredage.RF6]
     taxa = ['indo1319']
     age = "normal(7932, 572)"
     units = "y2000"
-    notes = ""
+    details = ""
 
     [inferredage.RF7]
     taxa = ['indo1319']
     age = "normal(7665, 313)"
     units = "y2000"
-    notes = ""
+    details = ""
 
     [inferredage.RF8]
     taxa = ['indo1319']
     age = "normal(7956, 612)"
     units = "y2000"
-    notes = ""
+    details = ""
 
     [inferredage.RD9]
     taxa = ['indo1319']
     age = "normal(7552, 366)"
     units = "y2000"
-    notes = ""
+    details = ""
 
     [inferredage.RD10]
     taxa = ['indo1319']
     age = "normal(7671, 368)"
     units = "y2000"
-    notes = ""
+    details = ""
 
     [inferredage.RD11]
     taxa = ['indo1319']
     age = "normal(7513, 406)"
     units = "y2000"
-    notes = ""
+    details = ""
 
     [inferredage.RD12]
     taxa = ['indo1319']
     age = "normal(7869, 659)"
     units = "y2000"
-    notes = ""
+    details = ""
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }

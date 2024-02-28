@@ -99,7 +99,7 @@ description = "Attempt to identify the deeper relationships between language fam
     taxa = ['chuk1271']
     age = "normal(692, 67)"
     units = "y2000"
-    notes = "n.b. not really used as time inference, just a scalar for the rest of the tree"
+    details = "n.b. not really used as time inference, just a scalar for the rest of the tree"
 
     [inferredage.root_1]
     taxa = [
@@ -116,8 +116,9 @@ description = "Attempt to identify the deeper relationships between language fam
     ]
     age = "hpd(14450, 11720, 18380)"
     units = "y2000"
-    notes = "rooting 1 (on branch to proto-Dravidian)"
-
+    details = "rooting 1 (on branch to proto-Dravidian)"
+    best = "true"
+    
     [inferredage.root_2]
     taxa = [
         'mong1349', # Mongolic
@@ -133,7 +134,7 @@ description = "Attempt to identify the deeper relationships between language fam
     ]
     age = "hpd(15610, 11720, 20400)"
     units = "y2000"
-    notes = "rooting 2 (on branch to proto-Kartvelian)"
+    details = "rooting 2 (on branch to proto-Kartvelian)"
 
 
 

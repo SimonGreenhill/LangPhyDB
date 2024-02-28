@@ -234,13 +234,13 @@ description = "Compares the effect of node-dating vs. total-evidence dating on I
     notes = ""
     
     [inferredage.node_dating]
-    taxa = []
+    taxa = ['indo1319']
     age = "hpd(11165, 8669, 13920)"
     units = "ybp"
     notes = ""
 
     [inferredage.tip_dating]
-    taxa = []
+    taxa = ['indo1319']
     age = "hpd(6434, 5186, 7754)"
     units = "ybp"
     notes = ""

@@ -464,119 +464,139 @@ description = "Effect of farming on phonology"
     model = 'simmap'
     details = "best fitting model from Bayestraits"
     data = ""
+    best = "true"
 
     [analysis.simmap_phylogenies.bouckaert_gwh]
     tool = 'phytools'
     model = 'simmap'
     details = "best fitting model from Bayestraits"
     data = ""
+    best = "true"
 
     [analysis.simmap_phylogenies.bouckaert_kj]
     tool = 'phytools'
     model = 'simmap'
     details = "best fitting model from Bayestraits"
     data = ""
+    best = "true"
 
     [analysis.simmap_phylogenies.bouckaert_kw]
     tool = 'phytools'
     model = 'simmap'
     details = "best fitting model from Bayestraits"
     data = ""
+    best = "true"
 
     [analysis.simmap_phylogenies.bouckaert_p]
     tool = 'phytools'
     model = 'simmap'
     details = "best fitting model from Bayestraits"
     data = ""
+    best = "true"
 
     [analysis.simmap_phylogenies.bouckaert_m]
     tool = 'phytools'
     model = 'simmap'
     details = "best fitting model from Bayestraits"
     data = ""
+    best = "true"
 
     [analysis.simmap_phylogenies.bouckaert_b]
     tool = 'phytools'
     model = 'simmap'
     details = "best fitting model from Bayestraits"
     data = ""
+    best = "true"
 
     [analysis.simmap_phylogenies.bouckaert_dh]
     tool = 'phytools'
     model = 'simmap'
     details = "best fitting model from Bayestraits"
     data = ""
+    best = "true"
 
     [analysis.simmap_phylogenies.bouckaert_bh]
     tool = 'phytools'
     model = 'simmap'
     details = "best fitting model from Bayestraits"
     data = ""
+    best = "true"
 
     [analysis.simmap_phylogenies.bouckaert_gw]
     tool = 'phytools'
     model = 'simmap'
     details = "best fitting model from Bayestraits"
     data = ""
+    best = "true"
 
     [analysis.simmap_phylogenies.chang_w]
     tool = 'phytools'
     model = 'simmap'
     details = "best fitting model from Bayestraits"
     data = ""
+    best = "true"
 
     [analysis.simmap_phylogenies.chang_gwh]
     tool = 'phytools'
     model = 'simmap'
     details = "best fitting model from Bayestraits"
     data = ""
+    best = "true"
 
     [analysis.simmap_phylogenies.chang_kj]
     tool = 'phytools'
     model = 'simmap'
     details = "best fitting model from Bayestraits"
     data = ""
+    best = "true"
 
     [analysis.simmap_phylogenies.chang_kw]
     tool = 'phytools'
     model = 'simmap'
     details = "best fitting model from Bayestraits"
     data = ""
+    best = "true"
 
     [analysis.simmap_phylogenies.chang_p]
     tool = 'phytools'
     model = 'simmap'
     details = "best fitting model from Bayestraits"
     data = ""
+    best = "true"
 
     [analysis.simmap_phylogenies.chang_m]
     tool = 'phytools'
     model = 'simmap'
     details = "best fitting model from Bayestraits"
     data = ""
+    best = "true"
 
     [analysis.simmap_phylogenies.chang_b]
     tool = 'phytools'
     model = 'simmap'
     details = "best fitting model from Bayestraits"
     data = ""
+    best = "true"
 
     [analysis.simmap_phylogenies.chang_dh]
     tool = 'phytools'
     model = 'simmap'
     details = "best fitting model from Bayestraits"
     data = ""
+    best = "true"
 
     [analysis.simmap_phylogenies.chang_bh]
     tool = 'phytools'
     model = 'simmap'
     details = "best fitting model from Bayestraits"
     data = ""
+    best = "true"
 
     [analysis.simmap_phylogenies.chang_gw]
     tool = 'phytools'
     model = 'simmap'
     details = "best fitting model from Bayestraits"
     data = ""
+    best = "true"
 
 

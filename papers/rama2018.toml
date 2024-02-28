@@ -413,211 +413,211 @@ framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statis
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_B1_Germanic]
+    [inferredage.mrbayes_Uniform_B1_Germanic]
         taxa = ["germ1287"]
         age = "hpd(2876, 2286, 3572)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_B2_Germanic]
+    [inferredage.mrbayes_Uniform_B2_Germanic]
         taxa = ["germ1287"]
         age = "hpd(2816, 2256, 3458)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_Broad_Germanic]
+    [inferredage.mrbayes_Uniform_Broad_Germanic]
         taxa = ["germ1287"]
         age = "hpd(2615, 2147, 3166)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_Medium_Germanic]
+    [inferredage.mrbayes_Uniform_Medium_Germanic]
         taxa = ["germ1287"]
         age = "hpd(2449, 2031, 2935)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_Narrow_Germanic]
+    [inferredage.mrbayes_Uniform_Narrow_Germanic]
         taxa = ["germ1287"]
         age = "hpd(2334, 1943, 2807)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_B1_Romance]
+    [inferredage.mrbayes_Uniform_B1_Romance]
         taxa = ["roma1334"]
         age = "hpd(2987, 2400, 3629)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_B2_Romance]
+    [inferredage.mrbayes_Uniform_B2_Romance]
         taxa = ["roma1334"]
         age = "hpd(2149, 1628, 2714)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_Broad_Romance]
+    [inferredage.mrbayes_Uniform_Broad_Romance]
         taxa = ["roma1334"]
         age = "hpd(1980, 1515, 2493)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_Medium_Romance]
+    [inferredage.mrbayes_Uniform_Medium_Romance]
         taxa = ["roma1334"]
         age = "hpd(1841, 1401, 2345)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_Narrow_Romance]
+    [inferredage.mrbayes_Uniform_Narrow_Romance]
         taxa = ["roma1334"]
         age = "hpd(1736, 1309, 2248)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_B1_Scandinavian]
+    [inferredage.mrbayes_Uniform_B1_Scandinavian]
         taxa = ["nort3160"]
         age = "hpd(1523, 1127, 2016)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_B2_Scandinavian]
+    [inferredage.mrbayes_Uniform_B2_Scandinavian]
         taxa = ["nort3160"]
         age = "hpd(1469, 1102, 1906)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_Broad_Scandinavian]
+    [inferredage.mrbayes_Uniform_Broad_Scandinavian]
         taxa = ["nort3160"]
         age = "hpd(1340, 1024, 1697)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_Medium_Scandinavian]
+    [inferredage.mrbayes_Uniform_Medium_Scandinavian]
         taxa = ["nort3160"]
         age = "hpd(1164, 898, 1477)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_B1_Slavic]
+    [inferredage.mrbayes_Uniform_B1_Slavic]
         taxa = ["slav1255"]
         age = "hpd(1860, 1401, 2423)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_B2_Slavic]
+    [inferredage.mrbayes_Uniform_B2_Slavic]
         taxa = ["slav1255"]
         age = "hpd(1822, 1378, 2309)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_Broad_Slavic]
+    [inferredage.mrbayes_Uniform_Broad_Slavic]
         taxa = ["slav1255"]
         age = "hpd(1647, 1301, 2069)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_Medium_Slavic]
+    [inferredage.mrbayes_Uniform_Medium_Slavic]
         taxa = ["slav1255"]
         age = "hpd(1575, 1226, 1972)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_B1_EastBaltic]
+    [inferredage.mrbayes_Uniform_B1_EastBaltic]
         taxa = ["east2280"]
         age = "hpd(1584, 914, 2356)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_B2_EastBaltic]
+    [inferredage.mrbayes_Uniform_B2_EastBaltic]
         taxa = ["east2280"]
         age = "hpd(1561, 936, 2265)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_Broad_EastBaltic]
+    [inferredage.mrbayes_Uniform_Broad_EastBaltic]
         taxa = ["east2280"]
         age = "hpd(1465, 891, 2086)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_Medium_EastBaltic]
+    [inferredage.mrbayes_Uniform_Medium_EastBaltic]
         taxa = ["east2280"]
         age = "hpd(1460, 892, 2115)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_B1_BritishCeltic]
+    [inferredage.mrbayes_Uniform_B1_BritishCeltic]
         taxa = ["celt1248"]
         age = "hpd(1732, 1105, 2402)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_B2_BritishCeltic]
+    [inferredage.mrbayes_Uniform_B2_BritishCeltic]
         taxa = ["celt1248"]
         age = "hpd(1687, 1137, 2343)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_Broad_BritishCeltic]
+    [inferredage.mrbayes_Uniform_Broad_BritishCeltic]
         taxa = ["celt1248"]
         age = "hpd(1537, 1024, 2093)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_Medium_BritishCeltic]
+    [inferredage.mrbayes_Uniform_Medium_BritishCeltic]
         taxa = ["celt1248"]
         age = "hpd(1450, 955, 2011)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_B1_ModernIrishScotsGaelic]
+    [inferredage.mrbayes_Uniform_B1_ModernIrishScotsGaelic]
         taxa = ["mode1265"]
         age = "hpd(1058, 530, 1615)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_B2_ModernIrishScotsGaelic]
+    [inferredage.mrbayes_Uniform_B2_ModernIrishScotsGaelic]
         taxa = ["mode1265"]
         age = "hpd(1052, 589, 1620)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_Broad_ModernIrishScotsGaelic]
+    [inferredage.mrbayes_Uniform_Broad_ModernIrishScotsGaelic]
         taxa = ["mode1265"]
         age = "hpd(967, 523, 1442)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_Medium_ModernIrishScotsGaelic]
+    [inferredage.mrbayes_Uniform_Medium_ModernIrishScotsGaelic]
         taxa = ["mode1265"]
         age = "hpd(834, 451, 1260)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_Narrow_ModernIrishScotsGaelic]
+    [inferredage.mrbayes_Uniform_Narrow_ModernIrishScotsGaelic]
         taxa = ["mode1265"]
         age = "hpd(829, 442, 1290)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_B1_Persian-Tajik]
+    [inferredage.mrbayes_Uniform_B1_Persian-Tajik]
         taxa = ["fars1255"]
         age = "hpd(882, 424, 1412)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_B2_Persian-Tajik]
+    [inferredage.mrbayes_Uniform_B2_Persian-Tajik]
         taxa = ["fars1255"]
         age = "hpd(842, 386, 1360)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_Broad_Persian-Tajik]
+    [inferredage.mrbayes_Uniform_Broad_Persian-Tajik]
         taxa = ["fars1255"]
         age = "hpd(819, 409, 1250)"
         units = "ybp" # ybp
         notes = ""
     
-    [inferredage.inferredage.mrbayes_Uniform_Medium_Persian-Tajik]
+    [inferredage.mrbayes_Uniform_Medium_Persian-Tajik]
         taxa = ["fars1255"]
         age = "hpd(704, 336, 1098)"
         units = "ybp" # ybp

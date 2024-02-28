@@ -78,13 +78,13 @@ description = "6 Austroasiatic languages"
     taxa = ['khas1268']
     age = "hpd(1350, 1028, 1737)"
     units = "ybp"
-    notes = ""
+    details = ""
 
     [inferredage.KhasiPnar]
     taxa = ['khas1274']
     age = "hpd(535, 500, 603)"
     units = "ybp"
-    notes = ""
+    details = ""
 
 
 [links]

@@ -138,7 +138,8 @@ framework = ['bayesian']
     model = 'covarion+relaxed'
     details = ""
     data = ""
-
+    best = "true"
+    
 
 [inferredages]
     
@@ -148,37 +149,43 @@ framework = ['bayesian']
     taxa = ["taik1256"]
     age = "hpd(4041, 2741, 5550)"
     units = "ybp" # ybp
-    notes = ""
+    details = ""
+    best = "true"
 
     [inferredage.Proto-Kra]
     taxa = ["kada1291"]
     age = "hpd(2435, 1967, 2909)"
     units = "ybp" # ybp
-    notes = ""
+    details = ""
+    best = "true"
 
     [inferredage.Proto-Hlai]
     taxa = ["hlai1238"]
     age = "hpd(1155, 443, 2035)"
     units = "ybp" # ybp
-    notes = ""
+    details = ""
+    best = "true"
 
     [inferredage.Proto-Ong-Be]
     taxa = ["ling1270"]
     age = "hpd(1750, 1299, 2226)"
     units = "ybp" # ybp
-    notes = ""
+    details = ""
+    best = "true"
 
     [inferredage.Proto-Kam-Sui]
     taxa = ["kams1241"]
     age = "hpd(1222, 1044, 1410)"
     units = "ybp" # ybp
-    notes = ""
+    details = ""
+    best = "true"
 
     [inferredage.Proto-Tai]
     taxa = ["daic1237"]
     age = "hpd(1360, 873, 1903)"
     units = "ybp" # ybp
-    notes = ""
+    details = ""
+    best = "true"
 
 
 

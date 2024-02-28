@@ -113,7 +113,7 @@ description = "21 Tungusic languages"
         tool = 'beast2'
         model = 'sa+fbd+covarion+relaxed+gamma1'
         details = "best fitting model"
-
+        best = 'true'
 
     [analysis.tree8]
         tool = 'beast2'
@@ -201,13 +201,14 @@ description = "21 Tungusic languages"
     taxa = ['tung1282']
     age = "hpd(1487, 796, 2687)"
     units = "ybp"
-    notes = "best fitting model"
+    details = "best fitting model"
+    best = 'true'
 
     [inferredage.withearlyjurchensplit]
     taxa = ['tung1282']
     age = "hpd(2041, 1272, 3153)"
     units = "ybp"
-    notes = ""
+    details = ""
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/oskolskaya_et_al2021" }

@@ -74,6 +74,7 @@ description = "Presentation of the Stochastic Dollo Model with Lateral Transfers
     model = 'stochasticdollo+lateral'
     details = "best-fitting model"
     data = ""
+    best = 'true'
 
     [analysis.sd_nosingletons]
     tool = 'traitlab'
@@ -86,6 +87,7 @@ description = "Presentation of the Stochastic Dollo Model with Lateral Transfers
     model = 'stochasticdollo+lateral'
     details = "best-fitting model"
     data = "singleton sites removed"
+    best = 'true'
 
 
 [inferredages]

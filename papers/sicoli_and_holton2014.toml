@@ -49,6 +49,7 @@ description = "40 Dene-Yeniseian languages"
     tool = 'mrbayes'
     model = 'm2p+gamma+strict'
     details = "best-fitting model"
+    best = 'true'
 
     [analysis.bayesian3]
     tool = 'mrbayes'

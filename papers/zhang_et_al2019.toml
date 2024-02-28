@@ -124,6 +124,7 @@ description = "109 Sino-Tibetan languages"
         tool = 'beast2'
         model = 'covarion+relaxed'
         details = "best fitting model"
+        best = 'true'
 
 [inferredages]
     notes = ""
@@ -131,63 +132,72 @@ description = "109 Sino-Tibetan languages"
     taxa = ['sino1245']
     age = "hpd(5900, 4200, 7800)"
     units = "y2000"
-    notes = "4,200–7,800 years bp, with an average value of approximately 5,900 years bp"
+    details = "4,200–7,800 years bp, with an average value of approximately 5,900 years bp"
+    best = 'true'
 
 
     [inferredage.Lolo-Qiangic]
     taxa = ["lolo1265"]
     age = "hpd(2800, 2200, 3400)"
     units = "y2000"
-    notes = "best fitting model"
+    details = "best fitting model"
+    best = 'true'
 
 
     [inferredage.Tibetan-Qiangic]
     taxa = ["burm1265"]
     age = "hpd(3900, 3300, 5100)"
     units = "y2000"
-    notes = "best fitting model"
+    details = "best fitting model"
+    best = 'true'
 
 
     [inferredage.Kiranti]
     taxa = ["kira1253"]
     age = "hpd(2800, 1800, 3900)"
     units = "y2000"
-    notes = "best fitting model"
+    details = "best fitting model"
+    best = 'true'
 
 
     [inferredage.Tani-Idu]
     taxa = ["tani1259", "idum1241"]
     age = "hpd(4000, 3500, 5300)"
     units = "y2000"
-    notes = "best fitting model"
+    details = "best fitting model"
+    best = 'true'
 
 
     [inferredage.Sal]
     taxa = ["brah1260"]
     age = "hpd(3400, 2500, 4600)"
     units = "y2000"
-    notes = "best fitting model"
+    details = "best fitting model"
+    best = 'true'
 
 
     [inferredage.Karenic]
     taxa = ["kare1337"]
     age = "hpd(1100, 1000, 1300)"
     units = "y2000"
-    notes = "best fitting model"
+    details = "best fitting model"
+    best = 'true'
 
 
     [inferredage.Naga]
     taxa = ["naga1409"]
     age = "hpd(2700, 1900, 3500)"
     units = "y2000"
-    notes = "best fitting model"
+    details = "best fitting model"
+    best = 'true'
 
 
     [inferredage.Sinitic]
     taxa = ["sini1245"]
     age = "hpd(2700, 2500, 3000)"
     units = "y2000"
-    notes = "best fitting model"
+    details = "best fitting model"
+    best = 'true'
 
 
 

@@ -57,7 +57,8 @@ description = "31 Island Melanesia languages"
     tool = 'bayesphylogenies'
     model = 'm1p+gamma4'
     details = "best-fitting model"
-
+    best = 'true'
+    
     [analysis.bayesian_c]
     tool = 'bayesphylogenies'
     model = 'm1p+gamma4+heating'

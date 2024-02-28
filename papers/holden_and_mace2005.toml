@@ -60,7 +60,8 @@ description = "Phylogenetic test of the relationship between the adoption of cat
     tool = 'bayestraits'
     model = 'dependent'
     details = "best-fitting model"
-
+    best = 'true'
+    
     [analysis.bt_indep]
     tool = 'bayestraits'
     model = 'independent'

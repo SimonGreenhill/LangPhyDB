@@ -198,6 +198,7 @@ description = "40 varieties from Tupí-Guaraní"
     model = 'birthdeath+bcov+relaxed'
     details = "main model discussed in paper as the authors preferred this result despite nested sampling preferring analysis.fullstrict: `. Our decision in favor of the relaxed clock model was due to an expert analysis of the resulting topology and dates, as it was far more compatible with the literature, and by the fact that most unexpected results, such as the position of the Anambé-Araweté clade or the branch length of Tupinambá, can be explained by differences in concept coverage`"
     data = "data.full"
+    best = 'true'
 
     [analysis.fullstrict]
     tool = 'beast2'
@@ -232,19 +233,19 @@ description = "40 varieties from Tupí-Guaraní"
     taxa = ['mawe1252']
     age = "hpd(3300, 2500, 4620)"
     units = "ybp"
-    notes = ""
+    details = ""
 
     [inferredage.awetisplit]
     taxa = ['awet1245']
     age = "hpd(2600, 1404, 4037)"
     units = "ybp"
-    notes = ""
+    details = ""
 
     [inferredage.tupiguarani]
     taxa = ['tupi1276']
     age = "hpd(1700, 847, 2740)"
     units = "ybp"
-    notes = ""
+    details = ""
 
 
 [links]

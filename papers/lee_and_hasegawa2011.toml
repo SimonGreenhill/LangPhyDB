@@ -95,7 +95,8 @@ description = "59 Japonic languages"
         tool = 'beast'
         model = 'covarion+relaxed'
         details = "best fitting model"
-
+        best = "true"
+        
 [inferredages]
     
     notes = ""
@@ -104,7 +105,8 @@ description = "59 Japonic languages"
     taxa = ['japo1237']
     age = "hpd(2182, 1239, 4190)"
     units = "ybp"
-    notes = ""
+    details = ""
+    best = "true"
 
 
 [links]

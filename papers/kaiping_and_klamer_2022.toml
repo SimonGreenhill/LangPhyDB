@@ -102,6 +102,7 @@ description = "48 Timor-Alor-Pantar languages"
     model = 'ctmc+strict+birthdeath'
     details = "best fitting model"
     data = "@data.S"
+    best = 'true'
 
     [analysis.T]
     tool = 'beast2'
@@ -189,8 +190,8 @@ description = "48 Timor-Alor-Pantar languages"
     taxa = ['timo1261']
     age = "hpd(4816, 7636)"
     units = "y2000"
-    notes = "The mean root ages for the four topologies all lie between 5,979 and 6,089 yBP. Of all trees in this posterior sample, 95 % have root ages between 4,816 and 7,636 years."
-
+    details = "The mean root ages for the four topologies all lie between 5,979 and 6,089 yBP. Of all trees in this posterior sample, 95 % have root ages between 4,816 and 7,636 years."
+    best = 'true'
 
 
 [links]

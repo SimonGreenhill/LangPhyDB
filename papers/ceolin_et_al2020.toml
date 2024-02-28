@@ -66,6 +66,7 @@ description = "69 Indo-European & other languages"
     tool = 'beast2'
     model = 'ctmc+relaxed(log)+yule'
     details = "best-fitting model"
+    best = 'true'
 
     [analysis.beast2]
     tool = 'beast2'

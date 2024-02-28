@@ -80,7 +80,7 @@ description = "27 Aslian languages"
         tool = 'bayesphylogenies'
         model = 'm1p+covarion'
         details = "best fitting model"
-
+        best = 'true'
 
     [analysis.tree4]
         tool = 'bayesphylogenies'

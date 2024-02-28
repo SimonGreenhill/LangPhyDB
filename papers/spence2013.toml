@@ -86,7 +86,8 @@ description = "24 Pacific-Coast Athabaskan languages"
     tool = 'mrbayes'
     model = 'restrictionsite+relaxed'
     details = "best-fitting model"
-
+    best = 'true'
+    
     [analysis.binary1]
     tool = 'mrbayes'
     model = 'restrictionsite'
@@ -101,6 +102,7 @@ description = "24 Pacific-Coast Athabaskan languages"
     tool = 'mrbayes'
     model = 'restrictionsite+relaxed'
     details = "best-fitting model"
+    best = "true"
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }

@@ -152,7 +152,7 @@ description = "87 Indo-European languages"
     taxa = ['indo1319']
     age = "hpd(7800, 9800)"  # upper and lower only given
     units = "ybp"
-    notes = ""
+    details = ""
 
 
 [links]

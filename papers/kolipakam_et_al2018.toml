@@ -207,7 +207,7 @@ description = "20 Dravidian languages"
     taxa = ['drav1251']
     age = "hpd(4433, 2812, 7063)"
     units = "ybp"
-    notes = ""
+    details = ""
 
 
 [links]

@@ -150,8 +150,8 @@ description = "30 Mayan languages"
     taxa = ['maya1287']
     age = "hpd(3900, 9100)"
     units = "y2000"
-    notes = "best fitting model"
-
+    details = "best fitting model"
+    best = "true"
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/atkinson2006" }

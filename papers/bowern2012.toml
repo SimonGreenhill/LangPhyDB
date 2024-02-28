@@ -131,7 +131,7 @@ description = '26 Tasmanian languages'
     taxa = ["west1503", "nort1442", "sout1293"]
     age = "unknown(8500)"
     units = "ybp"
-    notes = """However, root estimate confidence limits are very poor (see electronic supplementary
+    details = """However, root estimate confidence limits are very poor (see electronic supplementary
     material, figure S5); a better interpretation of the tree is that there is very weak
     support for any relationship beyond the five clusters already identified."""
 

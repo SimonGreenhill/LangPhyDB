@@ -59,7 +59,8 @@ description = "306 Pama-Nyungan languages"
     tool = 'beast2'
     model = 'covarion+relaxed+bdsky'
     details = "best fitting model"
-
+    best = 'true'
+    
     [analysis.tree2]
     tool = 'beast2'
     model = 'ctmc+gamma+relaxed+bdsky'
@@ -98,7 +99,7 @@ description = "306 Pama-Nyungan languages"
     taxa = ['pama1250']
     age = "hpd(5671, 4455, 6966)"
     units = "y2000"
-    notes = "5671 is mean not median"
+    details = "5671 is mean not median"
 
 
 [links]

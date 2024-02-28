@@ -69,7 +69,7 @@ description = "32 Turkic languages"
         tool = 'beast2'
         model = 'covarion+strict'
         details = ""
-
+        best = 'true'
 
     [analysis.tree4]
         tool = 'beast2'
@@ -97,19 +97,22 @@ description = "32 Turkic languages"
     taxa = ['turk1311']
     age = "hpd(2016, 1467, 2705)"
     units = "ybp"
-    notes = "best fitting model"
+    details = "best fitting model"
+    best = 'true'
 
     [inferredage.nort2688]
     taxa = ['nort2688']
     age = "hpd(1476, 1141, 1957)"
     units = "ybp"
-    notes = "best fitting model"
+    details = "best fitting model"
+    best = 'true'
 
     [inferredage.oldu1238]
     taxa = ['oldu1238']
     age = "hpd(1300, 1146, 1523)"
     units = "ybp"
-    notes = "best fitting model"
+    details = "best fitting model"
+    best = 'true'
     
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/savelyev_and_robbeets2020" }

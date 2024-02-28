@@ -82,7 +82,7 @@ description = "17 Uralic languages"
     tool = 'beast'
     model = 'yule+ctmc+gamma4+relaxed'
     details = "best fitting model"
-
+    best = 'true'
 
 [inferredages]
     notes = ""
@@ -90,7 +90,7 @@ description = "17 Uralic languages"
     taxa = ['ural1272']
     age = "hpd(6600, 3679, 10307)"
     units = "ybp"
-    notes = ""
+    details = ""
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/honkola_et_al2013" }

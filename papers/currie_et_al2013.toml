@@ -84,6 +84,7 @@ description = "542 Bantu languages"
     tool = 'bayesphylogenies'
     model = '?+covarion+5state'
     details = "best fitting model"
+    best = 'true'
 
     [analysis.tree6]
     tool = 'bayesphylogenies'

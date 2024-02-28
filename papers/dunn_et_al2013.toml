@@ -118,6 +118,7 @@ description = "28 Aslian languages"
     tool = 'beast'
     model = 'covarion+relaxed'
     details = "best-fitting model"
+    best = 'true'
     
     [analysis.sdollorelaxed]
     tool = 'beast'
@@ -139,11 +140,11 @@ description = "28 Aslian languages"
     model = 'covarion+relaxed'
     details = "without calibration.root"
 
-
     [analysis.phylogeoRRW]
     tool = 'beast'
     model = 'covarion+relaxed+phylogeo(RRW)'
     details = "best-fitting model"
+    best = 'true'
     
     [analysis.phylogeodiffusion]
     tool = 'beast'
@@ -160,7 +161,7 @@ description = "28 Aslian languages"
     taxa = ['asli1243']
     age = "hpd(4305, 2943, 6570)"
     units = "ybp"
-    notes = "from analysis.dating (i.e. without the root calibration of root.calibration)"
+    details = "from analysis.dating (i.e. without the root calibration of root.calibration)"
 
 
 [links]

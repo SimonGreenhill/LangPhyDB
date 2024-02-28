@@ -122,6 +122,7 @@ description = "33 Uto-Aztecan and Kiowa-Tanoan languages"
         tool = 'beast2'
         model = 'covarion+relaxed'
         details = ""
+        best = 'true'
         
     [analysis.phylogeo1]
         tool = 'beast2'
@@ -205,7 +206,7 @@ description = "33 Uto-Aztecan and Kiowa-Tanoan languages"
     taxa = ['utoa1244']
     age = "hpd(4100, 3258, 5025)"
     units = "ybp"
-    notes = ""
+    details = ""
 
 
 [links]

@@ -77,6 +77,7 @@ description = "95 Kikongo languages"
     tool = 'bayesphylogenies'
     model = '?+covarion+4state'
     details = "best fitting model"
+    best = 'true'
 
     [analysis.tree5]
     tool = 'bayesphylogenies'

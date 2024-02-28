@@ -116,19 +116,19 @@ description = "86 Sino-Tibetan languages"
     taxa = ['khob1235']
     age = "hpd(2.843, 1.996, 3.747)"
     units = "ybp"
-    notes = ""
+    details = ""
 
     [inferredage.hrusish]
     taxa = ['miji1239', 'hrus1242']
     age = "hpd(1.846, 1.121, 2.674)"
     units = "ybp"
-    notes = ""
+    details = ""
 
     [inferredage.tshangla]
     taxa = ['tsha1247']
     age = "hpd(5.700, 4.413, 6.530)"
     units = "ybp"
-    notes = ""
+    details = ""
     
     
 [links]

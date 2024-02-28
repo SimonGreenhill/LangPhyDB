@@ -102,7 +102,7 @@ description = "636 Bantu languages"
         tool = 'beast2'
         model = 'ctmc+gamma4+relaxed'
         details = "best fitting model"
-    
+        best = 'true'
 
     [analysis.tree5]
         tool = 'beast2'
@@ -146,13 +146,15 @@ description = "636 Bantu languages"
     taxa = ['bant1294']
     age = "hpd(4940, 4500, 5400)"
     units = "ybp"
-    notes = ""
+    details = ""
+    best = 'true'
     
     [inferredage.sout3152]
     taxa = ['sout3152']
     age = "hpd(4140, 3950, 4380)"
     units = "ybp"
-    notes = ""
+    details = ""
+    best = 'true'
 
 
 [links]

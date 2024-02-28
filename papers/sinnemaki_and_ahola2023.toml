@@ -42,11 +42,12 @@ description = ""
     [data.alorese]
     ntaxa = 22
     nchars = 12
-    nsites = "?"
+    nsites = 12
     datatype = 'structural features'
     source = ''
     items = ''
     comment = ''
+
 
 # published phylogenies
 [phylogenies]
@@ -58,13 +59,14 @@ description = ""
 # analysis information
 [analysis]
     
-    notes = "The model has been implemented in the ancThresh function of the phytools library (Revell 2012) in R (R Core Team 2023; see Supplement S2 for other libraries and Supplement S3 for the R code"
+    notes = ""
     
     [analysis.asr]
     tool = 'phytools'
     model = 'ancThresh'
     details = ""
-    data = ""
+    data = "@data.phylogenies;@data.alorese"
+
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }

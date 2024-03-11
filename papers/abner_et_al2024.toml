@@ -1,0 +1,151 @@
+title = "Computational phylogenetics reveal histories of sign languages"
+
+doi = "10.1126/science.add7766"
+
+abstract = """
+Sign languages are naturally occurring languages. As such, their emergence and spread
+reflect the histories of their communities. However, limitations in historical
+recordkeeping and linguistic documentation have hindered the diachronic analysis of sign
+languages. In this work, we used computational phylogenetic methods to study family
+structure among 19 sign languages from deaf communities worldwide. We used phonologically
+coded lexical data from contemporary languages to infer relatedness and suggest that these
+methods can help study regular form changes in sign languages. The inferred trees are
+consistent in key respects with known historical information but challenge certain assumed
+groupings and surpass analyses made available by traditional methods. Moreover, the
+phylogenetic inferences are not reducible to geographic distribution but do affirm the
+importance of geopolitical forces in the histories of human languages.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Natasha Abner", "Grégoire Clarté", "Carlo Geraci", "Robin J. Ryder", "Justine Mertz", "Anah Salgat", "Shi Yu"]
+
+# parts of the world
+groups = ['Sign Languages']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Abner_2024"
+
+# type of study
+type = ['phylogenetic']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = "Data items were entries for the 100 concepts on a version of the Swadesh list (41) that has been adapted for sign language analysis"
+    
+    [data.asian]
+    ntaxa = 14
+    nchars = 100
+    nsites = 400
+    datatype = 'sign features'
+    source = ''
+    items = 'swadesh100'
+    comment = ''
+
+    [data.european]
+    ntaxa = 15
+    nchars = 100
+    nsites = 400
+    datatype = 'sign features'
+    source = ''
+    items = 'swadesh100'
+    comment = ''
+
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.british_nz]
+    taxa = ['brit1235', 'newz1236']
+    age = "uniform(107, 132)"
+    units = "y2000"
+    description = "1868 – 1893"
+
+    [calibration.american_french]
+    taxa = ['amer1248', 'fren1243']
+    age = "uniform(158, 183)"
+    units = "y2000"
+    description = "1817 – 1842"
+
+    [calibration.italian_french]
+    taxa = ['fren1243', 'ital1288']
+    age = "uniform(181, 216)"
+    units = "y2000"
+    description = "1784 – 1819"
+
+    [calibration.japanese_taiwanese]
+    taxa = ['taiw1241', 'japa1238']
+    age = "uniform(60, 85)"
+    units = "y2000"
+    description = "1915 – 1940"
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+
+    [analysis.tree_euro_replicate_1]
+    tool = 'r'
+    model = 'custom'
+    details = ""
+    data = "@data.european"
+
+    [analysis.tree_euro_replicate_2]
+    tool = 'r'
+    model = 'custom'
+    details = ""
+    data = "@data.european"
+    
+    [analysis.tree_asia]
+    tool = 'r'
+    model = 'custom'
+    details = ""
+    data = "@data.asian"
+
+    [analysis.tree_combined]
+    tool = 'r'
+    model = 'custom'
+    details = ""
+    data = "@data.asian;@data.european"
+
+    [analysis.tree_mk]
+    tool = 'revbayes'
+    model = 'mk'
+    details = ""
+    data = "@data.asian;@data.european"
+
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.asia]
+    taxa = []
+    age = "hpd(151.61, 104.56, 203.35)"  # read off trees
+    units = "y2000"
+    notes = ""
+
+    [inferredage.european_replicate1]
+    taxa = []
+    age = "hpd(189.72, 181.01, 211.40)"  # read off trees
+    units = "y2000"
+    notes = "replicate 1 (EBNZ1)"
+
+    [inferredage.european_replicate2]
+    taxa = []
+    age = "hpd(181.01, 194.13, 213.30)"  # read off trees
+    units = "y2000"
+    notes = "replicate 2 (EBNZ2)"
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/abner_et_al2024" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

@@ -1,0 +1,84 @@
+title = "The strength of the phylogenetic signal in syntactic data"
+
+doi = "10.16995/glossa.10598"
+
+abstract = """
+While phonological change has played a central role in assessing linguistic relatedness
+since the nineteenth century, the usefulness of syntactic change for this purpose has
+remained debated – despite recent work on the question with a variety of results. In our
+study, we analyze the phylogenetic signal of syntactic data using state-of-the-art
+Bayesian algorithms and the SSWL database (Koopman 2012–). With the phylogenetic model, we
+infer a minimally biased family tree. We find that, generally, the phylogenetic signal in
+the syntactic dataset is low. The model fails to infer larger-order subgroupings that
+would be found further back in time. This is in contrast to the clear-cut groupings we can
+obtain from running this type of model on phonological databases. This raises the question
+how well these syntactic properties encode phylogenetic information. As it stands, the
+model fails to provide evidence for strong phylogenetic signal despite the rich dataset
+and methods.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Frederik Hartmann", "George Walkden"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@HartmannWalkden2024"
+
+# type of study
+type = ['phylogenetic']
+framework = ['distance', 'bayesian']
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.sswl]
+    ntaxa = 319
+    nchars = 173
+    nsites = 173
+    datatype = 'syntactical features'
+    source = '@SSWL'
+    items = ''
+    comment = '319 languages and 173 syntactic properties'
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.bayesian]
+    tool = 'revbayes'
+    model = 'birthdeath+dirichlet+ucld+gamma'
+    details = ""
+    data = ""
+
+    [analysis.jc]
+    tool = 'revbayes'
+    model = 'birthdeath+jc+stric+gamma'
+    details = ""
+    data = ""
+
+    [analysis.upgma]
+    tool = 'phangorn'
+    model = 'upgma'
+    details = ""
+    data = ""
+
+    [analysis.nj]
+    tool = 'phangorn'
+    model = 'neighborjoining'
+    details = ""
+    data = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = ['https://github.com/frithureiks/The-strength-of-the-phylogenetic-signal-in-syntactic-data']

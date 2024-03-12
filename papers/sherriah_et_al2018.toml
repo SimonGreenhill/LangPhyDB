@@ -1,0 +1,77 @@
+title = "Using features of a Creole language to reconstruct population history and cultural evolution: tracing the English origins of Sranan"
+
+doi = "10.1098/rstb.2017.0055"
+
+abstract = """ Creole languages are formed in conditions where speakers from distinct
+languages are brought together without a shared first language, typically under the
+domination of speakers from one of the languages and particularly in the context of the
+transatlantic slave trade and European colonialism. One such Creole in Suriname, Sranan,
+developed around the mid-seventeenth century, primarily out of contact between varieties
+of English from England, spoken by the dominant group, and multiple West African
+languages. The vast majority of the basic words in Sranan come from the language of the
+dominant group, English. Here, we compare linguistic features of modern-day Sranan with
+those of English as spoken in 313 localities across England. By way of testing proposed
+hypotheses for the origin of English words in Sranan, we find that 80% of the studied
+features of Sranan can be explained by similarity to regional dialect features at two
+distinct input locations within England, a cluster of locations near the port of Bristol
+and another cluster near Essex in eastern England. Our new hypothesis is supported by the
+geographical distribution of specific regional dialect features, such as post-vocalic
+rhoticity and word-initial 'h', and by phylogenetic analysis of these features, which
+shows evidence favouring input from at least two English dialects in the formation of
+Sranan. In addition to explicating the dialect features most prominent in the linguistic
+evolution of Sranan, our historical analyses also provide supporting evidence for two
+distinct hypotheses about the likely geographical origins of the English speakers whose
+language was an input to Sranan. The emergence as a likely input to Sranan of the speech
+forms of a cluster near Bristol is consistent with historical records, indicating that
+most of the indentured servants going to the Americas between 1654 and 1666 were from
+Bristol and nearby counties, and that of the cluster near Essex is consistent with
+documents showing that many of the governors and important planters came from the
+southeast of England (including London) (Smith 1987 The Genesis of the Creole Languages of
+Surinam; Smith 2009 In The handbook of pidgin and creole studies, pp. 98–129). """
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["André C. Sherriah", "Hubert Devonish", "Ewart A. C. Thomas", "Nicole Creanza"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Sherriah_2018"
+
+# type of study
+type = ['phylogenetic']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['likelihood'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.sranan]
+    ntaxa = 313
+    nchars = 45
+    nsites = 45
+    datatype = 'mixed'
+    source = '@SED'
+    items = ''
+    comment = 'phonological variants and grammatical features'
+
+# analysis information
+[analysis]
+    
+    notes = "Other analyses not recorded here"
+    
+    [analysis.treemix]
+    tool = 'treemix'
+    model = ''
+    details = ""
+    data = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

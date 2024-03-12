@@ -9,16 +9,16 @@ bayestraits,http://www.evolution.reading.ac.uk/BayesTraits.html
 bayestrees,
 beast,https://beast.community
 beast2,http://www.beast2.org/
-brownie.lite,R package brownie
 brms,Bayesian Regression Models using 'Stan'
+brownie.lite,R package brownie
 caper,R package caper
 corHMM,
 custom,Custom tool
 dendroscope,
 gabmap,
 geiger,
-GenGIS,
 GenAlEx,
+GenGIS,
 hisse,R package hisse
 iqtree,
 LEA,R package LEA
@@ -33,6 +33,7 @@ mesquite,
 model,mathematical model
 mrbayes,http://nbisweden.github.io/MrBayes/
 network,
+past,
 paup*,
 perfect,Perfect Phylogeny Algorithm
 phangorn,
@@ -59,6 +60,7 @@ structure,
 tiger-calculator,https://github.com/kasyrj/tiger-calculator
 tnt,
 traitlab,https://sites.google.com/site/traitlab/
+treemix,
 unknown,?
 vegan,R Vegan package
 Xgvis,

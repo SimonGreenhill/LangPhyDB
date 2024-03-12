@@ -1,0 +1,98 @@
+title = "A comparison of worldwide phonemic and genetic variation in human populations"
+
+doi = "10.1073/pnas.1424033112"
+
+abstract = """
+Worldwide patterns of genetic variation are driven by human demographic history. Here, we
+test whether this demographic history has left similar signatures on phonemes—sound units
+that distinguish meaning between words in languages—to those it has left on genes. We
+analyze, jointly and in parallel, phoneme inventories from 2,082 worldwide languages and
+microsatellite polymorphisms from 246 worldwide populations. On a global scale, both
+genetic distance and phonemic distance between populations are significantly correlated
+with geographic distance. Geographically close language pairs share significantly more
+phonemes than distant language pairs, whether or not the languages are closely related.
+The regional geographic axes of greatest phonemic differentiation correspond to axes of
+genetic differentiation, suggesting that there is a relationship between human dispersal
+and linguistic variation. However, the geographic distribution of phoneme inventory sizes
+does not follow the predictions of a serial founder effect during human expansion out of
+Africa. Furthermore, although geographically isolated populations lose genetic diversity
+via genetic drift, phonemes are not subject to drift in the same way: within a given
+geographic radius, languages that are relatively isolated exhibit more variance in number
+of phonemes than languages with many neighbors. This finding suggests that relatively
+isolated languages are more susceptible to phonemic change than languages with many
+neighbors. Within a language family, phoneme evolution along genetic, geographic, or
+cognate-based linguistic trees predicts similar ancestral phoneme states to those
+predicted from ancient sources. More genetic sampling could further elucidate the relative
+roles of vertical and horizontal transmission in phoneme evolution.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Nicole Creanza", "Merritt Ruhlen", "Trevor J. Pemberton", "Noah A. Rosenberg", "Marcus W. Feldman", "Sohini Ramachandran"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Creanza2015"
+
+# type of study
+type = ['asr', 'macroevolutionary']
+framework = ['likelihood'] 
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = "For 139 populations in the Ruhlen database and 114 in PHOIBLE, we were able to merge genetic, geographic, and phonemic data (the phoneme–genome datasets)"
+    
+    [data.ruhlen]
+    ntaxa = 139
+    nchars = 728
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = ''
+
+    [data.phoible]
+    ntaxa = 139
+    nchars = 1587
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Phoible'
+    items = ''
+    comment = ''
+
+    [data.genetic]
+    ntaxa = 139
+    nchars = 645
+    nsites = 645
+    datatype = 'microsatellite'
+    source = ''
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = "Multiple other analyses presented (e.g. PCA, Mantel), only relevant ones reported here"
+    
+    [analysis.asr_phoible]
+    tool = 'ape'
+    model = 'ace'
+    details = "each character separately"
+    data = "Indo-European subset of @data.phoible"
+
+    [analysis.asr_ruhlen]
+    tool = 'ape'
+    model = 'ace'
+    details = "each character separately"
+    data = "Indo-European subset of @data.ruhlen"
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

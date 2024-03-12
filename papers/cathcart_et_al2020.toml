@@ -41,7 +41,7 @@ description = "Numeral classifiers and number marking in Indo-Iranian"
     notes = ""
     
     [data.asjp]
-    datatype = 'lexical distances'
+    datatype = 'lexical distance'
     source = '@ASJP18'
     items = ''
     comment = ''

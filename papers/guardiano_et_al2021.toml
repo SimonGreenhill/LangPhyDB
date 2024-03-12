@@ -1,0 +1,115 @@
+title = "Formal Syntax as a Phylogenetic Method"
+
+doi = "10.1002/9781118732168.ch7"
+
+abstract = """
+Since the beginning of the historical‐comparative paradigm and the early attempts at
+scientific language phylogenies, the study of syntax has hardly played any role at all
+in these investigations. Until a few decades ago, this attitude could be justified with
+the lack of syntactic models with the characters of modern science: pattern regularity,
+universality, and precise quantifiable hypotheses. However, for at least the past
+40 years, formal linguistic theories have attempted to remedy these shortcomings.
+Especially since the development of parametric models (Chomsky 1981), the theory
+of generative grammars, in its search for descriptive and explanatory adequacy
+(Chomsky 1964), has successfully addressed many issues of cross‐linguistic syntactic
+diversity. Yet, even this broadly comparative framework has remained largely syn-
+chronic, or diachronic only in the sense of trying to explain individual instances of
+local changes (i.e., between two contiguous stages of the 'same' language: Lightfoot
+1979, 1998, 2006; Roberts 2007; among others). In other words, it has so far continued
+the century‐long tradition of regarding syntax as a domain irrelevant for capturing
+meaningful generalizations about the historical relatedness of languages.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Cristina Guardiano",
+    "Giuseppe Longobardi",
+    "Guido Cordoni",
+    "Paola Crisma",
+]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Guardiano_2020"
+
+# type of study
+type = ['review', 'phylogenetic',]
+framework = ['distance', 'network']
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.parameters]
+    ntaxa = 54
+    nchars = 97
+    nsites = 97
+    datatype = 'structural features'
+    source = ''
+    items = ''
+    comment = ''
+
+    [data.chang]
+    ntaxa = 22
+    nchars = "?"
+    nsites = 1
+    datatype = 'lexical distance'
+    source = '@Chang2015;@IELex'
+    items = 'swadesh200'
+    comment = 'subset of Chang et al. (IELex) data'
+
+    [data.creanza]
+    ntaxa = 42
+    nchars = "?"
+    nsites = 1
+    datatype = 'phonetic distance'
+    source = '@Creanza2015'
+    items = ''
+    comment = 'subset of Creanza et al. 2015'
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.upgma]
+    tool = 'past'
+    model = 'upgma+bootstrap'
+    details = ""
+    data = "full dataset @data.parameters"
+
+    [analysis.upgma_phonemic]
+    tool = 'past'
+    model = 'upgma+bootstrap'
+    details = ""
+    data = "@data.creanza"
+    
+    [analysis.upgma_pruned]
+    tool = 'past'
+    model = 'upgma+bootstrap'
+    details = ""
+    data = "@data.parameters pruned to match @data.creanza"
+
+    [analysis.upgma_turkish]
+    tool = 'past'
+    model = 'upgma'
+    details = ""
+    data = "@data.parameters pruned to Turkish and friends"
+
+    [analysis.nj_turkish]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = "@data.parameters pruned to Turkish and friends"
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

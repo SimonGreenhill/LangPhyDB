@@ -12,6 +12,10 @@ Papers deemed to fall outside scope, alphabetically by first author surname.
     - no explicit phylogenetic analysis
 
 ## C
+
+* Crisma, Paola & Guardiano, Cristina & Longobardi, Giuseppe. 2020. Syntactic parameters and language learnability. Studi Saggi Linguistici 58. 99–130.x
+    - no explicit phylogenetic analysis
+
 ## D
 
 * Dediu, D, & Cysouw, M (2013). Some structural aspects of language are more stable than others: A comparison of seven methods. PloS One, 8(1), e55009. https://doi.org/10.1371/journal.pone.0055009
@@ -51,6 +55,10 @@ Papers deemed to fall outside scope, alphabetically by first author surname.
 
 * Levinson SC, Greenhill SJ, Gray RD & Dunn M. 2011. Universal typological dependencies should be detectable in the history of language families. Linguistic Typology, 15: 509-534.
     - position piece/response to criticism of Dunn et al. 2011.
+
+* Longobardi, Giuseppe. 2005. A Minimalist program for parametric linguistics? In Broekhuis, Hans & Corver, Norbert & Huybregts, Riny & Kleinhenz, Ursula & Koster, Jan (eds.), Organizing grammar: linguistic studies for Henk van Riemsdijk, 407–414. Amsterdam: John Benjamins. DOI:  http://doi.org/10.1515/9783110892994.407
+    - No explicit phylogenetic analysis
+
 * Longobardi G, Ceolin A, Bortolussi L, Guardiano C, Irimia MA, Michelioudakis D, Radkevich N, & Sgarro A. 2016. Mathematical modeling of grammatical diversity supports the historical reality of formal syntax. Universität Tübingen. https://doi.org/10.15496/PUBLIKATION-10122
     - no explicit phylogenetic analysis
 

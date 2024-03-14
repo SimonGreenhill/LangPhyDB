@@ -88,15 +88,45 @@ description = "79 Indo-European languages, 130 Austronesian languages, 66 Bantu 
     details = "5 million"
     data = "@data.utoaztecan"
 
-    [analysis.bayestraits_indep]
+    [analysis.bayestraits_indep_utoaztecan]
     tool = 'bayestraits'
     model = 'discrete+independent'
-    details = ""
+    details = "@analysis.utoaztecan"
 
-    [analysis.bayestraits_dep]
+    [analysis.bayestraits_dep_utoaztecan]
     tool = 'bayestraits'
     model = 'discrete+dependent'
-    details = ""
+    details = "@analysis.utoaztecan"
 
+    [analysis.bayestraits_indep_bantu]
+    tool = 'bayestraits'
+    model = 'discrete+independent'
+    details = "@phylogenies.bantu"
+
+    [analysis.bayestraits_dep_bantu]
+    tool = 'bayestraits'
+    model = 'discrete+dependent'
+    details = "@phylogenies.bantu"
+    
+    [analysis.bayestraits_indep_indoeuropean]
+    tool = 'bayestraits'
+    model = 'discrete+independent'
+    details = "@phylogenies.indoeuropean"
+
+    [analysis.bayestraits_dep_indoeuropean]
+    tool = 'bayestraits'
+    model = 'discrete+dependent'
+    details = "@phylogenies.indoeuropean"
+    
+    [analysis.bayestraits_indep_austronesian]
+    tool = 'bayestraits'
+    model = 'discrete+independent'
+    details = "@phylogenies.austronesian"
+
+    [analysis.bayestraits_dep_austronesian]
+    tool = 'bayestraits'
+    model = 'discrete+dependent'
+    details = "@phylogenies.austronesian"
+    
 [links]
 links = []

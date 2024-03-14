@@ -1,0 +1,88 @@
+title = "Phylogenetics of Indo-European Language Families via an Algebro-Geometric Analysis of Their Syntactic Structures"
+
+doi = "10.1007/s11786-021-00507-2"
+
+abstract = """
+Using Phylogenetic Algebraic Geometry, we analyze computationally the phylogenetic tree
+of subfamilies of the Indo-European language family, using data of syntactic structures.
+The two main sources of syntactic data are the SSWL database and Longobardi's recent data
+of syntactic parameters. We compute phylogenetic invariants and estimates of the
+Euclidean distance functions for two sets of Germanic languages, a set of Romance
+languages, a set of Slavic languages and a set of early Indo-European languages, and we
+compare the results with what is known through historical linguistics.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Kevin Shu", "Andrew Ortegaray", "Robert C. Berwick", "Matilde Marcolli"]
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Shu_2021"
+
+# type of study
+type = ['phylogenetic']
+framework = ['parsimony']
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.sswl]
+    ntaxa = 253
+    nchars = 116
+    nsites = "?"
+    datatype = 'syntactical features'
+    source = '@SSWL'
+    items = ''
+    comment = ''
+
+    [data.langelin]
+    ntaxa = 28
+    nchars = 63
+    nsites = 63
+    datatype = 'syntactical features'
+    source = '@Longobardi2009'
+    items = ''
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree_germanic]
+    tool = 'phylip'
+    model = '"dna" model, post-processed with Phylogenetic Algebraic Geometry'
+    details = "combined data"
+    data = "@data.sswl;@data.langelin, Germanic languages subset"
+
+    [analysis.tree_romance]
+    tool = 'phylip'
+    model = '"dna" model, post-processed with Phylogenetic Algebraic Geometry'
+    details = "combined data"
+    data = "@data.sswl;@data.langelin, Romance languages subset"
+
+    [analysis.tree_slavic]
+    tool = 'phylip'
+    model = '"dna" model, post-processed with Phylogenetic Algebraic Geometry'
+    details = "combined data"
+    data = "@data.sswl;@data.langelin, Slavic languages subset"
+
+    [analysis.tree_earlyindoeuropean]
+    tool = 'phylip'
+    model = '"dna" model, post-processed with Phylogenetic Algebraic Geometry'
+    details = "combined data"
+    data = "@data.sswl;@data.langelin, Early-IndoEuropean languages subset"
+    
+    
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

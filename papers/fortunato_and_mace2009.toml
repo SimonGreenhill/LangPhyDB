@@ -1,0 +1,107 @@
+title = "Testing functional hypotheses about cross-cultural variation: A maximum-likelihood comparative analysis of Indo-European marriage practices"
+
+doi = ""
+
+abstract = """
+Behavioural ecology is the branch of biology dealing with the study of animal behavioural
+variation within and across taxa; it addresses questions about the function of behaviour,
+focusing on its survival value in relation to the environment(Tinbergen's (1963) 'why'
+questions; Krebs and Davies 1993: 382). Human behavioural ecology investigates variation
+in human behaviour, including cultural behaviour, within and across societies
+(Winterhalder and Smith 2000).Investigation into the function of behaviour involves
+making hypotheses based on observations, deriving testable predictions from the
+hypotheses, and testing. Three strategies are available for testing functional hypotheses:
+examination of variation among individuals within a group, experiments, and examination of
+variation among groups (Krebs and Davies 1993: 24). Given that human behaviour is
+generally not amenable to experimental manipulation, the study of human behavioural
+variation is largely restricted to comparison within and among groups.In this paper we
+provide an example of the application of the behavioural ecology approach to the study of
+variation in cultural practices across groups, focusing on wealth transfers at marriage.
+In the first part, we review the observations that led to the evolutionary interpretation
+of these practices, and previous analyses of their distribution; in the second part, we
+illustrate the use of a phylogenetic comparative method with data on wealth transfers at
+marriage in Indo-European groups.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Laura Fortunato", "Ruth Mace"]
+
+# parts of the world
+groups = ["IndoEuropean"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@FortunatoMace2009"
+
+# type of study
+type = ['phylogenetic', 'trait']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['parsimony', 'likelihood'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.Dyen1992]
+    ntaxa = 52
+    nchars = 200
+    nsites = 2449 
+    datatype = 'lexical cognates'
+    source = '@Dyen1992'
+    items = 'swadesh200'
+    comment = 'sample matching ethnographic data'
+
+    [data.EthnographicAtlas]
+    ntaxa = 52
+    nchars = 2
+    nsites = 2 
+    datatype = 'ethnographic features'
+    source = '@Gray1999'
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = """
+    We generated the phylogenetic tree using a maximum parsimony optimality criterion, as
+    implemented by PAUP* 4.0b4a (Swofford 2002), on the linguistic data for the varieties
+    associated with the 52 groups included in the cross-cultural sample.Meanings were
+    coded as multi-state, with each state representing a cognate class. Character states
+    were unordered, and multiple character states for a variety were treated as
+    uncertainty. We used a heuristic strategy to search for the optimal tree or set of
+    trees, running 1000 replications of tree bisection-reconnection (TBR) with
+    randomaddition sequence, storing up to 2000 trees in memory per search.We performed
+    an initial search with all characters having equal weights; based on this search, we
+    then assigned weights to the characters through a posteriori successive approximations
+    (Farris 1969). We conducted the consecutive heuristic searches with the new weights
+    performing 1000 replications of TBR with random addition sequence, again storing up to
+    2000 trees in memory. We used bootstrap analysis of the weighted characters to
+    estimate the support for the individual clades on the tree obtained with this
+    procedure, using heuristic searches with 20 TBR random addition sequence replicates
+    on 500 bootstrap samples
+    """
+    
+    [analysis.tree]
+    tool = 'paup*'
+    model = 'multistate+mp+unord+bootstrapping'
+    details = ""
+    data = "@data.Dyen1992"
+    
+    [analysis.bayestraits_indep]
+    tool = 'bayestraits'
+    model = 'discrete+independent'
+    details = "@data.EthnographicAtlas; @analysis.tree"
+
+    [analysis.bayestraits_dep]
+    tool = 'bayestraits'
+    model = 'discrete+dependent'
+    details = "@data.EthnographicAtlas; @analysis.tree"    
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

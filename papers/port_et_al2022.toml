@@ -1,0 +1,106 @@
+title = "Topological Analysis of Syntactic Structures"
+
+doi = "10.1007/s11786-021-00520-5"
+
+abstract = """
+We use the persistent homology method of topological data analysis and dimensional analysis techniques to study data of syntactic structures of world languages. We analyze relations between syntactic parameters in terms of dimensionality, of hierarchical clustering structures, and of non-trivial loops. We show there are relations that hold across language families and additional relations that are family-specific. We then analyze the trees describing the merging structure of persistent connected components for languages in different language families and we show that they partly correlate to historical phylogenetic trees but with significant differences. We also show the existence of interesting non-trivial persistent first homology groups in various language families. We give examples where explicit generators for the persistent first homology can be identified, some of which appear to correspond to homoplasy phenomena, while others may have an explanation in terms of historical linguistics, corresponding to known cases of syntactic borrowing across different language subfamilies. 
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Alexander Port", "Taelin Karidi", "Matilde Marcolli"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Port_2022"
+
+# type of study
+type = ['phylogenetic']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.sswl]
+    ntaxa = 253
+    nchars = 116
+    nsites = "?"
+    datatype = 'syntactical features'
+    source = '@SSWL'
+    items = ''
+    comment = ''
+
+    [data.langelin]
+    ntaxa = 28
+    nchars = 63
+    nsites = 63
+    datatype = 'syntactical features'
+    source = '@Longobardi2009'
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = "method is PCA clustering"
+
+    [analysis.sswl_indoeuropean]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@data.sswl"
+
+    [analysis.sswl_austronesian]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@data.sswl"
+
+    [analysis.sswl_afroasiatic]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@data.sswl"
+
+    [analysis.sswl_nigercongo]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@data.sswl"
+
+    [analysis.langelin_indoeuropean]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@data.langelin"
+
+    [analysis.langelin_austronesian]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@data.langelin"
+
+    [analysis.langelin_afroasiatic]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@data.langelin"
+
+    [analysis.langelin_nigercongo]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = "@data.langelin"
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

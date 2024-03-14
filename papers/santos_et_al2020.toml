@@ -1,0 +1,70 @@
+title = "More rule than exception: Parallel evidence of ancient migrations in grammars and genomes of Finno-Ugric speakers"
+
+doi = "10.1101/2020.11.02.364521"
+
+abstract = """
+To reconstruct aspects of human demographic history, linguistics and genetics complement
+each other, reciprocally suggesting testable hypotheses on population relationships and
+interactions. Relying on a linguistic comparative method exclusively based on syntactic
+data, here we focus on the complex relation of genes and languages among Finno-Ugric (FU)
+speakers, in comparison to their Indo-European (IE) and Altaic (AL) neighbors. Syntactic
+analysis supports three distinct clusters corresponding to these three Eurasian families;
+yet, the outliers of the FU group show linguistic convergence with their geographical
+neighbors. By analyzing genome-wide data in both ancient and contemporary populations, we
+uncovered remarkably matching patterns, with north-western FU speakers linguistically and
+genetically closer in parallel degrees to their IE-speaking neighbors, and eastern FU
+speakers to AL-speakers. Therefore, our study indicates plausible secondary convergence
+in the syntax of languages of different families, providing evidence that such
+interference effects were accompanied, and possibly caused, by recognizable processes at
+the population level. In particular, based on the comparison of modern and ancient
+genomes, our analysis identified the Pontic-Caspian steppes as the possible origin of the
+demographic processes that led to the expansion of the FU into Europe.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Patrícia Santos", "Gloria Gonzalez-Fortes", "Emiliano Trucchi", "Andrea Ceolin", "Guido Cordoni", "Cristina Guardiano", "Giuseppe Longobardi", "Guido Barbujani"]
+
+# parts of the world
+groups = ['Indo-European', 'Finno-Ugric']
+
+# bibkey citation in sources.bib
+bibkey = "@Santos_2020"
+
+# type of study
+type = ['phylogenetic']
+framework = ['distance']
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+
+    [data.langelin]
+    ntaxa = 34
+    nchars = 94
+    nsites = 94
+    datatype = 'syntactical features'
+    source = '@Ceolin_2020'
+    items = ''
+    comment = 'The original dataset of 69 languages has been reduced to a subset of 34 IE, FU and AL languages' 
+
+
+# analysis information
+[analysis]
+    
+    notes = "other analyses not included here."
+    
+    [analysis.tree]
+    tool = 'phylip'
+    model = 'upgma+bootstrapping'
+    details = ""
+    data = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

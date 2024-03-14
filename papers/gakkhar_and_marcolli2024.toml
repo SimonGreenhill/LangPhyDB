@@ -1,0 +1,141 @@
+title = "Syntactic Structures and the General Markov Models"
+
+doi = "10.1007/s11786-023-00575-6"
+
+abstract = """
+We study phylogenetic signal present in syntactic information by considering the
+syntactic structures data from Longobardi (Linguist Anal 41:517–557, 2017), Collins
+(Syntactic structures of the world's language: a cross-linguistic database. 27 September
+(2010), Colloquium:
+https://ling.yale.edu/syntactic-structures-worlds-language-cross-linguistic-database,
+2010), Ceolin et al. (Front Psychol 11:2384, 2020) and Koopman (SSWL syntactic structures
+of the world's languages: an open-ended database for the linguistic community and by the
+linguistic community. mit 50, 12. http://sswl.railsplayground.net/, 2011). Focusing first
+on the general Markov models, we explore how well the the syntactic structures data
+conform to the hypothesis required by these models. We do this by comparing derived
+phylogenetic trees against trees agreed on by the linguistics community. We then
+interpret the methods of Ceolin et al. (2020) as an infinite sites evolutionary model and
+compare the consistency of the data with this alternative. The ideas and methods
+discussed in the present paper are more generally applicable than to the specific setting
+of syntactic structures, and can be used in other contexts, when analyzing consistency of
+data with against hypothesized evolutionary models.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Sitanshu Gakkhar", "Matilde Marcolli"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Gakkhar_2024"
+
+# type of study
+type = ['phylogenetic']
+framework = ['parsimony']
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.sswl]
+    ntaxa = 253
+    nchars = 115
+    nsites = 115
+    datatype = 'syntactical features'
+    source = '@SSWL'
+    items = ''
+    comment = ''
+
+    [data.langelin]
+    ntaxa = 69
+    nchars = 94
+    nsites = 94
+    datatype = 'syntactical features'
+    source = '@Ceolin_2020'
+    items = ''
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    # Germanic: Dutch, German, English, Faroese, Icelandic, Swedish.
+    # Slavic: Russian, Polish, Slovenian, Serb-Croatian, Bulgarian.
+    # Romance: Latin, Romanian, Italian, French, Spanish, Portuguese.
+    # North Eurasian: Finnish, Estonian, Hungarian, Khanty, Udmurt, Yukaghir, Turkish, Buryat, Yakut, Even, Evenki
+    # Early Indo-European: Hittite, Tocharian, Albanian, Armenian, Greek.
+    
+    
+    [analysis.tree_germanic_sswl]
+    tool = 'custom'
+    model = 'logdet+neighbor-joining'
+    details = ""
+    data = "@data.SSWL; Germanic subset"
+
+    [analysis.tree_germanic_langelin]
+    tool = 'custom'
+    model = 'logdet+neighbor-joining'
+    details = ""
+    data = "@data.langelin; Germanic subset"
+
+    [analysis.tree_slavic_sswl]
+    tool = 'custom'
+    model = 'logdet+neighbor-joining'
+    details = ""
+    data = "@data.SSWL; Slavic subset"
+
+    [analysis.tree_slavic_langelin]
+    tool = 'custom'
+    model = 'logdet+neighbor-joining'
+    details = ""
+    data = "@data.langelin; Slavic subset"
+
+    [analysis.tree_romance_sswl]
+    tool = 'custom'
+    model = 'logdet+neighbor-joining'
+    details = ""
+    data = "@data.SSWL; Romance subset"
+
+    [analysis.tree_romance_langelin]
+    tool = 'custom'
+    model = 'logdet+neighbor-joining'
+    details = ""
+    data = "@data.langelin; Romance subset"
+
+    [analysis.tree_northeurasian_sswl]
+    tool = 'custom'
+    model = 'logdet+neighbor-joining'
+    details = ""
+    data = "@data.SSWL; North Eurasian subset"
+
+    [analysis.tree_northeurasian_langelin]
+    tool = 'custom'
+    model = 'logdet+neighbor-joining'
+    details = ""
+    data = "@data.langelin; North Eurasian subset"
+
+    [analysis.tree_earlyie_sswl]
+    tool = 'custom'
+    model = 'logdet+neighbor-joining'
+    details = ""
+    data = "@data.SSWL; Early Indo-European subset"
+
+    [analysis.tree_earlyie_langelin]
+    tool = 'custom'
+    model = 'logdet+neighbor-joining'
+    details = ""
+    data = "@data.langelin; Early Indo-European subset"
+
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

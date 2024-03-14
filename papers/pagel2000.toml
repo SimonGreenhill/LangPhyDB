@@ -1,0 +1,52 @@
+title = "The History, Rate and Pattern of World Linguistic Evolution"
+
+doi = ""
+
+abstract = """
+....
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['Mark Pagel']
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@pagel2009a"
+
+# type of study
+type = ['macroevolutionary']
+framework = ['likelihood']
+description = ""
+
+# data
+[data]
+
+    
+    [data.Dyen1992]
+    ntaxa = 87
+    nchars = 200
+    nsites = 2449 
+    datatype = 'lexical cognates'
+    source = '@Dyen1992'
+    items = 'swadesh200'
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = "mainly mathematical"
+    
+    [analysis.misc]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = ""
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

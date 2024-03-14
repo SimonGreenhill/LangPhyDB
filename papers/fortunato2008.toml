@@ -3,21 +3,26 @@ title = "A Phylogenetic Approach to the History of Cultural Practices"
 doi = "10.1002/9781444302714.ch11"
 
 abstract = """
-
+Examination of the spatial and temporal distribution of cultural practices
+can shed light on both their function and their development (Goody 1976: 2).
+However, human societies cannot be treated as independent data poins in
+statistical analyses of the distribution of cultural traits: any pattern
+inferred by tallying societies in which the traits of interest occur runs the
+risk of being spuriously inflated or deflated (e.g. Dow 1993).
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Laura Fortunato"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Bantu']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Fortunato_2008"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['review']
+framework = []
 # short description of the study, one line.
 description = ""
 
@@ -26,55 +31,10 @@ description = ""
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
-    items = ''
-    comment = ''
-
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
-
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
-
-
 # analysis information
 [analysis]
     
     notes = ""
-    
-    [analysis.tree]
-    tool = ''
-    model = ''
-    details = ""
-    data = ""
-
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
-
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }

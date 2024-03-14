@@ -81,7 +81,7 @@ description = "Comparison of musical, genetic, linguistic (phonetic, grammatical
     items = ''
     comment = ''
 
-    [data.geograpy]
+    [data.geography]
     ntaxa = 14
     nchars = 2
     nsites = 2

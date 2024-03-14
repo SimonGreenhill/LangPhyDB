@@ -3,21 +3,21 @@ title = "Decomposing hierarchical alignment: Co-arguments as conditions on align
 doi = "10.1515/ling-2016-0011"
 
 abstract = """
-
+TEST
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Alena Witzlack-Makarevich", "Taras Zakharko", "Lennart Bierkandt", "Fernando Zúñiga", "Balthasar Bickel"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Kiranti', 'Algonquian']
 
 # bibkey citation in sources.bib
 bibkey = "@Witzlack_Makarevich_2016"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['trait']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['likelihood'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
 description = ""
 
@@ -26,54 +26,213 @@ description = ""
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    [data.autotyp_algonquian]
+    ntaxa = 8
+    nchars = 4
+    nsites = 4
+    datatype = 'structural features'
+    source = '@Autotyp'
     items = ''
     comment = ''
 
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
+    [data.kiranti]
+    ntaxa = 16
+    nchars = 4
+    nsites = 4
+    datatype = 'structural features'
+    source = '@Autotyp'
+    items = ''
     comment = ''
 
 
-# date calibrations
-[calibrations]
+# published phylogenies
+[phylogenies]
+    [phylogenies.algonquian]
+    source = ''
+    comment = 'manually constructed'
 
-    notes = ""
+    [phylogenies.kiranti1]
+    source = ''
+    comment = 'manually constructed'
 
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
+    [phylogenies.kiranti2]
+    source = ''
+    comment = 'manually constructed'
 
 
 # analysis information
 [analysis]
     
-    notes = ""
-    
-    [analysis.tree]
-    tool = ''
-    model = ''
-    details = ""
-    data = ""
+    notes = """
+    We then fit two evolutionary models per family tree and per pairwise ranking hypothesis:
+    first, a simple model of Brownian motion, where at each node in the tree, the proportion
+    randomly changes in no specific direction, i. e., without a preference for or against a
+    hypothesized ranking; the only parameter of this model is σ, the intensity of random
+    diffusion in the process. The second model is what is known as an Ornstein-Uhlenbeck model
+    and assumes that there is a preferred optimum proportion towards which paradigms evolve
+    with certain strength in a family
+    """
 
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
+     
+    [analysis.kiranti1_brownian_1_2]
+    tool = 'mvMORPH'
+    model = 'brownian'
+    details = ""
+    data = "@phylogenies.kiranti1; @data.kiranti"
+
+    [analysis.kiranti1_ou_1_2]
+    tool = 'mvMORPH'
+    model = 'ornstein-uhlenbeck'
+    details = ""
+    data = "@phylogenies.kiranti1; @data.kiranti"
+
+
+    [analysis.kiranti1_brownian_2_1]
+    tool = 'mvMORPH'
+    model = 'brownian'
+    details = ""
+    data = "@phylogenies.kiranti1; @data.kiranti"
+
+    [analysis.kiranti1_ou_2_1]
+    tool = 'mvMORPH'
+    model = 'ornstein-uhlenbeck'
+    details = ""
+    data = "@phylogenies.kiranti1; @data.kiranti"
+
+
+    [analysis.kiranti1_brownian_1_3]
+    tool = 'mvMORPH'
+    model = 'brownian'
+    details = ""
+    data = "@phylogenies.kiranti1; @data.kiranti"
+
+    [analysis.kiranti1_ou_1_3]
+    tool = 'mvMORPH'
+    model = 'ornstein-uhlenbeck'
+    details = ""
+    data = "@phylogenies.kiranti1; @data.kiranti"
+
+
+    [analysis.kiranti1_brownian_2_3]
+    tool = 'mvMORPH'
+    model = 'brownian'
+    details = ""
+    data = "@phylogenies.kiranti1; @data.kiranti"
+
+    [analysis.kiranti1_ou_2_3]
+    tool = 'mvMORPH'
+    model = 'ornstein-uhlenbeck'
+    details = ""
+    data = "@phylogenies.kiranti1; @data.kiranti"
+
+
+     
+    [analysis.kiranti2_brownian_1_2]
+    tool = 'mvMORPH'
+    model = 'brownian'
+    details = ""
+    data = "@phylogenies.kiranti2; @data.kiranti"
+
+    [analysis.kiranti2_ou_1_2]
+    tool = 'mvMORPH'
+    model = 'ornstein-uhlenbeck'
+    details = ""
+    data = "@phylogenies.kiranti2; @data.kiranti"
+
+    # NOT run
+    # [analysis.kiranti2_brownian_2_1]
+    # tool = 'mvMORPH'
+    # model = 'brownian'
+    # details = ""
+    # data = "@phylogenies.kiranti2; @data.kiranti"
+    # 
+    # [analysis.kiranti2_ou_2_1]
+    # tool = 'mvMORPH'
+    # model = 'ornstein-uhlenbeck'
+    # details = ""
+    # data = "@phylogenies.kiranti2; @data.kiranti"
+
+
+    [analysis.kiranti2_brownian_1_3]
+    tool = 'mvMORPH'
+    model = 'brownian'
+    details = ""
+    data = "@phylogenies.kiranti2; @data.kiranti"
+
+    [analysis.kiranti2_ou_1_3]
+    tool = 'mvMORPH'
+    model = 'ornstein-uhlenbeck'
+    details = ""
+    data = "@phylogenies.kiranti2; @data.kiranti"
+
+
+    [analysis.kiranti2_brownian_2_3]
+    tool = 'mvMORPH'
+    model = 'brownian'
+    details = ""
+    data = "@phylogenies.kiranti2; @data.kiranti"
+
+    [analysis.kiranti2_ou_2_3]
+    tool = 'mvMORPH'
+    model = 'ornstein-uhlenbeck'
+    details = ""
+    data = "@phylogenies.kiranti2; @data.kiranti"
+
+
+
+     
+    [analysis.algonquian_brownian_1_2]
+    tool = 'mvMORPH'
+    model = 'brownian'
+    details = ""
+    data = "@phylogenies.algonquian; @data.algonquian"
+
+    [analysis.algonquian_ou_1_2]
+    tool = 'mvMORPH'
+    model = 'ornstein-uhlenbeck'
+    details = ""
+    data = "@phylogenies.algonquian; @data.algonquian"
+
+    # NOT RUN
+    # [analysis.algonquian_brownian_2_1]
+    # tool = 'mvMORPH'
+    # model = 'brownian'
+    # details = ""
+    # data = "@phylogenies.algonquian; @data.algonquian"
+    # 
+    # [analysis.algonquian_ou_2_1]
+    # tool = 'mvMORPH'
+    # model = 'ornstein-uhlenbeck'
+    # details = ""
+    # data = "@phylogenies.algonquian; @data.algonquian"
+
+
+    [analysis.algonquian_brownian_1_3]
+    tool = 'mvMORPH'
+    model = 'brownian'
+    details = ""
+    data = "@phylogenies.algonquian; @data.algonquian"
+
+    [analysis.algonquian_ou_1_3]
+    tool = 'mvMORPH'
+    model = 'ornstein-uhlenbeck'
+    details = ""
+    data = "@phylogenies.algonquian; @data.algonquian"
+
+
+    [analysis.algonquian_brownian_2_3]
+    tool = 'mvMORPH'
+    model = 'brownian'
+    details = ""
+    data = "@phylogenies.algonquian; @data.algonquian"
+
+    [analysis.algonquian_ou_2_3]
+    tool = 'mvMORPH'
+    model = 'ornstein-uhlenbeck'
+    details = ""
+    data = "@phylogenies.algonquian; @data.algonquian"
+
+
 
 
 [links]

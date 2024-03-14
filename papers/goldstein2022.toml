@@ -1,0 +1,35 @@
+title = "There's no escaping phylogenetics"
+
+doi = ""
+
+abstract = """
+The comparative method depends crucially on the phylogenetic tree of the
+languages under comparison, but in many linguistic families, including
+Indo-European, the true tree is unknown. To circumvent this issue,
+frequency heuristics have been devised to enable comparative
+reconstruction over consensus trees. These heuristics come in different
+forms, but they are all based on the same methodological principle: if
+the number of homologous elements (e.g., lexical cognates) in the
+daughter languages meets a minimum threshold (canonically three), their
+ancestor is reconstructed to the root of the tree. In this paper, I
+demonstrate that frequency heuristics are not only unreliable but
+fundamentally misguided. As an alternative, I present a Bayesian method
+for inferring ancestral states that accounts for phylogenetic uncertainty
+by estimating the probability of a character state over a set of resolved
+phylogenetic trees.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['David Goldstein']
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@goldstein2022"
+
+# type of study
+type = ['review']
+framework = [] 
+# short description of the study, one line.
+description = ""

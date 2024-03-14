@@ -1,79 +1,42 @@
 title = "Formal linguistics as a cue to demographic history"
 
-doi = "10.4436/JASS.94031"
+doi = "10.4436/jass.94031"
 
 abstract = """
-
+Beyond its theoretical success, the development of molecular genetics has brought about the
+possibility of extraordinary progress in the study of classification and in the inference of the evolutionary
+history of many species and populations. A major step forward was represented by the availability
+of extremely large sets of molecular data suited to quantitative and computational treatments. In
+this paper, we argue that even in cognitive sciences, purely theoretical progress in a discipline such as
+linguistics may have analogous impact. Thus, exactly on the model of molecular biology, we propose
+to unify two traditionally unrelated lines of linguistic investigation: 1) the formal study of syntactic
+variation (parameter theory) in the biolinguistic program; 2) the reconstruction of relatedness among
+languages (phylogenetic taxonomy). The results of our linguistic analysis have thus been plotted against
+data from population genetics and the correlations have turned out to be largely significant: given a
+non-trivial set of languages/populations, the description of their variation provided by the comparison
+of systematic parametric analysis and molecular anthropology informatively recapitulates their history
+and relationships. As a result, we can claim that the reality of some parametric model of the language
+faculty and language acquisition/transmission (more broadly of generative grammar) receives strong and
+original support from its historical heuristic power. Then, on these grounds, we can begin testing Darwin’s
+prediction that, when properly generated, the trees of human populations and of their languages should
+eventually turn out to be significantly parallel.
 """
+
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Giuseppe Longobardi", "Andrea Ceolin", "Aaron Ecay"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Indo-European']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Longobardi_Ceolin_Ecay_2016"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['review']  # largely based on Longobardi et al. 2015
+framework = []
 # short description of the study, one line.
 description = ""
-
-# data
-[data]
-
-    notes = ""
-    
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
-    items = ''
-    comment = ''
-
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
-
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
-
-
-# analysis information
-[analysis]
-    
-    notes = ""
-    
-    [analysis.tree]
-    tool = ''
-    model = ''
-    details = ""
-    data = ""
-
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
 
 
 [links]

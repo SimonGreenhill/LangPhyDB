@@ -3,21 +3,61 @@ title = "A test of Generalized Bayesian dating: A new linguistic dating method"
 doi = "10.1371/journal.pone.0236522"
 
 abstract = """
-
+In current practice, when dating the root of a Bayesian language phylogeny the researcher
+is required to supply some of the information beforehand, including a distribution of root
+ages and dates for some nodes serving as calibration points. In addition to the potential sub-
+jectivity that this leaves room for, the problem arises that for many of the language families
+of the world there are no available internal calibration points. Here we address the following
+questions: Can a new Bayesian framework which overcomes these problems be introduced
+and how well does it perform? The new framework that we present is generalized in the
+sense that no family-specific priors or calibration points are needed. We moreover introduce
+a way to overcome another potential source of subjectivity in Bayesian tree inference as
+commonly practiced, namely that of manual cognate identification; instead, we apply an
+automated approach. Dates are obtained by fitting a Gamma regression model to tree
+lengths and known time depths for 30 phylogenetically independent calibration points. This
+model is used to predict the time depths of both the root and the internal nodes for 116 lan-
+guage families, producing a total of 1,287 dates for families and subgroups. It turns out that
+results are similar to those of published Bayesian studies of individual language families.
+The performance of the method is compared to automated glottochronology, which is an
+update of the classical method of Swadesh drawing upon automated cognate recognition
+and a new formula for deriving a time depth from percentages of shared cognates. It is also
+compared to a third dating method, that of the Automated Similarity Judgment Program
+(ASJP). In terms of errors and correlations with known dates, ASJP works better than the
+new method and both work better than automated glottochronology.
 """
-
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Taraka Rama", "Søren Wichmann"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = [
+    "Abkhaz-Adyge", "Afro-Asiatic", "Algic", "Angan", "Anim", "Araucanian", "Arawakan",
+    "Arawan", "Athabaskan-Eyak-Tlingit", "Atlantic-Congo", "Austroasiatic",
+    "Austronesian", "Aymaran", "Barbacoan", "Blue_Nile_Mao", "Boran", "Border", "Bosavi",
+    "Caddoan", "Cariban", "Central_Sudanic", "Chibchan", "Chicham", "Chocoan",
+    "Chukotko-Kamchatkan", "Cochimi-Yuman", "Dagan", "Dajuic", "Dogon", "Dravidian",
+    "East_Strickland", "Eastern_Trans-Fly", "Eleman", "Eskimo-Aleut", "Guahiboan",
+    "Guaicuruan", "Gunwinyguan", "Heibanic", "Hmong-Mien", "Huitotoan", "Ijoid",
+    "Indo-European", "Iroquoian", "Japonic", "Kadugli-Krongo", "Kakua-Nukak",
+    "Kartvelian", "Khoe-Kwadi", "Kiowa-Tanoan", "Kiwaian", "Koiarian", "Koman", "Kuliak",
+    "Kxa", "Lakes_Plain", "Left_May", "Lengua-Mascoy", "Lower_Sepik-Ramu", "Maban",
+    "Mande", "Maningrida", "Manubaran", "Matacoan", "Mayan", "Mixe-Zoque", "Mongolic",
+    "Morehead-Wasur", "Muskogean", "Nadahup", "Nakh-Daghestanian", "Narrow_Talodi", "Ndu",
+    "Nilotic", "North_Halmahera", "Nubian", "Nuclear_Torricelli",
+    "Nuclear_Trans_New_Guinea", "Nuclear-Macro-Je", "Otomanguean", "Pama-Nyungan",
+    "Pano-Tacanan", "Pauwasi", "Pomoan", "Quechuan", "Saharan", "Salishan", "Sentanic",
+    "Sepik", "Sino-Tibetan", "Siouan", "Sko", "Songhay", "South_Birds_Head_Family",
+    "South_Omotic", "Southern_Daly", "Suki-Gogodala", "Surmic", "Ta-Ne-Omotic",
+    "Tai-Kadai", "Tarascan", "Timor-Alor-Pantar", "Totonacan", "Tucanoan", "Tungusic",
+    "Tupian", "Turkic", "Tuu", "Uralic", "Uru-Chipaya", "Uto-Aztecan", "Wakashan",
+    "Walioic", "Western_Daly", "Yanomamic", "Yawa-Saweru", "Yeniseian"
+]
 
 # bibkey citation in sources.bib
 bibkey = "@Rama_2020"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ["macroevolutionary", "phylogenetic"]
+framework = ["bayesian"]
 # short description of the study, one line.
 description = ""
 
@@ -26,32 +66,227 @@ description = ""
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
-    items = ''
-    comment = ''
+    [data.asjp]
+    datatype = "lexical distance"
+    source = "@ASJP18"
+    items = ""
+    comment = ""
+
+
+
 
 # published phylogenies
 [phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
+    [phylogenies.austronesian]
+    source = "@Gray2009"
+    comment = ""
 
+    [phylogenies.dravidian]  # 3
+    source = "@Kolipakam2018"
+    comment = ""
+    
+    [phylogenies.chang]  # 3
+    source = "@Chang2015"
+    comment = ""
 
-# date calibrations
+    [phylogenies.zhang]  # 3
+    source = "@Zhang2019"
+    comment = ""
+    
+    [phylogenies.sagart]  # 3
+    source = "@Sagart2019"
+    comment = ""
+
+    [phylogenies.bouckaert]  # 3
+    source = "@Bouckaert2018"
+    comment = ""
+
 [calibrations]
+    
+    notes = "all from Holman et al. 2011"
 
-    notes = ""
+    [calibration.BenueCongo]
+        taxa = ["benu1247"]
+        age = "6500"
+        units = "y2000"
+        description = ""
+    
+    [calibration.MississippiValleySiouan]
+        taxa = ["siou1253"]
+        age = "2475"
+        units = "y2000"
+        description = ""
+        
+    [calibration.Brythonic]
+        taxa = ["bryt1239"]
+        age = "1450"
+        units = "y2000"
+        description = ""
+    
+    [calibration.Mongolic]
+        taxa = ["mong1329"]
+        age = "750"
+        units = "y2000"
+        description = ""
+    
+    [calibration.Chinese]
+        taxa = ["sini1245"]
+        age = "2000"
+        units = "y2000"
+        description = ""
+    
+    [calibration.OngamoMaa]
+        taxa = ["onga1238"]
+        age = "1150"
+        units = "y2000"
+        description = ""
+    
+    [calibration.Cholan]
+        taxa = ["chol1287"]
+        age = "1600"
+        units = "y2000"
+        description = ""
+    
+    [calibration.Oromo]
+        taxa = ["nucl1701"]
+        age = "460"
+        units = "y2000"
+        description = ""
+    
+    [calibration.Dardic]
+        taxa = ["dard1244"]
+        age = "3550"
+        units = "y2000"
+        description = ""
+    
+    [calibration.PamaNyungan]
+        taxa = ["pama1250"]
+        age = "4500"
+        units = "y2000"
+        description = ""
+    
+    [calibration.EastPolynesian]
+        taxa = ["east2449"]
+        age = "1050"
+        units = "y2000"
+        description = ""
+    
+    [calibration.Romance]
+        taxa = ["roma1334"]
+        age = "1729"
+        units = "y2000"
+        description = ""
+    
+    [calibration.EastSlavic]
+        taxa = ["east1426"]
+        age = "760"
+        units = "y2000"
+        description = ""
 
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
+    
+    [calibration.Romani]
+        taxa = ["roma1329"]
+        age = "650"
+        units = "y2000"
+        description = ""
+    
+    [calibration.EnglishFrisian]
+        taxa = ["angl1264"]
+        age = "1550"
+        units = "y2000"
+        description = ""
+    
+    [calibration.Saami]
+        taxa = ["saam1281"]
+        age = "1750"
+        units = "y2000"
+        description = ""
+    
+    [calibration.EthiopianSemitic]
+        taxa = ["ethi1244"]
+        age = "2450"
+        units = "y2000"
+        description = ""
+    
+    [calibration.Scandinavian]
+        taxa = ["nort3160"]
+        age = "1100"
+        units = "y2000"
+        description = ""
+    
+    [calibration.HmongMien]
+        taxa = ["hmon1336"]
+        age = "2500"
+        units = "y2000"
+        description = ""
+    
+    [calibration.SouthernNilotic]
+        taxa = ["sout2830"]
+        age = "2500"
+        units = "y2000"
+        description = ""
+    
+    [calibration.Inuit]
+        taxa = ["inui1246"]
+        age = "800"
+        units = "y2000"
+        description = ""
+    
+    [calibration.SouthernSonghai]
+        taxa = ["east2431"]
+        age = "550"
+        units = "y2000"
+        description = ""
+    
+    [calibration.Iranian]
+        taxa = ["iran1269"]
+        age = "3900"
+        units = "y2000"
+        description = ""
+    
+    [calibration.Temotu]
+        taxa = ["temo1244"]
+        age = "3200"
+        units = "y2000"
+        description = ""
+    
+    [calibration.MaanyanMalagasy]
+        taxa = ["sout2919"]
+        age = "1350"
+        units = "y2000"
+        description = ""
+    
+    [calibration.TupiGuarani]
+        taxa = ["tupi1276"]
+        age = "1750"
+        units = "y2000"
+        description = ""
+    
+    [calibration.MalayoChamic]
+        taxa = ["mala1554"]
+        age = "2400"
+        units = "y2000"
+        description = ""
+    
+    [calibration.Turkic]
+        taxa = ["turk1311"]
+        age = "2500"
+        units = "y2000"
+        description = ""
+    
+    [calibration.MalteseMaghrebArabic]
+        taxa = ["malt1259"]
+        age = "910"
+        units = "y2000"
+        description = ""
+    
+    [calibration.Wakashan]
+        taxa = ["waka1280"]
+        age = "2500"
+        units = "y2000"
+        description = ""
+    
+
 
 
 # analysis information
@@ -59,25 +294,711 @@ description = ""
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
-    details = ""
-    data = ""
+    [analysis.AbkhazAdyge]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+    
+
+    [analysis.AfroAsiatic]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Algic]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Angan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Anim]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Araucanian]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Arawakan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Arawan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.AthabaskanEyakTlingit]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.AtlanticCongo]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+    
+
+    [analysis.Austroasiatic]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Austronesian]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Aymaran]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Barbacoan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Blue_Nile_Mao]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Boran]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Border]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Bosavi]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Caddoan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Cariban]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Central_Sudanic]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Chibchan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Chicham]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+    
+
+        
+    [analysis.Chocoan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.ChukotkoKamchatkan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.CochimiYuman]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Dagan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Dajuic]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Dogon]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Dravidian]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.East_Strickland]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Eastern_TransFly]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Eleman]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.EskimoAleut]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Guahiboan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Guaicuruan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Gunwinyguan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Heibanic]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.HmongMien]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Huitotoan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Ijoid]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.IndoEuropean]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Iroquoian]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Japonic]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+    
+
+
+    [analysis.KadugliKrongo]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.KakuaNukak]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Kartvelian]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.KhoeKwadi]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.KiowaTanoan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Kiwaian]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Koiarian]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Koman]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Kuliak]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Kxa]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Lakes_Plain]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Left_May]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.LenguaMascoy]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Lower_SepikRamu]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Maban]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Mande]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Maningrida]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Manubaran]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Matacoan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Mayan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.MixeZoque]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Mongolic]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.MoreheadWasur]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Muskogean]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Nadahup]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.NakhDaghestanian]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Narrow_Talodi]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Ndu]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Nilotic]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+    
+
+    [analysis.North_Halmahera]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Nubian]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Nuclear_Torricelli]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Nuclear_Trans_New_Guinea]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.NuclearMacroJe]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Otomanguean]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.PamaNyungan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.PanoTacanan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Pauwasi]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Pomoan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Quechuan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Saharan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Salishan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Sentanic]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Sepik]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.SinoTibetan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Siouan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Sko]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Songhay]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.South_Birds_Head_Family]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+    
+
+    [analysis.South_Omotic]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Southern_Daly]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.SukiGogodala]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Surmic]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.TaNeOmotic]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.TaiKadai]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Tarascan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.TimorAlorPantar]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Totonacan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Tucanoan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Tungusic]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Tupian]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Turkic]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Tuu]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Uralic]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.UruChipaya]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.UtoAztecan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Wakashan]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Walioic]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Western_Daly]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Yanomamic]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.YawaSaweru]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
+        
+    [analysis.Yeniseian]
+        tool = "mrbayes"
+        model = "fbd+gtr+igr"
+        details = ""
+        data = ""
 
 [inferredages]
     
-    notes = ""
+    notes = "ages are not estimated phylogenetically"
     
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
-
-
-[links]
-phlorest = { title = "Phlorest Dataset", link = "" }
-cldf = { title = "CLDF Dataset", link = "" }
-dplace = { title = "D-PLACE Dataset", link = "" }
-links = []

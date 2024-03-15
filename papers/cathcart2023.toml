@@ -1,19 +1,19 @@
-title = "Automated reconstruction of ancient languages using probabilistic models of sound change"
+title = "Rate variation in language change: Toward distributional phylogenetic modeling"
 
-doi = "10.1073/pnas.1204678110"
+doi = "10.51315/9783935751384.008"
 
 abstract = """
 
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
-authors = ["Alexandre Bouchard-Côté", "David Hall", "Thomas L. Griffiths", "Dan Klein"]
+authors = ["Chundra Cathcart"]
 
 # parts of the world
 groups = []  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
-bibkey = "@Bouchard_C_t__2013"
+bibkey = "@Cathcart_2024"
 
 # type of study
 type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,

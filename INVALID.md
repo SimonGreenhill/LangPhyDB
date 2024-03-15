@@ -5,6 +5,9 @@ Papers deemed to fall outside scope, alphabetically by first author surname.
 ## A
 ## B
 
+* Bouchard-Côté, A., Hall, D., Griffiths, T. L., & Klein, D. (2013). Automated reconstruction of ancient languages using probabilistic models of sound change. Proceedings of the National Academy of Sciences, 110(11), 4224–4229. https://doi.org/10.1073/pnas.1204678110
+    - no explicit phylogenetic analysis
+
 * Bowern, C., Epps, P., Gray, R., Hill, J., Hunley, K., McConvell, P., & Zentz, J. (2011). Does Lateral Transmission Obscure Inheritance in Hunter-Gatherer Languages? PLoS ONE, 6(9), e25195. https://doi.org/10.1371/journal.pone.0025195
     - no explicit phylogenetic analysis
 
@@ -71,6 +74,10 @@ Papers deemed to fall outside scope, alphabetically by first author surname.
 ## N
 ## O
 ## P
+
+* Petroni, F., & Serva, M. (2010). Measures of lexical distance between languages. Physica A: Statistical Mechanics and Its Applications, 389(11), 2280–2283. https://doi.org/10.1016/j.physa.2010.02.004
+    - No explicit phylogenetic analysis
+
 ## Q
 ## R
 

@@ -3,6 +3,22 @@ title = "Indo-European languages tree by Levenshtein distance"
 doi = "10.1209/0295-5075/81/68005"
 
 abstract = """
+The evolution of languages closely resembles the evolution of haploid organisms. This
+similarity has been recently exploited (Gray R. D. and Atkinson Q. D., Nature, 426 (2003)
+435; Gray R. D. and Jordan F. M., Nature, 405 (2000) 1052) to construct language trees.
+The key point is the definition of a distance among all pairs of languages which is the
+analogous of a genetic distance. Many methods have been proposed to define these
+distances; one of these, used by glottochronology, computes the distance from the
+percentage of shared "cognates". Cognates are words inferred to have a common historical
+origin, and subjective judgment plays a relevant role in the identification process. Here
+we push closer the analogy with evolutionary biology and we introduce a genetic distance
+among language pairs by considering a renormalized Levenshtein distance among words with
+same meaning and averaging on all words contained in a Swadesh list (Swadesh M., Proc. Am.
+Philos. Soc., 96 (1952) 452). The subjectivity of process is consistently reduced and the
+reproducibility is highly facilitated. We test our method against the IndoEuropean group
+considering fifty different languages and the two hundred words of the Swadesh list for
+any of them. We find out a tree which closely resembles the one published in Gray and
+Atkinson (2003), with some significant differences.
 
 """
 
@@ -10,14 +26,14 @@ abstract = """
 authors = ["Maurizio Serva", "Filippo Petroni"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Indo-European']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Serva_2008"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['phylogenetic']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['distance'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
 description = ""
 
@@ -26,54 +42,26 @@ description = ""
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
-    items = ''
-    comment = ''
-
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
-
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
-
+    [data.Dyen1992]
+    ntaxa = 50
+    nchars = 200
+    nsites = 2449
+    datatype = "lexical cognates"
+    source = "@Dyen1992"
+    items = "swadesh200"
+    comment = ""
 
 # analysis information
 [analysis]
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
+    [analysis.indoeuropean]
+    tool = 'unknown'
+    model = 'upgma'
     details = ""
-    data = ""
+    data = "@data.Dyen1992"
 
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
 
 
 [links]

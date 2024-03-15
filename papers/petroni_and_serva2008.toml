@@ -3,6 +3,27 @@ title = "Language distance and tree reconstruction"
 doi = "10.1088/1742-5468/2008/08/P08012"
 
 abstract = """
+Languages evolve over time according to a process in which reproduction, mutation and
+extinction are all possible. This is very similar to haploid evolution for asexual
+organisms and for the mitochondrial DNA of complex ones. Exploiting this similarity, it is
+possible, in principle, to verify hypotheses concerning the relationship among languages
+and to reconstruct their family tree. The key point is the definition of the distances
+among pairs of languages in analogy with the genetic distances among pairs of organisms.
+Distances can be evaluated by comparing grammar and/or vocabulary, but while it is
+difficult, if not impossible, to quantify grammar distance, it is possible to measure a
+distance from vocabulary differences. The method used by glottochronology computes
+distances from the percentage of shared 'cognates', which are words with a common
+historical origin. The weak point of this method is that subjective judgment plays a
+significant role. Here we define the distance of two languages by considering a
+renormalized edit distance among words with the same meaning and averaging over the two
+hundred words contained in a Swadesh list. In our approach the vocabulary of a language is
+the analogue of DNA for organisms. The advantage is that we avoid subjectivity and,
+furthermore, reproducibility of results is guaranteed. We apply our method to the
+Indo-European and the Austronesian groups, considering, in both cases, fifty different
+languages. The two trees obtained are, in many respects, similar to those found by
+glottochronologists, with some important differences as regards the positions of a few
+languages. In order to support these different results we separately analyze the structure
+of the distances of these languages with respect to all the others.
 
 """
 
@@ -10,70 +31,57 @@ abstract = """
 authors = ["Filippo Petroni", "Maurizio Serva"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Indo-European', 'Austronesian']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Petroni_2008"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['phylogenetic']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['distance'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
 description = ""
 
-# data
 [data]
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
+    [data.Dyen1992]
+    ntaxa = 50
+    nchars = 200
+    nsites = 2449
+    datatype = "lexical cognates"
+    source = "@Dyen1992"
+    items = "swadesh200"
+    comment = ""
+
+    [data.austronesian]
+    ntaxa = 50
+    nchars = 210
     nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
-    items = ''
-    comment = ''
-
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
-
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
-
+    datatype = "lexical cognates"
+    source = "@ABVD"
+    items = ""
+    comment = ""
 
 # analysis information
 [analysis]
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
+    [analysis.indoeuropean]
+    tool = 'unknown'
+    model = 'upgma'
     details = ""
-    data = ""
+    data = "@data.Dyen1992"
 
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
+    [analysis.austronesian]
+    tool = 'unknown'
+    model = 'upgma'
+    details = ""
+    data = "@data.austronesian"
+
+
 
 
 [links]

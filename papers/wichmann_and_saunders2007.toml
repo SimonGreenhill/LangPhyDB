@@ -1,0 +1,102 @@
+title = "How to use typological databases in historical linguistic research"
+
+doi = "10.1075/dia.24.2.06wic"
+
+abstract = """
+Several databases have been compiled with the aim of documenting the distribution of
+typological features across the world's languages. This paper looks at ways of utilizing
+this type of data for making inferences concerning genealogical relationships by using
+phylogenetic algorithms originally developed for biologists. The focus is on methodology,
+including how to assess the stability of individual typological features and the
+suitability of different phylogenetic algorithms, as well as ways to enhance phylogenetic
+signals and heuristic procedures for identifying genealogical relationships. The various
+issues are illustrated by a small sample of empirical data from a set of Native American
+languages.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Søren Wichmann", "Arpiar Saunders"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Wichmann_2007"
+
+# type of study
+type = ['review', 'phylogenetic']
+framework = ['distance', 'parsimony', 'network', 'bayesian']
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.wals]
+    ntaxa = 12
+    nchars = 17
+    nsites = 17
+    datatype = 'structural features'
+    source = '@WALS'
+    items = ''
+    comment = ''
+
+    [data.wals63]
+    ntaxa = 63
+    nchars = 17
+    nsites = 17
+    datatype = 'structural features'
+    source = '@WALS'
+    items = ''
+    comment = '63 best attested languages of the americas'
+
+# analysis information
+[analysis]
+    
+    notes = ""
+
+    [analysis.nj_best]
+    tool = 'splitstree'
+    model = 'neighbor-joining+bootstrapping'
+    details = ""
+    data = "'best' data"
+
+    [analysis.nj_worst]
+    tool = 'splitstree'
+    model = 'neighbor-joining+bootstrapping'
+    details = ""
+    data = "'worst' data"
+    
+    [analysis.mp]
+    tool = 'paup*'
+    model = 'maximum parsimony'
+    details = ""
+    data = ""
+    
+    [analysis.nnet]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = ""
+    
+    [analysis.bayesian]
+    tool = 'mrbayes'
+    model = '?'
+    details = ""
+    data = ""
+    
+    [analysis.nj63]
+    tool = 'splitstree'
+    model = 'neighbor-joining+bootstrapping'
+    details = ""
+    data = ""
+
+    [analysis.nj63_forced]
+    tool = 'splitstree'
+    model = 'neighbor-joining+bootstrapping'
+    details = "with 'forced' nodes"
+    data = ""
+    
+    

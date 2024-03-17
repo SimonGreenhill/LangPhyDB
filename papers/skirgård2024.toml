@@ -3,22 +3,39 @@ title = "Disentangling Ancestral State Reconstruction in historical linguistics:
 doi = "10.1075/dia.22022.ski"
 
 abstract = """
-
+Ancestral State Reconstruction (ASR) is an essential part of historical
+linguistics (HL). Conventional ASR in HL relies on three core principles:
+fewest changes on the tree, plausibility of changes and plausibility of the
+resulting combinations of features in proto-languages. This approach has
+some problems, in particular the definition of what is plausible and the
+disregard for branch lengths. This study compares the classic approach of
+ASR to computational tools (Maximum Parsimony and Maximum
+Likelihood), conceptually and practically. Computational models have the
+advantage of being more transparent, consistent and replicable, and the
+disadvantage of lacking nuanced knowledge and context. Using data from
+the structural database Grambank, I compare reconstructions of the
+grammar of ancestral Oceanic languages from the HL literature to those
+achieved by computational means. The results show that there is a high
+degree of agreement between manual and computational approaches, with
+a tendency for classical HL to ignore branch lengths. Explicitly taking
+branch lengths into account is more conceptually sound; as such the field of
+HL should engage in improving methods in this direction. A combination
+of computational methods and qualitative knowledge is possible in the
+future and would be of great benefit.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Hedvig Skirgård"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Austronesian']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Skirg_rd_2024"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
-# short description of the study, one line.
+type = ['asr', 'd-statistic']
+framework = ['parsimony', 'likelihood']
 description = ""
 
 # data
@@ -26,32 +43,22 @@ description = ""
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    [data.grambank]
+    ntaxa = 132
+    nchars = 84
+    nsites = 84
+    datatype = 'structural features'
+    source = '@Grambank'
     items = ''
     comment = ''
 
+
 # published phylogenies
 [phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
+    [phylogenies.Gray2009]
+    source = '@Gray2009'
     comment = ''
 
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
 
 
 # analysis information
@@ -59,22 +66,27 @@ description = ""
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
+    [analysis.phylod]
+    tool = 'caper'
+    model = 'phylo.d'
+    details = ""
+    data = ""
+    times = 84
+
+    [analysis.asr_mp]
+    tool = 'phangorn'
     model = ''
     details = ""
     data = ""
-
-[inferredages]
+    times = 84
     
-    notes = ""
+    [analysis.asr_ml]
+    tool = 'corHMM'
+    model = ''
+    details = ""
+    data = ""
+    times = 84
     
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
-
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }

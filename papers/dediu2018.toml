@@ -3,20 +3,50 @@ title = "Making genealogical language classifications available for phylogenetic
 doi = "10.1163/22105832-00801001"
 
 abstract = """
-
+One of the best-known types of non-independence between
+languages is caused by genealogical relationships due to
+descent from a common ancestor. These can be represented by
+(more or less resolved and controversial) language family
+trees. In theory, one can argue that language families
+should be built through the strict application of the
+comparative method of historical linguistics, but in
+practice this is not always the case, and there are several
+proposed classifications of languages into language
+families, each with its own advantages and disadvantages. A
+major stumbling block shared by most of them is that they
+are relatively difficult to use with computational methods,
+and in particular with phylogenetics. This is due to their
+lack of standardization, coupled with the general
+non-availability of branch length information, which
+encapsulates the amount of evolution taking place on the
+family tree. In this paper I introduce a method (and its
+implementation in R) that converts the language
+classifications provided by four widely-used databases
+(Ethnologue, WALS, AUTOTYP and Glottolog) into the de facto
+Newick standard generally used in phylogenetics, aligns the
+four most used conventions for unique identifiers of
+linguistic entities (ISO 639-3, WALS, AUTOTYP and
+Glottocode), and adds branch length information from a
+variety of sources (the tree's own topology, an externally
+given numeric constant, or a distance matrix). The R
+scripts, input data and resulting Newick trees are available
+under liberal open-source licenses in a GitHub repository
+(https://github.com/ddediu/lgfam-newick), to encourage and
+promote the use of phylogenetic methods to investigate
+linguistic diversity and its temporal dynamics.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Dan Dediu"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Dediu_2018"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+type = ['methodological']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
 framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
 description = ""
@@ -26,32 +56,114 @@ description = ""
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
-    items = ''
-    comment = ''
+    [data.asjp]  # 2
+    ntaxa = 3932
+    nchars = 1
+    nsites = 1
+    datatype = "lexical distance"
+    source = "@ASJP16"
+    items = ""
+    comment = ""
+    
+    [data.wals_gower]
+    ntaxa = 2679
+    nchars = 1
+    nsites = 1
+    datatype = "structural distance"
+    source = "@WALS"
+    items = ""
+    comment = ""
+
+    [data.wals_euclidean]
+    ntaxa = 2679
+    nchars = 1
+    nsites = 1
+    datatype = "structural distance"
+    source = "@WALS"
+    items = ""
+    comment = ""
+
+    [data.wals_gower_imputed_missing_data]
+    ntaxa = 2679
+    nchars = 1
+    nsites = 1
+    datatype = "structural distance"
+    source = "@WALS"
+    items = ""
+    comment = ""
+
+    [data.wals_euclidean_imputed_missing_data]
+    ntaxa = 2679
+    nchars = 1
+    nsites = 1
+    datatype = "structural distance"
+    source = "@WALS"
+    items = ""
+    comment = ""
+
+    [data.autotyp]
+    ntaxa = 2928
+    nchars = 1
+    nsites = 1
+    datatype = "structural distance"
+    source = "@Autotyp"
+    items = ""
+    comment = ""
+    
+    [data.genetic_wals]
+    ntaxa = 2607
+    nchars = 1
+    nsites = 1
+    datatype = "structural distance"
+    source = "@WALS"
+    items = ""
+    comment = "'genetic distance' from @Maurits_2014"
+
+    [data.genetic_ethnologue]
+    ntaxa = 7492
+    nchars = 1
+    nsites = 1
+    datatype = "structural distance"
+    source = "@Ethnologue2014"
+    items = ""
+    comment = "'genetic distance' from @Maurits_2014"
+
+    [data.genetic_glottolog]
+    ntaxa = 15772
+    nchars = 1
+    nsites = 1
+    datatype = "structural distance"
+    source = "@Glottolog23"
+    items = ""
+    comment = "'genetic distance' from @Maurits_2014"
+
+    [data.genetic_autotyp]
+    ntaxa = 2926
+    nchars = 1
+    nsites = 1
+    datatype = "structural distance"
+    source = "@Autotyp"
+    items = ""
+    comment = "'genetic distance' from @Maurits_2014"
 
 # published phylogenies
 [phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
+    [phylogenies.ethnologue]
+    source = '@Ethnologue2014'
+    comment = 'taxonomy'
 
+    [phylogenies.wals]
+    source = '@WALS'
+    comment = 'taxonomy'
 
-# date calibrations
-[calibrations]
+    [phylogenies.autotyp]
+    source = '@Autotyp'
+    comment = 'taxonomy'
 
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
+    [phylogenies.glottolog]
+    source = '@Glottolog23'
+    comment = 'taxonomy'
+    
 
 
 # analysis information
@@ -59,25 +171,387 @@ description = ""
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
-    details = ""
-    data = ""
-
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
-
+    [analysis.autotyp_constant]
+        tool = 'r'
+        model = 'constant'
+        details = ""
+        data = "@data.autotyp"
+        times = 403
+        
+    [analysis.autotyp_proportional]
+        tool = 'r'
+        model = 'proportional'
+        details = ""
+        data = "@data.autotyp"
+        times = 403
+        
+    [analysis.autotyp_grafen]
+        tool = 'r'
+        model = 'grafen'
+        details = ""
+        data = "@data.autotyp"
+        times = 403
+        
+    [analysis.autotyp_nj]
+        tool = 'r'
+        model = 'neighbor-joining'
+        details = ""
+        data = "@data.autotyp"
+        times = 403
+        
+    [analysis.autotyp_nnls]
+        tool = 'r'
+        model = 'nnls'
+        details = ""
+        data = "@data.autotyp"
+        times = 403
+        
+    [analysis.autotyp_ga]
+        tool = 'r'
+        model = 'ga'
+        details = ""
+        data = "@data.autotyp"
+        times = 403
+        
+    [analysis.genetic_autotyp_constant]
+        tool = 'r'
+        model = 'constant'
+        details = ""
+        data = "@data.genetic_autotyp"
+        times = 403
+        
+    [analysis.genetic_autotyp_proportional]
+        tool = 'r'
+        model = 'proportional'
+        details = ""
+        data = "@data.genetic_autotyp"
+        times = 403
+        
+    [analysis.genetic_autotyp_grafen]
+        tool = 'r'
+        model = 'grafen'
+        details = ""
+        data = "@data.genetic_autotyp"
+        times = 403
+        
+    [analysis.genetic_autotyp_nj]
+        tool = 'r'
+        model = 'neighbor-joining'
+        details = ""
+        data = "@data.genetic_autotyp"
+        times = 403
+        
+    [analysis.genetic_autotyp_nnls]
+        tool = 'r'
+        model = 'nnls'
+        details = ""
+        data = "@data.genetic_autotyp"
+        times = 403
+        
+    [analysis.genetic_autotyp_ga]
+        tool = 'r'
+        model = 'ga'
+        details = ""
+        data = "@data.genetic_autotyp"
+        times = 403
+        
+    [analysis.genetic_ethnologue_constant]
+        tool = 'r'
+        model = 'constant'
+        details = ""
+        data = "@data.genetic_ethnologue"
+        times = 147
+        
+    [analysis.genetic_ethnologue_proportional]
+        tool = 'r'
+        model = 'proportional'
+        details = ""
+        data = "@data.genetic_ethnologue"
+        times = 147
+        
+    [analysis.genetic_ethnologue_grafen]
+        tool = 'r'
+        model = 'grafen'
+        details = ""
+        data = "@data.genetic_ethnologue"
+        times = 147
+        
+    [analysis.genetic_ethnologue_nj]
+        tool = 'r'
+        model = 'neighbor-joining'
+        details = ""
+        data = "@data.genetic_ethnologue"
+        times = 147
+        
+    [analysis.genetic_ethnologue_nnls]
+        tool = 'r'
+        model = 'nnls'
+        details = ""
+        data = "@data.genetic_ethnologue"
+        times = 147
+        
+    [analysis.genetic_ethnologue_ga]
+        tool = 'r'
+        model = 'ga'
+        details = ""
+        data = "@data.genetic_ethnologue"
+        times = 147
+        
+    [analysis.genetic_glottolog_constant]
+        tool = 'r'
+        model = 'constant'
+        details = ""
+        data = "@data.genetic_glottolog"
+        times = 435
+        
+    [analysis.genetic_glottolog_proportional]
+        tool = 'r'
+        model = 'proportional'
+        details = ""
+        data = "@data.genetic_glottolog"
+        times = 435
+        
+    [analysis.genetic_glottolog_grafen]
+        tool = 'r'
+        model = 'grafen'
+        details = ""
+        data = "@data.genetic_glottolog"
+        times = 435
+        
+    [analysis.genetic_glottolog_nj]
+        tool = 'r'
+        model = 'neighbor-joining'
+        details = ""
+        data = "@data.genetic_glottolog"
+        times = 435
+        
+    [analysis.genetic_glottolog_nnls]
+        tool = 'r'
+        model = 'nnls'
+        details = ""
+        data = "@data.genetic_glottolog"
+        times = 435
+        
+    [analysis.genetic_glottolog_ga]
+        tool = 'r'
+        model = 'ga'
+        details = ""
+        data = "@data.genetic_glottolog"
+        times = 435
+        
+    [analysis.genetic_wals_constant]
+        tool = 'r'
+        model = 'constant'
+        details = ""
+        data = "@data.genetic_wals"
+        times = 214
+        
+    [analysis.genetic_wals_proportional]
+        tool = 'r'
+        model = 'proportional'
+        details = ""
+        data = "@data.genetic_wals"
+        times = 214
+        
+    [analysis.genetic_wals_grafen]
+        tool = 'r'
+        model = 'grafen'
+        details = ""
+        data = "@data.genetic_wals"
+        times = 214
+        
+    [analysis.genetic_wals_nj]
+        tool = 'r'
+        model = 'neighbor-joining'
+        details = ""
+        data = "@data.genetic_wals"
+        times = 214
+        
+    [analysis.genetic_wals_nnls]
+        tool = 'r'
+        model = 'nnls'
+        details = ""
+        data = "@data.genetic_wals"
+        times = 214
+        
+    [analysis.genetic_wals_ga]
+        tool = 'r'
+        model = 'ga'
+        details = ""
+        data = "@data.genetic_wals"
+        times = 214
+        
+    [analysis.wals_euclidean_constant]
+        tool = 'r'
+        model = 'constant'
+        details = ""
+        data = "@data.wals_euclidean"
+        times = 214
+        
+    [analysis.wals_euclidean_proportional]
+        tool = 'r'
+        model = 'proportional'
+        details = ""
+        data = "@data.wals_euclidean"
+        times = 214
+        
+    [analysis.wals_euclidean_grafen]
+        tool = 'r'
+        model = 'grafen'
+        details = ""
+        data = "@data.wals_euclidean"
+        times = 214
+        
+    [analysis.wals_euclidean_nj]
+        tool = 'r'
+        model = 'neighbor-joining'
+        details = ""
+        data = "@data.wals_euclidean"
+        times = 214
+        
+    [analysis.wals_euclidean_nnls]
+        tool = 'r'
+        model = 'nnls'
+        details = ""
+        data = "@data.wals_euclidean"
+        times = 214
+        
+    [analysis.wals_euclidean_ga]
+        tool = 'r'
+        model = 'ga'
+        details = ""
+        data = "@data.wals_euclidean"
+        times = 214
+        
+    [analysis.wals_euclidean_imputed_missing_data_constant]
+        tool = 'r'
+        model = 'constant'
+        details = ""
+        data = "@data.wals_euclidean_imputed_missing_data"
+        times = 214
+        
+    [analysis.wals_euclidean_imputed_missing_data_proportional]
+        tool = 'r'
+        model = 'proportional'
+        details = ""
+        data = "@data.wals_euclidean_imputed_missing_data"
+        times = 214
+        
+    [analysis.wals_euclidean_imputed_missing_data_grafen]
+        tool = 'r'
+        model = 'grafen'
+        details = ""
+        data = "@data.wals_euclidean_imputed_missing_data"
+        times = 214
+        
+    [analysis.wals_euclidean_imputed_missing_data_nj]
+        tool = 'r'
+        model = 'neighbor-joining'
+        details = ""
+        data = "@data.wals_euclidean_imputed_missing_data"
+        times = 214
+        
+    [analysis.wals_euclidean_imputed_missing_data_nnls]
+        tool = 'r'
+        model = 'nnls'
+        details = ""
+        data = "@data.wals_euclidean_imputed_missing_data"
+        times = 214
+        
+    [analysis.wals_euclidean_imputed_missing_data_ga]
+        tool = 'r'
+        model = 'ga'
+        details = ""
+        data = "@data.wals_euclidean_imputed_missing_data"
+        times = 214
+        
+    [analysis.wals_gower_constant]
+        tool = 'r'
+        model = 'constant'
+        details = ""
+        data = "@data.wals_gower"
+        times = 214
+        
+    [analysis.wals_gower_proportional]
+        tool = 'r'
+        model = 'proportional'
+        details = ""
+        data = "@data.wals_gower"
+        times = 214
+        
+    [analysis.wals_gower_grafen]
+        tool = 'r'
+        model = 'grafen'
+        details = ""
+        data = "@data.wals_gower"
+        times = 214
+        
+    [analysis.wals_gower_nj]
+        tool = 'r'
+        model = 'neighbor-joining'
+        details = ""
+        data = "@data.wals_gower"
+        times = 214
+        
+    [analysis.wals_gower_nnls]
+        tool = 'r'
+        model = 'nnls'
+        details = ""
+        data = "@data.wals_gower"
+        times = 214
+        
+    [analysis.wals_gower_ga]
+        tool = 'r'
+        model = 'ga'
+        details = ""
+        data = "@data.wals_gower"
+        times = 214
+        
+    [analysis.wals_gower_imputed_missing_data_constant]
+        tool = 'r'
+        model = 'constant'
+        details = ""
+        data = "@data.wals_gower_imputed_missing_data"
+        times = 214
+        
+    [analysis.wals_gower_imputed_missing_data_proportional]
+        tool = 'r'
+        model = 'proportional'
+        details = ""
+        data = "@data.wals_gower_imputed_missing_data"
+        times = 214
+        
+    [analysis.wals_gower_imputed_missing_data_grafen]
+        tool = 'r'
+        model = 'grafen'
+        details = ""
+        data = "@data.wals_gower_imputed_missing_data"
+        times = 214
+        
+    [analysis.wals_gower_imputed_missing_data_nj]
+        tool = 'r'
+        model = 'neighbor-joining'
+        details = ""
+        data = "@data.wals_gower_imputed_missing_data"
+        times = 214
+        
+    [analysis.wals_gower_imputed_missing_data_nnls]
+        tool = 'r'
+        model = 'nnls'
+        details = ""
+        data = "@data.wals_gower_imputed_missing_data"
+        times = 214
+        
+    [analysis.wals_gower_imputed_missing_data_ga]
+        tool = 'r'
+        model = 'ga'
+        details = ""
+        data = "@data.wals_gower_imputed_missing_data"
+        times = 214
+        
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }
 cldf = { title = "CLDF Dataset", link = "" }
 dplace = { title = "D-PLACE Dataset", link = "" }
-links = []
+links = ["https://github.com/ddediu/lgfam-newick"]

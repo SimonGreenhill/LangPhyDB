@@ -3,21 +3,35 @@ title = "{BEASTling}: A software tool for linguistic phylogenetics using {BEAST}
 doi = "10.1371/journal.pone.0180908"
 
 abstract = """
-
+We present a new open source software tool called BEASTling, designed to simplify the
+preparation of Bayesian phylogenetic analyses of linguistic data using the BEAST 2
+platform. BEASTling transforms comparatively short and human-readable configuration
+files into the XML files used by BEAST to specify analyses. By taking advantage of
+Creative Commons-licensed data from the Glottolog language catalog, BEASTling allows
+the user to conveniently filter datasets using names for recognised language
+families, to impose monophyly constraints so that inferred language trees are
+backward compatible with Glottolog classifications, or to assign geographic location
+data to languages for phylogeographic analyses. Support for the emerging
+cross-linguistic linked data format (CLDF) permits easy incorporation of data
+published in cross-linguistic linked databases into analyses. BEASTling is intended
+to make the power of Bayesian analysis more accessible to historical linguists
+without strong programming backgrounds, in the hopes of encouraging communication and
+collaboration between those developing computational models of language evolution
+(who are typically not linguists) and relevant domain experts.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Luke Maurits", "Robert Forkel", "Gereon A. Kaiping", "Quentin D. Atkinson"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Indo-European', 'Austronesian']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Maurits_2017"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['methodological', 'phylogenetic']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
 description = ""
 
@@ -26,32 +40,30 @@ description = ""
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
+    [data.tob]
+    ntaxa = 19
+    nchars = 110
+    nsites = 645
     datatype = 'lexical cognates'
-    source = '@xxx'
+    source = '@List2014'
     items = ''
     comment = ''
 
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
+    [data.wals]
+    ntaxa = 169
+    nchars = 25
+    nsites = 25
+    datatype = 'structural features'
+    source = '@WALS'
+    items = ''
     comment = ''
 
 
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
+# published phylogenies
+[phylogenies]
+    [phylogenies.gray2009]
+    source = '@Gray2009'
+    comment = ''
 
 
 # analysis information
@@ -59,21 +71,17 @@ description = ""
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
+    [analysis.tob]
+    tool = 'beast2'
+    model = 'bcov+strict'
     details = ""
-    data = ""
+    data = "@data.tob"
 
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
+    [analysis.wals]
+    tool = 'beast2'
+    model = 'mk+strict'
+    details = ""
+    data = "@data.wals; @phylogenies.gray2009"
 
 
 [links]

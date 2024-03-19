@@ -47,6 +47,10 @@ Papers deemed to fall outside scope, alphabetically by first author surname.
 * Hartmann, F., & Riegger, C. (2022). The Burgundian language and its phylogeny. NOWELE, 75(1), 42–80. Portico. https://doi.org/10.1075/nowele.00062.har
     - No explicit phylogenetic analysis
 
+* Holman et al. 2015. Inheritance and diffusion of language and culture: A comparative perspective. Social Evolution & History 14.1:49-64.
+    - No explicit phylogenetic analysis
+
+
 ## I
 ## J
 
@@ -74,6 +78,9 @@ Papers deemed to fall outside scope, alphabetically by first author surname.
 ## N
 ## O
 ## P
+
+* Pereltsvaig, A. & Lewis, M.W. The Indo-European controversy: Facts and fallacies in historical linguistics. (Cambridge: Cambridge University Press, 2015).
+    - Criticism. 
 
 * Petroni, F., & Serva, M. (2010). Measures of lexical distance between languages. Physica A: Statistical Mechanics and Its Applications, 389(11), 2280–2283. https://doi.org/10.1016/j.physa.2010.02.004
     - No explicit phylogenetic analysis

@@ -3,21 +3,29 @@ title = "Linguistic Phylogenetic Inference by PAM-like Matrices"
 doi = "10.1080/09296174.2012.659001"
 
 abstract = """
-
+We apply to the task of linguistic phylogenetic inference a successful cognate
+identification learning model based on point accepted mutation (PAM)-like matrices.
+We train our system and we employ the learned parameters for measuring the lexical
+distance between languages. We estimate phylogenetic trees using distance-based
+methods on an Indo-European database. Our results reproduce correctly all the
+established major language groups and subgroups present in the dataset, are
+compatible with the Indo-European benchmark tree and include also some of the
+supported higher-level structures. We review and compare other studies reported in
+the literature with regard to recognized aspects of the Indo-European language family.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Antonella Delmestri", "Nello Cristianini"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Indo-European']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Delmestri_2012"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['phylogenetic', 'methodological']
+framework = ['distance']
 # short description of the study, one line.
 description = ""
 
@@ -26,54 +34,56 @@ description = ""
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
+    [data.Dyen1992]
+    ntaxa = 84
+    nchars = 200
+    nsites = "?" 
     datatype = 'lexical cognates'
-    source = '@xxx'
-    items = ''
+    source = '@Dyen1992'
+    items = 'swadesh200'
     comment = ''
-
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
-
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
 
 
 # analysis information
 [analysis]
     
-    notes = ""
+    notes = "n.b. main aim is alignment of lexical items and cognate detection rather than phylogeny"
     
-    [analysis.tree]
-    tool = ''
-    model = ''
+    [analysis.nj_d1]
+    tool = 'unknown'
+    model = 'neighbor-joining'
     details = ""
-    data = ""
+    data = "3 variants of distance data {d1, d2, d3}"
 
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
+    [analysis.nj_d2]
+    tool = 'unknown'
+    model = 'neighbor-joining'
+    details = ""
+    data = "3 variants of distance data {d1, d2, d3}"
+
+    [analysis.nj_d3]
+    tool = 'unknown'
+    model = 'neighbor-joining'
+    details = ""
+    data = "3 variants of distance data {d1, d2, d3}"
+
+    [analysis.upgma_d1]
+    tool = 'unknown'
+    model = 'UPGMA'
+    details = ""
+    data = "3 variants of distance data {d1, d2, d3}"
+
+    [analysis.upgma_d2]
+    tool = 'unknown'
+    model = 'UPGMA'
+    details = ""
+    data = "3 variants of distance data {d1, d2, d3}"
+
+    [analysis.upgma_d3]
+    tool = 'unknown'
+    model = 'UPGMA'
+    details = ""
+    data = "3 variants of distance data {d1, d2, d3}"
 
 
 [links]

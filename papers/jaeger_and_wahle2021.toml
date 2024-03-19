@@ -3,7 +3,7 @@ title = "Phylogenetic Typology"
 doi = "10.3389/fpsyg.2021.682132"
 
 abstract = """
-
+In this article we propose a novel method to estimate the frequency distribution of linguistic variables while controlling for statistical non-independence due to shared ancestry. Unlike previous approaches, our technique uses all available data, from language families large and small as well as from isolates, while controlling for different degrees of relatedness on a continuous scale estimated from the data. Our approach involves three steps: First, distributions of phylogenies are inferred from lexical data. Second, these phylogenies are used as part of a statistical model to estimate transition rates between parameter states. Finally, the long-term equilibrium of the resulting Markov process is computed. As a case study, we investigate a series of potential word-order correlations across the languages of the world.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
@@ -16,8 +16,8 @@ groups = []  # 'Austronesian', etc
 bibkey = "@J_ger_2021"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['trait']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
 description = ""
 
@@ -26,32 +26,20 @@ description = ""
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    [data.wals]
+    ntaxa = 1626
+    nchars = 8
+    nsites = 8
+    datatype = 'structural features'
+    source = '@WALS'
     items = ''
     comment = ''
 
 # published phylogenies
 [phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
+    [phylogenies.jaeger2018]
+    source = '@Jaeger2018'
     comment = ''
-
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
 
 
 # analysis information
@@ -59,11 +47,12 @@ description = ""
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
+    [analysis.traits]
+    tool = 'custom'
     model = ''
-    details = ""
+    details = "pairwise comparisons"
     data = ""
+    times = 28
 
 
 [links]

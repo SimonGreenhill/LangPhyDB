@@ -11,6 +11,8 @@ Any study using computational phylogenetic methods on languages data to
 
 Review and tutorial papers that discuss either of these topics are also included.
 
+Note that critical studies are currently not included, see [here for discussion](https://github.com/SimonGreenhill/LangPhyDB/issues/10). 
+
 ## Types of Studies Included:
 
 * `phylogenetic`: Studies that aim to infer a phylogeny.
@@ -27,6 +29,4 @@ Review and tutorial papers that discuss either of these topics are also included
 
 If you find this project helpful, please cite:
 
-```
 Greenhill, S. J. (2023). [Language Phylogenies](https://doi.org/10.1093/oxfordhb/9780198869252.013.61). The Oxford Handbook of Cultural Evolution, C61P1-C61P248. https://doi.org/10.1093/oxfordhb/9780198869252.013.61
-```

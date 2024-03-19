@@ -3,21 +3,26 @@ title = "Maximum likelihood models for glottochronology and for reconstructing l
 doi = ""
 
 abstract = """
-
+I shall discuss in this chapter how maximum likelihood statistical models of 
+linguistic evolution can be used to infer phylogenies of languages, and to
+derive quantitative estimates of rates at which individual words evolve. A phylogenetic
+tree of seven Indo-European languages is reconstructed using a novel maximum likelihood
+model. The tree seems to capture several important features of the relationship
+amongst these languages.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ['Mark Pagel']
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Indo-European']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@pagel2000b"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['phylogenetic', 'methodological']
+framework = ['likelihood']
 # short description of the study, one line.
 description = ""
 
@@ -26,33 +31,14 @@ description = ""
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
+    [data.kruskal1971]
+    ntaxa = 7
+    nchars = 18
+    nsites = 18
     datatype = 'lexical cognates'
-    source = '@xxx'
+    source = '@Kruskal1971'
     items = ''
     comment = ''
-
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
-
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
-
 
 # analysis information
 [analysis]
@@ -60,19 +46,10 @@ description = ""
     notes = ""
     
     [analysis.tree]
-    tool = ''
+    tool = 'custom'
     model = ''
     details = ""
     data = ""
-
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
     notes = ""
 
 

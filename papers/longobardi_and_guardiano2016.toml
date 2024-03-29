@@ -1,9 +1,13 @@
 title = "Phylogenetic reconstruction in syntax: the Parametric Comparison Method"
 
-doi = ""
+doi = "10.1017/9781107279070.013"
 
 abstract = """
-
+The Parametric Comparison Method (PCM) is a novel tool for studying the
+historical evolution and classification of languages. The intuition behind it
+is that purely theoretical advances of linguistics over the past few decades
+may provide an innovative system for reconstructing language
+phylogenies.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
@@ -16,8 +20,8 @@ groups = []  # 'Austronesian', etc
 bibkey = "@LongobardiGuardiano2017"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['review']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['distance'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
 description = ""
 
@@ -26,33 +30,14 @@ description = ""
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    [data.parameters]
+    ntaxa = 40
+    nchars = 75
+    nsites = 75
+    datatype = 'syntactical features'
+    source = ''
     items = ''
     comment = ''
-
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
-
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
-
 
 # analysis information
 [analysis]
@@ -60,20 +45,10 @@ description = ""
     notes = ""
     
     [analysis.tree]
-    tool = ''
-    model = ''
+    tool = 'phylip'
+    model = 'kitsch'
     details = ""
     data = ""
-
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
 
 
 [links]

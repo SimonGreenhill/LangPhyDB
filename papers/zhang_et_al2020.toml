@@ -62,7 +62,7 @@ description = "131 Sino-Tibetan languages"
     description = "extinction of Padam ~1900AD"
 
     [calibration.Shaiyang]
-    taxa = ["misi1242?"]
+    taxa = ["misi1242"]
     age = "120"
     units = "y2000" # ybp
     description = "extinction of Shaiyang ~1900AD"

@@ -46,23 +46,28 @@ description = "59 Japonic languages"
 
     [calibration.oldjapanese]
     taxa = ['oldj1239']
-    age = "unknown(1216, 1300)" # x, normal(x, y), uniform(x,y)
+    age = "normal(1258, 21)" # x, normal(x, y), uniform(x,y)
     units = "ybp" # ybp
     description = """The relaxed sample date calibrations were
     assigned to Old and Middle Japanese with lognormal priors in which their 95
     per cent of the distributions lie between the upper and the lower bounds of
     each era; 1216–1300 YBP for Old Japanese and 437-674 YBP for Middle
     Japanese."""
+    # I implement this as normal as I can't recover the lognormal values, and the
+    # way this is phrased doesn't suggest a very skewed lognormal.
     
     [calibration.middlejapanese]
-    taxa = ['?']  # middle japanese
-    age = "unknown(437, 674)" # x, normal(x, y), uniform(x,y)
+    taxa = ["?"]  # middle japanese
+    age = "normal(555.5, 59.25)" # x, normal(x, y), uniform(x,y)
     units = "ybp" # ybp
     description = """The relaxed sample date calibrations were
     assigned to Old and Middle Japanese with lognormal priors in which their 95
     per cent of the distributions lie between the upper and the lower bounds of
     each era; 1216–1300 YBP for Old Japanese and 437-674 YBP for Middle
     Japanese."""
+    # I implement this as normal as I can't recover the lognormal values, and the
+    # way this is phrased doesn't suggest a very skewed lognormal.
+
 
 
 # analysis information

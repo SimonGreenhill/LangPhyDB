@@ -1,0 +1,82 @@
+title = "Computational Cladistics and the Position of Tocharian"
+
+doi = ""
+
+abstract = """
+This paper reflects joint work, under the auspices of the Institute
+for Research in Cognitive Science at the University of Pennsylvania,
+which we have been pursuing since the beginning of 1994. Our work
+has been supported in part by National Science Foundation grant
+SBR-9512092 to the first three authors and an REU supplement
+(Research Experience for Undergraduates), as well as by National
+Young Investigator award CCR9457800 and a Penn Research
+Foundation grant to Tandy Warnow.' On the most technical level,
+Warnow has been responsible for the algorithmic work, Michailov has
+implemented the algorithms, Taylor and Ringe have handled the
+data, and Levison has been responsible for the user interface of our
+implementation software and for data analysis using that software.
+However, as our investigation has progressed we have found ourselves
+contributing to the development of our methodology in no
+discernible pattern, so that the methodology as a whole is uniquely
+the product of an extraordinarily fruitful collaboration
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Donald A. Ringe", "Tandy Warnow", "Ann Taylor", "Alexander Michailov"
+]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@ringe1998a"
+
+# type of study
+type = ['phylogenetic']
+framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+
+    [data.ie]
+    ntaxa = 12
+    nchars = 226
+    nsites = 226
+    datatype = 'mixed'
+    source = ''
+    items = ''
+    comment = "four regular sound changes; two unexplained phonological pecularities; eleven morphological characters; and the 207-word Swadesh list of Tischler 1973, with the item 'day' split into two characters (namely 'period of daylight' and 'period of 24 hours')"
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree1]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = ""
+
+    [analysis.tree2]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = ""
+
+    [analysis.tree3]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = ""
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

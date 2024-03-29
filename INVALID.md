@@ -63,7 +63,13 @@ Papers deemed to fall outside scope, alphabetically by first author surname.
 * Levinson SC, Greenhill SJ, Gray RD & Dunn M. 2011. Universal typological dependencies should be detectable in the history of language families. Linguistic Typology, 15: 509-534.
     - position piece/response to criticism of Dunn et al. 2011.
 
+* Longobardi, Giuseppe. 2003. Methods in parametric linguistics and cognitive history. Linguistic Variation Yearbook 3. 101–138. DOI: http://doi.org/10.1075/livy.3.06lon
+    - No explicit phylogenetic analysis
+
 * Longobardi, Giuseppe. 2005. A Minimalist program for parametric linguistics? In Broekhuis, Hans & Corver, Norbert & Huybregts, Riny & Kleinhenz, Ursula & Koster, Jan (eds.), Organizing grammar: linguistic studies for Henk van Riemsdijk, 407–414. Amsterdam: John Benjamins. DOI:  http://doi.org/10.1515/9783110892994.407
+    - No explicit phylogenetic analysis
+
+* Longobardi, Giuseppe. 2012. Convergence in parametric phylogenies: homoplasy or principled explanation. In C. Galves, S. Cyrino, R. Lopes, F. Sandalo, & J. Avelar (Eds.), Parameter Theory and Linguistic Change (pp. 304-319). Oxford University Press.
     - No explicit phylogenetic analysis
 
 * Longobardi G, Ceolin A, Bortolussi L, Guardiano C, Irimia MA, Michelioudakis D, Radkevich N, & Sgarro A. 2016. Mathematical modeling of grammatical diversity supports the historical reality of formal syntax. Universität Tübingen. https://doi.org/10.15496/PUBLIKATION-10122

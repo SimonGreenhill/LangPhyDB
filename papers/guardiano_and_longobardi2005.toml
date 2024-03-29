@@ -1,0 +1,58 @@
+title = "Parametric Comparison and Language Taxonomy"
+
+doi = "10.1093/acprof:oso/9780199272129.003.0010"
+
+abstract = """
+In this paper we discuss three compelling questions, which impinge on parameter theory:
+a. What are the actual parameters of UG?
+b. What is the form of a possible parameter?
+c. How do parameter values distribute in space and time?
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Cristina Guardiano", "Giuseppe Longobardi"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@GUARDIANO_2005"
+
+# type of study
+type = ['phylogenetic']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['distance'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.parameter]
+    ntaxa = 15
+    nchars = 30
+    nsites = 30
+    datatype = 'syntactical features'
+    source = ''
+    items = ''
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.visualisation]
+    tool = 'manual'
+    model = ''
+    details = ""
+    data = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

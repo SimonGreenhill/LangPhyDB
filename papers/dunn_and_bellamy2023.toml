@@ -84,16 +84,6 @@ description = "Evolution and Spread of Politeness Systems in Indo-European"
     data = "PC2"
     
 
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
-
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }

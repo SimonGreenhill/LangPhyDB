@@ -75,16 +75,6 @@ description = "28 European languages"
     details = "to enable comparison between McMahon & McMahon 2005's tree of lexical data"
     data = "data.subset"
 
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
-
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }

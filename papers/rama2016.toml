@@ -50,7 +50,7 @@ description = "Compares the effect of node-dating vs. total-evidence dating on I
 
     [calibration.Armenian]
     taxa = ["arme1241"]
-    age = "lognormal(250, 0.7, 1500)"
+    age = "lognormal(250, 0.7, 1500, realspace=True)"
     units = "ybp" # ybp
     description = ""
 
@@ -62,13 +62,13 @@ description = "Compares the effect of node-dating vs. total-evidence dating on I
 
     [calibration.Balto-Slavic]
     taxa = ["balt1263"]
-    age = "lognormal(500,1.0, 950)"
+    age = "lognormal(500, 1.0, 950, realspace=True)"
     units = "ybp" # ybp
     description = ""
 
     [calibration.Celtic]
     taxa = ["celt1248"]
-    age = "lognormal(500, 0.75, 1200)"
+    age = "lognormal(500, 0.75, 1200, realspace=True)"
     units = "ybp" # ybp
     description = ""
 
@@ -80,7 +80,7 @@ description = "Compares the effect of node-dating vs. total-evidence dating on I
 
     [calibration.Germanic]
     taxa = ["germ1287"]
-    age = "lognormal(400, 0.4, 1635)"
+    age = "lognormal(400, 0.4, 1635, realspace=True)"
     units = "ybp" # ybp
     description = ""
 
@@ -104,13 +104,13 @@ description = "Compares the effect of node-dating vs. total-evidence dating on I
 
     [calibration.Indo-Iranian]
     taxa = ["indo1320"]
-    age = "lognormal(900, 0.4, 3000)"
+    age = "lognormal(900, 0.4, 3000, realspace=True)"
     units = "ybp" # ybp
     description = ""
 
     [calibration.Iranian]
     taxa = ["iran1269"]
-    age = "lognormal(500, 0.7, 2450)"
+    age = "lognormal(500, 0.7, 2450, realspace=True)"
     units = "ybp" # ybp
     description = ""
 

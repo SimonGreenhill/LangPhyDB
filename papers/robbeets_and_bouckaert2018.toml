@@ -40,7 +40,7 @@ description = "57 Transeurasian languages"
 
 [calibration]
     [calibration.japonic]
-    taxa = ["japonic"]
+    taxa = ["japo1237"]
     age = "normal(150, 175)"
     units = "bce"
     description = ""
@@ -58,11 +58,10 @@ description = "57 Transeurasian languages"
     description = ""
 
     [calibration.turkic]
-    taxa = ["turkic"]
+    taxa = ["turk1311"]
     age = "normal(200, 200)"
     units = "bce"
     description = ""
-
 
     [calibration.monophyly_japonic]
     taxa = ["japo1237"]

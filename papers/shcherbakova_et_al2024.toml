@@ -1,0 +1,92 @@
+title = "The evolutionary dynamics of how languages signal who does what to whom"
+
+doi = "10.1038/s41598-024-51542-5"
+
+abstract = """
+Languages vary in how they signal "who does what to whom". Three main strategies to indicate the participant roles of "who" and "whom"
+are case, verbal indexing, and rigid word order. Languages that disambiguate these roles with case tend to have either verb-final or
+flexible word order. Most previous studies that found these patterns used limited language samples and overlooked the causal mechanisms
+that could jointly explain the association between all three features. Here we analyze grammatical data from a Grambank sample of 1705
+languages with phylogenetic causal graph methods. Our results corroborate the claims that verb-final word order generally gives rise to
+case and, strikingly, establish that case tends to lead to the development of flexible word order. The combination of novel statistical
+methods and the Grambank database provides a model for the rigorous testing of causal claims about the factors that shape patterns of
+linguistic diversity.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Olena Shcherbakova", "Damián E. Blasi", "Volker Gast", "Hedvig Skirgård", "Russell D. Gray", "Simon J. Greenhill"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Shcherbakova_2024b"
+
+# type of study
+type = ['trait', 'd-statistic']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian', 'likelihood'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+
+    
+    [data.grambank]
+    ntaxa = 95
+    nchars = 3
+    nsites = 3
+    datatype = 'structural features'
+    source = '@Grambank'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.edge]
+    source = '@Bouckaert2022'
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.case_d]
+    tool = 'caper'
+    model = 'phylo.d'
+    details = ""
+    data = ""
+
+    [analysis.fwo_d]
+    tool = 'caper'
+    model = 'phylo.d'
+    details = ""
+    data = ""
+
+    [analysis.vf_d]
+    tool = 'caper'
+    model = 'phylo.d'
+    details = ""
+    data = ""
+
+    [analysis.phylopath]
+    tool = 'phylopath'
+    model = ''
+    details = ""
+    data = ""
+
+    [analysis.brms]
+    tool = 'brms'
+    model = ''
+    details = ""
+    data = ""
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

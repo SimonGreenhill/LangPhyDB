@@ -3,21 +3,36 @@ title = "Long-Range Comparison between Genes and Languages Based on Syntactic Di
 doi = "10.1159/000317374"
 
 abstract = """
-
+Objective: To propose a new approach for comparing genetic and linguistic diversity in populations belonging to
+distantly related groups. Background: Comparisons of linguistic and genetic differences have proved powerful tools to
+reconstruct human demographic history. Current models assume on both sides that similarities reflect either descent
+from common ancestry or the balance between isolation and contact. Most linguistic phylogenies are ultimately based on
+lexical evidence (roughly, words and morphemes with their sounds and meanings). However, measures of lexical divergence
+are reliable only for closely related languages, thus large-scale comparisons of genetic and linguistic diversity have
+appeared problematic so far. Methods: Syntax (abstract rules to combine words into sentences) appears more measurable,
+universally comparable, and stable than the lexicon, and hence certain syntactic similarities might reflect deeper
+linguistic relationships, such as those between distant language families. In this study, we for the first time
+compared genetic data to a matrix of syntactic differences among selected populations of three continents. Results:
+Comparing two databases of microsatellite (Short Tandem Repeat) markers and Single Nucleotides Polymorphisms (SNPs),
+with a linguistic matrix based on the values of 62 grammatical parameters, we show that there is indeed a correlation
+of syntactic and genetic distances. We also identified a few outliers and suggest a possible interpretation of the
+overall pattern. Conclusions: These results strongly support the possibility of better investigating population history
+by combining genetic data with linguistic information of a new type, provided by a theoretically more sophisticated
+method to assess the relationships between distantly related languages and language families.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Vincenza Colonna", "Alessio Boattini", "Cristina Guardiano", "Irene Dall’Ara", "Davide Pettener", "Giuseppe Longobardi", "Guido Barbujani"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Indo-European']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Colonna_2010"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['macroevolutionary']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['distance'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
 description = ""
 
@@ -26,54 +41,35 @@ description = ""
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    [data.parameters]
+    ntaxa = 14
+    nchars = 62
+    nsites = 62
+    datatype = 'syntactical features'
+    source = ''
     items = ''
     comment = ''
 
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
+    [data.genetics]
+    ntaxa = 14
+    nchars = ""
+    nsites = ""
+    datatype = 'genetic SNPs'
+    source = ''
+    items = ''
     comment = ''
-
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
-
 
 # analysis information
 [analysis]
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
+    [analysis.mantel]
+    tool = 'unknown'
+    model = 'mantel'
     details = ""
     data = ""
 
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
 
 
 [links]

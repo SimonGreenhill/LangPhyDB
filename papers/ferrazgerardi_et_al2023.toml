@@ -67,104 +67,34 @@ description = "40 varieties from Tupí-Guaraní"
     notes = ""
 
     [calibration.Xeta_tip]
-    taxa = ['Xeta']
+    taxa = ['xeta1241']
     age = "50"
     units = "ybp" 
     description = ""
 
     [calibration.Tupinamba_tip]
-    taxa = ['Tupinamba']
+    taxa = ['tupi1273']
     age = "400"
     units = "ybp" 
     description = ""
 
     [calibration.Old_Guarani_tip]
-    taxa = ['Old_Guarani']
+    taxa = ['oldp1258']
     age = "325"
     units = "ybp" 
     description = ""
 
     [calibration.Guarayo_tip]
-    taxa = ['Guarayo']
+    taxa = ['guar1292']
     age = "75"
     units = "ybp" 
     description = ""
 
     [calibration.root]
-    taxa = [
-        'Ache', 'Amondawa', 'Anambe', 'Apiaka', 'Arawete', 'Asurini_Tocantins', 'Asurini_Xingu', 'Ava_Canoeiro',
-        'Aweti', 'Chiriguano', 'Guaja', 'Guajajara', 'Guarani', 'Guarayo', 'Kaapor', 'Kaiowa', 'Kamajura',
-        'Kayabi', 'Kokama', 'Mawe', 'Mbya', 'Nheengatu', 'Old_Guarani', 'Omagua', 'Parakana', 'Parintintin',
-        'Siriono', 'Surui_Aikewara', 'Tapiete', 'Tapirape', 'Teko', 'Tembe', 'Tenharim', 'Tupinamba',
-        'Urueuwauwau', 'Warazu', 'Wayampi', 'Xeta', 'Yuki', 'Zoe'
-    ]
+    taxa = ['tupi1276']
     age = "uniform(2500, 5000)"
     units = "ybp" 
     description = ""
-
-    [calibration.awetitg]
-    taxa = [
-        'Ache', 'Amondawa', 'Anambe', 'Apiaka', 'Arawete', 'Asurini_Tocantins', 'Asurini_Xingu', 'Ava_Canoeiro',
-        'Aweti', 'Chiriguano', 'Guaja', 'Guajajara', 'Guarani', 'Guarayo', 'Kaapor', 'Kaiowa', 'Kamajura',
-        'Kayabi', 'Kokama', 'Mbya', 'Nheengatu', 'Old_Guarani', 'Omagua', 'Parakana', 'Parintintin',
-        'Siriono', 'Surui_Aikewara', 'Tapiete', 'Tapirape', 'Teko', 'Tembe', 'Tenharim', 'Tupinamba',
-        'Urueuwauwau', 'Warazu', 'Wayampi', 'Xeta', 'Yuki', 'Zoe'
-    ]
-    age = "monophyly"
-    units = "ybp" 
-    description = ""
-
-    [calibration.tg]
-    taxa = [
-        'Ache', 'Amondawa', 'Anambe', 'Apiaka', 'Arawete', 'Asurini_Tocantins', 'Asurini_Xingu', 'Ava_Canoeiro',
-        'Chiriguano', 'Guaja', 'Guajajara', 'Guarani', 'Guarayo', 'Kaapor', 'Kaiowa', 'Kamajura',
-        'Kayabi', 'Kokama', 'Mbya', 'Nheengatu', 'Old_Guarani', 'Omagua', 'Parakana', 'Parintintin',
-        'Siriono', 'Surui_Aikewara', 'Tapiete', 'Tapirape', 'Teko', 'Tembe', 'Tenharim', 'Tupinamba',
-        'Urueuwauwau', 'Warazu', 'Wayampi', 'Xeta', 'Yuki', 'Zoe'
-    ]
-    age = "monophyly"
-    units = "ybp" 
-    description = ""
-
-    [calibration.guaranian]
-    taxa = [
-        'Ache', 'Chiriguano', 'Guarani', 'Guarayo', 'Kaiowa', 'Mbya', 'Old_Guarani', 'Siriono', 'Tapiete',
-        'Warazu', 'Xeta', 'Yuki'
-    ]
-    age = "monophyly"
-    units = "ybp" 
-    description = ""
-
-    [calibration.kawahiva]
-    taxa = ['Amondawa', 'Apiaka', 'Kayabi', 'Parintintin', 'Tenharim', 'Urueuwauwau']
-    age = "monophyly"
-    units = "ybp" 
-    description = ""
-
-    [calibration.gtg]
-    taxa = ['Guaja', 'Guajajara', 'Tembe']
-    age = "monophyly"
-    units = "ybp" 
-    description = ""
-
-    [calibration.zwt]
-    taxa = ['Teko', 'Wayampi', 'Zoe']
-    age = "monophyly"
-    units = "ybp" 
-    description = ""
-
-    [calibration.tupi]
-    taxa = ['Kokama', 'Nheengatu', 'Omagua', 'Tupinamba']
-    age = "monophyly"
-    units = "ybp" 
-    description = ""
-
-    [calibration.ok]
-    taxa = ['Kokama', 'Omagua']
-    age = "monophyly"
-    units = "ybp" 
-    description = ""
-
 
 # analysis information
 [analysis]

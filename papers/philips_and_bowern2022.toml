@@ -1,0 +1,68 @@
+title = "Bayesian methods for ancestral state reconstruction in morphosyntax: Exploring the history of argument marking strategies in a large language family"
+
+doi = "10.1093/jole/lzac002"
+
+abstract = """
+Bayesian phylogenetic methods have been gaining traction and currency in historical linguistics, as
+their potential for uncovering elements of language change is increasingly understood. Here, we 
+demonstrate a proof of concept for using ancestral state reconstruction methods to reconstruct changes
+in morphology. We use a simple Brownian motion model of character evolution to test how splits in
+ergative marking evolve across Pama-Nyungan, a large family of Australian languages. We are able to
+recover linguistically plausible paths of change, as well as rejecting implausible paths. The results
+of these analyses elucidate constraints on changes that have led to extensive synchronic variation in
+an interlocking morphological system. They further provide evidence of an ergative–accusative split
+traceable to Proto-Pama-Nyungan."""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Joshua Phillips", "Claire Bowern"]
+
+# parts of the world
+groups = ['Pama-Nyungan']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Phillips_2022"
+
+# type of study
+type = ['trait', 'asr']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.alignment]
+    ntaxa = 81
+    nchars = 1
+    nsites = 1
+    datatype = 'structural features'
+    source = '@Chirila'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.pamanyungan]
+    source = '@MacklinCordes2021'
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+
+    [analysis.bayestraits]
+    tool = 'bayestraits'
+    model = 'multistate+rjmcmc'
+    details = ""
+    data = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

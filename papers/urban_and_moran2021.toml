@@ -1,0 +1,100 @@
+title = "Altitude and the distributional typology of language structure: Ejectives and beyond"
+
+doi = "10.1371/journal.pone.0245522"
+
+abstract = """
+The first decades of the 21st century have witnessed a renewed interest in the relationship between
+language structure and the various social and ecological niches in which the languages of the world
+are used and against the background of which they evolved. In this context, Everett (2013) argued
+for direct geographical influences on the sound structure of languages. It was observed that ejective
+consonants, produced with a sudden burst of non-pulmonic air to a salient acoustic effect, tend to
+occur in high-altitude environments in which these sounds may be adaptive due to a reduced
+articulatory effort and/or to prevent desiccation. Here, we evaluate this claim and at the same time
+place it into a broader context. We observe that the distribution of another class of typologically
+unusual sounds, uvulars, is highly similar to that of ejectives, but that the proposed explanations
+are not available to account for the similar geographical patterning of uvulars. Hence, we test an
+alternative explanatory account that would posit indirect rather than direct environmental influences
+on language structure that are mediated by anthropological factors, in particular the relative
+sociolinguistic isolation of speech communities at the highest altitudes. Applying Bayesian Logistic
+Mixed Effects Regression to a large database of phonological inventories of the world's languages,
+however, we do not find strong support for either a correlation of ejectives or uvulars with
+high-altitude environments, though the association is somewhat stronger for ejectives than uvulars. A
+phylogenetic exploration of the development of both classes of sounds in two large language families
+spoken in widely different environments, Indo-European and Sino-Tibetan, together with a qualitative
+assessment of the dedicated literature, in contrast, suggests a strong role of language contact
+rather than environmental factors. """
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Matthias Urban", "Steven Moran"]
+
+# parts of the world
+groups = ['global', 'Indo-European', 'Sino-Tibetan']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Urban_2021"
+
+# type of study
+type = ['trait', 'asr']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian', 'likelihood'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.phoible]
+    ntaxa = 2132
+    nchars = "?"
+    nsites = "?"
+    datatype = 'phonetic traits'
+    source = '@Phoible'
+    items = ''
+    comment = ''
+
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.indoeuropean]
+    source = '@Chang2015'
+    comment = ''
+
+    [phylogenies.zhang]
+    source = '@Zhang2020'
+    comment = ''
+
+# analysis information
+[analysis]
+    notes = ""
+    
+    [analysis.indoeuropean_ejectives]
+    tool = 'phytools'
+    model = 'simmap'
+    details = ""
+    data = "@data.phoible;@phylogenies.indoeuropean"
+
+    [analysis.indoeuropean_uvulars]
+    tool = 'phytools'
+    model = 'simmap'
+    details = ""
+    data = "@data.phoible;@phylogenies.indoeuropean"
+
+    [analysis.sinotibetan_ejectives]
+    tool = 'phytools'
+    model = 'simmap'
+    details = ""
+    data = "@data.phoible;@phylogenies.sinotibetan"
+
+    [analysis.sinotibetan_uvulars]
+    tool = 'phytools'
+    model = 'simmap'
+    details = ""
+    data = "@data.phoible;@phylogenies.sinotibetan"
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

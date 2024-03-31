@@ -1,0 +1,83 @@
+title = "The Vietic languages: a phylogenetic analysis"
+
+doi = ""
+
+abstract = """
+We present a new internal classification of the Vietic languages, covering all recognized sub-groups
+and languages for which we could source suitably comparable data. The analysis reconciles results from
+two distinct methodologies: (1) computational phylogenetics based on a 116-item basic word list, and
+(2) historical phonological changes among syllable codas. The analysis identifies five principal
+sub-groups: Thavung-Malieng (TM), Chut-Arem, Pong-Toum, Cuoi-Tho, and Viet-Muong (VM). While the
+identification of these subgroups is not original, aspects of the branching structure are. We find
+that the Vietic tree has a binary structure at the root, splitting between TM and the rest of the
+branch, which we may call the Eastern Vietic clade. Within that Eastern clade, we further find a
+north-south division, in which the northern VM group is most innovative while those to the south are
+more conservative. Previously, scholars have tended to group TM and Chut together as archaic lects
+based on broad typological features of word structure without suggesting specific common phonological
+innovations to link them. Our findings suggest that syllable restructuring and tonogenesis,
+which are hallmarks of Vietic languages, have developed largely independently among subgroups,
+notwithstanding very broad commonalities in phonological change which have contributed to strong areal
+convergence. Additionally, the Vietic homeland question is briefly discussed, with a northern locus
+of dispersal arguably supported by old loan-word evidence and archaeological data.
+
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['Paul Sidwell', 'Mark Alves']
+
+# parts of the world
+groups = ['Austro-Asiatic']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@SidwellAlves2021"
+
+# type of study
+type = ['phylogenetic']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['network', 'distance'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.vietic]
+    ntaxa = 29
+    nchars = 116
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.splitstree]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = ""
+
+    [analysis.upgma]
+    tool = 'splitstree'
+    model = 'upgma'
+    details = ""
+    data = ""
+
+    [analysis.nj]
+    tool = 'splitstree'
+    model = 'neighbor-joining'
+    details = ""
+    data = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

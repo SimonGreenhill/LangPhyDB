@@ -1,0 +1,69 @@
+title = "A Global Lexical Database (GLED) for Computational Historical Linguistics"
+
+doi = "10.5334/johd.96"
+
+abstract = """
+This work presents a lexical database with cognate annotation and phonological
+alignment for over 6,500 documented language varieties. The database includes per-family and global
+phylogenetic resources and offers a pre-computed global tree for language variety distance from
+normalized trees obtained with Bayesian Markov Chain Monte Carlo (MCMC) inference. Lexical data is
+provided in a single tabular file for convenience of usage, and resources are built adhering to best
+practices and state-of-the-art algorithms for historical linguistics. The database is a convenient
+source for research prototypes, method development, and analysis bootstrap. All resources are freely
+available for download for all interested researchers.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Tiago Tresoldi"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Tresoldi_2023"
+
+# type of study
+type = ['phylogenetic']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.asjp]
+    ntaxa = 6892
+    nchars = 40
+    nsites = 40
+    datatype = 'lexical distance'
+    source = '@ASJP17'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.label]
+    source = '@Jaeger2018'
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = 'beast2'
+    model = 'covarion+relaxed'
+    details = "per family analyses conducted in beastling"
+    data = ""
+    times = 170
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

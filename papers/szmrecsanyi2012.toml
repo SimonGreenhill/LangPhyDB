@@ -1,0 +1,73 @@
+title = "Typological profile: L1 varieties"
+
+doi = "10.1515/9783110280128.826"
+
+abstract = """
+This chapter is concerned with the morphosyntactic profiles of the 30 L1 varieties in
+the WAVE survey. Compared to the morphosyntax survey (see Kortmann and
+Szmrecsanyi 2004) coming with the Handbook of Varieties of English (Kortmann et
+al. 2004) (henceforth: the HVE survey), the most obvious advancement of the WAVE
+survey is that it has a much broader variety and feature coverage. In addition, as for
+L1 varieties of English specifically the new WAVE survey also systematically
+distinguishes between TRADITIONAL L1 VARIETIES, and HIGH-CONTACT L1 VARIETIES.
+This distinction builds on the TRUE TYPOLOGICAL SPLIT hypothesis formulated by
+Trudgill (2009) (see also Trudgill 2011), according to which traditional (or: low-
+contact) varieties are characterized by COMPLEXIFICATION (more irregularity, less
+transparency) while high-contact varieties are characterized by SIMPLIFICATION (less
+irregularity, more transparency), thanks to past and present adult language acquisition.
+In this spirit, the WAVE survey defines the 10 traditional L1 varieties in the sample
+(O&SE, ScE, North, SW, EA, SE, NfldE, OzE, AppE, SEAmE) as "regional dialects
+(non-standard varieties) which are long-established mother tongue varieties and which
+are characterized by a low degree of contact with other dialects and languages"
+(http://www.ewave-atlas.org). By contrast, the 20 high-contact L1 varieties covered in
+the survey (IrE, ManxE, WelE, ChIsE, CollAmE, UAAVE, RAAVE, EAAVE, BahE,
+LibSE, WhZimE, WhSAfE, CollSgE, AusE, AusVE, AbE, NZE, FlkE, StHE, TdCE)
+are defined as varieties "characterized by a high degree of contact between different
+dialects of English and/or between English and other languages" (http://www.ewave-
+atlas.org).
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Benedikt Szmrecsanyi"]
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Szmrecsanyi_2012"
+
+# type of study
+type = ['phylogenetic']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['network'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.wave]
+    ntaxa = 30
+    nchars = 235
+    nsites = 235
+    datatype = 'morphological traits'
+    source = '@WAVE'
+    items = ''
+    comment = ''
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.nnet]
+    tool = 'splitstree'
+    model = 'neighbor-net'
+    details = ""
+    data = ""
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

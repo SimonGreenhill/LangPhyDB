@@ -98,6 +98,10 @@ Papers deemed to fall outside scope, alphabetically by first author surname.
     - no explicit analysis, not really phylogenetic in scope.
     
 ## S
+
+* Serva, M., & Pasquini, M. (2022). Linguistic clues suggest that the Indonesian colonizers directly sailed to Madagascar. Language Sciences, 93, 101497. https://doi.org/10.1016/j.langsci.2022.101497
+    - No explicit phylogenetic analysis
+    
 ## T
 ## U
 ## V

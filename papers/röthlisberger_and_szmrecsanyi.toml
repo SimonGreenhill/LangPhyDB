@@ -1,0 +1,38 @@
+title = "Dialect Typology: Recent Advances"
+
+doi = "10.1007/978-3-030-02438-3_133"
+
+abstract = """
+This chapter provides an overview of recent innovative approaches that focus on the distributional
+patterns of linguistic phenomena in dialects across different languages. We set the stage by
+discussing a number of geographical factors that are assumed in the literature to have a bearing on
+the structural make-up of different languages and dialects such as world region, altitude, contact
+with speakers of other languages or dialects, etc. We then move on to sketch the extent to which
+dialects of a language exhibit common features (e.g., "vernacular universals" à la Chambers 2004) and
+identify structural dichotomies and continua that are regularly invoked when it comes to explaining
+the structural diversity of languages, namely, analyticity versus syntheticity, explicitness versus
+economy, complexity versus simplicity, and innovativeness versus conservativeness, all within the
+context of geographic space.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Melanie Röthlisberger", "Benedikt Szmrecsanyi"]
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@R_thlisberger_2019"
+
+# type of study
+type = ['review']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['network']
+# short description of the study, one line.
+description = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

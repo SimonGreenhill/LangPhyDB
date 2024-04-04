@@ -4,12 +4,13 @@ criticism,
 d-statistic,
 dating,phylogenetic dating
 delta,Reticulation metric delta
-distance,distance methods (UPGMA, NJ)
+distance,distance methods (UPGMA
 macroevolutionary,Inferring macroevolutionary processes from the data
 methodological,methodological development
 phylogenetic,Inferring the phylogeny of the taxa
 phylogeography,Inferring the geography of the taxa
 qresidual,Reticulation metric Q-Residual
+regression,
 review,
 structure,structure analysis
 tiger,TIGER rates

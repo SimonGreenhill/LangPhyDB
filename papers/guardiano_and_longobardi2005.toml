@@ -3,10 +3,17 @@ title = "Parametric Comparison and Language Taxonomy"
 doi = "10.1093/acprof:oso/9780199272129.003.0010"
 
 abstract = """
-In this paper we discuss three compelling questions, which impinge on parameter theory:
-a. What are the actual parameters of UG?
-b. What is the form of a possible parameter?
-c. How do parameter values distribute in space and time?
+It is still a widely held opinion that the contribution of formal syntactic
+theories to modern linguistics is essentially focused on synchronic
+generalizations and that it does not extend to the most classical problems
+of the historical paradigm. Such a belief is beginning to fade away as a
+consequence of increased work in diachronic syntax (e.g. Roberts 1993, the
+contributions contained in van Kemenade and Vincent 1997, Lightfoot 1999,
+Longobardi 2001b among others). In this work we will argue that the
+generative theory of syntactic parameters might interestingly renovate
+another stronghold of the historical study of language, phylogenetic
+taxonomy, and undermine the Humboldtian received distinction between the
+latter and grammatical typology.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill

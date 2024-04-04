@@ -1,0 +1,114 @@
+title = "Coevolution of landesque capital intensive agriculture and sociopolitical hierarchy"
+
+doi = "10.1073/pnas.1714558115"
+
+abstract = """
+One of the defining trends of the Holocene has been the emergence of
+complex societies. Two essential features of complex societies are
+intensive resource use and sociopolitical hierarchy. Although it is widely
+agreed that these two phenomena are associated cross-culturally and have
+both contributed to the rise of complex societies, the causality underlying
+their relationship has been the subject of longstanding debate. Materialist
+theories of cultural evolution tend to view resource intensification as
+driving the development of hierarchy, but the reverse order of causation
+has also been advocated, along with a range of intermediate views.
+Phylogenetic methods have the potential to test between these different
+causal models. Here we report the results of a phylogenetic study that
+modeled the coevolution of one type of resource intensification—the
+development of landesque capital intensive agriculture—with political
+complexity and social stratification in a sample of 155
+Austronesian-speaking societies. We found support for the coevolution of
+landesque capital with both political complexity and social stratification,
+but the contingent and nondeterministic nature of both of these
+relationships was clear. There was no indication that intensification was
+the "prime mover" in either relationship. Instead, the relationship between
+intensification and social stratification was broadly reciprocal, whereas
+political complexity was more of a driver than a result of intensification.
+These results challenge the materialist view and emphasize the importance
+of both material and social factors in the evolution of complex societies,
+as well as the complex and multifactorial nature of cultural evolution. 
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Oliver Sheehan", "Joseph Watts", "Russell D. Gray", "Quentin D. Atkinson"]
+
+# parts of the world
+groups = ['Austronesian']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Sheehan_2018"
+
+# type of study
+type = ['trait', 'd-statistic']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.ethnographic]
+    ntaxa = 155
+    nchars = 3
+    nsites = 3
+    datatype = 'ethnographic features'
+    source = ''
+    items = ''
+    comment = 'landesque capital, political complexity, and social stratification'
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.austronesian]
+    source = '@Gray2009'
+    comment = 'sample of 4000 trees from 4200 posterior'
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.dstatistic]
+    tool = 'caper'
+    model = 'phylo.d'
+    details = ""
+    data = ""
+    times = 3
+
+    [analysis.bayestraits_dep]
+    tool = 'bayestraits'
+    model = 'discrete+dep'
+    details = ""
+    data = ""
+    times = 4  # 4 pairs of variables
+
+    [analysis.bayestraits_indep]
+    tool = 'bayestraits'
+    model = 'discrete+indep'
+    details = ""
+    data = ""
+    times = 4  # 4 pairs of variables
+ 
+    [analysis.bayestraits_fossilized_dep]
+    tool = 'bayestraits'
+    model = 'discrete+dep'
+    details = "with some nodes fossilized"
+    data = ""
+    times = 4  # 4 pairs of variables
+
+    [analysis.bayestraits_fossilized_indep]
+    tool = 'bayestraits'
+    model = 'discrete+indep'
+    details = "with some nodes fossilized"
+    data = ""
+    times = 4  # 4 pairs of variables
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

@@ -1,0 +1,42 @@
+title = "Cultural macroevolution matters"
+
+doi = "10.1073/pnas.1620746114"
+
+abstract = """
+Evolutionary thinking can be applied to both cultural microevolution and
+macroevolution. However, much of the current literature focuses on cultural
+microevolution. In this article, we argue that the growing availability of
+large cross-cultural datasets facilitates the use of computational methods
+derived from evolutionary biology to answer broad-scale questions about the
+major transitions in human social organization. Biological methods can be
+extended to human cultural evolution. We illustrate this argument with
+examples drawn from our recent work on the roles of Big Gods and ritual
+human sacrifice in the evolution of large, stratified societies. These
+analyses show that, although the presence of Big Gods is correlated with the
+evolution of political complexity, in Austronesian cultures at least, they
+do not play a causal role in ratcheting up political complexity. In
+contrast, ritual human sacrifice does play a causal role in promoting and
+sustaining the evolution of stratified societies by maintaining and
+legitimizing the power of elites. We briefly discuss some common objections
+to the application of phylogenetic modeling to cultural evolution and argue
+that the use of these methods does not require a commitment to either
+gene-like cultural inheritance or to the view that cultures are like
+vertebrate species. We conclude that the careful application of these
+methods can substantially enhance the prospects of an evolutionary science
+of human history. """
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Russell D. Gray", "Joseph Watts"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Gray_2017"
+
+# type of study
+type = ['review']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+

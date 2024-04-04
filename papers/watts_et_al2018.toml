@@ -1,0 +1,85 @@
+title = "Christianity spread faster in small, politically structured societies"
+
+doi = "10.1038/s41562-018-0379-3"
+
+abstract = """
+Over the past 2,000 years, Christianity has grown from a tiny Judaic sect
+to the world's largest religious family. Historians and social scientists
+have long debated whether Christianity spread through a top-down process
+driven by political leaders or a bottom-up process that empowered social
+underclasses. The Christianization of Austronesian populations is
+well-documented across societies with a diverse range of social and
+demographic conditions7. Here, we use this context to test whether
+political hierarchy, social inequality and population size predict the
+length of conversion time across 70 Austronesian cultures. We also account
+for the historical isolation of cultures and the year of missionary
+arrival, and use a phylogenetic generalized least squares method to
+estimate the effects of common ancestry and geographic proximity of
+cultures8. We find that conversion to Christianity typically took less
+than 30 years, and societies with political leadership and smaller
+populations were fastest to convert. In contrast, social inequality did
+not reliably affect conversion times, indicating that Christianity's
+success in the Pacific is not due to its egalitarian doctrine empowering
+social underclasses. The importance of population size and structure in
+our study suggests that the rapid spread of Christianity can be explained
+by general dynamics of cultural transmission.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Joseph Watts", "Oliver Sheehan", "Joseph Bulbulia", "Russell D. Gray", "Quentin D. Atkinson"]
+
+# parts of the world
+groups = ['Austronesian']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Watts_2018"
+
+# type of study
+type = ['trait', 'regression']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.pulotu]
+    ntaxa = 70
+    nchars = 6
+    nsites = 6
+    datatype = 'ethnographic features'
+    source = '@Pulotu'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.austronesian]
+    source = '@Gray2009'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.blombergs_k]
+    tool = 'picante'
+    model = 'multiPhylosignal'
+    details = ""
+    data = ""
+    times = 25200  # = 4200 trees * 6 variables.
+    
+    [analysis.pgls]
+    tool = 'r'
+    model = 'Freckleton & Jetz'
+    details = ""
+    data = ""
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

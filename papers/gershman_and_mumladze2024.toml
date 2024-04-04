@@ -1,0 +1,104 @@
+title = "Headhunting and warfare in Austronesia: A phylogenetic comparative analysis"
+
+doi = "10.1016/j.jebo.2024.02.034"
+
+abstract = """
+Headhunting – the practice of acquiring human heads for ritual purposes –
+was historically widespread around the world. We hypothesize that
+headhunting represented a cultural response to frequent inter-tribal
+warfare and served as a mechanism to train warriors ready to defend their
+community. The practice was effective since, first, it allowed verification
+of warrior quality based on performance in headhunting raids and, second,
+it offered a system of rewards for men to develop and refine warfare
+skills. We use phylogenetic comparative methods and ethnographic data to
+empirically investigate this hypothesis in a sample of preindustrial
+Austronesian societies. Headhunting turns out to be substantially more
+prevalent in societies exposed to frequent warfare, accounting for shared
+cultural ancestry and a host of potentially confounding characteristics.
+Furthermore, Bayesian estimation of correlated evolution models suggests
+that, consistent with our hypothesis, the adoption of headhunting typically
+followed increases in warfare frequency and the decline of this practice
+was preceded by reduced intergroup conflict.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Boris Gershman", "Tinatin Mumladze"]
+
+# parts of the world
+groups = ['Austronesian']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Gershman_2024"
+
+# type of study
+type = ['d-statistic', 'trait']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['likelihood', 'bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.pulotu]
+    ntaxa = 129
+    nchars = 2
+    nsites = 2
+    datatype = 'ethnographic features'
+    source = '@Pulotu'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.gray2009]
+    source = "@Gray2009"
+    comment = ""
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.warfare_d]
+    tool = 'caper'
+    model = 'phylo.d'
+    details = ""
+    data = ""
+    times = 4200  # once per tree in posterior
+
+    [analysis.headhunting_d]
+    tool = 'caper'
+    model = 'phylo.d'
+    details = ""
+    data = ""
+    times = 4200  # once per tree in posterior
+
+    [analysis.phylogenetic_logistic_regression]
+    tool = 'phylolm'
+    model = ''
+    details = ""
+    data = ""
+    times = 4201  # once per tree in posterior and on MCC tree
+
+    [analysis.bayestraits_ml]
+    tool = 'bayestraits'
+    model = 'dep+ml'
+    details = ""
+    data = ""
+
+    [analysis.bayestraits_mcmc]
+    tool = 'bayestraits'
+    model = 'dep+mcmc+rjhp'
+    details = ""
+    data = ""
+    times = 8  # one exploratory and 7 model tests
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

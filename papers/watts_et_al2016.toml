@@ -3,21 +3,34 @@ title = "Ritual human sacrifice promoted and sustained the evolution of stratifi
 doi = "10.1038/nature17159"
 
 abstract = """
-
+Evidence for human sacrifice is found throughout the archaeological record of early
+civilizations, the ethnographic records of indigenous world cultures, and the
+texts of the most prolific contemporary religions6. According to the social control
+hypothesis, human sacrifice legitimizes political authority and social class systems,
+functioning to stabilize such social stratification. Support for the social control
+hypothesis is largely limited to historical anecdotes of human sacrifice, where the
+causal claims have not been subject to rigorous quantitative cross-cultural tests. Here we
+test the social control hypothesis by applying Bayesian phylogenetic methods to a
+geographically and socially diverse sample of 93 traditional Austronesian cultures. We
+find strong support for models in which human sacrifice stabilizes social stratification
+once stratification has arisen, and promotes a shift to strictly inherited class systems.
+Whilst evolutionary theories of religion have focused on the functionality of prosocial
+and moral beliefs, our results reveal a darker link between religion and the evolution
+of modern hierarchical societies.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Joseph Watts", "Oliver Sheehan", "Quentin D. Atkinson", "Joseph Bulbulia", "Russell D. Gray"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Austronesian']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Watts_2016"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['d-statistic', 'trait']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['likelihood', 'bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
 description = ""
 
@@ -26,32 +39,21 @@ description = ""
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    [data.pulotu]
+    ntaxa = 93
+    nchars = 3
+    nsites = 3
+    datatype = 'ethnographic features'
+    source = '@Pulotu'
     items = ''
     comment = ''
 
 # published phylogenies
 [phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
+    [phylogenies.austronesian]
+    source = '@Gray2009'
     comment = ''
 
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
 
 
 # analysis information
@@ -59,22 +61,50 @@ description = ""
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
+    [analysis.bt1]
+    tool = 'bayestraits'
+    model = 'multistate'
     details = ""
     data = ""
 
-[inferredages]
     
-    notes = ""
+    [analysis.bt2]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = ""
+    data = ""
     
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
+    [analysis.bt3]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = ""
+    data = ""
 
+    [analysis.signal]
+    tool = 'caper'
+    model = 'phylo.d'
+    details = ""
+    data = ""
+    times = 3000  # 1000 times per trait
+
+    
+    [analysis.bt_ml]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = ""
+    data = ""
+
+    [analysis.bt_mcmc_dep]
+    tool = 'bayestraits'
+    model = 'discrete+dependent'
+    details = ""
+    data = ""
+
+    [analysis.bt_mcmc_indep]
+    tool = 'bayestraits'
+    model = 'discrete+independent'
+    details = ""
+    data = ""
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }

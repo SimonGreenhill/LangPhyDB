@@ -3,55 +3,56 @@ title = "Supernatural explanations across 114 societies are more common for natu
 doi = "10.1038/s41562-023-01558-0"
 
 abstract = """
-
+Humans across the globe use supernatural beliefs to explain the world around them. This article explores whether cultural groups invoke the supernatural more to explain natural phenomena (for example, storms, disease outbreaks) or social phenomena (for example, murder, warfare). Quantitative analysis of ethnographic text across 114 geographically and culturally diverse societies found that supernatural explanations are more prevalent for natural than for social phenomena, consistent with theories that ground the origin of religious belief in a human tendency to perceive intent and agency in the natural world. Despite the dominance of supernatural explanations of natural phenomena, supernatural explanations of social phenomena were especially prevalent in urbanized societies with more socially complex and anonymous groups. Our results show how people use supernatural beliefs as explanatory tools in non-industrial societies, and how these applications vary across small-scale communities versus large and urbanized groups.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Joshua Conrad Jackson", "Danica Dillion", "Brock Bastian", "Joseph Watts", "William Buckner", "Nicholas DiMaggio", "Kurt Gray"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Jackson_2023"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['regression', 'trait', 'd-statistic']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['statistical', 'likelihood'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
 description = ""
 
 # data
 [data]
 
-    notes = ""
+    notes = "We developed codes for supernatural explanations of three natural and three social phenomena. The three natural phenomena were infectious diseases (pathogens), natural hazards and naturally caused food scarcity (drought or famine). The three social phenomena were warfare, murder and theft"
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    [data.sccs]
+    ntaxa = 114
+    nchars = 6
+    nsites = 6
+    datatype = 'ethnographic features'
+    source = ''
     items = ''
     comment = ''
 
+    [data.cultural]
+    ntaxa = 114
+    nchars = 8
+    nsites = 8
+    datatype = 'ethnographic features'
+    source = '@DPLACE'
+    items = ''
+    comment = ''
+    
 # published phylogenies
 [phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
+    [phylogenies.jaeger2018]
+    source = '@Jaeger2018'
     comment = ''
 
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
+    [phylogenies.glottolog]
+    source = '@Glottolog23'
+    comment = ''
 
 
 # analysis information
@@ -59,23 +60,19 @@ description = ""
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
+    [analysis.phylod]
+    tool = 'caper'
+    model = 'phylo.d'
+    details = ""
+    data = ""
+    times = 6
+
+    [analysis.regression]
+    tool = 'unknown'
     model = ''
     details = ""
     data = ""
-
-[inferredages]
     
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
-
-
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }
 cldf = { title = "CLDF Dataset", link = "" }

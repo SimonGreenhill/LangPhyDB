@@ -1,0 +1,227 @@
+title = "Divergence-time estimation in Indo-European: The case of Latin"
+
+doi = "10.1075/dia.22031.gol"
+
+abstract = """
+Divergence-time estimation is one of the most important endeavors in historical
+linguistics. Its importance is matched only by its difficulty. As Bayesian methods of
+divergence-time estimation have become more common over the past two decades, a number of
+critical issues have come to the fore, including model sensitivity, the dependence of
+root-age estimates on uncertain interior-node ages, and the relationship between ancient
+languages and their modern counterparts. This study addresses these issues in an
+investigation of a particularly fraught case within Indo-European: the diversification of
+Latin into the Romance languages. The results of this study support a gradualist account
+of their formation that most likely began after 300 CE. They also bolster the view that
+Classical Latin is a sampled ancestor of the Romance languages (i.e., it lies along the
+branch leading to the Romance languages).
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["David Goldstein"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Goldstein_2024"
+
+# type of study
+type = ['dating', 'phylogenetic']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.broad]
+    ntaxa = 15
+    nchars = 207
+    nsites = 643
+    datatype = 'lexical cognates'
+    source = '@Chang2015'
+    items = 'swadesh200'
+    comment = "Of the 207 meaning classes in IELEX, three ('blow', 'father', 'mother') were excluded as being especially susceptible to sound symbolism, and seven others were excluded because they were unattested in more than 30% of the languages, probably due to the fact that they are not in the Dyen data set, which was constructed around the 200 items proposed by Swadesh (1952)."
+    
+
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.latin]
+    taxa = ['lati1261']
+    age = "uniform(1900, 2200)" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "y2000" # ybp
+    description = ""
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.mk_gamma_strict_fbd]
+        tool = 'revbayes'
+        model = 'mk+gamma+strict+fbd'
+        details = ""
+        data = ""
+        
+    [analysis.mk_gamma_relaxed_ucln_fbd]
+        tool = 'revbayes'
+        model = 'mk+gamma+relaxed_ucln+fbd'
+        details = ""
+        data = ""
+        
+    [analysis.mk_gamma_relaxed_uce_fbd]
+        tool = 'revbayes'
+        model = 'mk+gamma+relaxed_uce+fbd'
+        details = ""
+        data = ""
+        
+    [analysis.mk_gamma_strict_fbdr]
+        tool = 'revbayes'
+        model = 'mk+gamma+strict+fbdr'
+        details = ""
+        data = ""
+        
+    [analysis.mk_gamma_relaxed_ucln_fbdr]
+        tool = 'revbayes'
+        model = 'mk+gamma+relaxed_ucln+fbdr'
+        details = ""
+        data = ""
+        
+    [analysis.mk_gamma_relaxed_uce_fbdr]
+        tool = 'revbayes'
+        model = 'mk+gamma+relaxed_uce+fbdr'
+        details = ""
+        data = ""
+        
+    [analysis.mk_gamma_strict_fbd_episodicprior]
+        tool = 'revbayes'
+        model = 'mk+gamma+strict+fbd+episodicprior'
+        details = ""
+        data = ""
+        
+    [analysis.mk_gamma_relaxed_ucln_fbd_episodicprior]
+        tool = 'revbayes'
+        model = 'mk+gamma+relaxed_ucln+fbd+episodicprior'
+        details = ""
+        data = ""
+        
+    [analysis.mk_gamma_relaxed_uce_fbd_episodicprior]
+        tool = 'revbayes'
+        model = 'mk+gamma+relaxed_uce+fbd+episodicprior'
+        details = ""
+        data = ""
+        
+    [analysis.mk_gamma_strict_fbdr_episodicprior]
+        tool = 'revbayes'
+        model = 'mk+gamma+strict+fbdr+episodicprior'
+        details = ""
+        data = ""
+        
+    [analysis.mk_gamma_relaxed_ucln_fbdr_episodicprior]
+        tool = 'revbayes'
+        model = 'mk+gamma+relaxed_ucln+fbdr+episodicprior'
+        details = ""
+        data = ""
+        
+    [analysis.mk_gamma_relaxed_uce_fbdr_episodicprior]
+        tool = 'revbayes'
+        model = 'mk+gamma+relaxed_uce+fbdr+episodicprior'
+        details = ""
+        data = ""
+        
+    [analysis.f81_gamma_strict_fbd]
+        tool = 'revbayes'
+        model = 'f81+gamma+strict+fbd'
+        details = ""
+        data = ""
+        
+    [analysis.f81_gamma_relaxed_ucln_fbd]
+        tool = 'revbayes'
+        model = 'f81+gamma+relaxed_ucln+fbd'
+        details = ""
+        data = ""
+        
+    [analysis.f81_gamma_relaxed_uce_fbd]
+        tool = 'revbayes'
+        model = 'f81+gamma+relaxed_uce+fbd'
+        details = "best-fitting model"
+        data = ""
+        best = true
+        
+    [analysis.f81_gamma_strict_fbdr]
+        tool = 'revbayes'
+        model = 'f81+gamma+strict+fbdr'
+        details = ""
+        data = ""
+        
+    [analysis.f81_gamma_relaxed_ucln_fbdr]
+        tool = 'revbayes'
+        model = 'f81+gamma+relaxed_ucln+fbdr'
+        details = ""
+        data = ""
+        
+    [analysis.f81_gamma_relaxed_uce_fbdr]
+        tool = 'revbayes'
+        model = 'f81+gamma+relaxed_uce+fbdr'
+        details = ""
+        data = ""
+        
+    [analysis.f81_gamma_strict_fbd_episodicprior]
+        tool = 'revbayes'
+        model = 'f81+gamma+strict+fbd+episodicprior'
+        details = ""
+        data = ""
+        
+    [analysis.f81_gamma_relaxed_ucln_fbd_episodicprior]
+        tool = 'revbayes'
+        model = 'f81+gamma+relaxed_ucln+fbd+episodicprior'
+        details = ""
+        data = ""
+        
+    [analysis.f81_gamma_relaxed_uce_fbd_episodicprior]
+        tool = 'revbayes'
+        model = 'f81+gamma+relaxed_uce+fbd+episodicprior'
+        details = ""
+        data = ""
+        
+    [analysis.f81_gamma_strict_fbdr_episodicprior]
+        tool = 'revbayes'
+        model = 'f81+gamma+strict+fbdr+episodicprior'
+        details = ""
+        data = ""
+        
+    [analysis.f81_gamma_relaxed_ucln_fbdr_episodicprior]
+        tool = 'revbayes'
+        model = 'f81+gamma+relaxed_ucln+fbdr+episodicprior'
+        details = ""
+        data = ""
+        
+    [analysis.f81_gamma_relaxed_uce_fbdr_episodicprior]
+        tool = 'revbayes'
+        model = 'f81+gamma+relaxed_uce+fbdr+episodicprior'
+        details = ""
+        data = ""
+        
+
+
+[inferredages]
+    
+    
+    [inferredage.romance]
+    taxa = ['roma1334']
+    age = "hpd(1568, 500, 2600)"
+    units = "y2000"
+    details = "(guessed from distribution)"
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

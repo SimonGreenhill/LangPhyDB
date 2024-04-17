@@ -3,21 +3,35 @@ title = "Broad supernatural punishment but not moralizing high gods precede the 
 doi = "10.1098/rspb.2014.2556"
 
 abstract = """
-
+Supernatural belief presents an explanatory challenge to evolutionary theorists—it is both
+costly and prevalent. One influential functional explanation claims that the imagined
+threat of supernatural punishment can suppress selfishness and enhance cooperation.
+Specifically, morally concerned supreme deities or 'moralizing high gods' have been argued
+to reduce free-riding in large social groups, enabling believers to build the kind of
+complex societies that define modern humanity. Previous cross-cultural studies claiming to
+support the MHG hypothesis rely on correlational analyses only and do not correct for the
+statistical non-independence of sampled cultures. Here we use a Bayesian phylogenetic
+approach with a sample of 96 Austronesian cultures to test the MHG hypothesis as well as
+an alternative supernatural punishment hypothesis that allows punishment by a broad range
+of moralizing agents. We find evidence that broad supernatural punishment drives political
+complexity, whereas MHGs follow political complexity. We suggest that the concept of MHGs
+diffused as part of a suite of traits arising from cultural exchange between complex
+societies. Our results show the power of phylogenetic methods to address long-standing
+debates about the origins and functions of religion in human society.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Joseph Watts", "Simon J. Greenhill", "Quentin D. Atkinson", "Thomas E. Currie", "Joseph Bulbulia", "Russell D. Gray"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Austronesian']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Watts_2015"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['d-statistic', 'asr', 'trait']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['likelihood', 'bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
 description = ""
 
@@ -26,32 +40,20 @@ description = ""
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
-    items = ''
-    comment = ''
+    [data.ethatlas]
+    ntaxa = 96
+    nchars = 2
+    nsites = 2
+    datatype = "ethnographic features"
+    source = "@Murdock1967;@Gray1999"
+    items = "ethatlas"
+
 
 # published phylogenies
 [phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
-
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
+    [phylogenies.austronesian]
+    source = '@Gray2009'
+    comment = '4000 trees sampled'
 
 
 # analysis information
@@ -59,22 +61,55 @@ description = ""
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
+    [analysis.signal_trait1]
+    tool = 'caper'
+    model = 'phylo.d'
+    details = ""
+    data = ""
+    times = 4000
+
+    [analysis.signal_trait2]
+    tool = 'caper'
+    model = 'phylo.d'
+    details = ""
+    data = ""
+    times = 4000
+
+    [analysis.ml]
+    tool = 'bayestraits'
+    model = 'discrete'
     details = ""
     data = ""
 
-[inferredages]
+    [analysis.mcmc_indep]
+    tool = 'bayestraits'
+    model = 'discrete+rjmcmc+indep'
+    details = ""
+    data = ""
+    times = 3
     
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
 
+    [analysis.mcmc_dep]
+    tool = 'bayestraits'
+    model = 'discrete+rjmcmc+dep'
+    details = ""
+    data = ""
+    times = 3
+    
+    
+    [analysis.mcmc_dep_constrain_1]
+    tool = 'bayestraits'
+    model = 'discrete+rjmcmc+dep'
+    details = ""
+    data = ""
+    times = 3
+    
+    [analysis.mcmc_dep_constrain_2]
+    tool = 'bayestraits'
+    model = 'discrete+rjmcmc+dep'
+    details = ""
+    data = ""
+    times = 3
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }

@@ -215,9 +215,9 @@ description = ""
     
     [inferredage.romance]
     taxa = ['roma1334']
-    age = "hpd(1568, 500, 2600)"
+    age = "hpd89(1533.4, 1010, 1990)"
     units = "y2000"
-    details = "(guessed from distribution)"
+    details = "(pers. comm from Author, 22-04-2024): 1.533403; 89% HDI: [1.01, 1.99]"
 
 
 [links]

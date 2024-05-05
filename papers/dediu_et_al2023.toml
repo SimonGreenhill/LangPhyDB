@@ -1,0 +1,84 @@
+title = "Dental fricatives: Patterning, evolution, and factors affecting a rare class of speech sounds"
+
+doi = "10.51315/9783935751384.007"
+
+abstract = """
+The (inter-)dental non-sibilant fricatives, consonants articulated with the tongue tip or blade against or
+between the front teeth, are rare among the world's languages but, nevertheless, are present in the sound
+inventories of some of the most spoken languages in existence. Here we try to shed light on the reason(s) for
+their distribution using multiple approaches, ranging from examining large cross-linguistic databases and
+phylogenetic reconstructions to the analysis of speech production data and anatomical measurements of rigid
+oral cavity structures obtained using intraoral 3D optical scanning. With these, we don't only confirm that
+dental fricatives are rare among the present-day languages, but also that they have likely been so as far back
+as language families can be reconstructed, and that they are rarely borrowed between languages. The
+experimental data from L2 English speakers seem to suggest that details of the anatomy of the anterior vocal
+tract may play a role in the success of their acquisition. Therefore, dental fricatives are rare speech sounds
+for a multitude of reasons touching upon their articulation, acoustics, and confusability with other speech
+sounds, including the difficulty to produce in both L1 and L2 acquisition, the difficulty to perceive in L2 and
+in borrowing situations, and the rarity of attested sound changes producing them. Nevertheless, their frequent
+loss and merging with other phonemes in language change. Moreover, our data suggest that tiny, continuous, and
+overlapping patterns of variation in the anatomy of the anterior oral vocal tract may help explain their
+instability and geographic patterning.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Dan Dediu", "Jingmin Lin", "Scott R. Moisik", "Steven Moran"]
+
+# parts of the world
+groups = ['Indo-European', 'Sino-Tibetan']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Dediu_2024"
+
+# type of study
+type = ['asr']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.phoible]
+    ntaxa = "?"
+    nchars = 1
+    nsites = 1
+    datatype = 'phonetic traits'
+    source = '@Phoible'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.sinotibetan]
+    source = '@Zhang2019'
+    comment = ''
+
+    [phylogenies.indoeuropean]
+    source = '@Chang2015'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.simmap_ie]
+    tool = 'phytools'
+    model = 'simmap+ARD'
+    details = ""
+    data = ""
+
+    [analysis.simmap_st]
+    tool = 'phytools'
+    model = 'simmap+ARD'
+    details = ""
+    data = ""
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

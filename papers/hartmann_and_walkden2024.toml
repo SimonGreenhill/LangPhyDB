@@ -60,7 +60,7 @@ description = ""
 
     [analysis.jc]
     tool = 'revbayes'
-    model = 'birthdeath+jc+stric+gamma'
+    model = 'birthdeath+jc+strict+gamma'
     details = ""
     data = ""
 

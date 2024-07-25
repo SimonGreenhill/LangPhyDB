@@ -1,0 +1,95 @@
+title = "Geographical and social isolation drive the evolution of Austronesian languages"
+
+doi = "10.1371/journal.pone.0243171"
+
+abstract = """
+The origins of linguistic diversity remain controversial. Studies disagree on whether group features such as
+population size or social structure accelerate or decelerate linguistic differentiation. While some analyses of
+between-group factors highlight the role of geographical isolation and reduced linguistic exchange in differentiation,
+others suggest that linguistic divergence is driven primarily by warfare among neighbouring groups and the use of language
+as marker of group identity. Here we provide the first integrated test of the effects of five historical sociodemographic
+and geographic variables on three measures of linguistic diversification among 50 Austronesian languages: rates of word
+gain, loss and overall lexical turnover. We control for their shared evolutionary histories through a time-calibrated
+phylogenetic sister-pairs approach. Results show that languages spoken in larger communities create new words at a faster
+pace. Within-group conflict promotes linguistic differentiation by increasing word loss, while warfare hinders linguistic
+differentiation by decreasing both rates of word gain and loss. Finally, we show that geographical isolation is a strong
+driver of lexical evolution mainly due to a considerable drift-driven acceleration in rates of word loss. We conclude that
+the motor of extreme linguistic diversity in Austronesia may have been the dispersal of populations across relatively
+isolated islands, favouring strong cultural ties amongst societies instead of warfare and cultural group marking.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Cecilia Padilla-Iglesias", "Erik Gjesfjeld", "Lucio Vinicius"]
+
+# parts of the world
+groups = ['Austronesian']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Padilla_Iglesias_2020"
+
+# type of study
+type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.x]
+    ntaxa = 0
+    nchars = 0
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@xxx'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.label]
+    source = '@xxx'
+    comment = ''
+
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.label]
+    taxa = []
+    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "ybp" # ybp
+    description = ""
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = ''
+    model = ''
+    details = ""
+    data = ""
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.label]
+    taxa = []
+    age = "hpd(median, lower, upper)"
+    units = "ybp"
+    notes = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

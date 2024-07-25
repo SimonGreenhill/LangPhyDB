@@ -211,8 +211,6 @@ description = ""
 
 
 [inferredages]
-    
-    
     [inferredage.romance]
     taxa = ['roma1334']
     age = "hpd89(1533.4, 1010, 1990)"

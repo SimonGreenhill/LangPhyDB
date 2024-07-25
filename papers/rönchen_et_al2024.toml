@@ -1,0 +1,107 @@
+title = "Likelihood calculation in a multistate model of vocabulary evolution for linguistic dating."
+
+doi = "10.1163/22105832-bja10032"
+
+abstract = """
+Computational methods of language dating make inferences about the divergence
+times of protolanguages by evaluating the patterns of inheritance in the vocabulary
+of modern languages, given the specification of a model of vocabulary evolution. We
+consider a model that describes vocabulary evolution as the replacement of traits by
+new traits from an infinite state space along a tree. This model has been introduced
+in previous literature but so far it has not been used in many applications. We give a
+general recursive algorithm for calculating likelihoods and argue that the model gives a
+more realistic representation of vocabulary evolution over time, compared to existing
+models like the Stochastic Dollo model. We also provide a case study demonstrating
+the model's potential applications.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Philipp Rönchen", "Tilo Wiklund", "Harald Hammarström"]
+
+# parts of the world
+groups = ["Indo-European"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Roenchen_2024"
+
+# type of study
+type = ["methodological"]  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ["likelihood"] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    
+    [data.Ringe2002]
+    ntaxa = 24
+    nchars = 430
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Ringe2002'
+    items = ''
+    comment = ''
+
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.VedicSanskrit]
+    taxa = ['sans1269']
+    age = "3200"
+    units = "ybp" # ybp
+    description = "Vedic Sanskrit (san)"
+
+    [calibration.AncientGreek]
+    taxa = ["anci1242"]
+    age = "2400"
+    units = "ybp" # ybp
+    description = "Ancient Greek (grc)"
+
+    [calibration.OldChurchSlavonic]
+    taxa = ['chur1257']
+    age = "1000"
+    units = "ybp" # ybp
+    description = "Old Church Slavic (chu)"
+
+    [calibration.OldEnglish]
+    taxa = ['olde1238']
+    age = "1000"
+    units = "ybp" # ybp
+    description = "Old English (ang)"
+
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.trees]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = ""
+    replicates = 105   # all topologies for 5 languages
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.pie]
+    taxa = ["indo1319"]
+    age = "6200"
+    units = "ybp"
+    notes = "ml estimate"
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = ["https://gitlab.com/PhilippRonchen/five‑ie‑langs"]

@@ -1,0 +1,134 @@
+title = "Addressing Polymorphism in Linguistic Phylogenetics"
+
+doi = "10.1111/1467-968X.12289"
+
+abstract = """
+Understanding how languages change is important not
+only for the reconstruction of protolanguages and for
+estimating diversification dates (i.e. the dates when
+languages split), but also for the inference of
+evolutionary trees (or phylogenetic networks) of
+language families. We propose a parametric model of
+language change that addresses lexical polymorphism
+(two or more words for a given basic meaning) based on
+what is known about how languages change. Under our
+model, changes of state in lexical characters occur
+only due to semantic shift or borrowing, leading to
+(potentially brief) periods in which polymorphism is
+present. Across a wide range of model conditions, we
+find that a simple and natural modification to the
+maximum parsimony (MP) criterion (which seeks the tree
+with the fewest number of changes) to allow it to
+handle polymorphic characters has the best accuracy,
+substantially improving on well-known Bayesian methods
+based on appearances and disappearances of words. We
+also provide a new analysis of Indo–European that takes
+polymorphism into account, finding support for a
+previous tree (Nakhleh et al., 2006) and a new tree
+that differs from the previous tree in the relationship
+between Italo-Celtic and Tocharian.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Marc E. Canby", "Steven N. Evans", "Donald A. Ringe", "Tandy Warnow"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Canby_2024"
+
+# type of study
+type = ['methodological']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['distance', 'parsimony', 'bayesian']
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.Ringe2002]
+    ntaxa = 24
+    nchars = 370
+    nsites = 370
+    datatype = 'mixed'
+    source = '@Ringe2002'
+    items = ''
+    comment = 'revised "2024" version: 22 phonological, 15 morphological, and 333 lexical'
+
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.label]
+    taxa = []
+    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "ybp" # ybp
+    description = ""
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.nj]
+    tool = 'paup*'
+    model = 'neighborjoining'
+    details = ""
+    data = ""
+
+    [analysis.upgma]
+    tool = 'paup*'
+    model = 'upgma'
+    details = ""
+    data = ""
+
+
+    [analysis.mp1]
+    tool = 'paup*'
+    model = 'maximumparsimony'
+    details = ""
+    data = ""
+
+    [analysis.mp2]
+    tool = 'paup*'
+    model = 'maximumparsimony'
+    details = ""
+    data = ""
+
+    [analysis.mp3]
+    tool = 'paup*'
+    model = 'maximumparsimony'
+    details = ""
+    data = ""
+
+    [analysis.mp4]
+    tool = 'paup*'
+    model = 'maximumparsimony'
+    details = ""
+    data = ""
+    
+    [analysis.dollo]
+    tool = 'traitlab'
+    model = 'stochasticdollo'
+    details = ""
+    data = ""
+
+
+    [analysis.ga2003]
+    tool = 'mrbayes'
+    model = 'm1p?'
+    details = ""
+    data = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = ['https://github.com/marccanby/LingPhyloSimulator']

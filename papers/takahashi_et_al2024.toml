@@ -1,0 +1,186 @@
+title = "Bayesian phylogenetic analysis of pitch-accent systems based on accentual class merger: a new method applied to Japanese dialects"
+
+doi = "10.1093/jole/lzae004"
+
+abstract = """
+Unlike studies of the evolutionary relationship between languages, the dialect-level variation within a language has
+seldom been studied within the framework of a phylogenetic tree, because frequent lexical borrowing muddles the evidence
+of shared ancestry. The phonological history of Japanese is an exceptional case study where the phenomenon called
+accentual class merger enables the phylogenetic analysis of dialectal pitch-accent systems in a way that is not subject
+to borrowing. However, previous studies have lacked statistical analysis and failed to evaluate the relative credence of
+alternative hypotheses. Here we developed a novel substitution model that describes the mutation of pitch-accent systems
+driven by accentual class merger and integrated the model into the framework of Bayesian phylogenetic inference with
+geographical diffusion. Applying the method to data on the pitch-accent variation in modern Japanese dialects and
+historical documents collected from literature, we reconstructed the evolutionary history and spatial diffusion of
+pitch-accent systems. Our result supports the monophyly of each of three groups of pitch-accent systems in conventional
+categorization, namely Tokyo type, Keihan type, and N-kei (N-pattern) type of Kyushu, whereas the monophyly of the Tokyo
+type has been highly controversial in previous studies. The divergence time of the mainland pitch-accent systems was
+estimated to be from mid-Kofun to early Heian period. Also, it is suggested that the modern Kyoto dialect did not
+inherit its accent patterns from Bumoki but from an unrecorded lineage which survived from the Muromachi period.
+Analyses on geographical diffusion suggest that the most recent common ancestor (MRCA) of all the taxa and that of
+Keihan type were located in or around the Kinki region, whereas the MRCA of N-kei type was located in northern to
+central Kyushu. The geographical location of the MRCA of Tokyo type remains unclear, but the Kinki and Kanto regions are
+the most plausible candidates.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Takuya Takahashi", "Ayaka Onohara", "Yasuo Ihara"]
+
+# parts of the world
+groups = ['Japonic']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Takahashi_2024"
+
+# type of study
+type = ['phylogenetic', 'phylogeography', 'dating']
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.data]
+    ntaxa = 15
+    nchars = 18
+    nsites = 18
+    datatype = 'pitch-accent features'
+    source = ''
+    items = ''
+    comment = '15 dialects spoken at 12 out of 691 cells'
+
+
+
+# date calibrations
+[calibrations]
+
+    notes = """"
+    
+    The dates of Ruiju Myogisho, Bumoki, and Gonza’s materials (old Kagoshima) are respectively assumed to be 850, 450,
+    and 225 years before the present, which means 1100, 1500, and 1725 AD in the calendar year. The prior probability
+    of the date of the common ancestor (i.e. root node) in years before present follows the uniform distribution,
+    ranging from 450 to 1100 AD. The upper limit (oldest limit) is set to 450 AD considering the divergence time of the
+    Ryukyuan and mainland Japanese languages which is debatable but hypothesized to be around the third to seventh
+    century in recent research (Pellard 2016)
+    """"
+    [calibration.RuijuMyogisho]
+    taxa = ['gifu1238']
+    age = "850" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.Bumoki]
+    taxa = ['gifu1238']
+    age = "450" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.oldKagoshima]
+    taxa = ['sats1241']
+    age = "225" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "ybp" # ybp
+    description = ""
+
+    [calibration.root]
+    taxa = ['japa1256']
+    age = "uniform(850, 1500)" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "ybp" # ybp
+    description = "450 to 1100 AD"
+
+
+
+# analysis information
+[analysis]
+    
+    notes = "Bayesian framework for phylogenetic reconstruction with spatial diffusion"
+    
+    [analysis.tree]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = ""
+
+    [analysis.phylogeography]
+    tool = 'custom'
+    model = ''
+    details = ""
+    data = ""
+    
+[inferredages]
+    
+    notes = """
+    
+    'Note again that the date of the tree taxa is 1950' - i.e. have coded this as ybp then (SJG)
+    
+    "The figure indicates that the phylogenetic tree consists of three clades, which concurs with the conventional
+    classification of pitch-accent systems: Tokyo type, Keihan type, and N-kei type. It is thus suggested that the
+    Tokyo-type accents, distributed both the west and east sides of the archipelago, have a shared common ancestor.
+    Focusing on the phylogenetic relationship of the three clades, the Keihan type and N-kei type are most plausibly
+    sister groups, although this clade is far from being decisive in view of its posterior probability. The 95%
+    credibility interval of the date of the common ancestor of all the modern dialects ranges from AD 450 to 825,
+    corresponding to the mid-Kofun to the early Heian period. Similarly, the 95% credibility interval of the time to
+    the most recent common ancestor of Tokyo-type, Keihan-type (including Ruiju Myogisho), and N-kei-type is AD
+    1000–1550, 825–1100, and 1050–1700, respectively"
+    
+    
+    Not strait-forward to map to glottocodes:
+    
+
+
+    // keihan type
+    Kyoto,kyot1238          # J/WJ/K
+    Kan'onji,shik1243       # J/WJ/S
+    Ibukijima,shik1243      # J/WJ/S
+    Tarui,gifu1238          # J/EJ/TT
+    Bumoki,gifu1238         # J/EJ/TT
+    Myogisho,gifu1238       # J/EJ/TT
+
+
+
+    //tokyo-type
+    Tokyo,toky1238          # J/EJ/K/WK/T
+    Hiroshima,hiro1237      # J/WJ/C
+    Totsukawa,kink1238      # J,WJ,K
+    Hirosaki,nort2934       # J/EJ/T
+    Ooita,honi1246          # J/K/H
+
+    // N-key type
+    old_Kagoshima,sats1241  # J         (AKA "Gonza's Materials")
+    Kagoshima,sats1241      # J
+    Miyakonojo,sats1241     # J
+    Nagasaki,naga1405       # J/K/H/NB
+    """
+    
+    [inferredage.root]
+    taxa = ['japa1256']
+    age = "hpd(1125, 1500)"  # 450 to 825
+    units = "ybp"
+    details = "The 95% credibility interval of the date of the common ancestor of all the modern dialects ranges from AD 450 to 825"
+
+    [inferredage.Tokyo-type]
+    taxa = ['?']
+    age = "hpd(400, 950)"
+    units = "ybp"
+    details = "AD 1000–1550"
+
+    [inferredage.Keihan-type]
+    taxa = ['?']
+    age = "hpd(850, 1125)"
+    units = "ybp"
+    details = "AD 825–1100"
+
+    [inferredage.N-kei-type]
+    taxa = ['?']
+    age = "hpd(250, 900)"
+    units = "ybp"
+    details = "AD 1050–1700"
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = ["https://zenodo.org/records/11154180"]

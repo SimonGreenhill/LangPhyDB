@@ -1,0 +1,100 @@
+title = "Language Diversity of the Japanese Archipelago and its Relationship with Human DNA Diversity"
+
+doi = ""
+
+abstract = """
+The Japanese Archipelago stretches over 4000 km from north to south, and is the
+homeland of three human populations; Ainus, Mainlanders, and Okinawans. The
+origins of these people have been studied for a long time. The standard theory
+based on craniofacial data is the "dual structure model" propagated by Japanese
+physical anthropologists, notably Hanihara (1991). According to this model, first
+migrants to the Japanese Archipelago came from somewhere in Southeast Asia
+in Upper Paleolithic age more than 30,000 years ago, and were probably
+ancestors of the Jomon people. The second wave of migration is believed to have
+taken place later in the Yayoi period (3000-1700 BP), where the people arrived
+from Northeast Asia. Indigenous Jomon people and new migrants in and after
+Yayoi period gradually mixed with each other. This model provides a reasonable
+explanation for the morphological similarity between the Ainu people of
+Hokkaido at the northernmost main island of Japanese Archipelago, and the
+Okinawan people in Southwest Archipelago, despite of large geographical
+distance. Similarity of these peoples was already noticed more than one hundred
+years ago by von Baelz (1911) who proposed the Ainu-Okinawan common
+origin theory.
+"""
+
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Naruya Saitou", "Timothy A. Jinam"]
+
+# parts of the world
+groups = ["Japonic"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Saitou2017"
+
+# type of study
+type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.bantu]
+    ntaxa = 95
+    nchars = 100
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@xxx'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.label]
+    source = '@xxx'
+    comment = ''
+
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.label]
+    taxa = []
+    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "ybp" # ybp
+    description = ""
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = ''
+    model = ''
+    details = ""
+    data = ""
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.label]
+    taxa = []
+    age = "hpd(median, lower, upper)"
+    units = "ybp"
+    notes = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

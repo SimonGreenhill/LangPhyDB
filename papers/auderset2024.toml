@@ -1,0 +1,90 @@
+title = "Rates of change and phylogenetic signal in Mixtec tone"
+
+doi = "10.1163/22105832-bja10031"
+
+abstract = """
+Despite the abundance of tonal languages around the world, the diachrony of tone is still poorly
+understood, especially when compared to segmental sound change. This lacuna has contributed to the untested
+assumption that tones are inherently unstable and change unpredictably. This paper addresses the questions of
+whether tones change faster than segments and whether tones show less phylogenetic signal than segments in the
+Mixtec languages of southern Mexico. To this end, I created a database of tonal and segmental sound changes across a
+sample of 42 Mixtec languages. I calculated phylogenetic signal with the metric D and estimated rates of change with
+a hidden Markov model across a posterior sample of phylogenetic trees. The results show that the majority of tone
+changes show phylogenetic signal and that they generally do not change at a faster rate than segments.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['Sandra Auderset']
+
+# parts of the world
+groups = ['Mixtecan']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Auderset_2024"
+
+# type of study
+type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.bantu]
+    ntaxa = 95
+    nchars = 100
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@xxx'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.label]
+    source = '@xxx'
+    comment = ''
+
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.label]
+    taxa = []
+    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "ybp" # ybp
+    description = ""
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = ''
+    model = ''
+    details = ""
+    data = ""
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.label]
+    taxa = []
+    age = "hpd(median, lower, upper)"
+    units = "ybp"
+    notes = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

@@ -3,20 +3,37 @@ title = "Explaining marriage patterns in a globally representative sample throug
 doi = "10.1016/j.evolhumbehav.2018.11.003"
 
 abstract = """
-
+Comparative analyses have sought to explain variation in human marriage patterns, often using predictions
+derived from sexual selection theory. However, most previous studies have not controlled for non-independence
+of populations due to shared ancestry. Here we leverage a phylogenetic supertree of human populations that
+includes all 186 populations in the Standard Cross-Cultural Sample (SCCS), a globally representative and
+widely-used sample of human populations. This represents the most comprehensive human phylogeny to date, and
+allows us not only to control for non-independence, but also to quantify the role of population history in
+explaining behavioral variation, in addition to current socio-ecological conditions. We use multiple imputation
+to overcome missing data problems and build a comprehensive Bayesian phylogenetic model of marriage patterns
+with two correlated response variables and eleven minimally collinear predictors capturing various
+socio-ecological conditions. We show that ignoring phylogeny could lead to both false positives and false
+negatives, and that the phylogeny explained about twice as much variance as all the predictors combined.
+Pathogen stress and assault frequency emerged as the predictors most strongly associated with polygyny, which
+had been considered evidence for female choice of good genes and male intra-sexual competition or male
+coercion, respectively. Mixed support was found for a polygyny threshold based on variance in male wealth,
+which is discussed in light of recent theory. Barring caveats, these findings refine our understanding of the
+evolution of human marriage systems, and highlight the value of combining population history and current
+socio-ecology in explaining human behavioral variation. Future studies using the SCCS should do so using the
+present supertree.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Riana Minocher", "Pavel Duda", "Adrian V. Jaeggi"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Minocher_2019"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+type = ['trait']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
 framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
 description = ""
@@ -26,12 +43,12 @@ description = ""
 
     notes = ""
     
-    [data.bantu]
+    [data.sccs]
     ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    nchars = 12
+    nsites = 12
+    datatype = 'ethnographic features'
+    source = ''
     items = ''
     comment = ''
 
@@ -42,42 +59,21 @@ description = ""
     comment = ''
 
 
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
-
 
 # analysis information
 [analysis]
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
+    [analysis.MCMCglmm]
+    tool = 'MCMCglmm'
     model = ''
     details = ""
     data = ""
-
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
 
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }
 cldf = { title = "CLDF Dataset", link = "" }
 dplace = { title = "D-PLACE Dataset", link = "" }
-links = []
+links = ['https://github.com/rianaminocher/polygyny-sccs']

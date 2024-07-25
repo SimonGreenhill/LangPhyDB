@@ -1,0 +1,36 @@
+title = "Progress on Constructing Phylogenetic Networks for Languages"
+
+doi = "10.1007/978-3-031-48959-4_3"
+
+abstract = """
+In 2006, Warnow, Evans, Ringe, and Nakhleh proposed a stochastic model (hereafter, the WERN 2006 model) of multi-state linguistic character evolution that allowed for homoplasy and borrowing. They proved that if there is no borrowing between languages and homoplastic states are known in advance, then the phylogenetic tree of a set of languages is statistically identifiable under this model, and they presented statistically consistent methods for estimating these phylogenetic trees. However, they left open the question of whether a phylogenetic network—which would explicitly model borrowing between languages that are in contact—can be estimated under the model of character evolution. Here, we establish that under some mild additional constraints on the WERN 2006 model, the phylogenetic network topology is statistically identifiable and we present algorithms to infer the phylogenetic network. We discuss the ramifications for linguistic phylogenetic network estimation in practice and suggest directions for future research.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Tandy Warnow", "Steven N. Evans", "Luay Nakhleh"]
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Warnow_2024"
+
+# type of study
+type = ['methodological']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['likelihood', 'network'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

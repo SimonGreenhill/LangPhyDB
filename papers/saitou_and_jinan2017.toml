@@ -33,8 +33,8 @@ groups = ["Japonic"]  # 'Austronesian', etc
 bibkey = "@Saitou2017"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['criticism', 'phylogenetic']
+framework = ['parsimony', 'network'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
 description = ""
 
@@ -43,32 +43,14 @@ description = ""
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
+    [data.lexicon]
+    ntaxa = 59
+    nchars = 210
+    nsites = 675
     datatype = 'lexical cognates'
-    source = '@xxx'
-    items = ''
+    source = '@Lee2011'
+    items = 'swadesh200'
     comment = ''
-
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
-
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
 
 
 # analysis information
@@ -76,21 +58,30 @@ description = ""
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
+    [analysis.network_fig5]
+    tool = 'splitstree'
+    model = 'neighbornet'
     details = ""
     data = ""
 
-[inferredages]
+    [analysis.network_fig6_24]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "various subsets"
+    data = ""
+    times = 18
     
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
+    [analysis.network_fig25]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "ryukuyuan and japanese"
+    data = ""
+
+    [analysis.network_fig26]
+    tool = 'MEGA'
+    model = ''
+    details = ""
+    data = ""
 
 
 [links]

@@ -1,0 +1,95 @@
+title = "The cultural evolution of witchcraft beliefs"
+
+doi = "https://doi.org/10.1016/j.evolhumbehav.2024.106610"
+
+abstract = """
+Witchcraft beliefs are historically and geographically widespread, but little is known about the cultural
+inheritance processes that may explain their variation between populations. A core component of witchcraft belief is
+that certain people ('witches') are thought to harm others using supernatural means. Various traits, which we refer
+to as the 'witchcraft phenotype' accompany these beliefs. Some can be classified as 'symbolic culture', including
+ideas about the typical behaviour of witches and concepts such as familiars (witches' magical helpers), and
+demographic traits such as the age and sex of those likely to be accused. We conducted an exploratory study of the
+cultural evolution of 31 witchcraft traits to examine their inferred ancestry and associations with historic
+population movements. We coded a dataset from ethnographic accounts of Bantu and Bantoid-speaking societies in
+sub-Saharan Africa (N = 84) and analysed it using phylogenetic comparative methods (PCMs). Our results estimate that
+while some traits, such as an ordeal to test for witchcraft, have deep history, others, such as accusations of
+children, may have evolved more recently, or are limited to specific clusters of societies. Demographic and symbolic
+cultural traits do not typically co-evolve. Our findings suggest traits have different transmission patterns, and
+these may result from benefits they provide or from universal psychological mechanisms that produce their recurrent
+evolution.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Sarah Peacey", "Baihui Wu", "Rebecca Grollemund", "Ruth Mace"]
+
+# parts of the world
+groups = ['Bantu']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Peacey_2024"
+
+# type of study
+type = ['d-statistic', 'asr', 'macroevolutionary']
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = "We used a phylogeny of 573 languages, comprising 424 on the Narrow Bantu tree from Grollemund et al. (2015) and some Wider Bantoid languages from the tree base (Grollemund et al., 2023). A 1000 tree sample was taken from the Bayesian posterior distribution after burn-in. This was pruned to 84 languages and societies we had data on, using the Bayes Trees program."
+    
+    [data.bantu]
+    ntaxa = 84
+    nchars = 13
+    nsites = 31
+    datatype = 'ethnographic features'
+    source = '@DPLACE'
+    items = ''
+    comment = 'We created 31 variables relating to 13 traits'
+
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.Grollemund2015]
+    source = '@Grollemund2015'
+    comment = ''
+
+    [phylogenies.Grollemund2023]
+    source = '@Grollemund2023'  # # currently unpublished??
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.dstatistic]
+    tool = 'caper'
+    model = 'd-statistic'
+    details = ""
+    data = ""
+    times = 31 # 31 variables * 1 consensus tree
+
+    [analysis.asr]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = ""
+    data = ""
+    times = 31 # 31 variables
+
+    [analysis.coevolution]
+    tool = 'bayestraits'
+    model = 'discrete'
+    details = ""
+    data = ""
+    times = 275  # 55 pairs * 5 replicates 
+    
+    
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = ['10.6084/m9.figshare.26381308']

@@ -34,7 +34,7 @@ bibkey = "@Minocher_2019"
 
 # type of study
 type = ['trait']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
 description = ""
 
@@ -51,14 +51,6 @@ description = ""
     source = ''
     items = ''
     comment = ''
-
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
-
-
 
 # analysis information
 [analysis]

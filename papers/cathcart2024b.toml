@@ -26,7 +26,7 @@ authors = ["Chundra A. Cathcart"]
 groups = ['Indo-European', 'global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
-bibkey = "@Cathcart_2024"
+bibkey = "@Cathcart_2024b"
 
 # type of study
 type = ['trait', 'methodological']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,

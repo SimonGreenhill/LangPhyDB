@@ -1,0 +1,126 @@
+title = "Areal and phylogenetic dimensions of word order variation in Indo-European languages"
+
+doi = "10.1515/ling-2022-0146"
+
+abstract = """
+Both areal and phylogenetic affiliation have been discussed as driving factors of the distribution of word order in
+the languages of the world. However, disentangling the interaction of these two factors is challenging. Here we
+take Indo-European as a test case. Word order in this family is largely homogeneous both within areas and within
+branches, which makes it difficult to assess which factor was more important in shaping the present-day
+distribution. To break out of this impasse we turn to corpus data and explicit statistical modeling. Building on a
+parallel corpus of movie subtitles, we investigate word order on the sentence level under stable pragmatic
+conditions. We measure the similarity of word order variation between pairs of languages with an
+informationtheoretic distance metric. Using cluster analysis and variation partitioning methods these distance
+metrics show that phylogenetic distance predicts more variation than geographical distance, but the most important
+predictor is the shared fraction where phylogeny and area overlap. We conclude that word order has evolved along
+both dimensions and cannot be reduced to a single one.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Christian Ebert", "Balthasar Bickel", "Paul Widmer"]
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Ebert_2024"
+
+# type of study
+type = ['trait', 'macroevolutionary', 'qresidual', 'delta']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.wals]
+    ntaxa = 24
+    nchars = 1
+    nsites = "?"
+    datatype = 'structural features'
+    source = '@WALS'
+    items = ''
+    comment = ''
+    
+    [data.ParTree]
+    ntaxa = 24
+    nchars = "34000"
+    nsites = 1
+    datatype = 'structural distance'
+    source = ''
+    items = ''
+    comment = 'converted to a mutual information matrix using Universal Dependencies Treebanks'
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.chang]
+    source = '@Chang2015'
+    comment = ''
+
+    [phylogenies.bouckaert]
+    source = '@Bouckaert2012'
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = "All in all, both NeighborNet and fuzzy clustering indicate a high level of syntactic similarity within clades since major clades can be identified in a fairly consistent way. This suggests that phylogeny has a major impact on word order variation. But the geographical distribution of the clusters in Figure 9 shows that most of the clusters form continuous areas, pointing at spatial correlations in the data."
+    
+    [analysis.tree_visualisation_wals]
+    tool = 'ape'
+    model = ''
+    details = ""
+    data = "@data.wals;@phylogenies.chang"
+
+    [analysis.tree_visualisation_partree]
+    tool = 'ape'
+    model = ''
+    details = ""
+    data = "@data.ParTree;@phylogenies.chang"
+    
+    [analysis.nnet]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "@data.ParTree"
+    data = ""
+
+    [analysis.nnet_subsets]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = "subsets of data"
+    data = "@data.ParTree"
+    times = 4
+    
+    [analysis.delta]
+    tool = 'splitstree'
+    model = 'delta'
+    details = ""
+    data = "@data.ParTree"
+
+    [analysis.qresidual]
+    tool = 'splitstree'
+    model = 'qresidual'
+    details = ""
+    data = "@data.ParTree"
+
+    [analysis.variationpartitioning]
+    tool = 'r'
+    model = ''
+    details = ""
+    data = "@data.ParTree;@phylogenies.chang"
+
+    [analysis.variationpartitioning_2]
+    tool = 'r'
+    model = ''
+    details = ""
+    data = "@data.ParTree;@phylogenies.bouckaert"
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

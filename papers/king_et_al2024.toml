@@ -3,43 +3,51 @@ title = "Bayesian phylogenetic analysis of Philippine languages supports a rapid
 doi = "10.1038/s41598-024-65810-x"
 
 abstract = """
-
+The Philippines are central to understanding the expansion of the Austronesian language family from its
+homeland in Taiwan. It remains unknown to what extent the distribution of Malayo‐Polynesian languages has
+been shaped by back migrations and language leveling events following the initial Out‐of‐Taiwan expansion.
+Other aspects of language history, including the effect of language switching from non‐Austronesian
+languages, also remain poorly understood. Here we apply Bayesian phylogenetic methods to a core‐vocabulary
+dataset of Philippine languages. Our analysis strongly supports a sister group relationship between the
+Sangiric and Minahasan groups of northern Sulawesi on one hand, and the rest of the Philippine languages on
+the other, which is incompatible with a simple North‐to‐South dispersal from Taiwan. We find a pervasive
+geographical signal in our results, suggesting a dominant role for cultural diffusion in the evolution of
+Philippine languages. However, we do find some support for a later migration of Gorontalo‐Mongondow
+languages to northern Sulawesi from the Philippines. Subsequent diffusion processes between languages in
+Sulawesi appear to have led to conflicting data and a highly unstable phylogenetic position for
+Gorontalo‐Mongondow. In the Philippines, language switching to Austronesian in 'Negrito' groups appears to
+have occurred at different time‐points throughout the Philippines, and based on our analysis, there is no
+discernible effect of language switching on the basic vocabulary.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Benedict King", "Simon J. Greenhill", "Lawrence A. Reid", "Malcolm Ross", "Mary Walworth", "Russell D. Gray"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Austronesian']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@King_2024"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['phylogenetic',]  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
 description = ""
 
 # data
 [data]
 
-    notes = ""
+    notes = "The sample consisted of 202 doculects: 147 from the Philippines and an outgroup of 55 Formosan doculects. The data comprised 7565 cognate sets in 185 meanings..."
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
+    [data.abvd]
+    ntaxa = 202
+    nchars = 185
+    nsites = 7565
     datatype = 'lexical cognates'
-    source = '@xxx'
+    source = '@ABVD'
     items = ''
-    comment = ''
-
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
+    comment = 'https://github.com/SimonGreenhill/abvd_philippines'
 
 
 # date calibrations
@@ -47,11 +55,11 @@ description = ""
 
     notes = ""
 
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    [calibration.root]
+    taxa = ['aust1307']
+    age = "normal(5200, 100)" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
     units = "ybp" # ybp
-    description = ""
+    description = "The prior on the root of the tree was a normal distribution on 5200 years BP, with a standard deviation of 100, based on the results of Gray, et al.45"
 
 
 # analysis information
@@ -60,20 +68,39 @@ description = ""
     notes = ""
     
     [analysis.tree]
-    tool = ''
-    model = ''
+    tool = 'beast2'
+    model = 'covarion+relaxed+yule'
     details = ""
     data = ""
+
+    [analysis.tree_topology_test1]
+    tool = 'beast2'
+    model = 'covarion+relaxed+yule'
+    details = "misc. nodes fixed"
+    data = ""
+
+    [analysis.tree_topology_test2]
+    tool = 'beast2'
+    model = 'covarion+relaxed+yule'
+    details = "misc. nodes fixed"
+    data = ""
+
+    [analysis.innovation_logging]
+    tool = 'beast2+innovation'
+    model = 'covarion+relaxed+yule+innovations'
+    details = "https://github.com/king-ben/innovations"
+    data = ""
+
 
 [inferredages]
     
     notes = ""
     
-    [inferredage.label]
+    [inferredage.philippines]
     taxa = []
-    age = "hpd(median, lower, upper)"
+    age = "hpd(3379, 2570, 4208)"
     units = "ybp"
-    notes = ""
+    notes = "3379 BP (HPD 2570–4208)"
 
 
 [links]

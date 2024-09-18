@@ -9,6 +9,7 @@ bayestraits,http://www.evolution.reading.ac.uk/BayesTraits.html
 bayestrees,
 beast,https://beast.community
 beast2,http://www.beast2.org/
+beast2+innovation,https://github.com/king-ben/innovations
 brms,Bayesian Regression Models using 'Stan'
 brownie.lite,R package brownie
 caper,R package caper

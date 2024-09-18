@@ -23,8 +23,8 @@ groups = ['Mixtecan']  # 'Austronesian', etc
 bibkey = "@Auderset_2024"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['trait']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['likelihood'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
 description = ""
 
@@ -33,32 +33,20 @@ description = ""
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    [data.tones]
+    ntaxa = 42
+    nchars = 263
+    nsites = 263
+    datatype = 'correspondences'
+    source = '@Auderset_2023'
     items = ''
     comment = ''
 
 # published phylogenies
 [phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
+    [phylogenies.Auderset_2024]
+    source = '@Auderset_2024'
     comment = ''
-
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
 
 
 # analysis information
@@ -66,25 +54,24 @@ description = ""
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
+    [analysis.d]
+    tool = 'caper'
+    model = 'd'
     details = ""
     data = ""
+    times = "263"
 
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
+    [analysis.rate]
+    tool = 'corHMM'
+    model = 'ard'
+    details = ""
+    data = ""
+    times = "263"
+
 
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }
 cldf = { title = "CLDF Dataset", link = "" }
 dplace = { title = "D-PLACE Dataset", link = "" }
-links = []
+links = ["https://osf.io/9sfmq/"]

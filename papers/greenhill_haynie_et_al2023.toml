@@ -43,7 +43,7 @@ description = "33 Uto-Aztecan and Kiowa-Tanoan languages"
 
     notes = ""
     
-    [data.bantu]
+    [data.utoaztecan]
     ntaxa = 34
     nchars = 100
     nsites = 1125

@@ -3,7 +3,18 @@ title = "Cross-cultural patterns of marriage and inheritance: A phylogenetic app
 doi = "10.1016/0162-3095(95)00127-1"
 
 abstract = """
-
+There is a strong correlation between marriage system and wealth inheritance pattern across societies (Hartung
+1982); as the degree of polygyny increases, so too does the degree of male bias in inheritance. In this paper, we
+reevaluate this pattern using a new technique in cross-cultural analyses that effectively controls for the
+nonindependence of cultures (Galton's problem) through the identification of independent instances of cultural
+change (Mace and Pagel 1994). First, we produce cultural phylogenetic trees for the societies under study, from
+phylogenies previously constructed on the basis of linguistic similarity (Ruhlen 1987). Then, following standard
+methods for the analysis of discrete characters on phylogenetic trees, we use parsimony to determine the ancestral
+condition of both marriage and inheritance, and subsequently tally the number of independent instances of cultural
+change in each trait. The results show that transitions to polygyny are much more commonly associated with
+male-biased inheritance than are transitions to monogamy across human societies in our sample. They illustrate how
+the degree of change in the evolution of these traits differs considerably between divergent cultural groups. The
+advantages of this technique are discussed.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
@@ -16,8 +27,8 @@ groups = []  # 'Austronesian', etc
 bibkey = "@Cowlishaw_1996"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['trait']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['parsimony'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
 description = ""
 
@@ -26,32 +37,45 @@ description = ""
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    [data.ethnographicatlas]
+    ntaxa = 411
+    nchars = 3
+    nsites = 3
+    datatype = 'ethnographic features'
+    source = '@EthAtlas'
     items = ''
     comment = ''
 
 # published phylogenies
 [phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
+    [phylogenies.AfroAsiatic]
+    source = ''
+    comment = "manually constructed from Ruhlen 1987, 1991"
 
+    [phylogenies.Austric]
+    source = ''
+    comment = "manually constructed from Ruhlen 1987, 1991"
 
-# date calibrations
-[calibrations]
+    [phylogenies.DeneCaucasian]
+    source = ''
+    comment = "manually constructed from Ruhlen 1987, 1991"
 
-    notes = ""
+    [phylogenies.Eurasiatic]
+    source = ''
+    comment = "manually constructed from Ruhlen 1987, 1991"
 
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
+    [phylogenies.IndoPacific]
+    source = ''
+    comment = "manually constructed from Ruhlen 1987, 1991"
+
+    [phylogenies.NigerKordofanian]
+    source = ''
+    comment = "manually constructed from Ruhlen 1987, 1991"
+
+    [phylogenies.NiloSaharan]
+    source = ''
+    comment = "manually constructed from Ruhlen 1987, 1991"
+
 
 
 # analysis information
@@ -59,21 +83,50 @@ description = ""
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
+    [analysis.AfroAsiatic]
+    tool = 'MacClade'
+    model = 'maximum parsimony'
+    details = ""
+    data = ""
+    
+    [analysis.Austric]
+    tool = 'MacClade'
+    model = 'maximum parsimony'
     details = ""
     data = ""
 
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
+    [analysis.DeneCaucasian]
+    tool = 'MacClade'
+    model = 'maximum parsimony'
+    details = ""
+    data = ""
+
+    [analysis.Eurasiatic]
+    tool = 'MacClade'
+    model = 'maximum parsimony'
+    details = ""
+    data = ""
+
+    [analysis.IndoPacific]
+    tool = 'MacClade'
+    model = 'maximum parsimony'
+    details = ""
+    data = ""
+
+    [analysis.NigerKordofanian]
+    tool = 'MacClade'
+    model = 'maximum parsimony'
+    details = ""
+    data = ""
+
+    [analysis.NiloSaharan]
+    tool = 'MacClade'
+    model = 'maximum parsimony'
+    details = ""
+    data = ""
+
+
+
 
 
 [links]

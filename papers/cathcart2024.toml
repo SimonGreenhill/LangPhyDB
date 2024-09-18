@@ -3,7 +3,23 @@ title = "Multiple evolutionary pressures shape identical consonant avoidance in 
 doi = "10.1073/pnas.2316677121"
 
 abstract = """
-
+Languages disfavor word forms containing sequences of similar or identical consonants,
+due to the biomechanical and cognitive difficulties posed by patterns of this sort.
+However, the specific evolutionary processes responsible for this phenomenon are not
+fully understood. Words containing sequences of identical consonants may be more
+likely to arise than those without; processes of word form mutation may be more likely
+to remove than create sequences of identical consonants in word forms; finally, words
+containing identical consonants may die out more frequently than those without.
+Phylogenetic analyses of the evolution of homologous word forms indicate that words
+with identical consonants arise less frequently than those without. However, words
+with identical consonants do not die out more frequently than those without. Further
+analyses reveal that forms with identical consonants are replaced in basic meaning
+functions more frequently than words without. Taken together, results suggest that
+the underrepresentation of sequences of identical consonants is overwhelmingly a by-
+product of constraints on word form coinage, though processes related to word usage
+also serve to ensure that such patterns are infrequent in more salient vocabulary items.
+These findings clarify aspects of processes of lexical evolution and competition that
+take place during language change, optimizing communicative systems.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
@@ -16,8 +32,8 @@ groups = []  # 'Austronesian', etc
 bibkey = "@Cathcart_2024a"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['trait']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['likelihood', 'bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
 description = ""
 
@@ -25,33 +41,101 @@ description = ""
 [data]
 
     notes = ""
-    
-    [data.bantu]
-    ntaxa = 95
+
+    [data.kolipakam]
+    ntaxa = 20
     nchars = 100
-    nsites = "?"
+    nsites = 877
     datatype = 'lexical cognates'
-    source = '@xxx'
+    source = '@Kolipakam2018'
+    items = 'swadesh100'
+    comment = ''
+
+    [data.indoeuropean]
+    ntaxa = 103
+    nchars = 207
+    nsites = 5047
+    datatype = 'lexical cognates'
+    source = '@IELex'
+    items = 'swadesh200'
+    comment = ''
+    
+    [data.sinotibetan]
+    ntaxa = 50
+    nchars = 180
+    nsites = 3333
+    datatype = 'lexical cognates'
+    source = '@Sagart2019'
+    items = 'basic'
+    comment = ''
+    
+    [data.turkic]
+    ntaxa = 32
+    nchars = 254
+    nsites = 906
+    datatype = 'lexical cognates'
+    source = '@Savelyev_2020'
+    items = 'leipzigjakartajena'
+    comment = ''
+    
+    [data.utoaztecan]
+    ntaxa = 34
+    nchars = 100
+    nsites = 1125
+    datatype = 'lexical cognates'
+    source = '@GreenhillHaynie2023'
     items = ''
     comment = ''
 
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
+    [data.ACD]
+    ntaxa = "?"
+    nchars = "?"
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
     comment = ''
 
+    [data.Semitic]
+    ntaxa = "?"
+    nchars = "?"
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = ''
 
-# date calibrations
-[calibrations]
+    [data.Uralic]
+    ntaxa = "?"
+    nchars = "?"
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = ''
+    
 
-    notes = ""
+# published phylogenies
+[phylogenies]
+    [phylogenies.dravidian]
+    source = '@Kolipakam2018'
+    comment = ''
 
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
+    [phylogenies.utoaztecan]
+    source = '@GreenhillHaynie2023'
+    comment = ''
+
+    [phylogenies.turkic]
+    source = '@Savelyev_2020'
+    comment = ''
+
+    [phylogenies.sinotibetan]
+    source = '@Sagart2019'
+    comment = ''
+
+    [phylogenies.indoeuropean]
+    source = '@Chang2015'
+    comment = ''
 
 
 # analysis information
@@ -59,25 +143,23 @@ description = ""
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
+    [analysis.rates2]
+    tool = 'phytools'
     model = ''
     details = ""
     data = ""
+    times = "?"
 
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
+    [analysis.rates1]
+    tool = 'stan'
+    model = ''
+    details = ""
+    data = ""
+    times = "?"
 
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }
 cldf = { title = "CLDF Dataset", link = "" }
 dplace = { title = "D-PLACE Dataset", link = "" }
-links = []
+links = ["https://github.com/chundrac/idcc"]

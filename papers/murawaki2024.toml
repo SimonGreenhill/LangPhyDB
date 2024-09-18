@@ -16,8 +16,8 @@ groups = ['Japonic', 'Sino-Tibetan']  # 'Austronesian', etc
 bibkey = "@Murawaki2024"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['methodological']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['statistical'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
 description = ""
 
@@ -26,32 +26,32 @@ description = ""
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
+    [data.japonic]
+    ntaxa = 59
+    nchars = 210
+    nsites = 675
     datatype = 'lexical cognates'
-    source = '@xxx'
-    items = ''
+    source = ''
+    items = 'swadesh200'
     comment = ''
+
+    [data.sinotibetan]
+    ntaxa = 50
+    nchars = 180
+    nsites = 3333
+    datatype = 'lexical cognates'
+    source = ''
+    items = 'basic'
+    comment = ''
+
+
 
 # published phylogenies
 [phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
+    [phylogenies.greenhill2009]
+    source = '@Greenhill2009c'
     comment = ''
 
-
-# date calibrations
-[calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
-    description = ""
 
 
 # analysis information
@@ -59,21 +59,24 @@ description = ""
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
+    [analysis.pca_st]
+    tool = 'r'
+    model = 'pca'
     details = ""
-    data = ""
+    data = "@data.sinotibetan"
 
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "ybp"
-    notes = ""
+    [analysis.pca_jap]
+    tool = 'r'
+    model = 'pca'
+    details = ""
+    data = "@data.japonic"
+
+    [analysis.pca_greenhill2009]
+    tool = 'r'
+    model = 'pca'
+    details = ""
+    data = "@phylogenies.greenhill2009"
+
 
 
 [links]

@@ -1,0 +1,63 @@
+title = "Methods in Malayo-Polynesian comparative-historical linguistics"
+
+doi = "10.1093/oso/9780198807353.003.0003"
+
+abstract = """
+This chapter is about methods used to work out relationships among Malayo-Polynesian (MP) languages — or languages in any language family. The principal method in use today, and indeed throughout the history of MP comparative-historical studies, is the classical comparative method (CM) of linguistics — 'of linguistics' because the term 'comparative method' is sometimes also used for methods in other disciplines (e.g. anthropology) and 'classical' because the method is central to most systematic work in comparative-historical linguistics since its formulation by the Neogrammarians, a group of Danish Dutch and German scholars active from the 1860s. A nascent version of the method underlies Schleicher's (1861) comparative grammar of the Indo-European languages, which includes the first 'family tree' (phylogeny) of a language family. Two decades later, Brugmann's (1884) evaluation of the shared innovations on which relationships among Indo-European languages were based deals with issues that still occupy historical linguists today. A recent newcomer to the suite of methods in comparative-historical linguistics is Bayesian phylogenetics (BP), which uses modified versions of software devised by evolutionary biologists to work out relationships among species on the basis of their DNA. The earliest linguistic publication using BP is Gray & Atkinson's (2003) analysis of the early history of Indo-European. This provoked considerable controversy among historical linguists and led to beliefs among some that BP was lexicostatistics in a new guise or was being advanced as a replacement for the comparative method. Neither claim is true (Greenhill & Gray 2009, 2012). The CM and BP are complementary, as we explain below (§4).
+
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Malcolm Ross", "Simon J. Greenhill"]
+
+# parts of the world
+groups = ['Austronesian']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Ross_2024"
+
+# type of study
+type = ['delta', 'qresidual']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['distance'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.gray2009]
+    ntaxa = 400
+    nchars = 210
+    nsites = 34440
+    datatype = 'lexical cognates'
+    source = '@Greenhilletal2008'
+    items = 'swadesh200'
+    comment = ''
+    
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.delta]
+    tool = 'phylogemetric'
+    model = 'delta'
+    details = ""
+    data = ""
+
+    [analysis.qresidual]
+    tool = 'phylogemetric'
+    model = 'qresidual'
+    details = ""
+    data = ""
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

@@ -1,0 +1,44 @@
+title = "LinguiPhyR: A Package for Linguistic Phylogenetic Analysis in R"
+
+doi = "https://doi.org/10.21105/joss.06201"
+
+abstract = """
+Phylogenetic methods have become commonplace in historical linguistics research. However,
+much of the work is highly technical and not easily accessible to the typical classically-trained
+historical linguist. This paper aims to bridge the gap between linguistic and statistical research
+by introducing LinguiPhyR, an R package that provides a graphical user interface (GUI) to aid
+in the phylogenetic analysis of linguistic data. As such, very little computational background is
+required by the user. A linguist may simply upload a dataset, select optimization criteria, and
+visualize the phylogenies found by the search algorithm. Alternatively, one may upload trees of
+interest to be analyzed based on the dataset. Several tools for tree analysis are provided: users
+may examine what characters are responsible for particular splits in the tree, see the characters
+that are incompatible on the tree, annotate internal nodes of the tree with reconstructed states,
+and even see a relative chronology of state changes.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Marc E. Canby"]
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Canby_2024b"
+
+# type of study
+type = ['methodological']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['parsimony'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = "none"
+    
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = ["https://github.com/marccanby/linguiphyr/"]

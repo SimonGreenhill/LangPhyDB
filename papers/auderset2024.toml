@@ -59,14 +59,14 @@ description = ""
     model = 'd'
     details = ""
     data = ""
-    times = "263"
+    times = 263
 
     [analysis.rate]
     tool = 'corHMM'
     model = 'ard'
     details = ""
     data = ""
-    times = "263"
+    times = 263
 
 
 

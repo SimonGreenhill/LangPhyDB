@@ -1,0 +1,79 @@
+title = "A quantitative approach to clause type and syntactic change in two Indo-European corpora"
+
+doi = "10.26346/1120-2726-225"
+
+abstract = """
+The aim of this paper is to empirically test the claim that subordinate clauses tend to preserve conservative features in language change. To this end, the diachronic behavior of two well-understood and frequently adduced features of grammar, namely null subject pronouns and order of subject, object and verb, is analyzed for main and adverbial clauses in a balanced corpus of 45 Indo-European languages. This study combines qualitative and quantitative analysis by drawing on individual descriptive grammars and parallel corpora respectively. Additionally, diachronic change is modeled using phylogenetic comparative methods. The data suggest that adverbial clauses can in some cases develop asymmetries with respect to their independent counterparts, either through innovation or through preservation of conservative features, possibly due to a communicative need to distinguish clause types by means of grammar. However, the general tendency is for adverbial clauses to change much in the same way as main clauses. This finding contradicts previous claims and calls for a reassessment of studies on the diachronic nature of distinct clause types.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Luigi Talamo", "Annemarie Verkerk", "Iker Salaberri"]
+
+# parts of the world
+groups = ["Indo-European"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Talamo_2024"
+
+# type of study
+type = ['asr', 'trait']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['likelihood'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.syntax_UD]
+    ntaxa = 45
+    nchars = 5
+    nsites = 5
+    datatype = 'syntactical features'
+    source = ''
+    items = ''
+    comment = ''
+
+    [data.syntax_CIEP]
+    ntaxa = 45
+    nchars = 5
+    nsites = 5
+    datatype = 'syntactical features'
+    source = ''
+    items = ''
+    comment = ''
+    
+# published phylogenies
+[phylogenies]
+    [phylogenies.bouckaert]
+    source = '@Bouckaert2012'
+    comment = ''
+
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.lambda]
+    tool = 'phytools'
+    model = 'lambda'
+    details = ""
+    data = ""
+    times = 10
+
+    [analysis.asr]
+    tool = 'phytools'
+    model = 'contMap'
+    details = ""
+    data = ""
+    times = 8
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

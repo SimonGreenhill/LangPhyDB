@@ -360,7 +360,7 @@ description = "Reconstructing the evolution of Indo-European grammar"
 
 
     [calibration.Proto-Baltic]
-    taxa = ["east2280"]
+    taxa = ["?"]  # not in glottolog
     age = "uniform(2000, 1500)" # 0 - 500
     units = "y2000"
     description = ""
@@ -381,7 +381,7 @@ description = "Reconstructing the evolution of Indo-European grammar"
 
 
     [calibration.Proto-Core-IE]
-    taxa = ["clas1257"]
+    taxa = ["?"]
     age = "uniform(5500, 5000)" # -3500 - -3000
     units = "y2000"
     description = ""

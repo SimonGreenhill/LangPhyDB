@@ -126,7 +126,7 @@ description = "87 Indo-European languages"
     description = "Tocharian languages are thought to have diverged shortly after the fall of Bactria (135BC) and no later than 100 years before the first known inscriptions of Tocharian B."
 
     [calibration.Hittite]
-    taxa = ['tokh1243']
+    taxa = ['hitt1242']
     age = "uniform(3250, 3750)"
     units = "ybp" # ybp
     description = "Oldest Hittite text of King Anittas from the 18th century BC. Latest texts from the 14th-13th centuries BC."

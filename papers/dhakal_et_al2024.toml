@@ -1,0 +1,117 @@
+title = "A phylogenetic study of South-Western Tibetic"
+
+doi = "10.1093/jole/lzae008"
+
+abstract = """
+This study performs primary data collection, transcription, and cognate coding for eight South West Tibetic languages (Lowa, Gyalsumdo, Nubri, Tsum, Yohlmo, Kagate, Jirel, and Sherpa). This includes partial cognate coding, which analyses linguistic relations at the morpheme level. Prior resources and inferences are leveraged to conduct a Bayesian phylogenetic analysis. This helps estimate the extent to which the historical relationships between the languages represent a tree-like structure. We argue that small-scale projects like this are critical to wider attempts to reconstruct the cultural evolutionary history of Sino-Tibetan and other families.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Dubi Nanda Dhakal", "Johann-Mattis List", "Seán G. Roberts"]
+
+# parts of the world
+groups = ['Sino-Tibetan']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Dhakal_2024"
+
+# type of study
+type = ['phylogenetic', 'dating']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['network', 'bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.ds1]
+    ntaxa = 8
+    nchars = 243
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = ''
+
+    [data.ds2]
+    ntaxa = 14
+    nchars = 127
+    nsites = 488
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = 'tibeticcombined.nex'
+
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.oldchinese]
+    taxa = ["oldc1244"]
+    age = "uniform(2800, 2300)"  # normal(x, y)
+    units = "ybp" # ybp
+    description = "Period of the great Classical Chinese texts"
+
+    [calibration.oldtibetan]
+    taxa = ["oldm1245"]
+    age = "1200"  # x, normal(x, y), uniform(x,y)
+    units = "ybp" # ybp
+    description = "date of the earliest text rounded to the nearest century"
+
+    [calibration.sinotibetan]
+    taxa = ['sino1245']
+    age = "normal(7184, 500)"  # x, normal(x, y), uniform(x,y)
+    units = "ybp" # ybp
+    description = "Priors for the date of the root of our tree were taken from Sagart et al’.s final phylogenetic tree for the most recent common ancestor of the languages in our analysis (normal distribution with mean = 7,184 years BP, sigma = 500 years, 95% confidence intervals = [6200,8160])"
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.nnet]
+    tool = 'splitstree'
+    model = ''
+    details = ""
+    data = "@data.ds2"
+
+    [analysis.tree0]
+    tool = 'beast2'
+    model = 'fbd-singlesitepartition-bcov-strict'
+    details = "single partition for all sites"
+    data = "@data.ds2"
+
+    [analysis.tree1]
+    tool = 'beast2'
+    model = 'fbd-singlesitepartition-bcov-relaxed'
+    details = "single partition for all sites"
+    data = "@data.ds2"
+
+    [analysis.tree2]
+    tool = 'beast2'
+    model = 'fbd-twositepartition-bcov-relaxed'
+    details = "two partitions for all sites (partition 1 cognates of size 2-3, partition 2 cognates of size 5+)"
+    data = "@data.ds2"
+
+    [analysis.tree3]
+    tool = 'beast2'
+    model = 'fbd-threesitepartition-bcov-relaxed'
+    details = "three partitions (2–3 cognates, 4–6 cognates, 7+ cognates)"
+    data = "@data.ds2"
+    best = "true"
+
+
+[inferredages]
+    
+    notes = "nothing reported in detail"
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "https://zenodo.org/records/13868534" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = ["https://github.com/seannyD/SouthWestTibeticLexicons"]

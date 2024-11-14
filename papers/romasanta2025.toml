@@ -1,0 +1,67 @@
+title = "A dialectological approach to complement variability in global web-based English"
+
+doi = "10.32714/ricl.13.01.09"
+
+abstract = """
+Computer-Mediated Communication is part of the everyday lives of a great many people
+of all ages, cultures, social statuses, and geographical locations. In the present study, I explore non-
+categorical syntactic variability in internet language with data from the Corpus of Global Web-Based
+English (GloWbE), which includes material from blogs, forums, comments, and other types of
+websites. The focus is on how the geographical area of internet users affects the use of the clausal
+complementation patterns available for the verb REGRET. The analysis of more than 10,000 examples
+from Indian, Sri Lankan, Pakistani, Bangladeshi, Singaporean, Malaysian, Philippine, Hong Kong,
+British, and American Englishes shows that geographical origin does have a bearing on the
+complementation system of this verb, in terms of both the factors that determine variability and the
+preferences for particular patterns. The varieties displaying more similarities are those that are
+geographically close, making the distinction between three geographical areas possible: South Asia
+(India, Sri Lanka, Pakistan, and Bangladesh), South-East Asia (with Singapore, Malaysia, and the
+Philippines) and East Asia (Hong Kong)
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['Raquel P. Romasanta']
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Romasanta2025"
+
+# type of study
+type = ['phylogenetic']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['network'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.morphosyntax]
+    ntaxa = 10
+    nchars = "?"
+    nsites = "?"
+    datatype = 'morphological traits'
+    source = ''
+    items = ''
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.neighbornet]
+    tool = 'r'
+    model = 'NeighborNet'
+    details = "neighbornet package in R? seems to be a different method but figure is definitely a nnet"
+    data = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

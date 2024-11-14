@@ -36,16 +36,6 @@ description = "32 Turkic languages"
     items = 'leipzigjakartajena'
     comment = ''
 
-[calibration]
-    [calibration.tapekura]
-    taxa = ["chap1269"]
-    # corrected for 2010 starting 180 - (2010 - 1950)
-    age = "120"
-    units = "ybp" # ybp
-    description = "Although the primary source of data on Tapakura and Kitemoka was only published in the early twentieth century in Créqui-Montfort and Rivet (1913), the data were originally collected during d'Orbigny's trip through lowland Bolivia, which took place between 1826 and 1833."
-
- 
-
 # analysis information
 [analysis]
     [analysis.network]

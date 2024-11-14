@@ -68,16 +68,10 @@ description = "26 Turkic languages"
     notes = "and includes the current dates of dictionaries for each of the contemporary languages"
 
     [calibration.SeljukConquest]
-    taxa = ["yuca1254"]
+    taxa = ["oghu1243"]
     age = "uniform(300, 700)"
     units = "ad"
     description = "the Seljuk conquest of Baghdad (1055 CE), which is likely the latest date for divergence of Seljuk-derived languages (Turkish, Azeri, Gagauz) from other Oghuz languages (Turkmen), the earliest likely date being 985 CE"
-
-    [calibration.colonialyucatec]
-    taxa = ["yuca1254"]
-    age = "uniform(1570, 1590)"
-    units = "ad"
-    description = "Source document written around 1580."
 
 
 # analysis information

@@ -1,0 +1,31 @@
+title = "Solving Galton's problem: Practical solutions for analysing language diversity and evolution"
+
+doi = "10.1075/cilt.367.04bro"
+
+abstract = """
+
+Comparisons between languages can illuminate processes of language change by revealing meaningful associations between language features or the influence of external factors on the patterns and rates of language change. But comparisons between languages raise statistical challenges, because close relatives will tend to be more similar to each other, compared with more distantly related languages, and languages from the same areas will be subject to many of the same influences. Therefore, observations made on different languages will usually fail to meet the requirement of statistical independence inherent in standard statistical testing. This fundamental challenge of cross-cultural analysis, known as Galton's problem, is no cause for despair because there are a range of workable solutions using widely available data. This paper discusses a range of practical solutions, including phylogenetic analysis, sister pair comparisons, and spatially structured models, that can be applied to analyses of language variation and change.
+
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Lindell Bromham"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Bromham_2024"
+
+# type of study
+type = ['review']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

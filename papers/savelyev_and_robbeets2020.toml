@@ -36,6 +36,26 @@ description = "32 Turkic languages"
     items = 'leipzigjakartajena'
     comment = ''
 
+# date calibrations
+[calibrations]
+
+    notes = "To calibrate the clock, we relied on the sampling dates (implemented as dated tips) for the two ancient language varieties in the dataset: 1,150 years BP for Old Turkic and 700 years BP for Cuman (the language of Codex Cumanicus), with 2,000 taken as the date for the present"
+
+    [calibration.OldTurkic]
+    taxa = ['oldu1238']
+    age = "1150"
+    units = "y2000"
+    description = ""
+
+    [calibration.Cuman]
+    taxa = ['cuma1241']
+    age = "700"
+    units = "y2000"
+    description = ""
+
+
+
+
 # analysis information
 [analysis]
     [analysis.network]

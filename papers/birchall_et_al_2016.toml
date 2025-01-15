@@ -38,6 +38,10 @@ description = "10 Chapacuran languages"
     comment = ''
 
 [calibration]
+
+    notes = """We specified these dates in years past, rounded to the nearest decade and assuming 
+    2010 as the calibration date for the present. """
+
     [calibration.tapekura]
     taxa = ["chap1269"]
     # corrected for 2010 starting 180 - (2010 - 1950)
@@ -90,7 +94,7 @@ description = "10 Chapacuran languages"
     [calibration.morecojubim]
     taxa = ["yaru1257"]
     # corrected for 2010 starting 179 - (2010 - 1950)
-    age = "lognormal(201, 0.6, 119, realspace=True)"
+    age = "lognormal(201, 0.6, 119, realspace=True)+179"
     units = "ybp" # ybp
     description = "The Moré and the Cojubim speak similar languages but are geographically separated by the lower Guaporé River. The Moré were first contacted in the 1740s as Jesuit missions spread into the Bolivian lower Guaporé basin. No known mention is made of the Cojubim (Cautarios) as a distinct ethnic group in the historical record until an expedition led by Portuguese military engineer Ricardo Franco de Almeida Serra in 1781 (Almeida Serra 1857:422). Calibration: This calibration was implemented as a log-normal probability distribution with a mean of 201 years (in real space), a standard deviation of 0.6, and an offset of 179 years. This gave a probability distribution where 95% of the values were between 231 years and 723 years, with a median of 347 years."
 

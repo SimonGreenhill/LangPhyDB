@@ -47,18 +47,18 @@ description = "Discussion of best practice for calibrating language expansions"
     taxa = ['finn1317']
     age = "normal(1.225, 0.23)" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
     units = "millennia" # ybp
-    description = ""
+    description = "Because the best guess is very close (within 50 years) to the midpoints of both sets of bounds, it is sensible to represent this calibration with a Normal distribution. Calibrating in units of millennia, we set a mean of 1.225 and an SD of 0.23. This corresponds to a mean and mode divergence time of 1230 YBP, with 99% certainty that the age is between 670 YBP and 1850 YBP, and 76% certainty that the age is between 1000 YBP and 1550 YBP"
 
 
     [calibration.permic]
     taxa = ['perm1256']
     age = "revlognormal(-0.18, 0.18, 1.85)"
     units = "millennia" # ybp
-    description = ""
+    description = "Such a distribution with an offset of 1.85, a mean of 0.18, and an SD of 0.18, allocates 95% of its belief to an interval from 661 to 1263 YBP, with a most likely age of 1041 YBP"
 
 
     [calibration.saamic]
     taxa = ['saam1281']
     age = "normal(1.70, 0.153)"
     units = "millennia" # ybp
-    description = ""
+    description = "Thus, specifying the calibration in units of millennia, we use a Normal distribution with a mean of 1.70 and a standard deviation of 0.153, which places 95% of its belief precisely between our two bounds"

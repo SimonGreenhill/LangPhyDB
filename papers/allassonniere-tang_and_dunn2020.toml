@@ -1,0 +1,83 @@
+title = "The evolutionary trends of grammatical gender in Indo-Aryan languages"
+
+doi = "https://doi.org/10.1163/22105832-bja10011"
+
+abstract = """
+This paper infers the processes of development and change of grammatical gender in Indo-Aryan languages using phylogenetic comparative methods. 48 Indo-Aryan languages are coded based on 44 presence-absence features relating to gender marking on the verbs, adjectives, personal pronouns, demonstrative pronouns, and possessive pronouns. A Bayesian Reverse Jump Hyper Prior analysis, which infers the evolutionary dynamics of changes between feature values, gives results that are consistent with historical linguistic and typological studies on gender systems in Indo-Aryan languages and predicts the evolutionary trends of the features included in the dataset.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Marc Allassonnière-Tang", "Michael Dunn"]
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Allassonniere_Tang_2020"
+
+# type of study
+type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.bantu]
+    ntaxa = 95
+    nchars = 100
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@xxx'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.label]
+    source = '@xxx'
+    comment = ''
+
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.label]
+    taxa = []
+    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "ybp" # ybp
+    description = ""
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = ''
+    model = ''
+    details = ""
+    data = ""
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.label]
+    taxa = []
+    age = "hpd(median, lower, upper)"
+    units = "ybp"
+    notes = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

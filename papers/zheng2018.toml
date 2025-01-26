@@ -1,0 +1,70 @@
+title = "A new proposal for Min subgrouping based on a maximum-parsimony algorithm for generating phylogenetic trees"
+
+doi = "10.1016/j.lingua.2018.01.008"
+
+abstract = """
+The Min dialect group is easily characterized, in contrast to other dialect groups in China. Min varieties
+do, however, exhibit a considerable degree of diversity. The internal relationship among these dialects
+has remained a puzzle, and the study of Min classification is still considered one of the most challenging
+tasks in Chinese dialectology. The present article applies a new approach, subgrouping, to solve the
+problem of classifying the 12 representative Min dialects. The study begins with a review of Norman's
+(1973, 1974, 1981) Proto-Min system and revises this system based on more comprehensive data. The revised
+Proto-Min system is then compared with the modern Min dialects to arrive at 39 shared innovations that
+constitute criteria for subgrouping. A phylogenetic tree model processed by the PENNY program (from
+PHYLIP, a package of computer programs for inferring phylogenies; Phylogeny Inference Package, version
+3.695) displays the result of Min subgrouping based on maximum parsimony. The phylogenetic results derived
+through this method are shown to differ significantly from the traditional classification of Min dialects.
+The model also pinpoints the position of some controversial dialects within the Min family.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Zhijun Zheng"]
+
+# parts of the world
+groups = ['Sino-Tibetan']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Zheng_2018"
+
+# type of study
+type = ['phylogenetic']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['parsimony'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.min]
+    ntaxa = 12
+    nchars = 39
+    nsites = 39
+    datatype = 'mixed'
+    source = ''
+    items = ''
+    comment = 'These shared innovations include 29 phonological mergers and 10 lexical replacements of basic vocabulary terms'
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.treeset1]
+    tool = 'phylip'
+    model = 'penny'
+    details = "2 trees returned"
+    data = ""
+
+    [analysis.treeset2]
+    tool = 'phylip'
+    model = 'penny'
+    details = "3 trees returned"
+    data = ""
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

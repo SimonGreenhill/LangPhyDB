@@ -1,0 +1,76 @@
+title = "Unchanged Cognates as a Criterion in Linguistic Subgrouping"
+
+doi = "10.2307/413903"
+
+abstract = """
+If a sound change has lexically diffused without completing its course, one finds that
+among the lexical items qualified for the change, some have already changed (c), others
+have remained unchanged (u), and still others show variant forms (u/c). When such a
+change has affected a group of genetically related languages, the consequent comparative
+pattern u-u/c-c can be used to set up subrelations among languages. In this paper,
+we draw on data from six languages belonging to the South-Central subfamily of 
+Dravidian, with reference to an atypical sound change called 'apical displacement'. There
+are 63 etymologies which qualify for the study. A total of 945 possible binary-labeled
+trees fall into six types for the six languages under study. In terms of our postulates,
+that tree is the best which scores the lowest m, i.e. the minimum number of independent
+instances of change needed to account for the u-c-o (o = no cognate) pattern of a given
+entry. Each of the 63 entries has been applied to the possible 945 trees, and the trees
+have been scored for the value m by computer. The one tree which scored the lowest
+(71 points) is identical with the traditionally established tree for these languages. This
+paper shows that: (a) one shared innovation is sufficient to give genetic subrelations
+among languages, within the framework of the theory of lexical diffusion; (b) unchanged
+cognates are as important as changed cognates in giving differential scores for possible
+trees; and (c) the notion of shared innovation can be further refined within the theory
+of lexical diffusion.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = [
+    "Bhadriraju Krishnamurti", "Lincoln Moses", "Douglas G. Danforth"
+]
+
+# parts of the world
+groups = ['Dravidian']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Krishnamurti1983"
+
+# type of study
+type = ['phylogenetic']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['parsimony'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.dravidian]
+    ntaxa = 6
+    nchars = "?"
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@DED1961'
+    items = ''
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = 'manual'
+    model = ''
+    details = ""
+    data = ""
+    times = 6
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

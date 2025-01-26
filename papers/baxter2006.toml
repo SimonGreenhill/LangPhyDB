@@ -1,0 +1,64 @@
+title = "Mandarin dialect phylogeny"
+
+doi = "10.3406/clao.2006.1748"
+
+abstract = """
+This paper investigates the phylogenetic relationships (the relationships of
+shared ancestry) of ten Chinese dialects: eight generally classified as
+Mandarin, and two others (Changshâ Лй> and Hangzhou Ш1|). Using six
+of the Mandarin dialects, a 'Proto-Macro-Mandarin' (PMM) phonological
+system is reconstructed, from which the other four dialects also appear to be
+derivable. Taking 29 phonological innovations as a basis, the phylogeny of
+the ten dialects is estimated using a technique borrowed from biology
+(Camin-Sokal parsimony). The results suggest that a classification of
+Chinese dialects based on phylogeny could be rather different from the
+generally accepted classification.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["William H. Baxter"]
+
+# parts of the world
+groups = ['Sino-Tibetan',]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Baxter_2006"
+
+# type of study
+type = ['phylogenetic']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['parsimony'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.phonology]
+    ntaxa = 10
+    nchars = 29
+    nsites = 29
+    datatype = 'phonetic traits'
+    source = ''
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = 'phylip'
+    model = 'penny'
+    details = "5 MPTs"
+    data = ""
+    times = 5
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

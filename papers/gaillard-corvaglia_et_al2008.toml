@@ -1,0 +1,55 @@
+title = "Approche cladistique des vocalismes d'oïl à partir des données de l'ALF"
+
+doi = ""
+
+abstract = """
+Cette étude a pour objectif d'appliquer la méthode d'analyse cladistique,
+ou systématique phylogénétique (définie jadis par W. HENNIG,
+1988), à la variation dialectale des parlers d'oïl. Nous prenons résolu-
+ment parti d'appliquer cette méthode, non pas à des listes de Swadesh, ni à
+des listes de correspondances, ni à des inventaires phonologiques sous forme
+tabulaire, mais à des cartes d'atlas linguistique
+"""
+authors = [
+    'Antonella Gaillard-Corvaglia',
+    'Jean-Léo Léonard',
+    'Pierre Darlu'
+]
+
+# parts of the world
+groups = ['Oïl Varieties', 'Southern Italo-Romance']
+
+# bibkey citation in sources.bib
+bibkey = "@GaillardCorvaglia2008"  # @xxxx
+
+# type of study
+type = ['phylogenetic']
+framework = ['parsimony']
+
+description = ""
+
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.alf]
+    ntaxa = 45
+    nchars = 23
+    nsites = "?"  # some phonetic coding
+    datatype = 'phonetic traits'
+    source = '@ALF'
+    items = ''
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = 'paup*'
+    model = ''
+    details = ""
+    data = ""

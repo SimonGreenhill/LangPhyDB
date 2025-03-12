@@ -1,0 +1,84 @@
+title = "Early humans out of Africa had only base-initial numerals"
+
+doi = "10.1057/s41599-023-02506-z"
+
+abstract = """
+The vast majority of languages have numerals involving multiplication. Cross-linguistically, a numeral that involves a multiplier and a numeral base can be base-final, e.g., three hundred [three × hundred] in English, or base-initial, e.g., ikie ita [hundred × three] in Ibibio (Niger-Congo). A worldwide survey of 4099 languages reveals that 39% of the languages are base-initial, 48% are base-final, 4% use both orders, and 8% are without numeral bases. As the first step towards explaining this diversity and worldwide distribution, we offer convergent evidence to support the hypothesis that the languages of early humans in Africa had base-initial numerals. From a linguistic point of view, linearization is necessary for the verbal expression of multiplicative numerals. Between the two linear orders of multiplication, we demonstrate that the base-initial order has an initial advantage in communicative efficiency. We also offer typological evidence from the dominant head-initial word order in present-day numeral systems and nominal phrases in African languages. Finally, results from a phylogenetic analysis based on a global tree of human languages show that the base-initial order is more stable diachronically and more likely to be at the root of the reconstructed tree of languages in Africa between 100 and 150 thousand years ago. The dominant base-final order in non-African languages of modernity is thus likely to be a development after the Out-of-Africa exodus between 60 and 80 thousand years ago.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["One-Soon Her", "Yung-Ping Liang", "Eugene Chan", "Hung-Hsin Hsu", "Anthony Chi-Pin Hsu", "Marc Allassonnière-Tang"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Her_2024"
+
+# type of study
+type = ['asr', 'trait']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['parsimony', 'bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.numerals]
+    ntaxa = 770
+    nchars = 2
+    nsites = 2
+    datatype = 'structural features'
+    source = ''
+    items = ''
+    comment = 'base and noun–adjective order'
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.global]
+    source = '@Bouckaert2022'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.ace]
+    tool = 'ape'
+    model = 'ER'
+    details = ""
+    data = ""
+
+    [analysis.RJHP_pairs]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = ""
+    data = ""
+
+    [analysis.RJHP_pairs_Africa]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = ""
+    data = ""
+
+    [analysis.RJHP_single]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = ""
+    data = ""
+
+    [analysis.RJHP_single_Africa]
+    tool = 'bayestraits'
+    model = 'multistate'
+    details = ""
+    data = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = ['https://osf.io/wqhk7/?view_only=9dce74309890444ebccd515964d5c2a3']

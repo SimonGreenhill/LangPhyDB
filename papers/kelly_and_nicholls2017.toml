@@ -54,7 +54,7 @@ description = "Presentation of the Stochastic Dollo Model with Lateral Transfers
     [calibration.EP]
     taxa = ['east2449']
     age = "uniform(1150, 1800)" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "y2000" # ybp
+    units = "y2000"
     description = ""
 
 

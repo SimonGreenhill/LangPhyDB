@@ -41,13 +41,13 @@ description = "59 Japonic languages"
     [calibration.tokyokyoto]
     taxa = ['toky1238', 'kyot1238']
     age = "normal(407, 135.2)" # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = ""
 
     [calibration.oldjapanese]
     taxa = ['oldj1239']
     age = "normal(1258, 21)" # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = """The relaxed sample date calibrations were
     assigned to Old and Middle Japanese with lognormal priors in which their 95
     per cent of the distributions lie between the upper and the lower bounds of
@@ -59,7 +59,7 @@ description = "59 Japonic languages"
     [calibration.middlejapanese]
     taxa = ["?"]  # middle japanese
     age = "normal(555.5, 59.25)" # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = """The relaxed sample date calibrations were
     assigned to Old and Middle Japanese with lognormal priors in which their 95
     per cent of the distributions lie between the upper and the lower bounds of
@@ -109,7 +109,7 @@ description = "59 Japonic languages"
     [inferredage.tree2]
     taxa = ['japo1237']
     age = "hpd(2182, 1239, 4190)"
-    units = "ybp"
+    units = "bp"
     details = ""
     best = "true"
 

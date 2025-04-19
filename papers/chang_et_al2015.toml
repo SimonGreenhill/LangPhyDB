@@ -85,103 +85,103 @@ description = "Phylogenetic analysis of Indo-European languages"
     [calibration.Hittite]
     taxa = ['hitt1242']
     age = "normal(3400, 100)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Hittite (hit) "
 
     [calibration.VedicSanskrit]
     taxa = ['sans1269']
     age = "normal(3250, 250)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Vedic Sanskrit (san)"
 
     [calibration.Avestan]
     taxa = ['aves1237']
     age = "normal(2500, 50)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Avestan (ave) "
 
     [calibration.Sogdian]
     taxa = ['sogd1245']
     age = "normal(1300, 100)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Sogdian (sog)"
 
     [calibration.AncientGreek]
     taxa = ["anci1242"]
     age = "normal(2450, 50)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Ancient Greek (grc)"
 
     [calibration.Latin]
     taxa = ['lati1261']
     age = "normal(2150, 50)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Latin (lat)"
 
     [calibration.Gothic]
     taxa = ['goth1244']
     age = "normal(1650, 25)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Gothic (got)"
 
     [calibration.OldHighGerman]
     taxa = ['oldh1241']
     age = "normal(1150, 50)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Old High German (goh)"
 
     [calibration.OldEnglish]
     taxa = ['olde1238']
     age = "normal(1000, 50)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Old English (ang)"
 
     [calibration.OldWestNorse]
     taxa = ['oldw1240']
     age = "normal(800, 50)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Old West Norse (non, 'Old Norse')"
 
     [calibration.ClassicalArmenian]
     taxa = ['clas1249']
     age = "normal(1550, 50)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Classical Armenian (xcl)"
 
     [calibration.TocharianA]
     taxa = ['tokh1242']
     age = "normal(1350, 150)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Tocharian A (xto)"
 
     [calibration.TocharianB]
     taxa = ['tokh1243']
     age = "normal(1350, 150)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Tocharian B (txb)"
 
     [calibration.OldIrish]
     taxa = ['oldi1245']
     age = "normal(1200, 100)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Old Irish (sga)"
 
     [calibration.Cornish]
     taxa = ['oldc1252']
     age = "normal(300, 100)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Cornish (cor)"
 
     [calibration.OldChurchSlavic]
     taxa = ['chur1257']
     age = "normal(1000, 50)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Old Church Slavic (chu)"
 
     [calibration.OldPrussian]
     taxa = ['prus1238']
     age = "normal(550, 50)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Old Prussian (prg)"
 
 
@@ -321,110 +321,110 @@ description = "Phylogenetic analysis of Indo-European languages"
     [inferredage.ProtoIndoEuropean]
     taxa = ["indo1319"]
     age = "hpd(5950, 7190, 4870)"
-    units = "ybp"
+    units = "bp"
     details = 'A1 Narrow dataset'
 
 
     [inferredage.A1_Narrow]
     taxa = ["indo1319"]
     age = "hpd(5950, 7190, 4870)"
-    units = "ybp"
+    units = "bp"
     details = ""
 
     [inferredage.A1_Corrected]
     taxa = ["indo1319"]
     age = "hpd(6580, 7790, 5730)"
-    units = "ybp"
+    units = "bp"
     details = ""
 
     [inferredage.A2_Medium]
     taxa = ["indo1319"]
     age = "hpd(6410, 7910, 5190)"
-    units = "ybp"
+    units = "bp"
     details = ""
 
     [inferredage.A2_Corrected]
     taxa = ["indo1319"]
     age = "hpd(6740, 8330, 5510)"
-    units = "ybp"
+    units = "bp"
     details = ""
 
     [inferredage.A3_Broad]
     taxa = ["indo1319"]
     age = "hpd(5930, 7250, 4860)"
-    units = "ybp"
+    units = "bp"
     details = ""
 
     [inferredage.A4_ExcludeLoans]
     taxa = ["indo1319"]
     age = "hpd(6060, 7280, 5000)"
-    units = "ybp"
+    units = "bp"
     details = ""
 
     [inferredage.A5_FewerMeaningClasses]
     taxa = ["indo1319"]
     age = "hpd(6060, 7590, 4870)"
-    units = "ybp"
+    units = "bp"
     details = ""
 
     [inferredage.A6_ConstantPopCoalTreePrior]
     taxa = ["indo1319"]
     age = "hpd(6130, 7420, 5070)"
-    units = "ybp"
+    units = "bp"
     details = ""
 
     [inferredage.A7_Covarion]
     taxa = ["indo1319"]
     age = "hpd(6140, 7710, 4760)"
-    units = "ybp"
+    units = "bp"
     details = ""
 
     [inferredage.B1_]
     taxa = ["indo1319"]
     age = "hpd(7750, 9720, 6180)"
-    units = "ybp"
+    units = "bp"
     details = ""
 
     [inferredage.B2_]
     taxa = ["indo1319"]
     age = "hpd(6810, 8780, 5400)"
-    units = "ybp"
+    units = "bp"
     details = ""
 
     [inferredage.B3_]
     taxa = ["indo1319"]
     age = "hpd(6440, 8670, 5110)"
-    units = "ybp"
+    units = "bp"
     details = ""
 
     [inferredage.C1_RSC_AncConstraints]
     taxa = ["indo1319"]
     age = "hpd(6470, 8700, 4920)"
-    units = "ybp"
+    units = "bp"
     details = ""
 
     [inferredage.C2_RSC_HomoAncConstraints]
     taxa = ["indo1319"]
     age = "hpd(5780, 7380, 4550)"
-    units = "ybp"
+    units = "bp"
     details = ""
 
     [inferredage.C3_RSC_NoAncConstraints]
     taxa = ["indo1319"]
     age = "hpd(7670, 9460, 6190)"
-    units = "ybp"
+    units = "bp"
     details = ""
 
     [inferredage.C4_RSC_HomoNoAncConstraints]
     taxa = ["indo1319"]
     age = "hpd(6890, 8350, 5670)"
-    units = "ybp"
+    units = "bp"
     details = ""
 
     [inferredage.C5_SDC_HomoNoAncConstraints]
     taxa = ["indo1319"]
     age = "hpd(7060, 8390, 5940)"
-    units = "ybp"
+    units = "bp"
     details = ""
 
 

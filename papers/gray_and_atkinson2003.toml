@@ -44,91 +44,91 @@ description = "87 Indo-European languages"
     [calibration.IberianFrench]
     taxa = ['west2813']
     age = "uniform(1150, 1500)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Death of last writers knowing classical Latin and repetition of Latin liturgical formulas without comprehension in sixth to eighth centuries AD. Strasburg Oaths, 842AD."
 
     [calibration.ItalicRomanian]
     taxa = ['ital1285', 'east2714']
     age = "uniform(1650, 1800)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Last Roman troops withdrawn to south of Danube, 270AD. Dacia conquered by Rome, 112AD."
 
     [calibration.Germanic]
     taxa = ['germ1287']
     age = "uniform(1650, 1700)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Germanic tribes united against Rome, 1AD. Gothic migration to Eastern Europe, 180AD. Earliest attested North Germanic inscriptions date from 3rd century AD."
 
     [calibration.WelshBreton]
     taxa = ['bryt1239']
     age = "uniform(1400, 1550)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Migrants from Britain colonize Brittany in 5th century AD."
 
     [calibration.IrishWelsh]
     taxa = ['tgbc1234']
     age = ">1650"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Archaic Irish inscriptions date back to the 5th century AD – divergence must have occurred well before this time."
 
     [calibration.Indic]
     taxa = ['indo1321']
     age = ">2150"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Singhalese records dating from as early as 2nd century BC indicate that Indic languages had begun to diverge by this time."
 
     [calibration.Iranian]
     taxa = ['iran1269']
     age = ">2450"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "By 500BC Old Persian was distinct from the Eastern Iranian dialects."
     
     [calibration.IndoIranian]
     taxa = ['indo1320']
     age = ">2950"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Rgveda, an identifiably Indic epic, is thought to date from between 1450-1000BC. The Avesta, a similar Iranian epic, has been recorded in oral tradition since before 800BC."
 
     [calibration.Slavic]
     taxa = ['slav1255']
     age = ">1250"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Old Church Slavonic and East Slavic texts date to beginning of 9th century and indicate significant divergence by this time. The split must have occurred after the Balto-Slavic divergence."
 
     [calibration.BaltoSlavic]
     taxa = ['balt1263']
     age = "uniform(1850, 3350)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Distinct Slavic culture and language known to pre-date 100AD on the basis of Tacitus's 'Germany'. Archaeological evidence suggests the split may have occurred as early as 1,400BC."
 
     [calibration.Greeksplit]
     taxa = ['gree1276']
     age = ">3450"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Earliest form of an ancient Greek dialect is Mycenaean, attested in Linear B texts dating from 15th century BC"
 
     [calibration.Tocharic]
     taxa = ['tokh1241']
     age = "uniform(1600, 2090)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Tocharian languages are thought to have diverged shortly after the fall of Bactria (135BC) and no later than 100 years before the first known inscriptions of Tocharian B."
 
     [calibration.TocharianA]
     taxa = ['tokh1242']
     age = "uniform(1200, 1450)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Tocharian languages are thought to have diverged shortly after the fall of Bactria (135BC) and no later than 100 years before the first known inscriptions of Tocharian B."
 
     [calibration.TocharianB]
     taxa = ['tokh1243']
     age = "uniform(1200, 1450)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Tocharian languages are thought to have diverged shortly after the fall of Bactria (135BC) and no later than 100 years before the first known inscriptions of Tocharian B."
 
     [calibration.Hittite]
     taxa = ['hitt1242']
     age = "uniform(3250, 3750)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Oldest Hittite text of King Anittas from the 18th century BC. Latest texts from the 14th-13th centuries BC."
 
 
@@ -151,7 +151,7 @@ description = "87 Indo-European languages"
     [inferredage.root]
     taxa = ['indo1319']
     age = "hpd(7800, 9800)"  # upper and lower only given
-    units = "ybp"
+    units = "bp"
     details = ""
 
 

@@ -184,31 +184,31 @@ description = "98 Transeurasian languages"
     [calibration.japonic]
     taxa = ["japo1237"]
     age = "normal(2100, 175)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
     [calibration.koreanic]
     taxa = ["kore1284"]
     age = "normal(800, 175)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
     [calibration.turkic]
     taxa = ["turk1311"]
     age = "normal(2100, 175)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
     [calibration.mongolic]
     taxa = ["mong1349"]
     age = "normal(750, 50)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
     [calibration.tungusic]
     taxa = ["tung1282"]
     age = "normal(1900, 275)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
@@ -219,28 +219,28 @@ description = "98 Transeurasian languages"
     [inferredage.transeurasian]
     taxa = ['japo1237', 'kore1284', 'turk1311', 'mong1349', 'tung1282',]
     age = "hpd(9181, 5595, 12793)"
-    units = "ybp"
+    units = "bp"
     details = ""
     best = 'true'
 
     [inferredage.altaic]
     taxa = ['turk1311', 'mong1349', 'tung1282']
     age = "hpd(6811, 4404, 10166)"
-    units = "ybp"
+    units = "bp"
     details = ""
     best = 'true'
 
     [inferredage.MT]
     taxa = ['mong1349', 'tung1282']  # mongolic, tungusic
     age = "hpd(4491, 2599, 6373)"
-    units = "ybp"
+    units = "bp"
     details = ""
     best = 'true'
 
     [inferredage.JK]
     taxa = ['japo1237', 'kore1284']
     age = "hpd(5458, 3335, 8024)"
-    units = "ybp"
+    units = "bp"
     details = ""
     best = 'true'
 

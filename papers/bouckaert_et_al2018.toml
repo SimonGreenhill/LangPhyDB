@@ -49,7 +49,7 @@ description = "306 Pama-Nyungan languages"
     [calibration.wati]
     taxa = ["wati1241"]
     age = "gamma(2.0, 359.0, 3000)+originate"
-    units = "y2000" # ybp
+    units = "y2000"
     description = "To capture this uncertainty, we constrained the age of the separation of the Wati lineage using a gamma distribution with a 95% highest posterior density interval between 5 ka and 3 ka and a probability mass skewed towards younger ages within this range (modelled as a gamma distribution with a 3,000 year offset, α =2 and β = 359). In addition, we constrained the breakup of the Wati subgroup to no later than 1.5 ka"
 
 

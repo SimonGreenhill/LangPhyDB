@@ -58,37 +58,37 @@ description = "86 Sino-Tibetan languages"
     [calibration.oldburmese]
     taxa = ["oldb1235"]
     age = "0.8"
-    units = "ybp"
+    units = "bp"
     description = "date of the earliest text rounded to the nearest century"
     
     [calibration.oldtibetan]
     taxa = ["oldm1245"]
     age = "1.2"  # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "date of the earliest text rounded to the nearest century"
 
     [calibration.tangut]
     taxa = ["tang1334"]
     age = "0.9"  # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "date of the earliest text rounded to the nearest century"
 
     [calibration.root]
     taxa = ["sino1245"]
     age = "uniform(5.0, 6.8)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "based on @Sagart2019"
 
     [calibration.protoeastbodish]
     taxa = ["east1469"]
     age = "normal(2.5, 0.5)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = ""
 
     [calibration.tani]
     taxa = ["tani1259"]
     age = "normal(1.35, 0.5)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = ""
 
 
@@ -115,19 +115,19 @@ description = "86 Sino-Tibetan languages"
     [inferredage.khobwa]
     taxa = ['khob1235']
     age = "hpd(2.843, 1.996, 3.747)"
-    units = "ybp"
+    units = "bp"
     details = ""
 
     [inferredage.hrusish]
     taxa = ['miji1239', 'hrus1242']
     age = "hpd(1.846, 1.121, 2.674)"
-    units = "ybp"
+    units = "bp"
     details = ""
 
     [inferredage.tshangla]
     taxa = ['tsha1247']
     age = "hpd(5.700, 4.413, 6.530)"
-    units = "ybp"
+    units = "bp"
     details = ""
     
     

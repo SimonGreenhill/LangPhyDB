@@ -64,79 +64,79 @@ description = "Numeral classifiers and number marking in Indo-Iranian"
     [calibration.root]
     taxa = ['indo1320']
     age = "uniform(3600, 3800)" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = ""
 
     [calibration.Sanskrit]
         taxa = ['sans1269']
         age = "uniform(3000, 3400)"
-        units = "ybp" # ybp
+        units = "bp" # before present
         description = ""
     
     [calibration.Pali]
         taxa = ['pali1273']
         age = "uniform(2000, 2300)"
-        units = "ybp" # ybp
+        units = "bp" # before present
         description = ""
     
     [calibration.Prakrit]
         taxa = ['maha1305']
         age = "uniform(2000, 2300)"
-        units = "ybp" # ybp
+        units = "bp" # before present
         description = ""
     
     [calibration.OldEastRajasthani]
         taxa = ['dhun1238']
         age = "uniform(200, 0400)"
-        units = "ybp" # ybp
+        units = "bp" # before present
         description = ""
     
     [calibration.Avestan]
         taxa = ['aves1237']
         age = "uniform(2600, 2800)"
-        units = "ybp" # ybp
+        units = "bp" # before present
         description = ""
     
     [calibration.KhotaneseSaka]
         taxa = ['khot1251']
         age = "uniform(1100, 1300)"
-        units = "ybp" # ybp
+        units = "bp" # before present
         description = ""
     
     [calibration.Khwarezmian]
         taxa = ['khwa1238']
         age = "uniform(800, 1000)"
-        units = "ybp" # ybp
+        units = "bp" # before present
         description = ""
     
     [calibration.Sogdian]
         taxa = ['sogd1245']
         age = "uniform(1000, 1200)"
-        units = "ybp" # ybp
+        units = "bp" # before present
         description = ""
     
     [calibration.Bactrian]
         taxa = ['bact1239']
         age = "uniform(1000, 1200)"
-        units = "ybp" # ybp
+        units = "bp" # before present
         description = ""
     
     [calibration.Parthian]
         taxa = ['part1239']
         age = "uniform(1800, 2000)"
-        units = "ybp" # ybp
+        units = "bp" # before present
         description = ""
     
     [calibration.MiddlePersian]
         taxa = ['pahl1241']
         age = "uniform(1400, 1800)"
-        units = "ybp" # ybp
+        units = "bp" # before present
         description = ""
     
     [calibration.OldPersian]
         taxa = ['oldp1254']
         age = "uniform(2300, 2500)"
-        units = "ybp" # ybp
+        units = "bp" # before present
         description = ""
     
 

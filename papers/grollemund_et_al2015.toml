@@ -48,25 +48,25 @@ description = "425 Bantu languages"
     [calibration.bantoid_vs_nonbantu]
     taxa = ["bant1294"]
     age = ">5000"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "5,000 B.P. or older for Bantoid, non-Bantu (58)"
 
     [calibration.narrowbantu]
     taxa = ["narr1281"]
     age = "uniform(4000, 5000)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "4,000–5,000 B.P. for Narrow Bantu (13, 14, 16, 44, 59, 60);"
     
     [calibration.mbambubi]
     taxa = ["bub1242", "mbam1252"]
     age = "uniform(3000, 3500)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "3,000–3,500 B.P. for the Mbam-Bubi ancestor"
 
     [calibration.easternbantu]
     taxa = ["east2731"]
     age = "2500"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "2,500 B.P. for Eastern Bantu (62)"
 
 ## Methods:
@@ -83,13 +83,13 @@ description = "425 Bantu languages"
     [inferredage.root]
     taxa = ['sout3152']
     age = "6929.7±418.6"
-    units = "ybp"
+    units = "bp"
     details = ""
 
     [inferredage.bantu]
     taxa = ['narr1281']
     age = "4846.5±138.1"
-    units = "ybp"
+    units = "bp"
     details = ""
 
 

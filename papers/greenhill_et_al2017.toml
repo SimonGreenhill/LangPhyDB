@@ -73,7 +73,7 @@ description = "81 Austronesian languages"
     [calibration.protoMalayoPolynesian]
     taxa = ['mala1545']
     age = "normal(4000, 250)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
     [calibration.protoMicronesian]

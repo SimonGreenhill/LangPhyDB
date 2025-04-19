@@ -69,25 +69,25 @@ description = ""
     [calibration.RuijuMyogisho]
     taxa = ['gifu1238']
     age = "850" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = ""
 
     [calibration.Bumoki]
     taxa = ['gifu1238']
     age = "450" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = ""
 
     [calibration.oldKagoshima]
     taxa = ['sats1241']
     age = "225" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = ""
 
     [calibration.root]
     taxa = ['japa1256']
     age = "uniform(850, 1500)" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "450 to 1100 AD"
 
 
@@ -157,25 +157,25 @@ description = ""
     [inferredage.root]
     taxa = ['japa1256']
     age = "hpd(1125, 1500)"  # 450 to 825
-    units = "ybp"
+    units = "bp"
     details = "The 95% credibility interval of the date of the common ancestor of all the modern dialects ranges from AD 450 to 825"
 
     [inferredage.Tokyo-type]
     taxa = ['?']
     age = "hpd(400, 950)"
-    units = "ybp"
+    units = "bp"
     details = "AD 1000–1550"
 
     [inferredage.Keihan-type]
     taxa = ['?']
     age = "hpd(850, 1125)"
-    units = "ybp"
+    units = "bp"
     details = "AD 825–1100"
 
     [inferredage.N-kei-type]
     taxa = ['?']
     age = "hpd(250, 900)"
-    units = "ybp"
+    units = "bp"
     details = "AD 1050–1700"
 
 

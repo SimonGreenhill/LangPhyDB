@@ -59,7 +59,7 @@ framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statis
     [calibration.zan]
     taxa = ['zann1245']
     age = "normal(1200, 10)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = ""
 
 
@@ -150,19 +150,19 @@ framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statis
     [inferredage.kart1248]
     taxa = ['kart1248']
     age = "hpd(7641, 1169, 18626)"
-    units = "ybp"
+    units = "bp"
     notes = ""
 
     [inferredage.geor1252]
     taxa = ["geor1252"]
     age = "hpd(2617, 1178, 4323)"
-    units = "ybp"
+    units = "bp"
     notes = ""
 
     [inferredage.zann1245]
     taxa = ["zann1245"]
     age = "hpd(1200, 1180, 1219)"
-    units = "ybp"
+    units = "bp"
     notes = "n.b. used a calibration"
 
 [links]

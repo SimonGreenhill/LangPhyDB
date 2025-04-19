@@ -145,7 +145,7 @@ description = "57 Transeurasian languages"
     [inferredage.tree2]
     taxa = ['tung1282', 'turk1311', 'japo1237', 'mong1329', 'kore1284']
     age = "hpd(2550, 7540)"
-    units = "ybp"
+    units = "bp"
     details = "Unfortunately, as far as timing is concerned, the root age of the inferred phylogeny has large uncertainty when using a Yule prior (95% HPD Interval [2.55kya, 7.54kya] a priori [4.33kya, 9.45kya] a posteriori), so we cannot draw firm conclusions on the timing aspects of our results."
 
 

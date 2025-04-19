@@ -53,19 +53,19 @@ description = ""
     [calibration.oldchinese]
     taxa = ["oldc1244"]
     age = "uniform(2800, 2300)"  # normal(x, y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Period of the great Classical Chinese texts"
 
     [calibration.oldtibetan]
     taxa = ["oldm1245"]
     age = "1200"  # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "date of the earliest text rounded to the nearest century"
 
     [calibration.sinotibetan]
     taxa = ['sino1245']
     age = "normal(7184, 500)"  # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Priors for the date of the root of our tree were taken from Sagart et al’.s final phylogenetic tree for the most recent common ancestor of the languages in our analysis (normal distribution with mean = 7,184 years BP, sigma = 500 years, 95% confidence intervals = [6200,8160])"
 
 

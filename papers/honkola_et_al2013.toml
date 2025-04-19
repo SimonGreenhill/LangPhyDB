@@ -55,19 +55,19 @@ description = "17 Uralic languages"
     [calibration.finnosamic]
     taxa = ['finn1317', 'saam1281']
     age = "normal(2630, 390)" # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "note: this is a normalisation of a uniform range"
 
     [calibration.permic]
     taxa = ['perm1256']
     age = "normal(1225, 60)" # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "note: this is a normalisation of a uniform range"
 
     [calibration.samoyedic]
     taxa = ["samo1298"]
     age = "normal(2030, 60)" # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "note: this is a normalisation of a uniform range"
 
 
@@ -89,7 +89,7 @@ description = "17 Uralic languages"
     [inferredage.uralic]
     taxa = ['ural1272']
     age = "hpd(6600, 3679, 10307)"
-    units = "ybp"
+    units = "bp"
     details = ""
 
 [links]

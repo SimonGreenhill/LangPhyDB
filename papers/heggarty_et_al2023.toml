@@ -107,364 +107,364 @@ description = "161 Indo-European languages"
     [calibration.Hittite]
     taxa = ['hitt1242']
     age = "normal(3450, 125)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.Luvian]
     taxa = ['cune1239']
     age = "normal(3350, 75)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.TocharianA]
     taxa = ['tokh1242']
     age = "normal(1375, 75)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.TocharianB]
     taxa = ['tokh1243']
     age = "normal(1350, 75)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.GreekMycenaean]
     taxa = ['myce1241']
     age = "normal(3350, 55)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.GreekAncient]
     taxa = ['anci1242']
     age = "normal(2400, 32)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.GreekNewTestament]
     taxa = ['koin1234']
     age = "normal(1900, 20)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.TsakonianPropontis]
     taxa = ['prop1240']
     age = "normal(40, 10)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.ArmenianClassical]
     taxa = ['clas1249']
     age = "normal(1550, 25)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.VedicEarly]
     taxa = ['sans1269']
     age = "lognormal(700, 3000, 1, realspace=True)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.Pali]
     taxa = ['pali1273']
     age = "normal(2450, 75)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.AvestanYounger]
     taxa = ['aves1237']
     age = "lognormal(350, 2550, 1, realspace=True)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.Khwarazmian]
     taxa = ['khwa1238']
     age = "normal(850, 75)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.Sogdian]
     taxa = ['sogd1245']
     age = "normal(1150, 25)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.Khotanese]
     taxa = ['khot1251']
     age = "normal(1500, 125)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.Bactrian]
     taxa = ['bact1239']
     age = "normal(1400, 25)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.Parthian]
     taxa = ['part1239']
     age = "normal(2100, 150)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.OldPersian]
     taxa = ['oldp1254']
     age = "normal(2450, 75)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.MiddlePersian]
     taxa = ['pahl1241']
     age = "normal(1600, 150)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.OldPrussian]
     taxa = ['prus1238']
     age = "normal(500, 50)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.OldChurchSlavonic]
     taxa = ['chur1257']
     age = "normal(1000, 50)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.SlovenianEarlyModern]
     taxa = ['slov1268']
     age = "normal(305, 15)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.OldPolish]
     taxa = ['poli1260']
     age = "normal(600, 50)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.Polabian]
     taxa = ['pola1255']
     age = "normal(320, 20)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.OldCzech]
     taxa = ['czec1258']
     age = "normal(656, 31)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.OldNovgorod]
     taxa = ['oldr1238']
     age = "normal(795, 107)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.Gothic]
     taxa = ['goth1244']
     age = "normal(1630, 10)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.OldIcelandic]
     taxa = ['oldn1244']
     age = "normal(800, 15)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.OldSwedish]
     taxa = ['swed1254']
     age = "normal(650, 75)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.OldEnglish]
     taxa = ['olde1238']
     age = "normal(1050, 50)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.OldFrisian]
     taxa = ['oldf1241']
     age = "normal(625, 35)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.OldSaxon]
     taxa = ['olds1250']
     age = "normal(1175, 15)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.OldHighGerman]
     taxa = ['oldh1241']
     age = "normal(1170, 5)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.MiddleHighGerman]
     taxa = ['midd1343']
     age = "normal(750, 25)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.MiddleDutch]
     taxa = ['midd1321']
     age = "normal(800, 15)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.Latin]
     taxa = ['lati1261']
     age = "normal(2050, 75)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.Dalmatian]
     taxa = ['dalm1243']
     age = "normal(130, 15)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.Anglo-Norman]
     taxa = ['angl1258']
     age = "normal(700, 50)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.OldOccitan]
     taxa = ['oldp1253']
     age = "normal(700, 50)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.OldCatalan]
     taxa = ['oldc1251']
     age = "normal(750, 25)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.OldSpanish]
     taxa = ['olds1249']
     age = "normal(750, 75)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.Oscan]
     taxa = ['osca1245']
     age = "normal(2200, 75)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.Umbrian]
     taxa = ['umbr1253']
     age = "normal(2150, 75)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.Gaulish]
     taxa = ['tran1282']
     age = "normal(2050, 125)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.OldBreton]
     taxa = ['oldb1248']
     age = "normal(1050, 75)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.MiddleBreton]
     taxa = ['midd1359']
     age = "normal(450, 50)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.MiddleCornish]
     taxa = ['mode1263']
     age = "normal(700, 100)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.LateCornish]
     taxa = ['oldc1252']
     age = "normal(300, 50)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.OldWelsh]
     taxa = ['oldw1241']
     age = "normal(1050, 75)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.MiddleWelsh]
     taxa = ['midd1363']
     age = "normal(650, 75)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.OldIrish]
     taxa = ['oldi1245']
     age = "normal(1250, 50)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
     [calibration.GaelicManx]
     taxa = ['manx1243']
     age = "normal(200, 30)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 
@@ -600,235 +600,235 @@ description = "161 Indo-European languages"
     [inferredage.M3_ProtoIndoEuropean]
     taxa = ["indo1319"]
     age = "hpd(6981, 9613, 6735)"
-    units = "ybp"
+    units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_BaltoSlavic_Italic_Germanic_Celtic]
     taxa = ["balt1263", "ital1284", "germ1287", "celt1248"]
     age = "hpd(6465, 7944, 5036)"
-    units = "ybp"
+    units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Italic_Germanic_Celtic]
     taxa = ["ital1284", "germ1287", "celt1248"]
     age = "hpd(5564, 6984, 4231)"
-    units = "ybp"
+    units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Indo-Iranic]
     taxa = ["indo1320"]
     age = "hpd(5520, 6796, 4535)"
-    units = "ybp"
+    units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Greco-Armenian]
     taxa = ["gree1276", "arme1241"]
     age = "hpd(5310, 6930, 3999)"
-    units = "ybp"
+    units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Balto-Slavic]
     taxa = ["balt1263"]
     age = "hpd(3663, 5034, 2531)"
-    units = "ybp"
+    units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Anatolian]
     taxa = ["anat1257"]
     age = "hpd(4618, 5620, 3857)"
-    units = "ybp"
+    units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Indic]
     taxa = ["indo1321"]
     age = "hpd(4366, 5253, 3640)"
-    units = "ybp"
+    units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Iranic]
     taxa = ["iran1269"]
     age = "hpd(4110, 4894, 3464)"
-    units = "ybp"
+    units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Italic]
     taxa = ["ital1284"]
     age = "hpd(3431, 4286, 2771)"
-    units = "ybp"
+    units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Greek]
     taxa = ["gree1276"]
     age = "hpd(3364, 3609, 3218)"
-    units = "ybp"
+    units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Celtic]
     taxa = ["celt1248"]
     age = "hpd(3205, 3963, 2515)"
-    units = "ybp"
+    units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Baltic]
     taxa = ["east2280"]
     age = "hpd(2439, 3484, 1526)"
-    units = "ybp"
+    units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Germanic]
     taxa = ["germ1287"]
     age = "hpd(2337, 2865, 1931)"
-    units = "ybp"
+    units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Tocharian]
     taxa = ["tokh1241"]
     age = "hpd(1828, 2315, 1495)"
-    units = "ybp"
+    units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Armenian]
     taxa = ["arme1241"]
     age = "hpd(1578, 1851, 1485)"
-    units = "ybp"
+    units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Slavic]
     taxa = ["slav1255"]
     age = "hpd(1493, 1837, 1222)"
-    units = "ybp"
+    units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Albanian]
     taxa = ["alba1267"]
     age = "hpd(1067, 1882, 468)"
-    units = "ybp"
+    units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M1_ProtoIndoEuropean]
     taxa = ["indo1319"]
     age = "hpd(8288, 7078, 9544)"
-    units = "ybp"
+    units = "bp"
     details = ''
 
     [inferredage.M2_ProtoIndoEuropean]
     taxa = ["indo1319"]
     age = "hpd(7586, 6117, 9235)"
-    units = "ybp"
+    units = "bp"
     details = ''
 
     [inferredage.M4_ProtoIndoEuropean]
     taxa = ["indo1319"]
     age = "hpd(8171, 6800, 9631)"
-    units = "ybp"
+    units = "bp"
     details = ''
 
     [inferredage.SA1_ProtoIndoEuropean]
     taxa = ["indo1319"]
     age = "hpd(8214, 6785, 9571)"
-    units = "ybp"
+    units = "bp"
     details = "With Vedic and Avestan tip calibrations removed"
 
     [inferredage.SA2_ProtoIndoEuropean]
     taxa = ["indo1319"]
     age = "hpd(7934, 6487, 9455)"
-    units = "ybp"
+    units = "bp"
     details = "With parallel loans as unique cognate sets"
 
     [inferredage.SA3_ProtoIndoEuropean]
     taxa = ["indo1319"]
     age = "hpd(8812, 6648, 11419)"
-    units = "ybp"
+    units = "bp"
     details = "With prior conditioned on MRCA, not origin"
 
     [inferredage.SA4a_ProtoIndoEuropean]
     taxa = ["indo1319"]
     age = "hpd(8064, 6582, 9585)"
-    units = "ybp"
+    units = "bp"
     details = "Sampling probability assuming 200-400 taxa"
 
     [inferredage.SA4b_ProtoIndoEuropean]
     taxa = ["indo1319"]
     age = "hpd(8177, 6838, 9595)"
-    units = "ybp"
+    units = "bp"
     details = "Sampling probability assuming 600-800 taxa"
 
     [inferredage.SA5_ProtoIndoEuropean]
     taxa = ["indo1319"]
     age = "hpd(8118, 6590, 9616)"
-    units = "ybp"
+    units = "bp"
     details = "Without ten languages with high missing data rates"
 
     [inferredage.SA6a_ProtoIndoEuropean]
     taxa = ["indo1319"]
     age = "hpd(8924, 7795, 9917)"
-    units = "ybp"
+    units = "bp"
     details = "With targeted lower-order clade constraints"
 
     [inferredage.SA6b_ProtoIndoEuropean]
     taxa = ["indo1319"]
     age = "hpd(8564, 7228, 9795)"
-    units = "ybp"
+    units = "bp"
     details = "With higher-order clade constraints to enforce Ringe & Anthony (2015) tree topology"
 
     [inferredage.SA7a_ProtoIndoEuropean]
     taxa = ["indo1319"]
     age = "hpd(7789, 6369, 9359)"
-    units = "ybp"
+    units = "bp"
     details = "With ancestry constraint: Latin only."
 
     [inferredage.SA7b_ProtoIndoEuropean]
     taxa = ["indo1319"]
     age = "hpd(8074, 6660, 9527)"
-    units = "ybp"
+    units = "bp"
     details = "Ancestry constraints: 5 with posterior probability >0"
 
     [inferredage.SA7c_ProtoIndoEuropean]
     taxa = ["indo1319"]
     age = "hpd(7614, 6239, 9182)"
-    units = "ybp"
+    units = "bp"
     details = "Ancestry constraints: all 27 remotely conceivable"
 
     [inferredage.SA8a_ProtoIndoEuropean]
     taxa = ["indo1319"]
     age = "hpd(8629, 7300, 9813)"
-    units = "ybp"
+    units = "bp"
     details = "M3 on Chang et al. (2015) broad data-set (not IE-CoR!) ancestry-enabled but with no ancestry constraints"
 
     [inferredage.SA8b_ProtoIndoEuropean]
     taxa = ["indo1319"]
     age = "hpd(4997, 4288, 5816)"
-    units = "ybp"
+    units = "bp"
     details = "M3 on Chang et al. (2015) broad data-set (not IE-CoR!) with their eight ancestry constraints"
 
     [inferredage.SA9_ProtoIndoEuropean]
     taxa = ["indo1319"]
     age = "hpd(7955, 6427, 9436)"
-    units = "ybp"
+    units = "bp"
     details = "Excluding 57 meanings reconstructed in main analysis as having ancestral state polymorphism per meaning"
 
     [inferredage.SA10_ProtoIndoEuropean]
     taxa = ["indo1319"]
     age = "hpd(6153, 4926, 7884)"
-    units = "ybp"
+    units = "bp"
     details = "With a multistate (rather than binary) model of cognate evolution"
 
 

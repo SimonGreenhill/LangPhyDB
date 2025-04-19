@@ -50,7 +50,7 @@ description = ""
     [calibration.label]
     taxa = []
     age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = ""
 
 
@@ -72,7 +72,7 @@ description = ""
     [inferredage.label]
     taxa = []
     age = "hpd(median, lower, upper)"
-    units = "ybp"
+    units = "bp"
     notes = ""
 
 

@@ -62,25 +62,25 @@ description = "28 Aslian languages"
     [calibration.root]
     taxa = ['asli1243']
     age = "normal(4000, 500)" # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = ""
 
     [calibration.protomahmeri]
     taxa = ['besi1244']
     age = "normal(2000, 200)" # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = """All three scenarios in Bulbeck 2004 connect Proto-Mah Meri (or "Proto-Besisi," in his terminology) with Early Metal Phase coastal finds at 2000 BP."""
 
     [calibration.temiarlamoh]
     taxa = ['lano1244']
     age = "lognormal(2000, 200, 0, realspace=True)" # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = """Proto-Temiar-Lanoh; all three scenarios in Bulbeck (2004) connect Proto-Temiar-Lanoh with the appearance of bronze in the Lenggong Valley by 2,000 BP."""
 
     [calibration.maniqmenraqbatek]
     taxa = ['mani1290']
     age = "normal(1750, 250)" # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = """Growth of Sathing Phra civilization in South Thailand, starting around 2,000 BP and expanding significantly around 1,500 BP; Benjamin connects development of Semang culture with this growth; start of Sathing Phra coincides with the start of the early Metal phase; most likely timing of Proto-MMB split at the beginning of this period? (based on Benjamin 1985; Andaya 2008)"""
 
 
@@ -160,7 +160,7 @@ description = "28 Aslian languages"
     [inferredage.aslian]
     taxa = ['asli1243']
     age = "hpd(4305, 2943, 6570)"
-    units = "ybp"
+    units = "bp"
     details = "from analysis.dating (i.e. without the root calibration of root.calibration)"
 
 

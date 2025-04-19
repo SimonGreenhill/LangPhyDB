@@ -46,56 +46,56 @@ description = "10 Chapacuran languages"
     taxa = ["chap1269"]
     # corrected for 2010 starting 180 - (2010 - 1950)
     age = "120"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Although the primary source of data on Tapakura and Kitemoka was only published in the early twentieth century in Créqui-Montfort and Rivet (1913), the data were originally collected during d'Orbigny's trip through lowland Bolivia, which took place between 1826 and 1833."
 
     [calibration.kitemoka]
     taxa = ["kite1237"]
     # corrected for 2010 starting 180 - (2010 - 1950)
     age = "120"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Although the primary source of data on Tapakura and Kitemoka was only published in the early twentieth century in Créqui-Montfort and Rivet (1913), the data were originally collected during d'Orbigny's trip through lowland Bolivia, which took place between 1826 and 1833"
 
     [calibration.tapekura_and_kitemoka]
     taxa = ["kite1238"]
     # corrected for 2010 starting 236 - (2010 - 1950)
     age = "lognormal(250, 0.6, 176, realspace=True)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "The Tapakura people were first contacted in the 1580s during an expedition led by Lorenzo Suarez de Figueroa (Meireles 1989:66). By 1630, the Tapakuras were already in close contact with Jesuit missionaries and portions of the population were considered yanacona, a regional term meaning serf or servant of the Spaniards (Maurtua 1909 [cited in Métraux 1948]). However, the first clear mention of the Kitemoka people is not until the settlement of the mission Concepción de Chiquitos in 1707 (d'Orbigny 1839a:596). Calibration: This calibration was implemented as a log-normal distribution with a mean of 250 years (in real space), a standard deviation of 0.6, and an offset of 236 years."
 
     [calibration.tora]
     taxa = ["tora1263"]
     # corrected for 2010 starting 90 - (2010 - 1950)
     age = "30"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "The data available for both Torá and Urupá were collected in 1922 by the anthropologist Curt Nimuendajú. The Urupá data were collected at Colônia Rodolfo Miranda and the Torá data were collected along settlements on the lower Marmelos River (Nimuendajú 1925)."
 
     [calibration.urupa]
     taxa = ["urup1245"]
     # corrected for 2010 starting 90 - (2010 - 1950)
     age = "30"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "The data available for both Torá and Urupá were collected in 1922 by the anthropologist Curt Nimuendajú. The Urupá data were collected at Colônia Rodolfo Miranda and the Torá data were collected along settlements on the lower Marmelos River (Nimuendajú 1925). Calibration: 90 years ago."
 
     [calibration.toradivergence]
     taxa = ["tora1263"]
     # corrected for 2010 starting 170 - (2010 - 1950)
     age = "lognormal(300, 0.4, 110, realspace=True)+originate"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "The earliest known mention of the Torá comes from a letter written by Jesuit priest Bartolomeu Rodrigues in 1714 during his travels along the lower Madeira River (Menéndez 1981). In 1716, the Torá were attacked by an expedition led by the captain general of Pará, João de Barros Guerra, in reprisal for their raids on the villages and transport ships along the lower Madeira and middle Amazonas rivers (Nimuendajú 1925). Calibration: This calibration was implemented on the stem of the lineage leading to the Torá tip. The probability distribution was modeled using a log-normal distribution with a mean of 300 years (in real space), a standard deviation of 0.4, and an offset of 170 years. This distribution had 95% of its values between 296 years and 777 years, with a median of 447 years."
 
     [calibration.yarutip]
     taxa = ["yaru1257"]
     # corrected for 2010 starting 80 - (2010 - 1950)
     age = "20"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "The only data available on the Jarú language were collected in 1927 at the Colônia Rodolfo Miranda by members of the Comissão Rondon (Rondon and de Faria 1948). Calibration: 80 years ago."
 
     [calibration.morecojubim]
     taxa = ["yaru1257"]
     # corrected for 2010 starting 179 - (2010 - 1950)
     age = "lognormal(201, 0.6, 119, realspace=True)+179"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "The Moré and the Cojubim speak similar languages but are geographically separated by the lower Guaporé River. The Moré were first contacted in the 1740s as Jesuit missions spread into the Bolivian lower Guaporé basin. No known mention is made of the Cojubim (Cautarios) as a distinct ethnic group in the historical record until an expedition led by Portuguese military engineer Ricardo Franco de Almeida Serra in 1781 (Almeida Serra 1857:422). Calibration: This calibration was implemented as a log-normal probability distribution with a mean of 201 years (in real space), a standard deviation of 0.6, and an offset of 179 years. This gave a probability distribution where 95% of the values were between 231 years and 723 years, with a median of 347 years."
 
 
@@ -145,26 +145,26 @@ description = "10 Chapacuran languages"
     [inferredage.tree2]
     taxa = ['chap1271']
     age = "hpd(1039, 525, 1619)"
-    units = "ybp"
+    units = "bp"
     details = "best fitting model"
     best = "true"
 
     [inferredage.tree1]
     taxa = ['chap1271']
     age = "hpd(1207, 783, 1692)"
-    units = "ybp"
+    units = "bp"
     details = ""
 
     [inferredage.tree3]
     taxa = ['chap1271']
     age = "hpd(1276, 793, 1831)"
-    units = "ybp"
+    units = "bp"
     details = ""
 
     [inferredage.tree4]
     taxa = ['chap1271']
     age = "hpd(1320, 899, 1812)"
-    units = "ybp"
+    units = "bp"
     details = ""
 
 

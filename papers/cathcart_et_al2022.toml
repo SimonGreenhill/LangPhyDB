@@ -59,7 +59,7 @@ framework = ['bayesian']
     [calibration.root]
     taxa = ['indo1319']
     age = "normal(6500, 2000)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = ""
 
 
@@ -94,7 +94,7 @@ framework = ['bayesian']
     [inferredage.root]
     taxa = ['indo1319']
     age = "hpd(7139, 6850, 7396)"
-    units = "ybp"
+    units = "bp"
     notes = ""
 
 

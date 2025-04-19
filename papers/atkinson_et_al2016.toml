@@ -92,13 +92,13 @@ description = "Model the effect of nine ecological and two cultural variables on
     [calibration.poc]
     taxa = ['ocea1241']
     age = "normal(3200, 100)" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "y2000" # ybp
+    units = "y2000"
     description = ""
 
     [calibration.pep]
     taxa = ['east2449']
     age = "normal(1400, 200)" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "y2000" # ybp
+    units = "y2000"
     description = ""
 
 # analysis information

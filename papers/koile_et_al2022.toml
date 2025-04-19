@@ -56,25 +56,25 @@ description = "636 Bantu languages"
     [calibration.bantoid_vs_nonbantu]
     taxa = ["bant1294"]
     age = "lognormal(4000, 0.8, 4220, realspace=True)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "5,000 B.P. or older for Bantoid, non-Bantu (58)"
 
     [calibration.narrowbantu]
     taxa = ["narr1281"]
     age = "lognormal(400, 0.8, 3920, realspace=True)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "4,000–5,000 B.P. for Narrow Bantu (13, 14, 16, 44, 59, 60);"
     
     [calibration.mbambubi]
     taxa = ["bub1242", "mbam1252"]
     age = "lognormal(200, 0.8, 2960, realspace=True)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "3,000–3,500 B.P. for the Mbam-Bubi ancestor"
 
     [calibration.easternbantu]
     taxa = ["east2731"]
     age = "lognormal(10, 2.0, 2495, realspace=True)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "2,500 B.P. for Eastern Bantu (62)"
 
 # analysis information
@@ -145,14 +145,14 @@ description = "636 Bantu languages"
     [inferredage.root]
     taxa = ['bant1294']
     age = "hpd(4940, 4500, 5400)"
-    units = "ybp"
+    units = "bp"
     details = ""
     best = 'true'
     
     [inferredage.sout3152]
     taxa = ['sout3152']
     age = "hpd(4140, 3950, 4380)"
-    units = "ybp"
+    units = "bp"
     details = ""
     best = 'true'
 

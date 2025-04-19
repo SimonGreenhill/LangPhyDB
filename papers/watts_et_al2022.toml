@@ -90,7 +90,7 @@ description = ""
     [inferredage.label]
     taxa = []
     age = "hpd(median, lower, upper)"
-    units = "ybp"
+    units = "bp"
     notes = ""
 
 

@@ -61,19 +61,19 @@ description = "A phylogenetic analysis of the Mixtecan languages"
     [calibration.tip1]
     taxa = ['chic1273']
     age = "60" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = ""
 
     [calibration.tip2]
     taxa = ['diux1235']
     age = "350" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = ""
 
     [calibration.tip3]
     taxa = ['tepe1280']
     age = "50" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = ""
 
 

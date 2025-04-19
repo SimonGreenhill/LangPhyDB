@@ -46,7 +46,7 @@ description = "15 Koreanic languages"
     [calibration.middlekorean]
     taxa = ['midd1372']
     age = "normal(500, 100)" # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "tip calibration"
 
 

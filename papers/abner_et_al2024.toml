@@ -149,3 +149,7 @@ phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/abn
 cldf = { title = "CLDF Dataset", link = "" }
 dplace = { title = "D-PLACE Dataset", link = "" }
 links = []
+dataset = [
+    "https://doi.org/10.5061/dryad.bnzs7h4h1",
+    "https://github.com/GClarte/SignLanguagesPhylogeny"
+]

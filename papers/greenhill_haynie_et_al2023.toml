@@ -61,7 +61,7 @@ description = "33 Uto-Aztecan and Kiowa-Tanoan languages"
     [calibration.northua]
     taxa = ['nort2953']
     age = "lognormal(500, 0.5, 2790, realspace=True)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = """Both Fowler (1983) and Hill (2015)
 argue that the dispersal of Proto-Northern Uto-Aztecan speakers is unlikely to have oc-
 curred before the earliest attested dates of mesquite (Prosopis spp.) in the area ~3,490
@@ -72,13 +72,13 @@ set by 2,790 years, such that the median age was 3,230 years with a 95% range fr
     [calibration.nahua]
     taxa = ['azte1234']
     age = "lognormal(290, 0.7, 1510, realspace=True)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "We implemented this as a log-normal calibration (μ = 290, σ = 0.7) offset by 1,510 years, such that the median age was 1,740 years with a 95% range from 1,570–2,410 years. "
     
     [calibration.numic]
     taxa = ['numi1242']
     age = "lognormal(120, 1.0, 1280, realspace=True)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = """We implemented this as a log-normal calibration (μ = 120,
 σ = 1) offset by 1,280 years, such that the median age was 1,350 years with a 95% range
 from 1,290–1,800 years."""
@@ -86,7 +86,7 @@ from 1,290–1,800 years."""
     [calibration.takic]
     taxa = ['unun9949']
     age = "lognormal(510, 0.5, 2526, realspace=True)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = """To capture these possibilities, we implemented this calibration as a log-normal
 distribution (μ = 510 years, σ = 0.50) offset by 2,526 years, such that the median age
 was 2,980 years with a 95% range from 2,690–3,730 years."""
@@ -94,7 +94,7 @@ was 2,980 years with a 95% range from 2,690–3,730 years."""
     [calibration.tubatulabel_origin]
     taxa = ['tuba1278']
     age = "lognormal(120, 1.0, 2380, realspace=True)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = """We implemented this as a log-normal calibration (μ = 120, σ = 1) offset
 by 2,380 years, such that the median age was 2,450 years with a 95% range from 2,390–
 2,900 years."""
@@ -102,7 +102,7 @@ by 2,380 years, such that the median age was 2,450 years with a 95% range from 2
     [calibration.tip_nahuatl]
     taxa = ['clas1250']
     age = "445"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "originally sourced from the dictionary of Alonso de Molina (1571),"
 
 # analysis information
@@ -222,7 +222,7 @@ by 2,380 years, such that the median age was 2,450 years with a 95% range from 2
     [inferredage.pua]
     taxa = ['utoa1244']
     age = "hpd(4100, 3258, 5025)"
-    units = "ybp"
+    units = "bp"
     details = ""
 
 

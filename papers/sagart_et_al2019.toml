@@ -46,25 +46,25 @@ description = "50 Sino-Tibetan languages"
     [calibration.oldchinese]
     taxa = ["oldc1244"]
     age = "uniform(2800, 2300)"  # normal(x, y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Period of the great Classical Chinese texts"
 
     [calibration.oldburmese]
     taxa = ["oldb1235"]
     age = "800"  # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "date of the earliest text rounded to the nearest century"
     
     [calibration.oldtibetan]
     taxa = ["oldm1245"]
     age = "1200"  # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "date of the earliest text rounded to the nearest century"
 
     [calibration.tangut]
     taxa = ["tang1334"]
     age = "900"  # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "date of the earliest text rounded to the nearest century"
 
 # analysis information
@@ -101,7 +101,7 @@ description = "50 Sino-Tibetan languages"
     [inferredage.root]
     taxa = ['sino1245']
     age = "hpd(7184, 5093, 9568)"
-    units = "ybp"
+    units = "bp"
     details = "best fitting model"
     best = 'true'
 

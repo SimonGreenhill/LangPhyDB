@@ -47,62 +47,62 @@ description = "25 Semitic languages"
     [calibration.akkadian]
     taxa = ['akka1240']
     age = "2800" # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "tip calibration"
 
     [calibration.biblicalaramaic]
     taxa = ['impe1235']
     age = "1800" # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "tip calibration"
 
     [calibration.geez]
     taxa = ['geez1241']
     age = "1700" # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "tip calibration"
 
     [calibration.ancienthebrew]
     taxa = ['anci1244']
     age = "2600" # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "tip calibration"
 
     [calibration.ugaritic]
     taxa = ['ugar1238']
     age = "3400" # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "tip calibration"
 
     # clades
     [calibration.hebrewclade]
     taxa = ['hebr1246']
     age = "uniform(3200, 4200)" # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = ""
 
     [calibration.ugariticclade]
     taxa = ['ugar1238']
     age = "uniform(3400, 4400)" # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = ""
 
     [calibration.aramaicclade]
     taxa = ['aram1259']
     age = "uniform(2850, 3850)" # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = ""
 
     [calibration.amharicclade]
     taxa = ['amha1245']
     age = "uniform(700, 1700)" # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = ""
 
     [calibration.root]
     taxa = ['semi1276']
     age = "uniform(4350, 8000)" # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = ""
 
 # analysis information
@@ -125,49 +125,49 @@ description = "25 Semitic languages"
     [inferredage.root]
     taxa = ['semi1276']
     age = "hpd(5750, 4400, 7400)"
-    units = "ybp"
+    units = "bp"
     details = "note: nested within a uniform(4350, 8000)"
     best = 'true'
 
     [inferredage.cent2236]
     taxa = ['cent2236']
     age = "hpd(4450, 3650, 5800)"
-    units = "ybp"
+    units = "bp"
     details = ""
     best = 'true'
 
     [inferredage.nort3165]
     taxa = ['nort3165']
     age = "hpd(4050, 3750, 4400)"
-    units = "ybp"
+    units = "bp"
     details = ""
     best = 'true'
 
     [inferredage.arab1394]
     taxa = ['arab1394']
     age = "hpd(850, 400, 1370)"
-    units = "ybp"
+    units = "bp"
     details = ""
     best = 'true'
 
     [inferredage.southsemitic]
     taxa = ['ethi1244', 'mode1252']
     age = "hpd(4650, 3300, 6250)"
-    units = "ybp"
+    units = "bp"
     details = ""
     best = 'true'
 
     [inferredage.mode1252]
     taxa = ['mode1252']
     age = "hpd(2050, 1100, 3100)"
-    units = "ybp"
+    units = "bp"
     details = ""
     best = 'true'
 
     [inferredage.ethi1244]
     taxa = ['ethi1244']
     age = "hpd(2850, 2000, 3800)"
-    units = "ybp"
+    units = "bp"
     details = ""
     best = 'true'
 

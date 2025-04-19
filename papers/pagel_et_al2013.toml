@@ -71,7 +71,7 @@ description = "Attempt to identify the deeper relationships between language fam
     [calibration.pie]
     taxa = ['indo1319']
     age = "normal(8700, 544)" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "from @GrayAtkinson2003"
 
 # analysis information

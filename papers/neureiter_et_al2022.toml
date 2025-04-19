@@ -67,73 +67,73 @@ description = "Presentation of contacTrees, a Bayesian phylogenetic model to inf
     [calibration.tmrca_Brythonic]
     taxa = ["bryt1239"]
     age = "normal(1550.0, 100.0)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
     [calibration.tmrca_FrenchIberian]
     taxa = ["west2813"]
     age = "normal(1400.0, 100.0)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
     [calibration.tmrca_WestGermanic]
     taxa = ["west2793"]
     age = "normal(1550.0, 100.0)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
     [calibration.tmrca_Northwest-Germanic]
     taxa = ["nort3152"]
     age = "normal(1875.0, 150.0)"
-    units = "ybp"
+    units = "bp"
     description = ""
     
     [calibration.tmrca_Celtic]
     taxa = ["celt1248"]
     age = "uniform(1700.0, 10000.0)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
     [calibration.oldirish_height]
     taxa = ["oldi1245"]
     age = "normal(1250.0, 100.0)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
     [calibration.oldnorse_height]
     taxa = ["oldn1244"]
     age = "normal(775.0, 100.0)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
     [calibration.oldhighgerman_height]
     taxa = ["oldh1241"]
     age = "normal(1050.0, 100.0)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
     [calibration.oldenglish_height]
     taxa = ["olde1238"]
     age = "normal(1000.0, 100.0)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
     [calibration.latin_height]
     taxa = ["lati1261"]
     age = "normal(2050.0, 150.0)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
     [calibration.latin_chain_1]
     taxa = ["lati1261", 'medi1250']
     age = "normal(2050.0, 10.0)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
     [calibration.latin_chain_2]
     taxa = ["lati1261", 'medi1250', 'late1252']
     age = "normal(1000.0, 10.0)"
-    units = "ybp"
+    units = "bp"
     description = ""
 
 # analysis information
@@ -167,11 +167,11 @@ description = "Presentation of contacTrees, a Bayesian phylogenetic model to inf
     [inferredage.Celtic-Germanic-Romance_CT]
     taxa = []
     age = "5384.0"
-    units = "ybp"
+    units = "bp"
     notes = "with contact edges"
     
     [inferredage.Celtic-Germanic-Romance_noCT]
     taxa = []
     age = "7206.2"
-    units = "ybp"
+    units = "bp"
     notes = ""

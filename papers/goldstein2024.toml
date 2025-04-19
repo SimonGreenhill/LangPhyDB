@@ -55,7 +55,7 @@ description = ""
     [calibration.latin]
     taxa = ['lati1261']
     age = "uniform(1900, 2200)" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "y2000" # ybp
+    units = "y2000"
     description = ""
 
 # analysis information

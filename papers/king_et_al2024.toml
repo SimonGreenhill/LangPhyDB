@@ -58,7 +58,7 @@ description = ""
     [calibration.root]
     taxa = ['aust1307']
     age = "normal(5200, 100)" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "The prior on the root of the tree was a normal distribution on 5200 years BP, with a standard deviation of 100, based on the results of Gray, et al.45"
 
 
@@ -99,7 +99,7 @@ description = ""
     [inferredage.philippines]
     taxa = []
     age = "hpd(3379, 2570, 4208)"
-    units = "ybp"
+    units = "bp"
     notes = "3379 BP (HPD 2570–4208)"
 
 

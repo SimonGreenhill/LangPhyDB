@@ -106,7 +106,7 @@ description = "19 Ainu languages"
     [inferredage.ainu]
     taxa = ['ainu1252']
     age = "hpd(1288, 820, 1862)"
-    units = "ybp"
+    units = "bp"
     details = ""
     best = "true"
 

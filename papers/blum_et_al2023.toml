@@ -53,7 +53,7 @@ description = "39 Quechua varieties"
     [calibration.root]
     taxa = ['quec1387']
     age = "normal(750, 100)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "only for stability?"
 
 

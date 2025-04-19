@@ -55,31 +55,31 @@ framework = ['bayesian', 'network']
     [calibration.ukit_buket]
     taxa = ["buka1263"]
     age = "uniform(250, 350)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = ""
 
     [calibration.punan]
     taxa = ["puna1280"]
     age = "uniform(500, 600)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = ""
 
     [calibration.tunjung_benuaq]
     taxa = ["grea1283"]
     age = "uniform(600, 5000)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = ""
 
     [calibration.maanyan_dusun]
     taxa = ["maan1238", "dusu1267"]
     age = "uniform(1300, 1400)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = ""
 
     [calibration.root]
     taxa = []
     age = "uniform(0, 10000)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = ""
 
 
@@ -139,13 +139,13 @@ framework = ['bayesian', 'network']
     [inferredage.mrbayes_unconstrained]
     taxa = ["nort3253", "land1261", "mala1536", "grea1283"]  # Borneo
     age = "hpd(2692, 2085, 3421)"
-    units = "ybp"
+    units = "bp"
     notes = ""
 
     [inferredage.mrbayes_constrained]
     taxa = ["nort3253", "land1261", "mala1536", "grea1283"]  # Borneo
     age = "hpd(2992, 2318, 3900)"
-    units = "ybp"
+    units = "bp"
     notes = ""
 
 

@@ -55,7 +55,7 @@ description = "6 Austroasiatic languages"
     [calibration.khasi]
     taxa = ['khas1274']
     age = "uniform(600, 800)" # x, normal(x, y), uniform(x,y)
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "the Buranji chronicles of the Ahom kingdom apparently reference the Pnar kingdom at Jaintia about 500 years before present, which suggests a floor under the separation of Khasi and Pnar (e.g. Gait 1906:255 lists Jaintia kings from approximately 1500 AD onwards)"
 
 
@@ -77,13 +77,13 @@ description = "6 Austroasiatic languages"
     [inferredage.Khasi]
     taxa = ['khas1268']
     age = "hpd(1350, 1028, 1737)"
-    units = "ybp"
+    units = "bp"
     details = ""
 
     [inferredage.KhasiPnar]
     taxa = ['khas1274']
     age = "hpd(535, 500, 603)"
-    units = "ybp"
+    units = "bp"
     details = ""
 
 

@@ -54,25 +54,25 @@ description = ""
     [calibration.VedicSanskrit]
     taxa = ['sans1269']
     age = "3200"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Vedic Sanskrit (san)"
 
     [calibration.AncientGreek]
     taxa = ["anci1242"]
     age = "2400"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Ancient Greek (grc)"
 
     [calibration.OldChurchSlavonic]
     taxa = ['chur1257']
     age = "1000"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Old Church Slavic (chu)"
 
     [calibration.OldEnglish]
     taxa = ['olde1238']
     age = "1000"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "Old English (ang)"
 
 
@@ -96,7 +96,7 @@ description = ""
     [inferredage.pie]
     taxa = ["indo1319"]
     age = "6200"
-    units = "ybp"
+    units = "bp"
     notes = "ml estimate"
 
 

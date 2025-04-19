@@ -57,43 +57,43 @@ framework = ['bayesian']
     [calibration.Kra]
     taxa = ["kada1291"]
     age = "normal(2500, 250)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "The splits of Kra languages  occurred from the Shang Dynasty to Han Dynasty"
 
     [calibration.Hlai]
     taxa = ["hlai1239"]
     age = "uniform(0, 3000)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "The ancestry of Hlai people started the migration to Hainan Island at roughly 4000-5000 years BP, and further migrated into the Wuzhishan mountain region of present Hainan province after the ancestry of Ong-Be people migrated into Northern Hainan Island at approximately 2500 years BP."
 
     [calibration.Hlai_Originate]
     taxa = ["hlai1239"]
     age = "uniform(0, 5000)+originate"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "The ancestry of Hlai languages started the migration to Hainan Island at roughly 4000-5000 years BP, and further migrated into the Wuzhishan mountain region of present Hainan province after the ancestry of Ong-Be languages migrated into Northern Hainan Island at approximately 2500 years BP."
 
     [calibration.Ong-Be]
     taxa = ["ling1270"]
     age = "normal(2000, 250)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "The ancestry of Ong-Be languages migrated into Northern Hainan Island at approximately 2500 years BP."
 
     [calibration.Kam-Sui]
     taxa = ["kams1241"]
     age = "normal(1200, 100)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "During the Sui and Tang dynasties, the ancestors of Dong and Mulam people started northwestward migration from Western Guangdong and Eastern Guangxi provinces to the Rongjiang county of Guizhou province, and further gradually dispersed to the border area of Hunan, Guizhou, Guangxi provinces."
 
     [calibration.Biao_Lakkia]
     taxa = ["lakk1237"]
     age = "normal(600, 50)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "The splits of Biao and Lakkia languages occurred at 600 - 700 years BP."
 
     [calibration.Tai]
     taxa = ["sout3184"]
     age = "uniform(0, 2220)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     description = "The ancestry of southwest Tai languages (e.g. Shan, Dai, Thai) migrated westward after Qin unified six States (~2200 years BP). Thus, the divergence of proto-Tai languages occurred no more than 2200 years BP."
 
 
@@ -148,42 +148,42 @@ framework = ['bayesian']
     [inferredage.Proto-Kra-Dai]
     taxa = ["taik1256"]
     age = "hpd(4041, 2741, 5550)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     details = ""
     best = "true"
 
     [inferredage.Proto-Kra]
     taxa = ["kada1291"]
     age = "hpd(2435, 1967, 2909)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     details = ""
     best = "true"
 
     [inferredage.Proto-Hlai]
     taxa = ["hlai1238"]
     age = "hpd(1155, 443, 2035)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     details = ""
     best = "true"
 
     [inferredage.Proto-Ong-Be]
     taxa = ["ling1270"]
     age = "hpd(1750, 1299, 2226)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     details = ""
     best = "true"
 
     [inferredage.Proto-Kam-Sui]
     taxa = ["kams1241"]
     age = "hpd(1222, 1044, 1410)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     details = ""
     best = "true"
 
     [inferredage.Proto-Tai]
     taxa = ["daic1237"]
     age = "hpd(1360, 873, 1903)"
-    units = "ybp" # ybp
+    units = "bp" # before present
     details = ""
     best = "true"
 

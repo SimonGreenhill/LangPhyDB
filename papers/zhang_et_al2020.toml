@@ -52,37 +52,37 @@ description = "131 Sino-Tibetan languages"
     [calibration.oldc1244]
     taxa = ["oldc1244"]
     age = "uniform(2300, 2800)"
-    units = "y2000" # ybp
+    units = "y2000"
     description = "300 ~ 800 B.C."
 
     [calibration.padam]
     taxa = ["pada1257"]
     age = "120"
-    units = "y2000" # ybp
+    units = "y2000"
     description = "extinction of Padam ~1900AD"
 
     [calibration.Shaiyang]
     taxa = ["misi1242"]
     age = "120"
-    units = "y2000" # ybp
+    units = "y2000"
     description = "extinction of Shaiyang ~1900AD"
 
     [calibration.loloquangic]
     taxa = ["burm1265"]
     age = ">1602"
-    units = "y2000" # ybp
+    units = "y2000"
     description = "Lolo-Qiangic common ancestor before 418 AD"
 
     [calibration.pumi]
     taxa = ["pumi1242"]
     age = ">157"
-    units = "y2000" # ybp
+    units = "y2000"
     description = "Pumi common ancestor before 1863 AD"
 
     [calibration.naxi]
     taxa = ["naxi1245"]
     age = ">297"
-    units = "y2000" # ybp
+    units = "y2000"
     description = "Pumi common ancestor before 1724 AD"
 
 

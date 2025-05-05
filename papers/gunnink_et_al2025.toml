@@ -1,0 +1,123 @@
+title = "Yeyi: A Phylogenetic Loner in Eastern Bantu"
+
+doi = "https://doi.org/10.3390/languages10040055"
+
+abstract = """
+While major advances in the subclassification of Bantu languages have been made thanks to comprehensive, lexicon-based
+classifications, there are still several important uncertainties obscuring not only the diachronic linguistic processes
+that gave rise to Bantu diversification, but also the population dynamics of ancestral Bantu speakers underlying them.
+In this paper, we address one of these persisting mysteries of Bantu genealogy, i.e., the unclassified Yeyi (R41)
+language of southern Africa. While the Bantu origin of Yeyi is straightforward and undisputed, its closest relatives
+are unknown, as is the major Bantu branch to which it belongs. We use a lexicon-based, Bayesian phylogenetic approach,
+comparing Yeyi to languages of the wider geographic region, including even more far-flung languages that have
+previously been hypothesized to bear a close relationship to Yeyi. The resultant linguistic phylogeny shows that Yeyi
+is part of the Wider Eastern Bantu branch as its own clade with Narrow Eastern Bantu languages as its closest relatives
+and none of its nearest neighbors. We argue that this relatively isolated position of Yeyi within Eastern Bantu
+suggests an early migration into southern Africa from the putative Wider Eastern Bantu homeland, which was followed by
+the loss of Yeyi's putative earlier sister languages, presumably through a shift to Bantu languages spoken by more
+recent migrants.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Hilde Gunnink", "Natalia Chousou-Polydouri", "Koen Bostoen"]
+
+# parts of the world
+groups = ['Bantu']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Gunnink_2025"
+
+# type of study
+type = ['phylogenetic']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = """
+
+    We collected linguistic data for nine Yeyi doculects, i.e., varieties documented by different authors in different
+    times and places. These consist of five sources on Botswana Yeyi (Livingstone, 1851; Andersson, 1855; Schapera &
+    van der Merwe, 1942; Sommer, 1995; Lukusa, 2009) and four on Namibian Yeyi (Donnelly, 1991; Gowlett, 1992; Seidel,
+    2005, 2008), spanning a period of some 150 years.
+    
+    ... created two datasets, one where all Yeyi doculects were kept separately and one where Yeyi 
+    doculects collected in similar areas during a similar period were merged.
+    
+    Our lexical data, along with cognate judgements, are available in the Supplementary Materials. We constructed two
+    lexical datasets, one keeping all Yeyi doculects separate (YeyiFull) and one with some Yeyi doculects merged, as
+    explained above (YeyiMerged). 
+    
+    """
+
+    [data.YeyiFull]
+    ntaxa = "125"
+    nchars = "100"
+    nsites = "1616"
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = ''
+
+    
+    [data.YeyiMerged]
+    ntaxa = "121"
+    nchars = "100"
+    nsites = "1616"
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = """
+    The results of the merged dataset (YeyiMerged) were essentially identical [to the full dataset -SJG], 
+    and we proceeded to use this dataset for the rest of the analyses. The comparison with Bayes Factors 
+    indicated decisive support for the inclusion of gamma rate heterogeneity (the estimated natural log of 
+    the marginal likelihood with gamma rate heterogeneity was −17,939.35, while the corresponding value 
+    without gamma rate heterogeneity was −18,315.92, giving a lnBF of 376.57
+    """
+    
+    [analysis.YeyiFull]
+    tool = 'mrbayes'
+    model = 'F81+restriction'
+    details = ""
+    data = "@data.YeyiFull"
+
+    [analysis.YeyiMerged]
+    tool = 'mrbayes'
+    model = 'F81+restriction'
+    details = ""
+    data = "@data.YeyiFull"
+
+    [analysis.YeyiMergedGamma]
+    tool = 'mrbayes'
+    model = 'F81+restriction+gamma'
+    details = "best-fitting model"
+    data = "@data.YeyiMerged"
+    best = "true"
+
+    [analysis.YeyiMerged_SS]
+    tool = 'mrbayes'
+    model = 'SteppingStone:F81+restriction+gamma'
+    details = ""
+    data = "@data.YeyiMerged"
+
+    [analysis.YeyiMergedGamma_SS]
+    tool = 'mrbayes'
+    model = 'SteppingStone:F81+restriction+gamma'
+    details = ""
+    data = "@data.YeyiMerged"
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = ["https://osf.io/tksrh/?view_only=e775d8fdb0d640589bcbd71e16c2e7e8"]

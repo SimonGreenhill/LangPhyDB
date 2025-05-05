@@ -22,7 +22,7 @@ authors = [
 ]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Austronesian']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Hoffmann2021"  # @xxxx
@@ -33,6 +33,69 @@ framework = ['bayesian']
 
 # short label of taxa "37 languages from.."
 description = "Tutorial paper on Bayesian phylogenetic methods"
+
+
+# data
+[data]
+    [data.lexicon]
+    ntaxa = 20
+    nchars = 207
+    nsites = 1359
+    datatype = 'lexical cognates'
+    source = '@ABVD'
+    items = 'swadesh200'
+    comment = ''
+
+
+[calibration]
+
+    notes = ""
+
+
+    [calibration.EastPolynesian]
+    taxa = ["east2449"]
+    age = "normal(1000, 100)" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "y2000" # before present
+    description = """
+    From taming the beast tutorial: 
+    Another good calibration is East Polynesian: It’s a well-attested linguistic group, and we have good archaeological evidence for when the initial settlement of East Polynesia began. However the ages are a bit controversial between “short” and “long” chronologies e.g.:
+
+    1025 - 1121 AD =  975 -  879 years ago <a class="citation" href="#Wilmshurst2010">(Wilmshurst et al., 2010)</a>
+     800 - 1000 AD = 1200 - 1000 years ago <a class="citation" href="#spriggs2010">(Spriggs, 2010)</a>
+
+    The average of these estimates is about 1000 years ago, and they are spread on both sides by about 150- 200 years. This makes a great candidate for a Normal distribution with mean 1000 and variance 100.
+    """
+
+    [calibration.NewZealand]
+    taxa = ['east2449']
+    name = 'New Zealand'
+    units = "y2000"
+    comment = """
+    From taming the beast tutorial: 
+
+    According to (Wilmshurst et al., 2010), the settlement of New Zealand can be securely dated to between
+    1230-1282 A.D. We have two dialects of New Zealand Maori in these data: Maori and SouthIslandMaori. Let’s
+    operationalize this calibration like this: If we assume that the present is a nice round number like the
+    year 2000 (this makes interpretation easier), then we convert this to before present:
+
+    2000 - 1230 = 770 years ago 
+    2000 - 1282 = 718 years ago
+
+    So a prior incorporating this information could be a tight log-normal distribution with mean 744 (in real space) and a variance 0.02.
+
+    """
+    age = "lognormal(744, 0.2, 0, realspace=True)" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+
+
+
+# analysis information
+[analysis]
+    [analysis.tree1]
+    tool = 'beast'
+    model = 'covarion+relaxed'
+    details = ""
+
+
 
 [links]
 links = []

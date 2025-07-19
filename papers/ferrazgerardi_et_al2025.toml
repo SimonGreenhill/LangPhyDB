@@ -1,0 +1,155 @@
+title = "A phylogenetic classification of the Je language family"
+
+doi = "10.12688/openreseurope.19346.3"
+
+abstract = """
+
+Introduction
+This study investigates the Je language family and Macro-Je phylum, addressing a significant gap in previous research by applying quantitative methods to its classification.
+Dataset
+
+The study compares a subset of 303 concepts from 14 languages, primarily sourced from Swadesh lists and culturally relevant terms, providing a robust foundation for phylogenetic analysis.
+Methods
+
+Bayesian phylogenetic inference and NeighborNet methods were employed to analyze the dataset. These approaches enabled the reconstruction of evolutionary relationships within the Je family, facilitating the identification of language divergence patterns and their historical dynamics.
+Results
+
+The analysis reveals well-supported Northern, Central, and Southern subgroups within the Je family, demonstrating clear geographical clustering. The phylogenetic tree aligns with existing hypotheses while offering new insights into the family's structure.
+Discussion
+
+The findings were contextualized within pre-Columbian archaeological frameworks, drawing parallels between linguistic divergence and material culture. These connections support the hypothesis that the Je language family's development aligns with distinct cultural and geographical distributions observed in archaeological records.
+Conclusion and Future Directions
+
+This study affirms the genetic coherence of the Je family and highlights opportunities for future research, including the incorporation of non-Je languages in the Macro-Je phylum and expanded datasets to refine the understanding of this diverse linguistic group.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Fabrício Ferraz Gerardi", "Tim Wientzek", "Ivan Roksandic", "Jonas Souza", "Fernando Carvalho"]
+
+# parts of the world
+groups = ["Je"]  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Gerardi_Tresoldi_2024"
+
+# type of study
+type = ['phylogenetic', 'qresidual', 'delta']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.je]
+    ntaxa = 14
+    nchars = 303
+    nsites = 622
+    datatype = 'lexical cognates (autodetected)'
+    source = ''
+    items = ''
+    comment = 'The concepts include most Swadesh list items (Swadesh, 1971) along with many culturally relevant concepts related to fields like agriculture, vegetation and fauna'
+
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.root]
+    taxa = ['nucl1710']
+    age = "uniform(500, 6000)" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "bp" # bp
+    description = "root prior 'it facilitated convergence based on prior experience'"
+
+
+    [calibration.XerenteXavante]
+    taxa = ['xere1240', 'xava1240']
+    age = "lognormal(200, 0.05, realspace=True)" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "bp" # bp
+    description = "following Maybury-Lewis (1974)"
+
+    [calibration.NorthernSouthernSplit]
+    taxa = ['jeee1236']
+    age = "normal(1900, 100)" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "bp" # bp
+    description = ""
+
+    [calibration.NorthernCentralSplit]
+    taxa = ['cerr1237']
+    age = "normal(1200, 100)" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "bp" # bp
+    description = ""
+
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.nnet]
+    tool = 'splitstree'
+    model = 'neighbournet'
+    details = ""
+    data = ""
+
+    [analysis.delta]
+    tool = 'splitstree'
+    model = 'delta'
+    details = ""
+    data = ""
+
+    [analysis.qresidual]
+    tool = 'splitstree'
+    model = 'qresidual'
+    details = ""
+    data = ""
+
+
+    [analysis.beast2cv]
+    tool = 'beast2'
+    model = 'covarion+strict'
+    details = ""
+    data = ""
+
+    [analysis.beast2cr]
+    tool = 'beast2'
+    model = 'covarion+relaxed'
+    details = "best fitting model"
+    data = ""
+    best = 'true'
+
+
+    [analysis.beast2csw]
+    tool = 'beast2'
+    model = 'covarion+strict+wordrates'
+    details = ""
+    data = ""
+
+    [analysis.beast2crw]
+    tool = 'beast2'
+    model = 'covarion+relaxed+wordrates'
+    details = ""
+    data = ""
+
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.root]
+    taxa = ['nucl1710']
+    age = "hpd(4364.8, 1884.8, 5975.6)"
+    units = "bp"
+    notes = ""
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = ['https://github.com/TGH-2020/Je_Phylogeny/']

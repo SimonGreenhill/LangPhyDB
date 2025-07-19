@@ -1,0 +1,34 @@
+title = "Moving Histories: Bantu Language Expansions, Eclectic Economies, and Mobilities"
+
+doi = "10.1017/S0021853722000780"
+
+abstract = """
+This essay interprets a classification of Africa's Bantu languages which used statistical
+tools guided by assumptions about farming and its chronology to analyze fresh vocabulary evidence. It
+shows a peeling movement from Cameroon's grassfields, into southern Cameroon, then along a savanna
+corridor through West Central Africa's rainforests, into the Savannahs, then to Southern Africa, the
+Great Lakes, and Indian Ocean coast. The clear sequence of movement masks methodological and historical
+factors. Language death, multilingualism, and the limits of vocabulary evidence restrain the
+classification's authority. 'Transformations' from food collecting to food producing or from no metals
+to full engagement with metals were mutable, unfolded at different speeds, and involved interactions
+with firstcomers. In Central Africa, Bantu speakers were often the first farmers and metal-users in the
+region but elsewhere they were commonly neither. Their arrivals did not immediately displace
+firstcomers. Computational methods can accommodate many of these issues.
+
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Rebecca Grollemund", "David Schoenbrun", "Jan Vansina"]
+
+# parts of the world
+groups = ['Bantu']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Grollemund_2023"
+
+# type of study
+type = ['review']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+

@@ -3,20 +3,20 @@ title = "Correcting a bias in {TIGER} rates resulting from high amounts of invar
 doi = "10.1093/jole/lzab007"
 
 abstract = """
-In a recent issue of the Journal of Language Evolution, Syrja¨ nen et al. (2021) investigate the suitability of
+In a recent issue of the Journal of Language Evolution, Syrjänen et al. (2021) investigate the suitability of
 computing Cummins and McInerney's (2011) TIGER rates for estimating the tree-likeness of linguistic datasets
 compiled for phylogenetic reconstruction. The authors test the TIGER rates on a diverse sample of simulated data,
-which by and large conﬁrms the usefulness of TIGER rates as an analytic tool for investigating linguistic data,
+which by and large confirms the usefulness of TIGER rates as an analytic tool for investigating linguistic data,
 but they test them only on one real-world dataset of Uralic languages which turns out to behave quite differently
 from the simulated data. When testing the TIGER rates on additional datasets, I detected a bias in the computation
 which leads to an unnatural increase in those cases where a dataset contains many characters with invariant or
-singleton states. To overcome this problem, I suggest a modiﬁed variant of TIGER rates, which is provided in the
-form of a freely available Python package. Testing the modiﬁed TIGER scores on the simulated data of Syrja¨ nen et
+singleton states. To overcome this problem, I suggest a modified variant of TIGER rates, which is provided in the
+form of a freely available Python package. Testing the modified TIGER scores on the simulated data of Syrjänen et
 al. shows that the corrected TIGER rates still readily distinguish between different degrees of treelikeness.
-Testing them on a dataset in which the number of singletons and invariants was artiﬁcially increased further shows
-that the corrected TIGER rates are not inﬂuenced by the bias. A ﬁnal tests on seven linguistic datasets show the
+Testing them on a dataset in which the number of singletons and invariants was artificially increased further shows
+that the corrected TIGER rates are not influenced by the bias. A final tests on seven linguistic datasets show the
 usefulness of the corrected TIGER rates on a larger variety of linguistic datasets and illustrate the importance
-to take speciﬁc aspects of linguistic data into account when using biological methods in the domain of language
+to take specific aspects of linguistic data into account when using biological methods in the domain of language
 evolution.
 """
 
@@ -32,6 +32,7 @@ bibkey = "@List2022"
 # type of study
 type = ['tiger', 'methodological']  # phylogenetic,dating,phylogeography,macroevolutionary,trait,review,tutorial
 
+framework = ['statistical']
 
 # short description of the study, one line.
 description = "Correcting a bias in TIGER rates"

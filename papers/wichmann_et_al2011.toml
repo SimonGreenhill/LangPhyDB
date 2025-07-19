@@ -28,6 +28,7 @@ bibkey = "@Holman_2011"
 # type of study
 type = ['macroevolutionary', 'delta', 'qresidual']
 
+framework = ['distance']
 
 # short description of the study, one line.
 description = "Investigation into the relationship between reticulation and language family size"

@@ -29,6 +29,7 @@ bibkey = "@Jaeger2018"  # @xxxx
 # type of study
 type = ['phylogenetic']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
 
+framework = ['distance']
 
 # short description of the study, one line.
 description = "Global phylogeny from ASJP database using Pointwise Mutual Information"

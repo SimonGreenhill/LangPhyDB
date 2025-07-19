@@ -1,0 +1,70 @@
+title = "Did alcohol facilitate the evolution of complex societies?"
+
+doi = "10.1057/s41599-025-05503-6"
+
+abstract = """
+The size and complexity of human societies increased dramatically over the Holocene. Researchers have proposed a variety of potential drivers of this major transition, including our predilection for alcoholic beverages. This "drunk" hypothesis argues that drinking alcohol facilitated the rise of complex societies because it promotes social bonding, increases cooperation, and enhances human creativity. At the political level, alcohol-driven feasting serves to build alliances, mobilise labour, and implement power and authority. However, systematic cross-cultural evidence for the claim is lacking. Here we test this hypothesis with a global sample of 186 largely non-industrial societies, purpose-built dataset on intoxicants and causal inference methods. We find a positive relationship between the presence of indigenous alcoholic beverages and higher levels of political complexity, measured by the number of administrative levels. The effect (albeit modest) holds even after controlling for several potential confounders, including common ancestry, spatial proximity, environmental productivity, and agricultural intensity. Our results support the idea that the group-level social benefits of traditional non-distilled fermented beverages may outweigh their disruptive effects, and that alcohol may have facilitated the evolution of human societies. However, other contributing factors, such as agriculture or religion, were probably more effective drivers than getting drunk.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Václav Hrnčíř", "Angela M. Chira", "Russell D. Gray"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Hrn__2025"
+
+# type of study
+type = ['macroevolutionary']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.alcohol]
+    ntaxa = 176
+    nchars = 1
+    nsites = 1
+    datatype = 'ethnographic features'
+    source = ''
+    items = ''
+    comment = ''
+    
+    [data.dplace]
+    ntaxa = 176
+    nchars = 6
+    nsites = "?"
+    datatype = 'ethnographic features'
+    source = '@DPLACE'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.global]
+    source = '@Bouckaert2022'
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.brms]
+    tool = 'brms'
+    model = ''
+    details = ""
+    data = ""
+    times = 6
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = ["https://doi.org/10.1057/s41599-025-05503-6"]

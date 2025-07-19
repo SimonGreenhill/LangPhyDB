@@ -18,8 +18,8 @@ groups = ['global']  # 'Austronesian', etc
 bibkey = "@Bromham_2024"
 
 # type of study
-type = ['review']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['review']
+framework = ['other']
 # short description of the study, one line.
 description = ""
 

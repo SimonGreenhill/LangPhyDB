@@ -27,6 +27,8 @@ bibkey = "@Tresoldi2022"  # @xxxx
 # type of study
 type = ['tutorial']  # phylogenetic,dating,phylogeography,macroevolutionary,trait
 
+framework = ['na']
+
 # short label of taxa "37 languages from.."
 description = "Tutorial Article"
 

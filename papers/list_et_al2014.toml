@@ -1,0 +1,71 @@
+title = "Using Phylogenetic Networks to Model Chinese Dialect History"
+
+doi = "10.1163/22105832-00402008"
+
+abstract = """
+The idea that language history is best visualized by a branching tree has been controversially discussed in the linguistic world and many alternative theories have been proposed. The reluctance of many scholars to accept the tree as the natural metaphor for language history was due to conflicting signals in linguistic data: many resemblances would simply not point to a unique tree. Despite these observations, the majority of automatic approaches applied to language data has been based on the tree model, while network approaches have rarely been applied. Due to the specific sociolinguistic situation in China, where very divergent varieties have been developing under the roof of a common culture and writing system, the history of the Chinese dialects is complex and intertwined. They are therefore a good test case for methods which no longer take the family tree as their primary model. Here we use a network approach to study the lexical history of 40 Chinese dialects. In contrast to previous approaches, our method is character-based and captures both vertical and horizontal aspects of language history. According to our results, the majority of characters in our data (about 54%) cannot be readily explained with the help of a given tree model. The borrowing events inferred by our method do not only reflect general uncertainties of Chinese dialect classification, they also reveal the strong influence of the standard language on Chinese dialect history.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Johann-Mattis List", "Nelson-Sathi Shijulal", "William Martin", "Hans Geisler"]
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@List_2014"
+
+# type of study
+type = ['macroevolutionary']
+framework = ['network', 'likelihood']
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+
+    [data.Hou2004]
+    ntaxa = 40
+    nchars = 180
+    nsites = "?"
+    datatype = 'lexical cognates (autodetected)'
+    source = ''
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.reftree1]
+    source = ''
+    comment = 'manual based on literature'
+
+    [phylogenies.reftree2]
+    source = ''
+    comment = 'manual based on literature'
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.mln1]
+    tool = 'lingpy'
+    model = 'mln'
+    details = ""
+    data = "@phylogenies.reftree1"
+
+    [analysis.mln2]
+    tool = 'lingpy'
+    model = 'mln'
+    details = ""
+    data = "@phylogenies.reftree2"
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

@@ -1,0 +1,160 @@
+title = "The evolution of gender and number agreement in the noun phrase"
+
+doi = "10.1515/lingty-2024-0072"
+
+abstract = """
+We test the dependency relations between gender and number posited by Greenberg's Universal 36 by focusing on patterns of gender and number
+agreement in the noun phrase from an evolutionary perspective. To do so, we use data from Grambank, the largest existing database of
+morphosyntactic structures in the world's languages. Based on data from 1,608 languages worldwide, we use a Reverse Jump Markov Chain Monte
+Carlo method to investigate the order of emergence of gender and number marking on adjectives, demonstratives and (for a smaller dataset)
+articles. Globally, our findings support Greenberg's idea that gender marking hinges on number marking. In addition, they show that both
+adjectives and demonstratives play a special role in the development of noun-phrase internal agreement, in that under different evolutionary
+scenarios the occurrence of gender and number agreement on adjectives or demonstratives may favor the spreading of agreement to other target
+types. We compare these results with family-specific patterns of language change and further discuss their relevance to the general
+understanding of nominal morphosyntax. """
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Olena Shcherbakova", "Marc Allassonnière-Tang", "Francesca Di Garbo"]
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Shcherbakova_2025"
+
+# type of study
+type = ['trait']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = """
+    We obtain the features indicating whether demonstratives, adjectives, and articles (definite and/or indefinite) agree
+    with the nouns in number (GB184, GB185, and GB186) and gender/noun class (GB170, GB171, and GB172).
+    """
+    
+    [data.grambank6]
+    ntaxa = 662
+    nchars = 6
+    nsites = 6
+    datatype = 'structural features'
+    source = '@Grambank'
+    items = ''
+    comment = ''
+
+    [data.grambank4]
+    ntaxa = 1608
+    nchars = 4
+    nsites = 4
+    datatype = 'structural features'
+    source = '@Grambank'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.bantu]
+    source = "@Grollemund2015"
+    comment = ""
+    
+    [phylogenies.indoeuropean]
+    source = "@Bouckaert2012"
+    comment = ""
+
+    [phylogenies.dravidian]
+    source = "@Kolipakam2018"
+    comment = ""
+
+    [phylogenies.global]
+    source = '@Bouckaert2022'
+    comment = ''
+
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.6features_indep]
+    tool = 'bayestraits'
+    model = 'discrete+independent'
+    details = ""
+    data = "@phylogenies.global;@data.grambank6"
+    times = 15
+
+    [analysis.6features_dep]
+    tool = 'bayestraits'
+    model = 'discrete+dependent'
+    details = ""
+    data = "@phylogenies.global;@data.grambank6"
+    times = 15
+
+    [analysis.4features_indep]
+    tool = 'bayestraits'
+    model = 'discrete+independent'
+    details = ""
+    data = "@phylogenies.global;@data.grambank4"
+    times = 6
+
+    [analysis.4features_dep]
+    tool = 'bayestraits'
+    model = 'discrete+dependent'
+    details = ""
+    data = "@phylogenies.global;@data.grambank4"
+    times = 6
+
+
+    [analysis.dravidian_indep]
+    tool = 'bayestraits'
+    model = 'discrete+independent'
+    details = ""
+    data = "@phylogenies.dravidian;@data.grambank4"
+    times = 6
+
+    [analysis.dravidian_dep]
+    tool = 'bayestraits'
+    model = 'discrete+dependent'
+    details = ""
+    data = "@phylogenies.dravidian;@data.grambank4"
+    times = 6
+
+
+    [analysis.bantu_indep]
+    tool = 'bayestraits'
+    model = 'discrete+independent'
+    details = ""
+    data = "@phylogenies.bantu;@data.grambank4"
+    times = 6
+
+    [analysis.bantu_dep]
+    tool = 'bayestraits'
+    model = 'discrete+dependent'
+    details = ""
+    data = "@phylogenies.bantu;@data.grambank4"
+    times = 6
+
+    [analysis.indoeuropean_indep]
+    tool = 'bayestraits'
+    model = 'discrete+independent'
+    details = ""
+    data = "@phylogenies.indoeuropean;@data.grambank4"
+    times = 6
+
+    [analysis.indoeuropean_dep]
+    tool = 'bayestraits'
+    model = 'discrete+dependent'
+    details = ""
+    data = "@phylogenies.indoeuropean;@data.grambank4"
+    times = 6
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = ["https://doi.org/10.17605/OSF.IO/WHRBC"]

@@ -3,20 +3,27 @@ title = "Chapter 3. Phylogenetic signal in the lexicon: Are parental terms influ
 doi = "https://doi.org/10.1075/cilt.367.03bow"
 
 abstract = """
-
+It has long been known that parental terms are poor indicators of shared genetic relationship because of their
+tendency to be influenced by features of "baby-talk". However, change and stability of parental terms within
+language families has not been closely studied. Here I evaluate the stability of 'mother' and 'father' across
+three large language families. While terms which show features of child-directed speech do appear to show fewer
+signs of phylogenetic signal, very few of the results reach statistical significance. Though there is probably
+some influence of acquisition, it is not enough to swamp regular transmission and other processes of change.
+Therefore, while parental terms are inappropriate evidence for detecting remote relationships, such terms can
+be safely used in reconstruction.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Claire Bowern"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Austronesian', 'Indo-European', 'Pama-Nyungan']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Bowern_2024"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+type = ['d-statistic', 'trait']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
 framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
 description = ""
@@ -26,32 +33,48 @@ description = ""
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
+    [data.IE]
+    ntaxa = "?"
+    nchars = 2
+    nsites = 2
     datatype = 'lexical cognates'
-    source = '@xxx'
+    source = '@IELex'
     items = ''
     comment = ''
 
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
+    [data.ABVD]
+    ntaxa = "?"
+    nchars = 2
+    nsites = 2
+    datatype = 'lexical cognates'
+    source = '@ABVD'
+    items = ''
     comment = ''
 
+    [data.PN]
+    ntaxa = "?"
+    nchars = 2
+    nsites = 2
+    datatype = 'lexical cognates'
+    source = '@chirila'
+    items = ''
+    comment = ''
+    
 
-# date calibrations
-[calibrations]
+# published phylogenies
+[phylogenies]
+    [phylogenies.Bouckaert2018]
+    source = '@Bouckaert2018'
+    comment = ''
 
-    notes = ""
+    [phylogenies.Bouckaert2012]
+    source = '@Bouckaert2012'
+    comment = ''
 
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "bp" # before present
-    description = ""
+    [phylogenies.Gray2009]
+    source = '@Gray2009'
+    comment = ''
+
 
 
 # analysis information
@@ -59,22 +82,68 @@ description = ""
     
     notes = ""
     
-    [analysis.tree]
-    tool = ''
-    model = ''
+    [analysis.Bouckaert2018_CI]
+    tool = 'unknown'
+    model = 'CI'
     details = ""
     data = ""
+    times = 2
 
-[inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "bp"
-    notes = ""
+    [analysis.Bouckaert2012_CI]
+    tool = 'unknown'
+    model = 'CI'
+    details = ""
+    data = ""
+    times = 2
 
+    [analysis.Gray2009_CI]
+    tool = 'unknown'
+    model = 'CI'
+    details = ""
+    data = ""
+    times = 2
+
+    [analysis.Bouckaert2018_RI]
+    tool = 'unknown'
+    model = 'RI'
+    details = ""
+    data = ""
+    times = 2
+
+    [analysis.Bouckaert2012_RI]
+    tool = 'unknown'
+    model = 'RI'
+    details = ""
+    data = ""
+    times = 2
+
+    [analysis.Gray2009_RI]
+    tool = 'unknown'
+    model = 'RI'
+    details = ""
+    data = ""
+    times = 2
+
+    [analysis.Bouckaert2018_D]
+    tool = 'caper'
+    model = 'phylo.d'
+    details = ""
+    data = ""
+    times = 2
+
+    [analysis.Bouckaert2012_D]
+    tool = 'caper'
+    model = 'phylo.d'
+    details = ""
+    data = ""
+    times = 2
+
+    [analysis.Gray2009_D]
+    tool = 'caper'
+    model = 'phylo.d'
+    details = ""
+    data = ""
+    times = 2
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }

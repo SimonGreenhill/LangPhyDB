@@ -1,0 +1,88 @@
+title = "Usage-based evolutionary models reveal context-specific word order change in Indo-European"
+
+doi = "10.1163/22105832-bja10039"
+
+abstract = """
+This paper introduces a new corpus-based approach for studying word order change and
+reconstruction with Bayesian computational phylogenetic methods. We investigate the
+rates of change in object-verb order in 46 sentences from 36 Indo-European languages
+extracted from a parallel corpus. A Gaussian mixture model reveals that the rates can
+be grouped into three components representing syntactic constructions with distinct
+diachronic dynamics. Contexts with nominal objects are relatively stable, whereas
+object-verb order in contexts with pronominal objects evolves fast. Complement
+clauses have a strong diachronic bias towards VO . Stochastic character mapping
+suggests a VO order of nominal objects and verb in Proto-Indo-European, while the
+fast rates in contexts with pronominal objects do not allow a reliable reconstruction
+of ancestral states.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Christian Ebert", "Chundra A. Cathcart", "Balthasar Bickel", "Paul Widmer"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Ebert_2025"
+
+# type of study
+type = ['trait']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.ParTree]
+    ntaxa = 36
+    nchars = 46
+    nsites = 62
+    datatype = 'syntactical features'
+    source = ''
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.Chang2015]
+    source = '@Chang2015'
+    comment = ''
+
+    [phylogenies.Heggarty2023]
+    source = '@Heggarty2023'
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.rates1]
+    tool = 'stan'
+    model = ''
+    details = ""
+    data = "@phylogenies.Chang2015"
+
+    [analysis.rates2]
+    tool = 'stan'
+    model = ''
+    details = ""
+    data = "@phylogenies.Heggarty2023"
+
+    [analysis.gmm]
+    tool = 'python'
+    model = ''
+    details = ""
+    data = ""
+
+    
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = ["https://osf.io/gf9m6/"]

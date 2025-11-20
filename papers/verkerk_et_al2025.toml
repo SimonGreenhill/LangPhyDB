@@ -1,0 +1,321 @@
+title = "A phylogenetic analysis of numeral anchor choice in New Guinea and lowland South America"
+
+doi = "https://doi.org/10.1098/rstb.2024.0222"
+
+abstract = """
+Most of the world's languages have numeral systems with a decimal
+base, but in some areas, such systems are rare. This article focuses on
+languages with either restricted numeral systems or systems featuring
+compositional anchors that are not bases, examining how they are used in
+the creation of non‑atomic numerals. We investigate anchor choice from
+an explicitly diachronic perspective by modelling it on phylogenetic trees
+for language families from two areas: northern lowland South America
+(Arawakan, Pano‑Tacanan, Tucanoan and Tupian) and Papuan languages
+of New Guinea (Nuclear Torricelli, Nuclear Trans New Guinea, Ramu
+and Sepik). We find languages with restricted numeral systems lacking
+anchors, as well as systems with anchor 2 or 5. Phylogenetic analyses suggest
+that the proto‑languages of these families likely had restricted or anchor
+2 systems, with shifts to anchor 5 occurring in specific groups, indicating
+some time depth, although statistical power is limited by small family sizes.
+Further research should study linguistic systems alongside cultural counting
+practices, reconstruct both linguistic forms and cultural practices and model
+the impact of contact, especially given the global dominance of decimal
+systems.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Annemarie Verkerk", "Elisa Castillo Atehortua", "Christoph Rzymski"]
+
+# parts of the world
+groups = [
+    'Arawakan', 'Pano‑Tacanan', 'Tucanoan', 'Tupian', 'Nuclear Torricelli', 'Nuclear Trans New Guinea', 'Ramu', 'Sepik'
+]
+
+# bibkey citation in sources.bib
+bibkey = "@Verkerk_2025"
+
+# type of study
+type = ['asr', 'trait']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian', 'likelihood'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.numerals]
+    ntaxa = "?"
+    nchars = "?"
+    nsites = "?"
+    datatype = 'structural features'
+    source = '@Barlow2023;@WALS;@Grambank'
+    items = ''
+    comment = ''
+    
+    
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.tng]
+    source = '@Greenhill_2024'
+    comment = ''
+
+    [phylogenies.toricelli]
+    source = '@Dediu_2018'
+    comment = ''
+    
+    [phylogenies.ramu]
+    source = '@Dediu_2018'
+    comment = ''
+    
+    [phylogenies.sepik]
+    source = '@Dediu_2018'
+    comment = ''
+
+    [phylogenies.papuanbig4]
+    source = '@Bouckaert2022'
+    comment = ''
+    
+    [phylogenies.papuanall]
+    source = '@Bouckaert2022'
+    comment = ''
+
+    [phylogenies.arawakan]
+    source = '@Dediu_2018'
+    comment = ''
+
+    [phylogenies.panotacanan]
+    source = '@Dediu_2018'
+    comment = ''
+
+    [phylogenies.tucanoan]
+    source = '@Dediu_2018'
+    comment = ''
+
+    [phylogenies.tupian]
+    source = '@Dediu_2018'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+
+    [analysis.tree1]
+        tool = 'bayestraits'
+        model = 'multistate+phylogenies_arawakan+Simple'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree2]
+        tool = 'bayestraits'
+        model = 'multistate+phylogenies_arawakan+FixedRoot'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree3]
+        tool = 'bayestraits'
+        model = 'multistate+phylogenies_panotacanan+Simple'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree4]
+        tool = 'bayestraits'
+        model = 'multistate+phylogenies_panotacanan+FixedRoot'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree5]
+        tool = 'bayestraits'
+        model = 'multistate+phylogenies_papuanall+Simple'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree6]
+        tool = 'bayestraits'
+        model = 'multistate+phylogenies_papuanall+FixedRoot'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree7]
+        tool = 'bayestraits'
+        model = 'multistate+phylogenies_papuanbig4+Simple'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree8]
+        tool = 'bayestraits'
+        model = 'multistate+phylogenies_papuanbig4+FixedRoot'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree9]
+        tool = 'bayestraits'
+        model = 'multistate+phylogenies_ramu+Simple'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree10]
+        tool = 'bayestraits'
+        model = 'multistate+phylogenies_ramu+FixedRoot'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree11]
+        tool = 'bayestraits'
+        model = 'multistate+phylogenies_sepik+Simple'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree12]
+        tool = 'bayestraits'
+        model = 'multistate+phylogenies_sepik+FixedRoot'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree13]
+        tool = 'bayestraits'
+        model = 'multistate+phylogenies_toricelli+Simple'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree14]
+        tool = 'bayestraits'
+        model = 'multistate+phylogenies_toricelli+FixedRoot'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree15]
+        tool = 'bayestraits'
+        model = 'multistate+phylogenies_tucanoan+Simple'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree16]
+        tool = 'bayestraits'
+        model = 'multistate+phylogenies_tucanoan+FixedRoot'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree17]
+        tool = 'bayestraits'
+        model = 'multistate+phylogenies_tupian+Simple'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree18]
+        tool = 'bayestraits'
+        model = 'multistate+phylogenies_tupian+FixedRoot'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree19]
+        tool = 'bayestraits'
+        model = 'multistate+phylogenies_tng+Simple'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree20]
+        tool = 'bayestraits'
+        model = 'multistate+phylogenies_tng+FixedRoot'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree_asr1]
+        tool = 'corHMM'
+        model = 'asr+phylogenies_arawakan'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree_asr2]
+        tool = 'corHMM'
+        model = 'asr+phylogenies_panotacanan'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree_asr3]
+        tool = 'corHMM'
+        model = 'asr+phylogenies_papuanall'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree_asr4]
+        tool = 'corHMM'
+        model = 'asr+phylogenies_papuanbig4'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree_asr5]
+        tool = 'corHMM'
+        model = 'asr+phylogenies_ramu'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree_asr6]
+        tool = 'corHMM'
+        model = 'asr+phylogenies_sepik'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree_asr7]
+        tool = 'corHMM'
+        model = 'asr+phylogenies_toricelli'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree_asr8]
+        tool = 'corHMM'
+        model = 'asr+phylogenies_tucanoan'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree_asr9]
+        tool = 'corHMM'
+        model = 'asr+phylogenies_tupian'
+        details = ""
+        data = ""
+    
+
+    [analysis.tree_asr10]
+        tool = 'corHMM'
+        model = 'asr+phylogenies_tng'
+        details = ""
+        data = ""
+    
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

@@ -1,0 +1,209 @@
+title = "Combined lexical and phonotactic data resolve uncertainties in the evolutionary diversification of the Japonic language family"
+
+doi = "10.1093/jole/lzaf002"
+
+abstract = """
+The use of phylogenetic methods in linguistics has provided new insights into the structure, age,
+and spread of language families. Despite increasing recognition of Japonic as one of the world's
+primary language families, research on the family's phylogeny remains limited. This study
+presents a new reconstruction of Japonic language history based on NichiRyuuLex, a new lexical
+dataset comprising data from 48 Japanese and 33 Ryukyuan lects for 256 concepts. The study
+combines lexical and phonotactic data to increase precision in the phylogenetic parameter
+estimates, providing a more informative reconstruction. The analyses presented here confirm
+previous findings on the age of the family as a whole, estimating a Japanese-Ryukyuan split at
+around 400–500 Bce, supporting that the time of diversification coincides with the influx of
+Bronze Age rice agriculturists during the Yayoi Period. The topology of the mainland Japanese
+clade uncovered in the analyses unifies two divisions recognized in traditional Japanese
+dialectology: the East-West division, and the center-periphery division. The topology of the
+Ryukyuan clade largely followed geographical segmentation—Northern Ryukyuan (Amami; Okinawa) vs.
+Southern Ryukyuan (Miyako; Macro-Yaeyama). The ancestor of Ryukyuan was dated to around the ninth
+century, coinciding with the first traces of cereal farming in the Northern Ryukyu Islands. In
+sum, the study provides greater certainty about the linguistic history and internal structure of
+mainland Japanese, as well as a more detailed perspective on the history of the Ryukyuan
+languages.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["John L. A. Huisman", "Bonnie McLean", "Chieh-Hsi Wu"]
+
+# parts of the world
+groups = ['Japonic']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Huisman_2025"
+
+# type of study
+type = ['phylogenetic', 'd-statistic', 'dating']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian', 'likelihood'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = "The combined list comprised 266 concepts once cleaned, but was further adapted to better fit the Japonic lexicon, resulting in a total of 256 concepts—see Supplementary Materials for details. We collated data for 48 Japanese (including Old Japanese) and 33 Ryukyuan lects using several compendia"
+    
+    [data.NichiRyuuLex]
+    ntaxa = 81
+    nchars = 256
+    nsites = 881
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = ''
+
+    [data.NichiRyuuLex_biphones]
+    ntaxa = 81
+    nchars = 516
+    nsites = 516
+    datatype = 'phonetic traits'
+    source = ''
+    items = ''
+    comment = ''
+
+
+
+# date calibrations
+[calibrations]
+
+    notes = """
+    For the Japanese branch, we applied a log-normal prior on the Old Japanese tip based on the
+    attestation of Old Japanese (M = 1,260, SD = 25.5; as in Lee and Hasegawa 2011). For the Ryukyuan
+    branch, we applied a normal prior (M = 1,023, SD = 50) on the time of the most recent common
+    ancestor (tMRCA) of Southern Ryukyuan,3 which forms a coherent linguistic subgroup (Pellard 2015).
+
+    We define the Southern Ryukyuan branch to include the lects Hateruma, Hatoma, Hirara, Ikema, Iriomote, Ishigaki, Kuroshima, Nagahama, Ohama, Oura, Tarama, Taketomi, Uechi, and Yonaguni.
+    """
+
+    [calibration.OldJapanese]
+    taxa = ['oldj1239']
+    age = "lognormal(7.138806, 0.02021568, 0, realspace=False)"
+    units = "ya"
+    description = ""
+
+    [calibration.SouthernRyukyuan]
+    taxa = ['ryuk1244']
+    age = "normal(1023, 50)"
+    units = "ya"
+    description = "Pellard 2015"
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.dstatistic]
+    tool = 'caper'
+    model = 'phylo.d'
+    details = "used classification taxonomy from De Boer 2020"
+    data = "@data.NichiRyuuLex;@data.NichiRyuuLex_biphones"
+    times = 979
+
+    [analysis.ctmc_strict_yule]
+    tool = 'beast2'
+    model = 'ctmc+strict+gamma+yule'
+    details = ""
+    data = "@data.NichiRyuuLex;@data.NichiRyuuLex_biphones"
+
+    [analysis.ctmc_strict_birthdeath]
+    tool = 'beast2'
+    model = 'ctmc+strict+gamma+calbd'
+    details = ""
+    data = "@data.NichiRyuuLex;@data.NichiRyuuLex_biphones"
+
+    [analysis.ctmc_relaxed_yule]
+    tool = 'beast2'
+    model = 'ctmc+strict+gamma+yule'
+    details = ""
+    data = "@data.NichiRyuuLex;@data.NichiRyuuLex_biphones"
+
+    [analysis.ctmc_relaxed_birthdeath]
+    tool = 'beast2'
+    model = 'ctmc+strict+gamma+calbd'
+    details = ""
+    data = "@data.NichiRyuuLex;@data.NichiRyuuLex_biphones"
+
+
+    [analysis.ctmc_strict_yule_no_oldJapanese]
+    tool = 'beast2'
+    model = 'ctmc+strict+gamma+yule'
+    details = "without Old Japanese"
+    data = "@data.NichiRyuuLex;@data.NichiRyuuLex_biphones"
+
+    [analysis.ctmc_strict_birthdeath_no_oldJapanese]
+    tool = 'beast2'
+    model = 'ctmc+strict+gamma+calbd'
+    details = "without Old Japanese"
+    data = "@data.NichiRyuuLex;@data.NichiRyuuLex_biphones"
+
+    [analysis.ctmc_relaxed_yule_no_oldJapanese]
+    tool = 'beast2'
+    model = 'ctmc+strict+gamma+yule'
+    details = "without Old Japanese"
+    data = "@data.NichiRyuuLex;@data.NichiRyuuLex_biphones"
+
+    [analysis.ctmc_relaxed_birthdeath_no_oldJapanese]
+    tool = 'beast2'
+    model = 'ctmc+strict+gamma+calbd'
+    details = "without Old Japanese"
+    data = "@data.NichiRyuuLex;@data.NichiRyuuLex_biphones"
+
+
+[inferredages]
+    
+    notes = """
+
+    The upper bounds of the 95 per cent Bayesian credible intervals (BCIs) for the estimated age
+    of the entire family (12,000–880 Bce) did not entirely rule out an initial diversification
+    during the Jomon period. However, the full BCIs and median values (470–380 Bce) strongly
+    suggest that the initial diversification of Japonic happened during the Yayoi period. The
+    lower bounds of the BCIs (210–70 Bce) predate the Kofun period.
+
+    The 95 per cent BCIs of the Japanese clade tMRCA range from 980 to 1,420 CE, which clearly
+    suggests diversification in the Middle Japanese period (9th–16th century), but it is less
+    certain whether it occurred after the Early Middle Japanese period (posterior probabilities:
+    0.592–0.661).
+
+    The lower bounds of the 95 per cent BCIs (970–980 CE) of the Ryukyuan clade tMRCA predate the
+    Gusuku period (11th century onwards), suggesting diversification prior to this (posterior
+    probabilities: 0.991–0.994), coinciding with the first population movements from the mainland
+    into the Ryukyu islands. 
+    """
+    # medians are 470-380 bce
+    # raw are 2490, 2405, 2497, 2437
+    # ya  are 465, 380, 472, 412
+    # # => dates are calibrated as years ago.
+    # # 1950 - AD = BP
+    # # 1950 + BC/BCE = BP
+    # # BP = age - (current year - 1950)
+    [inferredage.ctmc_strict_yule]
+    taxa = ['japo1237']
+    age = "hpd(2498.7, 2094.4, 2905.9)"
+    units = "ya"
+    details = ""
+
+    [inferredage.ctmc_relaxed_yule]
+    taxa = ['japo1237']
+    age = "hpd(2405.0, 1554.7, 4047.1)"
+    units = "ya"
+    details = ""
+
+    [inferredage.ctmc_strict_birthdeath]
+    taxa = ['japo1237']
+    age = "hpd(2497.6, 2110.9, 2904.3)"
+    units = "ya"
+    details = ""
+
+    [inferredage.ctmc_relaxed_birthdeath]
+    taxa = ['japo1237']
+    age = "hpd(2436.6, 1816.3, 3220.5)"
+    units = "ya"
+    details = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

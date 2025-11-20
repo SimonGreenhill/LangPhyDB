@@ -1,0 +1,71 @@
+title = "Novel computational methods for analysing languages: What Bayesian inference can and can not tell us about Kokborok"
+
+doi = ""
+
+abstract = """
+With recent advancements in computing power and improvements in computational methods
+for big data analysis, new avenues of research have opened up for historical linguists and
+linguistic typologists. With tools and methods not available to past generations, we can now
+employ statistical models to linguistic data sets to uncover new ideas and analyses relating to
+how languages are related to one another. This has seen recent implementation specifically on
+Sino-Tibetan in Sagart et al (2019) and Zhang et al (2019), providing phylogenetic trees of
+the language family based on Bayesian inference. These trees provide new insights into how
+the overall family tree may be organised — a question still unanswered in modern linguistics
+— by taking a top-down approach for a zoomed-out view. This paper makes an attempt to
+answer the question of internal relatedness from a bottom-up perspective in order to address
+the issue not for all of Sino-Tibetan, but specifically for the lower-level subgrouping which
+includes Kokborok. By analysing lexical data, both from previously published sources and
+that which are newly collected for this purpose, this study presents new insights into the
+genealogical organisation of the Barish (Bodo-Garo) which calls into question previous tree
+models proposed for the language group (Burling 2003). While Bayesian statistical methods
+are ultimately probabilistic and thus not a catch-all solution for all problems, the results of
+this investigation present possible answers for the question of the internal subgrouping of
+Barish, while also giving a clear indication of where such methods may fall short.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['Kellen Parker van Dam']
+
+# parts of the world
+groups = ['Sino-Tibetan']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@vanDam2025"
+
+# type of study
+type = ['phylogenetic']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = "Among these 60 doculects, we target approximately 700 concepts"
+    
+    [data.SALIST]
+    ntaxa = 60
+    nchars = 700
+    nsites = "~700"
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = 'SALIST'
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.mrbayes]
+    tool = 'mrbayes'
+    model = '?'
+    details = ""
+    data = "@data.SALIST"
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

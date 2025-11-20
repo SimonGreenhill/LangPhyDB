@@ -1,6 +1,11 @@
 # Invalid
 
-Papers deemed to fall outside scope, alphabetically by first author surname.
+Papers deemed to fall outside scope, alphabetically by first author surname. 
+
+Main Criteria for Exclusion are:
+- no explicit phylogenetic analysis
+- phylogeny only used as control in regression analysis
+
 
 ## A
 ## B
@@ -86,7 +91,7 @@ Papers deemed to fall outside scope, alphabetically by first author surname.
 ## P
 
 * Pereltsvaig, A. & Lewis, M.W. The Indo-European controversy: Facts and fallacies in historical linguistics. (Cambridge: Cambridge University Press, 2015).
-    - Criticism. 
+    - No explicit phylogenetic analysis (pure critique)
 
 * Petroni, F., & Serva, M. (2010). Measures of lexical distance between languages. Physica A: Statistical Mechanics and Its Applications, 389(11), 2280–2283. https://doi.org/10.1016/j.physa.2010.02.004
     - No explicit phylogenetic analysis
@@ -101,7 +106,10 @@ Papers deemed to fall outside scope, alphabetically by first author surname.
 
 * Serva, M., & Pasquini, M. (2022). Linguistic clues suggest that the Indonesian colonizers directly sailed to Madagascar. Language Sciences, 93, 101497. https://doi.org/10.1016/j.langsci.2022.101497
     - No explicit phylogenetic analysis
-    
+
+* Skirgård, H. (2025). A sea of languages: predicting the number of languages per island group in Remote Oceania. Journal of Language Evolution, 10(1). https://doi.org/10.1093/jole/lzae011
+    - phylogeny only used as control in regression analysis
+
 ## T
 ## U
 ## V
@@ -119,7 +127,7 @@ Papers deemed to fall outside scope, alphabetically by first author surname.
     - No explicit phylogenetic analysis
 
 * Walker RS, Hill KR, Flinn MV & Ellsworth RM. 2011. Evolutionary History of Hunter-Gatherer Marriage Practices. PLoS ONE 6.e19066. doi:10.1371/journal.pone.0019066
-    - phylogeny is from mtDNA
+    - phylogeny is from mtDNA not language
 
 
 ## X

@@ -1,0 +1,98 @@
+title = "Enduring constraints on grammar revealed by Bayesian spatiophylogenetic analyses"
+
+doi = "10.1038/s41562-025-02325-z"
+
+abstract = """
+Human languages show astonishing variety, yet their diversity is
+constrained by recurring patterns. Linguists have long argued over the
+extent and causes of these grammatical 'universals's. Using Grambank—a
+comprehensive database of grammatical features across the world's
+languages—we tested 191 proposed universals with Bayesian analyses that
+account for both genealogical descent and geographical proximity. We find
+statistical support for about a third of the proposed linguistic universals.
+The majority of these concern word order and hierarchical universals:
+two types that have featured prominently in earlier work. Evolutionary
+analyses show that languages tend to change in ways that converge on
+these preferred patterns. This suggests that, despite the vast design space
+of possible grammars, languages do not evolve entirely at random. Shared
+cognitive and communicative pressures repeatedly push languages
+towards similar solutions.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Annemarie Verkerk", "Olena Shcherbakova", "Hannah J. Haynie", "Hedvig Skirgård", "Christoph Rzymski", "Quentin D. Atkinson", "Simon J. Greenhill", "Russell D. Gray"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Verkerk_2025b"
+
+# type of study
+type = ['trait']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+    [data.grambank]
+    ntaxa = 2467
+    nchars = 191
+    nsites = 191
+    datatype = 'structural features'
+    source = '@Grambank'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.global]
+    source = '@Bouckaert2022'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+
+    [analysis.INLA_uncontrolled]
+    tool = 'r'
+    model = 'uncontrolled'
+    details = ""
+    data = "@data.grambank;@data.geographic;@phylogenies.global"
+    times = 191
+    
+    [analysis.INLA_spatial]
+    tool = 'r'
+    model = 'spatial'
+    details = ""
+    data = "@data.grambank;@data.geographic;@phylogenies.global"
+    times = 191
+    
+    [analysis.INLA_spatiophylogenetic]
+    tool = 'r'
+    model = 'spatiophylogenetic'
+    details = ""
+    data = "@data.grambank;@data.geographic;@phylogenies.global"
+    times = 191
+
+    [analysis.bayestraits_indep]
+    tool = 'bayestraits'
+    model = 'independent'
+    details = ""
+    data = "@data.grambank;@data.geographic;@phylogenies.global"
+    times = 191
+
+    [analysis.bayestraits_dep]
+    tool = 'bayestraits'
+    model = 'dependent'
+    details = ""
+    data = "@data.grambank;@data.geographic;@phylogenies.global"
+    times = 191
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

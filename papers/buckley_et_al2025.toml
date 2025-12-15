@@ -1,0 +1,321 @@
+title = "Contrasting modes of cultural evolution: Kra-Dai languages and weaving technologies"
+
+doi = "10.1017/ehs.2025.10008"
+
+abstract = """
+e investigate and compare the evolution of two aspects of culture, languages and weaving technologies, amongst the Kra-Dai (Tai-Kadai) peoples of southwest China and Southeast Asia, using Bayesian Markov-Chain Monte Carlo methods to uncover phylogenies. The results show that languages and looms evolved in related but different ways and bring some new insights into the spread of the Kra-Dai speakers across Southeast Asia. We found that the languages and looms used by Hlai speakers of Hainan are outgroups in both linguistic and loom phylogenies and that the looms used by speakers of closely related languages tend to belong to similar types. However, we also found differences at a deep level both in the details of the evolution of looms and languages and in their overall patterns of change, and we discuss possible reasons for this.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Christopher D. Buckley", "Emma Kopp", "Thomas Pellard", "Robin J. Ryder", "Guillaume Jacques"]
+
+# parts of the world
+groups = ['Tai-Kadai']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Buckley_2025"
+
+# type of study
+type = ['macroevolutionary', 'trait', 'phylogenetic']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+
+    [data.tao2023]
+    ntaxa = 102
+    nchars = 90
+    nsites = 653
+    datatype = 'lexical cognates'
+    source = '@Tao_2023'
+    items = ''
+    comment = 'We augmented this dataset with data on two languages of Assam: Tai Phake (Morey, Reference Morey2007) and Ahom (Morey et al., Reference Morey, Phukan, Mohan, Mohan and TabassumN.d)'
+
+    [data.looms]
+    ntaxa = 29
+    nchars = 216
+    nsites = 216
+    datatype = 'material culture'
+    source = ''
+    items = ''
+    comment = ''
+
+
+
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.swt]
+    taxa = ['sout3184']
+    age = "uniform(1.0, 1.2)" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "y2000" # bp
+    description = """The date range for the emergence of SWT follows Pittayaporn Reference
+Pittayaporn(2014), who provides two pieces of evidence showing that the latest layer of Chinese borrowings in
+Proto-SWT corresponds to Late Middle Chinese (LMC, post 700 AD) rather than Early Middle Chinese """
+
+
+    [calibration.ahom]
+    taxa = ['ahom1240']
+    age = "uniform(0.3, 0.6)" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "y2000" # bp
+    description = ""
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+
+    [analysis.kd-lgs_bcov_relaxed_ht_pos]
+    tool = 'beast2'
+    model = 'bcov_relaxed_ht_pos'
+    details = ""
+    data = "@data.tao2023"
+
+
+    [analysis.kd-lgs_bcov_relaxed_uni]
+    tool = 'beast2'
+    model = 'bcov_relaxed_uni'
+    details = ""
+    data = "@data.tao2023"
+
+
+    [analysis.kd-lgs_bcov_strict_ht_pos]
+    tool = 'beast2'
+    model = 'bcov_strict_ht_pos'
+    details = ""
+    data = "@data.tao2023"
+
+
+    [analysis.kd-lgs_bcov_strict_uni]
+    tool = 'beast2'
+    model = 'bcov_strict_uni'
+    details = ""
+    data = "@data.tao2023"
+
+
+    [analysis.kd-looms_bcov_basic_strict_ht]
+    tool = 'beast2'
+    model = 'bcov_basic_strict_ht'
+    details = ""
+    data = "@data.looms"
+
+
+    [analysis.kd-looms_bcov_basic_strict_uni]
+    tool = 'beast2'
+    model = 'bcov_basic_strict_uni'
+    details = ""
+    data = "@data.looms"
+
+
+    [analysis.kd-looms_bcov_patterns_strict_ht]
+    tool = 'beast2'
+    model = 'bcov_patterns_strict_ht'
+    details = ""
+    data = "@data.looms"
+
+
+    [analysis.kd-looms_bcov_patterns_strict_uni]
+    tool = 'beast2'
+    model = 'bcov_patterns_strict_uni'
+    details = ""
+    data = "@data.looms"
+
+
+    [analysis.kd-looms_bcov1000_strict_uni]
+    tool = 'beast2'
+    model = 'bcov1000_strict_uni'
+    details = ""
+    data = "@data.looms"
+
+
+    [analysis.kd-looms_bcov1111_relaxed_ht]
+    tool = 'beast2'
+    model = 'bcov1111_relaxed_ht'
+    details = ""
+    data = "@data.looms"
+
+
+    [analysis.kd-looms_bcov1111_relaxed_uni]
+    tool = 'beast2'
+    model = 'bcov1111_relaxed_uni'
+    details = ""
+    data = "@data.looms"
+
+
+    [analysis.kd-looms_bcov1111_strict_ht]
+    tool = 'beast2'
+    model = 'bcov1111_strict_ht'
+    details = ""
+    data = "@data.looms"
+
+
+    [analysis.kd-looms_bcov1111_strict_uni]
+    tool = 'beast2'
+    model = 'bcov1111_strict_uni'
+    details = ""
+    data = "@data.looms"
+
+
+    [analysis.kd-looms_bcov8421_strict_ht]
+    tool = 'beast2'
+    model = 'bcov8421_strict_ht'
+    details = ""
+    data = "@data.looms"
+
+
+    [analysis.kd-looms_bcov8421_strict_uni]
+    tool = 'beast2'
+    model = 'bcov8421_strict_uni'
+    details = ""
+    data = "@data.looms"
+
+
+    [analysis.kd-looms_ctmc1111_strict_ht]
+    tool = 'beast2'
+    model = 'ctmc1111_strict_ht'
+    details = ""
+    data = "@data.looms"
+
+
+    [analysis.kd-looms_ctmc1111_strict_uni]
+    tool = 'beast2'
+    model = 'ctmc1111_strict_uni'
+    details = ""
+    data = "@data.looms"
+
+
+
+
+[inferredages]
+    
+    notes = ""
+    
+
+    [inferredage.bcov_relaxed_ht_pos_Kra-Dai]
+    taxa = ['taik1256']
+    age = "hpd(5.33, 2.73, 8.94)"
+    units = "y2000"
+    notes = ""
+
+
+    [inferredage.bcov_relaxed_ht_pos_Be-Kam-Tai]
+    taxa = [] # Be-Kam-Tai]
+    age = "hpd(3.78, 2.25, 6.19)"
+    units = "y2000"
+    notes = ""
+
+
+    [inferredage.bcov_relaxed_ht_pos_Kam-Tai]
+    taxa = ['kamt1241']
+    age = "hpd(2.99, 1.82, 4.71)"
+    units = "y2000"
+    notes = ""
+
+
+    [inferredage.bcov_relaxed_ht_pos_Tai-Yay]
+    taxa = ['daic1237']
+    age = "hpd(1.95, 1.36, 2.74)"
+    units = "y2000"
+    notes = ""
+
+
+    [inferredage.bcov_relaxed_uni_Kra-Dai]
+    taxa = ['taik1256']
+    age = "hpd(4.80, 2.73, 7.99)"
+    units = "y2000"
+    notes = ""
+
+
+    [inferredage.bcov_relaxed_uni_Be-Kam-Tai]
+    taxa = [] # Be-Kam-Tai]
+    age = "hpd(3.44, 2.02, 5.50)"
+    units = "y2000"
+    notes = ""
+
+
+    [inferredage.bcov_relaxed_uni_Kam-Tai]
+    taxa = ['kamt1241']
+    age = "hpd(2.78, 1.67, 4.33)"
+    units = "y2000"
+    notes = ""
+
+
+    [inferredage.bcov_relaxed_uni_Tai-Yay]
+    taxa = ['daic1237']
+    age = "hpd(1.83, 1.31, 2.53)"
+    units = "y2000"
+    notes = ""
+
+
+    [inferredage.bcov_strict_ht_pos_Kra-Dai]
+    taxa = ['taik1256']
+    age = "hpd(8.97, 6.59, 11.39)"
+    units = "y2000"
+    notes = ""
+
+
+    [inferredage.bcov_strict_ht_pos_Be-Kam-Tai]
+    taxa = [] # Be-Kam-Tai]
+    age = "hpd(4.09, 3.08, 5.31)"
+    units = "y2000"
+    notes = ""
+
+
+    [inferredage.bcov_strict_ht_pos_Kam-Tai]
+    taxa = ['kamt1241']
+    age = "hpd(3.90, 2.88, 5.01)"
+    units = "y2000"
+    notes = ""
+
+
+    [inferredage.bcov_strict_ht_pos_Tai-Yay]
+    taxa = ['daic1237']
+    age = "hpd(1.61, 1.29, 1.96)"
+    units = "y2000"
+    notes = ""
+
+
+    [inferredage.bcov_strict_uni_Kra-Dai]
+    taxa = ['taik1256']
+    age = "hpd(8.01, 6.16, 10.25)"
+    units = "y2000"
+    notes = ""
+
+
+    [inferredage.bcov_strict_uni_Be-Kam-Tai]
+    taxa = [] # Be-Kam-Tai]
+    age = "hpd(3.74, 2.85, 4.77)"
+    units = "y2000"
+    notes = ""
+
+
+    [inferredage.bcov_strict_uni_Kam-Tai]
+    taxa = ['kamt1241']
+    age = "hpd(3.64, 2.74, 4.63)"
+    units = "y2000"
+    notes = ""
+
+
+    [inferredage.bcov_strict_uni_Tai-Yay]
+    taxa = ['daic1237']
+    age = "hpd(1.52, 1.24, 1.83)"
+    units = "y2000"
+    notes = ""
+
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

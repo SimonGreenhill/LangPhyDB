@@ -1,0 +1,112 @@
+title = "Tracing contact and migration in pre-Bantu Southern Africa through lexical borrowing"
+
+doi = "10.1017/ehs.2025.10014"
+
+abstract = """
+Lexical borrowing may provide valuable clues about the sociohistorical context of language contact. Here we
+explore patterns of vocabulary transfer between languages from three families (Kx'a, Tuu, Khoe-Kwadi) comprising
+the linguistic unit commonly referred to as Southern African Khoisan. In our data set, 20% of 1,706 roots are
+shared between at least two families. By applying a carefully chosen set of linguistic and extralinguistic
+criteria, we were able to trace the origin of 71% of shared roots, with the remaining 29% constituting good
+candidates for ancient contact or shared common ancestry of the forager families Kx'a and Tuu. More than half of
+the shared roots for which an origin could be determined trace back to Khoe-Kwadi and were borrowed into
+languages of other families within two major confluence zones with different sociohistorical profiles: (i) the
+Central Kalahari characterized by egalitarian interaction between languages of all three families and (ii) the
+southern and south-western Kalahari Basin fringes showing unilateral transfer from Khoe-Kwadi-speaking herders
+into resident forager groups. The findings of this study complement genetic and archaeological research on
+southern Africa and testify to the value of linguistics in the multidisciplinary inference of contact and
+migration scenarios.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Anne-Maria Fehn", "Bonny E. Sands", "Admire Phiri", "Maitseo Bolaane", "Gaseitsiwe Masunga", "Ezequiel Fabiano", "Jorge Rocha"]
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Fehn_2025"
+
+# type of study
+type = ['trait', 'phylogenetic']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian', 'statistical'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = """
+    This study is based on a list of 228 meanings initially assembled for 63 doculects from the Kx’a, Tuu and
+    Khoe-Kwadi families, from study locations in Angola, Namibia, Botswana, Zimbabwe and South Africa (Fig. 1).
+    The wordlist consists of 132 meanings from the Swadesh 200 wordlist of basic vocabulary (Swadesh, Reference
+    Swadesh1952) and 96 additional meanings for which we could obtain good data coverage, particularly for
+    under-attested and extinct languages of the !Ui (Tuu) cluster. Swadesh 200 meanings that were either (a)
+    function words (grammatical items like pronouns or adverbs), (b) for which the data coverage was insufficient
+    or (c) which have no generic expression in the data at hand (like ‘leg’ or ‘burn’) were removed.
+    """
+    
+    [data.basic]
+    ntaxa = 63
+    nchars = 228
+    nsites = 1706
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.nnet]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = ""
+    
+    # We performed a Bayesian phylogenetic analysis for each language family (Kx’a, Tuu, Khoe-Kwadi) by importing
+    # the ascertained binary data in the software Beast 2.5 (Bouckaert et al, Reference Bouckaert, Vaughan,
+    # Barido-Sottani, Duchêne, Fourment, Gavryushkina, Heled, Jones, Kühnert, De Maio, Matschiner, Mendes, Müller,
+    # Ogilvie, du Plessis, Popinga, Rambaut, Rasmussen, Siveroni and Drummond2019). In order to obtain a basic
+    # phylogeny and posterior support values for individual language clusters, we opted for the Continuous Markov
+    # Chain Model (CTMC) included in the Babel package (https://github.com/rbouckaert/Babel) under a Yule model,
+    # following a strict clock. We acknowledge possible caveats of this simplified model choice (Hoffmann et al.,
+    # Reference Hoffmann, Bouckaert, Greenhill and Kühnert2021), but as we do not use priors with the aim to date
+    # our phylogeny, we consider our analysis satisfactory for the purpose of this work. We ran each analysis for
+    # 20 million generations, during which we could obtain adequate values for effective sample sizes (ESS) of all
+    # parameters. Consensus trees were subsequently visualized in FigTree v.1.4.4 (Rambaut, Reference Rambaut2018).
+
+    [analysis.kxa]
+    tool = 'beast2'
+    model = 'ctmc+strict+yule'
+    details = "no date"
+    data = ""
+
+    [analysis.tuu]
+    tool = 'beast2'
+    model = 'ctmc+strict+yule'
+    details = "no date"
+    data = ""
+
+    [analysis.khoekwadi]
+    tool = 'beast2'
+    model = 'ctmc+strict+yule'
+    details = "no date"
+    data = ""
+    
+
+
+[inferredages]
+    
+    notes = "no dating done - ages arbitrary"
+    
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

@@ -62,6 +62,10 @@ Main Criteria for Exclusion are:
 * Jackson JC, Watts J, Henry TR, List JM, Forkel R, Mucha PJ, Greenhill SJ, Gray RD, & Lindquist KA 2019 Emotion semantics show both cultural variation and universal structure. Science, 366, 1517-1522.
     - No explicit phylogenetic analysis
 
+* Jacques, G., & Pellard, T. (2020). Phylogenies based on lexical innovations refute the Rung hypothesis. Diachronica, 38(1), 1–24. Portico. https://doi.org/10.1075/dia.19058.jac
+    - No explicit phylogenetic analysis
+
+
 ## K
 ## L
 

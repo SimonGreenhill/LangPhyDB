@@ -3,21 +3,28 @@ title = "Phylogenetic ancestral state reconstruction of bilabial trills in the l
 doi = "10.1093/jole/lzaf004"
 
 abstract = """
-
+It is unknown how rare sound changes appear and spread through the lexicon. The bilabial trills of Malekula are
+one such example of a rare sound, and the recent assembly of a lexical database for Vanuatu (the Vanuatu Voices
+database) affords a unique opportunity for a quantitative historical analysis. We built a linguistic phylogeny of
+Malekula languages, and performed phylogenetic ancestral state reconstruction of fourteen semantic values which
+exhibit bilabial trills to track their historical evolution. We found a surprising degree of dynamism, with trills
+spreading gradually through the lexicon and showing frequent losses and reappearances. Our results are consistent
+with frequent borrowing of trills between neighbouring languages. We suggest that the rapid dynamism and evidence
+for borrowing are explained by the low functional load and identity attachment of trills respectively.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Benedict King", "Tihomir Rangelov", "Mary Walworth"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Austronesian']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@King_2025"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['phylogenetic', 'asr', 'trait']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
 # short description of the study, one line.
 description = ""
 
@@ -26,30 +33,32 @@ description = ""
 
     notes = ""
     
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
+    [data.abvd]
+    ntaxa = 44
+    nchars = 201
+    nsites = 1997
     datatype = 'lexical cognates'
-    source = '@xxx'
+    source = '@ABVD'
     items = ''
     comment = ''
 
-# published phylogenies
-[phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
+    [data.trills]
+    ntaxa = 43
+    nchars = 11
+    nsites = 11
+    datatype = 'phonetic traits'
+    source = '@Rangelov_2023'
+    items = ''
+    comment = 'eleven semantic values with the prenasalized trills (bad, bone, branch, dull/blunt, fire, kill, lake, smell, squeeze, swell, tail) and three with plain trills (flower, spit, white).'
 
 
 # date calibrations
 [calibrations]
 
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    notes = "we applied a conservative normal distribution prior (mean 2,500 BP, standard deviation 250), for the root of the tree, a distribution that permits any date between 2,000 and 3,000 BP. "
+    [calibration.mala1539]
+    taxa = ['mala1539']
+    age = "normal(2500, 250)" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
     units = "bp" # bp
     description = ""
 
@@ -57,27 +66,71 @@ description = ""
 # analysis information
 [analysis]
     
-    notes = ""
+    notes = """
+    We built a phylogeny of Malekula languages using established methods of Bayesian phylogenetic inference (see
+    Hoffmann et al. 2021 for review). We downloaded the data from the ABVD (Greenhill et al. 2008). Details of the
+    doculects used, together with their sources, are included in Supplementary Table S1. The data comprised 1997
+    cognate sets organized into 201 semantic values. We performed two phylogenetic analyses, one without
+    constraints, and one with the North, East and West groupings of Lynch (2016) enforced as clade constraints.
+
+    Cognate sets were partitioned into bins based on the number of cognate sets in each semantic value, with bins
+    of one to five, six to ten, etc. cognate sets. We applied a Yule model tree prior with a uniform prior on the
+    birth rate and an optimized relaxed clock (Drummond et al. 2006; Zhang and Drummond 2020; Douglas et al.
+    2021) with a lognormal prior (−9.5, 2.0) on the mean branch rate and a gamma distribution (0.5, 0.05) on the
+    standard deviation.
+    
+    x 3 reps
+    100 million
+    
+    
+    Ancestral state reconstruction in the phylogenetic analysis software RevBayes (Höhna et al. 2016). We used an
+    Mk model (Lewis 2001) with nine states for all semantic values: two states (0 and 1) representing a 
+    cognate set with or without trills, and seven states for other cognate sets.
+    20,000 generations, sampling every ten. Stochastic character maps for each semantic value were logged at the same frequency. Convergence was confirmed in Tracer, with effective sample size > 200 for all parameters. We processed the results using the R package RevGadgets (Tribble et al. 2022).
+    
+    """
     
     [analysis.tree]
-    tool = ''
-    model = ''
+    tool = 'beast2'
+    model = 'covarion+orelaxed+yule+binned'
     details = ""
-    data = ""
+    data = "@data.abvd"
+    times = 3
+
+    [analysis.tree_lynch]
+    tool = 'beast2'
+    model = 'covarion+orelaxed+yule+binned'
+    details = "constrained to match Lynch2016"
+    data = "@data.abvd"
+    times = 3
+    
+    [analysis.asr_tree]
+    tool = 'revbayes'
+    model = 'Mk(9)'
+    details = ""
+    data = "@data.trills@analysis.tree"
+    times = 3
+
+    [analysis.asr_tree_lynch]
+    tool = 'revbayes'
+    model = 'Mk(9)'
+    details = ""
+    data = "@data.trills;@analysis.tree_lynch"
+    times = 3
 
 [inferredages]
     
     notes = ""
     
-    [inferredage.label]
+    [inferredage.root]
     taxa = []
-    age = "hpd(median, lower, upper)"
+    age = "hpd(2444.6, 1954.2, 2951.9)"
     units = "bp"
-    notes = ""
+    notes = "n.b. constrained"
 
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }
 cldf = { title = "CLDF Dataset", link = "" }
 dplace = { title = "D-PLACE Dataset", link = "" }
-links = []
+links = ['https://doi.org/10.6084/m9.figshare.25593867']

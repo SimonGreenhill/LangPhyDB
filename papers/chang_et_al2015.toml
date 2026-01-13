@@ -320,110 +320,110 @@ description = "Phylogenetic analysis of Indo-European languages"
     
     [inferredage.ProtoIndoEuropean]
     taxa = ["indo1319"]
-    age = "hpd(5950, 7190, 4870)"
+    age = "hpd(5950, 4870, 7190)"
     units = "bp"
     details = 'A1 Narrow dataset'
 
 
     [inferredage.A1_Narrow]
     taxa = ["indo1319"]
-    age = "hpd(5950, 7190, 4870)"
+    age = "hpd(5950, 4870, 7190)"
     units = "bp"
     details = ""
 
     [inferredage.A1_Corrected]
     taxa = ["indo1319"]
-    age = "hpd(6580, 7790, 5730)"
+    age = "hpd(6580, 5730, 7790)"
     units = "bp"
     details = ""
 
     [inferredage.A2_Medium]
     taxa = ["indo1319"]
-    age = "hpd(6410, 7910, 5190)"
+    age = "hpd(6410, 5190, 7910)"
     units = "bp"
     details = ""
 
     [inferredage.A2_Corrected]
     taxa = ["indo1319"]
-    age = "hpd(6740, 8330, 5510)"
+    age = "hpd(6740, 5510, 8330)"
     units = "bp"
     details = ""
 
     [inferredage.A3_Broad]
     taxa = ["indo1319"]
-    age = "hpd(5930, 7250, 4860)"
+    age = "hpd(5930, 4860, 7250)"
     units = "bp"
     details = ""
 
     [inferredage.A4_ExcludeLoans]
     taxa = ["indo1319"]
-    age = "hpd(6060, 7280, 5000)"
+    age = "hpd(6060, 5000, 7280)"
     units = "bp"
     details = ""
 
     [inferredage.A5_FewerMeaningClasses]
     taxa = ["indo1319"]
-    age = "hpd(6060, 7590, 4870)"
+    age = "hpd(6060, 4870, 7590)"
     units = "bp"
     details = ""
 
     [inferredage.A6_ConstantPopCoalTreePrior]
     taxa = ["indo1319"]
-    age = "hpd(6130, 7420, 5070)"
+    age = "hpd(6130, 5070, 7420)"
     units = "bp"
     details = ""
 
     [inferredage.A7_Covarion]
     taxa = ["indo1319"]
-    age = "hpd(6140, 7710, 4760)"
+    age = "hpd(6140, 4760, 7710)"
     units = "bp"
     details = ""
 
     [inferredage.B1_]
     taxa = ["indo1319"]
-    age = "hpd(7750, 9720, 6180)"
+    age = "hpd(7750, 6180, 9720)"
     units = "bp"
     details = ""
 
     [inferredage.B2_]
     taxa = ["indo1319"]
-    age = "hpd(6810, 8780, 5400)"
+    age = "hpd(6810, 5400, 8780)"
     units = "bp"
     details = ""
 
     [inferredage.B3_]
     taxa = ["indo1319"]
-    age = "hpd(6440, 8670, 5110)"
+    age = "hpd(6440, 5110, 8670)"
     units = "bp"
     details = ""
 
     [inferredage.C1_RSC_AncConstraints]
     taxa = ["indo1319"]
-    age = "hpd(6470, 8700, 4920)"
+    age = "hpd(6470, 4920, 8700)"
     units = "bp"
     details = ""
 
     [inferredage.C2_RSC_HomoAncConstraints]
     taxa = ["indo1319"]
-    age = "hpd(5780, 7380, 4550)"
+    age = "hpd(5780, 4550, 7380)"
     units = "bp"
     details = ""
 
     [inferredage.C3_RSC_NoAncConstraints]
     taxa = ["indo1319"]
-    age = "hpd(7670, 9460, 6190)"
+    age = "hpd(7670, 6190, 9460)"
     units = "bp"
     details = ""
 
     [inferredage.C4_RSC_HomoNoAncConstraints]
     taxa = ["indo1319"]
-    age = "hpd(6890, 8350, 5670)"
+    age = "hpd(6890, 5670, 8350)"
     units = "bp"
     details = ""
 
     [inferredage.C5_SDC_HomoNoAncConstraints]
     taxa = ["indo1319"]
-    age = "hpd(7060, 8390, 5940)"
+    age = "hpd(7060, 5940, 8390)"
     units = "bp"
     details = ""
 

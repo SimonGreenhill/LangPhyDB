@@ -99,7 +99,7 @@ description = "26 Turkic languages"
 
     [inferredage.regular]
     taxa = ['turk1311']
-    age = "hpd(2204, 2605, 1919)"
+    age = "hpd(2204, 1919, 2605)"
     units = "y2000"
     details = "204 BCE, with 95% credible intervals of 605 BCE–81 CE"
 

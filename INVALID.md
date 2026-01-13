@@ -8,6 +8,10 @@ Main Criteria for Exclusion are:
 
 
 ## A
+
+* Allassonnière-Tang, M., Lundgren, O., Robbers, M. et al. Expansion by migration and diffusion by contact is a source to the global diversity of linguistic nominal categorization systems. Humanit Soc Sci Commun 8, 331 (2021). https://doi.org/10.1057/s41599-021-01003-5
+    - no explicit phylogenetic analysis
+
 ## B
 
 * Bouchard-Côté, A., Hall, D., Griffiths, T. L., & Klein, D. (2013). Automated reconstruction of ancient languages using probabilistic models of sound change. Proceedings of the National Academy of Sciences, 110(11), 4224–4229. https://doi.org/10.1073/pnas.1204678110

@@ -599,126 +599,126 @@ description = "161 Indo-European languages"
     
     [inferredage.M3_ProtoIndoEuropean]
     taxa = ["indo1319"]
-    age = "hpd(6981, 9613, 6735)"
+    age = "hpd(6981, 6735, 9613)"
     units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_BaltoSlavic_Italic_Germanic_Celtic]
     taxa = ["balt1263", "ital1284", "germ1287", "celt1248"]
-    age = "hpd(6465, 7944, 5036)"
+    age = "hpd(6465, 5036, 7944)"
     units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Italic_Germanic_Celtic]
     taxa = ["ital1284", "germ1287", "celt1248"]
-    age = "hpd(5564, 6984, 4231)"
+    age = "hpd(5564, 4231, 6984)"
     units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Indo-Iranic]
     taxa = ["indo1320"]
-    age = "hpd(5520, 6796, 4535)"
+    age = "hpd(5520, 4535, 6796)"
     units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Greco-Armenian]
     taxa = ["gree1276", "arme1241"]
-    age = "hpd(5310, 6930, 3999)"
+    age = "hpd(5310, 3999, 6930)"
     units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Balto-Slavic]
     taxa = ["balt1263"]
-    age = "hpd(3663, 5034, 2531)"
+    age = "hpd(3663, 2531, 5034)"
     units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Anatolian]
     taxa = ["anat1257"]
-    age = "hpd(4618, 5620, 3857)"
+    age = "hpd(4618, 3857, 5620)"
     units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Indic]
     taxa = ["indo1321"]
-    age = "hpd(4366, 5253, 3640)"
+    age = "hpd(4366, 3640, 5253)"
     units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Iranic]
     taxa = ["iran1269"]
-    age = "hpd(4110, 4894, 3464)"
+    age = "hpd(4110, 3464, 4894)"
     units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Italic]
     taxa = ["ital1284"]
-    age = "hpd(3431, 4286, 2771)"
+    age = "hpd(3431, 2771, 4286)"
     units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Greek]
     taxa = ["gree1276"]
-    age = "hpd(3364, 3609, 3218)"
+    age = "hpd(3364, 3218, 3609)"
     units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Celtic]
     taxa = ["celt1248"]
-    age = "hpd(3205, 3963, 2515)"
+    age = "hpd(3205, 2515, 3963)"
     units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Baltic]
     taxa = ["east2280"]
-    age = "hpd(2439, 3484, 1526)"
+    age = "hpd(2439, 1526, 3484)"
     units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Germanic]
     taxa = ["germ1287"]
-    age = "hpd(2337, 2865, 1931)"
+    age = "hpd(2337, 1931, 2865)"
     units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Tocharian]
     taxa = ["tokh1241"]
-    age = "hpd(1828, 2315, 1495)"
+    age = "hpd(1828, 1495, 2315)"
     units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Armenian]
     taxa = ["arme1241"]
-    age = "hpd(1578, 1851, 1485)"
+    age = "hpd(1578, 1485, 1851)"
     units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Slavic]
     taxa = ["slav1255"]
-    age = "hpd(1493, 1837, 1222)"
+    age = "hpd(1493, 1222, 1837)"
     units = "bp"
     details = ''
     best = "true"
 
     [inferredage.M3_Albanian]
     taxa = ["alba1267"]
-    age = "hpd(1067, 1882, 468)"
+    age = "hpd(1067, 468, 1882)"
     units = "bp"
     details = ''
     best = "true"

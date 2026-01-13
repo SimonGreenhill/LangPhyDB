@@ -52,7 +52,7 @@ description = ""
 
     [calibration.oldchinese]
     taxa = ["oldc1244"]
-    age = "uniform(2800, 2300)"  # normal(x, y)
+    age = "uniform(2300, 2800)"  # normal(x, y)
     units = "bp" # before present
     description = "Period of the great Classical Chinese texts"
 

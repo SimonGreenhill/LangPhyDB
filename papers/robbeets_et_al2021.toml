@@ -181,6 +181,8 @@ description = "98 Transeurasian languages"
         best = 'true'
 
 [calibrations]
+    note = "Language family node ages were informed by age priors ( Japonic 2100 bp ± 175, Koreanic 800 bp ± 175, Turkic 2100 bp ± 175, Mongolic 750 bp ± 50, Tungusic 1900 bp ± 275)"
+
     [calibration.japonic]
     taxa = ["japo1237"]
     age = "normal(2100, 175)"
@@ -214,7 +216,7 @@ description = "98 Transeurasian languages"
 
 [inferredages]
     
-    notes = ""
+    notes = "Our results indicate a time-depth of 9181 bp (5595–12793 95% highest probability density (95% HPD)) for the Proto-Transeurasian root of the family; 6811 bp (4404–10166 95% HPD) for Proto-Altaic, the unity of Turkic, Mongolic and Tungusic languages; 4491 bp (2599–6373 95% HPD) for Mongolo-Tungusic; and 5458 bp (3335–8024 95% HPD) for Japano-Koreanic (Fig. 1b)."
     
     [inferredage.transeurasian]
     taxa = ['japo1237', 'kore1284', 'turk1311', 'mong1349', 'tung1282',]

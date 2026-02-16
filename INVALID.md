@@ -76,6 +76,9 @@ Main Criteria for Exclusion are:
 * Levinson SC, Greenhill SJ, Gray RD & Dunn M. 2011. Universal typological dependencies should be detectable in the history of language families. Linguistic Typology, 15: 509-534.
     - position piece/response to criticism of Dunn et al. 2011.
 
+* Liu, H., & Xu, C. (2012). Quantitative typological analysis of Romance languages. Poznań Studies in Contemporary Linguistics, 48. https://doi.org/10.1515/psicl-2012-0027
+    - No explicit phylogenetic analysis
+
 * Longobardi, Giuseppe. 2003. Methods in parametric linguistics and cognitive history. Linguistic Variation Yearbook 3. 101–138. DOI: http://doi.org/10.1075/livy.3.06lon
     - No explicit phylogenetic analysis
 

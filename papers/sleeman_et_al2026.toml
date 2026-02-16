@@ -1,0 +1,89 @@
+title = "Evaluating the phylogenetic signal of morphosyntax"
+
+doi = "https://doi.org/10.1515/psicl-2025-0030"
+
+abstract = """
+Computational linguistic phylogenetics has so far relied heavily on cognate data. In contrast, the potential of
+morphosyntactic characters as a valuable source for phylogenetic analysis has been largely overlooked. We argue
+that morphosyntactic characters may conflate historical signal with the results of homoplasies, horizontal
+transfer, and universal tendencies, and must be scrutinized in terms of their propensity to change and borrowing,
+analogously to the curation of lexical data which produced the Swadesh lists. In this paper we make a start by
+evaluating a set of morphosyntactic characters based on the World Atlas of Language Structures using three
+methods: we (1) calculated Pearson correlation coefficients for each character against different language
+groupings, reflecting either shared ancestry (genera) or contact (geographical proximity); (2) counted the minimum
+number of mutations needed for the distribution of a character's states on a cognate-based reference tree
+(parsimony score), testing whether they correctly reflect language change known from historical linguistics; and
+(3) ran a classic hill-climbing algorithm to determine which random subsets of characters produced a phylogeny
+closest to a reference tree. We conclude that these are useful tools, but expect that making the definitions of
+the characters more theoretically informed will produce a stronger historical signal. 
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Ruby Sleeman", "Maria-Margarita Makri", "Elena Anagnostopoulou", "Emmanuel D. Ladoukakis", "Dimitris Michelioudakis", "Christos Zioutis", "Pavlos Pavlidis"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Sleeman_2026"
+
+# type of study
+type = ['trait',]  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['statistical', 'parsimony', 'bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+
+    [data.ie_cognates]
+    ntaxa = 46
+    nchars = "?"
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@Bouckaert2012'
+    items = ''
+    comment = ''
+
+    [data.ie_wals]
+    ntaxa = 46
+    nchars = 425
+    nsites = 425
+    datatype = 'structural features'
+    source = '@WALS'
+    items = ''
+    comment = ''
+
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.indoeuropean]
+    source = '@Bouckaert2012'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.referencetree]
+    tool = 'beast2'
+    model = '?-relaxed-bdsky'
+    details = ""
+    data = "@Bouckaert2012"
+        
+    [analysis.parsimony]
+    tool = 'unknown'
+    model = 'parsimony'
+    details = ""
+    data = "@analysis.referencetree;@data.ie_wals"
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

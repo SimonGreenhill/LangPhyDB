@@ -79,6 +79,13 @@ description = "investigation of phylogenetic signal in Pama-Nyungan languages"
     data = '@data.biphones;@analysis.beast'
 
 
+[calibrations]
+    notes = "no details available"
+
+[inferredages]
+    notes = "no details available"
+
+
 [links]
 phlorest = { title = "Phlorest Dataset", link = "https://github.com/phlorest/macklincordes_et_al2021" }
 cldf = { title = "CLDF Dataset", link = "" }

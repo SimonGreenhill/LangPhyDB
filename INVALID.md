@@ -23,6 +23,9 @@ Main Criteria for Exclusion are:
 * Bromham L, Hua X, Fitzpatrick T, & Greenhill SJ 2015. Rate of language evolution is affected by population size. Proceedings of the National Academy of Sciences, USA 201419704.
     - no explicit phylogenetic analysis
 
+* Blum F. 2026. The over-representation of phonological features in basic vocabulary doesn’t replicate when controlling for spatial and phylogenetic effects. Linguistic Typology. https://doi.org/10.1515/lingty-2025-0050
+    - Glottolog taxonomy used as statistical control only.
+
 ## C
 
 * Crisma, Paola & Guardiano, Cristina & Longobardi, Giuseppe. 2020. Syntactic parameters and language learnability. Studi Saggi Linguistici 58. 99–130.x

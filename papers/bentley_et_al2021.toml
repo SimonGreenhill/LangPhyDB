@@ -7,7 +7,7 @@ As adaptive systems, kinship and its accompanying rules have co-evolved with ele
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
-authors = ["R Alexander Bentley", "William R Moritz", "Damian J Ruck", "Michael J O’Brien"]
+authors = ["R. Alexander Bentley", "William R. Moritz", "Damian J. Ruck", "Michael J. O'Brien"]
 
 # parts of the world
 groups = ['Austronesian']  # 'Austronesian', etc

@@ -16,7 +16,7 @@ phylogenetic analysis using the software tool BEAST2. """
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = [
     "Konstantin Hoffmann",
-    "Remco Bouckaert",
+    "Remco R. Bouckaert",
     "Simon J. Greenhill",
     "Denise Kühnert"
 ]

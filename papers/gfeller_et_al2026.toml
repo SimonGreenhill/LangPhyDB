@@ -1,0 +1,90 @@
+title = "Investigating lexical change through crosslinguistic colexification patterns"
+
+doi = "10.1163/22105832-bja10041"
+
+abstract = """
+Colexification—the expression of distinct concepts by a single word form—provides a valuable window onto how
+lexical meanings evolve. Using phylogenetic comparative models, we analyze lexical data from three language
+families—Austronesian, Indo-European, and Uralic—to investigate the evolutionary dynamics underlying
+colexification patterns. We assess the effects of three predictors: semantic relatedness, borrowability, and
+usage frequency. Our results suggest that more closely related concept pairs tend to be colexified across a
+larger portion of the family trees and change more slowly. Concept pairs that are more frequent and more prone
+to borrowing show a tendency to evolve more rapidly and be colexified less often, though these effects are not
+fully consistent across families. Differences between the language families suggest that areal and cultural
+factors also play a role."""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Kim Gfeller", "Sabine Stoll", "Chundra A. Cathcart", "Paul Widmer"]
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Gfeller_2026"
+
+# type of study
+type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.bantu]
+    ntaxa = 95
+    nchars = 100
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@xxx'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.label]
+    source = '@xxx'
+    comment = ''
+
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.label]
+    taxa = []
+    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "bp" # bp
+    description = ""
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = ''
+    model = ''
+    details = ""
+    data = ""
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.label]
+    taxa = []
+    age = "hpd(median, lower, upper)"
+    units = "bp"
+    notes = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

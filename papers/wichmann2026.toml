@@ -1,0 +1,83 @@
+title = "Impact of ecology, subsistence, and climate on language spread rates"
+
+doi = "10.1016/j.qeh.2026.100107"
+
+abstract = """
+Different languages occupy every region of the globe. How fast have languages spread and what are the factors systematically impacting these rates? Based on state-of-the-art methods and data from more than 5500 languages this paper reconstructs the movements of prehistorical languages, analyzing more than 2500 language diffusion events. Up until 2000 BP diffusion rates are typically low (0.1–0.3 km/yr). Subsequently all world areas except North America, Australia, and Papua New Guinea exhibit increases in rates, with Eurasian languages, in particular, undergoing an explosive spread. Higher diffusion rates for the languages of farmers than for those of hunter-gatherers contribute to explaining these areal differences. Intriguingly, major fluctuations in diffusion rates not conforming to general patterns are aligned with two of the most dramatic climate change events of the Holocene, namely the 5.5 ka BP end of the African Humid Period and the cooling and drying event of 4.2 ka BP affecting Eurasia.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['Søren Wichmann']
+
+# parts of the world
+groups = ['Global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Wichmann_2026"
+
+# type of study
+type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.bantu]
+    ntaxa = 95
+    nchars = 100
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@xxx'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.label]
+    source = '@xxx'
+    comment = ''
+
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.label]
+    taxa = []
+    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "bp" # bp
+    description = ""
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = ''
+    model = ''
+    details = ""
+    data = ""
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.label]
+    taxa = []
+    age = "hpd(median, lower, upper)"
+    units = "bp"
+    notes = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

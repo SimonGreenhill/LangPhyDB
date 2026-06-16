@@ -58,7 +58,7 @@ framework = ['bayesian']
     taxa = ["kada1291"]
     age = "normal(2500, 250)"
     units = "bp" # before present
-    description = "The splits of Kra languages  occurred from the Shang Dynasty to Han Dynasty"
+    description = "The splits of Kra languages occurred from the Shang Dynasty to Han Dynasty"
 
     [calibration.Hlai]
     taxa = ["hlai1239"]

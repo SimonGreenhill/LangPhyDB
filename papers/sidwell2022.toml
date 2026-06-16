@@ -1,0 +1,79 @@
+title = "A Classification of the Nicobarese Languages"
+
+doi = ""
+
+abstract = """
+In this paper, I report the results of a computational phylogenetic experiment based on a modified
+Swadesh 100 list intended to provide indications of the internal branching of the Nicobarese languages.
+To date, little work has been done on the classification of the small Nicobarese group, which appears to
+consist of approximately seven distinct languages spoken across an island chain. Three of the languages
+have published dictionaries and partial descriptions, while the others are fragmentarily documented, and
+the materials can be highly problematic to work with. The findings of the experiment suggest three
+principal sub-groups: Northern and Southern groups consisting of single languages (Car and Shompen,
+respectively) and a complex Central group that includes all other documented lects and may be regarded as
+a dialect chain. The Central languages appear to be rather close lexically and grammatically, although
+some phonological diversity is evident. There are textual claims that the various islands have been in
+mutual contact historically, and the phylogenetic results perhaps provide some indications of the
+patterns of this contact. The data supporting the study, and Nexus file used to generate the analyses,
+are made available as a Zenodo archive for transparency and reproducibility (10.5281/zenodo.5508350).
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['Paul Sidwell']
+
+# parts of the world
+groups = ['Austroasiatic']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Sidwell2022"
+
+# type of study
+type = ['phylogenetic']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['distance', 'network'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.nicobar]
+    ntaxa = 18
+    nchars = 100
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = ''
+    items = ''
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.nnet]
+    tool = 'splitstree'
+    model = 'neigbornet'
+    details = ""
+    data = ""
+
+    [analysis.nj]
+    tool = 'splitstree'
+    model = 'neigbor-joining'
+    details = ""
+    data = ""
+
+    [analysis.upgma]
+    tool = 'splitstree'
+    model = 'upgma'
+    details = ""
+    data = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = ["https://zenodo.org/records/5508350"]

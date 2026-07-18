@@ -1,0 +1,464 @@
+title = "Variation in language phylogenies may result from variation in concept translation"
+
+doi = "10.1093/jole/lzag005"
+
+abstract = """
+Phylogenetic reconstruction in historical linguistics now typically relies on cognates sets assembled from multilingual
+wordlists. While more and more scholars now trust in the robustness of the algorithms underlying the reconstruction of
+cognate-based language phylogenies, few studies have actually tested to which degree initial choices during data
+preparation can influence their outcome. Here, we provide first tests that focus on the role that concept
+translation—the initial stage of wordlist compilation, in which a list of concepts is translated into the target
+languages prior to identifying cognate sets—plays in phylogenetic reconstruction. Based on a newly compiled comparative
+dataset consisting of seven wordlists from five language families in which the same language varieties were coded by
+different authors, we investigate to which degree differences in concept translation lead to differences in phylogenetic
+reconstruction. Our results show that despite considerable differences in concept translation, lexical distances still
+show a considerably high correlation across all datasets. However, when comparing individual phylogenies reconstructed
+with the help of Bayesian inference, we find considerable differences ranging between 0.02 and 0.44 in normalized
+quartet distances computed from posterior tree samples. An additional cluster analysis that we introduce shows that
+larger differences in phylogenies do not necessarily correspond to high disagreement in the larger subgroups. A detailed
+inspection of individual concept translation differences in the Indo-European and Tupian wordlists in our sample further
+confirms that concept translation differences may specifically impact subgrouping decisions in lower clades of the tree,
+while major groupings are often unaffected.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["David Snee", "Luca Ciucci", "Johann-Mattis List"]
+
+# parts of the world
+groups = ['Indo-European', 'Austroasiatic', 'Koreanic', 'Sino-Tibetan', 'Sinitic', 'Tupian']
+
+# bibkey citation in sources.bib
+bibkey = "@Snee_2026"
+
+# type of study
+type = ['methodological', 'phylogenetic']
+framework = ['bayesian', 'distance', 'statistical']
+
+# short description of the study, one line.
+description = "Effect of concept translation variation on Bayesian phylogenetic reconstruction across 7 paired wordlists from 5 language families"
+
+# data
+[data]
+
+    notes = "14 wordlists in 7 matched pairs, each pair covering the same language varieties compiled by two independent teams. Data downloaded from Lexibank 2 (Blum et al. 2025). ntaxa and nchars reflect the matched subsets used in phylogenetic analysis (shared varieties and automatically inferred cognate characters via SCA)."
+
+    [data.peirosaustroasiatic_bahnaric]
+    ntaxa = 12
+    nchars = 241
+    nsites = 241
+    datatype = 'lexical cognates (autodetected)'
+    source = '@peirosaustroasiatic'
+    items = ''
+    comment = 'Bahnaric subset of Peiros Austroasiatic CLDF dataset; matched varieties with SidwellBahnaric'
+
+    [data.sidwellbahnaric]
+    ntaxa = 12
+    nchars = 259
+    nsites = 259
+    datatype = 'lexical cognates (autodetected)'
+    source = '@sidwellbahnaric'
+    items = ''
+    comment = 'Sidwell Bahnaric CLDF dataset; matched varieties with PeirosAustroasiatic'
+
+    [data.iecor]
+    ntaxa = 15
+    nchars = 607
+    nsites = 607
+    datatype = 'lexical cognates (autodetected)'
+    source = '@iecor'
+    items = ''
+    comment = 'Indo-European Cognate Relationships (IECOR) CLDF dataset; matched varieties with StarostinPIE'
+
+    [data.starostinpie]
+    ntaxa = 15
+    nchars = 568
+    nsites = 568
+    datatype = 'lexical cognates (autodetected)'
+    source = '@starostinpie'
+    items = ''
+    comment = 'Starostin Indo-European PIE CLDF dataset; matched varieties with IECOR'
+
+    [data.leekoreanic]
+    ntaxa = 13
+    nchars = 304
+    nsites = 304
+    datatype = 'lexical cognates (autodetected)'
+    source = '@leekoreanic'
+    items = ''
+    comment = 'Lee Koreanic CLDF dataset; matched varieties with RobbeetsTriangulation'
+
+    [data.robbeetstriangulation]
+    ntaxa = 13
+    nchars = 278
+    nsites = 278
+    datatype = 'lexical cognates (autodetected)'
+    source = '@robbeetstriangulation'
+    items = ''
+    comment = 'Robbeets Triangulation of Transeurasian Languages CLDF dataset; matched Koreanic varieties with LeeKoreanic'
+
+    [data.beidasinitic]
+    ntaxa = 12
+    nchars = 427
+    nsites = 427
+    datatype = 'lexical cognates (autodetected)'
+    source = '@beidasinitic'
+    items = ''
+    comment = 'Beijing University Chinese Dialect Vocabularies CLDF dataset; matched varieties with LiuSinitic'
+
+    [data.liusinitic]
+    ntaxa = 12
+    nchars = 415
+    nsites = 415
+    datatype = 'lexical cognates (autodetected)'
+    source = '@liusinitic'
+    items = ''
+    comment = 'Liu et al. Collection of Basic Words in Chinese Dialects CLDF dataset; matched varieties with BeidaSinitic'
+
+    [data.gaotb]
+    ntaxa = 12
+    nchars = 509
+    nsites = 509
+    datatype = 'lexical cognates (autodetected)'
+    source = '@gaotb'
+    items = ''
+    comment = 'Gao Tibeto-Burman CLDF dataset; matched varieties with SagartST'
+
+    [data.sagartst]
+    ntaxa = 12
+    nchars = 526
+    nsites = 526
+    datatype = 'lexical cognates (autodetected)'
+    source = '@sagartst'
+    items = ''
+    comment = 'Sagart et al. Sino-Tibetan Database of Lexical Cognates CLDF dataset; matched varieties with GaoTB'
+
+    [data.galuciotupi]
+    ntaxa = 21
+    nchars = 758
+    nsites = 758
+    datatype = 'lexical cognates (autodetected)'
+    source = '@galuciotupi'
+    items = ''
+    comment = 'Galucio et al. Tupian Linguistic Family CLDF dataset; matched varieties with TULED'
+
+    [data.tuled]
+    ntaxa = 21
+    nchars = 738
+    nsites = 738
+    datatype = 'lexical cognates (autodetected)'
+    source = '@tuled'
+    items = ''
+    comment = 'TuLeD Tupian Lexical Database; matched varieties with GalucioTupi'
+
+    [data.peirosaustroasiatic_vietic]
+    ntaxa = 8
+    nchars = 275
+    nsites = 275
+    datatype = 'lexical cognates (autodetected)'
+    source = '@peirosaustroasiatic'
+    items = ''
+    comment = 'Vietic subset of Peiros Austroasiatic CLDF dataset; matched varieties with SidwellVietic'
+
+    [data.sidwellvietic]
+    ntaxa = 8
+    nchars = 250
+    nsites = 250
+    datatype = 'lexical cognates (autodetected)'
+    source = '@sidwellvietic'
+    items = ''
+    comment = 'Sidwell & Alves Vietic Lexicon CLDF dataset; matched varieties with PeirosAustroasiatic'
+
+
+# published phylogenies
+[phylogenies]
+
+    notes = "14 consensus trees (one per dataset), available in the Codeberg repository (see links). All trees are Bayesian MrBayes consensus trees."
+
+    [phylogenies.peirosaustroasiatic_bahnaric]
+    source = '@Snee_2026'
+    comment = 'Bayesian consensus tree for Bahnaric (PeirosAustroasiatic subset)'
+
+    [phylogenies.sidwellbahnaric]
+    source = '@Snee_2026'
+    comment = 'Bayesian consensus tree for Bahnaric (SidwellBahnaric)'
+
+    [phylogenies.iecor]
+    source = '@Snee_2026'
+    comment = 'Bayesian consensus tree for Indo-European (IECOR)'
+
+    [phylogenies.starostinpie]
+    source = '@Snee_2026'
+    comment = 'Bayesian consensus tree for Indo-European (StarostinPIE)'
+
+    [phylogenies.leekoreanic]
+    source = '@Snee_2026'
+    comment = 'Bayesian consensus tree for Koreanic (LeeKoreanic)'
+
+    [phylogenies.robbeetstriangulation]
+    source = '@Snee_2026'
+    comment = 'Bayesian consensus tree for Koreanic (RobbeetsTriangulation)'
+
+    [phylogenies.beidasinitic]
+    source = '@Snee_2026'
+    comment = 'Bayesian consensus tree for Sinitic (BeidaSinitic)'
+
+    [phylogenies.liusinitic]
+    source = '@Snee_2026'
+    comment = 'Bayesian consensus tree for Sinitic (LiuSinitic)'
+
+    [phylogenies.gaotb]
+    source = '@Snee_2026'
+    comment = 'Bayesian consensus tree for Sino-Tibetan (GaoTB)'
+
+    [phylogenies.sagartst]
+    source = '@Snee_2026'
+    comment = 'Bayesian consensus tree for Sino-Tibetan (SagartST)'
+
+    [phylogenies.galuciotupi]
+    source = '@Snee_2026'
+    comment = 'Bayesian consensus tree for Tupian (GalucioTupi)'
+
+    [phylogenies.tuled]
+    source = '@Snee_2026'
+    comment = 'Bayesian consensus tree for Tupian (TULED)'
+
+    [phylogenies.peirosaustroasiatic_vietic]
+    source = '@Snee_2026'
+    comment = 'Bayesian consensus tree for Vietic (PeirosAustroasiatic subset)'
+
+    [phylogenies.sidwellvietic]
+    source = '@Snee_2026'
+    comment = 'Bayesian consensus tree for Vietic (SidwellVietic)'
+
+
+# date calibrations — not applicable (no divergence time estimation)
+[calibrations]
+    notes = "No date calibrations; study does not perform phylogenetic dating."
+
+
+# analysis information
+[analysis]
+
+    notes = "For all 14 datasets: (1) SCA cognate detection via LingPy (threshold=0.5); (2) MrBayes Bayesian inference (4 chains, 2 independent runs, 20M generations, sample every 10,000, 25% burnin, substitution model with gamma rate variation, fossilised birth-death clock, exponential prior on clock rate mean=300,000, uniform MRCA age prior 1,000-10,000 BP). Per-pair comparisons: (3) Mantel test on pairwise lexical distance matrices (999 permutations, Pearson r); (4) normalized quartet distance on posterior tree samples (100 draws of 1,000 tree pairs from last 1,500 sampled trees per run); (5) B-Cubed F-Score comparison of UPGMA partitions."
+
+    [analysis.cognates_peirosaustroasiatic_bahnaric]
+    tool = 'lingpy'
+    model = 'SCA'
+    details = "Automated cognate detection via Sound Class Alignment, threshold=0.5, UPGMA clustering"
+    data = "@peirosaustroasiatic"
+
+    [analysis.cognates_sidwellbahnaric]
+    tool = 'lingpy'
+    model = 'SCA'
+    details = "Automated cognate detection via Sound Class Alignment, threshold=0.5, UPGMA clustering"
+    data = "@sidwellbahnaric"
+
+    [analysis.cognates_iecor]
+    tool = 'lingpy'
+    model = 'SCA'
+    details = "Automated cognate detection via Sound Class Alignment, threshold=0.5, UPGMA clustering"
+    data = "@iecor"
+
+    [analysis.cognates_starostinpie]
+    tool = 'lingpy'
+    model = 'SCA'
+    details = "Automated cognate detection via Sound Class Alignment, threshold=0.5, UPGMA clustering"
+    data = "@starostinpie"
+
+    [analysis.cognates_leekoreanic]
+    tool = 'lingpy'
+    model = 'SCA'
+    details = "Automated cognate detection via Sound Class Alignment, threshold=0.5, UPGMA clustering"
+    data = "@leekoreanic"
+
+    [analysis.cognates_robbeetstriangulation]
+    tool = 'lingpy'
+    model = 'SCA'
+    details = "Automated cognate detection via Sound Class Alignment, threshold=0.5, UPGMA clustering"
+    data = "@robbeetstriangulation"
+
+    [analysis.cognates_beidasinitic]
+    tool = 'lingpy'
+    model = 'SCA'
+    details = "Automated cognate detection via Sound Class Alignment, threshold=0.5, UPGMA clustering"
+    data = "@beidasinitic"
+
+    [analysis.cognates_liusinitic]
+    tool = 'lingpy'
+    model = 'SCA'
+    details = "Automated cognate detection via Sound Class Alignment, threshold=0.5, UPGMA clustering"
+    data = "@liusinitic"
+
+    [analysis.cognates_gaotb]
+    tool = 'lingpy'
+    model = 'SCA'
+    details = "Automated cognate detection via Sound Class Alignment, threshold=0.5, UPGMA clustering"
+    data = "@gaotb"
+
+    [analysis.cognates_sagartst]
+    tool = 'lingpy'
+    model = 'SCA'
+    details = "Automated cognate detection via Sound Class Alignment, threshold=0.5, UPGMA clustering"
+    data = "@sagartst"
+
+    [analysis.cognates_galuciotupi]
+    tool = 'lingpy'
+    model = 'SCA'
+    details = "Automated cognate detection via Sound Class Alignment, threshold=0.5, UPGMA clustering"
+    data = "@galuciotupi"
+
+    [analysis.cognates_tuled]
+    tool = 'lingpy'
+    model = 'SCA'
+    details = "Automated cognate detection via Sound Class Alignment, threshold=0.5, UPGMA clustering"
+    data = "@tuled"
+
+    [analysis.cognates_peirosaustroasiatic_vietic]
+    tool = 'lingpy'
+    model = 'SCA'
+    details = "Automated cognate detection via Sound Class Alignment, threshold=0.5, UPGMA clustering"
+    data = "@peirosaustroasiatic"
+
+    [analysis.cognates_sidwellvietic]
+    tool = 'lingpy'
+    model = 'SCA'
+    details = "Automated cognate detection via Sound Class Alignment, threshold=0.5, UPGMA clustering"
+    data = "@sidwellvietic"
+
+    [analysis.tree_peirosaustroasiatic_bahnaric]
+    tool = 'mrbayes'
+    model = 'restriction-site + gamma + fossilised birth-death clock'
+    details = "4 chains, 2 runs, 20M generations, sample every 10,000, 25% burnin; clock rate exponential prior mean=300,000; MRCA age uniform(1000,10000) BP"
+    data = "@peirosaustroasiatic"
+
+    [analysis.tree_sidwellbahnaric]
+    tool = 'mrbayes'
+    model = 'restriction-site + gamma + fossilised birth-death clock'
+    details = "4 chains, 2 runs, 20M generations, sample every 10,000, 25% burnin; clock rate exponential prior mean=300,000; MRCA age uniform(1000,10000) BP"
+    data = "@sidwellbahnaric"
+
+    [analysis.tree_iecor]
+    tool = 'mrbayes'
+    model = 'restriction-site + gamma + fossilised birth-death clock'
+    details = "4 chains, 2 runs, 20M generations, sample every 10,000, 25% burnin; clock rate exponential prior mean=300,000; MRCA age uniform(1000,10000) BP"
+    data = "@iecor"
+
+    [analysis.tree_starostinpie]
+    tool = 'mrbayes'
+    model = 'restriction-site + gamma + fossilised birth-death clock'
+    details = "4 chains, 2 runs, 20M generations, sample every 10,000, 25% burnin; clock rate exponential prior mean=300,000; MRCA age uniform(1000,10000) BP"
+    data = "@starostinpie"
+
+    [analysis.tree_leekoreanic]
+    tool = 'mrbayes'
+    model = 'restriction-site + gamma + fossilised birth-death clock'
+    details = "4 chains, 2 runs, 20M generations, sample every 10,000, 25% burnin; clock rate exponential prior mean=300,000; MRCA age uniform(1000,10000) BP"
+    data = "@leekoreanic"
+
+    [analysis.tree_robbeetstriangulation]
+    tool = 'mrbayes'
+    model = 'restriction-site + gamma + fossilised birth-death clock'
+    details = "4 chains, 2 runs, 20M generations, sample every 10,000, 25% burnin; clock rate exponential prior mean=300,000; MRCA age uniform(1000,10000) BP"
+    data = "@robbeetstriangulation"
+
+    [analysis.tree_beidasinitic]
+    tool = 'mrbayes'
+    model = 'restriction-site + gamma + fossilised birth-death clock'
+    details = "4 chains, 2 runs, 20M generations, sample every 10,000, 25% burnin; clock rate exponential prior mean=300,000; MRCA age uniform(1000,10000) BP"
+    data = "@beidasinitic"
+
+    [analysis.tree_liusinitic]
+    tool = 'mrbayes'
+    model = 'restriction-site + gamma + fossilised birth-death clock'
+    details = "4 chains, 2 runs, 20M generations, sample every 10,000, 25% burnin; clock rate exponential prior mean=300,000; MRCA age uniform(1000,10000) BP"
+    data = "@liusinitic"
+
+    [analysis.tree_gaotb]
+    tool = 'mrbayes'
+    model = 'restriction-site + gamma + fossilised birth-death clock'
+    details = "4 chains, 2 runs, 20M generations, sample every 10,000, 25% burnin; clock rate exponential prior mean=300,000; MRCA age uniform(1000,10000) BP"
+    data = "@gaotb"
+
+    [analysis.tree_sagartst]
+    tool = 'mrbayes'
+    model = 'restriction-site + gamma + fossilised birth-death clock'
+    details = "4 chains, 2 runs, 20M generations, sample every 10,000, 25% burnin; clock rate exponential prior mean=300,000; MRCA age uniform(1000,10000) BP"
+    data = "@sagartst"
+
+    [analysis.tree_galuciotupi]
+    tool = 'mrbayes'
+    model = 'restriction-site + gamma + fossilised birth-death clock'
+    details = "4 chains, 2 runs, 20M generations, sample every 10,000, 25% burnin; clock rate exponential prior mean=300,000; MRCA age uniform(1000,10000) BP"
+    data = "@galuciotupi"
+
+    [analysis.tree_tuled]
+    tool = 'mrbayes'
+    model = 'restriction-site + gamma + fossilised birth-death clock'
+    details = "4 chains, 2 runs, 20M generations, sample every 10,000, 25% burnin; clock rate exponential prior mean=300,000; MRCA age uniform(1000,10000) BP"
+    data = "@tuled"
+
+    [analysis.tree_peirosaustroasiatic_vietic]
+    tool = 'mrbayes'
+    model = 'restriction-site + gamma + fossilised birth-death clock'
+    details = "4 chains, 2 runs, 20M generations, sample every 10,000, 25% burnin; clock rate exponential prior mean=300,000; MRCA age uniform(1000,10000) BP"
+    data = "@peirosaustroasiatic"
+
+    [analysis.tree_sidwellvietic]
+    tool = 'mrbayes'
+    model = 'restriction-site + gamma + fossilised birth-death clock'
+    details = "4 chains, 2 runs, 20M generations, sample every 10,000, 25% burnin; clock rate exponential prior mean=300,000; MRCA age uniform(1000,10000) BP"
+    data = "@sidwellvietic"
+
+    [analysis.quarterdist_bahnaric]
+    tool = 'QuartetDist'
+    model = ''
+    details = "Normalized quartet distance on posterior tree samples (100 draws of 1,000 tree pairs); consensus=0.123, posterior sample=0.200±0.084"
+    data = "@peirosaustroasiatic;@sidwellbahnaric"
+
+    [analysis.quarterdist_indoeuropean]
+    tool = 'QuartetDist'
+    model = ''
+    details = "Normalized quartet distance on posterior tree samples (100 draws of 1,000 tree pairs); consensus=0.117, posterior sample=0.152±0.060"
+    data = "@iecor;@starostinpie"
+
+    [analysis.quarterdist_koreanic]
+    tool = 'QuartetDist'
+    model = ''
+    details = "Normalized quartet distance on posterior tree samples (100 draws of 1,000 tree pairs); consensus=0.443, posterior sample=0.335±0.050"
+    data = "@leekoreanic;@robbeetstriangulation"
+
+    [analysis.quarterdist_sinitic]
+    tool = 'QuartetDist'
+    model = ''
+    details = "Normalized quartet distance on posterior tree samples (100 draws of 1,000 tree pairs); consensus=0.097, posterior sample=0.154±0.043"
+    data = "@beidasinitic;@liusinitic"
+
+    [analysis.quarterdist_sinotibetan]
+    tool = 'QuartetDist'
+    model = ''
+    details = "Normalized quartet distance on posterior tree samples (100 draws of 1,000 tree pairs); consensus=0.194, posterior sample=0.180±0.062"
+    data = "@gaotb;@sagartst"
+
+    [analysis.quarterdist_tupian]
+    tool = 'QuartetDist'
+    model = ''
+    details = "Normalized quartet distance on posterior tree samples (100 draws of 1,000 tree pairs); consensus=0.025, posterior sample=0.262±0.062"
+    data = "@galuciotupi;@tuled"
+
+    [analysis.quarterdist_vietic]
+    tool = 'QuartetDist'
+    model = ''
+    details = "Normalized quartet distance on posterior tree samples (100 draws of 1,000 tree pairs); consensus=0.243, posterior sample=0.331±0.097"
+    data = "@peirosaustroasiatic;@sidwellvietic"
+
+
+# no inferred ages — study does not perform dating
+[inferredages]
+    notes = "No divergence time estimates; study focuses on topological variation, not dating."
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "https://codeberg.org/calc/lexeme-choice-and-phylogenies/src/tag/v1.0" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = ["https://doi.org/10.5281/zenodo.20744372"]

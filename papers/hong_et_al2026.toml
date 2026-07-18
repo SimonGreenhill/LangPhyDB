@@ -1,0 +1,92 @@
+title = "The evolutionary dynamics of ergative alignment of case marking"
+
+doi = "doi.org/10.1093/jole/lzag004"
+
+abstract = """
+Languages have been claimed to globally disfavor ergatively-aligned case marking, possibly reflecting processing preferences.
+Phylogenetic research on Pama-Nyungan has cast doubt on this, showing a preference for retaining ergativity in the family. In
+this study, we re-examine the evolution of ergative alignment of case marking in a sample of over 200 languages from eleven
+language families (Pama-Nyungan among them) in a continuous-time Markov Chain model. Since one language can adopt multiple
+alignment patterns of case marking in its grammar ('split' alignment), we incorporate a third, split state into the models. In
+addition, we compare the goodness of fit across various models where clades can show different rates of change, defining
+evolutionary regimes that can cut across families. The results show that, across all families, the best-fitting model requires
+two connected regimes: one favoring non-ergative (S=A) and the other favoring split-ergative alignment (S=A and S≠A). These
+differences notwithstanding, the stationary probabilities of the model suggest that in the long run, non-ergative alignments
+are expected to be much more frequent than ergative alignment in case marking.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Tai Hong", "Alena Witzlack-Makarevich", "Balthasar Bickel"]
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Hong_2026"
+
+# type of study
+type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.bantu]
+    ntaxa = 95
+    nchars = 100
+    nsites = "?"
+    datatype = 'lexical cognates'
+    source = '@xxx'
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.label]
+    source = '@xxx'
+    comment = ''
+
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+    [calibration.label]
+    taxa = []
+    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
+    units = "bp" # bp
+    description = ""
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.tree]
+    tool = ''
+    model = ''
+    details = ""
+    data = ""
+
+[inferredages]
+    
+    notes = ""
+    
+    [inferredage.label]
+    taxa = []
+    age = "hpd(median, lower, upper)"
+    units = "bp"
+    notes = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

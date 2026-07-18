@@ -7,10 +7,10 @@ environmental factors,environmental factors
 ethnobotanical,ethnobotany
 ethnobotanical features,
 ethnographic features,ethnographic features
+folktale traits,
 frequency,frequency
 genetic SNPs,genetic SNP data
 grammatical distance,
-rates,rate estimates
 lexemes,raw lexical data
 lexical cognates,cognate data
 lexical cognates (autodetected),auto detected cognate data
@@ -23,6 +23,7 @@ musical distance,
 phonetic distance,phonetic distance
 phonetic traits,phonetic characters
 pitch-accent features,
+rates,rate estimates
 semantic primes,NSM
 sign features,
 signs,manual alphabet for sign languages

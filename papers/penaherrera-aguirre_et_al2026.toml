@@ -1,0 +1,68 @@
+title = "The Dog, the Horse, and the Serpent: Phylogenetic Comparative Examinations of Human-Animal Interactions as Represented in Indo-European Myths"
+
+doi = "10.1007/s40806-026-00487-1"
+
+abstract = """
+Though mythologies are sometimes recognized as evolutionarily significant for illuminating the human condition, differences among them may reflect adaptive challenges faced by specific human groups contending with distinct ecological conditions. To explore this socio-biogeographical hypothesis, wherein expansion into different ecologies imposed distinct evolutionary exigencies reflected in myth, we review Indo-European serpent, dog, and horse myths, and then consider ecological, ancestral, and cultural diversity among the biocultural descendants of Chalcolithic and Bronze Age societies. Multiple comparative phylogenetic examinations were conducted to determine the cultural evolutionary dynamics of these animal myths. Inter-rater reliability analyses of animal myths revealed an adequate level of agreement among raters. A Sequential Canonical Cascade model based on the phylogenetic independent contrasts of Y-chromosome haplogroup frequencies, the diversity of venomous snakes, on the rates of serpent, dog, and horse myths reached statistical significance and explained, on average, 62% of the variance, revealing that ancestral genetic and ecological differences significantly influenced the macrohistorical evolution of serpent, dog, and horse myth rates. Ancestral reconstructions provide further insight into the emergence and persistence of these myths in Neolithic, Chalcolithic, and Bronze Age Eurasian cultures.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Mateo Peñaherrera-Aguirre", "Aurelio José Figueredo", "Steven C. Hertler", "Michael A. Menie", "Catherine Salmon", "Netzin G. Steklis", "Horst D. Steklis"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Penaherrera_Aguirre_2026"
+
+# type of study
+type = ['trait']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.folktales]
+    ntaxa = 39
+    nchars = 82
+    nsites = "?"
+    datatype = 'folktale traits'
+    source = ''
+    items = ''
+    comment = ''
+
+# published phylogenies
+[phylogenies]
+    [phylogenies.indoeuropean]
+    source = '@Bouckaert2012'
+    comment = ''
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.lambda]
+    tool = 'caper'
+    model = 'lambda'
+    details = ""
+    data = ""
+    times = 82
+
+    [analysis.pic]
+    tool = 'caper'
+    model = 'pgls'
+    details = ""
+    data = ""
+    times = 82
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

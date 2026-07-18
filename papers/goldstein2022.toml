@@ -20,7 +20,7 @@ phylogenetic trees.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
-authors = ['David Goldstein']
+authors = ['David M. Goldstein']
 
 # parts of the world
 groups = ['Indo-European']  # 'Austronesian', etc

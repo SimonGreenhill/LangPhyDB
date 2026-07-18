@@ -1,6 +1,6 @@
 title = "The evolutionary dynamics of ergative alignment of case marking"
 
-doi = "doi.org/10.1093/jole/lzag004"
+doi = "10.1093/jole/lzag004"
 
 abstract = """
 Languages have been claimed to globally disfavor ergatively-aligned case marking, possibly reflecting processing preferences.
@@ -19,70 +19,106 @@ are expected to be much more frequent than ergative alignment in case marking.
 authors = ["Tai Hong", "Alena Witzlack-Makarevich", "Balthasar Bickel"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Austronesian', 'Bantu', 'Dravidian', 'Indo-European', 'Pama-Nyungan', 'Semitic', 'Sino-Tibetan', 'Tupian', 'Turkic', 'Uralic', 'Uto-Aztecan']
 
 # bibkey citation in sources.bib
 bibkey = "@Hong_2026"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['trait', 'macroevolutionary']
+framework = ['bayesian', 'statistical']
+
 # short description of the study, one line.
-description = ""
+description = "Continuous-time Markov Chain analysis of ergative case-marking evolution across 11 language families using published phylogenies and AUTOTYP data"
 
 # data
 [data]
 
-    notes = ""
-    
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
+    notes = "Case alignment data from AUTOTYP database v1.1.1 (Bickel et al. 2023, doi:10.5281/zenodo.7976754), supplemented by ATLAs database following identical coding principles."
+
+    [data.alignment]
+    ntaxa = 296
+    nchars = 1
     nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    datatype = 'structural features'
+    source = '@Autotyp2023'
     items = ''
-    comment = ''
+    comment = 'Ergative alignment coded as 3 states: non-ergative (S=A), ergative (S≠A), split (both). Covers 11 language families.'
 
 # published phylogenies
 [phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
+    notes = "Published time-calibrated posterior tree distributions used as input; one per family."
+
+    [phylogenies.austronesian]
+    source = '@Gray2009'
+    comment = 'Austronesian'
+
+    [phylogenies.bantu]
+    source = '@Grollemund2015'
+    comment = 'Bantu'
+
+    [phylogenies.dravidian]
+    source = '@Kolipakam2018'
+    comment = 'Dravidian'
+
+    [phylogenies.indoeuropean]
+    source = '@Bouckaert2012'
+    comment = 'Indo-European'
+
+    [phylogenies.pamanyungan]
+    source = '@Bouckaert2018'
+    comment = 'Pama-Nyungan'
+
+    [phylogenies.semitic]
+    source = '@Kitchen2009'
+    comment = 'Semitic'
+
+    [phylogenies.sinotibetan]
+    source = '@Sagart2019'
+    comment = 'Sino-Tibetan'
+
+    [phylogenies.tupiguarani]
+    source = '@Michael2015'
+    comment = 'Tupi-Guarani'
+
+    [phylogenies.turkic]
+    source = '@Savelyev_2020'
+    comment = 'Turkic'
+
+    [phylogenies.uralic]
+    source = '@Syrjanen2013'
+    comment = 'Uralic'
+
+    [phylogenies.utoaztecan]
+    source = '@GreenhillHaynie_et_al2023'
+    comment = 'Uto-Aztecan'
 
 
 # date calibrations
 [calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "bp" # bp
-    description = ""
+    notes = "No divergence time estimation; published dated trees used as input only."
 
 
 # analysis information
 [analysis]
-    
-    notes = ""
-    
-    [analysis.tree]
-    tool = ''
+
+    notes = "Continuous-time Markov Chain (CTMC) with 3 states (non-ergative, ergative, split) fit to posterior tree distributions using Felsenstein's pruning algorithm. Multi-regime models (different rates in different clades) compared via Bayes factors. Implemented in Stan."
+
+    [analysis.ctmc]
+    tool = 'r'
+    model = 'CTMC (3-state)'
+    details = "Bayesian MCMC via Stan; multi-regime models allowing different rates across clades; model comparison via Bayes factors; Felsenstein pruning algorithm for likelihood"
+    data = "@Autotyp2023"
+
+    [analysis.scm]
+    tool = 'r'
     model = ''
-    details = ""
-    data = ""
+    details = "Stochastic character mapping via phytools for ancestral state reconstruction"
+    data = "@Autotyp2023"
+
 
 [inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "bp"
-    notes = ""
+    notes = "No divergence time estimates produced. Study models trait evolution rates, not node ages."
 
 
 [links]

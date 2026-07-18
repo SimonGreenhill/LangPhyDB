@@ -17,74 +17,105 @@ factors also play a role."""
 authors = ["Kim Gfeller", "Sabine Stoll", "Chundra A. Cathcart", "Paul Widmer"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Austronesian', 'Indo-European', 'Uralic']
 
 # bibkey citation in sources.bib
 bibkey = "@Gfeller_2026"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['macroevolutionary', 'trait']
+framework = ['bayesian', 'statistical']
+
 # short description of the study, one line.
-description = ""
+description = "Bayesian distributional phylogenetic CTM model to infer effects of semantic relatedness, borrowability, and frequency on colexification change rates and stationary probabilities across Austronesian, Indo-European, and Uralic."
 
 # data
 [data]
 
-    notes = ""
-    
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
+    notes = "Colexification data from CLICS³ for 156 languages across three families. Concept pairs filtered to those colexified in ≥5 languages within a family and having complete predictor data: 143 Austronesian, 333 Indo-European, 84 Uralic pairs."
+
+    [data.clics3_austronesian]
+    ntaxa = "?"
+    nchars = 143
+    nsites = 143
     datatype = 'lexical cognates'
-    source = '@xxx'
+    source = '@Rzymski2020'
     items = ''
-    comment = ''
+    comment = 'Binary colexification data (colexified/not per concept pair per language); from 395 CLICS³ Austronesian varieties, filtered to languages with ≥100 complete concept pairs'
+
+    [data.clics3_indoeuropean]
+    ntaxa = "?"
+    nchars = 333
+    nsites = 333
+    datatype = 'lexical cognates'
+    source = '@Rzymski2020'
+    items = ''
+    comment = 'Binary colexification data; from 173 CLICS³ Indo-European varieties'
+
+    [data.clics3_uralic]
+    ntaxa = 35
+    nchars = 84
+    nsites = 84
+    datatype = 'lexical cognates'
+    source = '@Rzymski2020'
+    items = ''
+    comment = 'Binary colexification data; CLICS³ has 35 Uralic varieties'
 
 # published phylogenies
 [phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
+    notes = ""
 
+    [phylogenies.austronesian]
+    source = '@Gray2009'
+    comment = 'Bayesian posterior tree sample for Austronesian; 100 trees sampled for analysis'
+
+    [phylogenies.indoeuropean]
+    source = '@Heggarty2023'
+    comment = 'Bayesian posterior tree sample for Indo-European; 100 trees sampled for analysis'
+
+    [phylogenies.uralic]
+    source = '@Honkola2013'
+    comment = 'Bayesian posterior tree sample for Uralic; 100 trees sampled for analysis'
 
 # date calibrations
 [calibrations]
-
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "bp" # bp
-    description = ""
-
+    notes = "No divergence time estimates. Pre-dated phylogenies used as input."
 
 # analysis information
 [analysis]
-    
-    notes = ""
-    
-    [analysis.tree]
-    tool = ''
-    model = ''
-    details = ""
-    data = ""
+
+    notes = "Models run separately per family over 100 posterior tree samples each (600,000 total posterior samples per family). Four model variants compared via Pareto-smoothed importance sampling LOO-CV: full model, stationary-probability-only, speed-only, null."
+
+    [analysis.ctm_austronesian]
+    tool = 'stan'
+    model = 'CTM distributional phylogenetic'
+    details = "3 chains, 4000 iterations, 50% burnin, NUTS sampler; logit link for stationary probability, log link for speed; predictors: associativity, frequency, borrowability"
+    data = "@Rzymski2020"
+
+    [analysis.ctm_indoeuropean]
+    tool = 'stan'
+    model = 'CTM distributional phylogenetic'
+    details = "3 chains, 4000 iterations, 50% burnin, NUTS sampler"
+    data = "@Rzymski2020"
+
+    [analysis.ctm_uralic]
+    tool = 'stan'
+    model = 'CTM distributional phylogenetic'
+    details = "3 chains, 4000 iterations, 50% burnin, NUTS sampler"
+    data = "@Rzymski2020"
+
+    [analysis.logistic_regression]
+    tool = 'r'
+    model = 'logistic regression (glm, binomial)'
+    details = "Validation: proportion of colexifying languages regressed on associativity, frequency, borrowability; weighted by number of languages with data per pair"
+    data = "@Rzymski2020"
 
 [inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "bp"
-    notes = ""
 
+    notes = "No divergence time estimates."
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }
 cldf = { title = "CLDF Dataset", link = "" }
 dplace = { title = "D-PLACE Dataset", link = "" }
-links = []
+links = ["https://doi.org/10.5281/zenodo.19354238"]

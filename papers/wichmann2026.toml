@@ -3,81 +3,162 @@ title = "Impact of ecology, subsistence, and climate on language spread rates"
 doi = "10.1016/j.qeh.2026.100107"
 
 abstract = """
-Different languages occupy every region of the globe. How fast have languages spread and what are the factors systematically impacting these rates? Based on state-of-the-art methods and data from more than 5500 languages this paper reconstructs the movements of prehistorical languages, analyzing more than 2500 language diffusion events. Up until 2000 BP diffusion rates are typically low (0.1–0.3 km/yr). Subsequently all world areas except North America, Australia, and Papua New Guinea exhibit increases in rates, with Eurasian languages, in particular, undergoing an explosive spread. Higher diffusion rates for the languages of farmers than for those of hunter-gatherers contribute to explaining these areal differences. Intriguingly, major fluctuations in diffusion rates not conforming to general patterns are aligned with two of the most dramatic climate change events of the Holocene, namely the 5.5 ka BP end of the African Humid Period and the cooling and drying event of 4.2 ka BP affecting Eurasia.
+Different languages occupy every region of the globe. How fast have languages spread and what are the factors systematically impacting these rates? Based on state-of-the-art methods and data from more than 5500 languages this paper reconstructs the movements of prehistorical languages, analyzing more than 2500 language diffusion events. Up until 2000 BP diffusion rates are typically low (0.1–0.3 km/yr). Subsequently all world areas except North America, Australia, and Papua New Guinea exhibit increases in rates, with Eurasian languages, in particular, undergoing an explosive spread. Higher diffusion rates for the languages of farmers than for those of hunter-gatherers contribute to explaining these areal differences. Intriguingly, major fluctuations in diffusion rates not conforming to general patterns are aligned with two of the most dramatic climate change events of the Holocene, namely the 5.5 ka BP end of the African Humid Period and the cooling and drying event of 4.2 ka BP affecting Eurasia.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ['Søren Wichmann']
 
 # parts of the world
-groups = ['Global']  # 'Austronesian', etc
+groups = ['Global']
 
 # bibkey citation in sources.bib
 bibkey = "@Wichmann_2026"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['phylogeography', 'dating']
+framework = ['bayesian', 'distance', 'statistical']
+
 # short description of the study, one line.
-description = ""
+description = "Global study of language diffusion rates across 5500+ languages, finding that farming, ecology, and Holocene climate events systematically explain variation in how fast language families spread."
 
 # data
 [data]
 
     notes = ""
-    
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
+
+    [data.asjp]
+    ntaxa = 5500
+    nchars = 40
     nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
+    datatype = 'lexical distance'
+    source = '@ASJP21'
     items = ''
-    comment = ''
+    comment = 'ASJP v21 covering 82% of world languages (6135 total); >5500 used after filtering ancient languages and families with <4 taxa or star-shaped topology. LDND distances computed for dating and homeland inference.'
 
 # published phylogenies
 [phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
+    notes = ""
+
+    [phylogenies.glottolog]
+    source = '@Glottolog52'
+    comment = 'Family-level tree topologies from Glottolog 5.2; branch lengths fitted using ASJP LDN distances by least-squares estimation'
 
 
 # date calibrations
 [calibrations]
 
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "bp" # bp
-    description = ""
+    notes = "Dating uses the LDND method (Holman et al. 2011) with 52 archaeological/historical calibration points; mean fit error 29%. Calibrations are internal to the LDND method, not explicit per-clade priors."
 
 
 # analysis information
 [analysis]
-    
-    notes = ""
-    
-    [analysis.tree]
-    tool = ''
+
+    notes = "Full replication pipeline at https://osf.io/5pwju/"
+
+    [analysis.dating]
+    tool = 'custom'
+    model = 'LDND'
+    details = "Twice-normalized lexical-phonological Levenshtein distances (LDND) from ASJP wordlists transformed to years of separation using Holman et al. 2011 calibration (52 calibration points, 29% mean error)."
+    data = "@ASJP21"
+
+    [analysis.homeland_bt]
+    tool = 'bayestraits'
+    model = 'BayesTraits Geo'
+    details = "Brownian motion model mapping nodes to 3D Cartesian coordinates; used for 2191 of 3417 homelands (64%). Requires >=4 taxa and non-star-shaped topology."
+    data = "@ASJP21"
+
+    [analysis.homeland_md]
+    tool = 'r'
+    model = 'Minimum Distance'
+    details = "Non-tree-based Minimum Distance method (Wichmann & Rama 2021) for remaining 36% of homelands; applied to star-shaped phylogenies and families with <4 taxa."
+    data = "@ASJP21"
+
+    [analysis.statistics]
+    tool = 'r'
     model = ''
-    details = ""
-    data = ""
+    details = "t-tests, chi-squared tests, and linear regression for effects of ecology (biomes, elevation, rugosity), subsistence (AGR vs HG), and Holocene climate events on diffusion rates."
+    data = "@ASJP21"
 
 [inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
+
+    notes = "Ages inferred for proto-language homelands across all major world families; >2500 diffusion events analyzed. Table 1 lists notable events tied to Holocene climate peaks. Point estimates with ~29% uncertainty."
+
+    [inferredage.classical_indo_european]
+    taxa = ['Classical Indo-European']
+    age = "4205"
     units = "bp"
-    notes = ""
+    details =  "Homeland at 45.89N, 29.65E; BayesTraits Geo"
+
+    [inferredage.proto_indo_iranian]
+    taxa = ['Indo-Iranian']
+    age = "3453"
+    units = "bp"
+    details =  "2.91 km/yr dispersal rate; BayesTraits Geo"
+
+    [inferredage.afro_asiatic]
+    taxa = ['Afro-Asiatic']
+    age = "5733"
+    units = "bp"
+    details =  "BayesTraits Geo"
+
+    [inferredage.cushitic]
+    taxa = ['Cushitic']
+    age = "4861"
+    units = "bp"
+    details =  "0.87 km/yr; BayesTraits Geo"
+
+    [inferredage.berber]
+    taxa = ['Berber']
+    age = "1713"
+    units = "bp"
+    details =  "0.56 km/yr; BayesTraits Geo"
+
+    [inferredage.chadic]
+    taxa = ['Chadic']
+    age = "4798"
+    units = "bp"
+    details =  "0.62 km/yr; BayesTraits Geo"
+
+    [inferredage.atlantic_congo]
+    taxa = ['Atlantic-Congo']
+    age = "6269"
+    units = "bp"
+    details =  "BayesTraits Geo"
+
+    [inferredage.volta_congo]
+    taxa = ['Volta-Congo']
+    age = "5665"
+    units = "bp"
+    details =  "1.33 km/yr; BayesTraits Geo"
+
+    [inferredage.north_central_atlantic]
+    taxa = ['North-Central Atlantic']
+    age = "5156"
+    units = "bp"
+    details =  "1.26 km/yr; Minimum Distance"
+
+    [inferredage.arawakan]
+    taxa = ['Arawakan']
+    age = "4124"
+    units = "bp"
+    details =  "Minimum Distance"
+
+    [inferredage.southern_maipuran]
+    taxa = ['Southern Maipuran']
+    age = "4058"
+    units = "bp"
+    details =  "18.10 km/yr; Minimum Distance"
+
+    [inferredage.caribbean_arawakan]
+    taxa = ['Caribbean Arawakan']
+    age = "4074"
+    units = "bp"
+    details =  "5.29 km/yr; BayesTraits Geo"
 
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }
 cldf = { title = "CLDF Dataset", link = "" }
 dplace = { title = "D-PLACE Dataset", link = "" }
-links = []
+links = ["https://osf.io/5pwju/"]

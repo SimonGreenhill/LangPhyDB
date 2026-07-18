@@ -1,0 +1,98 @@
+title = "Structural Phylogenetic Signal Fails at Deep Time: A Bayesian Treebank Analysis of the Transeurasian Languages"
+
+doi = "10.3390/e28070816"
+
+abstract = """
+Quantitative phylogenetics in historical linguistics has relied almost entirely on lexical cognate data. This study asks a different question: how much genealogical signal can be recovered from structural features extracted from annotated corpora, and whether it survives at deep time depths. We compute 29 structural features—including Shannon entropies of dependency direction and of dependency-relation distributions, relation-specific directionality ratios, dependency-distance measures, and constructional ratios—across 25 Transeurasian languages from the five proposed groups (Turkic, Mongolic, Tungusic, Japonic, and Koreanic) and three outgroups (Chinese, Vietnamese, and Hindi), 28 languages in all. Most of the Tungusic and Mongolic languages have no running-text corpus, so we built new Universal Dependencies treebanks for them by glossing example sentences from reference grammars; thirteen are used here. Each feature was tested for phylogenetic signal (Pagel's λ and Blomberg's K, with FDR correction) under four competing reference topologies, and the features that passed were used for tree inference (Bayesian inference in MrBayes, with Neighbor-Joining as a check). The same pipeline was first run on Indo-European in a companion study, where it recovers only individual subgroups and does not resolve a stable tree. At the depth proposed for the Transeurasian family (a Proto-Transeurasian root of about 9000 years before present), the structural signal was not enough to reconstruct the family's internal relationships. The signal tests favoured a flat three-way division of the major branches (7 strict/20 relaxed features) over any nested hypothesis (≤2 strict features each), and the strongest signal lay in core word-order parameters (e.g., object direction, λ = 1.00, K = 6.06). But both Bayesian and distance-based inference returned near-complete polytomies: although the chains converged (ASDSF < 0.01), no branch reached a posterior probability above 0.75, and none of the three multi-language branches (Turkic, Mongolic, or Tungusic) was recovered. The outgroup test made the reason clear: Hindi, which is Indo-European but SOV, grouped with the head-final Transeurasian languages rather than with the other two (head-initial) outgroups, so the features are tracking typological similarity, not shared descent, at this depth. The study contributes 13 new treebanks for poorly documented languages, a reproducible framework for testing how much genealogical signal structural features carry, and direct evidence that, at Transeurasian time depths, this signal reflects typology rather than genealogy.
+"""
+
+authors = ["Wenchao Li", "Haitao Liu"]
+
+groups = ['Turkic', 'Mongolic', 'Tungusic', 'Japonic', 'Koreanic']
+
+bibkey = "@Li_2026"
+
+type = ['phylogenetic', 'methodological']
+
+framework = ['bayesian', 'distance', 'statistical']
+
+description = "Tests phylogenetic signal of 29 UD-treebank structural features across 28 Transeurasian languages, finding near-complete polytomies from Bayesian inference and that structural similarity tracks typology rather than genealogy at ~9000 BP."
+
+
+[data]
+
+    notes = "29 structural features extracted from Universal Dependencies treebanks: 12 existing published UD treebanks + 13 newly constructed GDUD treebanks glossed from reference grammars for under-resourced Tungusic and Mongolic languages. Features discretised to 4 ordered states by equal-frequency binning for Bayesian analysis."
+
+    [data.ud_treebanks]
+    ntaxa   = 28
+    nchars  = 29
+    nsites  = 29
+    datatype = 'structural features'
+    source  = '@Li_2026'
+    items   = ''
+    comment = '25 Transeurasian languages (Turkic x8, Mongolic x6, Tungusic x9, Japonic x1, Koreanic x1) + 3 outgroups (Chinese, Vietnamese, Hindi); 29 dependency-based and constructional features after collinearity screening'
+
+
+[phylogenies]
+
+    notes = "Two majority-rule consensus trees (strict and relaxed); both are near-complete polytomies with no branch PP > 0.75 and no multi-language branch (Turkic, Mongolic, Tungusic) recovered."
+
+    [phylogenies.strict]
+    source  = '@Li_2026'
+    comment = 'MrBayes 50% majority-rule consensus tree from strict 7-feature matrix; only resolved clade: (Evenki, Udihe) PP=0.57'
+
+    [phylogenies.relaxed]
+    source  = '@Li_2026'
+    comment = 'MrBayes 50% majority-rule consensus tree from relaxed 20-feature matrix; three shallow pairs resolved: (Uyghur, Uzbek) PP=0.74, (Nanai, Vietnamese) PP=0.56, (Khalkha, Kyrgyz) PP=0.52'
+
+
+[calibrations]
+
+    notes = "No divergence time estimates."
+
+
+[analysis]
+
+    notes = "Signal testing run on all 29 features under four competing reference topologies (H1: flat three-way polytomy; H2–H4: alternative nested hypotheses) with Benjamini–Hochberg FDR correction. Strict criterion: significant under both Pagel's λ and Blomberg's K (FDR < 0.05); relaxed: significant under either (FDR < 0.1)."
+
+    [analysis.signal_testing]
+    tool    = 'phytools'
+    model   = "Pagel's lambda + Blomberg's K"
+    details = "phytools::phylosig; Pagel's λ estimated by ML with likelihood-ratio test against λ=0; Blomberg's K with 999 random tip-label permutations; Benjamini–Hochberg FDR correction across 29 features per topology; run under all 4 reference topologies H1–H4"
+    data    = "@data.ud_treebanks"
+
+    [analysis.tree_strict]
+    tool    = 'mrbayes'
+    model   = 'Mk+variable+gamma'
+    details = "MrBayes 3.2.7; lset coding=variable rates=gamma; symmetric Dirichlet prior on state frequencies; 4 independent runs × 4 chains, 2,000,000 generations, sampled every 500, 25% burnin; ASDSF=0.0083; rooted with Chinese outgroup; 7 strict signal-selected features"
+    data    = "@data.ud_treebanks"
+
+    [analysis.tree_relaxed]
+    tool    = 'mrbayes'
+    model   = 'Mk+variable+gamma'
+    details = "MrBayes 3.2.7; lset coding=variable rates=gamma; symmetric Dirichlet prior on state frequencies; 4 independent runs × 4 chains, 2,000,000 generations, sampled every 500, 25% burnin; ASDSF=0.0094; rooted with Chinese outgroup; 20 relaxed signal-selected features"
+    data    = "@data.ud_treebanks"
+
+    [analysis.nj_strict]
+    tool    = 'r'
+    model   = 'neighbor-joining'
+    details = "NJ on Euclidean distances over z-scored features; 1000 bootstrap replicates; 7-feature strict matrix; methodological check confirming Bayesian result"
+    data    = "@data.ud_treebanks"
+
+    [analysis.nj_relaxed]
+    tool    = 'r'
+    model   = 'neighbor-joining'
+    details = "NJ on Euclidean distances over z-scored features; 1000 bootstrap replicates; 20-feature relaxed matrix; methodological check confirming Bayesian result"
+    data    = "@data.ud_treebanks"
+
+
+[inferredages]
+
+    notes = "No divergence time estimates."
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf     = { title = "CLDF Dataset", link = "" }
+dplace   = { title = "D-PLACE Dataset", link = "" }
+links    = ["https://github.com/wenchao-li-zju/transeurasian-structural-signal"]

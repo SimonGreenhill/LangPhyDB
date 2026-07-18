@@ -2,78 +2,122 @@ title = "Beyond mutual exclusion: evolutionary pathways of classifiers and numbe
 
 doi = "10.1515/lingty-2024-0035"
 
-abstract = """
+abstract = """Languages express NUMBER through varied strategies, including grammatical number, classifiers and numerals. The global distribution of these strategies varies widely. Two main explanations have been proposed for this variation: (1) plural marking and classifiers are mutually exclusive, and (2) languages with restricted numeral systems lack classifiers. The relative importance of these factors remains under debate. This study tests the co-evolution of number marking (singular, dual, trial, paucal, plural) and classifiers in a global sample as well as more specifically in the Austronesian and Sino-Tibetan language families. Using Pagel's discrete model of character evolution, I analyze data on sortal classifiers and number marking from the Grambank Consortium, the World Atlas of Languages, and the World Atlas of Classifier Languages. Two pairs of phylogenies for each family are used for comparison of results and extensive language coverage. The results show a correlated evolution between plural marking and numeral classifiers, although transition patterns differ. Overall, a trend towards the presence of plural marking emerges, but areal factors impact trajectories in Sino-Tibetan languages, including tendencies for transitions to the presence of both plural marking and classifiers. No systematic evidence of co-evolution was found for singular, dual, trial, or paucal, and classifier. Classifiers and number marking generally follow diverse evolutionary paths: in some lineages, only one feature persists, while in others, both are absent or both occur together."""
 
-"""
-
-# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Enock Appiah Tieku"]
 
-# parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Austronesian', 'Sino-Tibetan']
 
-# bibkey citation in sources.bib
 bibkey = "@Appiah_Tieku_2026"
 
-# type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
-# short description of the study, one line.
-description = ""
+type = ['macroevolutionary', 'trait']
 
-# data
+framework = ['bayesian']
+
+description = "Phylogenetic comparative test of co-evolution between numeral classifiers and number marking (singular, dual, trial, paucal, plural) in a global sample and in Austronesian and Sino-Tibetan families using Pagel's discrete model in BayesTraits V4."
+
+
 [data]
 
-    notes = ""
-    
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
-    nsites = "?"
-    datatype = 'lexical cognates'
-    source = '@xxx'
-    items = ''
-    comment = ''
+    notes = "Data merged from Grambank (number marking features), WACL (classifier presence/absence), and WALS 33A (plural marking). Sample sizes vary by feature pair and phylogeny; see Table 1 of paper."
 
-# published phylogenies
+    [data.global]
+    ntaxa   = 1595
+    nchars  = 2
+    nsites  = 2
+    datatype = 'structural features'
+    source  = '@Grambank'
+    items   = ''
+    comment = 'Global sample for singular- and plural-classifier pairs; binary coding of classifier presence and number marking type; Bouckaert et al. 2022 global tree'
+
+    [data.austronesian]
+    ntaxa   = 312
+    nchars  = 2
+    nsites  = 2
+    datatype = 'structural features'
+    source  = '@Grambank'
+    items   = ''
+    comment = 'Maximum Austronesian sample with King (forthcoming) phylogeny; 170-313 languages depending on pair and phylogeny (Gray et al. 2009 or King forthcoming)'
+
+    [data.sinotibetan]
+    ntaxa   = 150
+    nchars  = 2
+    nsites  = 2
+    datatype = 'structural features'
+    source  = '@Grambank'
+    items   = ''
+    comment = 'Maximum Sino-Tibetan sample with Bouckaert et al. 2022 phylogeny; 77-150 languages depending on phylogeny (Zhang et al. 2019 or Bouckaert et al. 2022)'
+
+
 [phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
+    notes = "No new phylogenies published; study re-uses four existing published trees."
+
+    [phylogenies.gray2009]
+    source  = '@Gray2009'
+    comment = 'Bayesian Austronesian phylogeny; used for the Austronesian comparative analyses (170–193 languages per feature pair)'
+
+    [phylogenies.king]
+    source  = ''
+    comment = 'King forthcoming'
+
+    [phylogenies.zhang2019]
+    source  = '@Zhang2019'
+    comment = 'Bayesian Sino-Tibetan phylogeny; used for the Sino-Tibetan comparative analyses (77 languages)'
+
+    [phylogenies.bouckaert2022]
+    source  = '@Bouckaert_2022'
+    comment = 'Global language phylogeny; used for the global comparative analyses (1,595 languages) and as the Sino-Tibetan subtree (150 languages)'
 
 
-# date calibrations
 [calibrations]
 
     notes = ""
 
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "bp" # bp
-    description = ""
 
-
-# analysis information
 [analysis]
-    
-    notes = ""
-    
-    [analysis.tree]
-    tool = ''
-    model = ''
-    details = ""
-    data = ""
+
+    notes = "Pagel's (1994) discrete model in BayesTraits V4; dependent and independent models compared by Log Bayes Factor via stepping stone sampler (100 stones, 10,000+ iterations per stone); exponential priors on rate parameters (sensitivity-tested over values 3-9); 3 replicates per feature pair."
+
+    [analysis.global_pl_clf]
+    tool    = 'bayestraits'
+    model   = "Pagel discrete"
+    details = "Plural marking vs classifier; 1,595 languages; Bouckaert et al. 2022 global tree; Log BF = 2.371 favouring dependent model"
+    data    = "@Grambank"
+
+    [analysis.global_sg_clf]
+    tool    = 'bayestraits'
+    model   = "Pagel discrete"
+    details = "Singular marking vs classifier; 1,595 languages; Bouckaert et al. 2022 global tree; Log BF = 4.846 favouring independent model"
+    data    = "@Grambank"
+
+    [analysis.austronesian_gray]
+    tool    = 'bayestraits'
+    model   = "Pagel discrete"
+    details = "All five number marking types vs classifier; Gray et al. 2009 Austronesian tree; 170-193 languages per pair; plural-classifier Log BF = 7.31 (dependent); dual-classifier Log BF = 9.85 (independent)"
+    data    = "@Grambank"
+
+    [analysis.austronesian_king]
+    tool    = 'bayestraits'
+    model   = "Pagel discrete"
+    details = "All five number marking types vs classifier; King (forthcoming) Austronesian tree; 250-315 languages per pair; plural-classifier Log BF = 4.07 (dependent); trial-classifier Log BF = 5.76 (dependent)"
+    data    = "@Grambank"
+
+    [analysis.sinotibetan_zhang]
+    tool    = 'bayestraits'
+    model   = "Pagel discrete"
+    details = "Dual and plural marking vs classifier; Zhang et al. 2019 Sino-Tibetan tree; 77 languages; plural-classifier Log BF = 8.84 (dependent); dual-classifier Log BF = 0.73 (independent)"
+    data    = "@Grambank"
+
+    [analysis.sinotibetan_bouckaert]
+    tool    = 'bayestraits'
+    model   = "Pagel discrete"
+    details = "Dual and plural marking vs classifier; Bouckaert et al. 2022 tree (Sino-Tibetan subtree); 150 languages; plural-classifier Log BF = 10.67 (dependent); dual-classifier Log BF = 8.07 (dependent)"
+    data    = "@Grambank"
+
 
 [inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "bp"
-    notes = ""
+
+    notes = "No divergence time estimates."
 
 
 [links]

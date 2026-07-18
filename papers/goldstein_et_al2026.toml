@@ -1,83 +1,84 @@
 title = "Phylogenetic inference from cognate word forms"
 
-doi = "doi.org/10.1093/jole/lzag001"
+doi = "10.1093/jole/lzag001"
 
-abstract = """
-
-"""
+abstract = """Linguistic phylogenies are commonly inferred from abstract cognate classifications that encode relationships among lexemes. Although widespread, this practice has well-recognized limitations: it discards the phylogenetic signal contained in segmental word forms; restricts the range of evolutionary questions that can be addressed; and treats cognacy judgments, which are hypotheses, as observed data. We introduce a comparative framework that addresses these limitations by modeling the evolution of aligned cognate word forms directly. Our approach adapts the TKF91 model of molecular evolution, originally developed to account for insertion and deletion events in DNA sequences, to the domain of linguistic data. By operating on segmental strings rather than abstract character codings, the framework enables phylogenetic inference from observable word forms and supports quantitative investigation of sound change. We demonstrate its utility through analyses that illuminate patterns of segmental stability and the evolution of phonological inventories."""
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["David M. Goldstein", "Shawn H. McCreight", "Éva Buchi", "John P. Huelsenbeck"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Indo-European']
 
 # bibkey citation in sources.bib
 bibkey = "@Goldstein_2026"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['methodological', 'phylogenetic']
+framework = ['bayesian']
+
 # short description of the study, one line.
-description = ""
+description = "Introduces a Bayesian framework adapting the TKF91 molecular evolution model to infer phylogenies directly from cognate word forms (segmental strings) rather than binary cognate codings, demonstrated on 9 Romance languages."
 
 # data
 [data]
 
-    notes = ""
-    
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
+    notes = "Data compiled by the authors from etymological dictionaries; 9 taxa (8 Romance languages + Latin), 102 cognate sets across 98 concepts drawn from the Swadesh 207-item list, borrowings excluded."
+
+    [data.romance]
+    ntaxa = 9
+    nchars = 102
     nsites = "?"
     datatype = 'lexical cognates'
-    source = '@xxx'
-    items = ''
-    comment = ''
+    source = '@Goldstein_2026'
+    items = 'swadesh200'
+    comment = 'Romanian, Portuguese, Spanish, Catalan, French, Walloon, Friulian, Italian, Latin; 918 word forms, 79 distinct segments'
 
 # published phylogenies
 [phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
+    notes = ""
+
+    [phylogenies.romance]
+    source = '@Goldstein_2026'
+    comment = 'Bayesian phylogeny of 9 Romance languages/Latin inferred from segmental word forms under TKF91'
 
 
 # date calibrations
 [calibrations]
 
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "bp" # bp
-    description = ""
+    notes = "No divergence time estimates."
 
 
 # analysis information
 [analysis]
-    
-    notes = ""
-    
-    [analysis.tree]
-    tool = ''
-    model = ''
-    details = ""
-    data = ""
+
+    notes = "Three substitution models tested: M1 (Poisson), M2 (Felsenstein), M3 (Natural Class)."
+
+    [analysis.m1_poisson]
+    tool = 'custom'
+    model = 'TKF91+Poisson'
+    details = "Bayesian MCMC, 5,000,000 cycles, joint estimation of phylogeny and segmental alignments; custom C++ implementation (Linguistomics, https://github.com/jhuelsenbeck/Linguistomics)"
+    data = "@Goldstein_2026"
+
+    [analysis.m2_felsenstein]
+    tool = 'custom'
+    model = 'TKF91+Felsenstein'
+    details = "Bayesian MCMC, 5,000,000 cycles, joint estimation of phylogeny and segmental alignments; custom C++ implementation (Linguistomics)"
+    data = "@Goldstein_2026"
+
+    [analysis.m3_natural_class]
+    tool = 'custom'
+    model = 'TKF91+NaturalClass'
+    details = "Bayesian MCMC, 5,000,000 cycles, joint estimation of phylogeny and segmental alignments; custom C++ implementation (Linguistomics)"
+    data = "@Goldstein_2026"
 
 [inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "bp"
-    notes = ""
+
+    notes = "No divergence time estimates."
 
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }
 cldf = { title = "CLDF Dataset", link = "" }
 dplace = { title = "D-PLACE Dataset", link = "" }
-links = []
+links = ["https://github.com/jhuelsenbeck/Linguistomics"]

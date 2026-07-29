@@ -1,0 +1,35 @@
+title = "Syntactic Methods for Language Phylogenies"
+
+doi = "10.1002/9781119898023.wbcdl055"
+
+abstract = """
+Phylogenetic linguistics and long-term historical analysis have been recently marked by a growing reliance on
+quantitative methods. The Parametric Comparison Method (PCM) builds on this trend, but in order to pursue a full
+scientific renovation of the field, it proposes a qualitative shift in the type of characters used for taxonomic
+reconstruction: it uses such abstract characters as generative syntactic parameters to trace measurable historical links
+among languages even in the absence of etymological evidence. This way, the PCM provides results that may have
+far-reaching implications for theoretical and historical linguistics, as well as for related disciplines.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Cristina Guardiano", "Giuseppe Longobardi"]
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Guardiano_2026"
+
+# type of study
+type = ['review']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

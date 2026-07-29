@@ -1,0 +1,40 @@
+title = "Family Tree Model"
+
+doi = "10.1002/9781119898023.wbcdl056"
+
+abstract = """
+The family tree remains the main metaphor for describing the evolutionary history and relationships of languages.
+Languages, like biological species, evolve following processes such as descent with modification and divergence from a
+common ancestor, which can be modeled using phylogenetic trees. This chapter first gives basic definitions of the
+concepts involved in the Tree model and phylogenies, and reviews the merits and limitations of the two competing
+approaches to linguistic diversification: the Tree model and the Wave model. Second, it discusses the sources of
+non-tree-like signal in linguistic data (borrowings, language mixing, parallel innovations, and incomplete lineage
+sorting) and how to identify these phenomena. Third, it describes the procedures used to infer phylogenies (including
+tree topology and datings), and how to interpret the results and assess their validity. Finally, it stresses that
+phylogenetic inference is not only a method for classifying languages, but more importantly a tool with many possible
+applications related to the evolution of structural features and rates of change, the geographical origin and dispersal
+routes of ancient human populations, and questions related to the domestication and management of plant and animal
+species.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Thomas Pellard", "Robin J. Ryder", "Guillaume Jacques"]
+
+# parts of the world
+groups = []  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Pellard_2026"
+
+# type of study
+type = ['review']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

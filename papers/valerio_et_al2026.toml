@@ -1,0 +1,80 @@
+title = "Computational analysis reveals historical trajectory of East Polynesian lunar calendars"
+
+doi = "10.1371/journal.pone.0353287"
+
+abstract = """
+We investigate a type of lunar calendar known as lists of the 'nights of the moon', found throughout East Polynesia, including Rapa Nui (Easter
+Island). Using computational methods, we analyzed the lexical and structural divergence of 48 calendrical lists from all major archipelagos,
+each containing about 30 night names. Our results, presented as a rooted phylogenetic tree, show a split into two main groups: one including
+lists from Rapa Nui, Mangareva, and the Marquesas; the other comprising lists from New Zealand, Hawai'i, the Cook Islands, the Austral Islands,
+Tahiti, and the Tuamotu. This result aligns with a recent alternative classification of East Polynesian languages into 'Distal' (Marquesan,
+Mangarevan, Rapanui) and 'Proximal' (Māori, Hawaiian, Tahitian, etc.) subgroups. Since both language and lunar calendars are symbolic systems
+passed down and changed within communities—and given the geographic isolation of many archipelagos—we interpret this correspondence as evidence
+that the early divergence of East Polynesian lunar calendars mirrors early population movements and language splits in the region. """
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Miguel Valério", "Fabio Tamburini", "Michele Corazza"]
+
+# parts of the world
+groups = ['Austronesian']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Val_rio_2026"
+
+# type of study
+type = ['delta', 'qresidual', 'phylogenetic']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['network', 'distance'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+
+    notes = ""
+    
+    [data.pollex]
+    ntaxa = 48
+    nchars = 30
+    nsites = 1
+    datatype = 'lexical distance'
+    source = ''
+    items = ''
+    comment = ''
+
+
+# analysis information
+[analysis]
+    
+    notes = ""
+    
+    [analysis.nnet]
+    tool = 'splitstree'
+    model = 'neighbornet'
+    details = ""
+    data = ""
+
+    [analysis.delta]
+    tool = 'custom'
+    model = 'delta'
+    details = ""
+    data = ""
+
+    [analysis.qresidual]
+    tool = 'custom'
+    model = 'qresidual'
+    details = ""
+    data = ""
+
+    [analysis.nj]
+    tool = 'custom'
+    model = 'neighbor-joining'
+    details = ""
+    data = ""
+
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = []

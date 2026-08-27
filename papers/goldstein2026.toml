@@ -1,0 +1,74 @@
+title = "Articles are inversely associated with inflectional case in Indo-European"
+
+doi = "10.1017/S0097850726000147"
+
+abstract = """
+The relationship between inflectional case marking and the emergence of definite and indefinite articles has long been hypothesized but seldom examined quantitatively. This study presents a large-scale statistical analysis of the relationship across ninety-four Indo-European languages. Bayesian logistic regression models account for phylogenetic and spatiotemporal autocorrelation while integrating over phylogenetic uncertainty. The results establish a robust inverse association between case-inventory size and the presence of articles. Estimated probabilities indicate that smaller case inventories are associated with higher probabilities of definite articles. A similar association holds for indefinite articles. The posterior median predicted probability exceeds 0.5 at four cases for definite articles and between three and four cases for indefinite articles. These thresholds correspond to reduced case inventories composed primarily of grammatical cases. Even after accounting for case-inventory size, the presence of a definite article is associated with a higher probability of an indefinite article. The analysis shows that the observed association is compatible with direct, mediated, and common-cause accounts and does not uniquely identify a causal pathway. These findings sharpen the empirical basis of the debate and identify the causal and evolutionary questions that remain open.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["David M. Goldstein"]
+
+# parts of the world
+groups = ['Indo-European']
+
+# bibkey citation in sources.bib
+bibkey = "@Goldstein_2026"
+
+# type of study
+type = ['regression', 'trait', 'structure']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian', 'statistical'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = "Bayesian logistic regression testing the inverse association between nominal case-inventory size and the presence of definite/indefinite articles across 94 Indo-European languages, controlling for phylogenetic and spatiotemporal autocorrelation."
+
+# data
+[data]
+
+    notes = "Sample of 94 Indo-European languages (16 premodern, 78 contemporary), corresponding to Chang et al. 2015a and Goldstein 2022 (~16% of the family per Glottolog 5.1). Case-inventory and article data from Goldstein 2022; geographic coordinates from Glottolog 5.1, WALS, Grambank, and IE-CoR."
+
+    [data.typology]
+    ntaxa = 94
+    nchars = 3
+    nsites = "?"
+    datatype = 'structural features'
+    source = '@Goldstein2022art'
+    items = ''
+    comment = 'Three variables per language: definite article (presence/absence), indefinite article (presence/absence), and inflectional noun case-inventory size (ordinal).'
+
+# published phylogenies
+[phylogenies]
+
+    notes = "No new tree inferred; the study re-uses published Indo-European trees."
+
+    [phylogenies.ie_a3]
+    source = '@Chang2015'
+    comment = 'Sample of 50 posterior trees from the A3 model of Chang et al. 2015a, used to propagate phylogenetic uncertainty; MCC tree shown in Fig. 10 with article states mapped to tips.'
+
+
+# date calibrations
+[calibrations]
+
+    notes = "No calibrations. Dates of premodern languages treated as latent variables with uniform priors over their attestation intervals; contemporary languages fixed at age 0."
+
+
+# analysis information
+[analysis]
+
+    notes = "Bayesian logistic regression jointly modelling two binary outcomes (definite and indefinite article presence) with an ordinal case-inventory predictor, plus a phylogenetic random effect and a separable spatiotemporal Gaussian process (Matern-3/2 kernels). Four model specifications compared by leave-one-out cross-validation; the combined model was selected."
+
+    [analysis.regression]
+    tool = 'r'
+    model = 'Bayesian logistic regression + phylogenetic term + spatiotemporal Gaussian process'
+    details = "Monotone-constrained case effect; case-inventory imprecision assessed in a measurement-error analysis; 89% HPDIs reported. Data and code archived on Zenodo."
+    data = "@Goldstein2022art"
+
+[inferredages]
+
+    notes = "No divergence time estimates. Analysis is synchronic; premodern language dates enter only as latent nuisance variables for the spatiotemporal process."
+
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = ["https://doi.org/10.5281/zenodo.20309293", "https://doi.org/10.1017/S0097850726000147"]

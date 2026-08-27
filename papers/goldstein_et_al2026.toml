@@ -11,7 +11,7 @@ authors = ["David M. Goldstein", "Shawn H. McCreight", "Éva Buchi", "John P. Hu
 groups = ['Indo-European']
 
 # bibkey citation in sources.bib
-bibkey = "@Goldstein_2026"
+bibkey = "@Goldstein_etal_2026"
 
 # type of study
 type = ['methodological', 'phylogenetic']

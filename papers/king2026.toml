@@ -3,81 +3,112 @@ title = "Testing the validity and adequacy of linguistic phylogenetic analyses"
 doi = "10.1371/journal.pcbi.1014312"
 
 abstract = """
-
+Bayesian phylogenetics has become a standard tool in historical linguistics, and for the most part implements models borrowed from evolutionary biology. Not enough work has been done to validate the analysis set-up that has become standardised in phylolinguistics, which consists of binary data with ascertainment bias, data partitions with correlated cognate count and rate, the binary covarion substitution model, and the uncorrelated lognormal branch rate model. Here I perform a set of simulation-based calibration studies to test a typical phylolinguistic analysis in the software BEAST2. Although the analysis can correctly recover the parameters of the substitution model, complications arise due to the combination of ascertainment bias and partitions of unequal length and rate. Reweighting the partition-specific rates by the number of cognates, as is the default behaviour, leads to poorly calibrated posteriors. An alternative approach, where each meaning is assumed to come from a set of cognates of equal size, behaves correctly in simulations and is found to fit better to empirical data. I also assess the adequacy of the covarion substitution model through posterior predictive simulations. The covarion is found to fall short of approximating the true process of lexical evolution, likely due to the prevalence of semantic shift and the non-independence of cognate substitutions in real data. This work highlights the importance of thorough testing of models and their implementation in phylolinguistics, as well as the need for further research on improving models of lexical evolution.
 """
 
 # authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
 authors = ["Benedict King"]
 
 # parts of the world
-groups = []  # 'Austronesian', etc
+groups = ['Indo-European']
 
 # bibkey citation in sources.bib
 bibkey = "@King_2026"
 
 # type of study
-type = []  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
-framework = [] # distance,parsimony,likelihood,bayesian,network,statistical,other
+type = ['methodological', 'criticism']
+framework = ['bayesian']
 # short description of the study, one line.
-description = ""
+description = "Simulation-based calibration and posterior predictive tests of the standard binary-covarion BEAST2 set-up for phylolinguistics"
 
 # data
 [data]
 
-    notes = ""
-    
-    [data.bantu]
-    ntaxa = 95
-    nchars = 100
+    notes = "Simulated data for SBC validation; IE-CoR (Heggarty et al. 2023) subsets for empirical model comparison and posterior predictive checks."
+
+    [data.simulated]
+    ntaxa = 30
+    nchars = 30000
+    nsites = 30000
+    datatype = 'simulated data'
+    source = ''
+    items = ''
+    comment = '100 datasets, 30 tips (Yule tree), 3 partitions of 10000 cognates each simulated under binary covarion + lognormal relaxed clock (clock fixed 0.05) using LinguaPhylo'
+
+    [data.indoiranic]
+    ntaxa = "?"
+    nchars = 170
     nsites = "?"
     datatype = 'lexical cognates'
-    source = '@xxx'
-    items = ''
-    comment = ''
+    source = '@Heggarty2023'
+    items = 'subset'
+    comment = 'Indo-Iranic subset of IE-CoR; 170 meaning classes; used to compare three partition-rate weighting strategies via marginal likelihood'
+
+    [data.germanic_italic_celtic]
+    ntaxa = 35
+    nchars = 1251
+    nsites = 1251
+    datatype = 'lexical cognates'
+    source = '@Heggarty2023'
+    items = 'subset'
+    comment = 'Germanic, Italic and Celtic subgroups of IE-CoR, no missing data (1251 cognate sets); used for posterior predictive simulations'
 
 # published phylogenies
 [phylogenies]
-    [phylogenies.label]
-    source = '@xxx'
-    comment = ''
-
+    notes = "No new phylogeny published; the empirical tree topology was fixed to the IE-CoR summary tree (Heggarty et al. 2023)."
 
 # date calibrations
 [calibrations]
 
-    notes = ""
-
-    [calibration.label]
-    taxa = []
-    age = "" # x, normal(x, y), uniform(x,y), lognormal(x, y, z, realspace=True)
-    units = "bp" # bp
-    description = ""
-
+    notes = "Not a dating study. In simulations the clock rate was fixed (0.05) for identifiability; no empirical divergence times were estimated."
 
 # analysis information
 [analysis]
-    
-    notes = ""
-    
-    [analysis.tree]
-    tool = ''
+
+    notes = "Simulation-based calibration (coverage + rank uniformity validation), empirical model comparison via path-sampling marginal likelihood, and posterior predictive simulations."
+
+    [analysis.sbc_unaltered]
+    tool = 'beast2'
+    model = 'covarion+relaxed'
+    details = "SBC study 1: all-absent cognates retained; assessed by coverage and rank uniformity validation (well-calibrated)"
+    data = "data.simulated"
+
+    [analysis.sbc_ascertainment_noreweight]
+    tool = 'beast2'
+    model = 'covarion+relaxed'
+    details = "SBC study 2: all-absent cognates removed, ascertainment bias correction applied, partition rates NOT reweighted (well-calibrated)"
+    data = "data.simulated"
+
+    [analysis.sbc_ascertainment_reweight]
+    tool = 'beast2'
+    model = 'covarion+relaxed'
+    details = "SBC study 3: ascertainment correction with default cognate-count partition-rate reweighting; fails coverage and RUV for partition rates, birth rate, tree height/length"
+    data = "data.simulated"
+
+    [analysis.simulate]
+    tool = 'linguaphylo'
     model = ''
-    details = ""
-    data = ""
+    details = "Generated 100 simulated datasets under the graphical model (binary covarion + lognormal relaxed clock, Yule tree)"
+    data = "data.simulated"
+
+    [analysis.empirical_modelcomparison]
+    tool = 'beast2'
+    model = 'covarion+relaxed+pathsampling'
+    details = "Compared three partition-rate weightings (cognate-weighted default, unweighted, meaning-weighted) by marginal likelihood via path sampling (30 power posteriors); meaning-weighted preferred"
+    data = "data.indoiranic"
+
+    [analysis.posterior_predictive]
+    tool = 'beast2'
+    model = 'covarion+relaxed'
+    details = "1001 posterior predictive datasets compared to empirical data over 8 metrics (mid-point two-tailed p-value); covarion found inadequate for real lexical evolution"
+    data = "data.germanic_italic_celtic"
 
 [inferredages]
-    
-    notes = ""
-    
-    [inferredage.label]
-    taxa = []
-    age = "hpd(median, lower, upper)"
-    units = "bp"
-    notes = ""
 
+    notes = "No divergence time estimates; the study tests model validity and adequacy, not language chronology."
 
 [links]
 phlorest = { title = "Phlorest Dataset", link = "" }
 cldf = { title = "CLDF Dataset", link = "" }
 dplace = { title = "D-PLACE Dataset", link = "" }
-links = []
+links = ["https://doi.org/10.6084/m9.figshare.30870404"]

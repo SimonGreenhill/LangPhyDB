@@ -1,0 +1,64 @@
+title = "Towards a Global Phylogeny of Human Populations Based on Genetic and Linguistic Data"
+doi = ""
+abstract = """Over the past three decades, modern human origins and dispersal have been investigated using phylogenetic analyses of genetic and linguistic data. As a result, a large body of phylogenetic hypotheses is available for formal meta-analysis. Here we present a "matrix representation with parsimony" (MRP) supertree of 1,962 human populations, based on 388 genetic and linguistic phylogenies. This supertree represents a comprehensive global phylogeny of extant human populations, covering all world regions and ~100 language families (including isolates). It is in near-perfect agreement with phylogeny based on supermatrix (concatenation) analysis, showing that these conceptually different approaches to phylogenetic inference tend to produce a similar phylogenetic pattern of global human population. Although human population history is certainly not purely tree-like, there is an underlying hierarchical structure (especially at deeper levels) that can be hypothesized as phylogeny. However, the question of large-scale coevolution between genes and languages must be reassessed critically since most of the well-substantiated language families do not form genetically consistent groups."""
+
+authors = ["Pavel Duda", "Jan Zrzavý"]
+
+groups = ['global']
+
+bibkey = "@Duda2019"
+
+type = ['phylogenetic']
+
+framework = ['parsimony']
+
+description = "MRP supertree of 1,962 human populations from 388 genetic and linguistic source trees, with an Ethnologue-based linguistic scaffold"
+
+[data]
+    notes = "Source trees from 250 studies published 1990-2017. Expanded from Duda and Zrzavy (2016): 186 -> 1,962 populations, 257 -> 388 source trees."
+
+    [data.mrp]
+    ntaxa = 1962
+    nchars = 12921
+    nsites = 12921
+    datatype = 'mixed'
+    source = '@Duda2019'
+    items = ''
+    comment = 'MRP matrix coding 388 genetic and linguistic source trees; 12,921 parsimony-informative characters. Plus Pan troglodytes, Homo neanderthalensis and an all-0 outgroup.'
+
+    [data.scaffold]
+    ntaxa = 1962
+    nchars = 104
+    nsites = 104
+    datatype = 'mixed'
+    source = '@Duda2019'
+    items = ''
+    comment = 'Scaffold tree of well-supported language family groupings from Ethnologue (Simons and Fennig 2017); 75 characters parsimony-informative. Soft constraint, can be overruled by source trees.'
+
+[phylogenies]
+    notes = "Full supertree available on request from the corresponding author."
+
+    [phylogenies.supertree]
+    source = '@Duda2019'
+    comment = '50% majority-rule consensus MRP supertree of 1,962 human populations'
+
+[calibrations]
+    notes = ""
+
+[analysis]
+    notes = "Experimental analyses deactivated monophyly constraints on individual language groupings to test genetic consistency of language families. Supertree compared to the supermatrix tree of Baker, Rotimi and Shriner (2017)."
+
+    [analysis.mrp]
+    tool = 'tnt'
+    model = ''
+    data = 'data.mrp;data.scaffold'
+    details = 'TNT 1.5 new technology search (sectorial, ratchet, tree fusing), 10,000 random addition sequence replicates, TBR branch swapping; 50% majority-rule consensus.'
+
+[inferredages]
+    notes = "No divergence time estimates."
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = ["https://www.researchgate.net/publication/332298707"]

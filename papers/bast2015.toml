@@ -1,0 +1,36 @@
+title = "Time Calibration of Linguistic Phylograms: A Molecular Clock for Historical Linguistics"
+
+doi = "10.4172.2329-9002.1000e115"
+
+abstract = """
+Evolutionary patterns of languages and organisms have surprising similarity, as Darwin famously captured by what he termed
+as "Curious Parallelism." While traditional comparative and historical linguistic methods such as detailed analysis of cognate
+correspondences reveal similarities between languages and group them into linguistic families like how Carl Linnaeus grouped
+organisms into taxonomical hierarchies based on overall similarity-an approach known as phenetic clustering, this will not help to
+answer such as "when did Proto-Dravidian split to Proto-South Dravidian and Proto-South-Central Dravidian?" and so on. Conventional
+methods for dating linguistic trees such as glottochronology are severely flawed such that these have now been largely discredited.
+Proposed in this invited editorial is the direct extension of the molecular clock hypothesis and time-calibration techniques of molecular
+phylogenetics to the field of phylolinguistics. For 'calibration checkpoints', ancient dated texts, as well as dated and reliable historical
+information (such as Cro-Magnon migration to Europe, etc.), can be employed. Also deliberated here is a call to make use of Maximum
+Parsimony-based approaches for the ancient character-state reconstruction, for reconstructing long-lost languages
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ['Felix Bast']
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Bast2015"
+
+# type of study
+type = ['review']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['likelihood'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = ""
+
+# data
+[data]
+    notes = "NA"
+ 

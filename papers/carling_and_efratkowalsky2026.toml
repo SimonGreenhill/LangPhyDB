@@ -1,0 +1,97 @@
+title = "Culture or cognition?: The evolutionary dynamics of gender assignment in the Indo-European lexicon"
+
+doi = "10.1075/rcl.00274.car"
+
+abstract = """
+Gender languages assign nouns to a category, such as masculine, feminine, neuter or common.
+Gender assignment is complicated and difficult to learn, as languages do not have specific rules
+for assigning a noun to one or the other gender. This study looks at gender assignment from the
+perspective of semantics and lexical semantic evolution, exemplified on the Indo-European family.
+Gender assignment has a semantic core, in which animate nouns are more likely to be masculine,
+inanimate nouns feminine and neuter, nature nouns masculine, and culture nouns feminine or neuter.
+To investigate how these patterns emerge, we study the evolutionary dynamics of these semantic
+properties on a gender-coded lexical data set for Indo-European. We find that masculine is a
+stable gender that remains in its semantic category and does not change. Feminine is also a stable
+category which may get lost or transfer to masculine. Neuter and common are unstable categories,
+which continuously alter or get lost in gender assignment. In sum, our result shows that the
+semantic core of gender, affected both by cognitive and cultural factors, remains stable and does
+not vacillate in evolution.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Gerd Carling", "Nour Efrat-Kowalsky"]
+
+# parts of the world
+groups = ['Indo-European']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Carling_2026"
+
+# type of study
+type = ['trait']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian', 'statistical'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = "Transition rates of noun gender (m/f/n/common/none) across 146 concepts in Indo-European, split by animacy and nature/culture, plus regression of gender on word frequency"
+
+# data
+[data]
+
+    notes = "Gender-coded lexemes from DiACL. Concepts classified into 12 semantic domains and coded for animacy (animate/inanimate) and nature/culture."
+
+    [data.gender]
+    ntaxa = 112
+    nchars = 146
+    nsites = "?"
+    datatype = 'morphological traits'
+    source = '@DiACL'
+    items = ''
+    comment = '105 gender languages plus 7 genderless languages (Bengali, English, Classical and Modern Armenian, Middle Persian, Persian, Ossetic) reintroduced with state none. One main lexeme per concept per language (chosen with IE-COR, dictionaries, speakers). Concepts are Swadesh 100 plus culture/subsistence vocabulary. States: masculine, feminine, neuter, common, none.'
+
+    [data.frequency]
+    ntaxa = 4
+    nchars = 146
+    nsites = "?"
+    datatype = 'frequency'
+    source = '@Pagel_2007'
+    items = ''
+    comment = 'Word frequencies per million for English, Spanish, Russian, Greek.'
+
+# published phylogenies
+[phylogenies]
+    notes = "Branch lengths ignored in the transition-rate analysis."
+
+    [phylogenies.global]
+    source = '@Bouckaert2022'
+    comment = '1000-tree sample from the global Glottolog-based tree.'
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+# analysis information
+[analysis]
+
+    notes = ""
+
+    [analysis.transitions]
+    tool = 'bayestraits'
+    model = 'multistate+rjhp'
+    details = "Reversible-jump hyperprior multistate model of gender transitions per concept; run for all concepts and for animate, inanimate, nature and culture subsets. Follows Allassonniere-Tang and Dunn (2020)."
+    data = "data.gender;phylogenies.global"
+
+    [analysis.frequency]
+    tool = 'r'
+    model = 'linear regression'
+    details = "Per-gender proportion of lexemes ~ mean frequency (non-phylogenetic). No significant effect (p >= 0.16)."
+    data = "data.gender;data.frequency"
+
+[inferredages]
+
+    notes = "No divergence time estimates."
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = ["https://doi.org/10.1075/rcl.00274.car.additional"]

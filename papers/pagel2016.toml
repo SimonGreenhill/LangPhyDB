@@ -10,7 +10,7 @@ Human languages evolve by a process of descent with modification in which parent
 authors = ["Mark Pagel"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Pagel_2016"

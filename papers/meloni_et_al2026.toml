@@ -27,7 +27,7 @@ expression than by the evolution of writing.
 authors = ["Carlo Y. Meloni", "Jessica K. Ivani", "Taras Zakharko", "Guanghao You", "Kellen Parker van Dam", "Chundra A. Cathcart", "Balthasar Bickel"]
 
 # parts of the world
-groups = ['Indo-European', 'Sino-Tibetan', 'Tupi-Guarani', 'global']  # 'Austronesian', etc
+groups = ['Indo-European', 'Sino-Tibetan', 'Tupi-Guarani', 'Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Meloni_2026"

@@ -22,7 +22,7 @@ different environments across the globe.
 authors = ["Christian Bentz", "Dan Dediu", "Annemarie Verkerk", "Gerhard Jäger"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Bentz_2018"

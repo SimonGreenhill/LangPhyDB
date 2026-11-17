@@ -20,7 +20,7 @@ classifications, showing that the δ scores explain much of the variance.
 authors = ["Eric W. Holman", "Robert S. Walker", "Taraka Rama", "Søren Wichmann"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Holman_2011"

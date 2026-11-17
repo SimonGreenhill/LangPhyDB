@@ -16,7 +16,7 @@ of research or educational goals.
 authors = ["Vladimir N. Polyakov", "Valery D. Solovyev", "Søren Wichmann", "Oleg Belyaev"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Polyakov_2009"

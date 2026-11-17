@@ -17,7 +17,7 @@ outgroup than segments containing fewer nodes.
 authors = ["Eric W. Holman", "Søren Wichmann"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Holman_2016"

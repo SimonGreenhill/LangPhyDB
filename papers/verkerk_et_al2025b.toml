@@ -23,7 +23,7 @@ towards similar solutions.
 authors = ["Annemarie Verkerk", "Olena Shcherbakova", "Hannah J. Haynie", "Hedvig Skirgård", "Christoph Rzymski", "Quentin D. Atkinson", "Simon J. Greenhill", "Russell D. Gray"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Verkerk_2025b"

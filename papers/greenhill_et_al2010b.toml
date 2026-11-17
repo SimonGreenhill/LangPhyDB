@@ -22,7 +22,7 @@ relationship across families.
 authors = ["Simon J. Greenhill", "Quentin D. Atkinson", "Andrew Meade", "Russell D. Gray"]
 
 # parts of the world
-groups = ['global', 'Austronesian', 'Indo-European']  # 'Austronesian', etc
+groups = ['Global', 'Austronesian', 'Indo-European']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Greenhill2010b"

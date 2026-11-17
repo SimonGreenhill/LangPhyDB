@@ -32,7 +32,7 @@ and/or rule types might be more robust in languages with more pervasive gender a
 authors = ["Olena Shcherbakova", "Marc Allassonnière-Tang"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Shcherbakova_2024"

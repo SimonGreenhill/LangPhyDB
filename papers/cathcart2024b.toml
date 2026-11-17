@@ -23,7 +23,7 @@ study illustrating the flexibility of the approach.
 authors = ["Chundra A. Cathcart"]
 
 # parts of the world
-groups = ['Indo-European', 'global']  # 'Austronesian', etc
+groups = ['Indo-European', 'Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Cathcart_2024b"

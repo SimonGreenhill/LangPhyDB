@@ -51,7 +51,7 @@ median q = 0.003342, s.d. = 0.00315
 
 ## robinson_and_holton2012:
 
-> pplying this methodology to our dataset yields an average δ = 0.29. Tis value is moderately high, reflecting the fact that, while some groupings do emerge in Fig. 5, there is significant reticulation between those groups. Tis figure can be contextualized by comparing with delta scores calculated by Gray et al. (2010) for Indo-European and Polynesian. Gray et al. used the same distance metric applied to basic vocabulary coded for cognacy, with borrowings retained; hence their data is largely comparable to our dataset for Alor-Pantar. What we find is that the delta score for the Alor-Pantar data lies midway between the more treelike score of 0.22 for Indo-European and the decidedly non-treelike score of 0.41 for Polynesian.6
+> Applying this methodology to our dataset yields an average δ = 0.29. Tis value is moderately high, reflecting the fact that, while some groupings do emerge in Fig. 5, there is significant reticulation between those groups. Tis figure can be contextualized by comparing with delta scores calculated by Gray et al. (2010) for Indo-European and Polynesian. Gray et al. used the same distance metric applied to basic vocabulary coded for cognacy, with borrowings retained; hence their data is largely comparable to our dataset for Alor-Pantar. What we find is that the delta score for the Alor-Pantar data lies midway between the more treelike score of 0.22 for Indo-European and the decidedly non-treelike score of 0.41 for Polynesian.6
 
 ## lee_and_hasegawa2013:
 
@@ -63,7 +63,7 @@ median q = 0.003342, s.d. = 0.00315
 
 Full details:  https://journals.plos.org/plosone/article/figure?id=10.1371/journal.pone.0091722.t001
 
-## birchall_et_al2016:
+## birchall_et_al_2016:
 
 > To quantify the degree of conflicting signal in these data, we calculated two statistics, the δ-score (Holland et al.
 > 2002) and the Q-residual (Gray, Bryant, and Greenhill 2010). These two statistics provide a quantitative measure of how
@@ -88,7 +88,7 @@ Full details:  https://journals.plos.org/plosone/article/figure?id=10.1371/journ
 
 > with Q-residual score = 0.1013 and high δ score = 0.4254
 
-## kaiping_and_klamer2022:
+## kaiping_and_klamer_2022:
 
 - both Q and Delta in table4
 
@@ -104,3 +104,164 @@ All in appendix 4
 ## gao2020 
 
 Table 3
+
+## auderset_et_al2023:
+
+> Both scores can be averaged over all tips to give a measure of the treelikeness of the whole network. These average scores are summarized in Table 3. The scores for each tip are provided in SM 2. The broad cognate sets result in slightly higher scores as compared to the fine-grained sets, exhibiting more conflicting signals or, in other words, a less tree-like structure.
+
+Table 3: Mean delta-scores and Q-residuals.
+
+Dataset,δ,Q-r
+Broad,0.3911,0.02554
+Fine,0.3793,0.02472
+
+## dockum2018:
+
+> The delta-scores and Q-residuals for each dataset are presented in Table 6.
+
+Dataset,δ,Q-r
+Tai phonemes,0.3115,0.03942
+Tai biphone transitions,0.2988,0.02615
+Tai cognates,0.2808,0.04088
+
+## ebert_et_al2024:
+
+> Both the δ scores and the Q-residual scores indicate a relatively tree-like structure, but with some reticulation, as can be seen in the box-like structures at the center of each graph and along some of the branches. δ scores range from 0.27 for X/X/V order to a maximum of 0.30 for Finite V. Q-residuals range from 0.01 for Finite V and 0.02 for Lexical V.
+
+Figure 7:
+
+Dataset,δ,Q-r
+Finite verb,0.3015,0.01354
+Lexical verb,0.2991,0.02083
+S/O/V,0.2752,0.01651
+X/V,0.2658,0.01797
+
+## gray_et_al2010:
+
+> The average delta score for this dataset = 0.23 and the average Q-residual = 0.03. Overall, this suggests that the data is moderately tree-like.
+
+(Germanic + Sranan)
+
+> For Polynesian, the average delta score was 0.41 and the average Q-residual value was 0.02. The respective figures for Indo-European were 0.22 and 0.002.
+
+> For Austronesian basic vocabulary, the average delta score was 0.33 and the average Q-residual = 0.0020. The average delta score for Austronesian typological data was 0.44 and the average Q-residual = 0.05. The respective figures for Indo-European were 0.21 and 0.001 (basic vocabulary) and 0.40 and 0.04 (typology).
+
+> For functional traits, the average delta score was 0.46 and the average Q-residual = 0.03. For symbolic traits, the average delta score was 0.37 and the average Q-residual = 0.05.
+
+(Polynesian canoes)
+
+Table 1: The taxon-specific delta and Q-residual scores for the Polynesian lexical data, ranked from the lowest Q-residual score to the highest.
+
+Language,δ,Q-r
+Fijian (Bau),0.33,0.015
+Sikaiana,0.40,0.016
+West Fijian (Navosa),0.34,0.016
+Luangiua,0.40,0.016
+Anuta,0.41,0.016
+Kapingamarangi,0.41,0.016
+Rotuman,0.37,0.016
+Maori,0.35,0.016
+Hawaiian,0.33,0.017
+Tahitian,0.32,0.017
+Vaeakau-Taumako,0.40,0.017
+Niue,0.42,0.018
+Tuvalu,0.39,0.018
+Bellona,0.40,0.019
+Nukuoro,0.43,0.019
+Tikopia,0.41,0.019
+Tongan,0.41,0.020
+Rurutuan,0.34,0.021
+Manihiki,0.39,0.021
+Penrhyn,0.38,0.021
+Rapanui,0.40,0.022
+Fijian (Suva),0.36,0.022
+Emae,0.41,0.023
+Samoan,0.44,0.024
+Tuamotu,0.41,0.025
+Futuna-Aniwa,0.45,0.026
+East Uvea,0.41,0.027
+Rennellese,0.45,0.029
+Pukapuka,0.46,0.030
+Takuu,0.44,0.030
+Marquesan,0.41,0.031
+Rarotongan,0.41,0.031
+Ifira-Mele,0.46,0.036
+Marquesan (Nukuhiva),0.38,0.038
+East Futuna,0.44,0.040
+West Uvea,0.50,0.042
+Tokelau,0.49,0.043
+Mangareva,0.44,0.046
+
+## lee_and_hasegawa2014:
+
+> when we quantify the amount of conflicting signal for each group, mainland Japanese shows the average delta score of 0.39 and Q-residual score of 0.02, and Ryukyuan shows the delta score = 0.23 and Q-residual = 0.004.
+
+## lehtinen_et_al2014:
+
+> The networks generally seem to support a treelike divergence pattern and have low mean delta values, indicating a low amount of reticulation (δ = 0.172 in the case of Full Basic Vocabulary, δ = 0.1933 for Ura100 and δ = 0.1787 for the lj network).
+
+> The wold401–500 network (Fig. 7) is more reticulated than the other networks investigated here. However, its delta value is still quite low (δ = 0.244).
+
+## tao_et_al2023:
+
+Supplementary Data 6: Delta scores and Q-residual scores.
+
+## syrjaenen_et_al2021:
+
+Table S6 in Supporting Material (plotted in Fig. 3).
+
+## zariquiey_et_al2022:
+
+Delta only, roots vs formatives: Figs 7-8 (plots); data on Zenodo https://doi.org/10.5281/zenodo.7318438
+
+## greenhill2015:
+
+> The amount of conflict in these data is reflected by the high Q-residual scores Table 2 with a mean of 0.0219 (s.d. = 0.00797). To contextualise these scores they can be compared with those presented in [54], that compared a range of language families and found Q-residual scores ranging from an average of 0.002 in the very tree-like Indo-European languages up to a high of 0.02 in the Polynesian languages.
+
+Table 2. Q-Residual Scores for the Huon Peninsula languages.
+
+Language,Q-r
+Dedua,0.0403
+Kube,0.0299
+Tobo,0.0285
+Burum,0.0284
+Kâte,0.0246
+Mindik,0.0243
+Mape,0.0212
+Komba,0.0194
+Timbe,0.0177
+Borong,0.0171
+Selepet,0.0154
+Ono,0.0146
+Mesem,0.0124
+Nabak,0.0124
+
+## greenhill_et_al2017:
+
+> The median δ-score for the lexical data was 0.38 (SD = 0.024), and the median δ-score for the structural data was 0.44 (SD = 0.020) (Fig. 3). The median Q-residual was 0.0062 (SD = 0.0010) for the lexicon, and the median Q-residual for the structural data was 0.0354 (SD = 0.0042).
+
+Per-language values: PNAS SI Datasets S1-S4.
+
+## smith_and_rama2021:
+
+> The mean δ score of 0.28 is between the reported scores of Indo-European (0.21) and Austronesian (0.33) in Gray et al. (2010). We obtain a Q-residual score of 0.0046 which is within the scores reported for other language families. The δ score for each of the Bornean languages ranges from 0.234–0.365. Only 17 languages have a δ-score greater than 0.3, which is outside the range of mean summed with standard deviation.
+
+Per-language values: figshare https://figshare.com/articles/dataset/Environmental_factors_affect_the_evolution_of_linguistic_subgroups_in_Borneo/13309121/3
+
+## ross_and_greenhill2024:
+
+> So, we can calculate these two scores for the Malayo-Polynesian languages from the Gray et al. (2009) data using the software package phylogemetric (v1.0.0, Greenhill 2016) and visualise them in Figure 2. On average, the median δ score is 0.375 (standard deviation = 0.0279) while the median Q-residual is 0.0014 (s.d. = 0.00028).
+
+Per-language values: Figure 2 (scatterplot by subgroup) only.
+
+## ferrazgerardi_et_al2025:
+
+TODO
+
+## sippola2017:
+
+TODO
+
+## valerio_et_al2026:
+
+TODO

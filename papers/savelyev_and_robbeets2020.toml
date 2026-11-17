@@ -20,7 +20,7 @@ groups = ["Turkic"]  # 'Austronesian', etc
 bibkey = "@Savelyev_2020"
 
 # type of study
-type = ["phylogenetic", "dating"]
+type = ["phylogenetic", "dating", "delta", "qresidual"]
 framework = ['bayesian', 'network']
 # short label of taxa "37 languages from.."
 description = "32 Turkic languages"
@@ -30,11 +30,11 @@ description = "32 Turkic languages"
     [data.lexicon]
     ntaxa = 32
     nchars = 254
-    nsites = 906
+    nsites = 905
     datatype = 'lexical cognates'
     source = ''
     items = 'leipzigjakartajena'
-    comment = ''
+    comment = '905 cognate classes plus one all-zero ascertainment column'
 
 # date calibrations
 [calibrations]
@@ -58,6 +58,18 @@ description = "32 Turkic languages"
 
 # analysis information
 [analysis]
+    [analysis.delta]
+        tool = 'splitstree'
+        model = 'delta'
+        details = "average delta = 0.34"
+        data = '@data.lexicon'
+
+    [analysis.qresidual]
+        tool = 'splitstree'
+        model = 'qresidual'
+        details = "average Q-residual = 0.01"
+        data = '@data.lexicon'
+
     [analysis.network]
         tool = 'splitstree'
         model = 'neighbornet'

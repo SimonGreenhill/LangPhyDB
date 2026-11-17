@@ -27,7 +27,7 @@ present supertree.
 authors = ["Riana Minocher", "Pavel Duda", "Adrian V. Jaeggi"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Minocher_2019"

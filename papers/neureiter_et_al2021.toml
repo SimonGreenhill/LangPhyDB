@@ -21,7 +21,7 @@ evolution of languages. """
 authors = ["Nico Neureiter", "Peter Ranacher", "Rik van Gijn", "Balthasar Bickel", "Robert Weibel"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Neureiter_2021"

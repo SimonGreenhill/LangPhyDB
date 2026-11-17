@@ -17,7 +17,7 @@ linguistic diversity.
 authors = ["Olena Shcherbakova", "Damián E. Blasi", "Volker Gast", "Hedvig Skirgård", "Russell D. Gray", "Simon J. Greenhill"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Shcherbakova_2024b"

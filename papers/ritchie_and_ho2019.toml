@@ -24,7 +24,7 @@ the nature of language diversification at different sampling scales. """
 authors = ["Andrew M. Ritchie", "Simon Y. W. Ho"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Ritchie_2019"

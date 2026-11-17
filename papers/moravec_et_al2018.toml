@@ -22,7 +22,7 @@ the mode and pace of post-marital residence evolution is lineage-specific rather
 authors = ["Jiří C. Moravec", "Quentin D. Atkinson", "Claire Bowern", "Simon J. Greenhill", "Fiona M. Jordan", "Robert M. Ross", "Russell D. Gray", "Stephen Marsland", "Murray P. Cox"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Moravec_2018"

@@ -19,7 +19,7 @@ Parsimony-based approaches for the ancient character-state reconstruction, for r
 authors = ['Felix Bast']
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Bast2015"

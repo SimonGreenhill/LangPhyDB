@@ -17,7 +17,7 @@ available for download for all interested researchers.
 authors = ["Tiago Tresoldi"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Tresoldi_2023"

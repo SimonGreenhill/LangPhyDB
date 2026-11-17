@@ -29,7 +29,7 @@ of human history. """
 authors = ["Russell D. Gray", "Joseph Watts"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Gray_2017"

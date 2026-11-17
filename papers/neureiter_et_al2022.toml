@@ -33,7 +33,7 @@ to understand the history of human culture.
 authors = ["Nico Neureiter", "Peter Ranacher", "Nour Efrat-Kowalsky", "Gereon A. Kaiping", "Robert Weibel", "Paul Widmer", "Remco R. Bouckaert"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Neureiter_2022"

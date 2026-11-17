@@ -19,7 +19,7 @@ of inquiry, initiating a whole new research program.
 authors = ["Emmanuel D. Ladoukakis", "Dimitris Michelioudakis", "Elena Anagnostopoulou"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Ladoukakis_2022"

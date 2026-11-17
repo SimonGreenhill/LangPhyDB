@@ -26,7 +26,7 @@ history and for quantifying processes of shifts in language and social identitie
 authors = ["Chiara Barbieri", "Damián E. Blasi", "Epifanía Arango-Isaza", "Alexandros G. Sotiropoulos", "Harald Hammarström", "Søren Wichmann", "Simon J. Greenhill", "Russell D. Gray", "Robert Forkel", "Balthasar Bickel", "Kentaro K. Shimizu"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Barbieri_2022"

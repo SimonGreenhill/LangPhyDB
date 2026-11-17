@@ -22,7 +22,7 @@ have long defied attempts at classification due to their multiple ancestry.
 authors = ["Finn Borchsenius", "Aymeric Daval-Markussen", "Peter Bakker"]
 
 # parts of the world
-groups = ['global', 'Creoles']  # 'Austronesian', etc
+groups = ['Global', 'Creoles']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Borchsenius_2017"

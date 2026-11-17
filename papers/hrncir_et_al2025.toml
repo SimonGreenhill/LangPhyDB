@@ -10,7 +10,7 @@ The size and complexity of human societies increased dramatically over the Holoc
 authors = ["Václav Hrnčíř", "Angela M. Chira", "Russell D. Gray"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Hrn__2025"

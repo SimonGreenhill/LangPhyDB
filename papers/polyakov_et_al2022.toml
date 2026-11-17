@@ -26,7 +26,7 @@ relations among languages based on large-scale descriptions of their grammatical
 authors = ["Vladimir N. Polyakov", "Elena A. Makarova", "Valery D. Solovyev"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Polyakov_2022"

@@ -19,7 +19,7 @@ knell for cultural phylogenetic work. """
 authors = ["Michael J. O'Brien", "Mark Collard", "Briggs Buchanan", "Matthew T. Boulanger"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@O_Brien_2013"

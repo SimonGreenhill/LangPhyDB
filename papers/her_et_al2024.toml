@@ -10,7 +10,7 @@ The vast majority of languages have numerals involving multiplication. Cross-lin
 authors = ["One-Soon Her", "Yung-Ping Liang", "Eugene Chan", "Hung-Hsin Hsu", "Anthony Chi-Pin Hsu", "Marc Allassonnière-Tang"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Her_2024"

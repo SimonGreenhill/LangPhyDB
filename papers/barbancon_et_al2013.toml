@@ -10,7 +10,7 @@ This paper reports a simulation study comparing and evaluating the performance o
 authors = ["François Barbançon", "Steven N. Evans", "Luay Nakhleh", "Donald A. Ringe", "Tandy Warnow"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Barban_on_2013"

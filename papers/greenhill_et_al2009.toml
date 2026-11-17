@@ -10,7 +10,7 @@ Phylogenetic methods have recently been applied to studies of cultural evolution
 authors = ["Simon J. Greenhill", "Thomas E. Currie", "Russell D. Gray"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Greenhill2009c"

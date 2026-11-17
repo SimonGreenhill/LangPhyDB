@@ -16,7 +16,7 @@ datasets in historical linguistics.
 authors = ["Taraka Rama", "Johann-Mattis List"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Rama2019"

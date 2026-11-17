@@ -4,7 +4,7 @@ abstract = """Over the past three decades, modern human origins and dispersal ha
 
 authors = ["Pavel Duda", "Jan Zrzavý"]
 
-groups = ['global']
+groups = ['Global']
 
 bibkey = "@Duda2019"
 

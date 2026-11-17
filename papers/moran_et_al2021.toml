@@ -21,7 +21,7 @@ sound systems of reconstructed languages with modern day languages.
 authors = ["Steven Moran", "Eitan Grossman", "Annemarie Verkerk"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Moran_2020"

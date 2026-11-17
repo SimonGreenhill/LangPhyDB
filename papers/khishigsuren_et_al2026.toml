@@ -19,7 +19,7 @@ lexicalization can be attributed in part to shared usage patterns across culture
 authors = ["Temuulen Khishigsuren", "Francis Mollica", "Ekaterina Vylomova", "Charles Kemp"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Khishigsuren_2026"

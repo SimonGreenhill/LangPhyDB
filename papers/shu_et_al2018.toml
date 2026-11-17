@@ -31,7 +31,7 @@ will appear elsewhere."""
 authors = ["Kevin Shu", "Sharjeel Aziz", "Vy-Luan Huynh", "David Warrick", "Matilde Marcolli"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Shu_2018"

@@ -21,7 +21,7 @@ and methods.
 authors = ["Frederik Hartmann", "George Walkden"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@HartmannWalkden2024"

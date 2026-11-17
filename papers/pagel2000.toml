@@ -10,7 +10,7 @@ abstract = """
 authors = ['Mark Pagel']
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@pagel2009a"

@@ -15,7 +15,7 @@ to exploit these models to investigate a suite of factors which may influence di
 authors = ['Chundra A. Cathcart']
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Cathcart2018"

@@ -29,7 +29,7 @@ about the leading directions to improve it. """
 authors = ["Simone Pompei", "Vittorio Loreto", "Francesca Tria"]
 
 # parts of the world
-groups = ['global']
+groups = ['Global']
 
 # bibkey citation in sources.bib
 bibkey = "@Pompei_2011"

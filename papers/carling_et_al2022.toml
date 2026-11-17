@@ -19,7 +19,7 @@ interpretation of results. The chapter reviews results and controversies arising
 authors = ["Gerd Carling", "Chundra A. Cathcart", "Erich R. Round"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Carling2022"

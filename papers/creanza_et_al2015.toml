@@ -30,7 +30,7 @@ roles of vertical and horizontal transmission in phoneme evolution.
 authors = ["Nicole Creanza", "Merritt Ruhlen", "Trevor J. Pemberton", "Noah A. Rosenberg", "Marcus W. Feldman", "Sohini Ramachandran"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Creanza2015"

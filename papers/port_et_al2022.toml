@@ -21,7 +21,7 @@ language subfamilies.
 authors = ["Alexander Port", "Taelin Karidi", "Matilde Marcolli"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Port_2022"

@@ -28,7 +28,7 @@ rather than environmental factors. """
 authors = ["Matthias Urban", "Steven Moran"]
 
 # parts of the world
-groups = ['global', 'Indo-European', 'Sino-Tibetan']  # 'Austronesian', etc
+groups = ['Global', 'Indo-European', 'Sino-Tibetan']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Urban_2021"

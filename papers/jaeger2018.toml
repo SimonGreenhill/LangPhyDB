@@ -21,7 +21,7 @@ demonstrating the suitability of these characters for character-based phylogenet
 authors = ['Gerhard Jäger']
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Jaeger2018"  # @xxxx

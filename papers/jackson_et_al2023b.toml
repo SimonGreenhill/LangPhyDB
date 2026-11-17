@@ -10,7 +10,7 @@ Humans across the globe use supernatural beliefs to explain the world around the
 authors = ["Joshua Conrad Jackson", "Danica Dillion", "Brock Bastian", "Joseph Watts", "William Buckner", "Nicholas DiMaggio", "Kurt Gray"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Jackson_2023"

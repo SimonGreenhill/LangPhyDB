@@ -12,7 +12,7 @@ Comparisons between languages can illuminate processes of language change by rev
 authors = ["Lindell Bromham"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Bromham_2024"

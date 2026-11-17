@@ -40,7 +40,7 @@ linguistic diversity and its temporal dynamics.
 authors = ["Dan Dediu"]
 
 # parts of the world
-groups = ['global']  # 'Austronesian', etc
+groups = ['Global']  # 'Austronesian', etc
 
 # bibkey citation in sources.bib
 bibkey = "@Dediu_2018"

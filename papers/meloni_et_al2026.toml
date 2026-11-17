@@ -1,0 +1,122 @@
+title = "No evidence for a universal effect of writing on language use or the evolution of syntax"
+
+doi = "10.1073/pnas.2527946123"
+
+abstract = """
+The acquisition of writing has a lasting effect on how languages are processed in the brain,
+raising the possibility that it also affects how they are used and evolve over time. A popular
+hypothesis is that writing specifically leads to the increased use and evolution of complex
+hierarchical structures in language. While most case studies on individual languages have
+supported this, it remains unclear whether results scale to larger and more diverse sets of
+languages. Here we test this prediction in two ways: 1) synchronically, by modeling the effect of
+modality (written vs. nonwritten) on syntactic complexity, operationalized via hierarchy depth and
+clause count inside sentences, in corpora from 30 languages; and 2) diachronically, by modeling
+whether the development of writing affected the phylogenetic dynamics of hierarchy in clause
+combinations across 59 languages from three families. We found no effect of writing on the
+response variables in either analysis. Hierarchy depth and clause count inside sentences do not
+demonstrably differ between spoken and written use of language, and the introduction of writing
+had no discernible effect on the evolution of clause combinations in grammar. There is weak
+evidence for a decrease in variance in structural asymmetry after the introduction of writing in
+one family, possibly reflecting the impact of increased normativity. Our findings challenge
+popular beliefs about the relationship between writing and hierarchy and suggest that the
+evolution of syntax is more driven by culturally variable ideas about style in linguistic
+expression than by the evolution of writing.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Carlo Y. Meloni", "Jessica K. Ivani", "Taras Zakharko", "Guanghao You", "Kellen Parker van Dam", "Chundra A. Cathcart", "Balthasar Bickel"]
+
+# parts of the world
+groups = ['Indo-European', 'Sino-Tibetan', 'Tupi-Guarani', 'global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Meloni_2026"
+
+# type of study
+type = ['trait', 'regression']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['bayesian'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = "Tests whether writing increases syntactic hierarchy: phylogenetic regression on Universal Dependencies corpora (30 languages) and regime-shift OU models of clause-combining asymmetry in Indo-European, Sino-Tibetan and Tupi-Guarani (59 languages)"
+
+# data
+[data]
+
+    notes = ""
+
+    [data.ud]
+    ntaxa = 30
+    nchars = 2
+    nsites = "?"
+    datatype = 'syntactical features'
+    source = '@UD'
+    items = ''
+    comment = 'Universal Dependencies v2.15; 99,834 sentences in Spoken, Wikipedia and Fiction genres from 10 families. Responses: clause count and maximum clausal path length per sentence.'
+
+    [data.asymmetry]
+    ntaxa = 59
+    nchars = 18
+    nsites = "?"
+    datatype = 'syntactical features'
+    source = '@meloniwriting'
+    items = ''
+    comment = '763 clause-combining constructions (IE 20 languages/317, ST 21/335, TG 18/111) coded for 18 binary structural asymmetry features.'
+
+# published phylogenies
+[phylogenies]
+    notes = "50 posterior trees per family; branches split into pre-writing and writing regimes at the earliest attestation of writing, with random noise on onset. Eight Sino-Tibetan languages missing from the tree sample inserted at closest proxy positions."
+
+    [phylogenies.indoeuropean]
+    source = '@Heggarty2023'
+    comment = ''
+
+    [phylogenies.sinotibetan]
+    source = '@Sagart2019'
+    comment = ''
+
+    [phylogenies.tupiguarani]
+    source = '@FerrazGerardi2023'
+    comment = ''
+
+    [phylogenies.glottolog]
+    source = '@Glottolog51'
+    comment = 'Microfamily-level variance-covariance matrix (ape vcv.phylo) for the UD regression.'
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+# analysis information
+[analysis]
+
+    notes = ""
+
+    [analysis.clause_count]
+    tool = 'brms'
+    model = 'negative binomial'
+    details = "Clause count ~ genre with random intercepts for treebank, AUTOTYP area and Glottolog phylogeny. Selected over Poisson and spatial GP variants by LOO."
+    data = "data.ud"
+    best = 'true'
+
+    [analysis.clausal_path]
+    tool = 'brms'
+    model = 'poisson'
+    details = "Maximum clausal path ~ genre with random intercepts for treebank, AUTOTYP area and Glottolog phylogeny. Selected by LOO."
+    data = "data.ud"
+    best = 'true'
+
+    [analysis.ou]
+    tool = 'stan'
+    model = 'ornstein-uhlenbeck'
+    details = "Hierarchical multi-regime OU (Beaulieu et al. 2012) on log odds of asymmetry features; theta, alpha, sigma vary by writing regime and family, with feature-specific intercepts. Fitted over 50 posterior trees per family."
+    data = "data.asymmetry;phylogenies.indoeuropean;phylogenies.sinotibetan;phylogenies.tupiguarani"
+
+[inferredages]
+
+    notes = "No divergence time estimates."
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = ["https://doi.org/10.5281/zenodo.23814211"]

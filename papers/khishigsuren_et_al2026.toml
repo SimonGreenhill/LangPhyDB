@@ -1,0 +1,94 @@
+title = "Usage frequency predicts lexicalization across languages"
+
+doi = "10.1038/s41562-026-02625-y"
+
+abstract = """
+Languages are more likely to have lexical items for some concepts (such as CHILD and SUN)
+than others (such as PARENT and WEATHER). Here we present a large-scale quantitative analysis
+of factors that predict lexicalization across languages, and test in particular the hypothesis
+that usage frequency predicts lexicalization. We consider 854 concepts and demonstrate that
+average usage frequency across 46 languages from the Language Documentation Reference Corpus
+is a relatively good predictor of the typological prevalence of lexicalization across the 41
+languages in the World Loanword Database (beta = 0.25; 95% confidence interval, (0.16, 0.33))
+and across 262 languages from the Intercontinental Dictionary Series (beta = 0.30; 95%
+confidence interval, (0.23, 0.38)). This finding implies that cross-linguistic regularities in
+lexicalization can be attributed in part to shared usage patterns across cultures.
+"""
+
+# authors in "Firstname Initial. Lastname" e.g. Simon J. Greenhill
+authors = ["Temuulen Khishigsuren", "Francis Mollica", "Ekaterina Vylomova", "Charles Kemp"]
+
+# parts of the world
+groups = ['global']  # 'Austronesian', etc
+
+# bibkey citation in sources.bib
+bibkey = "@Khishigsuren_2026"
+
+# type of study
+type = ['trait', 'regression']  # asr,criticism,d-statistic,dating,delta,distance,macroevolutionary,methodological,phylogenetic,phylogeography,qresidual,review,structure,tiger,trait,tutorial,
+framework = ['statistical'] # distance,parsimony,likelihood,bayesian,network,statistical,other
+# short description of the study, one line.
+description = "Phylogenetically weighted lexicalization of 854 concepts across 41 WOLD and 262 IDS languages, regressed on usage frequency and other predictors"
+
+# data
+[data]
+
+    notes = "Lexicalization coded as presence/absence of a lexical item per concept. Predictors: mean usage frequency and its CV from DoReCo (46 languages) and Worldlex (23 languages), plus English-only AoA, concreteness, sensorimotor strength, word association and contextual diversity."
+
+    [data.wold]
+    ntaxa = 41
+    nchars = 854
+    nsites = "?"
+    datatype = 'lexemes'
+    source = '@wold'
+    items = ''
+    comment = '24 families, 6 macro areas. Blank entries marked "insufficient information" excluded; others treated as lexical gaps.'
+
+    [data.ids]
+    ntaxa = 262
+    nchars = 854
+    nsites = "?"
+    datatype = 'lexemes'
+    source = '@ids'
+    items = ''
+    comment = 'IDS v4.3; 262 of 319 varieties with the fewest blank entries. 31 families, 5 macro areas; nearly half Nakh-Daghestanian or Indo-European.'
+
+# published phylogenies
+[phylogenies]
+    notes = "Glottolog 5.0 family trees joined by macro area into a single supertree with glottoTrees; dialects cloned as tips; exponential branch lengths, branches above macro-area nodes rescaled by 1/40. Separate tree per WOLD concept because language coverage varies."
+
+    [phylogenies.glottolog]
+    source = '@Glottolog50'
+    comment = 'Built with glottoTrees v0.1.12'
+
+# date calibrations
+[calibrations]
+
+    notes = ""
+
+# analysis information
+[analysis]
+
+    notes = ""
+
+    [analysis.weights]
+    tool = 'phyloWeights'
+    model = 'branchmanager'
+    details = "Genealogically-sensitive weights for phylogenetic mean lexicalization score per concept (Macklin-Cordes and Round 2022)."
+    data = "data.wold;data.ids"
+
+    [analysis.regression]
+    tool = 'r'
+    model = 'ordered beta regression'
+    details = "glmmTMB v1.1.12; lexicalization score ~ predictor(s), likelihood-ratio tests for predictor significance."
+    data = "data.wold;data.ids"
+
+[inferredages]
+
+    notes = "No divergence time estimates."
+
+[links]
+phlorest = { title = "Phlorest Dataset", link = "" }
+cldf = { title = "CLDF Dataset", link = "https://doi.org/10.5281/zenodo.7701635" }
+dplace = { title = "D-PLACE Dataset", link = "" }
+links = ["https://github.com/temuulenkh/lexicalization", "https://doi.org/10.5281/zenodo.23028555"]
